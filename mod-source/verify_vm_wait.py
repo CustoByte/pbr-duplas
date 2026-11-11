@@ -27,6 +27,11 @@ class Replay:
             # Only overlay declared v7 changes, keeping actual runtime data/code.
             original=(diagnostics/'mem1.bin').read_bytes()
             addresses=[0x8022DF50,0x8022E1C8]+list(range(0x80077060,0x80077070,4))
+            # Include the optional v8 appearance layer so shared-space
+            # regressions execute the exact distributed code, not just v7.
+            if word(dol,file_offset(dol,0x803DF700))==0x9421FFD0:
+                from rental_shiny_asm import assemble as shiny_words
+                addresses+=list(shiny_words())
             for a in addresses:self.uc.mem_write(a,dol[file_offset(dol,a):file_offset(dol,a)+4])
         self.allocate=False;self.allocations=[];self.log_calls=0
         self.uc.reg_write(ppc.UC_PPC_REG_MSR,0x2000)

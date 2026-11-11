@@ -1,5 +1,13 @@
 # Histórico
 
+## v0.8.0-shiny
+
+- Aparência shiny para os seis integrantes atuais de cada um dos dois passes iniciais, Cyndy e Nate, inclusive com campanha já salva.
+- Reconhece as cópias de batalha pelo PID e ID de treinador, preservando os dados dos Pokémon, o save e o comportamento normal dos demais.
+- Mantém a campanha em duplas e a correção de introdução v7; common.fsys e os scripts dos aplicadores permanecem iguais.
+- Passaram 3.850 verificações específicas, replay isolado dos 12 integrantes e quatro cópias da batalha, 15 testes estruturais e as nove suítes anteriores. Validação visual no Dolphin pendente.
+- Atualização pelo mesmo iniciador Windows/Mac. Detalhes em SHINY-PASSES.md.
+
 ## v0.7.1-mac
 
 - Iniciador .command nativo, com atualização/cache e preset Riivolution.

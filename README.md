@@ -6,6 +6,8 @@ Aplicador experimental para Windows 10/11 e macOS 12+. Utiliza sua imagem origin
 
 [**Baixar o aplicador para Windows**](https://github.com/CustoByte/pbr-duplas/releases/latest/download/PBR-Duplas-Aplicador-Windows.zip)
 
+**Novidade — v0.8.0-shiny:** os times dos passes iniciais de Cyndy e Nate aparecem como shiny com o mod ativo, inclusive ao carregar uma campanha existente. Os dados dos Pokémon e o save são preservados. Para receber, feche o Dolphin e abra o mesmo aplicador Windows/Mac com internet. [Detalhes, verificações e teste](SHINY-PASSES.md).
+
 ## Usar
 
 1. Extraia todo o ZIP e abra **INICIAR-WINDOWS.cmd**.
@@ -24,7 +26,7 @@ O original fica intacto. Caminhos e estado ficam em `%LOCALAPPDATA%\PBR-Duplas`;
 
 ## Estado da versão
 
-A candidata v7 modifica seleção/formato de campanha e limites de equipes/séries para duplas com quatro Pokémon. **Não inclui cooperativo online.** As regras especiais, batalhas e persistência real ainda exigem teste no jogo.
+A candidata v8 mantém a seleção/formato de campanha e limites de equipes/séries da v7 para duplas com quatro Pokémon, acrescentando a aparência shiny nos dois passes iniciais. **Não inclui cooperativo online.** As regras especiais, batalhas e persistência real ainda exigem teste no jogo.
 
 Passaram 23 testes dos scripts em PowerShell 7/Linux com imagens artificiais, feed local e uma ferramenta simulando o DolphinTool. Incluem atualizações sucessivas, cache/offline, caminhos com espaços/acentos, adição/remoção de arquivos, falhas, backup e abertura simulada. A interface Windows/PowerShell 5.1 e a conversão de imagens reais não foram executadas nesse ambiente. A conferência de arquivos é distinta da validação de gameplay. Veja [VERIFICACAO.json](VERIFICACAO.json).
 

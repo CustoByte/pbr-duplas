@@ -1,0 +1,26 @@
+{
+  "status": "passed",
+  "identity_fixtures": 768,
+  "checks": 3850,
+  "shuffle_variants": 32,
+  "allocation_banks": [
+    "MEM1",
+    "MEM2"
+  ],
+  "native_getter_stubs": [],
+  "abi_nonvolatile_registers_and_stack": "passed",
+  "pokemon_bytes_unchanged": true,
+  "private_existing_memory_replay": {
+    "rental_pokemon_existing_memory": 12,
+    "selected_battle_copies": 4,
+    "opponents_unchanged": 6,
+    "entire_pass_array_unchanged": true,
+    "source": "Private user-provided decoded Dolphin state; not distributed"
+  },
+  "main_dol_sha256": "b15c4d6d6237062d45894fdb890c9a0efa3ee0f792ad4350aa01d0bde227b9ab",
+  "limits": [
+    "No Dolphin rendering/gameplay test",
+    "No save-file persistence test",
+    "Shiny appearance is active while using this mod; saved identities are unchanged"
+  ]
+}

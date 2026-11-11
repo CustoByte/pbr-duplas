@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "version": "v0.7.1-mac",
-  "package_url": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.7.1-mac/aplicador-core.zip",
-  "package_sha256": "8924e4fd91b64db6495a094662fe128776eeb96967b32e1c50e564c1e4090bf7",
+  "version": "v0.8.0-shiny",
+  "package_url": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.8.0-shiny/aplicador-core.zip",
+  "package_sha256": "20889deace598c9da7ce29f4ff6d93ad473fb127a6bbe4dee5f60de46bb6e3c1",
   "save_policy": "Preserve Dolphin user data; same RPBE01 game identity",
   "dolphin_gameplay_tested": false
 }

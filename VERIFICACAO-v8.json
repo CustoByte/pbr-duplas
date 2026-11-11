@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "completed_utc": "2026-11-11T23:37:25.514908+00:00",
+  "structural_tests": 15,
+  "native_suites": {
+    "native": "native-verification.json",
+    "selection": "selection-verification.json",
+    "handoff": "handoff-verification.json",
+    "series": "series-verification.json",
+    "result-flow": "result-flow-verification.json",
+    "carryover": "carryover-verification.json",
+    "progression": "progression-verification.json",
+    "rewards": "rewards-verification.json",
+    "vm-wait": "vm-wait-verification.json",
+    "rental-shiny": "shiny-verification.json"
+  },
+  "source_sha256": {
+    "main.dol": "ecb89c86f2eca30151561d9ee86a2ff260b2b2b3c9b4eb9429e04368392a2af9",
+    "common.fsys": "75ba89e3bb859ac32ad655517e001928e7bf9ad655c675584256dd2a21393b36",
+    "deck.fsys": "c1a478be1ca447a47fe3efb2064de07bc3dffe883f52a180b403dab7469ddfdc"
+  },
+  "work_sha256": {
+    "main.dol": "b15c4d6d6237062d45894fdb890c9a0efa3ee0f792ad4350aa01d0bde227b9ab",
+    "common.fsys": "08ccff086b981be6babcb659905f2612cbd0844acc6300b0279d3e4bb22c4297",
+    "colosseum-table.bin": "6e8a04274bf8d9ff4cb36b6056c2914e377f1f01ad4aeee6ff9b609fea567210"
+  },
+  "dolphin_tested": false,
+  "save_tested": false,
+  "scope": "Isolated and partially chained PPC routines with explicit synthetic API boundaries; see individual reports"
+}
