@@ -1,5 +1,13 @@
 # Histórico
 
+## v0.9.0-monferno
+
+- Monferno original de Nate: Adamant (+ATK, −Sp. ATK), Grass Knot → Blaze Kick, Sunny Day → Close Combat e Meadow Plate → Lum Berry.
+- Migração dos dados já carregados de uma campanha existente, sem edição direta do arquivo de save; consultas repetidas não repõem PP.
+- Berry consumida uma vez e disponível novamente na preparação da batalha seguinte, inclusive no caminho de sobrevivência; nenhuma reposição durante a luta.
+- Demais Pokémon, IVs, EVs e Blaze preservados. Mantém duplas, shiny e correção de introdução.
+- Verificações nativas e replay isolado do estado enviado; confirmação visual/boot e persistência real no Dolphin ainda pendentes.
+
 ## v0.8.0-shiny
 
 - Aparência shiny para os seis integrantes atuais de cada um dos dois passes iniciais, Cyndy e Nate, inclusive com campanha já salva.

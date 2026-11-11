@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "identity_nature_fixtures": 800,
+  "native_getter_setter_stubs": [],
+  "maximum_nature_search_iterations": 24,
+  "arena_reservation_cases": 14,
+  "consecutive_berry_consumption_restore_cycles": 3,
+  "scope_and_consumed_pp_and_battle_item_checks": "passed",
+  "abi_nonvolatile_registers_and_stack": "passed",
+  "private_existing_memory_replay": {
+    "existing_state_migrated": true,
+    "nature": "Adamant",
+    "moves": [
+      7,
+      183,
+      299,
+      370
+    ],
+    "item_id": 157,
+    "other_pokemon_and_pass_data_unchanged": true,
+    "ivs_evs_ability_trainer_id_preserved": true,
+    "idempotent": true
+  },
+  "main_dol_sha256": "e2d2915d7ea849429675be871ea00486a416f6816678bfbcca5f1142874c1b96",
+  "limits": [
+    "No Dolphin boot/rendering/gameplay execution",
+    "No actual save-file persistence test",
+    "Modified rental data may be persisted when the game saves normally; applicator does not edit save files"
+  ]
+}

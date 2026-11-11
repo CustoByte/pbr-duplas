@@ -40,6 +40,9 @@ def vanilla(pid,tid):return int(((pid>>16)^(pid&65535)^(tid>>16)^(tid&65535))<8)
 
 def verify(v7,changed,common,diagnostics=None):
     expected,_=prepare_shiny(v7)
+    if changed!=expected:
+        from monferno_build import prepare_build
+        expected,_=prepare_build(expected)
     if changed!=expected:raise AssertionError('Shiny DOL is not reproducible')
     before=Harness(v7,common);after=Harness(changed,common)
     fixtures=0;checks=0

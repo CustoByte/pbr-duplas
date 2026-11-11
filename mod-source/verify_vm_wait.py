@@ -32,6 +32,11 @@ class Replay:
             if word(dol,file_offset(dol,0x803DF700))==0x9421FFD0:
                 from rental_shiny_asm import assemble as shiny_words
                 addresses+=list(shiny_words())
+            if word(dol,0x50)==0x8063C000:
+                from monferno_build import CODE,HOOKS,CARRY_HOOK
+                off,size=word(dol,8),word(dol,0x98)
+                self.uc.mem_write(CODE,dol[off:off+size])
+                addresses+=list(HOOKS)+[0x8026EABC,0x8026EACC,CARRY_HOOK]
             for a in addresses:self.uc.mem_write(a,dol[file_offset(dol,a):file_offset(dol,a)+4])
         self.allocate=False;self.allocations=[];self.log_calls=0
         self.uc.reg_write(ppc.UC_PPC_REG_MSR,0x2000)
