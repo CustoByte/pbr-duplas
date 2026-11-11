@@ -26,3 +26,5 @@ No replay isolado da memória privada enviada pelo usuário, os 12 integrantes e
 Também passaram os 15 testes estruturais anteriores e as nove suítes de campanha/v7, usando o DOL novo. O relatório agregado inclui a décima suíte de shiny. Isso não é uma execução completa do Dolphin: a aparência, os efeitos visuais e a continuidade da campanha precisam de confirmação no jogo. Veja [VERIFICACAO-SHINY.json](VERIFICACAO-SHINY.json).
 
 O canal de atualização e os iniciadores permanecem os mesmos. No Windows, o novo manifesto provoca a reconstrução automática da RVZ gerenciada; no Mac, o preset carrega os novos arquivos sobre a imagem original. Nenhum novo download manual do programa é necessário para quem já tem o aplicador.
+
+A publicação foi concluída pelo workflow 43121489297. Os cinco downloads públicos foram conferidos byte a byte e o iniciador Windows antigo baixou e verificou o núcleo novo pelo canal HTTPS real. Essa prova parou deliberadamente na ausência da imagem original local, sem converter nem iniciar o jogo. Somente `manifesto.json` e `mod/main.dol` diferem no núcleo anterior. Registro: [PUBLICACAO-v8.json](PUBLICACAO-v8.json).

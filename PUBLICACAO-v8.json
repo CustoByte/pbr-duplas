@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "release": "v0.8.0-shiny",
+  "public_assets_byte_identical": [
+    "update.json",
+    "aplicador-core.zip",
+    "PBR-Duplas-Aplicador-Windows.zip",
+    "PBR-Duplas-Aplicador-Mac.zip",
+    "SHA256SUMS.txt"
+  ],
+  "changed_core_entries": [
+    "manifesto.json",
+    "mod/main.dol"
+  ],
+  "old_windows_bootstrap_downloaded_verified_current_core": true,
+  "probe_stopped": "Missing local original image; no conversion or gameplay attempted",
+  "workflow": 43121489297,
+  "downloaded_sha256": {
+    "update.json": "9df778fee3d21d6b08badd8d6fa3b4b0eafe2bec00c07f03a5768c2afdb53282",
+    "aplicador-core.zip": "20889deace598c9da7ce29f4ff6d93ad473fb127a6bbe4dee5f60de46bb6e3c1",
+    "PBR-Duplas-Aplicador-Windows.zip": "8d3c167d1c98b8c5ff9c20fb6297cd6749ba5bbca6876f832953273e937e5185",
+    "PBR-Duplas-Aplicador-Mac.zip": "8dc7d07dcd7af5842d121c7d5272a6bf083051fb8d642c58fabcbd81b3b511f7",
+    "SHA256SUMS.txt": "bdf29e9bb5da62bffaa0cc600eee0db3c84bb7921bf59e6cf85626f9a747c9ca"
+  }
+}
