@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "release": "v0.6.0-experimental",
+  "public_feed": "https://github.com/CustoByte/pbr-duplas/releases/latest/download/update.json",
+  "core_sha256": "3db200951ba4c5d8428a2e92e4563c7de994332140451e10645d943dfce95725",
+  "client_sha256": "b847b126ca2fe3e05223fe95a5acb4a3bbdea4c102544360dbf1e84768cd394c",
+  "public_downloads_match_local_artifacts": true,
+  "bootstrap_live_https_download_and_hash_check": "passed",
+  "bootstrap_handoff": "Real packaged core reached image-selection validation; intentionally absent image rejected"
+}

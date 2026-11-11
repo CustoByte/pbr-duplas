@@ -33,3 +33,5 @@ O código está em [src](src). O pacote publicado inclui os dois arquivos de jog
 O bootstrap consulta `releases/latest/download/update.json`. O manifesto publica versão, URL do núcleo e SHA-256. O pacote é baixado por HTTPS e conferido antes da extração. Somente lançamentos publicados são distribuídos; alterações de trabalho e commits isolados não chegam aos jogadores.
 
 Para uma atualização, preparar e verificar o núcleo, atualizar o manifesto e publicar os assets do novo lançamento juntos. Manter o formato do manifesto compatível com o bootstrap e a mesma identidade do jogo para continuar usando o save.
+
+A primeira publicação foi conferida por download público: manifesto, núcleo e ZIP inicial coincidem byte a byte com os artefatos locais. O bootstrap distribuído também consultou o canal HTTPS real, baixou e verificou o núcleo e entregou a execução ao aplicador. Esse teste parou intencionalmente na validação de uma imagem ausente; não executou o jogo. Registro em [PUBLICACAO.json](PUBLICACAO.json).
