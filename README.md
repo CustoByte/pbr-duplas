@@ -1,6 +1,6 @@
 # Pokémon Battle Revolution — campanha em duplas
 
-Aplicador experimental para Windows 10/11. Utiliza sua imagem original USA **RPBE01, revisão 0** e o DolphinTool de uma instalação recente do Dolphin. Este repositório não contém a imagem completa do jogo nem saves.
+Aplicador experimental para Windows 10/11 e macOS 12+. Utiliza sua imagem original USA **RPBE01, revisão 0** e o DolphinTool de uma instalação recente do Dolphin. Este repositório não contém a imagem completa do jogo nem saves.
 
 [**Baixar o aplicador para Windows**](https://github.com/CustoByte/pbr-duplas/releases/latest/download/PBR-Duplas-Aplicador-Windows.zip)
 
@@ -45,3 +45,13 @@ No replay isolado da memória capturada, a v6 mantém o callback bloqueado e o i
 A tabela modificada agora é recomprimida no slot original: common.fsys mantém o tamanho de 441.664 bytes, todos os offsets e os demais recursos comprimidos. A tabela passa de 1.179 para 1.146 bytes comprimidos. As tabelas de modelos/personagens permanecem idênticas; a aparência de Nate e dos demais personagens ainda precisa de conferência visual no jogo.
 
 **Após atualizar, inicie normalmente e carregue o save da campanha. Não carregue um save state da v6: ele restaura o código e a memória antigos.** O arquivo enviado pelo jogador e a memória extraída permanecem privados e não estão neste repositório. Os verificadores e o compressor estão em [mod-source](mod-source); o replay exige o estado privado correspondente.
+
+## Mac: iniciar com dois cliques
+
+[**Baixar o iniciador para Mac**](https://github.com/CustoByte/pbr-duplas/releases/latest/download/PBR-Duplas-Aplicador-Mac.zip). Extraia tudo, feche o Dolphin e abra **INICIAR-MAC.command**. Na primeira vez, escolha a pasta da ISO/RVZ USA RPBE01 revisão 0 e Dolphin.app, se solicitado. Depois use o mesmo iniciador para consultar atualizações e jogar.
+
+O Mac usa o suporte Riivolution do próprio Dolphin para carregar os mesmos `main.dol` e `common.fsys` da v7 sobre a imagem original. Não extrai nem regrava a ROM e não requer Python, Homebrew ou DolphinTool. Mantém a identidade RPBE01 e inicia o Dolphin com seus dados habituais, sem redirecionar o save. Os caminhos e o preset ficam em `~/Library/Application Support/PBR-Duplas`. Abrir a ROM diretamente pula o mod; utilize o iniciador ou o preset gerado.
+
+Os oito testes nativos passaram em macOS 15.8.2 ARM64: ferramentas do sistema, atualização, cache/offline, preservação do original, cabeçalhos de ISO/RVZ, hash, bloqueio de caminhos externos e geração do descritor JSON. Os cabeçalhos de imagem e o aplicativo nos testes são fixtures. Os diálogos interativos, o lançamento real do Dolphin e uma batalha não foram executados nesses testes. Veja [VERIFICACAO-MAC.json](VERIFICACAO-MAC.json).
+
+A versão de distribuição v0.7.1-mac acrescenta o iniciador Mac ao pacote; os arquivos de jogo permanecem exatamente os da correção v7. Os iniciadores Windows existentes continuam usando o mesmo canal e o mesmo manifesto do mod.

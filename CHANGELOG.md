@@ -1,5 +1,12 @@
 # Histórico
 
+## v0.7.1-mac
+
+- Iniciador .command nativo, com atualização/cache e preset Riivolution.
+- Sem instalação de Python, Homebrew ou DolphinTool no Mac.
+- Oito testes passaram em macOS ARM64; jogo/renderização não executados nesses testes.
+- Mesmos arquivos de jogo da v7, sem nova mudança nas batalhas.
+
 ## v0.7.0-experimental
 
 - Corrige campos de espera não inicializados que bloquearam maincallback na introdução do estado enviado pelo jogador.

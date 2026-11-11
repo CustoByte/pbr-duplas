@@ -17,5 +17,5 @@ jobs:
         run: |
           tag=$(jq -r .version .github/release-assets/update.json)
           [[ "$tag" =~ ^v[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9.-]+)?$ ]]
-          gh release upload "$tag" .github/release-assets/PBR-Duplas-Aplicador-Windows.zip .github/release-assets/aplicador-core.zip .github/release-assets/update.json .github/release-assets/SHA256SUMS.txt --repo "$GITHUB_REPOSITORY" --clobber
+          gh release upload "$tag" .github/release-assets/*.zip .github/release-assets/update.json .github/release-assets/SHA256SUMS.txt --repo "$GITHUB_REPOSITORY" --clobber
           gh release edit "$tag" --repo "$GITHUB_REPOSITORY" --draft=false --latest

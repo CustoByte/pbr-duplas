@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "tests": 8,
+  "skipped": 0,
+  "platform": "macOS-15.8.2-arm64-arm-64bit-Mach-O",
+  "limits": [
+    "No interactive chooser or actual Dolphin launch",
+    "ISO/RVZ headers are fixtures, not real disc images",
+    "No gameplay or real save test"
+  ],
+  "github_run": "https://github.com/CustoByte/pbr-duplas/actions/runs/43106573675",
+  "source_commit": "222d191327329e863ba781ddce0ebd81e1b5228d",
+  "source_sha256": {
+    "INICIAR-MAC.command": "7e4fe1c7cdb06755e8fcf15f93e5ccb5afde1767d9732e2e974c4b684c68d14a",
+    "aplicar-mac.sh": "cffe6c9efcad0c4bda95628b1724ed4a0c8c0dca2d9dcb42a33711cf1c1d6f67",
+    "descriptor.jxa": "6649b1044af521d240cac2cc77d605fb5820ba20c354540a76f43949a401df31"
+  }
+}
