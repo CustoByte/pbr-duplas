@@ -1,0 +1,102 @@
+PBR DUPLAS — APLICADOR AUTOATUALIZAVEL PARA WINDOWS 10/11
+
+PRIMEIRA VEZ
+
+1. Extraia TODO este ZIP para uma pasta. Nao execute de dentro do ZIP.
+2. De dois cliques em INICIAR-WINDOWS.cmd.
+3. Escolha a pasta que contem sua ISO ou RVZ ORIGINAL de Pokemon Battle
+   Revolution. Se houver varias imagens, escolha a correta na janela.
+4. Se solicitado, indique Dolphin.exe da sua instalacao recente do Dolphin.
+5. Aguarde: o programa aplica o mod, confere os arquivos e abre o Dolphin.
+
+Nao precisa digitar comandos, instalar Python ou substituir arquivos a mao.
+Guarde esta pasta: este sera o seu iniciador do jogo modificado.
+
+DAS PROXIMAS VEZES EM DIANTE
+
+Abra sempre INICIAR-WINDOWS.cmd. Ele consulta a versao publicada no GitHub.
+- Sem novidade: abre a copia ja preparada, sem extrair/converter novamente.
+- Com novidade: baixa um unico pacote, usa a ROM original ja lembrada,
+  reconstroi a copia modificada no MESMO caminho, confere e inicia o jogo.
+- Sem internet: usa o ultimo pacote disponivel localmente.
+
+O proprio aplicador tambem recebe melhorias pelo pacote de atualizacao.
+Nao e necessario baixar outro ZIP para cada nova versao do mod.
+As atualizacoes sao verificadas ao ABRIR o aplicador; ele nao fica rodando
+em segundo plano quando fechado. Abrir a RVZ diretamente no Dolphin pula
+a consulta de atualizacoes, mas continua jogando a ultima versao instalada.
+
+ORIGEM DAS ATUALIZACOES
+
+Repositorio: https://github.com/CustoByte/pbr-duplas
+Canal: https://github.com/CustoByte/pbr-duplas/releases/latest/download/update.json
+Apenas versoes publicadas nesse canal sao aplicadas. Arquivos de trabalho
+incompletos ou commits sem lancamento nao sao instalados.
+
+REQUISITOS
+
+- Windows 10/11 e Windows PowerShell 5.1 (normalmente ja incluido).
+- Dolphin recente com Dolphin.exe e DolphinTool.exe na mesma pasta.
+  Download oficial: https://dolphin-emu.org/download/
+  Extraia o pacote completo do Dolphin, incluindo suas DLLs.
+- Sua imagem ORIGINAL USA RPBE01, disco 1, revisao 0, sem outros mods.
+  Aceita ISO/RVZ. O DolphinTool tambem pode ler WIA/GCZ.
+- Aproximadamente 5 GB livres na unidade da ROM para a montagem/conferencia.
+- Internet para buscar novas versoes; o pacote inicial tambem esta incluido.
+
+A ROM ORIGINAL DEVE CONTINUAR NO MESMO LUGAR
+
+O aplicador lembra os caminhos em:
+  %LOCALAPPDATA%\PBR-Duplas\estado.json
+Ele nao envia esses caminhos, a ROM nem seus saves ao GitHub.
+
+O arquivo original e somente lido. As substituicoes/adicoes de arquivos
+acontecem numa extracao temporaria. O resultado e uma nova RVZ ao lado da
+original, com o final -Duplas.rvz. Atualizacoes futuras substituem essa copia
+modificada apos a conferencia e guardam a anterior como .anterior.rvz.
+Se houver um arquivo diferente ou alterado manualmente no destino, o
+aplicador para para evitar sobrescreve-lo por engano.
+
+SAVES E PROGRESSO
+
+O aplicador nao copia, apaga, substitui nem migra saves. Ele inicia o mesmo
+Dolphin, com seus dados habituais e a mesma identidade RPBE01 do jogo.
+Isso permite continuar usando o save existente. A compatibilidade com o
+save precisa continuar sendo respeitada nas futuras alteracoes do mod;
+uma mudanca que exija migracao deve receber tratamento antes da publicacao.
+Nao atualize enquanto o Dolphin estiver usando a copia modificada.
+
+RESULTADO E DIAGNOSTICO
+
+A nova RVZ e um unico arquivo que pode ser aberto no Dolphin. Para receber
+novidades, continue iniciando pelo aplicador, nao apenas pela RVZ.
+O relatorio .relatorio.json ao lado registra o hash da imagem criada e a
+conferencia de todos os arquivos. O programa verifica uma nova extracao da
+RVZ antes de coloca-la no lugar da versao anterior.
+
+Em falha de conversao/conferencia, a versao anterior permanece disponivel.
+Uma pasta .pbr-duplas-... com falha.txt e preservada ao lado da ROM para
+diagnostico. Depois de analisar o erro, essa pasta temporaria pode ser apagada.
+Erro de versao/hash: use a imagem original USA revisao 0.
+DolphinTool ausente/comando desconhecido: atualize o Dolphin completo.
+Se o Dolphin nao abrir, mas a RVZ tiver sido criada, ela pode ser aberta
+manualmente por Arquivo > Abrir.
+
+O QUE ESTE MOD INCLUI
+
+Candidata experimental v6 da campanha em duplas, com quatro Pokemon e
+adaptacoes internas de equipes e series. Nao inclui cooperativo online
+nem controle dividido entre dois jogadores.
+
+VERIFICACAO E LIMITES
+
+Os testes internos do mod passaram. Os scripts do aplicador/atualizador
+foram executados em PowerShell 7 no Linux, com feed local, imagens-fixture
+e uma ferramenta simulando o DolphinTool. Foram testados atualizacao,
+cache/offline, reutilizacao da ROM, substituicao com backup, falhas, adicao/
+remocao de arquivos, preservacao de save artificial e abertura simulada.
+Windows GUI/PowerShell 5.1, conversao real de ISO/RVZ e campanha ainda
+precisam de teste no computador do jogador. Conferencia de arquivos nao
+comprova que todas as batalhas/regras especiais funcionem corretamente.
+
+Este ZIP nao contem a imagem completa do jogo nem baixa jogos da internet.

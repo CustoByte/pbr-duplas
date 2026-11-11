@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "tests": 23,
+  "runtime": "PowerShell 7.7.0 on Linux",
+  "core_script_sha256": "ed788b5d2a71d37b48bf0308dca5dc020826708d5846eacf1fd96c6d8f79ba2e",
+  "bootstrap_sha256": "0b738e177a4565d18cebdb52679f8c250ec651374431c5b116e3c8e90297aa27",
+  "tested": [
+    "First installation and cached launches",
+    "Update feed, cached package, remembered ROM and stable target",
+    "Atomic replacement plus previous image backup",
+    "Failed update leaves old image/state usable",
+    "Added and removed mod assets",
+    "Simulated existing user save remains unchanged",
+    "Bad hashes, path traversal and incompatible revision rejected",
+    "Automatic launch command"
+  ],
+  "limits": [
+    "DolphinTool replaced by a fixture tool; images are ZIP fixtures, not actual RVZ",
+    "Windows GUI, Windows PowerShell 5.1 and real image conversion not executed",
+    "No battle or actual save test"
+  ]
+}
