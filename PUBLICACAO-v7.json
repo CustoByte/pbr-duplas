@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "release": "v0.7.0-experimental",
+  "public_feed": "https://github.com/CustoByte/pbr-duplas/releases/latest/download/update.json",
+  "public_downloads_match_local_artifacts": true,
+  "existing_v6_launcher_downloads_v7_core": true,
+  "private_state_or_memory_published": false,
+  "dolphin_full_gameplay_tested": false
+}

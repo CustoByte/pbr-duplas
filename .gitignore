@@ -7,3 +7,7 @@
 *.zip
 estado.json
 Dados-Dolphin/
+*.sav
+*.s[0-9][0-9]
+*.bin
+diagnostics/
