@@ -1,0 +1,49 @@
+PBR DUPLAS — INICIADOR AUTOATUALIZAVEL PARA MAC
+
+1. Extraia todo o ZIP para uma pasta fixa.
+2. Feche o Dolphin, se estiver aberto.
+3. Abra INICIAR-MAC.command com dois cliques.
+4. Na primeira vez, escolha a pasta da ISO/RVZ original USA RPBE01 revisao 0.
+5. Se solicitado, escolha Dolphin.app. Aguarde o jogo abrir.
+
+Nas proximas vezes, abra o MESMO INICIAR-MAC.command. Ele lembra os caminhos,
+consulta o GitHub e baixa um pacote novo quando publicarmos uma atualizacao.
+Sem internet, usa o pacote disponivel localmente. Nao fica em segundo plano.
+
+NAO PRECISA instalar Python, Homebrew, DolphinTool ou reconstruir a ISO.
+O Mac usa o suporte Riivolution que ja existe no Dolphin: aplica exatamente
+os arquivos main.dol e common.fsys do mesmo mod sobre a imagem original.
+A ISO/RVZ nao e modificada. Para jogar COM o mod, use este iniciador.
+Abrir a ROM original diretamente no Dolphin continua abrindo o jogo original.
+
+REQUISITOS
+
+- macOS 12 ou superior, Intel ou Apple Silicon.
+- Dolphin recente (o 2609b ja instalado deve oferecer este recurso).
+- ISO/RVZ USA RPBE01, disco 1, revisao 0.
+- A instalacao normal do Dolphin e as permissoes habituais do aplicativo.
+- Na primeira abertura de um script baixado, o macOS pode pedir confirmacao.
+  Se houver bloqueio, tente botao direito > Abrir. Nao e necessario apagar
+  dados do Dolphin ou instalar outro emulador.
+
+Os arquivos ficam em ~/Library/Application Support/PBR-Duplas.
+O iniciador utiliza os saves e controles habituais do seu Dolphin; nao
+fornece outra pasta de usuario nem copia/apaga saves. O jogo continua RPBE01.
+
+VERSAO v7
+
+Inclui a correcao candidata da espera invalida na introducao, identificada
+no estado enviado pelo jogador. Inicie normalmente e carregue o SAVE DO
+JOGO. Nao carregue save states antigos, pois restauram codigo/memoria antigos.
+A batalha completa, Nate e os outros personagens ainda precisam de reteste.
+Nao ha cooperativo online nesta versao.
+
+O formato do preset e o XML foram conferidos no codigo oficial do Dolphin.
+Os testes automatizados do Mac usam ferramentas nativas e imagens artificiais:
+validam o iniciador, atualizacoes, configuracao e descritor; nao executam uma
+batalha de Pokemon nem comprovam renderizacao ou compatibilidade com todo save.
+
+Repositorio: https://github.com/CustoByte/pbr-duplas
+Download Dolphin: https://dolphin-emu.org/download/
+
+Se ocorrer erro, envie uma imagem da janela do Terminal e a mensagem do Dolphin.

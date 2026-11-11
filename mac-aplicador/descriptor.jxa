@@ -1,0 +1,9 @@
+function run(argv) {
+    if (argv.length !== 3) throw new Error('Parametros incompletos do descritor.');
+    return JSON.stringify({
+        type: 'dolphin-game-mod-descriptor', version: 1,
+        'base-file': argv[0], 'display-name': 'PBR Duplas — ' + argv[2], maker: 'CustoByte',
+        riivolution: {patches: [{xml: argv[1], root: argv[1].replace(/\/[^/]*$/, ''),
+            options: [{'section-name': 'PBR Duplas', 'option-id': 'pbr-duplas', choice: 1}]}]}
+    }, null, 2);
+}

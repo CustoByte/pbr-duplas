@@ -1,0 +1,19 @@
+name: Test native macOS launcher
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  native-macos:
+    runs-on: macos-15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Check native shell syntax
+        run: |
+          /bin/bash -n mac-aplicador/INICIAR-MAC.command
+          /bin/bash -n mac-aplicador/aplicar-mac.sh
+      - name: Run native tools, update/cache and descriptor tests
+        run: python3 test_mac_applicator.py
+      - name: Report results
+        if: always()
+        run: cat mac-test-report.json
