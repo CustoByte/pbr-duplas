@@ -81,8 +81,8 @@ fi
 PBR_DESCRIPTOR="$PBR_DATA/Jogar-PBR-Duplas.json"
 PBR_TEMP="$(/usr/bin/mktemp "$PBR_DATA/descritor.XXXXXX")"
 trap 'rm -f "${PBR_TEMP:-}" "${PBR_CONFIG_TEMP:-}"' EXIT
-/usr/bin/osascript -l JavaScript "$PBR_CORE/descriptor.jxa" "$PBR_IMAGE" "$PBR_CORE/riivolution.xml" "$PBR_VERSION" > "$PBR_TEMP"
-/usr/bin/plutil -lint "$PBR_TEMP" >/dev/null
+/usr/bin/osascript -l JavaScript "$PBR_CORE/descriptor.jxa" "$PBR_IMAGE" "$PBR_CORE/riivolution.xml" "$PBR_VERSION" "$PBR_TEMP" >/dev/null
+[ "$(pget type "$PBR_TEMP")" = dolphin-game-mod-descriptor ] || fail 'Descritor gerado invalido.'
 /bin/mv -f "$PBR_TEMP" "$PBR_DESCRIPTOR"
 PBR_TEMP=''
 PBR_CONFIG_TEMP="$(/usr/bin/mktemp "$PBR_DATA/config.XXXXXX")"
