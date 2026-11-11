@@ -84,7 +84,7 @@ manualmente por Arquivo > Abrir.
 
 O QUE ESTE MOD INCLUI
 
-Candidata experimental v6 da campanha em duplas, com quatro Pokemon e
+Candidata experimental v7 da campanha em duplas, com quatro Pokemon e
 adaptacoes internas de equipes e series. Nao inclui cooperativo online
 nem controle dividido entre dois jogadores.
 
@@ -100,3 +100,12 @@ precisam de teste no computador do jogador. Conferencia de arquivos nao
 comprova que todas as batalhas/regras especiais funcionem corretamente.
 
 Este ZIP nao contem a imagem completa do jogo nem baixa jogos da internet.
+
+CORRECAO v7
+
+Inicializacao limpa dos campos de espera das tarefas de script, apos
+reproduzir um bloqueio da introducao em um estado enviado pelo jogador.
+common.fsys agora mantem o tamanho/offsets originais. Para testar a correcao,
+inicie o jogo normalmente e use o save da campanha. Nao carregue um save
+state criado na versao anterior: ele restaura a memoria/codigo anteriores.
+O reaparecimento de Nate no passe e os demais personagens requerem reteste.

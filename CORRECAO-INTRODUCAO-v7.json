@@ -1,0 +1,41 @@
+{
+  "status": "passed",
+  "source_state": "Dolphin 2506-25 / RPBE01 user-provided freeze",
+  "observed_deadlock": {
+    "wait_type": 2,
+    "flag_index": 138,
+    "expected_flag": 357088,
+    "callback_pc": "81199b74"
+  },
+  "native_callback_before_after": [
+    {
+      "ready": 0,
+      "gate_value": 0,
+      "task_state": 1,
+      "debug_prints": 0
+    },
+    {
+      "ready": 1,
+      "gate_value": 1,
+      "task_state": 0,
+      "debug_prints": 1
+    }
+  ],
+  "dirty_task_reset_cases": 285,
+  "constructor_cases": 2,
+  "active_wait_regression_cases": 96,
+  "archive_strategy": "Original common.fsys size/offsets preserved by in-place compression",
+  "stubs": [
+    "VM constructor allocation only",
+    "Script debug-print primitive"
+  ],
+  "skipped_context_instructions": [
+    "8022f8c0",
+    "8022f9a4"
+  ],
+  "limits": [
+    "Isolated PPC replay of captured memory, not full Dolphin continuation",
+    "No rendered battle or portrait validation",
+    "No real save persistence test"
+  ]
+}

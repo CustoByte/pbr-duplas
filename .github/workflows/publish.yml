@@ -15,5 +15,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release upload v0.6.0-experimental .github/release-assets/PBR-Duplas-Aplicador-Windows.zip .github/release-assets/aplicador-core.zip .github/release-assets/update.json .github/release-assets/SHA256SUMS.txt --repo "$GITHUB_REPOSITORY" --clobber
-          gh release edit v0.6.0-experimental --repo "$GITHUB_REPOSITORY" --draft=false --latest
+          tag=$(jq -r .version .github/release-assets/update.json)
+          [[ "$tag" =~ ^v[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9.-]+)?$ ]]
+          gh release upload "$tag" .github/release-assets/PBR-Duplas-Aplicador-Windows.zip .github/release-assets/aplicador-core.zip .github/release-assets/update.json .github/release-assets/SHA256SUMS.txt --repo "$GITHUB_REPOSITORY" --clobber
+          gh release edit "$tag" --repo "$GITHUB_REPOSITORY" --draft=false --latest

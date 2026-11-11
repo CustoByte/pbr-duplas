@@ -22,7 +22,7 @@ O original fica intacto. Caminhos e estado ficam em `%LOCALAPPDATA%\PBR-Duplas`;
 
 ## Estado da versão
 
-A candidata v6 modifica seleção/formato de campanha e limites de equipes/séries para duplas com quatro Pokémon. **Não inclui cooperativo online.** As regras especiais, batalhas e persistência real ainda exigem teste no jogo.
+A candidata v7 modifica seleção/formato de campanha e limites de equipes/séries para duplas com quatro Pokémon. **Não inclui cooperativo online.** As regras especiais, batalhas e persistência real ainda exigem teste no jogo.
 
 Passaram 23 testes dos scripts em PowerShell 7/Linux com imagens artificiais, feed local e uma ferramenta simulando o DolphinTool. Incluem atualizações sucessivas, cache/offline, caminhos com espaços/acentos, adição/remoção de arquivos, falhas, backup e abertura simulada. A interface Windows/PowerShell 5.1 e a conversão de imagens reais não foram executadas nesse ambiente. A conferência de arquivos é distinta da validação de gameplay. Veja [VERIFICACAO.json](VERIFICACAO.json).
 
@@ -35,3 +35,13 @@ O bootstrap consulta `releases/latest/download/update.json`. O manifesto publica
 Para uma atualização, preparar e verificar o núcleo, atualizar o manifesto e publicar os assets do novo lançamento juntos. Manter o formato do manifesto compatível com o bootstrap e a mesma identidade do jogo para continuar usando o save.
 
 A primeira publicação foi conferida por download público: manifesto, núcleo e ZIP inicial coincidem byte a byte com os artefatos locais. O bootstrap distribuído também consultou o canal HTTPS real, baixou e verificou o núcleo e entregou a execução ao aplicador. Esse teste parou intencionalmente na validação de uma imagem ausente; não executou o jogo. Registro em [PUBLICACAO.json](PUBLICACAO.json).
+
+## Correção da introdução na v7
+
+Um estado de travamento enviado pelo jogador permitiu identificar `maincallback` bloqueado antes de executar: tipo de espera 2, índice 138 (fora dos 16 índices válidos), valor esperado 357088. O reset nativo de tarefas não limpava esses campos. A v7 inicializa o objeto completo na construção e limpa a condição de espera ao reutilizar uma tarefa, preservando os buffers alocados e o comportamento de esperas válidas.
+
+No replay isolado da memória capturada, a v6 mantém o callback bloqueado e o indicador de liberação em zero; a v7 executa o callback até o fim e coloca o indicador em um. Passaram 285 casos de reset com memória suja, dois de construção e 96 comparações de esperas ativas. A única chamada de script substituída nesse replay é a impressão de diagnóstico; a alocação é substituída apenas nos testes de construção. Duas instruções de contexto paired-single são puladas no harness de CPU escalar. Veja [CORRECAO-INTRODUCAO-v7.json](CORRECAO-INTRODUCAO-v7.json). Não é uma continuação completa no Dolphin.
+
+A tabela modificada agora é recomprimida no slot original: common.fsys mantém o tamanho de 441.664 bytes, todos os offsets e os demais recursos comprimidos. A tabela passa de 1.179 para 1.146 bytes comprimidos. As tabelas de modelos/personagens permanecem idênticas; a aparência de Nate e dos demais personagens ainda precisa de conferência visual no jogo.
+
+**Após atualizar, inicie normalmente e carregue o save da campanha. Não carregue um save state da v6: ele restaura o código e a memória antigos.** O arquivo enviado pelo jogador e a memória extraída permanecem privados e não estão neste repositório. Os verificadores e o compressor estão em [mod-source](mod-source); o replay exige o estado privado correspondente.
