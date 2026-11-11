@@ -1,5 +1,7 @@
 # Pokémon Battle Revolution — campanha em duplas
 
+[Histórico da conversa e contexto para continuar em outro computador](historico/conversa-2026-11-11.md). A exportação de 11/11/2026 é parcial: as respostas antigas que não puderam ser recuperadas estão sinalizadas no arquivo.
+
 Aplicador experimental para Windows 10/11 e macOS 12+. Utiliza sua imagem original USA **RPBE01, revisão 0** e o DolphinTool de uma instalação recente do Dolphin. Este repositório não contém a imagem completa do jogo nem saves.
 
 [**Baixar o aplicador para Windows**](https://github.com/CustoByte/pbr-duplas/releases/latest/download/PBR-Duplas-Aplicador-Windows.zip)
