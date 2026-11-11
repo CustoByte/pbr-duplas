@@ -1,0 +1,19 @@
+name: Publish verified applicator assets
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Verify release files
+        working-directory: .github/release-assets
+        run: sha256sum --check SHA256SUMS.txt
+      - name: Upload and publish prepared release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release upload v0.6.0-experimental .github/release-assets/PBR-Duplas-Aplicador-Windows.zip .github/release-assets/aplicador-core.zip .github/release-assets/update.json .github/release-assets/SHA256SUMS.txt --repo "$GITHUB_REPOSITORY" --clobber
+          gh release edit v0.6.0-experimental --repo "$GITHUB_REPOSITORY" --draft=false --latest
