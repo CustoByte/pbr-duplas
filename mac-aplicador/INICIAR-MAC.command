@@ -1,6 +1,7 @@
 #!/bin/bash
 # Stable native macOS bootstrap; download/update only from the user's repository.
-set -euo pipefail
+set -Eeuo pipefail
+trap 'printf "ERRO na linha %s: %s\n" "$LINENO" "$BASH_COMMAND" >&2' ERR
 PBR_HERE="$(cd "$(dirname "$0")" && pwd)"
 PBR_DATA="${PBR_DATA_ROOT:-$HOME/Library/Application Support/PBR-Duplas}"
 PBR_FEED="${PBR_FEED_URL:-https://github.com/CustoByte/pbr-duplas/releases/latest/download/update.json}"

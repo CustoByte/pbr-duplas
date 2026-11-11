@@ -1,6 +1,7 @@
 #!/bin/bash
 # macOS 12+: native tools only. No Python, DolphinTool, extraction or image writes.
-set -euo pipefail
+set -Eeuo pipefail
+trap 'printf "ERRO na linha %s: %s\n" "$LINENO" "$BASH_COMMAND" >&2' ERR
 PBR_CORE="$(cd "$(dirname "$0")" && pwd)"
 PBR_DATA="${PBR_DATA_ROOT:-$HOME/Library/Application Support/PBR-Duplas}"
 PBR_STATE="$PBR_DATA/config.plist"
