@@ -1,62 +1,88 @@
-# Campanha cooperativa — base de controle em desenvolvimento
+# Campanha cooperativa em desenvolvimento
 
-**Este ramo não oferece ainda um cooperativo jogável.** O código de entrada está desativado ao iniciar e não está no canal automático de atualização. A distribuição atual continua v0.9.1-monferno.
+**Este ramo ainda não oferece um cooperativo jogável.** O protótipo fica desativado ao iniciar e não está no canal automático de atualização. A versão distribuída continua v0.9.1-monferno. Saves e bancos de memória privados não são publicados.
 
 ## Regras confirmadas
 
-- Uma campanha/save e um passe com o time compartilhado; batalhas em duplas, com quatro escolhas.
-- Cada jogador escolhe dois integrantes diferentes do mesmo passe e controla os seus golpes, alvos e trocas.
+- Uma campanha/save e um passe compartilhado, com quatro Pokémon por batalha.
+- Cada jogador escolhe dois integrantes diferentes do mesmo passe e controla seus golpes, alvos e trocas.
 - O primeiro escolhido por cada jogador começa ativo; o segundo é sua reserva.
-- As reservas pertencem ao jogador que as escolheu. A troca normal não permite usar o Pokémon do parceiro.
-- Se um jogador perder seus dois Pokémon, o sobrevivente continua com os seus e pode controlar os dois ativos simultaneamente. Quem ficou sem Pokémon aguarda.
-- Os menus, diálogos e progressão da campanha pertencem ao jogador 1, mesmo se ele tiver perdido seus dois Pokémon naquela batalha.
+- A troca normal só permite a reserva do próprio jogador.
+- Se um jogador perder seus dois Pokémon, o sobrevivente pode controlar seus dois ativos restantes. Quem ficou sem Pokémon aguarda.
+- Menus, diálogos e progressão da campanha pertencem ao jogador 1, mesmo se ele tiver perdido seus dois Pokémon naquela batalha.
 
-O primeiro protótipo mantém a interface de escolhas sequenciais do jogo: a cada pedido de ação, o controle pertence ao dono daquele Pokémon. Ações para dois Pokémon do mesmo sobrevivente são duas decisões distintas. Interface simultânea e recuperação de uma sessão online interrompida ainda não estão definidas/implementadas.
+O protótipo mantém escolhas sequenciais na interface original. Duas ações do mesmo sobrevivente são decisões diferentes e exigem liberação dos botões entre elas. Interface simultânea e recuperação de sessão online interrompida continuam indefinidas.
 
-O modelo `coop_policy.py` representa as regras e as transições. As escolhas `(P1-A, P1-B)` e `(P2-A, P2-B)` produzem a ordem lógica `(P1-A, P2-A, P1-B, P2-B)`, com donos `(P1, P2, P1, P2)`. O dono acompanha a identidade lógica do integrante, não sua posição atual em campo. **Esse modelo ainda não está conectado ao empacotamento nativo do jogo.**
+`coop_policy.py` representa essas regras. As escolhas `(P1-A, P1-B)` e `(P2-A, P2-B)` geram a ordem `(P1-A, P2-A, P1-B, P2-B)`, com donos `(P1, P2, P1, P2)`. **A seleção nativa ainda não preenche essa tabela automaticamente.**
 
-## Entrada nativa já localizada e executada
+## Consulta de entrada e cursor
 
-A chamada de inicialização em `0x80006DC4` passa dois canais à construção do gerenciador. O gerenciador é obtido em `0x802492D8`; a contagem em `0x80249310`; cada controle em `0x802492E0`. Os objetos começam em `manager+0x38`, stride `0x928`. A atualização de botões em `0x80248A1C` mantém pressionados em `+0x20`, pressionados no quadro em `+0x1C` e quadro anterior em `+0x24`.
+O jogo inicializa dois canais na chamada em `0x80006DC4`. O gerenciador está acessível em `0x802492D8`, a contagem em `0x80249310` e cada controle em `0x802492E0`. Os objetos começam em `manager+0x38`, stride `0x928`. Pressionados ficam em `+0x20`; pressionados no quadro, em `+0x1C`.
 
-A rotina de consulta do jogo em `0x8005B5EC` recebe a máscara da consulta e os índices de controle. Foram identificadas 290 chamadas diretas a ela, distribuídas entre interfaces diferentes. O estado privado enviado confirma que o gerenciador tem dois canais. A execução isolada dessa rotina retorna máscaras diferentes para os dois canais quando seus caches são preparados explicitamente; a função de leitura não foi substituída.
+A função `0x8005B5EC` tem 290 chamadas diretas. Seus parâmetros mudam de significado conforme a máscara:
 
-`coop_input_router.py` contém uma transformação reproduzível, restrita ao SHA da v0.9.1, para encaminhar a leitura lógica do controle principal ao dono de uma escolha autorizada. Usa espaço vazio da seção reservada pela v9, em `0x8063C400`, e um bloco de estado em `0x8063C6C0`, sem ampliar a reserva.
+| Consulta | r4 | r5 |
+|---|---|---|
+| Botões brutos/consultas com os bits altos correspondentes | Controle físico consultado | Controle usado pela validação |
+| API normal do cursor | Identificador do botão selecionado na interface | Controle que fornece a entrada |
 
-O bloco tem assinatura `COOP`, habilitação, fase, dono, trava de liberação e contadores de decisão. Por padrão fica zerado/desativado. Durante menus, a consulta lógica principal mantém o controle 1; durante uma escolha autorizada, pode usar o 1 ou 2. Uma nova decisão exige soltar os botões antes de aceitar outro comando, inclusive quando o mesmo sobrevivente fará duas escolhas consecutivas. Controle ausente/desconectado bloqueia a leitura sem transferi-la ao parceiro. Isso é uma proteção da entrada; ainda não é uma tela de pausa/reconexão.
+Essa distinção foi confirmada nas capturas e nas instruções nativas. O roteador agora preserva `r4` nas consultas de cursor, alterando somente `r5`. Nas consultas brutas aplicáveis, encaminha os dois índices. Consultas explícitas a outros controles e consultas de conexão preservam o caminho nativo.
 
-O roteador cobre consultas ao controle lógico principal. Consultas explícitas a outros controles e consultas de conexão continuam nativas e precisam ser auditadas nas interfaces reais antes da ativação. Não resolve sozinho propriedade de reservas, seleção de alvos, cancelamento ou confirmação. Não há nenhum código que atualmente detecte a fase de batalha e habilite esse bloco.
+`coop_input_router.py` aceita somente a base de SHA-256 `10913e96306bd0f8ef85f07c1d95d73ca90cbe923added8b513809640163fe96`. Usa `0x8063C400` e estado de 32 bytes em `0x8063C6C0`. Nova decisão bloqueia entrada até o dono soltar os botões, inclusive se ele continuar sendo o mesmo. Controle ausente/desconectado bloqueia sem transferir a escolha ao parceiro. Ainda não há tela de reconexão.
 
-## Verificações concluídas
+## Ponte experimental para o ator
 
-- 242 comparações com o protótipo desativado, preservando a leitura original.
-- 121 casos em menus usando o controle principal original.
-- 220 leituras por dono/fase, com os caminhos PowerPC originais e o roteador.
-- Liberação de botões entre decisões, inclusive duas ações consecutivas do mesmo jogador; desconexão e falta de canal sem assumir o controle pelo parceiro.
-- Oito testes do contrato de propriedade, incluindo as 360 ordens possíveis de quatro escolhas de um passe de seis, reservas, desmaios, sobrevivente com dois ativos e retorno dos menus ao jogador 1.
+As capturas privadas do Dolphin 2609b permitem executar duas famílias de interface efetivamente registradas:
 
-Os caches de botões e os campos de conexão foram preparados como entradas explícitas dos testes. Não houve leitura de hardware, renderização, partida com dois controles nem sessão online. O estado privado não está publicado. Registro: [VERIFICACAO-ENTRADAS.json](VERIFICACAO-ENTRADAS.json).
+| Captura | Modo nativo | Posição ativa | Rotina registrada | Retorno da consulta de entrada |
+|---|---|---|---|---|
+| Primeira | 2 | 0 | `0x80061C98` | `0x80062180` |
+| Segunda | 6 | 1 | `0x80061598` | `0x8006180C` |
 
-Para executar somente o contrato em Python: `python -m unittest discover -s coop -p test_coop_policy.py`. O replay PowerPC também requer as dependências em `mod-source/requirements-dev.txt`, `mod-source` e `coop` no caminho de módulos, os binários locais correspondentes e os bancos privados MEM1/MEM2.
+O registro de callbacks está em `0x804E60F0`, o identificador da interface em SDA `-0x7E1C` e o objeto de comandos em `0x8044DF88`. Os campos `+0x64` e `+0x6E` indicam posição ativa e lado/controle lógico. Encontrar uma função no executável, sozinho, não é tratado como prova de que ela controla a tela capturada.
+
+`coop_actor_bridge.py` cruza chamada de entrada, registro ativo, modo e posição. A rotina original `0x803CC838` fornece o índice de equipe correspondente à posição ativa; a ponte consulta então o dono daquele integrante. A propriedade não é calculada somente pela posição em campo. A tabela tem seis entradas: donos 0/1 ou 255 para integrantes sem atribuição.
+
+A habilitação automática exige tabela explicitamente instalada pelo teste, marca de validade e identificação da sessão correspondente. Sessão diferente, tabela ausente, posição inválida ou integrante sem dono bloqueiam a leitura nas interfaces reconhecidas. Chamadas de outras interfaces continuam nativas: a ponte ainda não cobre todos os menus de batalha.
+
+O gancho em `0x8005F364` incrementa o contador de decisão em cada abertura nativa de interface. Isso rearma a exigência de soltar os botões até para outro pedido igual do mesmo jogador. O estado fica zerado/desativado na imagem produzida.
+
+A geração usa apenas lacunas verificadas da seção reservada pela v0.9.1: restauração em `0x8063C200`, roteador em `0x8063C400`, ponte em `0x8063C540`, estado em `0x8063C6C0` e gancho de abertura em `0x8063C720`. Não amplia o DOL ou a reserva de memória. Rejeita base diferente e sobreposição com código existente.
+
+## Verificações e limites
+
+As três seções executáveis completas de cada captura, incluindo a seção do mod, têm 4.069.376 bytes idênticos à base v0.9.1. Dados de execução não são comparados com seus valores iniciais no disco. `verify_coop_capture.py` rejeita divergência no código e exporta somente resultados.
+
+O roteador isolado passou em 242 comparações desativado, 121 casos de menu, 220 leituras por dono/fase e 20 casos de confirmação/cancelamento preservando o cursor. As consultas de cursor desse teste usam os flags nativos de supressão de sons. Os oito testes do contrato incluem as 360 ordens de quatro escolhas de um passe de seis.
+
+O replay das interfaces em `verify_coop_actor.py` cobre:
+
+- Comportamento nativo preservado com o protótipo desativado, incluindo direções, confirmação e cancelamento.
+- Confirmação/cancelamento pelo dono correto; comandos do outro jogador não avançam a decisão.
+- Identificador do botão, pilha e registradores não voláteis preservados.
+- Consulta de propriedade pelo índice de equipe, com tabelas invertidas e reservas colocadas no mapeamento ativo.
+- Reordenação pela função original `0x803C96D4`, colocando dois integrantes do mesmo dono como ativos e encaminhando ambas as interfaces ao sobrevivente correspondente.
+- Bloqueio com tabela/sessão/posição/modo/índice inválidos; novos pedidos do mesmo dono; contador de decisão chegando ao limite de 32 bits.
+
+Botões, conexão e tabela de donos são entradas preparadas. Parte dos mapeamentos é preparada diretamente; os casos de sobrevivente usam a reordenação nativa. **Não há simulação de perda de HP/desmaios ou troca completa pela interface.** O replay das interfaces substitui apenas os sons de feedback 1/2/3 em `0x8005C04C`; pula quatro instruções de contexto paired-single em `0x8000AD80`, `0x8000AD88`, `0x8000AE88` e `0x8000AE90`. Entrada, obtenção do integrante, cursor, reordenação e transições da interface executam instruções originais.
+
+Não houve renderização cooperativa, teste com dois controles físicos ou sessão NetPlay. Os relatórios contêm os números exatos, sem saves, RAM ou equipes:
+
+- [VERIFICACAO-ENTRADAS.json](VERIFICACAO-ENTRADAS.json)
+- [VERIFICACAO-TELA-GOLPES.json](VERIFICACAO-TELA-GOLPES.json)
+- [VERIFICACAO-SEGUNDA-TELA.json](VERIFICACAO-SEGUNDA-TELA.json)
+- [VERIFICACAO-ATORES.json](VERIFICACAO-ATORES.json)
+
+Para o contrato sem binários: `python -m unittest discover -s coop -p test_coop_policy.py`.
+
+Para o replay privado, instale `mod-source/requirements-dev.txt` e coloque `mod-source` e `coop` no caminho de módulos. Extraia as capturas localmente com `mod-source/read_dolphin_state.py`, sem copiá-las para o repositório. Execute `coop/verify_coop_actor.py --source <main.dol-v0.9.1> --captures <primeira-pasta-privada> <segunda-pasta-privada> --output <relatorio.json>`. Isso gera um relatório, não um lançamento jogável.
+
+## Próximas integrações
+
+Faltam escolha de dois integrantes por pessoa, criação automática da tabela e ordenação inicial intercalada; cobertura das demais interfaces de comandos/alvos; restrição de reservas; substituições após desmaios; descarte da tabela ao terminar a batalha; retorno completo aos menus do jogador 1. Depois será possível testar uma partida completa com dois controles e NetPlay. Não é necessário outro estado para repetir esta etapa.
 
 ## Transporte online
 
-O código oficial do Dolphin contém `WiimoteMapping` e `WiimoteUpdate`, com serialização e filas separadas por Wii Remote emulado. Isso sustenta usar NetPlay como transporte, mas não comprova compatibilidade do mod numa sessão real. Referência: [NetPlayClient.cpp](https://github.com/dolphin-emu/dolphin/blob/master/Source/Core/Core/NetPlayClient.cpp).
+O código oficial do Dolphin contém `WiimoteMapping` e `WiimoteUpdate`, com filas por Wii Remote emulado. Isso sustenta investigar NetPlay, mas não comprova compatibilidade do mod numa sessão real. Referência: [NetPlayClient.cpp](https://github.com/dolphin-emu/dolphin/blob/master/Source/Core/Core/NetPlayClient.cpp).
 
-O primeiro teste deve usar dois PCs Windows com a mesma versão do Dolphin, o mesmo conteúdo de jogo/mod e mapeamento de um Wii Remote emulado por jogador. Formatos diferentes de aplicação — RVZ reconstruída no Windows e descritor Riivolution no Mac — ainda precisam de validação de equivalência para NetPlay. A campanha compartilhada deve partir do save do anfitrião, com preservação dos dados locais; a sincronização de save e a gravação de progresso precisam ser testadas.
-
-Adicionar o Dolphin à Steam como jogo externo não habilita automaticamente Remote Play Together. Streaming continua sendo uma alternativa de transporte futuro; não substitui as regras de controle dentro do jogo.
-
-## Próxima integração e dado que falta
-
-Falta identificar os eventos reais que informam qual Pokémon está escolhendo uma ação, qual interface está ativa e quando ela encerra/cancela a escolha. Também falta integrar as quatro escolhas por dono, a ordem inicial intercalada, os limites de reserva e as substituições após desmaios.
-
-Em 12/11/2026 foi recebida e decodificada uma segunda captura privada, agora na tela de golpes, produzida pelo Dolphin 2609b (formato de estado 192). A captura corresponde à batalha mostrada pelo jogador com Monferno e Grotle. As três seções executáveis carregadas — 4.069.376 bytes, incluindo a seção adicionada pela v0.9.1 — são idênticas à base esperada. Essa comparação cobre todo o código executável declarado no DOL; dados de execução não são comparados com os dados iniciais do disco.
-
-O mesmo replay de entrada passou com essa segunda memória: 242 comparações desativado, 121 casos de menu, 220 leituras por dono/fase e os oito testes de regras. Os valores de conexão e os botões continuam sendo entradas preparadas dos testes; isso não é evidência de dois controles físicos ou NetPlay funcionando. Registro público sem dados do save: [VERIFICACAO-TELA-GOLPES.json](VERIFICACAO-TELA-GOLPES.json).
-
-A comparação e o replay podem ser repetidos localmente com `verify_coop_capture.py --source <main.dol-v0.9.1> --diagnostics <pasta-privada-extraida> --output <relatorio.json>`, usando o mesmo ambiente de módulos e dependências do replay anterior. O verificador rejeita alterações nas seções executáveis. Os bancos RAM e o estado original permanecem privados.
-
-A detecção automática do Pokémon que está escolhendo ainda não foi demonstrada. A investigação encontrou rotinas de interface e estruturas de tarefas, mas uma rotina existente no executável, sozinha, não comprova que ela controla a tela capturada. Nenhum desses endereços candidatos foi ativado como gancho do cooperativo.
-
-Para comparar a passagem entre os dois integrantes, o próximo dado útil é uma captura na tela **“What will GROTLE do?”** da mesma batalha, depois de confirmar o golpe e, se solicitado, o alvo do Monferno. Essa segunda captura permite confrontar as estruturas antes e depois da troca de quem escolhe, sem concluir propriedade apenas pela posição em campo. A integração de escolhas, reservas e desmaios e os testes reais continuam pendentes.
+O primeiro teste deve usar dois PCs Windows com a mesma versão do Dolphin, o mesmo conteúdo e um Wii Remote emulado por jogador. Equivalência entre RVZ reconstruída e aplicação Riivolution no Mac, sincronização do save do anfitrião e gravação do progresso ainda precisam de validação. Adicionar o Dolphin à Steam como jogo externo não habilita automaticamente Remote Play Together.

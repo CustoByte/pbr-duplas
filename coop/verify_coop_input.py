@@ -5,17 +5,30 @@ original game read, manager accessor and router execute in PPC without stubs.
 """
 import argparse,json,struct,unittest
 from pathlib import Path
+from unicorn import UC_HOOK_CODE
 from unicorn import ppc_const as ppc
 from prepare_campaign_doubles import file_offset,sha
 from verify_vm_wait import Replay
 from coop_input_router import prepare_router,assemble,CODE,STATE,ENTRY,state_bytes
 from test_coop_policy import PolicyTests
 
+# Paired-single stack saves/restores in the cursor-coordinate helper. Scalar
+# f30/f31 are separately saved/restored by the native stfd/lfd instructions.
+# No cursor computation, game input, audio or controller getter is stubbed.
+CURSOR_CONTEXT_PSQ=(0x8000AD80,0x8000AD88,0x8000AE88,0x8000AE90)
+
+def allow_cursor_context(vm):
+    def hook(u,a,size,data):
+        if a in CURSOR_CONTEXT_PSQ:
+            u.reg_write(ppc.UC_PPC_REG_PC,a+4)
+    vm.uc.hook_add(UC_HOOK_CODE,hook)
+
 def verify(source,changed,diagnostics):
     if changed!=prepare_router(source):raise AssertionError('Router is not reproducible')
     before,after=Replay(diagnostics,source),Replay(diagnostics,source)
     after.uc.mem_write(CODE,assemble());off=file_offset(changed,ENTRY);after.uc.mem_write(ENTRY,changed[off:off+4])
     machines=(before,after);manager=before.call(0x802492D8)
+    for vm in machines:allow_cursor_context(vm)
     if before.call(0x80249310)!=2:raise AssertionError('Unexpected active pad count')
     def seed(p0,p1):
         for vm in machines:
@@ -70,11 +83,30 @@ def verify(source,changed,diagnostics):
     assert read(after)==0x400
     for phase,owner in[(255,0),(2,2)]:
         after.uc.mem_write(STATE,state_bytes(enabled=1,phase=phase,owner=owner,epoch=1));assert read(after)==0
+    cursor_cases=0
+    for owner in (0,1):
+        for button in range(1,6):
+            for mask,expected in [(0x800,0x80000000|button),(0x400,0xFFFFFFFF)]:
+                for vm in machines:
+                    for offset in (-0x6768,-0x6764,-0x6760):vm.put(0x8062D600+offset,0)
+                after.uc.mem_write(STATE,state_bytes(enabled=1,phase=2,owner=owner,epoch=1))
+                seed(0,0)
+                # Native flags 0x08/0x20 suppress confirm/cancel feedback
+                # sounds here; the cursor and input paths remain native.
+                assert after.call(ENTRY,(0x29,button,0,0))==0
+                seed(mask if owner==0 else 0,mask if owner==1 else 0)
+                # In the real cursor API, r4 must remain the focused button.
+                assert after.call(ENTRY,(0x29,button,0,0))==expected
+                assert before.call(ENTRY,(0x29,button,owner,0))==expected
+                cursor_cases+=1
     suite=unittest.defaultTestLoader.loadTestsFromTestCase(PolicyTests)
     result=unittest.TextTestRunner(verbosity=1).run(suite)
     if not result.wasSuccessful():raise AssertionError('Ownership policy failed')
     return {'status':'passed','disabled_comparisons':disabled,'p1_only_menu_cases':menus,'routed_owner_phase_read_cases':owner_cases,
         'handoff_release_barrier':'passed','same_owner_next_actor_barrier':'passed','disconnect_no_fallback_to_p1':'passed',
+        'cursor_confirm_cancel_cases':cursor_cases,'cursor_focus_preserved':'passed',
+        'cursor_query_flags':'0x29 (native confirm/cancel sound suppression)',
+        'paired_single_context_instructions_skipped':[f'{a:08x}' for a in CURSOR_CONTEXT_PSQ],
         'policy_tests':result.testsRun,'actual_game_input_functions':['8005b5ec','802492e0','802492d8','80249310'],
         'controller_count_in_supplied_state':2,'game_input_stubs':[],
         'changed_dol_sha256':sha(changed),'status_in_game':'Not integrated; disabled at boot',
