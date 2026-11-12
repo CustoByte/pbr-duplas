@@ -11,3 +11,5 @@ Dados-Dolphin/
 *.s[0-9][0-9]
 *.bin
 diagnostics/
+__pycache__/
+*.pyc
