@@ -23,7 +23,8 @@ INPUT_ADAPTER=0x8063EA80
 HOOKS={0x80159B6C:('coop_reset',0x8063EA00),
        0x80159DB8:('choose_adapter',0x8063EA08),
        0x8015A1C4:('pack_adapter',0x8063EA10),
-       0x80156364:('coop_cleanup',0x8063EA18)}
+       0x80156364:('coop_cleanup',0x8063EA18),
+       0x801722BC:('coop_validate_switch',0x8063EB50)}
 
 def stub_words(symbols,layout,source):
     words={};labels={};fix=[];pc=STUBS
@@ -54,6 +55,7 @@ def stub_words(symbols,layout,source):
     e(d(32,0,1,0x34));e(0x7C0803A6);e(d(14,1,1,0x30));load(7,STATE)
     e(d(11,0,12,0));e(0x41820000|((BRIDGE-pc)&0xFFFC));e(branch(pc,layout['manual']))
     if pc>DRAFT:raise ValueError('Input adapter overlaps draft state')
+    pc=0x8063EB40;load(7,STATE);e(branch(pc,layout['manual']))
     for a,n,c in fix:
         delta=labels[n]-a
         if c and not -0x8000<=delta<0x8000:raise ValueError('Conditional branch range')
@@ -65,7 +67,8 @@ def prepare_draft(source,payload,manifest):
     if manifest['address']!=PAYLOAD or manifest['bytes']!=len(payload) or manifest['payload_sha256']!=sha(payload):
         raise ValueError('Draft payload manifest mismatch')
     symbols=manifest['symbols']
-    for name in ('coop_reset','coop_choose','coop_pack','coop_cleanup','coop_input_scope'):
+    for name in ('coop_reset','coop_choose','coop_pack','coop_cleanup','coop_input_scope',
+                 'coop_party_read','coop_validate_switch'):
         if not PAYLOAD<=symbols[name]<PAYLOAD+len(payload):raise ValueError('Symbol outside payload')
     if PAYLOAD+len(payload)>STUBS:raise ValueError('Payload overlaps stubs')
     offset=word(actor,8)
@@ -90,6 +93,9 @@ def prepare_draft(source,payload,manifest):
     for address,(name,_) in HOOKS.items():
         target={'choose_adapter':CHOOSE_ADAPTER,'pack_adapter':PACK_ADAPTER}.get(name,symbols.get(name))
         put(address,branch(address,target))
+    if word(source,file_offset(source,0x80063240))!=branch(0x80063240,0x8005B5EC,True):
+        raise ValueError('Native party input call mismatch')
+    put(0x80063240,branch(0x80063240,symbols['coop_party_read'],True))
     # Both arena-low aliases already use this clamp; raise its minimum to
     # include the new payload, adapters and state before any heap allocation.
     if word(actor,file_offset(actor,0x8063C704))!=d(14,4,4,-0x3800):raise ValueError('Arena clamp mismatch')

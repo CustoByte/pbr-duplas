@@ -85,6 +85,22 @@ Os testes usam os seis integrantes reais de um passe obtido pelo accessor nativo
 
 Não houve renderização da seleção, navegação completa por dois controles físicos, inicialização completa da batalha a partir dessa tela nem NetPlay. O cabeçalho de heap capturado é preservado, mas as alocações do heap antigo não são reproduzidas durante a seleção isolada. O indicador visual de turno e a cobertura dos torneios com telas especiais ainda precisam ser integrados e testados.
 
+## Trocas e substituições por dono
+
+A nova camada em `coop_draft.c` atende a tela nativa de equipe `0x80062B50`, nos modos 3 e 8, e a validação original de troca `0x801722BC`. As posições ativas e as linhas da tela são convertidas para o índice lógico pela função original `0x803CC838`; a propriedade continua ligada ao integrante, mesmo depois de uma reordenação.
+
+A leitura de HP usa o getter nativo `0x803E100C`, campo `0xA2`, nos quatro integrantes reais do contexto de batalha. Trocas voluntárias só aceitam uma reserva viva do próprio dono. Após um desmaio, esse dono escolhe sua reserva; se ambos os integrantes dele estiverem sem HP, a posição passa ao parceiro, que pode colocar sua reserva em campo. Após a reordenação nativa, a ponte de comandos já identifica os dois ativos como pertencentes ao sobrevivente. Quando não há reserva válida, a camada não inventa um integrante para preencher a posição.
+
+A entrada da tela é encaminhada ao dono correspondente, com nova barreira de liberação ao mudar o jogador ou a fase. Confirmações de integrante indisponível são suprimidas, mantendo o foco. Cancelamento segue o processamento nativo, pelo controle correto. O gancho de validação também cobre consultas fora desse ponto de entrada: primeiro executa os bloqueios originais de HP, ativo, escolha pendente e aprisionamento; depois acrescenta a verificação de dono. Contextos inimigos continuam nativos. Tabela/sessão/contexto incompatíveis impedem uma nova escolha cooperativa válida. Ainda não há indicação visual explicando esse bloqueio.
+
+O adaptador de entrada fica em `0x8063EB40` e o retorno à validação original em `0x8063EB50`, separados do estado em `0x8063EB00`. O código compilado ocupa 4.524 bytes e cabe na reserva anterior; o limite de ArenaLo permanece `0x8063F000`. A imagem gerada continua desativada ao iniciar.
+
+[VERIFICACAO-TROCAS-COOP.json](VERIFICACAO-TROCAS-COOP.json) registra 9.216 comparações com o contrato de propriedade, cobrindo todos os 16 padrões de HP, pares ordenados de ativos, duas atribuições de dono, ambas as posições e as seis linhas, nas duas capturas. Inclui 7.684 rejeições nativas preservadas, 72 verificações de entrada, 72 transições da rotina real da tela, 144 comparações da validação desativada, 84 comparações da entrada desativada, oito casos com reordenação nativa para o sobrevivente, 34 guardas e 12 casos de cada: cancelamento, controle desconectado e barreira de liberação.
+
+**Esses são testes nativos isolados, não uma batalha completa no Dolphin.** HP é alterado pelo setter original `0x803DEB54`, sem executar dano/animações de desmaio. A estrutura de validação e a equipe na ordem de exibição são reconstruídas; não foram capturadas numa substituição real. Os padrões de reordenação exaustivos, botões e donos são entradas preparadas. A rotina real da tela parte da fase pronta para entrada, com foco preparado; não percorre toda a animação de abertura. Entrada, validação, getters, setter de HP e reordenação não são substituídos; mantêm-se as exceções estreitas de áudio/contexto PSQ do replay anterior. O texto do erro nativo `0x505A` ainda não foi conferido visualmente.
+
+Para repetir com os arquivos privados e a imagem interna: `python coop/verify_coop_switch.py --source <main.dol-v0.9.1> --changed <copia-interna.dol> --captures <primeira-pasta-privada> <segunda-pasta-privada> --output <relatorio.json>`. A regressão das 720 seleções foi repetida com essa mesma imagem; o relatório atualizado está em [VERIFICACAO-SELECAO-COOP.json](VERIFICACAO-SELECAO-COOP.json).
+
 ## Verificações e limites
 
 As três seções executáveis completas de cada captura, incluindo a seção do mod, têm 4.069.376 bytes idênticos à base v0.9.1. Dados de execução não são comparados com seus valores iniciais no disco. `verify_coop_capture.py` rejeita divergência no código e exporta somente resultados.
@@ -109,6 +125,7 @@ Não houve renderização cooperativa, teste com dois controles físicos ou sess
 - [VERIFICACAO-SEGUNDA-TELA.json](VERIFICACAO-SEGUNDA-TELA.json)
 - [VERIFICACAO-ATORES.json](VERIFICACAO-ATORES.json)
 - [VERIFICACAO-SELECAO-COOP.json](VERIFICACAO-SELECAO-COOP.json)
+- [VERIFICACAO-TROCAS-COOP.json](VERIFICACAO-TROCAS-COOP.json)
 
 Para o contrato sem binários: `python -m unittest discover -s coop -p test_coop_policy.py`.
 
@@ -116,7 +133,7 @@ Para o replay privado, instale `mod-source/requirements-dev.txt` e coloque `mod-
 
 ## Próximas integrações
 
-A escolha de dois por pessoa, a criação automática da tabela e a ordenação intercalada estão implementadas no protótipo nativo e verificadas isoladamente. Faltam o indicador visual de turno, as demais interfaces de comandos/alvos e telas especiais; restrição de reservas; substituições após desmaios; descarte da tabela ao terminar a batalha e validação completa dos menus. Depois será possível testar uma partida completa com dois controles e NetPlay. Não é necessário outro estado para repetir os testes já registrados.
+A escolha de dois por pessoa, a criação automática da tabela e a ordenação intercalada estão implementadas no protótipo nativo e verificadas isoladamente. As restrições de reserva e a escolha de substituto por dono também estão implementadas e verificadas isoladamente. Faltam o indicador visual de turno, as demais interfaces de comandos/alvos e telas especiais; integração visual e teste de uma sequência real de desmaio/substituição; descarte da tabela ao terminar a batalha e validação completa dos menus. Depois será possível testar uma partida completa com dois controles e NetPlay. Não é necessário outro estado para repetir os testes já registrados.
 
 ## Transporte online
 

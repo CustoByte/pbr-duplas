@@ -22,7 +22,7 @@
   ],
   "sdk_heap_header_preserved": "8063c800 EXPHeap",
   "reserved_mem1_end": "8063f000",
-  "prototype_sha256": "bb364e2715db2c91319edd085fc55a069e2715c051f336f398af6bbb7c3812c9",
+  "prototype_sha256": "797510f68d6affcddb38a96a2849976bcc36e1c15c09c8e9515d9efc4ed4a1e5",
   "enabled_at_boot": false,
   "private_data_published": false,
   "limits": [

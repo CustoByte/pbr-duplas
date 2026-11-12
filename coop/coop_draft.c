@@ -22,11 +22,105 @@ typedef struct {
 #define COOP 0x434F4F50u
 #define UI_PTR 0x806258C8u
 #define REGISTRY 0x804E60F0u
+#define BATTLE_UI 0x8044DF88u
 
 extern void original_reset(void);
 extern u32 original_choose(u32 slot, u32 side, u32 sound, u32 details);
 extern u32 original_pack(void);
 extern void original_cleanup(void);
+extern u32 original_validate_switch(u32 row, u32 selector);
+extern u32 cooperative_read(u32 flags, u32 focus, u32 pad, u32 assist);
+
+typedef struct {
+    u32 context, living, active[2];
+} Battle;
+
+static int battle_enabled(void) {
+    return WORD(S) == COOP && S[4] == 1 && S[8] == 1;
+}
+
+static int battle_snapshot(Battle *out) {
+    u32 i, counts[2] = {0, 0}, ctx;
+    if (!S[9] || WORD(BATTLE_UI + 0xB4) != WORD(S + 0x1C)) return 0;
+    for (i = 0; i < 6; ++i) {
+        u8 owner = S[10+i];
+        if (i < 4) {
+            if (owner > 1) return 0;
+            ++counts[owner];
+        } else if (owner != 255) return 0;
+    }
+    if (counts[0] != 2 || counts[1] != 2) return 0;
+    ctx = ((u32 (*)(void))0x803B0008u)();
+    if (!ctx || ((u32 (*)(u32,u32))0x803B00E0u)(ctx,0) != 4) return 0;
+    out->context = ctx; out->living = 0;
+    for (i = 0; i < 4; ++i) {
+        u32 mon = ((u32 (*)(u32,u32,u32))0x803B0184u)(ctx,0,i);
+        if (!((u32 (*)(u32,u32,u32))0x803E100Cu)(mon,5,0)) return 0;
+        if (((u32 (*)(u32,u32,u32))0x803E100Cu)(mon,0xA2,0)) out->living |= 1u << i;
+    }
+    out->active[0] = ((u32 (*)(u32,u32))0x803CC838u)(0,0);
+    out->active[1] = ((u32 (*)(u32,u32))0x803CC838u)(0,1);
+    return out->active[0] < 4 && out->active[1] < 4 && out->active[0] != out->active[1];
+}
+
+/* A fainted member keeps its owner. Transfer the vacant position only after
+ * that owner has no living member left, never merely because its reserve died. */
+static u32 switch_owner(const Battle *battle, u32 position) {
+    u32 i, owner = S[10+battle->active[position]];
+    for (i = 0; i < 4; ++i)
+        if (S[10+i] == owner && (battle->living & (1u << i))) return owner;
+    return owner ^ 1u;
+}
+
+static int switch_allowed(const Battle *battle, u32 position, u32 candidate) {
+    if (candidate >= 4 || !(battle->living & (1u << candidate)) ||
+        candidate == battle->active[0] || candidate == battle->active[1]) return 0;
+    return S[10+candidate] == switch_owner(battle,position);
+}
+
+u32 coop_party_read(u32 flags, u32 focus, u32 pad, u32 assist) {
+    Battle battle; u32 handle, position, mode, owner, phase, result, button, member;
+    if (!battle_enabled())
+        return ((u32 (*)(u32,u32,u32,u32))0x8005B5ECu)(flags,focus,pad,assist);
+    mode = BYTE(0x80626EE4u); position = HALF(BATTLE_UI + 0x64);
+    handle = WORD(0x806257E4u); /* SDA -0x7E1C, primary command callback. */
+    if (position > 1 || mode != 3 + 5*position || HALF(BATTLE_UI + 0x6E) != 0 ||
+        handle >= 32 || !BYTE(REGISTRY + 0x12C + handle) ||
+        WORD(REGISTRY + 0x2C + 4*handle) != 0x80062B50u)
+        return ((u32 (*)(u32,u32,u32,u32))0x8005B5ECu)(flags,focus,pad,assist);
+    if (!battle_snapshot(&battle)) return 0;
+    owner = switch_owner(&battle,position);
+    phase = battle.living & (1u << battle.active[position]) ? 4 : 5;
+    if (S[5] != phase || S[6] != owner) {
+        S[7] = 1; WORD(S + 0x10) += 1;
+    }
+    S[5] = (u8)phase; S[6] = (u8)owner;
+    result = cooperative_read(flags,focus,pad,assist);
+    button = result & 0xFFFFu;
+    if (!(result & 0x80000000u) || button < 1 || button > 6) return result;
+    member = ((u32 (*)(u32,u32))0x803CC838u)(0,button-1);
+    /* Retain hover/focus but suppress confirmation of an unavailable member. */
+    return switch_allowed(&battle,position,member) ? result : button;
+}
+
+u32 coop_validate_switch(u32 row, u32 selector) {
+    Battle battle; u32 result, client, candidate;
+    if (!battle_enabled()) return original_validate_switch(row,selector);
+    client = WORD(selector + 0x1C);
+    /* Clients 0/2 are the two positions on our shared side. Enemy and other
+     * native selection contexts keep their original validation. */
+    if (client != 0 && client != 2) return original_validate_switch(row,selector);
+    if (row >= 6) return 0x505Au;
+    result = original_validate_switch(row,selector);
+    if (result) return result; /* Keep native HP, active, pending and trap errors. */
+    if (!battle_snapshot(&battle) || WORD(selector + 4) != battle.context) return 0x505Au;
+    candidate = BYTE(selector + 0x20 + row);
+    if (!switch_allowed(&battle,client/2,candidate)) {
+        BYTE(selector + 0xD) = (u8)row;
+        return 0x505Au; /* Existing native disallowed-trainer selection message. */
+    }
+    return 0;
+}
 
 static int enabled(void) { return D->magic == DRFT && D->enabled == 1; }
 static int binding(void) {

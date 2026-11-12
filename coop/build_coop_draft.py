@@ -17,6 +17,8 @@ original_reset = 0x8063EA00;
 original_choose = 0x8063EA08;
 original_pack = 0x8063EA10;
 original_cleanup = 0x8063EA18;
+cooperative_read = 0x8063EB40;
+original_validate_switch = 0x8063EB50;
 '''
 
 def build(source,output,toolchain=None):
