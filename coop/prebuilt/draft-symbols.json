@@ -1,0 +1,24 @@
+{
+  "compiler": "14.2.0",
+  "address": 2154025984,
+  "bytes": 8116,
+  "symbols": {
+    "battle_snapshot": 2154025984,
+    "switch_owner": 2154026600,
+    "recount": 2154026700,
+    "result_to_menu": 2154026884,
+    "coop_aux_read": 2154027180,
+    "coop_deliver_result": 2154028468,
+    "coop_read_result": 2154028528,
+    "coop_text": 2154028616,
+    "coop_party_read": 2154029548,
+    "coop_validate_switch": 2154030260,
+    "coop_reset": 2154030708,
+    "coop_choose": 2154031084,
+    "coop_pack": 2154031900,
+    "coop_cleanup": 2154032676,
+    "coop_input_scope": 2154032828
+  },
+  "source_sha256": "8f63bfb9a62ad736f0a3b1a4ea8dd3179c860b513cbe8b02d9879fefefac2dc2",
+  "payload_sha256": "e85d3ddabb3e735c9c0a26322e6828efb7cde0123c1e0c96cb2d0b7deb7e7e8b"
+}
