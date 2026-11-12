@@ -132,111 +132,131 @@
       "review_batch": 2,
       "number": 11,
       "original": "Zackary",
-      "replacement": null,
+      "replacement": "Lucas",
       "identity": "Main Street, Passionate Rider",
-      "approval": "awaiting-user-name",
-      "status": "not-applied",
+      "approval": "approved-by-user-delegation",
+      "status": "waiting-for-original-mes_common.fsys",
       "applied": false,
-      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html"
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename"
     },
     {
       "review_batch": 2,
       "number": 12,
       "original": "Aric",
-      "replacement": null,
+      "replacement": "Rafael",
       "identity": "Main Street, Three Brothers",
-      "approval": "awaiting-user-name",
-      "status": "not-applied",
+      "approval": "approved-by-user-delegation",
+      "status": "waiting-for-original-mes_common.fsys",
       "applied": false,
-      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html"
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename"
     },
     {
       "review_batch": 2,
       "number": 13,
       "original": "Melody",
-      "replacement": null,
+      "replacement": "Beatriz",
       "identity": "Main Street, Tomboy",
-      "approval": "awaiting-user-name",
-      "status": "not-applied",
+      "approval": "approved-by-user-delegation",
+      "status": "waiting-for-original-mes_common.fsys",
       "applied": false,
-      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html"
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename"
     },
     {
       "review_batch": 2,
       "number": 14,
       "original": "Elena",
-      "replacement": null,
+      "replacement": "Camila",
       "identity": "Main Street, Picnic Girl",
-      "approval": "awaiting-user-name",
-      "status": "not-applied",
+      "approval": "approved-by-user-delegation",
+      "status": "waiting-for-original-mes_common.fsys",
       "applied": false,
-      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html"
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename"
     },
     {
       "review_batch": 2,
       "number": 15,
       "original": "Ariel",
-      "replacement": null,
+      "replacement": "Gabriel",
       "identity": "Main Street, Youthful Couple",
-      "approval": "awaiting-user-name",
-      "status": "not-applied",
+      "approval": "approved-by-user-delegation",
+      "status": "waiting-for-original-mes_common.fsys",
       "applied": false,
-      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html"
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename"
     },
     {
       "review_batch": 2,
       "number": 16,
       "original": "Todd",
-      "replacement": null,
+      "replacement": "Felipe",
       "identity": "Main Street, Sci-Fi Maniac",
-      "approval": "awaiting-user-name",
-      "status": "not-applied",
+      "approval": "approved-by-user-delegation",
+      "status": "waiting-for-original-mes_common.fsys",
       "applied": false,
-      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html"
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename"
     },
     {
       "review_batch": 2,
       "number": 17,
       "original": "Damon",
-      "replacement": null,
+      "replacement": "Gustavo",
       "identity": "Waterfall, Pikachu Fan",
-      "approval": "awaiting-user-name",
-      "status": "not-applied",
+      "approval": "approved-by-user-delegation",
+      "status": "waiting-for-original-mes_common.fsys",
       "applied": false,
-      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html"
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename"
     },
     {
       "review_batch": 2,
       "number": 18,
       "original": "Harry",
-      "replacement": null,
+      "replacement": "Henrique",
       "identity": "Waterfall, Bug-Catching Man",
-      "approval": "awaiting-user-name",
-      "status": "not-applied",
+      "approval": "approved-by-user-delegation",
+      "status": "waiting-for-original-mes_common.fsys",
       "applied": false,
-      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html"
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename"
     },
     {
       "review_batch": 2,
       "number": 19,
       "original": "Desiree",
-      "replacement": null,
+      "replacement": "Juliana",
       "identity": "Waterfall, Leader-in-Training",
-      "approval": "awaiting-user-name",
-      "status": "not-applied",
+      "approval": "approved-by-user-delegation",
+      "status": "waiting-for-original-mes_common.fsys",
       "applied": false,
-      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html"
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename"
     },
     {
       "review_batch": 2,
       "number": 20,
       "original": "Sierra",
-      "replacement": null,
+      "replacement": "Fernanda",
       "identity": "Waterfall, Swimming Club Member",
-      "approval": "awaiting-user-name",
-      "status": "not-applied",
+      "approval": "approved-by-user-delegation",
+      "status": "waiting-for-original-mes_common.fsys",
       "applied": false,
-      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html"
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename"
     }
   ],
   "required_source": "mes_common.fsys from the original USA RPBE01 revision 0 image; verify catalogue before changing labels",
@@ -259,8 +279,9 @@
         11,
         20
       ],
-      "status": "awaiting-user-names",
-      "renames_applied": false
+      "status": "choices-complete",
+      "renames_applied": false,
+      "selection": "common-Brazilian-names-delegated-by-user"
     }
   ]
 }
