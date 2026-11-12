@@ -60,71 +60,207 @@
       "review_batch": 1,
       "number": 5,
       "original": "Annie",
-      "replacement": null,
+      "replacement": "Laura",
       "identity": "Gateway, Hiking Girl",
-      "approval": "awaiting-user-name",
-      "status": "not-applied",
+      "approval": "approved-by-user",
+      "status": "waiting-for-original-mes_common.fsys",
       "applied": false,
-      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html"
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html",
+      "action": "rename"
     },
     {
       "review_batch": 1,
       "number": 6,
       "original": "Cedric",
-      "replacement": null,
+      "replacement": "Alan",
       "identity": "Gateway, Traveling Guy",
-      "approval": "awaiting-user-name",
-      "status": "not-applied",
+      "approval": "approved-by-user",
+      "status": "waiting-for-original-mes_common.fsys",
       "applied": false,
-      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html"
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html",
+      "action": "rename"
     },
     {
       "review_batch": 1,
       "number": 7,
       "original": "Crystal",
-      "replacement": null,
+      "replacement": "Alice",
       "identity": "Gateway, Three Sisters",
-      "approval": "awaiting-user-name",
-      "status": "not-applied",
+      "approval": "approved-by-user",
+      "status": "waiting-for-original-mes_common.fsys",
       "applied": false,
-      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html"
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html",
+      "action": "rename"
     },
     {
       "review_batch": 1,
       "number": 8,
       "original": "Taylor",
-      "replacement": null,
+      "replacement": "Sara",
       "identity": "Main Street Colosseum leader",
+      "approval": "approved-by-user",
+      "status": "waiting-for-original-mes_common.fsys",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
+      "action": "rename"
+    },
+    {
+      "review_batch": 1,
+      "number": 9,
+      "original": "Marina",
+      "replacement": "Marina",
+      "identity": "Waterfall Colosseum leader",
+      "approval": "approved-by-user",
+      "status": "kept-original",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html",
+      "action": "keep"
+    },
+    {
+      "review_batch": 1,
+      "number": 10,
+      "original": "Rosie",
+      "replacement": "Luiza",
+      "identity": "Neon Colosseum leader",
+      "approval": "approved-by-user",
+      "status": "waiting-for-original-mes_common.fsys",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/neon-colosseum.html",
+      "action": "rename"
+    },
+    {
+      "review_batch": 2,
+      "number": 11,
+      "original": "Zackary",
+      "replacement": null,
+      "identity": "Main Street, Passionate Rider",
       "approval": "awaiting-user-name",
       "status": "not-applied",
       "applied": false,
       "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html"
     },
     {
-      "review_batch": 1,
-      "number": 9,
-      "original": "Marina",
+      "review_batch": 2,
+      "number": 12,
+      "original": "Aric",
       "replacement": null,
-      "identity": "Waterfall Colosseum leader",
+      "identity": "Main Street, Three Brothers",
+      "approval": "awaiting-user-name",
+      "status": "not-applied",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html"
+    },
+    {
+      "review_batch": 2,
+      "number": 13,
+      "original": "Melody",
+      "replacement": null,
+      "identity": "Main Street, Tomboy",
+      "approval": "awaiting-user-name",
+      "status": "not-applied",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html"
+    },
+    {
+      "review_batch": 2,
+      "number": 14,
+      "original": "Elena",
+      "replacement": null,
+      "identity": "Main Street, Picnic Girl",
+      "approval": "awaiting-user-name",
+      "status": "not-applied",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html"
+    },
+    {
+      "review_batch": 2,
+      "number": 15,
+      "original": "Ariel",
+      "replacement": null,
+      "identity": "Main Street, Youthful Couple",
+      "approval": "awaiting-user-name",
+      "status": "not-applied",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html"
+    },
+    {
+      "review_batch": 2,
+      "number": 16,
+      "original": "Todd",
+      "replacement": null,
+      "identity": "Main Street, Sci-Fi Maniac",
+      "approval": "awaiting-user-name",
+      "status": "not-applied",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html"
+    },
+    {
+      "review_batch": 2,
+      "number": 17,
+      "original": "Damon",
+      "replacement": null,
+      "identity": "Waterfall, Pikachu Fan",
       "approval": "awaiting-user-name",
       "status": "not-applied",
       "applied": false,
       "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html"
     },
     {
-      "review_batch": 1,
-      "number": 10,
-      "original": "Rosie",
+      "review_batch": 2,
+      "number": 18,
+      "original": "Harry",
       "replacement": null,
-      "identity": "Neon Colosseum leader",
+      "identity": "Waterfall, Bug-Catching Man",
       "approval": "awaiting-user-name",
       "status": "not-applied",
       "applied": false,
-      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/neon-colosseum.html"
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html"
+    },
+    {
+      "review_batch": 2,
+      "number": 19,
+      "original": "Desiree",
+      "replacement": null,
+      "identity": "Waterfall, Leader-in-Training",
+      "approval": "awaiting-user-name",
+      "status": "not-applied",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html"
+    },
+    {
+      "review_batch": 2,
+      "number": 20,
+      "original": "Sierra",
+      "replacement": null,
+      "identity": "Waterfall, Swimming Club Member",
+      "approval": "awaiting-user-name",
+      "status": "not-applied",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html"
     }
   ],
   "required_source": "mes_common.fsys from the original USA RPBE01 revision 0 image; verify catalogue before changing labels",
   "review_batch_size": 10,
   "catalogue_complete": false,
-  "catalogue_note": "Names checked against public trainer lists; map native message IDs against the supplied original archive before applying any rename."
+  "catalogue_note": "Names checked against public trainer lists; map native message IDs against the supplied original archive before applying any rename.",
+  "review_batches": [
+    {
+      "batch": 1,
+      "numbers": [
+        1,
+        10
+      ],
+      "status": "choices-complete",
+      "renames_applied": false
+    },
+    {
+      "batch": 2,
+      "numbers": [
+        11,
+        20
+      ],
+      "status": "awaiting-user-names",
+      "renames_applied": false
+    }
+  ]
 }
