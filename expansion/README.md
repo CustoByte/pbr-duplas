@@ -9,10 +9,10 @@ seu canal separado; a seleção cooperativa 2+2 ainda não cobre o Waterfall de 
 
 ## Alterações incluídas
 
-- Tradução de batalha pt-BR: somente as três frases aprovadas do primeiro
-  lote (Pound, ataque que errou e desmaio), incluindo os registros duplicados
+- Tradução de batalha pt-BR: somente as oito frases aprovadas dos dois primeiros
+  lotes, incluindo “É Super eficaz!” com a grafia solicitada e os registros duplicados
   com o mesmo texto. Os demais textos continuam originais. Mantidos nomes,
-  variáveis, pausas, fonte e número de linhas; conferidos 15 casos de métricas
+  variáveis, pausas, fonte e número de linhas; conferidos 33 casos de métricas
   nativas. A aparência dos balões ainda precisa de confirmação no Dolphin.
 - Poké Coupons ilimitados: saldo de 999.999, disponível mesmo em saves
   existentes e mantido após compras. Estoque, desbloqueios e inventário usam

@@ -17,9 +17,11 @@
 9. Loja: carregar um save antigo, conferir 999.999 Poké Coupons, comprar
    vários produtos e verificar o inventário. O saldo deve continuar no máximo.
    Salvar pelo jogo, fechar e reabrir; conferir produtos e saldo novamente.
-10. Tradução do lote 1: conferir uso de Pound, erro de ataque e desmaio.
+10. Tradução dos lotes 1 e 2: conferir uso de Pound, erro de ataque, desmaio,
+    “Acerto crítico!”, “Não é muito eficaz...”, “É Super eficaz!”, “Mas falhou!”
+    e “Não afeta [Pokémon]...”. A grafia de “É Super eficaz!” é intencional.
     Verificar nomes longos, fonte, pausas e ausência de cortes nos balões.
-    Outros golpes e as frases do próximo lote ainda não foram traduzidos.
+    Outros golpes e as cinco frases de status do lote 3 ainda não foram traduzidos.
 
 Para relatar problema: versão do Dolphin, nome do coliseu, rank, rodada e ação
 que provocou o erro. Confirmar se a mesma situação funciona na cópia original.

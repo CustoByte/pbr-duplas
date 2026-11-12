@@ -1,9 +1,12 @@
-## Tradução de batalha — lote 1 aprovado
+## Tradução de batalha — lotes 1 e 2 aprovados
 
-Três frases em pt-BR: uso de Pound, ataque que errou e Pokémon desmaiado.
+Oito frases em pt-BR: uso de Pound, ataque que errou, Pokémon desmaiado,
+acerto crítico, pouca eficácia, alta eficácia, golpe que falhou e sem efeito.
+A mensagem de alta eficácia usa exatamente **“É Super eficaz!”**, conforme
+a revisão do usuário. As cinco propostas do lote 3 ainda não foram aplicadas.
 Somente esses textos aprovados e seus registros equivalentes foram alterados;
 os nomes permanecem originais. Preservados fonte, variáveis e pausas.
-Medidas nativas passaram em 15 casos, incluindo nomes longos; a aparência
+Medidas nativas passaram em 33 casos, incluindo nomes longos; a aparência
 dos balões ainda precisa de teste no Dolphin. A tradução está em andamento.
 
 ## Poké Coupons ilimitados

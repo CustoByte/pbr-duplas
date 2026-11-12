@@ -13,6 +13,17 @@
         {"concept": "Fainted", "ids": [2595], "target": "{F001}{F101}{0025} desmaiou!▼"},
         {"concept": "Fainted, existing two-line layout", "ids": [2596], "target": "{F001}{F101}{0025}\ndesmaiou!▼"}
       ]
+    },
+    {
+      "batch": 2,
+      "status": "approved-by-user",
+      "entries": [
+        {"concept": "Critical hit", "ids": [3339], "target": "{F001}{F101}Acerto crítico!"},
+        {"concept": "Not very effective", "ids": [3344], "target": "{F001}{F101}Não é muito eficaz..."},
+        {"concept": "Super effective, exact user wording", "ids": [3345], "target": "{F001}{F101}É Super eficaz!"},
+        {"concept": "Move failed", "ids": [3361], "target": "{F001}{F101}Mas falhou!"},
+        {"concept": "No effect", "ids": [2592, 2593], "target": "{F001}{F101}Não afeta\n{0025}..."}
+      ]
     }
   ]
 }
