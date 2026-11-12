@@ -1,0 +1,46 @@
+{
+  "status": "awaiting-user-approval",
+  "entries": [
+    {
+      "ids": [
+        2612,
+        2613
+      ],
+      "source": "[Pokémon] fell asleep!",
+      "proposed": "[Pokémon] adormeceu!"
+    },
+    {
+      "ids": [
+        2628,
+        2629
+      ],
+      "source": "[Pokémon] was poisoned!",
+      "proposed": "[Pokémon] foi envenenado!"
+    },
+    {
+      "ids": [
+        2650,
+        2651
+      ],
+      "source": "[Pokémon] was burned!",
+      "proposed": "[Pokémon] foi queimado!"
+    },
+    {
+      "ids": [
+        2666,
+        2667
+      ],
+      "source": "[Pokémon] was frozen solid!",
+      "proposed": "[Pokémon] foi congelado!"
+    },
+    {
+      "ids": [
+        2679,
+        2680
+      ],
+      "source": "[Pokémon] thawed out!",
+      "proposed": "[Pokémon] descongelou!"
+    }
+  ],
+  "category": "status-conditions-future-review"
+}

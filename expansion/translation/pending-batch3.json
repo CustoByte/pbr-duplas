@@ -1,11 +1,12 @@
 {
   "batch": 3,
   "status": "awaiting-user-approval",
+  "category": "battle-menus",
   "entries": [
-    {"ids": [2612, 2613], "source": "[Pokémon] fell asleep!", "proposed": "[Pokémon] adormeceu!"},
-    {"ids": [2628, 2629], "source": "[Pokémon] was poisoned!", "proposed": "[Pokémon] foi envenenado!"},
-    {"ids": [2650, 2651], "source": "[Pokémon] was burned!", "proposed": "[Pokémon] foi queimado!"},
-    {"ids": [2666, 2667], "source": "[Pokémon] was frozen solid!", "proposed": "[Pokémon] foi congelado!"},
-    {"ids": [2679, 2680], "source": "[Pokémon] thawed out!", "proposed": "[Pokémon] descongelou!"}
+    {"ids": [3489, 3828], "source": "FIGHT", "proposed": "LUTAR"},
+    {"ids": [3830, 3891], "source": "GIVE IN / Give In", "proposed": "DESISTIR / Desistir"},
+    {"ids": [3892], "source": "Return", "proposed": "Voltar"},
+    {"ids": [3893], "source": "Shift", "proposed": "Trocar"},
+    {"ids": [3894], "source": "Moves Info", "proposed": "Ver golpes"}
   ]
 }

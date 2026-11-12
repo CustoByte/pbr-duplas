@@ -1,6 +1,9 @@
 # Tradução de batalha — português brasileiro
 
-Escopo aprovado: textos exibidos dentro das batalhas. Não traduzir nomes de
+Escopo aprovado: todos os diálogos e menus exibidos durante as batalhas,
+incluindo comandos, seleção e troca, confirmações, informações de golpes,
+avisos e resultados. Cada texto deve passar pela revisão em lotes de cinco.
+Não traduzir nomes de
 Pokémon, treinadores, golpes, natures ou itens. Preservar também os nomes das
 abilities nesta etapa para manter a terminologia consistente.
 
