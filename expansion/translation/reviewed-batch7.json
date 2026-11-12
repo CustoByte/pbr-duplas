@@ -1,6 +1,6 @@
 {
   "batch": 7,
-  "status": "awaiting-user-approval",
+  "status": "approved-by-user",
   "category": "trainer-battle-dialogue",
   "publication": "held-until-complete-battle-translation",
   "entries": [

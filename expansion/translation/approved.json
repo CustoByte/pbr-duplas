@@ -389,6 +389,82 @@
           "target": "{F006}{F101}É tão divertido que\nnão consigo parar!"
         }
       ]
+    },
+    {
+      "batch": 7,
+      "status": "approved-by-user",
+      "entries": [
+        {
+          "concept": "If I battle this much, I'm bound to lose...",
+          "ids": [
+            23
+          ],
+          "target": "{F006}{F101}De tanto batalhar,\numa hora eu perco..."
+        },
+        {
+          "concept": "I'm going all out!",
+          "ids": [
+            24
+          ],
+          "target": "{F006}{F101}Vou dar tudo de mim!"
+        },
+        {
+          "concept": "I didn't have to be so serious, did I?",
+          "ids": [
+            25
+          ],
+          "target": "{F006}{F101}Nem precisava levar\ntão a sério, né?"
+        },
+        {
+          "concept": "I did my best. I have no regrets!",
+          "ids": [
+            26
+          ],
+          "target": "{F006}{F101}Dei o meu melhor.\nNão me arrependo!"
+        },
+        {
+          "concept": "I've gotten stronger?",
+          "ids": [
+            27
+          ],
+          "target": "{F006}{F101}Fiquei mais forte?"
+        },
+        {
+          "concept": "Wow! I have gotten stronger!",
+          "ids": [
+            28
+          ],
+          "target": "{F006}{F101}Uau! Fiquei mais forte!"
+        },
+        {
+          "concept": "I still have a long way to go!",
+          "ids": [
+            29
+          ],
+          "target": "{F006}{F101}Ainda tenho muito\na melhorar!"
+        },
+        {
+          "concept": "I'll soon be stronger!",
+          "ids": [
+            30
+          ],
+          "target": "{F006}{F101}Logo estarei mais forte!"
+        },
+        {
+          "concept": "Yes! I'm one step closer!",
+          "ids": [
+            31
+          ],
+          "target": "{F006}{F101}Isso! Estou um\npasso mais perto!"
+        },
+        {
+          "concept": "Arrrrr! I want to be stronger!",
+          "ids": [
+            32
+          ],
+          "target": "{F006}{F101}Argh! Quero ficar\nmais forte!"
+        }
+      ]
     }
   ]
 }
