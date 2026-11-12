@@ -13384,6 +13384,6 @@
     }
   ],
   "review_mode": "remaining-translation-delegated-by-user",
-  "publication_policy": "Publish only after all battle text and battle-only shared descriptions are complete and verified.",
+  "publication_policy": "User explicitly requested immediate publication of the next validated candidate; include applied reviewed text only, exclude unapplied drafts and unimplemented battle-only shared descriptions.",
   "remaining_work_authorization": "User delegated completion of all remaining battle text without individual batch approvals; publish only after completion and verification."
 }

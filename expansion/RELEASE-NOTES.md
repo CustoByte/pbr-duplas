@@ -1,54 +1,36 @@
-## Tradução de batalha — lotes 1 a 4 aprovados
+## PBR — tradução parcial de batalha (teste 7)
 
-Oito frases em pt-BR: uso de Pound, ataque que errou, Pokémon desmaiado,
-acerto crítico, pouca eficácia, alta eficácia, golpe que falhou e sem efeito.
-A mensagem de alta eficácia usa exatamente **“É Super eficaz!”**, conforme
-a revisão do usuário. O lote 3 acrescenta LUTAR, DESISTIR/Desistir, Voltar,
-Trocar e Ver golpes aos menus de batalha. Os próximos lotes terão dez textos
-por revisão e só serão aplicados após aprovação.
-O lote 4 acrescenta dez mensagens de condições de batalha, incluindo sono,
-veneno, queimadura, congelamento, confusão e hesitação. A mensagem de sono
-usa “está dormindo bastante.”, conforme a correção aprovada.
-Somente esses textos aprovados e seus registros equivalentes foram alterados;
-os nomes permanecem originais. Preservados fonte, variáveis e pausas.
-Medidas nativas passaram em 111 casos, incluindo nomes longos. Queimadura e
-descongelamento usam duas linhas, com a variante original equivalente como
-referência de altura. A aparência
-dos balões ainda precisa de teste no Dolphin. A tradução está em andamento.
+Publicação imediata da parte aplicada e verificada, conforme pedido do usuário.
+**A tradução completa ainda não está concluída.**
 
-Nomes dos treinadores terão revisão em lotes de dez. Joe → Pedro está aprovado,
-mas ainda não foi aplicado: falta o arquivo original com a entrada principal
-do nome. Esta versão mantém os nomes dos treinadores como estavam.
+- 1.401 mensagens de uso de golpes em português; os 467 nomes de golpes
+  permanecem em inglês, incluindo as variantes de Pokémon selvagem e rival.
+- Lotes 1–10 aprovados: falas, comandos de batalha e mensagens de condições.
+  Repetições idênticas usam a mesma tradução aprovada.
+- Mantidas as escolhas “É Super eficaz!” e “está dormindo bastante.”.
+- Dezenove nomes de treinadores escolhidos foram aplicados; Marina permanece
+  igual. Referências a Joe foram atualizadas para Pedro.
+- Mantidos Full493, Waterfall em duplas, shinies, chefes e Poké Coupons ilimitados.
 
-## Poké Coupons ilimitados
+## O que ainda falta
 
-O jogador tem 999.999 Poké Coupons disponíveis e o saldo permanece no máximo
-após compras, inclusive ao carregar um save já existente. A loja mantém seu
-estoque e os desbloqueios normais da campanha. Foram verificadas 72 compras
-pela rotina nativa; a confirmação visual e salvar/carregar precisam do Dolphin.
+Os rascunhos das demais falas não estão incluídos no jogo. As descrições
+compartilhadas de golpes e itens continuam originais: a tradução apenas
+em batalha ainda precisa ser implementada. A revisão dos demais textos e
+menus de batalha continua pendente.
 
-Candidata Windows com Full493, Waterfall em três duplas independentes, shinies
-progressivos com bônus de 10% e indicação nos atributos, e chefes com lendários
-nos ranks 6–8 (Little Battle excluído). Rank 8 recebe Mewtwo shiny; no Gateway,
-Mewtwo só no rank 8 e com conjuntos legais variados da quarta geração.
+Os arquivos passaram por verificação de conteúdo, busca nativa de mensagens
+e medições de fonte. **A aparência real dos balões e dos nomes ainda precisa
+ser testada no Dolphin.** Isso é uma candidata single-player, com cooperativo
+experimental mantido em canal separado.
 
-**Quem já possui o aplicador:** baixe somente `INICIAR-TESTE-WINDOWS.cmd` e
-coloque junto de `Atualizar-Iniciar.ps1`. Abra esse CMD para selecionar o canal
-novo; os caminhos já salvos são reutilizados. Não é preciso baixar o aplicativo
-inteiro novamente. Próximas atualizações deste canal usam esse mesmo CMD.
+## Atualização
 
-**Primeiro uso neste PC:** baixe e extraia `PBR-Full493-Windows.zip`, abra
-`INICIAR-TESTE-WINDOWS.cmd` e selecione sua ROM original e DolphinTool.
+Feche o Dolphin e execute o mesmo INICIAR-TESTE-WINDOWS.cmd do canal Full493.
+O aplicador reutiliza os caminhos já salvos e gera a RVZ modificada a partir
+da ROM original. Carregue o save normal do jogo; evite save state antigo.
+A ROM original e os saves são preservados. Não é preciso baixar o aplicativo
+inteiro novamente. O CMD antigo do canal estável permanece no canal anterior.
 
-A ISO/RVZ original fica intacta; o aplicador gera uma RVZ modificada e confere
-seu conteúdo. Saves normais usam a mesma pasta do Dolphin. Não carregar save
-state antigo. Veja `TESTAR.md` para Waterfall, trocas, chefes, atributos e save.
-
-Os testes nativos e do aplicador passaram. **Ainda não foi testada uma campanha
-real no Dolphin nesta versão.** Persistência das trocas, renderização, IA/dano,
-Explosion/Self-Destruct e apresentação em telas reais são validações do testador.
-É uma candidata single-player; o protótipo cooperativo permanece em canal próprio.
-
-Esta release distribui somente scripts e patches que exigem os arquivos originais
-USA RPBE01 revisão 0. Não inclui ROM, DOL/FSYS completos, saves ou capturas de RAM.
-O canal estável anterior e seu aplicador Mac permanecem disponíveis.
+Esta release contém apenas scripts e patches que exigem os arquivos originais
+USA RPBE01 revisão 0. Não inclui ROM, arquivos completos do jogo ou saves.

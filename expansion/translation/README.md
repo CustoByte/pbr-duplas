@@ -12,10 +12,10 @@ local e Marina preservada. As referências a Joe foram atualizadas para Pedro,
 sem alterar nomes de lugares ou outras palavras parecidas. Preservar os nomes das
 abilities nesta etapa para manter a terminologia consistente.
 
-**Publicação suspensa por pedido do usuário:** não publicar novas alterações
-ou atualizações jogáveis antes de concluir e revisar toda a tradução das
-batalhas. As próximas alterações ficam apenas no projeto e nos builds locais.
-Os lotes seguintes ainda precisam de aprovação do texto antes da aplicação.
+**Publicação imediata autorizada na instrução mais recente:** a versão de
+ teste contém apenas textos já aplicados e verificados. A conclusão das demais
+ falas e do isolamento de descrições compartilhadas continua pendente.
+ Os rascunhos não são incluídos pelo aplicador.
 
 Não mudar os menus da campanha, descrições de loja ou o idioma do save.
 Usar frases naturais e curtas, preservando o sentido, os parâmetros dinâmicos,

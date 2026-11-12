@@ -30,3 +30,9 @@
 Para relatar problema: versão do Dolphin, nome do coliseu, rank, rodada e ação
 que provocou o erro. Confirmar se a mesma situação funciona na cópia original.
 Não apagar a ROM original nem a cópia anterior antes de validar esta candidata.
+
+11. Teste 7: conferir anúncios de golpes para ambos os lados, nomes longos,
+    falas aprovadas e os dezenove nomes escolhidos. Joe deve aparecer como
+    Pedro; Marina permanece Marina. Confirmar nomes em inglês dos golpes,
+    Pokémon, natures e itens. As demais falas e descrições ainda podem estar
+    em inglês: esta tradução é parcial.

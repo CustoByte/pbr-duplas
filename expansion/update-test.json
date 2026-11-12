@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "version": "v0.11.0-full493-test.6",
-  "package_url": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.11.0-full493-test.6/aplicador-core.zip",
-  "package_sha256": "a2495f79a63e9a454573cd13b5197e5328249614b7eefbf8f73704be8b18114c",
+  "version": "v0.11.0-full493-test.7",
+  "package_url": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.11.0-full493-test.7/aplicador-core.zip",
+  "package_sha256": "b68c4ea4390bea4b0c2d7b31a224390ccb10338b598303c3486a244e09b70743",
   "save_policy": "Original image read only; same normal Dolphin save directory",
   "channel": "full493-test",
   "dolphin_tested": false

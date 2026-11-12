@@ -9,15 +9,13 @@ seu canal separado; a seleção cooperativa 2+2 ainda não cobre o Waterfall de 
 
 ## Alterações incluídas
 
-- Tradução de batalha pt-BR: vinte e três textos aprovados nos quatro primeiros lotes,
-  incluindo os comandos LUTAR, DESISTIR, Voltar, Trocar e Ver golpes,
-  “É Super eficaz!” com a grafia solicitada e os registros duplicados
-  com o mesmo texto. Os demais textos continuam originais. Mantidos nomes,
-  variáveis, pausas e fonte; algumas mensagens usam duas linhas tomando como
-  referência a versão original equivalente para nomes longos. Conferidos 111 casos de métricas
-  nativas. A aparência dos balões ainda precisa de confirmação no Dolphin.
-  O lote 4 inclui “está dormindo bastante.” com a grafia solicitada. A escolha
-  Joe → Pedro está registrada e aguarda o arquivo original dos nomes para aplicação.
+- Tradução **parcial** pt-BR: lotes 1–10 aprovados e todas as 1.401 mensagens
+  de uso de golpes, preservando os 467 nomes de golpes. São 1.631 registros
+  alterados no arquivo de batalha, contando repetições e referências de nomes.
+  Dezenove nomes de treinadores escolhidos foram aplicados; Marina fica igual.
+  As buscas nativas e medições de fonte passaram; a aparência real no Dolphin
+  ainda precisa de teste. As falas em rascunho e a tradução das descrições
+  compartilhadas apenas durante a batalha **não estão incluídas**.
 - Poké Coupons ilimitados: saldo de 999.999, disponível mesmo em saves
   existentes e mantido após compras. Estoque, desbloqueios e inventário usam
   as regras originais. Testadas 72 compras pela rotina nativa; a loja real e
@@ -92,8 +90,9 @@ PYTHONPATH=expansion:mod-source python3 expansion/build_full493.py \
 ```
 
 Os arquivos de entrada têm hashes exatos; os originais nunca são sobrescritos.
-Para incluir as traduções aprovadas, acrescentar
-`--original-battle-text /copia/files/menu_fight_s.fsys` ao comando acima.
+Para reproduzir esta candidata com traduções e nomes, acrescentar
+`--original-battle-text /copia/files/menu_fight_s.fsys` e
+`--original-trainer-text /copia/files/mes_common.fsys` ao comando acima.
 Para recompilar o pequeno payload próprio, usar GCC PowerPC 14.2.0 e
 `build_shiny_payload.py`. O compilador não é necessário no aplicador do jogador.
 O manifesto do payload confere os hashes do C, dos conjuntos e do cabeçalho.
