@@ -10,6 +10,24 @@ Aplicador experimental para Windows 10/11 e macOS 12+. Utiliza sua imagem origin
 
 O efeito shiny nos dois passes iniciais e a campanha em duplas permanecem ativos. [Detalhes do efeito shiny da v8](SHINY-PASSES.md).
 
+## Canal Full493 — tradução parcial (teste 7)
+
+[Baixar a candidata de testes](https://github.com/CustoByte/pbr-duplas/releases/tag/v0.11.0-full493-test.7).
+Quem já usa esse canal deve fechar o Dolphin e abrir o mesmo
+**INICIAR-TESTE-WINDOWS.cmd**. O INICIAR-WINDOWS.cmd do canal estável continua
+na versão anterior.
+
+A candidata inclui 1.631 registros de batalha alterados, todos os anúncios de
+uso de golpes e 19 nomes de treinadores escolhidos. A tradução permanece
+**parcial**; os rascunhos e as descrições compartilhadas ainda não entram no jogo.
+A busca nativa e as medidas de fonte foram verificadas; a aparência real no
+Dolphin ainda precisa ser testada. [Escopo e limites](expansion/RELEASE-NOTES.md).
+
+A instrução mais recente delega a conclusão da tradução restante sem revisão
+individual de lotes e autoriza publicar imediatamente esta parte verificada.
+As descrições compartilhadas só poderão ser traduzidas dentro da batalha,
+conforme a preferência confirmada.
+
 ## Usar
 
 1. Extraia todo o ZIP e abra **INICIAR-WINDOWS.cmd**.
