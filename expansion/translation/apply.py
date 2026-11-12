@@ -4,6 +4,7 @@ from pathlib import Path
 from encounter_expansion import rebuild_archive
 from prepare_campaign_doubles import read_archive, sha
 from translation.messages import RESOURCE, read_messages, write_messages, readable, validate_target
+from translation.compatible_text import compatible
 
 
 def prepare(archive, approval_path=None, trainer_names=False):
@@ -26,7 +27,7 @@ def prepare(archive, approval_path=None, trainer_names=False):
             for index in entry['ids']:
                 if index in changed:
                     raise ValueError('Duplicate translation ID')
-                target = entry['target']
+                target = compatible(entry['target'], entry.get('protected_names', []))
                 for name in entry.get('protected_names', []):
                     if readable(original[index]).count(name) != target.count(name):
                         raise ValueError('A protected name was changed')

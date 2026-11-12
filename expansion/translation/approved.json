@@ -241,14 +241,16 @@
           "ids": [
             3
           ],
-          "target": "{F006}{F101}Certo! Vamos lá!"
+          "target": "{F006}{F101}Certo! Vamos la!",
+          "layout_reference_id": 10
         },
         {
           "concept": "Go!",
           "ids": [
             4
           ],
-          "target": "{F006}{F101}Vai!"
+          "target": "{F006}{F101}Vai!",
+          "layout_reference_id": 10
         },
         {
           "concept": "Good job, [Pokémon]!",
@@ -263,7 +265,7 @@
           "ids": [
             6
           ],
-          "target": "{F006}{F101}{0015},\né com você!",
+          "target": "{F006}{F101}{0015}, e com\nvoce!",
           "layout_reference_id": 10
         },
         {
@@ -271,21 +273,23 @@
           "ids": [
             7
           ],
-          "target": "{F006}{F101}Isso! Eu venci!"
+          "target": "{F006}{F101}Isso! Eu venci!",
+          "layout_reference_id": 10
         },
         {
           "concept": "I lost!",
           "ids": [
             8
           ],
-          "target": "{F006}{F101}Eu perdi!"
+          "target": "{F006}{F101}Eu perdi!",
+          "layout_reference_id": 10
         },
         {
           "concept": "Glad to meet you!",
           "ids": [
             9
           ],
-          "target": "{F006}{F101}Prazer em\nconhecer você!",
+          "target": "{F006}{F101}Prazer em conhecer\nvoce!",
           "layout_reference_id": 10
         },
         {
@@ -293,21 +297,23 @@
           "ids": [
             10
           ],
-          "target": "{F006}{F101}Que batalha!\nValeu!"
+          "target": "{F006}{F101}Que batalha! Valeu!",
+          "layout_reference_id": 10
         },
         {
           "concept": "You got me! I lost!",
           "ids": [
             11
           ],
-          "target": "{F006}{F101}Você me venceu!\nEu perdi!"
+          "target": "{F006}{F101}Voce me venceu! Eu\nperdi!",
+          "layout_reference_id": 10
         },
         {
           "concept": "My skills are perfect!",
           "ids": [
             12
           ],
-          "target": "{F006}{F101}Minhas habilidades\nsão perfeitas!",
+          "target": "{F006}{F101}Minhas habilidades sao\nperfeitas!",
           "layout_reference_id": 10
         }
       ]
@@ -321,7 +327,7 @@
           "ids": [
             13
           ],
-          "target": "{F006}{F101}Sou impecável,\nnão sou?",
+          "target": "{F006}{F101}Sou impecavel, nao sou?",
           "layout_reference_id": 10
         },
         {
@@ -337,56 +343,64 @@
           "ids": [
             15
           ],
-          "target": "{F006}{F101}Fácil, fácil!"
+          "target": "{F006}{F101}Facil, facil!",
+          "layout_reference_id": 10
         },
         {
           "concept": "That was easy! See my strength?",
           "ids": [
             16
           ],
-          "target": "{F006}{F101}Foi fácil!\nViu minha força?"
+          "target": "{F006}{F101}Foi facil! Viu minha\nforca?",
+          "layout_reference_id": 10
         },
         {
           "concept": "I let my guard down...",
           "ids": [
             17
           ],
-          "target": "{F006}{F101}Baixei a guarda..."
+          "target": "{F006}{F101}Baixei a guarda...",
+          "layout_reference_id": 10
         },
         {
           "concept": "I'm on a roll!",
           "ids": [
             18
           ],
-          "target": "{F006}{F101}Estou com tudo!"
+          "target": "{F006}{F101}Estou com tudo!",
+          "layout_reference_id": 10
         },
         {
           "concept": "No one can stop me!",
           "ids": [
             19
           ],
-          "target": "{F006}{F101}Ninguém pode me parar!"
+          "target": "{F006}{F101}Ninguem pode me parar!",
+          "layout_reference_id": 10
         },
         {
           "concept": "I just got stopped... Why now?",
           "ids": [
             20
           ],
-          "target": "{F006}{F101}Me pararam...\nPor que agora?"
+          "target": "{F006}{F101}Me pararam... Por que\nagora?",
+          "layout_reference_id": 10
         },
         {
           "concept": "I live for battles.",
           "ids": [
             21
           ],
-          "target": "{F006}{F101}Eu vivo pelas batalhas."
+          "target": "{F006}{F101}Eu vivo pelas batalhas.",
+          "layout_reference_id": 10
         },
         {
           "concept": "It's so fun, that I can't get enough!",
           "ids": [
             22
           ],
-          "target": "{F006}{F101}É tão divertido que\nnão consigo parar!"
+          "target": "{F006}{F101}E tao divertido que nao\nconsigo parar!",
+          "layout_reference_id": 10
         }
       ]
     },
@@ -399,70 +413,80 @@
           "ids": [
             23
           ],
-          "target": "{F006}{F101}De tanto batalhar,\numa hora eu perco..."
+          "target": "{F006}{F101}De tanto batalhar, uma\nhora eu perco...",
+          "layout_reference_id": 10
         },
         {
           "concept": "I'm going all out!",
           "ids": [
             24
           ],
-          "target": "{F006}{F101}Vou dar tudo de mim!"
+          "target": "{F006}{F101}Vou dar tudo de mim!",
+          "layout_reference_id": 10
         },
         {
           "concept": "I didn't have to be so serious, did I?",
           "ids": [
             25
           ],
-          "target": "{F006}{F101}Nem precisava levar\ntão a sério, né?"
+          "target": "{F006}{F101}Nem precisava levar tao\na serio, ne?",
+          "layout_reference_id": 10
         },
         {
           "concept": "I did my best. I have no regrets!",
           "ids": [
             26
           ],
-          "target": "{F006}{F101}Dei o meu melhor.\nNão me arrependo!"
+          "target": "{F006}{F101}Dei o meu melhor. Nao me\narrependo!",
+          "layout_reference_id": 10
         },
         {
           "concept": "I've gotten stronger?",
           "ids": [
             27
           ],
-          "target": "{F006}{F101}Fiquei mais forte?"
+          "target": "{F006}{F101}Fiquei mais forte?",
+          "layout_reference_id": 10
         },
         {
           "concept": "Wow! I have gotten stronger!",
           "ids": [
             28
           ],
-          "target": "{F006}{F101}Uau! Fiquei mais forte!"
+          "target": "{F006}{F101}Uau! Fiquei mais forte!",
+          "layout_reference_id": 10
         },
         {
           "concept": "I still have a long way to go!",
           "ids": [
             29
           ],
-          "target": "{F006}{F101}Ainda tenho muito\na melhorar!"
+          "target": "{F006}{F101}Ainda tenho muito a\nmelhorar!",
+          "layout_reference_id": 10
         },
         {
           "concept": "I'll soon be stronger!",
           "ids": [
             30
           ],
-          "target": "{F006}{F101}Logo estarei mais forte!"
+          "target": "{F006}{F101}Logo estarei mais forte!",
+          "layout_reference_id": 10
         },
         {
           "concept": "Yes! I'm one step closer!",
           "ids": [
             31
           ],
-          "target": "{F006}{F101}Isso! Estou um\npasso mais perto!"
+          "target": "{F006}{F101}Isso! Estou um passo\nmais perto!",
+          "layout_reference_id": 10
         },
         {
           "concept": "Arrrrr! I want to be stronger!",
           "ids": [
             32
           ],
-          "target": "{F006}{F101}Argh! Quero ficar\nmais forte!"
+          "target": "{F006}{F101}Argh! Quero ficar mais\nforte!",
+          "layout_reference_id": 10
         }
       ]
     },
@@ -483,14 +507,16 @@
           "ids": [
             34
           ],
-          "target": "{F006}{F101}É assim que se batalha\ncom experiência!"
+          "target": "{F006}{F101}E assim que se batalha\ncom experiencia!",
+          "layout_reference_id": 10
         },
         {
           "concept": "I have to start all over again!",
           "ids": [
             35
           ],
-          "target": "{F006}{F101}Tenho que recomeçar\ndo zero!"
+          "target": "{F006}{F101}Tenho que recomecar do\nzero!",
+          "layout_reference_id": 10
         },
         {
           "concept": "I rule Pokétopia!",
@@ -500,28 +526,31 @@
           "target": "{F006}{F101}Eu domino Pokétopia!",
           "protected_names": [
             "Pokétopia"
-          ]
+          ],
+          "layout_reference_id": 10
         },
         {
           "concept": "Come back in 1,000 years!",
           "ids": [
             37
           ],
-          "target": "{F006}{F101}Volte daqui a mil anos!"
+          "target": "{F006}{F101}Volte daqui a mil anos!",
+          "layout_reference_id": 10
         },
         {
           "concept": "I guess there's always someone stronger...",
           "ids": [
             38
           ],
-          "target": "{F006}{F101}Acho que sempre há\nalguém mais forte..."
+          "target": "{F006}{F101}Acho que sempre ha\nalguem mais forte...",
+          "layout_reference_id": 10
         },
         {
           "concept": "I've been busy lately!",
           "ids": [
             39
           ],
-          "target": "{F006}{F101}Tenho andado\nna correria!",
+          "target": "{F006}{F101}Tenho andado na\ncorreria!",
           "layout_reference_id": 10
         },
         {
@@ -529,21 +558,24 @@
           "ids": [
             40
           ],
-          "target": "{F006}{F101}Isso! Eu venci!\nVamos à próxima batalha!"
+          "target": "{F006}{F101}Isso! Eu venci! Vamos a\nproxima batalha!",
+          "layout_reference_id": 10
         },
         {
           "concept": "I lost my momentum!",
           "ids": [
             41
           ],
-          "target": "{F006}{F101}Perdi o embalo!"
+          "target": "{F006}{F101}Perdi o embalo!",
+          "layout_reference_id": 10
         },
         {
           "concept": "This is getting easier!",
           "ids": [
             42
           ],
-          "target": "{F006}{F101}Está ficando mais fácil!"
+          "target": "{F006}{F101}Esta ficando mais facil!",
+          "layout_reference_id": 10
         }
       ]
     },
@@ -556,73 +588,83 @@
           "ids": [
             43
           ],
-          "target": "{F006}{F101}Com a prática, as\nbatalhas ficam fáceis!"
+          "target": "{F006}{F101}Com a pratica, as\nbatalhas ficam faceis!",
+          "layout_reference_id": 10
         },
         {
           "concept": "There are things I still don't know?",
           "ids": [
             44
           ],
-          "target": "{F006}{F101}Ainda há coisas\nque eu não sei?"
+          "target": "{F006}{F101}Ainda ha coisas que eu\nnao sei?",
+          "layout_reference_id": 10
         },
         {
           "concept": "Life is a challenge!",
           "ids": [
             45
           ],
-          "target": "{F006}{F101}A vida é um desafio!"
+          "target": "{F006}{F101}A vida e um desafio!",
+          "layout_reference_id": 10
         },
         {
           "concept": "Yeah! I moved a step forward!",
           "ids": [
             46
           ],
-          "target": "{F006}{F101}Isso! Avancei\nmais um passo!"
+          "target": "{F006}{F101}Isso! Avancei mais um\npasso!",
+          "layout_reference_id": 10
         },
         {
           "concept": "I'll never give up! I will win next time!",
           "ids": [
             47
           ],
-          "target": "{F006}{F101}Nunca vou desistir!\nNa próxima, eu venço!"
+          "target": "{F006}{F101}Nunca vou desistir! Na\nproxima, eu venco!",
+          "layout_reference_id": 10
         },
         {
           "concept": "I'm still a beginner!",
           "ids": [
             48
           ],
-          "target": "{F006}{F101}Ainda sou iniciante!"
+          "target": "{F006}{F101}Ainda sou iniciante!",
+          "layout_reference_id": 10
         },
         {
           "concept": "Pokémon battles are so much fun!",
           "ids": [
             49
           ],
-          "target": "{F006}{F101}Batalhas Pokémon são\nmuito divertidas!",
+          "target": "{F006}{F101}Batalhas Pokémon sao\nmuito divertidas!",
           "protected_names": [
             "Pokémon"
-          ]
+          ],
+          "layout_reference_id": 10
         },
         {
           "concept": "Battles aren't so easy for a beginner...",
           "ids": [
             50
           ],
-          "target": "{F006}{F101}Para iniciantes,\nbatalhar não é tão fácil..."
+          "target": "{F006}{F101}Batalhar nao e facil para\niniciantes...",
+          "layout_reference_id": 10
         },
         {
           "concept": "Everyone is my friend!",
           "ids": [
             51
           ],
-          "target": "{F006}{F101}Todo mundo é meu amigo!"
+          "target": "{F006}{F101}Todo mundo e meu amigo!",
+          "layout_reference_id": 10
         },
         {
           "concept": "I've entered a new world of friendship!",
           "ids": [
             52
           ],
-          "target": "{F006}{F101}Entrei num novo\nmundo de amizades!"
+          "target": "{F006}{F101}Entrei num novo mundo de\namizades!",
+          "layout_reference_id": 10
         }
       ]
     },
@@ -635,14 +677,15 @@
           "ids": [
             53
           ],
-          "target": "{F006}{F101}Ninguém tem mais\namigos do que eu!"
+          "target": "{F006}{F101}Ninguem tem mais amigos\ndo que eu!",
+          "layout_reference_id": 10
         },
         {
           "concept": "I have tons of friends!",
           "ids": [
             54
           ],
-          "target": "{F006}{F101}Tenho um monte\nde amigos!",
+          "target": "{F006}{F101}Tenho um monte de\namigos!",
           "layout_reference_id": 10
         },
         {
@@ -650,42 +693,47 @@
           "ids": [
             55
           ],
-          "target": "{F006}{F101}Faça muitos amigos\nbatalhando bastante!"
+          "target": "{F006}{F101}Faca muitos amigos\nbatalhando bastante!",
+          "layout_reference_id": 10
         },
         {
           "concept": "I'm not sad! I just made a new friend.",
           "ids": [
             56
           ],
-          "target": "{F006}{F101}Não estou triste!\nFiz uma nova amizade."
+          "target": "{F006}{F101}Nao estou triste! Fiz\numa nova amizade.",
+          "layout_reference_id": 10
         },
         {
           "concept": "Let's be friends!",
           "ids": [
             57
           ],
-          "target": "{F006}{F101}Vamos ser amigos!"
+          "target": "{F006}{F101}Vamos ser amigos!",
+          "layout_reference_id": 10
         },
         {
           "concept": "Yeah! We're friends from now on!",
           "ids": [
             58
           ],
-          "target": "{F006}{F101}Isso! Agora\nsomos amigos!"
+          "target": "{F006}{F101}Isso! Agora somos\namigos!",
+          "layout_reference_id": 10
         },
         {
           "concept": "You're my rival, not my friend!",
           "ids": [
             59
           ],
-          "target": "{F006}{F101}Você é meu rival,\nnão meu amigo!"
+          "target": "{F006}{F101}Voce e meu rival, nao meu\namigo!",
+          "layout_reference_id": 10
         },
         {
           "concept": "My love will never die!",
           "ids": [
             60
           ],
-          "target": "{F006}{F101}Meu amor nunca\nvai morrer!",
+          "target": "{F006}{F101}Meu amor nunca vai\nmorrer!",
           "layout_reference_id": 10
         },
         {
@@ -693,21 +741,23 @@
           "ids": [
             61
           ],
-          "target": "{F006}{F101}Viu só?\nÉ o poder do amor!"
+          "target": "{F006}{F101}Viu so? E o poder do\namor!",
+          "layout_reference_id": 10
         },
         {
           "concept": "Even though I lost, I still love them!",
           "ids": [
             62
           ],
-          "target": "{F006}{F101}Mesmo perdendo,\nainda amo todos eles!"
+          "target": "{F006}{F101}Mesmo perdendo, ainda\namo todos eles!",
+          "layout_reference_id": 10
         },
         {
           "concept": "Come, sandstorm!",
           "ids": [
             63
           ],
-          "target": "{F006}{F101}Venha, tempestade\nde areia!",
+          "target": "{F006}{F101}Venha, tempestade de\nareia!",
           "layout_reference_id": 10
         },
         {
@@ -715,63 +765,72 @@
           "ids": [
             64
           ],
-          "target": "{F006}{F101}Por onde eu passo,\nchovem vitórias!"
+          "target": "{F006}{F101}Por onde eu passo,\nchovem vitorias!",
+          "layout_reference_id": 10
         },
         {
           "concept": "I don't want to hear a storm of boos!",
           "ids": [
             65
           ],
-          "target": "{F006}{F101}Não quero ouvir uma\ntempestade de vaias!"
+          "target": "{F006}{F101}Nao quero ouvir uma\ntempestade de vaias!",
+          "layout_reference_id": 10
         },
         {
           "concept": "Come, hail!",
           "ids": [
             66
           ],
-          "target": "{F006}{F101}Venha, granizo!"
+          "target": "{F006}{F101}Venha, granizo!",
+          "layout_reference_id": 10
         },
         {
           "concept": "What? That's it? That's all you got?",
           "ids": [
             67
           ],
-          "target": "{F006}{F101}O quê? Só isso?\nÉ só isso que você tem?"
+          "target": "{F006}{F101}O que? So isso? E so isso\nque voce tem?",
+          "layout_reference_id": 10
         },
         {
           "concept": "Crushed by a total defeat!",
           "ids": [
             68
           ],
-          "target": "{F006}{F101}Uma derrota\nesmagadora!"
+          "target": "{F006}{F101}Uma derrota\nesmagadora!",
+          "layout_reference_id": 10
         },
         {
           "concept": "Come, rain!",
           "ids": [
             69
           ],
-          "target": "{F006}{F101}Venha, chuva!"
+          "target": "{F006}{F101}Venha, chuva!",
+          "layout_reference_id": 10
         },
         {
           "concept": "The rain was a blessing for me!",
           "ids": [
             70
           ],
-          "target": "{F006}{F101}A chuva foi uma\nbênção para mim!"
+          "target": "{F006}{F101}A chuva foi uma bencao\npara mim!",
+          "layout_reference_id": 10
         },
         {
           "concept": "It's pouring rain inside my heart...",
           "ids": [
             71
           ],
-          "target": "{F006}{F101}Chove forte dentro\ndo meu coração..."
+          "target": "{F006}{F101}Chove forte dentro do\nmeu coracao...",
+          "layout_reference_id": 10
         },
         {
           "concept": "I hope it'll be sunny!",
           "ids": [
             72
           ],
-          "target": "{F006}{F101}Tomara que faça sol!"
+          "target": "{F006}{F101}Tomara que faca sol!",
+          "layout_reference_id": 10
         }
       ]
     },
@@ -13379,6 +13438,5339 @@
           "protected_names": [
             "Shadow Force"
           ]
+        }
+      ]
+    },
+    {
+      "batch": 12,
+      "status": "approved-by-user-delegation",
+      "category": "trainer-dialogue-thousand-1",
+      "entries": [
+        {
+          "ids": [
+            4312
+          ],
+          "target": "{F006}{F101}Sim!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4924
+          ],
+          "target": "{F006}{F101}Sim!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5056,
+            6248,
+            6380
+          ],
+          "target": "{F006}{F101}Uau!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5328
+          ],
+          "target": "{F006}{F101}Hia!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8144
+          ],
+          "target": "{F006}{F101}Sim!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8697
+          ],
+          "target": "{F006}{F101}Viva!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7304,
+            7724
+          ],
+          "target": "{F006}{F101}Voce?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7400
+          ],
+          "target": "{F006}{F101}Vrum!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            474,
+            660,
+            1032,
+            4440,
+            4908,
+            5152,
+            5700,
+            5896,
+            6056,
+            6280,
+            6572,
+            6712,
+            6768,
+            6944,
+            6992,
+            7048,
+            7052,
+            7076,
+            7252,
+            7256,
+            7288,
+            7352,
+            7712,
+            7760,
+            8132,
+            8192,
+            8682,
+            8693
+          ],
+          "target": "{F006}{F101}Vamos!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            3980
+          ],
+          "target": "{F006}{F101}Juntos!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5380,
+            8119
+          ],
+          "target": "{F006}{F101}Vamos!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7668
+          ],
+          "target": "{F006}{F101}Agora!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8216
+          ],
+          "target": "{F006}{F101}Tum!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            375,
+            7264
+          ],
+          "target": "{F006}{F101}Ai vem!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            846
+          ],
+          "target": "{F006}{F101}Decole!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6184,
+            7220
+          ],
+          "target": "{F006}{F101}E voce?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6396
+          ],
+          "target": "{F006}{F101}Ah?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8240
+          ],
+          "target": "{F006}{F101}Raaawr!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            477,
+            663,
+            849
+          ],
+          "target": "{F006}{F101}Me siga!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4588,
+            7060
+          ],
+          "target": "{F006}{F101}O que e?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7204
+          ],
+          "target": "{F006}{F101}Diga-me!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7320,
+            7736
+          ],
+          "target": "{F006}{F101}Ai esta!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7624,
+            7964
+          ],
+          "target": "{F006}{F101}Hummm...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7988
+          ],
+          "target": "{F006}{F101}Irra!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            225,
+            498,
+            873,
+            8681,
+            8699
+          ],
+          "target": "{F006}{F101}Pode vir!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4360
+          ],
+          "target": "{F006}{F101}Ah...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4132,
+            6444,
+            8722
+          ],
+          "target": "{F006}{F101}Agora va!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5716
+          ],
+          "target": "{F006}{F101}Va agora!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8692
+          ],
+          "target": "{F006}{F101}Eu perdi?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8686
+          ],
+          "target": "{F006}{F101}Perdemos!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            136
+          ],
+          "target": "{F006}{F101}Eu ganhei!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            561
+          ],
+          "target": "{F006}{F101}Ola, voce!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4052
+          ],
+          "target": "{F006}{F101}...Evolua!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7464,
+            7844
+          ],
+          "target": "{F006}{F101}Nem perto!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7560,
+            7916
+          ],
+          "target": "{F006}{F101}Agora, va!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7672
+          ],
+          "target": "{F006}{F101}Ate o fim!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            102
+          ],
+          "target": "{F006}{F101}Vamos voar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            143,
+            317
+          ],
+          "target": "{F006}{F101}Eu perdi...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            192,
+            378
+          ],
+          "target": "{F006}{F101}{0015}, va!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            253
+          ],
+          "target": "{F006}{F101}Ah, e isso?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            541
+          ],
+          "target": "{F006}{F101}Sim! Otimo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            875
+          ],
+          "target": "{F006}{F101}Eu perdi...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            913
+          ],
+          "target": "{F006}{F101}Sim! Otimo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4488,
+            4828
+          ],
+          "target": "{F006}{F101}Pegue isso!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5248,
+            8096
+          ],
+          "target": "{F006}{F101}Pegue isso!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5541
+          ],
+          "target": "{F006}{F101}Eu ganhei!!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5668
+          ],
+          "target": "{F006}{F101}Luta legal!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5976
+          ],
+          "target": "{F006}{F101}Sem chance!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6651
+          ],
+          "target": "{F006}{F101}Ola, aroma!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6928
+          ],
+          "target": "{F006}{F101}Alcance-os!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7796
+          ],
+          "target": "{F006}{F101}Vrum! Vrum!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8702
+          ],
+          "target": "{F006}{F101}{0015}! Va!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8684,
+            8718,
+            8730,
+            8732
+          ],
+          "target": "{F006}{F101}Va, {0015}!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            190,
+            748,
+            870,
+            4020,
+            4068,
+            4311,
+            4376,
+            4572,
+            4576,
+            4580,
+            4748,
+            5007,
+            5232,
+            5264,
+            5572,
+            5588,
+            5912,
+            5992,
+            6120,
+            6168,
+            6412,
+            6427,
+            6700,
+            6704,
+            6752,
+            6960,
+            7260,
+            7448,
+            7832,
+            8012,
+            8084,
+            8120,
+            8688,
+            8705
+          ],
+          "target": "{F006}{F101}Aqui vou eu!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            501
+          ],
+          "target": "{F006}{F101}Macho entra!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            3948
+          ],
+          "target": "{F006}{F101}Vamos lutar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4535
+          ],
+          "target": "{F006}{F101}Faca chover!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4764
+          ],
+          "target": "{F006}{F101}Nao e otimo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5120
+          ],
+          "target": "{F006}{F101}Vamos agora!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5556
+          ],
+          "target": "{F006}{F101}Um e dois...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5788
+          ],
+          "target": "{F006}{F101}Aqui vou eu!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6300
+          ],
+          "target": "{F006}{F101}Quantos sao?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6348
+          ],
+          "target": "{F006}{F101}Vamos la?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6850
+          ],
+          "target": "{F006}{F101}Eu me rendo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8060,
+            8072
+          ],
+          "target": "{F006}{F101}E eu tambem!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            135
+          ],
+          "target": "{F006}{F101}Isso e serio!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            142
+          ],
+          "target": "{F006}{F101}Viva! Vitoria!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            811
+          ],
+          "target": "{F006}{F101}Ah? So isso?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            909
+          ],
+          "target": "{F006}{F101}Sinta a onda!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4763,
+            4779
+          ],
+          "target": "{F006}{F101}Somos gemeos!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4976
+          ],
+          "target": "{F006}{F101}Vamos gritar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5024
+          ],
+          "target": "{F006}{F101}Eu sou legal?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5280
+          ],
+          "target": "{F006}{F101}Espirito, va!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5620,
+            6024,
+            6524
+          ],
+          "target": "{F006}{F101}Sim, estamos!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5780
+          ],
+          "target": "{F006}{F101}Vamos, entao!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6398
+          ],
+          "target": "{F006}{F101}Oh! Chocante!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6571
+          ],
+          "target": "{F006}{F101}Tenho beleza?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7700
+          ],
+          "target": "{F006}{F101}Qual Pokémon?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8000
+          ],
+          "target": "{F006}{F101}Eu vou lutar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8156
+          ],
+          "target": "{F006}{F101}E assustador!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            130,
+            688,
+            1060,
+            8703
+          ],
+          "target": "{F006}{F101}Minha vitoria!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            131,
+            689
+          ],
+          "target": "{F006}{F101}Eu perdi...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            191,
+            377,
+            8683,
+            8701,
+            8717,
+            8731
+          ],
+          "target": "{F006}{F101}Volte, {0015}!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            439
+          ],
+          "target": "{F006}{F101}O que? E isso?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            452,
+            638,
+            1010
+          ],
+          "target": "{F006}{F101}Estou exausto!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            502
+          ],
+          "target": "{F006}{F101}Macho e forte!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            750
+          ],
+          "target": "{F006}{F101}{0015}! Vamos!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            759
+          ],
+          "target": "{F006}{F101}De tudo de si!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            3968
+          ],
+          "target": "{F006}{F101}Vou comemorar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            3972
+          ],
+          "target": "{F006}{F101}Tenho certeza!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4084
+          ],
+          "target": "{F006}{F101}Estou animado!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4408
+          ],
+          "target": "{F006}{F101}Chegou a hora!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4472
+          ],
+          "target": "{F006}{F101}Estou rolando!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5558
+          ],
+          "target": "{F006}{F101}Perdi o ritmo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6136
+          ],
+          "target": "{F006}{F101}L-la vou eu!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6232
+          ],
+          "target": "{F006}{F101}Nao, nao, nao!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6718
+          ],
+          "target": "{F006}{F101}Bem, parabens!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6784
+          ],
+          "target": "{F006}{F101}Tao cativante!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6832
+          ],
+          "target": "{F006}{F101}Como funciona?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6848,
+            8143
+          ],
+          "target": "{F006}{F101}Eu vou vencer!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6927
+          ],
+          "target": "{F006}{F101}Meu coracao...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6976
+          ],
+          "target": "{F006}{F101}Sinta o fluxo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7044
+          ],
+          "target": "{F006}{F101}Por que sera?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7140
+          ],
+          "target": "{F006}{F101}Provavelmente!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7543,
+            7903
+          ],
+          "target": "{F006}{F101}Bem, vamos la!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            126,
+            129,
+            141,
+            189,
+            690,
+            5508,
+            7680,
+            8715
+          ],
+          "target": "{F006}{F101}Vamos batalhar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            150
+          ],
+          "target": "{F006}{F101}Eu sou o mundo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            186
+          ],
+          "target": "{F006}{F101}Nao ria de mim!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            340,
+            712,
+            898,
+            5428
+          ],
+          "target": "{F006}{F101}Eu amo PIKACHU!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            507,
+            1056
+          ],
+          "target": "{F006}{F101}Batalhe comigo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            877,
+            937,
+            8709
+          ],
+          "target": "{F006}{F101}Viva! Eu ganhei!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1066
+          ],
+          "target": "{F006}{F101}Sim! Eu ganhei!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4200,
+            5412,
+            6720
+          ],
+          "target": "{F006}{F101}Qual Pokémon e?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4504
+          ],
+          "target": "{F006}{F101}E bom ver voce!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4520,
+            6104
+          ],
+          "target": "{F006}{F101}Vamos, pessoal!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4876,
+            5652,
+            5684,
+            6088
+          ],
+          "target": "{F006}{F101}Conto com voce!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4992
+          ],
+          "target": "{F006}{F101}Aqui vamos nos!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5375
+          ],
+          "target": "{F006}{F101}E hora do show!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5540
+          ],
+          "target": "{F006}{F101}Vamos, pessoal!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5748,
+            8675
+          ],
+          "target": "{F006}{F101}Aqui vamos nos!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5864
+          ],
+          "target": "{F006}{F101}Tao misterioso!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6026
+          ],
+          "target": "{F006}{F101}Argh! Eu perdi!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6039
+          ],
+          "target": "{F006}{F101}Perdi meu amor!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6137
+          ],
+          "target": "{F006}{F101}Muito obrigado!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6395
+          ],
+          "target": "{F006}{F101}Vamos caminhar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6428
+          ],
+          "target": "{F006}{F101}3, 2, 1, jogue!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6429
+          ],
+          "target": "{F006}{F101}Eek! Eu ganhei!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7384,
+            7784
+          ],
+          "target": "{F006}{F101}Veja meu poder!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7641,
+            7977
+          ],
+          "target": "{F006}{F101}Eu nunca perco!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7656
+          ],
+          "target": "{F006}{F101}E hora do show!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8708
+          ],
+          "target": "{F006}{F101}E voce, {0015}!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8719
+          ],
+          "target": "{F006}{F101}O que achou?!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8727
+          ],
+          "target": "{F006}{F101}Acabou o tempo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8729,
+            8733
+          ],
+          "target": "{F006}{F101}{0015}! Volte!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8228
+          ],
+          "target": "{F006}{F101}O que voce diz?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8630
+          ],
+          "target": "{F006}{F101}...Como eu sou!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            128
+          ],
+          "target": "{F006}{F101}Droga! Eu perdi!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            199
+          ],
+          "target": "{F006}{F101}Eu sou perfeito!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            210
+          ],
+          "target": "{F006}{F101}Eu vou com tudo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            266,
+            6994
+          ],
+          "target": "{F006}{F101}Estou exausto...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            420
+          ],
+          "target": "{F006}{F101}Ai vem o novato!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            492,
+            678
+          ],
+          "target": "{F006}{F101}Voce vai perder!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            864
+          ],
+          "target": "{F006}{F101}Voce vai perder.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            878
+          ],
+          "target": "{F006}{F101}Naooo! Eu perdi!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            943
+          ],
+          "target": "{F006}{F101}Eu sou perfeito!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            997
+          ],
+          "target": "{F006}{F101}Oh? Isso e tudo?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1061
+          ],
+          "target": "{F006}{F101}O que? Eu perdi?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1077
+          ],
+          "target": "{F006}{F101}Como e o futuro?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            3936
+          ],
+          "target": "{F006}{F101}Seu aniversario!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4076
+          ],
+          "target": "{F006}{F101}Nao e tao facil!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4124
+          ],
+          "target": "{F006}{F101}Veja voce mesmo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4426
+          ],
+          "target": "{F006}{F101}Ajude-me, irmao!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5387
+          ],
+          "target": "{F006}{F101}Lindas flores...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6636
+          ],
+          "target": "{F006}{F101}E uma hora fofa!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6708
+          ],
+          "target": "{F006}{F101}Estou queimando!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6716
+          ],
+          "target": "{F006}{F101}Vamos comemorar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6864
+          ],
+          "target": "{F006}{F101}Entrem, piratas!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7056
+          ],
+          "target": "{F006}{F101}Vamos comemorar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7272
+          ],
+          "target": "{F006}{F101}...Qual Pokémon?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8083
+          ],
+          "target": "{F006}{F101}OK! Vamos lutar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8704
+          ],
+          "target": "{F006}{F101}Eu odeio perder!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8724
+          ],
+          "target": "{F006}{F101}Sua vez, {0015}!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8191
+          ],
+          "target": "{F006}{F101}Eu desafio voce!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            123
+          ],
+          "target": "{F006}{F101}Vitoria como aco!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            171,
+            357,
+            543,
+            729,
+            915,
+            1101
+          ],
+          "target": "{F006}{F101}Eu analisei voce!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            194
+          ],
+          "target": "{F006}{F101}Acho que perdi...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            380
+          ],
+          "target": "{F006}{F101}Eu... perdi...!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            402
+          ],
+          "target": "{F006}{F101}Serei mais forte!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            414
+          ],
+          "target": "{F006}{F101}Tenho potencial?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            564,
+            8696
+          ],
+          "target": "{F006}{F101}Va agora, {0015}!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            566,
+            8194,
+            8720
+          ],
+          "target": "{F006}{F101}Oh nao! Eu perdi!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            588
+          ],
+          "target": "{F006}{F101}Eu vou ser forte!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            693,
+            6800
+          ],
+          "target": "{F006}{F101}Vamos comecar ja!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            747,
+            6943,
+            8687
+          ],
+          "target": "{F006}{F101}Voce esta pronto?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            749,
+            935
+          ],
+          "target": "{F006}{F101}Obrigado,\n{0015}!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            777
+          ],
+          "target": "{F006}{F101}E hora da escola!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1067,
+            8146
+          ],
+          "target": "{F006}{F101}Snif! Eu perdi!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1074
+          ],
+          "target": "{F006}{F101}Eu sou do futuro?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4000
+          ],
+          "target": "{F006}{F101}Entendo, entendo.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4029
+          ],
+          "target": "{F006}{F101}A lenda continua!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4038
+          ],
+          "target": "{F006}{F101}Ai! Voce e forte!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4173
+          ],
+          "target": "{F006}{F101}Voce se divertiu?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4409
+          ],
+          "target": "{F006}{F101}Eu ganhei, irmas!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4891
+          ],
+          "target": "{F006}{F101}Sou forte demais!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4972
+          ],
+          "target": "{F006}{F101}De tudo de si!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5764
+          ],
+          "target": "{F006}{F101}A hora e agora!!!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6199
+          ],
+          "target": "{F006}{F101}Eu vou te chocar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6292
+          ],
+          "target": "{F006}{F101}...assim como eu!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6620
+          ],
+          "target": "{F006}{F101}...esses Pokémon!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7008
+          ],
+          "target": "{F006}{F101}Pule, pule, pule!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7126
+          ],
+          "target": "{F006}{F101}Sol idiota!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7155
+          ],
+          "target": "{F006}{F101}Me sinto sublime!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7206
+          ],
+          "target": "{F006}{F101}O que e? Diga-me!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7466,
+            7846
+          ],
+          "target": "{F006}{F101}Kruger! Me ajude!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7480,
+            7496,
+            7856,
+            7868
+          ],
+          "target": "{F006}{F101}Eu vou supera-lo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7545,
+            7905
+          ],
+          "target": "{F006}{F101}Viva! Uma vitoria!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7696
+          ],
+          "target": "{F006}{F101}Isso e dedicacao!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8707
+          ],
+          "target": "{F006}{F101}Obrigado,\n{0015}!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8726
+          ],
+          "target": "{F006}{F101}Oh nao! Perdemos!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8734
+          ],
+          "target": "{F006}{F101}Agora va, {0015}!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8264
+          ],
+          "target": "{F006}{F101}Esteja preparado!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8690
+          ],
+          "target": "{F006}{F101}Pegue-os,\n{0015}!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            134
+          ],
+          "target": "{F006}{F101}Hum... eu perdi...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            140
+          ],
+          "target": "{F006}{F101}O que?! Eu perdi?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            144
+          ],
+          "target": "{F006}{F101}Ai vem o vaqueiro!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            169,
+            727
+          ],
+          "target": "{F006}{F101}Sim! Otimo! Otimo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            183,
+            369,
+            555,
+            1113
+          ],
+          "target": "{F006}{F101}Eu nao vou perder!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            249,
+            435,
+            621,
+            807,
+            993
+          ],
+          "target": "{F006}{F101}Venha, tempestade!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            312
+          ],
+          "target": "{F006}{F101}Quer lutar comigo?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            336
+          ],
+          "target": "{F006}{F101}Lutarei com honra!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            354
+          ],
+          "target": "{F006}{F101}E hora da batalha!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            379,
+            691
+          ],
+          "target": "{F006}{F101}E a minha vitoria!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            399
+          ],
+          "target": "{F006}{F101}Fiquei mais forte!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            465,
+            651,
+            5295
+          ],
+          "target": "{F006}{F101}Vamos lutar a serio!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            504
+          ],
+          "target": "{F006}{F101}Eu tenho um sonho!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            625
+          ],
+          "target": "{F006}{F101}Ah? So isso?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            687
+          ],
+          "target": "{F006}{F101}Oi! Quer batalhar?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            741,
+            927,
+            5731
+          ],
+          "target": "{F006}{F101}Eu nao vou perder!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            936
+          ],
+          "target": "{F006}{F101}Boa sorte,\n{0015}!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            945
+          ],
+          "target": "{F006}{F101}Eu nao vou perder!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            950
+          ],
+          "target": "{F006}{F101}O que? Sem chance!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1023
+          ],
+          "target": "{F006}{F101}Vamos lutar serio!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            3916
+          ],
+          "target": "{F006}{F101}Eu vou te ensinar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            3935
+          ],
+          "target": "{F006}{F101}Vamos comemorar...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4028
+          ],
+          "target": "{F006}{F101}Vou te mostrar um!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4034
+          ],
+          "target": "{F006}{F101}Ser jovem e otimo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4264
+          ],
+          "target": "{F006}{F101}Nao e maravilhoso!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4313
+          ],
+          "target": "{F006}{F101}Oh sim! Eu ganhei!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4314
+          ],
+          "target": "{F006}{F101}Ah, nao! Eu perdi!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4487
+          ],
+          "target": "{F006}{F101}Eu vou pegar voce!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4583
+          ],
+          "target": "{F006}{F101}Feliz aniversario!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4668
+          ],
+          "target": "{F006}{F101}Estarei bronzeado!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4956,
+            6216
+          ],
+          "target": "{F006}{F101}Eu vou te mostrar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5025
+          ],
+          "target": "{F006}{F101}Isso resolve tudo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5136
+          ],
+          "target": "{F006}{F101}Voce pode vencer!?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5388
+          ],
+          "target": "{F006}{F101}Flores venenosas!!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5590
+          ],
+          "target": "{F006}{F101}Madison! Eu perdi!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5800
+          ],
+          "target": "{F006}{F101}...e qual Pokémon?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5911
+          ],
+          "target": "{F006}{F101}Vou analisar voce!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6103
+          ],
+          "target": "{F006}{F101}OK, vamos comecar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6430
+          ],
+          "target": "{F006}{F101}Bua! Eu perdi!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6603
+          ],
+          "target": "{F006}{F101}Vou lutar com fofura!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6769
+          ],
+          "target": "{F006}{F101}Que hiper batalha!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7024
+          ],
+          "target": "{F006}{F101}Eu vou te mostrar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7447,
+            7831
+          ],
+          "target": "{F006}{F101}Observe-me, chefe!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8725
+          ],
+          "target": "{F006}{F101}Viva! Nos vencemos!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8735
+          ],
+          "target": "{F006}{F101}Muito bem,\n{0015}!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8179
+          ],
+          "target": "{F006}{F101}Eu sou o vencedor!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8252
+          ],
+          "target": "{F006}{F101}Pule, pise, pule!!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8679
+          ],
+          "target": "{F006}{F101}Sim! Nos vencemos!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8685
+          ],
+          "target": "{F006}{F101}Sim! Nos vencemos!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            78,
+            450,
+            636,
+            822,
+            1008
+          ],
+          "target": "{F006}{F101}Estou pegando fogo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            82
+          ],
+          "target": "{F006}{F101}Estou com tudo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            121
+          ],
+          "target": "{F006}{F101}Sim! Como esperado!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            138,
+            1065,
+            7939
+          ],
+          "target": "{F006}{F101}Ei! Vamos batalhar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            139,
+            1057
+          ],
+          "target": "{F006}{F101}Sim! Minha vitoria!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            153,
+            339,
+            525,
+            711,
+            897,
+            1083
+          ],
+          "target": "{F006}{F101}PIKACHU e o melhor!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            154,
+            1084
+          ],
+          "target": "{F006}{F101}PIKACHU, eu te amo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            174
+          ],
+          "target": "{F006}{F101}Estou a todo vapor!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            198
+          ],
+          "target": "{F006}{F101}Sou pura perfeicao!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            244
+          ],
+          "target": "{F006}{F101}Somos amigos agora!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            342
+          ],
+          "target": "{F006}{F101}O visual Pokétopia!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            432,
+            804
+          ],
+          "target": "{F006}{F101}Eu amo meu Pokémon!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            526
+          ],
+          "target": "{F006}{F101}Eu te amo, PIKACHU!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            685,
+            6105
+          ],
+          "target": "{F006}{F101}Viva! Minha vitoria!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            768
+          ],
+          "target": "{F006}{F101}Agora e para valer!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            894
+          ],
+          "target": "{F006}{F101}Isso vai ser lindo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1028
+          ],
+          "target": "{F006}{F101}O que?! Quem e voce?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1080
+          ],
+          "target": "{F006}{F101}Sou bonita e forte!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4019
+          ],
+          "target": "{F006}{F101}Uma batalha magica!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4043
+          ],
+          "target": "{F006}{F101}Esses caras e eu...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4067
+          ],
+          "target": "{F006}{F101}Qual e o seu sonho?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4168,
+            6588
+          ],
+          "target": "{F006}{F101}Vamos nos divertir!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4172
+          ],
+          "target": "{F006}{F101}Vamos nos divertir!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4552
+          ],
+          "target": "{F006}{F101}Exceto em batalhas!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4701
+          ],
+          "target": "{F006}{F101}Informacao e poder!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5327
+          ],
+          "target": "{F006}{F101}Lutar e minha vida!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5395
+          ],
+          "target": "{F006}{F101}Lider do Coliseu...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5635
+          ],
+          "target": "{F006}{F101}Ei! Onde voce esta?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5766
+          ],
+          "target": "{F006}{F101}Eu perdi! Graaaaaw!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5792
+          ],
+          "target": "{F006}{F101}O poder mais forte!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6073
+          ],
+          "target": "{F006}{F101}Humph, muito facil!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6460
+          ],
+          "target": "{F006}{F101}Este lugar e otimo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6711
+          ],
+          "target": "{F006}{F101}Eu vou ficar otimo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6815
+          ],
+          "target": "{F006}{F101}Eu sinto a energia!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7026
+          ],
+          "target": "{F006}{F101}Nao e legal perder!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7190
+          ],
+          "target": "{F006}{F101}Essa derrota doi...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8001
+          ],
+          "target": "{F006}{F101}Uma batalha rapida!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8278
+          ],
+          "target": "{F006}{F101}Droga! Cem flexoes!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            75
+          ],
+          "target": "{F006}{F101}Adoro o tipo Normal!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            145
+          ],
+          "target": "{F006}{F101}Um cowboy nao perde!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            162,
+            348,
+            534,
+            720,
+            906
+          ],
+          "target": "{F006}{F101}Lutarei com coragem!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            168
+          ],
+          "target": "{F006}{F101}Boa sorte para voce!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            179,
+            365,
+            551,
+            737,
+            923,
+            1109
+          ],
+          "target": "{F006}{F101}Eu perdi? O campeao?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            231
+          ],
+          "target": "{F006}{F101}Serei famoso um dia!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            240
+          ],
+          "target": "{F006}{F101}Tenho muitos amigos!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            261,
+            447,
+            633,
+            819,
+            1005
+          ],
+          "target": "{F006}{F101}O tipo Normal e otimo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            264
+          ],
+          "target": "{F006}{F101}Estou a mil!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            316
+          ],
+          "target": "{F006}{F101}Foi uma boa batalha!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            318
+          ],
+          "target": "{F006}{F101}Batalhe comigo! Viva!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            319
+          ],
+          "target": "{F006}{F101}Minha vitoria! Viva!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            321,
+            390,
+            573,
+            882,
+            5539,
+            7259
+          ],
+          "target": "{F006}{F101}Voce pode me vencer?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            327
+          ],
+          "target": "{F006}{F101}Eu vou te nocautear!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            328
+          ],
+          "target": "{F006}{F101}Voce foi nocauteado!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            333
+          ],
+          "target": "{F006}{F101}Bem-vindo a batalha!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            355
+          ],
+          "target": "{F006}{F101}Sim! Isso foi otimo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            393
+          ],
+          "target": "{F006}{F101}Eu luto dia e noite!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            468,
+            654
+          ],
+          "target": "{F006}{F101}Vou minar sua saude!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            582
+          ],
+          "target": "{F006}{F101}Agora e para valer!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            594
+          ],
+          "target": "{F006}{F101}Eu possuo esta ilha!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            606
+          ],
+          "target": "{F006}{F101}Ainda sou novo aqui.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            840
+          ],
+          "target": "{F006}{F101}Vou minar sua forca!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            865
+          ],
+          "target": "{F006}{F101}Huhu! Como esperado!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            978
+          ],
+          "target": "{F006}{F101}Ainda sou iniciante.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1092
+          ],
+          "target": "{F006}{F101}Eu luto com coragem!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1099
+          ],
+          "target": "{F006}{F101}Viva! Isso foi otimo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4155
+          ],
+          "target": "{F006}{F101}Voce pode quebra-lo?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4156
+          ],
+          "target": "{F006}{F101}Minha lenda invicta!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4667
+          ],
+          "target": "{F006}{F101}O reflexo e cegante!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4702
+          ],
+          "target": "{F006}{F101}Nada nunca e 100%...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4843
+          ],
+          "target": "{F006}{F101}Vou dar tudo de mim!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4845
+          ],
+          "target": "{F006}{F101}Tudo bem! Eu ganhei!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5072
+          ],
+          "target": "{F006}{F101}E uma batalha total!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5168
+          ],
+          "target": "{F006}{F101}Assista isso, Tiera!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5184
+          ],
+          "target": "{F006}{F101}Observe isso, Tiana!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5247
+          ],
+          "target": "{F006}{F101}Chegou a minha vez!!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5524
+          ],
+          "target": "{F006}{F101}E aqui esta o lance!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5573
+          ],
+          "target": "{F006}{F101}Madeline! Eu ganhei!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5636
+          ],
+          "target": "{F006}{F101}Seu irmao esta aqui!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5765
+          ],
+          "target": "{F006}{F101}Eu ganhei! Graaaaaw!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5791
+          ],
+          "target": "{F006}{F101}Eu chegarei ao topo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6055
+          ],
+          "target": "{F006}{F101}Eu sou seu oponente!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6058
+          ],
+          "target": "{F006}{F101}Maldicoes! Que pena!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6152
+          ],
+          "target": "{F006}{F101}Vou jogar com calma!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6296,
+            8634
+          ],
+          "target": "{F006}{F101}Se voce me derrotar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6668
+          ],
+          "target": "{F006}{F101}Bando de perdedores!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6736
+          ],
+          "target": "{F006}{F101}Eu sou o mais forte!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7075
+          ],
+          "target": "{F006}{F101}Vou me treinar aqui!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7124
+          ],
+          "target": "{F006}{F101}Sol, olhe para mim!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7141
+          ],
+          "target": "{F006}{F101}Vou dar um mergulho!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7667
+          ],
+          "target": "{F006}{F101}Mostre-me sua sorte!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8621
+          ],
+          "target": "{F006}{F101}Meu querido Pokémon!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            108,
+            294,
+            480,
+            666
+          ],
+          "target": "{F006}{F101}Eu gosto do tipo Inseto!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            156
+          ],
+          "target": "{F006}{F101}E o estilo Pokétopia!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            195,
+            939
+          ],
+          "target": "{F006}{F101}Prazer em conhece-lo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            207
+          ],
+          "target": "{F006}{F101}Batalhas dia e noite.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            228
+          ],
+          "target": "{F006}{F101}Estou ficando famoso!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            269,
+            455,
+            641
+          ],
+          "target": "{F006}{F101}Nao me faca perder o\nritmo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            311
+          ],
+          "target": "{F006}{F101}Hum? Isso e estranho.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            315
+          ],
+          "target": "{F006}{F101}Voce! Batalhe comigo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            325
+          ],
+          "target": "{F006}{F101}Vitoria ininterrupta!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            422
+          ],
+          "target": "{F006}{F101}Fiquei muito animado?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            426
+          ],
+          "target": "{F006}{F101}Quem tem mais amigos?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            464,
+            650
+          ],
+          "target": "{F006}{F101}Fiquei superaquecido!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            493,
+            679
+          ],
+          "target": "{F006}{F101}Humph! Como esperado!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            520
+          ],
+          "target": "{F006}{F101}Hmmm... Isso foi bom!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            605
+          ],
+          "target": "{F006}{F101}Ainda sou iniciante!?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            753
+          ],
+          "target": "{F006}{F101}Prazer em conhece-lo.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            765
+          ],
+          "target": "{F006}{F101}Eu luto o tempo todo.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            827
+          ],
+          "target": "{F006}{F101}Nao me faca perder o\nritmo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            831
+          ],
+          "target": "{F006}{F101}Nao corte esta grama!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            836
+          ],
+          "target": "{F006}{F101}Fiquei muito animado.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            860
+          ],
+          "target": "{F006}{F101}Voce leu minha mente.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            949
+          ],
+          "target": "{F006}{F101}Viu?! Ganhei de novo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            951
+          ],
+          "target": "{F006}{F101}Eu luto o tempo todo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1030
+          ],
+          "target": "{F006}{F101}Estou mais confiante!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1059
+          ],
+          "target": "{F006}{F101}Batalha, aqui vou eu!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1068
+          ],
+          "target": "{F006}{F101}Lembre-se das licoes!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            3932
+          ],
+          "target": "{F006}{F101}Voce pode nos vencer?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            3955
+          ],
+          "target": "{F006}{F101}Vou lutar lindamente!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            3989
+          ],
+          "target": "{F006}{F101}Ufa! Eu me sinto bem!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4295
+          ],
+          "target": "{F006}{F101}E realmente incrivel.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4425
+          ],
+          "target": "{F006}{F101}Voce viu isso, irmao?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4732
+          ],
+          "target": "{F006}{F101}Prepare-se para isso!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4780
+          ],
+          "target": "{F006}{F101}Voce esta com ciumes?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4844
+          ],
+          "target": "{F006}{F101}Sim! Eu escolho voce!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4875
+          ],
+          "target": "{F006}{F101}Prazer em conhece-lo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5135
+          ],
+          "target": "{F006}{F101}Uma batalha magica...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5414
+          ],
+          "target": "{F006}{F101}A resposta e BRONZOR!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5847
+          ],
+          "target": "{F006}{F101}De qual Poke Ball voce\ngosta?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6783
+          ],
+          "target": "{F006}{F101}Esta lava fervente...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7108
+          ],
+          "target": "{F006}{F101}Uma sensacao tao boa!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7156
+          ],
+          "target": "{F006}{F101}Prazer em conhece-lo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7449,
+            7833
+          ],
+          "target": "{F006}{F101}Voce viu isso, chefe?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8035
+          ],
+          "target": "{F006}{F101}Eu derroto os viloes!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8108
+          ],
+          "target": "{F006}{F101}E hora de fazer tres!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8736
+          ],
+          "target": "{F006}{F101}Voce deve ir,\n{0015}!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8300,
+            8304,
+            8308,
+            8312,
+            8626
+          ],
+          "target": "{F006}{F101}...Tenha sentimentos!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8622
+          ],
+          "target": "{F006}{F101}Venham aqui, pessoal!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8678
+          ],
+          "target": "{F006}{F101}{0015}, va em\nfrente!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            84,
+            270,
+            456,
+            642,
+            828,
+            1014
+          ],
+          "target": "{F006}{F101}Vamos ficar eletricos!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            99,
+            285,
+            471,
+            657
+          ],
+          "target": "{F006}{F101}Eu luto com confianca!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            132
+          ],
+          "target": "{F006}{F101}Vamos ter uma batalha!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            165
+          ],
+          "target": "{F006}{F101}Eu luto como as ondas!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            177
+          ],
+          "target": "{F006}{F101}Veja-me governar voce!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            216
+          ],
+          "target": "{F006}{F101}Eu ficarei mais forte!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            278
+          ],
+          "target": "{F006}{F101}Me empolguei demais!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            288
+          ],
+          "target": "{F006}{F101}Vamos voar para longe!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            291
+          ],
+          "target": "{F006}{F101}Voce pode me alcancar?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            292
+          ],
+          "target": "{F006}{F101}Eu luto com o coracao!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            322
+          ],
+          "target": "{F006}{F101}Como esperado, ganhei.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            329
+          ],
+          "target": "{F006}{F101}Eu quero te nocautear!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            351
+          ],
+          "target": "{F006}{F101}Eu luto como o oceano!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            366
+          ],
+          "target": "{F006}{F101}Lute como uma estrela!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            531
+          ],
+          "target": "{F006}{F101}Viva o vermelho e\nbranco!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            591
+          ],
+          "target": "{F006}{F101}Experiencia e a chave!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            618
+          ],
+          "target": "{F006}{F101}Meu amor e invencivel!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            684,
+            876,
+            1062,
+            4519
+          ],
+          "target": "{F006}{F101}Agora, vamos batalhar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            703
+          ],
+          "target": "{F006}{F101}Um pirata nunca perde!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            716,
+            1088
+          ],
+          "target": "{F006}{F101}Eu me vesti para nada!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            723
+          ],
+          "target": "{F006}{F101}Eu bato como as ondas!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            751
+          ],
+          "target": "{F006}{F101}Huhu... Minha vitoria!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            816
+          ],
+          "target": "{F006}{F101}Espero que faca sol...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            842
+          ],
+          "target": "{F006}{F101}O que...? Quem e voce?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            947
+          ],
+          "target": "{F006}{F101}Ahhh. Baixei a guarda!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            961
+          ],
+          "target": "{F006}{F101}Uau! Estou mais forte!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            966
+          ],
+          "target": "{F006}{F101}Eu governo este lugar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1086
+          ],
+          "target": "{F006}{F101}Estilo Pokétopia puro!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1098
+          ],
+          "target": "{F006}{F101}Vamos! Grande batalha!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1100
+          ],
+          "target": "{F006}{F101}Snif! Nao foi otimo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            3907
+          ],
+          "target": "{F006}{F101}Estou na classe dos\nmestres!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            3939
+          ],
+          "target": "{F006}{F101}Eu vou atropelar voce!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            3940
+          ],
+          "target": "{F006}{F101}Voce nao pode escapar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4327
+          ],
+          "target": "{F006}{F101}Arr! Eu sou um pirata!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4423
+          ],
+          "target": "{F006}{F101}Irmao! Onde voce esta?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4584
+          ],
+          "target": "{F006}{F101}Quantos anos voce tem?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4670
+          ],
+          "target": "{F006}{F101}Estou tonto com o sol!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4684
+          ],
+          "target": "{F006}{F101}Nao tenho como perder!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4860
+          ],
+          "target": "{F006}{F101}O que achou dessa?!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4861
+          ],
+          "target": "{F006}{F101}Que pena. Eu nem suei.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4923
+          ],
+          "target": "{F006}{F101}Eu farei o meu melhor!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5087
+          ],
+          "target": "{F006}{F101}A vista daqui e otima!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5699
+          ],
+          "target": "{F006}{F101}Por que nao comecamos?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5880
+          ],
+          "target": "{F006}{F101}Puro como meu coracao!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6153
+          ],
+          "target": "{F006}{F101}Isso foi o mais legal!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6183
+          ],
+          "target": "{F006}{F101}Eu e os Pokémon somos\num!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6287
+          ],
+          "target": "{F006}{F101}Ah, esta um tempo bom!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6297
+          ],
+          "target": "{F006}{F101}Talvez no proximo ano!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6751
+          ],
+          "target": "{F006}{F101}Eu pareco com PIKACHU?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6770
+          ],
+          "target": "{F006}{F101}Uau! Estou sem folego!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6831
+          ],
+          "target": "{F006}{F101}Um Coliseu sobre lava!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6880
+          ],
+          "target": "{F006}{F101}Eu gosto de Pokétopia!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6881
+          ],
+          "target": "{F006}{F101}Nao ha ninguem melhor?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6959
+          ],
+          "target": "{F006}{F101}Seja sempre cauteloso!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7040
+          ],
+          "target": "{F006}{F101}Voce nao esta honrado?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7091
+          ],
+          "target": "{F006}{F101}PIKACHU e eletrizante!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7238
+          ],
+          "target": "{F006}{F101}Voce nao gosta de mim?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7512,
+            7880
+          ],
+          "target": "{F006}{F101}Ah, a batalha comecou!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7576,
+            7928
+          ],
+          "target": "{F006}{F101}Va! De o seu melhor!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8169
+          ],
+          "target": "{F006}{F101}Valeu a pena a viagem!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8239
+          ],
+          "target": "{F006}{F101}O Menino Dragao entra!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8251
+          ],
+          "target": "{F006}{F101}Ei! Voce esta voando!?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8299,
+            8303,
+            8307,
+            8311,
+            8625
+          ],
+          "target": "{F006}{F101}Ate o menor Pokémon...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            77
+          ],
+          "target": "{F006}{F101}Nao tinha o tipo certo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            117,
+            303,
+            489,
+            675,
+            861
+          ],
+          "target": "{F006}{F101}Eu luto como um dragao!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            124,
+            868,
+            1054
+          ],
+          "target": "{F006}{F101}Viu? O que eu disse?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            193
+          ],
+          "target": "{F006}{F101}Eu nao serei derrotado!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            226,
+            5312
+          ],
+          "target": "{F006}{F101}Eu nao gosto de perder!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            267,
+            825
+          ],
+          "target": "{F006}{F101}Vou continuar vencendo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            282
+          ],
+          "target": "{F006}{F101}Volte para o seu canto!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            323,
+            692
+          ],
+          "target": "{F006}{F101}Como pude perder?!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            332
+          ],
+          "target": "{F006}{F101}Hummm. Voce e incrivel.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            391,
+            496,
+            682,
+            4101
+          ],
+          "target": "{F006}{F101}Viu! O que eu disse?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            415
+          ],
+          "target": "{F006}{F101}Meu futuro e brilhante!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            453,
+            639
+          ],
+          "target": "{F006}{F101}Vou continuar ganhando!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            565
+          ],
+          "target": "{F006}{F101}Estou sempre treinando!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            579
+          ],
+          "target": "{F006}{F101}Eu nunca paro de lutar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            708
+          ],
+          "target": "{F006}{F101}Voce sentira meu poder!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            743
+          ],
+          "target": "{F006}{F101}Nao pode ser. Eu perdi?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            874
+          ],
+          "target": "{F006}{F101}Humph... Minha vitoria!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1053
+          ],
+          "target": "{F006}{F101}Minha vitoria e solida!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1095
+          ],
+          "target": "{F006}{F101}Eu luto com pura forca!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1116
+          ],
+          "target": "{F006}{F101}Nao diga cara estranha!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            3999
+          ],
+          "target": "{F006}{F101}Hoje e seu aniversario?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4004
+          ],
+          "target": "{F006}{F101}Eu nao vou deixar voce!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4123
+          ],
+          "target": "{F006}{F101}Minha forca lendaria...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4330
+          ],
+          "target": "{F006}{F101}Arr... eu fui afundado!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4163,
+            4567
+          ],
+          "target": "{F006}{F101}Bem-vindo ao Pokétopia!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4439
+          ],
+          "target": "{F006}{F101}Voce deve lutar comigo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4442
+          ],
+          "target": "{F006}{F101}Argh... Meu Pokémon...!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4575
+          ],
+          "target": "{F006}{F101}E bom ver voce de novo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4603
+          ],
+          "target": "{F006}{F101}Um passo de cada vez...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4986
+          ],
+          "target": "{F006}{F101}Voce esta bem treinado!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5122
+          ],
+          "target": "{F006}{F101}Que derrota rapida...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5343
+          ],
+          "target": "{F006}{F101}Eu gosto da natureza...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5651
+          ],
+          "target": "{F006}{F101}Com certeza vou vencer!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5653
+          ],
+          "target": "{F006}{F101}Sim! A vitoria e minha!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6135
+          ],
+          "target": "{F006}{F101}Estou muito... nervoso.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6283
+          ],
+          "target": "{F006}{F101}Voce e um dos meus fas?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6298,
+            8636
+          ],
+          "target": "{F006}{F101}Nao! Eu tenho namorado!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6590
+          ],
+          "target": "{F006}{F101}As batalhas sao chatas!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7007
+          ],
+          "target": "{F006}{F101}Ei! Voce esta voando?!?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7051
+          ],
+          "target": "{F006}{F101}Vamos lutar de verdade!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7125
+          ],
+          "target": "{F006}{F101}Voce viu, Sol?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7139
+          ],
+          "target": "{F006}{F101}Seria otimo nadar aqui!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7235
+          ],
+          "target": "{F006}{F101}Alguem esta me chamando.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7415,
+            7807
+          ],
+          "target": "{F006}{F101}A batalha e uma ilusao!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7431,
+            7819
+          ],
+          "target": "{F006}{F101}Onde estao meus alunos?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7665
+          ],
+          "target": "{F006}{F101}Viva! Lutar e divertido!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7671
+          ],
+          "target": "{F006}{F101}Sim! Lutarei ate o fim!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8002
+          ],
+          "target": "{F006}{F101}Hmmm... acho que parei.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            105,
+            330,
+            4984
+          ],
+          "target": "{F006}{F101}Voce pode me\nacompanhar?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            127
+          ],
+          "target": "{F006}{F101}Sim! Uma grande vitoria!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            213
+          ],
+          "target": "{F006}{F101}Eu me tornei mais forte.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            234
+          ],
+          "target": "{F006}{F101}Minha lenda comeca aqui!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            286
+          ],
+          "target": "{F006}{F101}Me sinto mais confiante!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            360
+          ],
+          "target": "{F006}{F101}Motor a toda velocidade!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            372
+          ],
+          "target": "{F006}{F101}Cara estranha? Que\nrude!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            387
+          ],
+          "target": "{F006}{F101}De-me tudo que voce tem!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            537
+          ],
+          "target": "{F006}{F101}Sinta o poder das ondas!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            714
+          ],
+          "target": "{F006}{F101}Eu represento\nPokétopia!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            726
+          ],
+          "target": "{F006}{F101}Tenha uma otima batalha!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            824
+          ],
+          "target": "{F006}{F101}Humph... estou\nesgotado.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            869
+          ],
+          "target": "{F006}{F101}Oh...!? Isso e estranho!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            888
+          ],
+          "target": "{F006}{F101}Espere! Voce e\nsuspeito!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            902
+          ],
+          "target": "{F006}{F101}Fiquei na moda por nada.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            975
+          ],
+          "target": "{F006}{F101}Quero ficar mais forte!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            3964
+          ],
+          "target": "{F006}{F101}Bem, nao estou\nsurpreso!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            3996
+          ],
+          "target": "{F006}{F101}Essa e a minha politica!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4030
+          ],
+          "target": "{F006}{F101}A lenda foi reescrita...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4032,
+            6556
+          ],
+          "target": "{F006}{F101}Voce nao pode me vencer!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4175
+          ],
+          "target": "{F006}{F101}Um dia chegarei ao topo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4503
+          ],
+          "target": "{F006}{F101}Cada batalha e especial.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5026
+          ],
+          "target": "{F006}{F101}Por que voce esta rindo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5103
+          ],
+          "target": "{F006}{F101}Vou fazer muitos amigos!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5330
+          ],
+          "target": "{F006}{F101}Vamos recuar da\nbatalha!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5444
+          ],
+          "target": "{F006}{F101}Para lutar em Pokétopia!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5523
+          ],
+          "target": "{F006}{F101}Vamos fazer um home run!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5637
+          ],
+          "target": "{F006}{F101}Uau! Seu irmao\nvenceu!!!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5783
+          ],
+          "target": "{F006}{F101}Eu vou eletrocutar\nvoce!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6057
+          ],
+          "target": "{F006}{F101}Eu ganhei... eu ganhei!!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6215
+          ],
+          "target": "{F006}{F101}A beleza do tipo Gelo...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6264
+          ],
+          "target": "{F006}{F101}Eu vou eletrocutar\nvoce!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6411
+          ],
+          "target": "{F006}{F101}E tao bonito e espacoso!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6818
+          ],
+          "target": "{F006}{F101}Para onde foi a energia?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6962
+          ],
+          "target": "{F006}{F101}Oh! Fui muito cuidadoso!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7236
+          ],
+          "target": "{F006}{F101}O que e esse sentimento?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7432,
+            7820
+          ],
+          "target": "{F006}{F101}Bem, vamos apenas lutar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7527,
+            7891
+          ],
+          "target": "{F006}{F101}Tenho treinado com eles!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8047
+          ],
+          "target": "{F006}{F101}Ah! Eu nao quero voltar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8145
+          ],
+          "target": "{F006}{F101}Viva! Uma grande\nvitoria!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            80
+          ],
+          "target": "{F006}{F101}Hmmm... estou\nesgotado...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            85
+          ],
+          "target": "{F006}{F101}Sim! Foi uma boa batalha!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            93,
+            279
+          ],
+          "target": "{F006}{F101}Agora e para valer!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            97,
+            469,
+            655
+          ],
+          "target": "{F006}{F101}E tarde demais para\nvoce!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            147
+          ],
+          "target": "{F006}{F101}E hora do cowboy\nheroico!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            180
+          ],
+          "target": "{F006}{F101}Batalha de\nsuperestrelas!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            200
+          ],
+          "target": "{F006}{F101}Minha batalha\nperfeita...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            201
+          ],
+          "target": "{F006}{F101}Agora vou jogar com\nvoce!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            305
+          ],
+          "target": "{F006}{F101}Sua bravura foi\nincrivel!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            310
+          ],
+          "target": "{F006}{F101}Viu? Como eu disse!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            381
+          ],
+          "target": "{F006}{F101}Ei, prazer em\nconhece-lo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            401
+          ],
+          "target": "{F006}{F101}Hmmm... Nao\nexatamente...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            404
+          ],
+          "target": "{F006}{F101}Uau! Eu quero ser\nforte!!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            458
+          ],
+          "target": "{F006}{F101}Sua batalha me\neletrizou!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            491,
+            677
+          ],
+          "target": "{F006}{F101}Sua coragem foi\nincrivel!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            509
+          ],
+          "target": "{F006}{F101}Hmm... eu desisto.\nPerdi!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            558
+          ],
+          "target": "{F006}{F101}Voce disse cara\nestranha!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            585
+          ],
+          "target": "{F006}{F101}Estou ficando mais\nforte!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            600
+          ],
+          "target": "{F006}{F101}A gloria sera toda minha!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            644
+          ],
+          "target": "{F006}{F101}Sua batalha me\neletrizou!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            705
+          ],
+          "target": "{F006}{F101}Eu sou um capitao\npirata!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            744
+          ],
+          "target": "{F006}{F101}Nao me chame de\nestranho!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            771
+          ],
+          "target": "{F006}{F101}Estou ficando mais\nforte.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            774,
+            957,
+            960,
+            972
+          ],
+          "target": "{F006}{F101}Estou ficando mais\nforte!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            792
+          ],
+          "target": "{F006}{F101}Uma nova estrela\naparece!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            821
+          ],
+          "target": "{F006}{F101}Nao foi um bom\nconfronto.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            829
+          ],
+          "target": "{F006}{F101}Hum! Foi uma boa\nbatalha!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            891
+          ],
+          "target": "{F006}{F101}Sou um heroi da\nfloresta!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            930
+          ],
+          "target": "{F006}{F101}Voce disse cara\nestranha?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1015
+          ],
+          "target": "{F006}{F101}Uau! Foi uma boa\nbatalha!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1029
+          ],
+          "target": "{F006}{F101}Estou solido como o\nchao!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1072
+          ],
+          "target": "{F006}{F101}Consegui lutar com\ncalma!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            3956
+          ],
+          "target": "{F006}{F101}Assim como a Sra.\nSashay!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4102
+          ],
+          "target": "{F006}{F101}Ai! eu paguei por isso...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4110
+          ],
+          "target": "{F006}{F101}Voce nao tem medo de\nnos?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4669
+          ],
+          "target": "{F006}{F101}Estou muito\ndeslumbrante?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4977
+          ],
+          "target": "{F006}{F101}Voce deveria se\nrecompor!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5121
+          ],
+          "target": "{F006}{F101}Esse foi um final rapido!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5200,
+            6008
+          ],
+          "target": "{F006}{F101}Segundo irmao, ai vou\neu!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5311
+          ],
+          "target": "{F006}{F101}Estou em alta esses\ndias!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5385
+          ],
+          "target": "{F006}{F101}Voce sabe por que\nperdeu?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5392
+          ],
+          "target": "{F006}{F101}Conversaremos mais\ntarde!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5654
+          ],
+          "target": "{F006}{F101}Achei que poderia\nvencer!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5670
+          ],
+          "target": "{F006}{F101}Oh nao! Eu perdi a calma!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5702
+          ],
+          "target": "{F006}{F101}Odeio admitir, mas perdi!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5750
+          ],
+          "target": "{F006}{F101}Nao e glamoroso\nperder...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5779
+          ],
+          "target": "{F006}{F101}Esta caverna nao e\nlinda?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5879
+          ],
+          "target": "{F006}{F101}Agua cristalina da\nfonte...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5929
+          ],
+          "target": "{F006}{F101}Ha! Isso foi muito facil!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6151
+          ],
+          "target": "{F006}{F101}Estilo e meu nome do\nmeio!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6247
+          ],
+          "target": "{F006}{F101}Nao chore se voce\nperder!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6284
+          ],
+          "target": "{F006}{F101}Hora da batalha,\npessoal!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6709
+          ],
+          "target": "{F006}{F101}Entao voce esta\nesgotado?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6785
+          ],
+          "target": "{F006}{F101}Minha batalha te\ncativou?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6799
+          ],
+          "target": "{F006}{F101}Esta muito quente\naqui...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6879
+          ],
+          "target": "{F006}{F101}Este e um lugar incrivel!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6929
+          ],
+          "target": "{F006}{F101}Que sorte! Obrigado!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6991
+          ],
+          "target": "{F006}{F101}Este Coliseu esta\nquente!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7025
+          ],
+          "target": "{F006}{F101}Viu?! Que legal!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7251,
+            7255
+          ],
+          "target": "{F006}{F101}Bem-vindo ao meu\ncastelo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7369,
+            7773
+          ],
+          "target": "{F006}{F101}A lua estava do meu lado!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7544,
+            7904
+          ],
+          "target": "{F006}{F101}Vou deixar isso com\nvoce!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7664
+          ],
+          "target": "{F006}{F101}Nao vou perder desta\nvez!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7670
+          ],
+          "target": "{F006}{F101}Voce realmente tem\nsorte!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8011
+          ],
+          "target": "{F006}{F101}Parece que vim do\nfuturo?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8155
+          ],
+          "target": "{F006}{F101}Estou ficando mais\nforte.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8181
+          ],
+          "target": "{F006}{F101}Viu! Como eu disse!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8182
+          ],
+          "target": "{F006}{F101}Como pude perder...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8215
+          ],
+          "target": "{F006}{F101}Sinta meu punho de\nferro!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8241
+          ],
+          "target": "{F006}{F101}O Menino Dragao\ncontinua!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8242
+          ],
+          "target": "{F006}{F101}Eu vou te perdoar\nhoje...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8263
+          ],
+          "target": "{F006}{F101}Eu vou fazer voce\ntremer!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            92
+          ],
+          "target": "{F006}{F101}Eu estava muito\nanimado...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            271
+          ],
+          "target": "{F006}{F101}Essa batalha foi\neletrizante!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            272
+          ],
+          "target": "{F006}{F101}Voce me chocou\ntotalmente!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            300,
+            486,
+            672,
+            858,
+            1044,
+            4075
+          ],
+          "target": "{F006}{F101}Voce pode ler minha\nmente?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            362,
+            734
+          ],
+          "target": "{F006}{F101}O que? Estou sem\ngasolina?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            417
+          ],
+          "target": "{F006}{F101}Estou sempre pegando\nfogo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            429
+          ],
+          "target": "{F006}{F101}Por favor, seja meu\namigo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            470,
+            656
+          ],
+          "target": "{F006}{F101}Uau! Quem no mundo e\nvoce?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            497,
+            683
+          ],
+          "target": "{F006}{F101}Oh nao! Isso e\nimpossivel!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            519
+          ],
+          "target": "{F006}{F101}Eu amo meu traje\nespacial!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            546,
+            732,
+            918,
+            1104
+          ],
+          "target": "{F006}{F101}Motores a toda\nvelocidade!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            549,
+            921
+          ],
+          "target": "{F006}{F101}Vou te mostrar um\ncampeao!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            560
+          ],
+          "target": "{F006}{F101}Meu disfarce me\natrapalhou!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            567
+          ],
+          "target": "{F006}{F101}Foi um prazer te\nconhecer!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            699
+          ],
+          "target": "{F006}{F101}Vamos fazer um\npiquenique!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            772
+          ],
+          "target": "{F006}{F101}Huhu... sinto minha\nforca!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            789
+          ],
+          "target": "{F006}{F101}Vou fazer jus a minha\nfama!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            837
+          ],
+          "target": "{F006}{F101}Vamos batalhar\nseriamente!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            843
+          ],
+          "target": "{F006}{F101}Sou como uma rocha\nsolida!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            872
+          ],
+          "target": "{F006}{F101}Como pude perder...!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            900
+          ],
+          "target": "{F006}{F101}Eu adoro coisas\nPokétopia!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            933
+          ],
+          "target": "{F006}{F101}Voce esta pronto para\nmim?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            938
+          ],
+          "target": "{F006}{F101}Eu perdi! Como pode?!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            946
+          ],
+          "target": "{F006}{F101}Viu?! A vitoria foi\nminha!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            948
+          ],
+          "target": "{F006}{F101}Estou em alta\nultimamente!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            990
+          ],
+          "target": "{F006}{F101}Meu amor por Pokémon e\nenorme!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1011
+          ],
+          "target": "{F006}{F101}Estou ganhando\nfacilmente!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1037
+          ],
+          "target": "{F006}{F101}Ugh... Meu coracao\nperdeu!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1093
+          ],
+          "target": "{F006}{F101}Nao tenho medo de\nninguem!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1106
+          ],
+          "target": "{F006}{F101}O que? Estou sem\ngasolina?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            3941
+          ],
+          "target": "{F006}{F101}Eu venci a batalha\nmental!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4140
+          ],
+          "target": "{F006}{F101}Eu vou vencer! Sem\nduvida!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4471
+          ],
+          "target": "{F006}{F101}Gosto de andar sozinho!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4686
+          ],
+          "target": "{F006}{F101}Voce! Como voce se\ntreina?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4796,
+            6508
+          ],
+          "target": "{F006}{F101}Terceiro irmao, ai vou\neu!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4973
+          ],
+          "target": "{F006}{F101}Voce deveria ir com\ncalma!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5039
+          ],
+          "target": "{F006}{F101}O ar e tao fresco e\nlimpo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5170
+          ],
+          "target": "{F006}{F101}Desculpe, Tiera. Eu\nperdi!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5186
+          ],
+          "target": "{F006}{F101}Desculpe, Tiana. Eu\nperdi!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5296
+          ],
+          "target": "{F006}{F101}Aqui, deixo isso com\nvoce!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5360
+          ],
+          "target": "{F006}{F101}Sinta o poder do tipo\nInseto!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5383
+          ],
+          "target": "{F006}{F101}A batalha e um\nmisterio...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5396
+          ],
+          "target": "{F006}{F101}E muito dificil ser lider!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5443
+          ],
+          "target": "{F006}{F101}Voce ja viu minha\ncolecao?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5542
+          ],
+          "target": "{F006}{F101}Voce me venceu\ntotalmente!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5589
+          ],
+          "target": "{F006}{F101}Claro que ganhei,\nMadison!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5787
+          ],
+          "target": "{F006}{F101}Ei! Eu gosto do seu\nrosto!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5831
+          ],
+          "target": "{F006}{F101}Talvez eu devesse\ncrescer?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5898
+          ],
+          "target": "{F006}{F101}Nao! Eu cheguei tao\nlonge!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6041
+          ],
+          "target": "{F006}{F101}Querido! Onde voce\nesta!?!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6282
+          ],
+          "target": "{F006}{F101}Voce...! Voce e muito\nbom!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6316
+          ],
+          "target": "{F006}{F101}Primeiro, tente me\nvencer!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6364
+          ],
+          "target": "{F006}{F101}Adoro Sunny Park!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6667
+          ],
+          "target": "{F006}{F101}Poxa! Eu nao aguento\nisso!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6707
+          ],
+          "target": "{F006}{F101}Estamos cercados por\nlava!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6721
+          ],
+          "target": "{F006}{F101}E aquele charmoso\nPokémon!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6786
+          ],
+          "target": "{F006}{F101}Que raiva! Eu perdi!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            6978
+          ],
+          "target": "{F006}{F101}A mare estava contra\nmim!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7023
+          ],
+          "target": "{F006}{F101}O tipo Dragao e tao\nlegal!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7039
+          ],
+          "target": "{F006}{F101}Este e um local\nhistorico.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7107
+          ],
+          "target": "{F006}{F101}Lancar uma Poke Ball e\ndemais!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7257
+          ],
+          "target": "{F006}{F101}Voce gosta do meu\ncastelo?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7402,
+            7798
+          ],
+          "target": "{F006}{F101}Ah! Nao! Eu perdi!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7660
+          ],
+          "target": "{F006}{F101}Voce nao pode me\nderrotar!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7663
+          ],
+          "target": "{F006}{F101}Voce se tornou mais\nforte!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            7679
+          ],
+          "target": "{F006}{F101}Posso sentir o\nuniverso...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8170
+          ],
+          "target": "{F006}{F101}Que desperdicio de\nviagem!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8275
+          ],
+          "target": "{F006}{F101}A musculacao e\nimportante!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            8290
+          ],
+          "target": "{F006}{F101}Como se eu estivesse\nvivo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            83
+          ],
+          "target": "{F006}{F101}Como perdi o ritmo assim?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            87,
+            273,
+            459,
+            645
+          ],
+          "target": "{F006}{F101}E hora de uma nova\nbatalha!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            98
+          ],
+          "target": "{F006}{F101}Argh! O que e que foi\nisso?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            146
+          ],
+          "target": "{F006}{F101}Voce deveria ser um\ncowboy!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            202
+          ],
+          "target": "{F006}{F101}Como foi? Voce se\ndivertiu?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            298
+          ],
+          "target": "{F006}{F101}Minha pedra confundiu\nvoce?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            384
+          ],
+          "target": "{F006}{F101}Meus Pokémon sao\nperfeitos!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            410
+          ],
+          "target": "{F006}{F101}O que? Me falta\nhumildade!?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            411
+          ],
+          "target": "{F006}{F101}Sou um veterano de\nbatalha!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            440
+          ],
+          "target": "{F006}{F101}A derrota me pegou!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            499
+          ],
+          "target": "{F006}{F101}Como e isso? Minha\nvitoria!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            510
+          ],
+          "target": "{F006}{F101}Veja so estes musculos!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            516
+          ],
+          "target": "{F006}{F101}Eu adoro ficcao\ncientifica!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            583
+          ],
+          "target": "{F006}{F101}Nem precisei dar tudo de\nmim!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            597
+          ],
+          "target": "{F006}{F101}Estou aberto para\nbatalhas!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            704
+          ],
+          "target": "{F006}{F101}Voce quer se juntar a\nnos!?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            715
+          ],
+          "target": "{F006}{F101}Eu fico otima nisso, nao\ne?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            756
+          ],
+          "target": "{F006}{F101}Vou mostrar a perfeicao.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            844
+          ],
+          "target": "{F006}{F101}Estou mais confiante\nagora!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            962
+          ],
+          "target": "{F006}{F101}Snif! Quero ser forte!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            963
+          ],
+          "target": "{F006}{F101}A experiencia e\nimportante!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1031
+          ],
+          "target": "{F006}{F101}Estou perdendo a\nconfianca!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1047
+          ],
+          "target": "{F006}{F101}Ataco como um dragao!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            1071
+          ],
+          "target": "{F006}{F101}A pratica leva a\nperfeicao!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4012
+          ],
+          "target": "{F006}{F101}Isso determina o\nresultado!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4115,
+            5119
+          ],
+          "target": "{F006}{F101}Vamos comecar a batalha\nja!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4126
+          ],
+          "target": "{F006}{F101}Talvez voce seja uma\nlenda?",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4128
+          ],
+          "target": "{F006}{F101}E isso que vou te\noferecer!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4232
+          ],
+          "target": "{F006}{F101}...Sera sua grande\nestreia!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4199
+          ],
+          "target": "{F006}{F101}Pokémon no mar\nPokétopia...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4571
+          ],
+          "target": "{F006}{F101}Todo mundo esta\nassistindo!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4577
+          ],
+          "target": "{F006}{F101}Por favor, tente\nnovamente!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4654
+          ],
+          "target": "{F006}{F101}Eu perdi... Que\nmisterioso.",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4699
+          ],
+          "target": "{F006}{F101}De acordo com meus\ndados...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4812
+          ],
+          "target": "{F006}{F101}Ghoooooost! Tao\nassustador!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            4975
+          ],
+          "target": "{F006}{F101}Nao se distraia com a\nagua!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5151
+          ],
+          "target": "{F006}{F101}Chegou a hora do seu\nexame!",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5345
+          ],
+          "target": "{F006}{F101}Gosto de vencer\nbatalhas...",
+          "layout_reference_id": 10
+        },
+        {
+          "ids": [
+            5462
+          ],
+          "target": "{F006}{F101}Vou voltar para a\nfloresta!",
+          "layout_reference_id": 10
         }
       ]
     }

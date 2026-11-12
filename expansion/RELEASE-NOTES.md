@@ -1,4 +1,18 @@
-## PBR — tradução parcial de batalha (teste 7)
+## PBR — mais 1.000 textos de batalha (teste 8)
+
+- 1.000 mensagens novas, em 721 conjuntos de falas de treinadores.
+- Entrada, desafio, vitória, derrota e chamadas dos Pokémon em português.
+- “My loss...” adaptado para “Eu perdi...”, conforme aprovado pelo jogador.
+- Total acumulado: 2.631 mensagens alteradas no arquivo de batalha.
+- Compatibilidade da fonte: textos traduzidos usam letras sem acentos para
+  evitar quadrados no lugar de caracteres como ã. Nomes originais preservados.
+- Comandos internos, variáveis, leitura nativa e medidas de fonte conferidos.
+- A aparência dos balões ainda precisa ser testada no Dolphin.
+
+Execute o mesmo `INICIAR-TESTE-WINDOWS.cmd` com o Dolphin fechado.
+Use o save normal do jogo. A ROM original e os saves são preservados.
+
+### Recursos acumulados das versões anteriores
 
 Publicação imediata da parte aplicada e verificada, conforme pedido do usuário.
 **A tradução completa ainda não está concluída.**

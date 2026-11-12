@@ -68,7 +68,7 @@ def verify(capture, dol, original, translated):
                 width_budget = max(width_budget, result & 65535)
                 reference_height = max(reference_height, result >> 16)
             assert measures[1]['height'] <= reference_height
-            assert measures[1]['width'] <= width_budget
+            assert measures[1]['width'] <= width_budget, (index, measures[1], width_budget)
             cases.append({'id': index, 'name_characters': len(name), 'source': measures[0], 'target': measures[1],
                           'layout_reference_id': references.get(index, trainer_frames.get(index)),
                           'allowed_reference_height': reference_height, 'width_budget': width_budget})

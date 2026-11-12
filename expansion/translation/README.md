@@ -1,8 +1,12 @@
 # Tradução de batalha — português brasileiro
 
+Teste 8: mais 1.000 mensagens novas em 721 conjuntos de falas de treinadores;
+2.631 mensagens de batalha alteradas no total. O usuário autorizou tradução
+e publicação em lotes de 1.000 mensagens sem revisão individual.
+
 Escopo aprovado: todos os diálogos e menus exibidos durante as batalhas,
 incluindo comandos, seleção e troca, confirmações, informações de golpes,
-avisos e resultados. Cada texto deve passar pela revisão em lotes de vinte,
+avisos e resultados. Revisão e publicação em lotes de 1.000 mensagens,
 conforme a preferência mais recente do usuário.
 Não traduzir nomes de Pokémon, golpes, natures ou itens. Nomes de treinadores
 serão escolhidos individualmente pelo usuário, apresentados em lotes de vinte.
