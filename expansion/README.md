@@ -9,12 +9,15 @@ seu canal separado; a seleção cooperativa 2+2 ainda não cobre o Waterfall de 
 
 ## Alterações incluídas
 
-- Tradução de batalha pt-BR: treze textos aprovados nos três primeiros lotes,
+- Tradução de batalha pt-BR: vinte e três textos aprovados nos quatro primeiros lotes,
   incluindo os comandos LUTAR, DESISTIR, Voltar, Trocar e Ver golpes,
   “É Super eficaz!” com a grafia solicitada e os registros duplicados
   com o mesmo texto. Os demais textos continuam originais. Mantidos nomes,
-  variáveis, pausas, fonte e número de linhas; conferidos 54 casos de métricas
+  variáveis, pausas e fonte; algumas mensagens usam duas linhas tomando como
+  referência a versão original equivalente para nomes longos. Conferidos 111 casos de métricas
   nativas. A aparência dos balões ainda precisa de confirmação no Dolphin.
+  O lote 4 inclui “está dormindo bastante.” com a grafia solicitada. A escolha
+  Joe → Pedro está registrada e aguarda o arquivo original dos nomes para aplicação.
 - Poké Coupons ilimitados: saldo de 999.999, disponível mesmo em saves
   existentes e mantido após compras. Estoque, desbloqueios e inventário usam
   as regras originais. Testadas 72 compras pela rotina nativa; a loja real e

@@ -8,34 +8,228 @@
       "batch": 1,
       "status": "approved-by-user",
       "entries": [
-        {"concept": "Pound announcement", "ids": [1164], "target": "{F001}{F101}{0025} usou\nPound!", "protected_names": ["Pound"]},
-        {"concept": "Attack missed", "ids": [2577, 2578], "target": "{F001}{F101}{0025}\nerrou o ataque!"},
-        {"concept": "Fainted", "ids": [2595], "target": "{F001}{F101}{0025} desmaiou!▼"},
-        {"concept": "Fainted, existing two-line layout", "ids": [2596], "target": "{F001}{F101}{0025}\ndesmaiou!▼"}
+        {
+          "concept": "Pound announcement",
+          "ids": [
+            1164
+          ],
+          "target": "{F001}{F101}{0025} usou\nPound!",
+          "protected_names": [
+            "Pound"
+          ]
+        },
+        {
+          "concept": "Attack missed",
+          "ids": [
+            2577,
+            2578
+          ],
+          "target": "{F001}{F101}{0025}\nerrou o ataque!"
+        },
+        {
+          "concept": "Fainted",
+          "ids": [
+            2595
+          ],
+          "target": "{F001}{F101}{0025} desmaiou!▼"
+        },
+        {
+          "concept": "Fainted, existing two-line layout",
+          "ids": [
+            2596
+          ],
+          "target": "{F001}{F101}{0025}\ndesmaiou!▼"
+        }
       ]
     },
     {
       "batch": 2,
       "status": "approved-by-user",
       "entries": [
-        {"concept": "Critical hit", "ids": [3339], "target": "{F001}{F101}Acerto crítico!"},
-        {"concept": "Not very effective", "ids": [3344], "target": "{F001}{F101}Não é muito eficaz..."},
-        {"concept": "Super effective, exact user wording", "ids": [3345], "target": "{F001}{F101}É Super eficaz!"},
-        {"concept": "Move failed", "ids": [3361], "target": "{F001}{F101}Mas falhou!"},
-        {"concept": "No effect", "ids": [2592, 2593], "target": "{F001}{F101}Não afeta\n{0025}..."}
+        {
+          "concept": "Critical hit",
+          "ids": [
+            3339
+          ],
+          "target": "{F001}{F101}Acerto crítico!"
+        },
+        {
+          "concept": "Not very effective",
+          "ids": [
+            3344
+          ],
+          "target": "{F001}{F101}Não é muito eficaz..."
+        },
+        {
+          "concept": "Super effective, exact user wording",
+          "ids": [
+            3345
+          ],
+          "target": "{F001}{F101}É Super eficaz!"
+        },
+        {
+          "concept": "Move failed",
+          "ids": [
+            3361
+          ],
+          "target": "{F001}{F101}Mas falhou!"
+        },
+        {
+          "concept": "No effect",
+          "ids": [
+            2592,
+            2593
+          ],
+          "target": "{F001}{F101}Não afeta\n{0025}..."
+        }
       ]
     },
     {
       "batch": 3,
       "status": "approved-by-user",
       "entries": [
-        {"concept": "Battle fight labels", "ids": [3489], "target": "{F001}{F101}LUTAR"},
-        {"concept": "Main battle fight button", "ids": [3828], "target": "{F000}{F101}LUTAR"},
-        {"concept": "Main battle give-in button", "ids": [3830], "target": "{F000}{F101}DESISTIR"},
-        {"concept": "Battle give-in label", "ids": [3891], "target": "{F001}{F101}Desistir"},
-        {"concept": "Return", "ids": [3892], "target": "{F001}{F101}Voltar"},
-        {"concept": "Shift", "ids": [3893], "target": "{F001}{F101}Trocar"},
-        {"concept": "Moves Info", "ids": [3894], "target": "{F001}{F101}Ver golpes"}
+        {
+          "concept": "Battle fight labels",
+          "ids": [
+            3489
+          ],
+          "target": "{F001}{F101}LUTAR"
+        },
+        {
+          "concept": "Main battle fight button",
+          "ids": [
+            3828
+          ],
+          "target": "{F000}{F101}LUTAR"
+        },
+        {
+          "concept": "Main battle give-in button",
+          "ids": [
+            3830
+          ],
+          "target": "{F000}{F101}DESISTIR"
+        },
+        {
+          "concept": "Battle give-in label",
+          "ids": [
+            3891
+          ],
+          "target": "{F001}{F101}Desistir"
+        },
+        {
+          "concept": "Return",
+          "ids": [
+            3892
+          ],
+          "target": "{F001}{F101}Voltar"
+        },
+        {
+          "concept": "Shift",
+          "ids": [
+            3893
+          ],
+          "target": "{F001}{F101}Trocar"
+        },
+        {
+          "concept": "Moves Info",
+          "ids": [
+            3894
+          ],
+          "target": "{F001}{F101}Ver golpes"
+        }
+      ]
+    },
+    {
+      "batch": 4,
+      "status": "approved-by-user",
+      "entries": [
+        {
+          "concept": "Fell asleep",
+          "ids": [
+            2612,
+            2613
+          ],
+          "target": "{F001}{F101}{0025}\nadormeceu!"
+        },
+        {
+          "concept": "Poisoned",
+          "ids": [
+            2628,
+            2629
+          ],
+          "target": "{F001}{F101}{0025}\nfoi envenenado!"
+        },
+        {
+          "concept": "Burned; wrap using native long-name variant",
+          "ids": [
+            2650,
+            2651
+          ],
+          "target": "{F001}{F101}{0025}\nfoi queimado!",
+          "layout_reference_id": 2651
+        },
+        {
+          "concept": "Frozen",
+          "ids": [
+            2666,
+            2667
+          ],
+          "target": "{F001}{F101}{0025}\nfoi congelado!"
+        },
+        {
+          "concept": "Thawed; wrap using native long-name variant",
+          "ids": [
+            2679,
+            2680
+          ],
+          "target": "{F001}{F101}{0025}\ndescongelou!",
+          "layout_reference_id": 2680
+        },
+        {
+          "concept": "Asleep; exact user wording",
+          "ids": [
+            2865
+          ],
+          "target": "{F001}{F101}{0025} está\ndormindo bastante."
+        },
+        {
+          "concept": "Woke up",
+          "ids": [
+            2867
+          ],
+          "target": "{F001}{F101}{0025} acordou!"
+        },
+        {
+          "concept": "Woke up; native two-line variant",
+          "ids": [
+            2868
+          ],
+          "target": "{F001}{F101}{0025}\nacordou!"
+        },
+        {
+          "concept": "Badly poisoned",
+          "ids": [
+            2644,
+            2645
+          ],
+          "target": "{F001}{F101}{0025} foi\ngravemente envenenado!"
+        },
+        {
+          "concept": "Confused",
+          "ids": [
+            2715,
+            2716
+          ],
+          "target": "{F001}{F101}{0025}\nestá confuso!"
+        },
+        {
+          "concept": "Flinched",
+          "ids": [
+            2746,
+            2747
+          ],
+          "target": "{F001}{F101}{0025} hesitou!"
+        }
       ]
     }
   ]

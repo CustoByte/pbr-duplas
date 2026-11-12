@@ -1,5 +1,5 @@
 {
-  "status": "awaiting-user-approval",
+  "status": "approved-by-user-with-correction-to-entry-6",
   "entries": [
     {
       "ids": [
@@ -46,7 +46,7 @@
         2865
       ],
       "source": "[Pokémon] is fast asleep.",
-      "proposed": "[Pokémon] está dormindo profundamente."
+      "proposed": "[Pokémon] está dormindo bastante."
     },
     {
       "ids": [

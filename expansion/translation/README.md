@@ -4,8 +4,11 @@ Escopo aprovado: todos os diálogos e menus exibidos durante as batalhas,
 incluindo comandos, seleção e troca, confirmações, informações de golpes,
 avisos e resultados. Cada texto deve passar pela revisão em lotes de dez,
 conforme a preferência mais recente do usuário.
-Não traduzir nomes de
-Pokémon, treinadores, golpes, natures ou itens. Preservar também os nomes das
+Não traduzir nomes de Pokémon, golpes, natures ou itens. Nomes de treinadores
+serão escolhidos individualmente pelo usuário, apresentados em lotes de dez.
+A primeira escolha é Joe → Pedro; sua aplicação aguarda o arquivo original
+mes_common.fsys para localizar a entrada principal do nome antes de alterar
+também suas referências nas falas. Preservar também os nomes das
 abilities nesta etapa para manter a terminologia consistente.
 
 Não mudar os menus da campanha, descrições de loja ou o idioma do save.

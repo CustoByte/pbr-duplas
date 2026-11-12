@@ -1,4 +1,4 @@
-## Tradução de batalha — lotes 1 a 3 aprovados
+## Tradução de batalha — lotes 1 a 4 aprovados
 
 Oito frases em pt-BR: uso de Pound, ataque que errou, Pokémon desmaiado,
 acerto crítico, pouca eficácia, alta eficácia, golpe que falhou e sem efeito.
@@ -6,10 +6,19 @@ A mensagem de alta eficácia usa exatamente **“É Super eficaz!”**, conforme
 a revisão do usuário. O lote 3 acrescenta LUTAR, DESISTIR/Desistir, Voltar,
 Trocar e Ver golpes aos menus de batalha. Os próximos lotes terão dez textos
 por revisão e só serão aplicados após aprovação.
+O lote 4 acrescenta dez mensagens de condições de batalha, incluindo sono,
+veneno, queimadura, congelamento, confusão e hesitação. A mensagem de sono
+usa “está dormindo bastante.”, conforme a correção aprovada.
 Somente esses textos aprovados e seus registros equivalentes foram alterados;
 os nomes permanecem originais. Preservados fonte, variáveis e pausas.
-Medidas nativas passaram em 54 casos, incluindo nomes longos; a aparência
+Medidas nativas passaram em 111 casos, incluindo nomes longos. Queimadura e
+descongelamento usam duas linhas, com a variante original equivalente como
+referência de altura. A aparência
 dos balões ainda precisa de teste no Dolphin. A tradução está em andamento.
+
+Nomes dos treinadores terão revisão em lotes de dez. Joe → Pedro está aprovado,
+mas ainda não foi aplicado: falta o arquivo original com a entrada principal
+do nome. Esta versão mantém os nomes dos treinadores como estavam.
 
 ## Poké Coupons ilimitados
 

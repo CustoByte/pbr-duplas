@@ -1,0 +1,130 @@
+{
+  "review_mode": "ten-trainers-per-batch-individually-chosen-names",
+  "scope": "All trainer names; explicit exception to keeping other proper names unchanged",
+  "entries": [
+    {
+      "original": "Joe",
+      "replacement": "Pedro",
+      "identity": "Gateway Colosseum master",
+      "approval": "approved-by-user",
+      "status": "waiting-for-original-mes_common.fsys",
+      "battle_dialogue_reference_ids": [
+        3923,
+        3925,
+        4359,
+        4361,
+        4362,
+        4375,
+        4377,
+        4378
+      ],
+      "applied": false,
+      "review_batch": 1,
+      "number": 1,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html"
+    },
+    {
+      "review_batch": 1,
+      "number": 2,
+      "original": "Marcel",
+      "replacement": null,
+      "identity": "Gateway, Leader-in-Training",
+      "approval": "awaiting-user-name",
+      "status": "not-applied",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html"
+    },
+    {
+      "review_batch": 1,
+      "number": 3,
+      "original": "Alec",
+      "replacement": null,
+      "identity": "Gateway, Ordinary Guy",
+      "approval": "awaiting-user-name",
+      "status": "not-applied",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html"
+    },
+    {
+      "review_batch": 1,
+      "number": 4,
+      "original": "Brooke",
+      "replacement": null,
+      "identity": "Gateway, Tomboy",
+      "approval": "awaiting-user-name",
+      "status": "not-applied",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html"
+    },
+    {
+      "review_batch": 1,
+      "number": 5,
+      "original": "Annie",
+      "replacement": null,
+      "identity": "Gateway, Hiking Girl",
+      "approval": "awaiting-user-name",
+      "status": "not-applied",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html"
+    },
+    {
+      "review_batch": 1,
+      "number": 6,
+      "original": "Cedric",
+      "replacement": null,
+      "identity": "Gateway, Traveling Guy",
+      "approval": "awaiting-user-name",
+      "status": "not-applied",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html"
+    },
+    {
+      "review_batch": 1,
+      "number": 7,
+      "original": "Crystal",
+      "replacement": null,
+      "identity": "Gateway, Three Sisters",
+      "approval": "awaiting-user-name",
+      "status": "not-applied",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html"
+    },
+    {
+      "review_batch": 1,
+      "number": 8,
+      "original": "Taylor",
+      "replacement": null,
+      "identity": "Main Street Colosseum leader",
+      "approval": "awaiting-user-name",
+      "status": "not-applied",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html"
+    },
+    {
+      "review_batch": 1,
+      "number": 9,
+      "original": "Marina",
+      "replacement": null,
+      "identity": "Waterfall Colosseum leader",
+      "approval": "awaiting-user-name",
+      "status": "not-applied",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html"
+    },
+    {
+      "review_batch": 1,
+      "number": 10,
+      "original": "Rosie",
+      "replacement": null,
+      "identity": "Neon Colosseum leader",
+      "approval": "awaiting-user-name",
+      "status": "not-applied",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/neon-colosseum.html"
+    }
+  ],
+  "required_source": "mes_common.fsys from the original USA RPBE01 revision 0 image; verify catalogue before changing labels",
+  "review_batch_size": 10,
+  "catalogue_complete": false,
+  "catalogue_note": "Names checked against public trainer lists; map native message IDs against the supplied original archive before applying any rename."
+}

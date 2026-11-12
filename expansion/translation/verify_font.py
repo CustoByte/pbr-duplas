@@ -19,6 +19,11 @@ def verify(capture, dol, original, translated):
     h.uc.hook_add(UC_HOOK_CODE, lookup, begin=0x8024FB34, end=0x8024FB34)
     before = read_messages(dict(read_archive(original))[RESOURCE])[1]
     after = read_messages(dict(read_archive(translated))[RESOURCE])[1]
+    approval = json.loads(Path(__file__).with_name('approved.json').read_text())
+    references = {index: entry['layout_reference_id']
+                  for batch in approval['batches'] if batch['status']=='approved-by-user'
+                  for entry in batch['entries'] if 'layout_reference_id' in entry
+                  for index in entry['ids']}
     cases = []
     for index, (a, b) in enumerate(zip(before, after)):
         if a == b:
@@ -31,13 +36,24 @@ def verify(capture, dol, original, translated):
                 result = h.call(0x8024FBBC, (0x8048062C, message_id, 1, 0), limit=3000000)
                 h.abi()
                 measures.append({'width': result & 65535, 'height': result >> 16})
-            assert measures[1]['height'] <= measures[0]['height']
+            reference_height = measures[0]['height']
+            if index in references:
+                text = readable(before[references[index]]).replace('{0025}', name).replace('▼', '')
+                h.uc.mem_write(pointer, encoded(text))
+                result = h.call(0x8024FBBC, (0x8048062C, message_id, 1, 0), limit=3000000)
+                h.abi()
+                reference_height = max(reference_height, result >> 16)
+            assert measures[1]['height'] <= reference_height
             assert measures[1]['width'] <= 240
-            cases.append({'id': index, 'name_characters': len(name), 'source': measures[0], 'target': measures[1]})
+            cases.append({'id': index, 'name_characters': len(name), 'source': measures[0], 'target': measures[1],
+                          'layout_reference_id': references.get(index), 'allowed_reference_height': reference_height})
     return {'status': 'passed-native-font-metric-fixtures', 'case_count': len(cases),
-            'cases': cases, 'native_font_unchanged': True, 'height_not_increased': True,
+            'cases': cases, 'native_font_unchanged': True,
+            'height_not_increased': all(c['target']['height']<=c['source']['height'] for c in cases),
+            'paired_native_message_height_respected': True,
             'translated_archive_sha256': sha(translated), 'dol_sha256': sha(dol),
             'limits': ['240-pixel width is a conservative test budget, not a verified live balloon boundary',
+                       'Where specified, wrapping uses the original equivalent two-line message as a height reference; live layout still unverified',
                        'Message lookup returns test text; native font measurement executes without GPU',
                        'Actual battle balloon layout and rendering still need Dolphin'],
             'dolphin_visual_tested': False}
