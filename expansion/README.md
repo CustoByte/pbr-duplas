@@ -9,6 +9,11 @@ seu canal separado; a seleção cooperativa 2+2 ainda não cobre o Waterfall de 
 
 ## Alterações incluídas
 
+- Tradução de batalha pt-BR: somente as três frases aprovadas do primeiro
+  lote (Pound, ataque que errou e desmaio), incluindo os registros duplicados
+  com o mesmo texto. Os demais textos continuam originais. Mantidos nomes,
+  variáveis, pausas, fonte e número de linhas; conferidos 15 casos de métricas
+  nativas. A aparência dos balões ainda precisa de confirmação no Dolphin.
 - Poké Coupons ilimitados: saldo de 999.999, disponível mesmo em saves
   existentes e mantido após compras. Estoque, desbloqueios e inventário usam
   as regras originais. Testadas 72 compras pela rotina nativa; a loja real e
@@ -83,6 +88,8 @@ PYTHONPATH=expansion:mod-source python3 expansion/build_full493.py \
 ```
 
 Os arquivos de entrada têm hashes exatos; os originais nunca são sobrescritos.
+Para incluir as traduções aprovadas, acrescentar
+`--original-battle-text /copia/files/menu_fight_s.fsys` ao comando acima.
 Para recompilar o pequeno payload próprio, usar GCC PowerPC 14.2.0 e
 `build_shiny_payload.py`. O compilador não é necessário no aplicador do jogador.
 O manifesto do payload confere os hashes do C, dos conjuntos e do cabeçalho.

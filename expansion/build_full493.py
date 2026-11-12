@@ -12,7 +12,7 @@ from waterfall_fix import prepare as fix_waterfall
 from encounter_expansion import build as expand,CAPACITY_EDITS
 
 
-def build(dol,common,deck,coop_base=None,tournament_rules=True):
+def build(dol,common,deck,coop_base=None,tournament_rules=True,battle_text=None):
     vanilla=dol
     base,table,_=prepare(dol,common,deck)
     base,_=prepare_shiny(base);base,_=prepare_build(base)
@@ -39,13 +39,19 @@ def build(dol,common,deck,coop_base=None,tournament_rules=True):
         'complete':False,'dolphin_tested':False,'trade_save_tested':False,
         'shiny_rank_and_bonus_change':'Included with native-verified rank/bonus/status/boss rules' if tournament_rules else 'Disabled for baseline development verification',
         'coop_waterfall_note':'Existing 2+2 cooperative draft does not cover six-member Waterfall; single-player remains supported'}
-    return {'main.dol':bytes(out),'common.fsys':base_common,'deck.fsys':expanded},report,policy
+    files={'main.dol':bytes(out),'common.fsys':base_common,'deck.fsys':expanded}
+    if battle_text is not None:
+        from translation.apply import prepare as translate_battle
+        files['menu_fight_s.fsys'],report['battle_translation']=translate_battle(battle_text)
+        report['output_sha256']['menu_fight_s.fsys']=sha(files['menu_fight_s.fsys'])
+    return files,report,policy
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
     for n in ('original-dol','original-common','original-deck','output'):p.add_argument('--'+n,type=Path,required=True)
     p.add_argument('--coop-base',type=Path)
-    a=p.parse_args();files,report,policy=build(a.original_dol.read_bytes(),a.original_common.read_bytes(),a.original_deck.read_bytes(),a.coop_base.read_bytes() if a.coop_base else None)
+    p.add_argument('--original-battle-text',type=Path,help='Original menu_fight_s.fsys for user-approved battle translations')
+    a=p.parse_args();files,report,policy=build(a.original_dol.read_bytes(),a.original_common.read_bytes(),a.original_deck.read_bytes(),a.coop_base.read_bytes() if a.coop_base else None,battle_text=a.original_battle_text.read_bytes() if a.original_battle_text else None)
     if a.output.exists() and any(a.output.iterdir()):raise ValueError('Output directory must be new/empty; original files are never overwritten')
     a.output.mkdir(parents=True,exist_ok=True)
     for name,data in files.items():(a.output/name).write_bytes(data)

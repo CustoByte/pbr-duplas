@@ -1,0 +1,196 @@
+{
+  "status": "passed-native-font-metric-fixtures",
+  "case_count": 15,
+  "cases": [
+    {
+      "id": 1164,
+      "name_characters": 7,
+      "source": {
+        "width": 113,
+        "height": 50
+      },
+      "target": {
+        "width": 113,
+        "height": 50
+      }
+    },
+    {
+      "id": 1164,
+      "name_characters": 10,
+      "source": {
+        "width": 133,
+        "height": 50
+      },
+      "target": {
+        "width": 133,
+        "height": 50
+      }
+    },
+    {
+      "id": 1164,
+      "name_characters": 12,
+      "source": {
+        "width": 178,
+        "height": 50
+      },
+      "target": {
+        "width": 178,
+        "height": 50
+      }
+    },
+    {
+      "id": 2577,
+      "name_characters": 7,
+      "source": {
+        "width": 125,
+        "height": 50
+      },
+      "target": {
+        "width": 136,
+        "height": 50
+      }
+    },
+    {
+      "id": 2577,
+      "name_characters": 10,
+      "source": {
+        "width": 125,
+        "height": 50
+      },
+      "target": {
+        "width": 136,
+        "height": 50
+      }
+    },
+    {
+      "id": 2577,
+      "name_characters": 12,
+      "source": {
+        "width": 147,
+        "height": 50
+      },
+      "target": {
+        "width": 136,
+        "height": 50
+      }
+    },
+    {
+      "id": 2578,
+      "name_characters": 7,
+      "source": {
+        "width": 125,
+        "height": 50
+      },
+      "target": {
+        "width": 136,
+        "height": 50
+      }
+    },
+    {
+      "id": 2578,
+      "name_characters": 10,
+      "source": {
+        "width": 125,
+        "height": 50
+      },
+      "target": {
+        "width": 136,
+        "height": 50
+      }
+    },
+    {
+      "id": 2578,
+      "name_characters": 12,
+      "source": {
+        "width": 147,
+        "height": 50
+      },
+      "target": {
+        "width": 136,
+        "height": 50
+      }
+    },
+    {
+      "id": 2595,
+      "name_characters": 7,
+      "source": {
+        "width": 142,
+        "height": 25
+      },
+      "target": {
+        "width": 157,
+        "height": 25
+      }
+    },
+    {
+      "id": 2595,
+      "name_characters": 10,
+      "source": {
+        "width": 162,
+        "height": 25
+      },
+      "target": {
+        "width": 177,
+        "height": 25
+      }
+    },
+    {
+      "id": 2595,
+      "name_characters": 12,
+      "source": {
+        "width": 207,
+        "height": 25
+      },
+      "target": {
+        "width": 222,
+        "height": 25
+      }
+    },
+    {
+      "id": 2596,
+      "name_characters": 7,
+      "source": {
+        "width": 70,
+        "height": 50
+      },
+      "target": {
+        "width": 85,
+        "height": 50
+      }
+    },
+    {
+      "id": 2596,
+      "name_characters": 10,
+      "source": {
+        "width": 87,
+        "height": 50
+      },
+      "target": {
+        "width": 87,
+        "height": 50
+      }
+    },
+    {
+      "id": 2596,
+      "name_characters": 12,
+      "source": {
+        "width": 132,
+        "height": 50
+      },
+      "target": {
+        "width": 132,
+        "height": 50
+      }
+    }
+  ],
+  "native_font_unchanged": true,
+  "height_not_increased": true,
+  "translated_archive_sha256": "2902fdeecd2dbad0345f3f3df8f91a1273fa7dbb389b60c4a9d6322123a014f1",
+  "dol_sha256": "da02a1232240e139ec14a26ee8b4c2818c56f3c2907f5c2391bd81e2dc0842f6",
+  "limits": [
+    "240-pixel width is a conservative test budget, not a verified live balloon boundary",
+    "Message lookup returns test text; native font measurement executes without GPU",
+    "Actual battle balloon layout and rendering still need Dolphin"
+  ],
+  "dolphin_visual_tested": false
+}

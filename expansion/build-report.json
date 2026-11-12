@@ -219,11 +219,36 @@
   "output_sha256": {
     "main.dol": "da02a1232240e139ec14a26ee8b4c2818c56f3c2907f5c2391bd81e2dc0842f6",
     "common.fsys": "a3667703d2bf2e6733c6d40e4709869982f98e45b9ad029a9f7d7d9fec883d57",
-    "deck.fsys": "0532a445c219722df65d5d16b095a85195e43c86749f35f1d373c9b2ceab04ef"
+    "deck.fsys": "0532a445c219722df65d5d16b095a85195e43c86749f35f1d373c9b2ceab04ef",
+    "menu_fight_s.fsys": "2902fdeecd2dbad0345f3f3df8f91a1273fa7dbb389b60c4a9d6322123a014f1"
   },
   "complete": false,
   "dolphin_tested": false,
   "trade_save_tested": false,
   "shiny_rank_and_bonus_change": "Included with native-verified rank/bonus/status/boss rules",
-  "coop_waterfall_note": "Existing 2+2 cooperative draft does not cover six-member Waterfall; single-player remains supported"
+  "coop_waterfall_note": "Existing 2+2 cooperative draft does not cover six-member Waterfall; single-player remains supported",
+  "battle_translation": {
+    "status": "applied-approved-battle-text-awaiting-Dolphin-visual-check",
+    "language": "pt-BR",
+    "approved_batches": [
+      1
+    ],
+    "changed_message_ids": [
+      1164,
+      2577,
+      2578,
+      2595,
+      2596
+    ],
+    "changed_message_count": 5,
+    "untouched_message_count": 9228,
+    "untouched_archive_resources": 14,
+    "dynamic_variables_formatting_and_pause_markers_preserved": true,
+    "unapproved_text_changed": false,
+    "names_translated": false,
+    "source_sha256": "43493306dfbe78a2efb98f6510e1b159f85ac05022ed759fe2bec0fcc5b8b5f1",
+    "target_sha256": "2902fdeecd2dbad0345f3f3df8f91a1273fa7dbb389b60c4a9d6322123a014f1",
+    "approval_sha256": "cda062711e02f3bb1edddab43ad63800472a2166931358cdfd0738bf2d8ebd93",
+    "dolphin_visual_tested": false
+  }
 }

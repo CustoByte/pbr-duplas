@@ -1,0 +1,18 @@
+{
+  "language": "pt-BR",
+  "archive_sha256": "43493306dfbe78a2efb98f6510e1b159f85ac05022ed759fe2bec0fcc5b8b5f1",
+  "resource_sha256": "b89de0bf6438d69d029fa225677b7c213638c72f1155e1191c3085d455e6289c",
+  "review_batch_size": 5,
+  "batches": [
+    {
+      "batch": 1,
+      "status": "approved-by-user",
+      "entries": [
+        {"concept": "Pound announcement", "ids": [1164], "target": "{F001}{F101}{0025} usou\nPound!", "protected_names": ["Pound"]},
+        {"concept": "Attack missed", "ids": [2577, 2578], "target": "{F001}{F101}{0025}\nerrou o ataque!"},
+        {"concept": "Fainted", "ids": [2595], "target": "{F001}{F101}{0025} desmaiou!▼"},
+        {"concept": "Fainted, existing two-line layout", "ids": [2596], "target": "{F001}{F101}{0025}\ndesmaiou!▼"}
+      ]
+    }
+  ]
+}

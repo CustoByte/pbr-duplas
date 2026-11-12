@@ -1,0 +1,11 @@
+{
+  "batch": 2,
+  "status": "awaiting-user-approval",
+  "entries": [
+    {"ids": [3339], "source": "A critical hit!", "proposed": "Acerto crítico!"},
+    {"ids": [3344], "source": "It's not very effective...", "proposed": "Não é muito eficaz..."},
+    {"ids": [3345], "source": "It's super effective!", "proposed": "É supereficaz!"},
+    {"ids": [3361], "source": "But it failed!", "proposed": "Mas falhou!"},
+    {"ids": [2592, 2593], "source": "It doesn't affect [Pokémon]...", "proposed": "Não afeta [Pokémon]..."}
+  ]
+}

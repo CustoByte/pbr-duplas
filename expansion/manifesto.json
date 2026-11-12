@@ -1,12 +1,13 @@
 {
-  "mod_version": "full493-waterfall-shiny-bosses-coupons-v0.11.0-test.2",
+  "mod_version": "full493-coupons-battle-ptbr-v0.11.0-test.3",
   "game_id": "RPBE01",
   "revision": 0,
   "original_sha256": {
     "sys/main.dol": "ecb89c86f2eca30151561d9ee86a2ff260b2b2b3c9b4eb9429e04368392a2af9",
     "sys/fst.bin": "8dd93ae73ff2e9d1ca5b96af2697577cde5576a190fa388fcbff99f1d82686f0",
     "files/common.fsys": "75ba89e3bb859ac32ad655517e001928e7bf9ad655c675584256dd2a21393b36",
-    "files/deck.fsys": "c1a478be1ca447a47fe3efb2064de07bc3dffe883f52a180b403dab7469ddfdc"
+    "files/deck.fsys": "c1a478be1ca447a47fe3efb2064de07bc3dffe883f52a180b403dab7469ddfdc",
+    "files/menu_fight_s.fsys": "43493306dfbe78a2efb98f6510e1b159f85ac05022ed759fe2bec0fcc5b8b5f1"
   },
   "game_files": [
     {
@@ -6779,6 +6780,13 @@
       "sha256": "0532a445c219722df65d5d16b095a85195e43c86749f35f1d373c9b2ceab04ef",
       "patch_sha256": "29d097cff236165da1ff2fc72a678e32e1dd436749d9d6f864b918514d336aac",
       "format": "pbr-delta-v1"
+    },
+    {
+      "installed_path": "files/menu_fight_s.fsys",
+      "package_path": "patches/menu_fight_s.fsys.pbrdelta",
+      "format": "pbr-delta-v1",
+      "sha256": "2902fdeecd2dbad0345f3f3df8f91a1273fa7dbb389b60c4a9d6322123a014f1",
+      "patch_sha256": "7cee266fa4f6927ea812926352ec508950cf09bfaeff65d2a83dfec18b400b1b"
     }
   ]
 }

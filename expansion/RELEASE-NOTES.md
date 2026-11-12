@@ -1,4 +1,12 @@
-## Novidade desta atualização: Poké Coupons ilimitados
+## Tradução de batalha — lote 1 aprovado
+
+Três frases em pt-BR: uso de Pound, ataque que errou e Pokémon desmaiado.
+Somente esses textos aprovados e seus registros equivalentes foram alterados;
+os nomes permanecem originais. Preservados fonte, variáveis e pausas.
+Medidas nativas passaram em 15 casos, incluindo nomes longos; a aparência
+dos balões ainda precisa de teste no Dolphin. A tradução está em andamento.
+
+## Poké Coupons ilimitados
 
 O jogador tem 999.999 Poké Coupons disponíveis e o saldo permanece no máximo
 após compras, inclusive ao carregar um save já existente. A loja mantém seu

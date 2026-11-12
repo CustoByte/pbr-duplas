@@ -1,7 +1,7 @@
 """Package mod-owned scripts and binary delta patches only; no game files."""
 import argparse,hashlib,io,json,gzip,zipfile
 from pathlib import Path
-TAG='v0.11.0-full493-test.2'
+TAG='v0.11.0-full493-test.3'
 REPO='https://github.com/CustoByte/pbr-duplas'
 FEED='https://raw.githubusercontent.com/CustoByte/pbr-duplas/feat/full493-waterfall/expansion/update-test.json'
 

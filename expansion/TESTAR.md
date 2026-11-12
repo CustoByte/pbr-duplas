@@ -17,6 +17,9 @@
 9. Loja: carregar um save antigo, conferir 999.999 Poké Coupons, comprar
    vários produtos e verificar o inventário. O saldo deve continuar no máximo.
    Salvar pelo jogo, fechar e reabrir; conferir produtos e saldo novamente.
+10. Tradução do lote 1: conferir uso de Pound, erro de ataque e desmaio.
+    Verificar nomes longos, fonte, pausas e ausência de cortes nos balões.
+    Outros golpes e as frases do próximo lote ainda não foram traduzidos.
 
 Para relatar problema: versão do Dolphin, nome do coliseu, rank, rodada e ação
 que provocou o erro. Confirmar se a mesma situação funciona na cópia original.
