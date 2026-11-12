@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "release": "v0.9.1-monferno",
+  "public_assets_byte_identical": [
+    "update.json",
+    "aplicador-core.zip",
+    "PBR-Duplas-Aplicador-Windows.zip",
+    "PBR-Duplas-Aplicador-Mac.zip",
+    "SHA256SUMS.txt"
+  ],
+  "changed_core_entries": [
+    "manifesto.json",
+    "mod/main.dol"
+  ],
+  "old_windows_bootstrap_downloaded_verified_current_core": true,
+  "probe_stopped": "Missing local original image; no conversion or gameplay attempted",
+  "workflow": 43124044152,
+  "downloaded_sha256": {
+    "update.json": "59f8a03e393934a60ccb038252f5a68971ba11dbf6a63504a18f0b5639c26ea8",
+    "aplicador-core.zip": "5808b2f055209d09b3170b29b27fd36216bb4f3dd473bfaaf0a32c9cfc925c0e",
+    "PBR-Duplas-Aplicador-Windows.zip": "4a2f5fbc312846f01c7b664ad0aefbaf80f856ab16051cbafc4833b736520129",
+    "PBR-Duplas-Aplicador-Mac.zip": "9effe9f88c6289fb2e21cea6a1ef75d75bc2f8e111bf162a85e00e3c5beff049",
+    "SHA256SUMS.txt": "0978c57875a16d686b5ef77496705e7e97fefd44fe1748550578e585b4306397"
+  }
+}

@@ -30,3 +30,5 @@ Passaram 800 fixtures com 32 arranjos PK4 e todas as 25 classes de natureza, pre
 No replay isolado do estado privado enviado, o Monferno passa para Adamant, golpes 7/183/299/370 e item 157. Todos os demais Pokémon e os demais dados dos passes permanecem iguais; os IVs, EVs, a habilidade e o treinador são preservados. O estado e a memória privados não são distribuídos.
 
 Essas verificações executam rotinas PowerPC isoladas. Não houve inicialização/renderização completa desta versão no Dolphin nem teste de persistência de um save real. A seleção, a batalha e o salvamento precisam ser confirmados no jogo. Relatórios: [VERIFICACAO-MONFERNO.json](VERIFICACAO-MONFERNO.json) e [VERIFICACAO-v9.json](VERIFICACAO-v9.json).
+
+A versão final v0.9.1 foi publicada pelo workflow 43124044152. Os cinco downloads públicos foram conferidos byte a byte; o iniciador Windows antigo baixou e verificou o núcleo novo pelo canal HTTPS real. Essa prova foi interrompida deliberadamente na falta de uma imagem original local, sem converter nem iniciar o jogo. [Registro da publicação](PUBLICACAO-v9.json).
