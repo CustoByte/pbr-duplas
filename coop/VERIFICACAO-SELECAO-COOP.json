@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "four_pick_orders": 720,
+  "wrong_owner_selected_slots_blocked": 720,
+  "incomplete_confirmation_blocked": 8,
+  "native_undo_transitions": 6,
+  "cursor_and_raw_owner_queries": 8,
+  "native_command_after_draft": 2,
+  "disabled_comparisons": 20,
+  "arena_clamp_cases": 28,
+  "cleanup_cases": 4,
+  "release_barrier_guard_cases": 8,
+  "selection_predicate_stubs": [],
+  "pokemon_getter_stubs": [],
+  "native_marking": "80159db8",
+  "native_packing": "8015a1c4",
+  "native_legality": "80154e0c",
+  "input_and_ui_fixtures": "Reconstructed selection object/registration; seeded button caches",
+  "audio_stubs": [
+    "8005c04c feedback ids 1/2/3",
+    "8000aeb0 selection feedback 0x21f"
+  ],
+  "sdk_heap_header_preserved": "8063c800 EXPHeap",
+  "reserved_mem1_end": "8063f000",
+  "prototype_sha256": "bb364e2715db2c91319edd085fc55a069e2715c051f336f398af6bbb7c3812c9",
+  "enabled_at_boot": false,
+  "private_data_published": false,
+  "limits": [
+    "No rendered selection screen or physical controllers",
+    "No full battle startup, faint/replacement or NetPlay test",
+    "Capture heap allocation is not replayed; fresh-boot arena reservation is checked separately",
+    "Owner/turn display and remaining battle interfaces still need integration"
+  ]
+}
