@@ -1,6 +1,6 @@
 {
   "batch": 3,
-  "status": "awaiting-user-approval",
+  "status": "approved-by-user",
   "category": "battle-menus",
   "entries": [
     {"ids": [3489, 3828], "source": "FIGHT", "proposed": "LUTAR"},

@@ -40,7 +40,47 @@
       ],
       "source": "[Pokémon] thawed out!",
       "proposed": "[Pokémon] descongelou!"
+    },
+    {
+      "ids": [
+        2865
+      ],
+      "source": "[Pokémon] is fast asleep.",
+      "proposed": "[Pokémon] está dormindo profundamente."
+    },
+    {
+      "ids": [
+        2867,
+        2868
+      ],
+      "source": "[Pokémon] woke up!",
+      "proposed": "[Pokémon] acordou!"
+    },
+    {
+      "ids": [
+        2644,
+        2645
+      ],
+      "source": "[Pokémon] was badly poisoned!",
+      "proposed": "[Pokémon] foi gravemente envenenado!"
+    },
+    {
+      "ids": [
+        2715,
+        2716
+      ],
+      "source": "[Pokémon] is confused!",
+      "proposed": "[Pokémon] está confuso!"
+    },
+    {
+      "ids": [
+        2746,
+        2747
+      ],
+      "source": "[Pokémon] flinched!",
+      "proposed": "[Pokémon] hesitou!"
     }
   ],
-  "category": "status-conditions-future-review"
+  "category": "battle-status-messages",
+  "batch": 4
 }

@@ -2,7 +2,7 @@
   "language": "pt-BR",
   "archive_sha256": "43493306dfbe78a2efb98f6510e1b159f85ac05022ed759fe2bec0fcc5b8b5f1",
   "resource_sha256": "b89de0bf6438d69d029fa225677b7c213638c72f1155e1191c3085d455e6289c",
-  "review_batch_size": 5,
+  "review_batch_size": 10,
   "batches": [
     {
       "batch": 1,
@@ -23,6 +23,19 @@
         {"concept": "Super effective, exact user wording", "ids": [3345], "target": "{F001}{F101}É Super eficaz!"},
         {"concept": "Move failed", "ids": [3361], "target": "{F001}{F101}Mas falhou!"},
         {"concept": "No effect", "ids": [2592, 2593], "target": "{F001}{F101}Não afeta\n{0025}..."}
+      ]
+    },
+    {
+      "batch": 3,
+      "status": "approved-by-user",
+      "entries": [
+        {"concept": "Battle fight labels", "ids": [3489], "target": "{F001}{F101}LUTAR"},
+        {"concept": "Main battle fight button", "ids": [3828], "target": "{F000}{F101}LUTAR"},
+        {"concept": "Main battle give-in button", "ids": [3830], "target": "{F000}{F101}DESISTIR"},
+        {"concept": "Battle give-in label", "ids": [3891], "target": "{F001}{F101}Desistir"},
+        {"concept": "Return", "ids": [3892], "target": "{F001}{F101}Voltar"},
+        {"concept": "Shift", "ids": [3893], "target": "{F001}{F101}Trocar"},
+        {"concept": "Moves Info", "ids": [3894], "target": "{F001}{F101}Ver golpes"}
       ]
     }
   ]

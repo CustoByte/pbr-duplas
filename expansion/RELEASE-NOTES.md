@@ -1,12 +1,14 @@
-## Tradução de batalha — lotes 1 e 2 aprovados
+## Tradução de batalha — lotes 1 a 3 aprovados
 
 Oito frases em pt-BR: uso de Pound, ataque que errou, Pokémon desmaiado,
 acerto crítico, pouca eficácia, alta eficácia, golpe que falhou e sem efeito.
 A mensagem de alta eficácia usa exatamente **“É Super eficaz!”**, conforme
-a revisão do usuário. As cinco propostas do lote 3 ainda não foram aplicadas.
+a revisão do usuário. O lote 3 acrescenta LUTAR, DESISTIR/Desistir, Voltar,
+Trocar e Ver golpes aos menus de batalha. Os próximos lotes terão dez textos
+por revisão e só serão aplicados após aprovação.
 Somente esses textos aprovados e seus registros equivalentes foram alterados;
 os nomes permanecem originais. Preservados fonte, variáveis e pausas.
-Medidas nativas passaram em 33 casos, incluindo nomes longos; a aparência
+Medidas nativas passaram em 54 casos, incluindo nomes longos; a aparência
 dos balões ainda precisa de teste no Dolphin. A tradução está em andamento.
 
 ## Poké Coupons ilimitados

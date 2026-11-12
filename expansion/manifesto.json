@@ -1,5 +1,5 @@
 {
-  "mod_version": "full493-coupons-battle-ptbr-v0.11.0-test.4",
+  "mod_version": "full493-coupons-battle-ptbr-v0.11.0-test.5",
   "game_id": "RPBE01",
   "revision": 0,
   "original_sha256": {
@@ -6785,8 +6785,8 @@
       "installed_path": "files/menu_fight_s.fsys",
       "package_path": "patches/menu_fight_s.fsys.pbrdelta",
       "format": "pbr-delta-v1",
-      "sha256": "f7bd9909e9a713aeac6cb32ebd6062ad5c9ba5b445ee6437e1bdc331d41b7533",
-      "patch_sha256": "13b94d784ead349296e2aa1945417d686d7a0123e2bba480f34ec46e99a891f6"
+      "sha256": "166ca560c0710e9e68897ba69169077ed98dd2030e56dfaac241f069cedf1bea",
+      "patch_sha256": "68c8aa109bfe55304848ecdda9535f36c9a61780258a2cff42903a6429f59043"
     }
   ]
 }
