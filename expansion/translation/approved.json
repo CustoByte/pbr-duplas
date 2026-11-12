@@ -231,6 +231,86 @@
           "target": "{F001}{F101}{0025} hesitou!"
         }
       ]
+    },
+    {
+      "batch": 5,
+      "status": "approved-by-user",
+      "entries": [
+        {
+          "concept": "All right! Let's go!",
+          "ids": [
+            3
+          ],
+          "target": "{F006}{F101}Certo! Vamos lá!"
+        },
+        {
+          "concept": "Go!",
+          "ids": [
+            4
+          ],
+          "target": "{F006}{F101}Vai!"
+        },
+        {
+          "concept": "Good job, [Pokémon]!",
+          "ids": [
+            5
+          ],
+          "target": "{F006}{F101}Bom trabalho,\n{0015}!",
+          "layout_reference_id": 10
+        },
+        {
+          "concept": "[Pokémon], it's you!",
+          "ids": [
+            6
+          ],
+          "target": "{F006}{F101}{0015},\né com você!",
+          "layout_reference_id": 10
+        },
+        {
+          "concept": "Yes! I won!",
+          "ids": [
+            7
+          ],
+          "target": "{F006}{F101}Isso! Eu venci!"
+        },
+        {
+          "concept": "I lost!",
+          "ids": [
+            8
+          ],
+          "target": "{F006}{F101}Eu perdi!"
+        },
+        {
+          "concept": "Glad to meet you!",
+          "ids": [
+            9
+          ],
+          "target": "{F006}{F101}Prazer em\nconhecer você!",
+          "layout_reference_id": 10
+        },
+        {
+          "concept": "That was quite a battle! Thank you!",
+          "ids": [
+            10
+          ],
+          "target": "{F006}{F101}Que batalha!\nValeu!"
+        },
+        {
+          "concept": "You got me! I lost!",
+          "ids": [
+            11
+          ],
+          "target": "{F006}{F101}Você me venceu!\nEu perdi!"
+        },
+        {
+          "concept": "My skills are perfect!",
+          "ids": [
+            12
+          ],
+          "target": "{F006}{F101}Minhas habilidades\nsão perfeitas!",
+          "layout_reference_id": 10
+        }
+      ]
     }
   ]
 }

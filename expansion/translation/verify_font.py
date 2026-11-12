@@ -29,13 +29,15 @@ def verify(capture, dol, original, translated):
                       for entry in approved_entries() if 'battle_dialogue_layout_reference_id' in entry
                       for index in entry.get('battle_dialogue_reference_ids', [])}
     cases = []
+    def fixture_text(row, name):
+        return readable(row).replace('{0025}', name).replace('{0015}', name).replace('▼', '')
     for index, (a, b) in enumerate(zip(before, after)):
         if a == b:
             continue
         for name in ('Pikachu', 'Feraligatr', 'WWWWWWWWWWWW'):
             measures = []
             for row in (a, b):
-                text = readable(row).replace('{0025}', name).replace('▼', '')
+                text = fixture_text(row, name)
                 h.uc.mem_write(pointer, encoded(text))
                 result = h.call(0x8024FBBC, (0x8048062C, message_id, 1, 0), limit=3000000)
                 h.abi()
@@ -43,7 +45,7 @@ def verify(capture, dol, original, translated):
             reference_height = measures[0]['height']
             width_budget = 240
             if index in references:
-                text = readable(before[references[index]]).replace('{0025}', name).replace('▼', '')
+                text = fixture_text(before[references[index]], name)
                 h.uc.mem_write(pointer, encoded(text))
                 result = h.call(0x8024FBBC, (0x8048062C, message_id, 1, 0), limit=3000000)
                 h.abi()

@@ -1,0 +1,78 @@
+{
+  "batch": 6,
+  "status": "awaiting-user-approval",
+  "category": "trainer-battle-dialogue",
+  "publication": "held-until-complete-battle-translation",
+  "entries": [
+    {
+      "ids": [
+        13
+      ],
+      "source": "I'm perfect, am I not?",
+      "proposed": "Sou impecável, não sou?"
+    },
+    {
+      "ids": [
+        14
+      ],
+      "source": "My perfect skills...",
+      "proposed": "Minhas habilidades perfeitas..."
+    },
+    {
+      "ids": [
+        15
+      ],
+      "source": "Easy, easy!",
+      "proposed": "Fácil, fácil!"
+    },
+    {
+      "ids": [
+        16
+      ],
+      "source": "That was easy! See my strength?",
+      "proposed": "Foi fácil! Viu minha força?"
+    },
+    {
+      "ids": [
+        17
+      ],
+      "source": "I let my guard down...",
+      "proposed": "Baixei a guarda..."
+    },
+    {
+      "ids": [
+        18
+      ],
+      "source": "I'm on a roll!",
+      "proposed": "Estou com tudo!"
+    },
+    {
+      "ids": [
+        19
+      ],
+      "source": "No one can stop me!",
+      "proposed": "Ninguém pode me parar!"
+    },
+    {
+      "ids": [
+        20
+      ],
+      "source": "I just got stopped... Why now?",
+      "proposed": "Me pararam... Por que agora?"
+    },
+    {
+      "ids": [
+        21
+      ],
+      "source": "I live for battles.",
+      "proposed": "Eu vivo pelas batalhas."
+    },
+    {
+      "ids": [
+        22
+      ],
+      "source": "It's so fun, that I can't get enough!",
+      "proposed": "É tão divertido que não consigo parar!"
+    }
+  ]
+}
