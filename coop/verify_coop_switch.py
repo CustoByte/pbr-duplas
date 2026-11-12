@@ -218,7 +218,7 @@ def verify(source,changed,captures):
         'limits':['No physical controllers, rendered replacement battle or NetPlay test',
                   'Selector layout inferred from native validator; not captured during a real replacement',
                   'Native 0x505a rejection text has not been checked visually',
-                  'Targets, remaining command interfaces, turn indicator and battle lifecycle remain unfinished'],
+                  'Secondary interfaces, special tournament screens, turn indicator and battle lifecycle remain unfinished'],
         'private_data_published':False}
 
 if __name__=='__main__':

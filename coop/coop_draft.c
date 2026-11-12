@@ -78,6 +78,36 @@ static int switch_allowed(const Battle *battle, u32 position, u32 candidate) {
     return S[10+candidate] == switch_owner(battle,position);
 }
 
+/* Native main-command, move and target callbacks share the actor field.
+ * Scope by callsite AND live registration: a target belongs to the attacker,
+ * including when the target itself belongs to the other player. */
+static u32 battle_input_scope(u32 caller) {
+    Battle battle; u32 callback, family, handle, position, owner, phase;
+    if (!battle_enabled()) return 0;
+    switch (caller) {
+    case 0x80061118u: case 0x8006113Cu: case 0x80061154u: case 0x8006143Cu:
+        callback = 0x80060EECu; family = 0; break;
+    case 0x8006180Cu: callback = 0x80061598u; family = 1; break;
+    case 0x80062180u: callback = 0x80061C98u; family = 2; break;
+    default: return 0;
+    }
+    handle = WORD(0x806257E4u);
+    if (handle >= 32 || !BYTE(REGISTRY + 0x12C + handle) ||
+        WORD(REGISTRY + 0x2C + 4*handle) != callback || HALF(BATTLE_UI + 0x6E) != 0)
+        return 0;
+    position = HALF(BATTLE_UI + 0x64);
+    if (position > 1 || BYTE(0x80626EE4u) != (family ? family + 5*position : 4*position) ||
+        !battle_snapshot(&battle) || !(battle.living & (1u << battle.active[position]))) {
+        S[5] = 255; return 1;
+    }
+    owner = S[10+battle.active[position]]; phase = family == 2 ? 3 : 2;
+    if (S[5] != phase || S[6] != owner) {
+        S[7] = 1; WORD(S + 0x10) += 1;
+    }
+    S[5] = (u8)phase; S[6] = (u8)owner;
+    return 1;
+}
+
 u32 coop_party_read(u32 flags, u32 focus, u32 pad, u32 assist) {
     Battle battle; u32 handle, position, mode, owner, phase, result, button, member;
     if (!battle_enabled())
@@ -253,6 +283,7 @@ void coop_cleanup(void) {
 
 u32 coop_input_scope(u32 caller) {
     u32 ui, handle;
+    if (battle_input_scope(caller)) return 1;
     if (!enabled() || !D->active) return 0;
     switch (caller) {
     case 0x80156458u: case 0x80156478u: case 0x801569D8u:

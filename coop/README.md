@@ -85,6 +85,28 @@ Os testes usam os seis integrantes reais de um passe obtido pelo accessor nativo
 
 Não houve renderização da seleção, navegação completa por dois controles físicos, inicialização completa da batalha a partir dessa tela nem NetPlay. O cabeçalho de heap capturado é preservado, mas as alocações do heap antigo não são reproduzidas durante a seleção isolada. O indicador visual de turno e a cobertura dos torneios com telas especiais ainda precisam ser integrados e testados.
 
+## Comando, golpe e alvo pelo dono do atacante
+
+A integração atual diferencia três famílias da interface principal:
+
+| Etapa | Callback nativo | Modos para posições 0 / 1 | Retornos de entrada reconhecidos |
+|---|---|---|---|
+| Comando principal e confirmação auxiliar | `0x80060EEC` | 0 / 4 | `0x80061118`, `0x8006113C`, `0x80061154`, `0x8006143C` |
+| Escolha de golpe | `0x80061598` | 1 / 6 | `0x8006180C` |
+| Escolha de alvo | `0x80061C98` | 2 / 7 | `0x80062180` |
+
+A análise das rotinas de inicialização, dos getters de golpes e dos resultados de alvo identifica a primeira captura como a família de alvos e a segunda como a de golpes. Os replays anteriores tratavam ambas genericamente como interfaces de comando; a nova etapa registra essa distinção e usa fase 3 para alvos e fase 2 para comandos/golpes. O comando principal da segunda posição usa modo **4**, não 5; isso foi conferido na tabela de abertura nativa.
+
+`coop_input_scope` cruza ponto da chamada, registro ativo, lado, modo, posição, sessão e tabela de donos. A propriedade vem do integrante lógico ativo, cujo HP é consultado no contexto real da batalha. Contexto reconhecido com vínculo inválido ou atacante sem HP bloqueia entrada. A nova camada cobre também o comando principal e sua confirmação de duas opções; as duas famílias verificadas anteriormente passam pela mesma verificação de contexto. Entrada fora desses pontos reconhecidos continua pelos caminhos anteriores/nativos.
+
+Quem escolhe o alvo é o dono do **atacante**. Mirar no Pokémon do parceiro, quando o golpe permite, não transfere o controle a ele. A camada não muda a elegibilidade dos alvos nem as máscaras de resultado: continuam calculadas pelas funções e getters originais. Os dois ativos do sobrevivente usam o controle dele após a reordenação nativa. Novos pedidos e mudanças de fase/dono exigem liberação dos botões.
+
+[VERIFICACAO-ALVOS-COOP.json](VERIFICACAO-ALVOS-COOP.json) registra 84 comparações de callbacks com coop desativado; 288 comparações encaminhadas ao dono, 288 bloqueios do outro jogador e 288 barreiras de entrada; 48 inicializações de perfis numéricos de alvo e 240 comparações do resultado final; 144 casos com reordenação nativa para o sobrevivente; 36 vínculos inválidos bloqueados; oito chamadas dos ramos de comando/confirmação; quatro escolhas explícitas do aliado mantendo o dono do atacante; e 64 casos de máscaras com alvos sem HP. As regressões de seleção e troca usam a mesma imagem interna.
+
+O teste executa a abertura e o registro de callback originais, a configuração nativa de botões, o cursor e o resultado final da escolha. Para avançar as animações sem renderizar, prepara explicitamente o campo de conclusão que o getter nativo `0x802585F4` consulta. Donos, caches dos controles e alguns mapeamentos são fixtures; HP é preparado pelo setter nativo. Sons e contexto PSQ têm as mesmas exceções estreitas dos testes anteriores. Não são testes de todos os golpes/habilidades, de animações renderizadas, de controles físicos nem de uma batalha completa.
+
+Para repetir: `python coop/verify_coop_target.py --source <main.dol-v0.9.1> --changed <copia-interna.dol> --captures <primeira-pasta-privada> <segunda-pasta-privada> --output <relatorio.json>`. Ainda falta integrar a rotina secundária de resumo/atalhos `0x8006B468`, telas especiais, indicação de dono e encerramento da batalha. O protótipo segue desativado e fora do aplicador distribuído.
+
 ## Trocas e substituições por dono
 
 A nova camada em `coop_draft.c` atende a tela nativa de equipe `0x80062B50`, nos modos 3 e 8, e a validação original de troca `0x801722BC`. As posições ativas e as linhas da tela são convertidas para o índice lógico pela função original `0x803CC838`; a propriedade continua ligada ao integrante, mesmo depois de uma reordenação.
@@ -93,7 +115,7 @@ A leitura de HP usa o getter nativo `0x803E100C`, campo `0xA2`, nos quatro integ
 
 A entrada da tela é encaminhada ao dono correspondente, com nova barreira de liberação ao mudar o jogador ou a fase. Confirmações de integrante indisponível são suprimidas, mantendo o foco. Cancelamento segue o processamento nativo, pelo controle correto. O gancho de validação também cobre consultas fora desse ponto de entrada: primeiro executa os bloqueios originais de HP, ativo, escolha pendente e aprisionamento; depois acrescenta a verificação de dono. Contextos inimigos continuam nativos. Tabela/sessão/contexto incompatíveis impedem uma nova escolha cooperativa válida. Ainda não há indicação visual explicando esse bloqueio.
 
-O adaptador de entrada fica em `0x8063EB40` e o retorno à validação original em `0x8063EB50`, separados do estado em `0x8063EB00`. O código compilado ocupa 4.524 bytes e cabe na reserva anterior; o limite de ArenaLo permanece `0x8063F000`. A imagem gerada continua desativada ao iniciar.
+O adaptador de entrada fica em `0x8063EB40` e o retorno à validação original em `0x8063EB50`, separados do estado em `0x8063EB00`. O código compilado atual, incluindo comando/golpe/alvo, ocupa 5.428 bytes e cabe na reserva anterior; o limite de ArenaLo permanece `0x8063F000`. A imagem gerada continua desativada ao iniciar.
 
 [VERIFICACAO-TROCAS-COOP.json](VERIFICACAO-TROCAS-COOP.json) registra 9.216 comparações com o contrato de propriedade, cobrindo todos os 16 padrões de HP, pares ordenados de ativos, duas atribuições de dono, ambas as posições e as seis linhas, nas duas capturas. Inclui 7.684 rejeições nativas preservadas, 72 verificações de entrada, 72 transições da rotina real da tela, 144 comparações da validação desativada, 84 comparações da entrada desativada, oito casos com reordenação nativa para o sobrevivente, 34 guardas e 12 casos de cada: cancelamento, controle desconectado e barreira de liberação.
 
@@ -126,6 +148,7 @@ Não houve renderização cooperativa, teste com dois controles físicos ou sess
 - [VERIFICACAO-ATORES.json](VERIFICACAO-ATORES.json)
 - [VERIFICACAO-SELECAO-COOP.json](VERIFICACAO-SELECAO-COOP.json)
 - [VERIFICACAO-TROCAS-COOP.json](VERIFICACAO-TROCAS-COOP.json)
+- [VERIFICACAO-ALVOS-COOP.json](VERIFICACAO-ALVOS-COOP.json)
 
 Para o contrato sem binários: `python -m unittest discover -s coop -p test_coop_policy.py`.
 
@@ -133,7 +156,7 @@ Para o replay privado, instale `mod-source/requirements-dev.txt` e coloque `mod-
 
 ## Próximas integrações
 
-A escolha de dois por pessoa, a criação automática da tabela e a ordenação intercalada estão implementadas no protótipo nativo e verificadas isoladamente. As restrições de reserva e a escolha de substituto por dono também estão implementadas e verificadas isoladamente. Faltam o indicador visual de turno, as demais interfaces de comandos/alvos e telas especiais; integração visual e teste de uma sequência real de desmaio/substituição; descarte da tabela ao terminar a batalha e validação completa dos menus. Depois será possível testar uma partida completa com dois controles e NetPlay. Não é necessário outro estado para repetir os testes já registrados.
+A escolha de dois por pessoa, a criação automática da tabela e a ordenação intercalada estão implementadas no protótipo nativo e verificadas isoladamente. As restrições de reserva e a escolha de substituto por dono também estão implementadas e verificadas isoladamente. A interface principal de comando/golpe/alvo também encaminha as escolhas pelo atacante e preserva os resultados nativos nos testes isolados. Faltam o indicador visual de turno, as interfaces secundárias de resumo/atalhos e telas especiais; integração visual e teste de uma sequência real de desmaio/substituição; descarte da tabela ao terminar a batalha e validação completa dos menus. Depois será possível testar uma partida completa com dois controles e NetPlay. Não é necessário outro estado para repetir os testes já registrados.
 
 ## Transporte online
 
