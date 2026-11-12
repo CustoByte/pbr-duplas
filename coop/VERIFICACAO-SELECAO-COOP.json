@@ -21,14 +21,14 @@
     "8000aeb0 selection feedback 0x21f"
   ],
   "sdk_heap_header_preserved": "8063c800 EXPHeap",
-  "reserved_mem1_end": "8063f000",
-  "prototype_sha256": "a0c7c5e16da4eecf24d19fb7281118132c72dd88451566ee1e315f599c238083",
+  "reserved_mem1_end": "80641000",
+  "prototype_sha256": "47ef4e5b5ac44505990bff286ec3c26d2ac53210de79bb2451ce8bae6cecdc67",
   "enabled_at_boot": false,
   "private_data_published": false,
   "limits": [
     "No rendered selection screen or physical controllers",
     "No full battle startup, faint/replacement or NetPlay test",
     "Capture heap allocation is not replayed; fresh-boot arena reservation is checked separately",
-    "Owner/turn display and remaining battle interfaces still need integration"
+    "Full auxiliary navigation, special screens, prompt rendering/refresh and full battle flow need Dolphin validation"
   ]
 }

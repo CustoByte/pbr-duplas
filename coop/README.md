@@ -1,6 +1,10 @@
 # Campanha cooperativa em desenvolvimento
 
-**Este ramo ainda não oferece um cooperativo jogável.** O protótipo fica desativado ao iniciar e não está no canal automático de atualização. A versão distribuída continua v0.9.1-monferno. Saves e bancos de memória privados não são publicados.
+**Candidata experimental para teste, ainda sem validação de uma partida completa no Dolphin ou online.** A compilação de desenvolvimento continua desativada por padrão; o pacote experimental ativa a seleção cooperativa explicitamente. A versão do canal normal continua v0.9.1-monferno. Saves, ROM completa e bancos de memória privados não são publicados.
+
+[**Instruções de instalação e validação**](TESTAR-COOP.md) · [Windows](https://github.com/CustoByte/pbr-duplas/releases/download/v0.10.0-coop-test.1/PBR-Coop-Teste-Windows.zip) · [Mac](https://github.com/CustoByte/pbr-duplas/releases/download/v0.10.0-coop-test.1/PBR-Coop-Teste-Mac.zip)
+
+O projeto permanece com `project_complete: false` em [STATUS-COOP.json](STATUS-COOP.json): os testes isolados não demonstram inicialização completa, navegação de todas as telas especiais, persistência ou sincronização NetPlay.
 
 ## Regras confirmadas
 
@@ -14,6 +18,22 @@
 O protótipo mantém escolhas sequenciais na interface original. Duas ações do mesmo sobrevivente são decisões diferentes e exigem liberação dos botões entre elas. Interface simultânea e recuperação de sessão online interrompida continuam indefinidas.
 
 `coop_policy.py` representa essas regras. As escolhas `(P1-A, P1-B)` e `(P2-A, P2-B)` geram a ordem `(P1-A, P2-A, P1-B, P2-B)`, com donos `(P1, P2, P1, P2)`. O novo protótipo de seleção já preenche essa tabela ao confirmar as quatro escolhas. A indicação visual de quem deve escolher ainda está pendente.
+
+## Fechamento da implementação e candidata de teste
+
+A camada adicional cobre as 12 leituras dos atalhos `0x8006B468` e do visualizador de detalhes `0x800FC1B4`. Ela cruza callback registrado, contexto de batalha, posição e propriedade, inclusive se o visualizador reteve um índice físico de controle. Detalhes durante a seleção usam o dono da escolha atual; consultas de menus fora desses contextos preservam o caminho nativo. As seis páginas de detalhes têm seus pontos de entrada cobertos, mas a navegação visual completa ainda precisa ser executada no emulador.
+
+A entrada nativa de resultados `0x800754C8` devolve a fase de menus ao P1; o código de cancelamento `0x80` invalida a tabela. A consulta final `0x80075394` mantém os donos enquanto retorna resultado pendente `0x80` e os descarta nos resultados finais 0/1/2. A operação é idempotente e não escreve no save. Isso preserva a atribuição entre rodadas de uma série, sem transferir os menus ao sobrevivente.
+
+O accessor de textos `0x8024FB34` acrescenta `P1: ` ou `P2: ` aos prompts nativos `0x2ECB`, `0x2ECC`, `0x3123` e `0x3124`, preservando cabeçalhos, placeholders e terminadores. Os textos originais e os apelidos dos Pokémon não são modificados. A integridade dos bytes foi verificada; **posição, tamanho e atualização visual do prefixo ainda não foram verificados**. A seleção inicial segue a ordem documentada de dois por pessoa; não há um novo painel visual específico para ela.
+
+[VERIFICACAO-ENCERRAMENTO-COOP.json](VERIFICACAO-ENCERRAMENTO-COOP.json) contém 384 casos de entrada auxiliar por dono, 96 comparações desativadas, dez guardas, 16 execuções do callback secundário nativo, quatro detalhes durante a seleção, oito entradas de resultado, 32 consultas de resultado e 32 repetições idempotentes, oito verificações de menu P1, 64 prefixos e 48 mensagens preservadas. Registro de callbacks, campos de animação, estados de resultado, controles e alguns objetos são fixtures explícitas. Não houve renderização nem resultado produzido por uma batalha real.
+
+A reserva atual termina em `0x80641000`. O código próprio continua em `0x8063D400` e ocupa 8.116 bytes. Adaptadores ficam a partir de `0x80640000`, estado de seleção em `0x80640100`, entradas auxiliares em `0x80640200` e buffers de texto em `0x80640400..0x80640BFF`. Os dois setters de ArenaLo reservam esse novo limite; a lacuna do EXPHeap em `0x8063C800` permanece fora da seção carregada.
+
+`prepare_coop_draft.py --activate-experimental` altera somente cinco bytes do estado próprio (`DRFT` e habilitação) em relação à compilação padrão. Duas execuções do reset nativo verificaram a ativação; [VERIFICACAO-ATIVACAO-COOP.json](VERIFICACAO-ATIVACAO-COOP.json) distingue os hashes das duas imagens. Sempre iniciar normalmente; restaurar um save state antigo não testa esse arranjo de memória.
+
+`package_coop_candidate.py` usa o núcleo da v0.9.1, mantém common.fsys, as conferências da ROM e os aplicadores e substitui a imagem interna pelo candidato ativado. O Windows usa outro sufixo para a RVZ e ambos os iniciadores guardam seus caminhos em uma pasta de teste separada. O canal experimental consulta [update-test.json](update-test.json) neste ramo e valida o SHA-256 do núcleo baixado. Esse ramo precisa permanecer disponível para as atualizações experimentais. O canal normal `releases/latest` permanece inalterado. Os ZIPs passaram pelas conferências estruturais/roundtrip; os novos iniciadores ainda precisam ser executados nos sistemas dos jogadores.
 
 ## Consulta de entrada e cursor
 
@@ -31,6 +51,8 @@ Essa distinção foi confirmada nas capturas e nas instruções nativas. O rotea
 `coop_input_router.py` aceita somente a base de SHA-256 `10913e96306bd0f8ef85f07c1d95d73ca90cbe923added8b513809640163fe96`. Usa `0x8063C400` e estado de 32 bytes em `0x8063C6C0`. Nova decisão bloqueia entrada até o dono soltar os botões, inclusive se ele continuar sendo o mesmo. Controle ausente/desconectado bloqueia sem transferir a escolha ao parceiro. Ainda não há tela de reconexão.
 
 ## Ponte experimental para o ator
+
+As seções seguintes registram as etapas anteriores; os endereços e pendências atuais estão no fechamento acima.
 
 As capturas privadas do Dolphin 2609b permitem executar duas famílias de interface efetivamente registradas:
 
@@ -154,9 +176,9 @@ Para o contrato sem binários: `python -m unittest discover -s coop -p test_coop
 
 Para o replay privado, instale `mod-source/requirements-dev.txt` e coloque `mod-source` e `coop` no caminho de módulos. Extraia as capturas localmente com `mod-source/read_dolphin_state.py`, sem copiá-las para o repositório. Execute `coop/verify_coop_actor.py --source <main.dol-v0.9.1> --captures <primeira-pasta-privada> <segunda-pasta-privada> --output <relatorio.json>`. Isso gera um relatório, não um lançamento jogável.
 
-## Próximas integrações
+## Validação restante para finalizar
 
-A escolha de dois por pessoa, a criação automática da tabela e a ordenação intercalada estão implementadas no protótipo nativo e verificadas isoladamente. As restrições de reserva e a escolha de substituto por dono também estão implementadas e verificadas isoladamente. A interface principal de comando/golpe/alvo também encaminha as escolhas pelo atacante e preserva os resultados nativos nos testes isolados. Faltam o indicador visual de turno, as interfaces secundárias de resumo/atalhos e telas especiais; integração visual e teste de uma sequência real de desmaio/substituição; descarte da tabela ao terminar a batalha e validação completa dos menus. Depois será possível testar uma partida completa com dois controles e NetPlay. Não é necessário outro estado para repetir os testes já registrados.
+A implementação nativa reunida está empacotada para teste manual. Ainda faltam a validação visual dos resumos/atalhos e do prefixo, inicialização completa, todos os coliseus/regras especiais, persistência com o save real, dois controles físicos e NetPlay. O roteiro e os critérios de aprovação estão em [TESTAR-COOP.md](TESTAR-COOP.md). O projeto não é marcado como concluído enquanto esses itens estiverem sem evidência.
 
 ## Transporte online
 

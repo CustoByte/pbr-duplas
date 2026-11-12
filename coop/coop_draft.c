@@ -13,7 +13,7 @@ typedef struct {
     u8 owners[6];
 } Draft;
 
-#define D ((volatile Draft *)0x8063EB00u)
+#define D ((volatile Draft *)0x80640100u)
 #define S ((volatile u8 *)0x8063C6C0u)
 #define WORD(p) (*(volatile u32 *)(p))
 #define HALF(p) (*(volatile u16 *)(p))
@@ -30,6 +30,9 @@ extern u32 original_pack(void);
 extern void original_cleanup(void);
 extern u32 original_validate_switch(u32 row, u32 selector);
 extern u32 cooperative_read(u32 flags, u32 focus, u32 pad, u32 assist);
+extern u32 original_read_result(void);
+extern void original_deliver_result(u32 result);
+extern u32 original_text(u32 manager, u32 id);
 
 typedef struct {
     u32 context, living, active[2];
@@ -76,6 +79,125 @@ static int switch_allowed(const Battle *battle, u32 position, u32 candidate) {
     if (candidate >= 4 || !(battle->living & (1u << candidate)) ||
         candidate == battle->active[0] || candidate == battle->active[1]) return 0;
     return S[10+candidate] == switch_owner(battle,position);
+}
+
+static void route_choice(u32 phase, u32 owner) {
+    if (S[5] != phase || S[6] != owner) {
+        S[7] = 1; WORD(S + 0x10) += 1;
+    }
+    S[5] = (u8)phase; S[6] = (u8)owner;
+}
+
+/* Separate input paths used by the battle shortcuts and Pokemon details.
+ * Details opened from campaign menus keep their original controller. */
+u32 coop_aux_read(u32 flags, u32 focus, u32 pad, u32 assist, u32 caller) {
+    Battle battle; u32 context, handle, position, mode, family, phase, owner;
+    if (!battle_enabled()) goto native;
+    switch (caller) {
+    case 0x8006B4DCu: case 0x8006B4F4u: case 0x8006B514u: case 0x8006B530u:
+    case 0x8006C39Cu: case 0x8006C3B8u:
+        handle = WORD(0x806257E8u);
+        if (handle >= 32 || !BYTE(REGISTRY+0x12C+handle) ||
+            WORD(REGISTRY+0x2C+4*handle) != 0x8006B468u) goto native;
+        break;
+    case 0x800FC880u: case 0x800FD554u: case 0x800FE0D4u:
+    case 0x800FECD4u: case 0x800FF2C8u: case 0x800FF9ACu:
+        context = WORD(0x80625860u); /* SDA -0x7DA0, details controller. */
+        if (context < 0x80000000u || context > 0x93FFFF00u) goto native;
+        handle = WORD(context+0x64);
+        if (handle >= 32 || !BYTE(REGISTRY+0x12C+handle) ||
+            WORD(REGISTRY+0x2C+4*handle) != 0x800FC1B4u) goto native;
+        break;
+    default: goto native;
+    }
+    if (!S[9]) {
+        if (D->magic==DRFT && D->enabled==1 && D->active &&
+            D->ui==WORD(UI_PTR) && D->session==WORD(D->ui+0xD8u) && D->owner<2) {
+            route_choice(1,D->owner);
+            if (flags & 0xDF000000u) focus=0;
+            return cooperative_read(flags,focus,0,assist);
+        }
+        if (S[5]) return 0;
+        goto native;
+    }
+    if (HALF(BATTLE_UI+0x6E) != 0) goto native;
+    position = HALF(BATTLE_UI+0x64); mode = BYTE(0x80626EE4u);
+    if (position > 1 || !battle_snapshot(&battle)) return 0;
+    if (mode == 4*position) family = 0;
+    else if (mode >= 1+5*position && mode <= 3+5*position) family = mode-5*position;
+    else return 0;
+    if (family == 3) {
+        owner = switch_owner(&battle,position);
+        phase = battle.living & (1u << battle.active[position]) ? 4 : 5;
+    } else {
+        if (!(battle.living & (1u << battle.active[position]))) return 0;
+        owner = S[10+battle.active[position]]; phase = family == 2 ? 3 : 2;
+    }
+    route_choice(phase,owner);
+    /* These calls belong to the shared battle side even if the details
+     * controller retained an explicit physical index from a previous view. */
+    if (flags & 0xDF000000u) focus = 0;
+    return cooperative_read(flags,focus,0,assist);
+native:
+    return ((u32 (*)(u32,u32,u32,u32))0x8005B5ECu)(flags,focus,pad,assist);
+}
+
+static void result_to_menu(int clear) {
+    u32 i;
+    if (!battle_enabled()) return;
+    if (S[5] || S[6] || (clear && S[9])) {
+        S[5] = S[6] = 0; S[7] = 1; WORD(S+0x10) += 1;
+    }
+    if (clear) {
+        S[9] = 0; WORD(S+0x1C) = 0;
+        for (i=0;i<6;++i) S[10+i] = 255;
+        D->active = D->committed = 0;
+    }
+}
+
+void coop_deliver_result(u32 result) {
+    /* A pending best-of-series result retains ownership for its next round.
+     * The native abort code cancels ownership immediately. */
+    result_to_menu(result == 0x80);
+    original_deliver_result(result);
+}
+
+u32 coop_read_result(void) {
+    u32 result = original_read_result();
+    if (result <= 2) result_to_menu(1);
+    return result;
+}
+
+/* Prefix the four native battle choice prompts without changing message
+ * archives, Pokemon nicknames or saves. Preserve the native control stream. */
+u32 coop_text(u32 manager, u32 id) {
+    u32 text = original_text(manager,id), kind, position, mode, owner, head, i, length;
+    volatile u16 *out; const volatile u16 *in; Battle battle;
+    if (!text || manager != 0x8048062Cu || !battle_enabled()) return text;
+    switch (id) {
+    case 0x2ECBu: kind=0; head=7; break;
+    case 0x2ECCu: kind=1; head=7; break;
+    case 0x3123u: kind=2; head=4; break;
+    case 0x3124u: kind=3; head=4; break;
+    default: return text;
+    }
+    position=HALF(BATTLE_UI+0x64); mode=BYTE(0x80626EE4u);
+    if (position>1 || HALF(BATTLE_UI+0x6E) || !battle_snapshot(&battle)) return text;
+    if (mode==3+5*position) owner=switch_owner(&battle,position);
+    else if (mode==4*position || mode==1+5*position || mode==2+5*position)
+        owner=S[10+battle.active[position]];
+    else return text;
+    in=(const volatile u16 *)text;
+    if (in[0]!=0xFFFF || in[1]!=0xF000 || in[2]!=0xFFFF || in[3]!=0xF101) return text;
+    /* Reject unexpected/oversized resources before writing any output. */
+    for (length=head;length<120;++length)
+        if (in[length]==0xFFFF && in[length+1]==0xFFFF) break;
+    if (length==120) return text;
+    out=(volatile u16 *)(0x80640400u+(kind*2+owner)*256);
+    for (i=0;i<head;++i) out[i]=in[i];
+    out[head]='P'; out[head+1]=(u16)('1'+owner); out[head+2]=':'; out[head+3]=' ';
+    for (i=head;i<length+2;++i) out[i+4]=in[i];
+    return (u32)out;
 }
 
 /* Native main-command, move and target callbacks share the actor field.

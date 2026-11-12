@@ -1,0 +1,51 @@
+{
+  "status": "passed",
+  "auxiliary_callsite_owner_cases": 384,
+  "disabled_auxiliary_comparisons": 96,
+  "auxiliary_guard_cases": 10,
+  "native_auxiliary_callback_cases": 16,
+  "draft_details_cases": 4,
+  "native_result_intake_cases": 8,
+  "native_result_readout_cases": 32,
+  "menu_p1_cases": 8,
+  "prompt_prefix_cases": 64,
+  "unchanged_message_cases": 48,
+  "repeated_finish_cases": 32,
+  "prototype_sha256": "47ef4e5b5ac44505990bff286ec3c26d2ac53210de79bb2451ce8bae6cecdc67",
+  "enabled_at_boot": false,
+  "auxiliary_native_input_calls": [
+    "8006b4d8",
+    "8006b4f0",
+    "8006b510",
+    "8006b52c",
+    "8006c398",
+    "8006c3b4",
+    "800fc87c",
+    "800fd550",
+    "800fe0d0",
+    "800fecd0",
+    "800ff2c4",
+    "800ff9a8"
+  ],
+  "native_result_intake": "800754c8",
+  "native_result_readout": "80075394",
+  "native_text_accessor": "8024fb34",
+  "prompt_ids": [
+    "2ecb",
+    "2ecc",
+    "3123",
+    "3124"
+  ],
+  "reserved_end": "80641000",
+  "fixtures": [
+    "Auxiliary callback registration/details object; widget-ready phase",
+    "Synthetic result manager phase/winner; native result functions execute",
+    "Owner, mapping, HP and controller caches as in prior suites"
+  ],
+  "limits": [
+    "Prompt bytes verified, but layout/refresh/rendering not tested",
+    "No real battle outcome, full campaign, physical controllers or NetPlay test",
+    "Special tournament paths and full summary navigation remain to be checked in Dolphin"
+  ],
+  "private_data_published": false
+}

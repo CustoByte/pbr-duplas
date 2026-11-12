@@ -11,7 +11,7 @@
   "disconnected_owner_cases": 12,
   "disabled_input_comparisons": 84,
   "release_barrier_cases": 12,
-  "prototype_sha256": "a0c7c5e16da4eecf24d19fb7281118132c72dd88451566ee1e315f599c238083",
+  "prototype_sha256": "47ef4e5b5ac44505990bff286ec3c26d2ac53210de79bb2451ce8bae6cecdc67",
   "enabled_at_boot": false,
   "native_validation": "801722bc",
   "native_party_callback": "80062b50",
@@ -30,7 +30,7 @@
     "No physical controllers, rendered replacement battle or NetPlay test",
     "Selector layout inferred from native validator; not captured during a real replacement",
     "Native 0x505a rejection text has not been checked visually",
-    "Secondary interfaces, special tournament screens, turn indicator and battle lifecycle remain unfinished"
+    "Full auxiliary navigation, special screens, prompt rendering/refresh and full battle flow need Dolphin validation"
   ],
   "private_data_published": false
 }

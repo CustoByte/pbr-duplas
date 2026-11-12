@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "version": "v0.10.0-coop-test.1",
+  "package_url": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.10.0-coop-test.1/aplicador-core.zip",
+  "package_sha256": "fbe4a5ee767c59a914480b8a0f7d21b192769ffe91dd8bd0bd9bc47bb3cdbe16",
+  "save_policy": "Same RPBE01 game identity; original ROM and Dolphin user data preserved by applicator",
+  "coop_experimental": true,
+  "dolphin_gameplay_tested": false,
+  "netplay_tested": false
+}

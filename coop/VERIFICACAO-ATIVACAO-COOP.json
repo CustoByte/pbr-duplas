@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "disabled_sha256": "47ef4e5b5ac44505990bff286ec3c26d2ac53210de79bb2451ce8bae6cecdc67",
+  "activated_sha256": "c9a1b12b0c950b3475f3a645cf4cbdf7fdeb9b7653b1a4e19546bdda4ace933a",
+  "only_changed_bytes": "DRFT + enable byte at reserved own selection state",
+  "native_reset_activation_cases": 2,
+  "activation_requires_fresh_boot": true,
+  "full_dolphin_boot_tested": false
+}

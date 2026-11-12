@@ -257,7 +257,7 @@ def verify(source,changed,payload,manifest,captures):
             'prototype_sha256':sha(changed),'enabled_at_boot':False,'private_data_published':False,
             'limits':['No rendered selection screen or physical controllers','No full battle startup, faint/replacement or NetPlay test',
                       'Capture heap allocation is not replayed; fresh-boot arena reservation is checked separately',
-                      'Owner/turn display and remaining battle interfaces still need integration']}
+                      'Prompt rendering/refresh, special interfaces and full battle flow need Dolphin validation']}
 
 if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)

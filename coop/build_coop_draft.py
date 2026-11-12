@@ -7,18 +7,21 @@ import argparse,hashlib,json,os,subprocess
 from pathlib import Path
 
 BASE=0x8063D400
-LIMIT=0x8063EA00
+LIMIT=0x80640000
 SCRIPT='''SECTIONS {
  . = 0x8063D400;
  .payload : { *(.text*) *(.rodata*) }
  /DISCARD/ : { *(.eh_frame*) *(.comment*) *(.note*) }
 }
-original_reset = 0x8063EA00;
-original_choose = 0x8063EA08;
-original_pack = 0x8063EA10;
-original_cleanup = 0x8063EA18;
-cooperative_read = 0x8063EB40;
-original_validate_switch = 0x8063EB50;
+original_reset = 0x80640000;
+original_choose = 0x80640008;
+original_pack = 0x80640010;
+original_cleanup = 0x80640018;
+cooperative_read = 0x80640140;
+original_validate_switch = 0x80640150;
+original_read_result = 0x80640160;
+original_deliver_result = 0x80640168;
+original_text = 0x80640170;
 '''
 
 def build(source,output,toolchain=None):

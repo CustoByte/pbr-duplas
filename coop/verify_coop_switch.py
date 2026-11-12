@@ -17,7 +17,7 @@ from verify_coop_capture import verify_loaded_text
 from verify_coop_draft import DraftReplay
 
 VALIDATE=0x801722BC
-ORIGINAL=0x8063EB50
+ORIGINAL=0x80640150
 SELECTOR=0x81D00000
 PARTY=0x81D01000
 VALUE=0x81D02000
@@ -30,10 +30,10 @@ class SwitchReplay(DraftReplay):
         self.mons=[self.call(0x803B0184,(self.ctx,0,i)) for i in range(4)]
         self.hp=[self.call(0x803E100C,(mon,0xA2,0)) for mon in self.mons]
         assert all(self.hp) and self.call(0x803B00E0,(self.ctx,0))==4
-        self.extra_code=bytes(self.uc.mem_read(0x8063EB40,0x18))
+        self.extra_code=bytes(self.uc.mem_read(0x80640140,0x18))
         self.pass_before=bytes(self.uc.mem_read(self.session+0x1FFC,0x6EC))
         def guard(*args):raise AssertionError('Write over switch trampolines')
-        self.uc.hook_add(UC_HOOK_MEM_WRITE,guard,begin=0x8063EB40,end=0x8063EB57)
+        self.uc.hook_add(UC_HOOK_MEM_WRITE,guard,begin=0x80640140,end=0x80640157)
 
     def enable(self,owners=(0,1,0,1,255,255)):
         self.uc.mem_write(STATE,automatic_state(self.session,owners))
@@ -82,9 +82,9 @@ class SwitchReplay(DraftReplay):
     def intact_switch(self):
         assert bytes(self.uc.mem_read(self.session+0x1FFC,0x6EC))==self.pass_before
         assert bytes(self.uc.mem_read(self.session+0x2DD4,0x6EC))==self.original_enemy
-        assert bytes(self.uc.mem_read(0x8063D400,0x8063EB00-0x8063D400))==self.code
+        assert bytes(self.uc.mem_read(0x8063D400,0x80640100-0x8063D400))==self.code
         assert self.get(0x8063C800)==0x45585048
-        assert bytes(self.uc.mem_read(0x8063EB40,0x18))==self.extra_code
+        assert bytes(self.uc.mem_read(0x80640140,0x18))==self.extra_code
 
 
 def verify(source,changed,captures):
@@ -218,7 +218,7 @@ def verify(source,changed,captures):
         'limits':['No physical controllers, rendered replacement battle or NetPlay test',
                   'Selector layout inferred from native validator; not captured during a real replacement',
                   'Native 0x505a rejection text has not been checked visually',
-                  'Secondary interfaces, special tournament screens, turn indicator and battle lifecycle remain unfinished'],
+                  'Full auxiliary navigation, special screens, prompt rendering/refresh and full battle lifecycle need Dolphin validation'],
         'private_data_published':False}
 
 if __name__=='__main__':

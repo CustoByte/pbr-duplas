@@ -11,7 +11,7 @@
   "native_main_dialog_calls": 8,
   "ally_target_owned_by_attacker_cases": 4,
   "fainted_target_mask_cases": 64,
-  "prototype_sha256": "a0c7c5e16da4eecf24d19fb7281118132c72dd88451566ee1e315f599c238083",
+  "prototype_sha256": "47ef4e5b5ac44505990bff286ec3c26d2ac53210de79bb2451ce8bae6cecdc67",
   "enabled_at_boot": false,
   "native_callbacks": {
     "command": "80060eec",
@@ -21,6 +21,7 @@
   "native_target_eligibility": "80063a40",
   "target_owner": "Attacker logical party owner; target ownership does not transfer input",
   "input_cursor_target_getter_or_callback_stubs": [],
+  "audio_and_psq_exceptions": "Same narrow feedback stubs and four context PSQ skips as verify_coop_draft",
   "fixtures": [
     "Owner tables and button/connection caches",
     "Native widget animation-complete field",
@@ -29,8 +30,7 @@
   "limits": [
     "No rendered UI, physical controllers, complete battle or NetPlay",
     "Native numeric target profiles tested; not every move/ability interaction",
-    "Secondary summary callback, special tournament screens, owner indicator and end-battle lifecycle remain unfinished"
+    "Full auxiliary navigation, special screens, prompt rendering/refresh and full battle flow need Dolphin validation"
   ],
-  "private_data_published": false,
-  "audio_and_psq_exceptions": "Same narrow feedback stubs and four context PSQ skips as verify_coop_draft"
+  "private_data_published": false
 }

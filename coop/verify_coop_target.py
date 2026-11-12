@@ -174,7 +174,7 @@ def verify(source,changed,captures):
                     'Native HP setter and mapping fixtures/native reorder; no damage engine'],
         'limits':['No rendered UI, physical controllers, complete battle or NetPlay',
                   'Native numeric target profiles tested; not every move/ability interaction',
-                  'Secondary summary callback, special tournament screens, owner indicator and end-battle lifecycle remain unfinished'],
+                  'Full summary navigation, special screens, prompt rendering/refresh and full lifecycle need Dolphin validation'],
         'private_data_published':False}
 
 if __name__=='__main__':
