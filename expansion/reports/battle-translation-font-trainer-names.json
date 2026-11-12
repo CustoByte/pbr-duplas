@@ -1,0 +1,2044 @@
+{
+  "status": "passed-native-font-metric-fixtures",
+  "case_count": 135,
+  "cases": [
+    {
+      "id": 1164,
+      "name_characters": 7,
+      "source": {
+        "width": 113,
+        "height": 50
+      },
+      "target": {
+        "width": 113,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 1164,
+      "name_characters": 10,
+      "source": {
+        "width": 133,
+        "height": 50
+      },
+      "target": {
+        "width": 133,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 1164,
+      "name_characters": 12,
+      "source": {
+        "width": 178,
+        "height": 50
+      },
+      "target": {
+        "width": 178,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2577,
+      "name_characters": 7,
+      "source": {
+        "width": 125,
+        "height": 50
+      },
+      "target": {
+        "width": 136,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2577,
+      "name_characters": 10,
+      "source": {
+        "width": 125,
+        "height": 50
+      },
+      "target": {
+        "width": 136,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2577,
+      "name_characters": 12,
+      "source": {
+        "width": 147,
+        "height": 50
+      },
+      "target": {
+        "width": 136,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2578,
+      "name_characters": 7,
+      "source": {
+        "width": 125,
+        "height": 50
+      },
+      "target": {
+        "width": 136,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2578,
+      "name_characters": 10,
+      "source": {
+        "width": 125,
+        "height": 50
+      },
+      "target": {
+        "width": 136,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2578,
+      "name_characters": 12,
+      "source": {
+        "width": 147,
+        "height": 50
+      },
+      "target": {
+        "width": 136,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2592,
+      "name_characters": 7,
+      "source": {
+        "width": 145,
+        "height": 50
+      },
+      "target": {
+        "width": 82,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2592,
+      "name_characters": 10,
+      "source": {
+        "width": 145,
+        "height": 50
+      },
+      "target": {
+        "width": 102,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2592,
+      "name_characters": 12,
+      "source": {
+        "width": 147,
+        "height": 50
+      },
+      "target": {
+        "width": 147,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2593,
+      "name_characters": 7,
+      "source": {
+        "width": 145,
+        "height": 50
+      },
+      "target": {
+        "width": 82,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2593,
+      "name_characters": 10,
+      "source": {
+        "width": 145,
+        "height": 50
+      },
+      "target": {
+        "width": 102,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2593,
+      "name_characters": 12,
+      "source": {
+        "width": 147,
+        "height": 50
+      },
+      "target": {
+        "width": 147,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2595,
+      "name_characters": 7,
+      "source": {
+        "width": 142,
+        "height": 25
+      },
+      "target": {
+        "width": 157,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 2595,
+      "name_characters": 10,
+      "source": {
+        "width": 162,
+        "height": 25
+      },
+      "target": {
+        "width": 177,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 2595,
+      "name_characters": 12,
+      "source": {
+        "width": 207,
+        "height": 25
+      },
+      "target": {
+        "width": 222,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 2596,
+      "name_characters": 7,
+      "source": {
+        "width": 70,
+        "height": 50
+      },
+      "target": {
+        "width": 85,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2596,
+      "name_characters": 10,
+      "source": {
+        "width": 87,
+        "height": 50
+      },
+      "target": {
+        "width": 87,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2596,
+      "name_characters": 12,
+      "source": {
+        "width": 132,
+        "height": 50
+      },
+      "target": {
+        "width": 132,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2612,
+      "name_characters": 7,
+      "source": {
+        "width": 97,
+        "height": 50
+      },
+      "target": {
+        "width": 98,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2612,
+      "name_characters": 10,
+      "source": {
+        "width": 97,
+        "height": 50
+      },
+      "target": {
+        "width": 98,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2612,
+      "name_characters": 12,
+      "source": {
+        "width": 132,
+        "height": 50
+      },
+      "target": {
+        "width": 132,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2613,
+      "name_characters": 7,
+      "source": {
+        "width": 97,
+        "height": 50
+      },
+      "target": {
+        "width": 98,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2613,
+      "name_characters": 10,
+      "source": {
+        "width": 97,
+        "height": 50
+      },
+      "target": {
+        "width": 98,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2613,
+      "name_characters": 12,
+      "source": {
+        "width": 132,
+        "height": 50
+      },
+      "target": {
+        "width": 132,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2628,
+      "name_characters": 7,
+      "source": {
+        "width": 123,
+        "height": 50
+      },
+      "target": {
+        "width": 139,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2628,
+      "name_characters": 10,
+      "source": {
+        "width": 123,
+        "height": 50
+      },
+      "target": {
+        "width": 139,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2628,
+      "name_characters": 12,
+      "source": {
+        "width": 132,
+        "height": 50
+      },
+      "target": {
+        "width": 139,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2629,
+      "name_characters": 7,
+      "source": {
+        "width": 123,
+        "height": 50
+      },
+      "target": {
+        "width": 139,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2629,
+      "name_characters": 10,
+      "source": {
+        "width": 123,
+        "height": 50
+      },
+      "target": {
+        "width": 139,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2629,
+      "name_characters": 12,
+      "source": {
+        "width": 132,
+        "height": 50
+      },
+      "target": {
+        "width": 139,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2644,
+      "name_characters": 7,
+      "source": {
+        "width": 156,
+        "height": 50
+      },
+      "target": {
+        "width": 213,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2644,
+      "name_characters": 10,
+      "source": {
+        "width": 176,
+        "height": 50
+      },
+      "target": {
+        "width": 213,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2644,
+      "name_characters": 12,
+      "source": {
+        "width": 221,
+        "height": 50
+      },
+      "target": {
+        "width": 213,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2645,
+      "name_characters": 7,
+      "source": {
+        "width": 175,
+        "height": 50
+      },
+      "target": {
+        "width": 213,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2645,
+      "name_characters": 10,
+      "source": {
+        "width": 175,
+        "height": 50
+      },
+      "target": {
+        "width": 213,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2645,
+      "name_characters": 12,
+      "source": {
+        "width": 175,
+        "height": 50
+      },
+      "target": {
+        "width": 213,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2650,
+      "name_characters": 7,
+      "source": {
+        "width": 175,
+        "height": 25
+      },
+      "target": {
+        "width": 115,
+        "height": 50
+      },
+      "layout_reference_id": 2651,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2650,
+      "name_characters": 10,
+      "source": {
+        "width": 195,
+        "height": 25
+      },
+      "target": {
+        "width": 115,
+        "height": 50
+      },
+      "layout_reference_id": 2651,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2650,
+      "name_characters": 12,
+      "source": {
+        "width": 240,
+        "height": 25
+      },
+      "target": {
+        "width": 132,
+        "height": 50
+      },
+      "layout_reference_id": 2651,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2651,
+      "name_characters": 7,
+      "source": {
+        "width": 103,
+        "height": 50
+      },
+      "target": {
+        "width": 115,
+        "height": 50
+      },
+      "layout_reference_id": 2651,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2651,
+      "name_characters": 10,
+      "source": {
+        "width": 103,
+        "height": 50
+      },
+      "target": {
+        "width": 115,
+        "height": 50
+      },
+      "layout_reference_id": 2651,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2651,
+      "name_characters": 12,
+      "source": {
+        "width": 132,
+        "height": 50
+      },
+      "target": {
+        "width": 132,
+        "height": 50
+      },
+      "layout_reference_id": 2651,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2666,
+      "name_characters": 7,
+      "source": {
+        "width": 110,
+        "height": 50
+      },
+      "target": {
+        "width": 126,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2666,
+      "name_characters": 10,
+      "source": {
+        "width": 124,
+        "height": 50
+      },
+      "target": {
+        "width": 126,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2666,
+      "name_characters": 12,
+      "source": {
+        "width": 169,
+        "height": 50
+      },
+      "target": {
+        "width": 132,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2667,
+      "name_characters": 7,
+      "source": {
+        "width": 147,
+        "height": 50
+      },
+      "target": {
+        "width": 126,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2667,
+      "name_characters": 10,
+      "source": {
+        "width": 147,
+        "height": 50
+      },
+      "target": {
+        "width": 126,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2667,
+      "name_characters": 12,
+      "source": {
+        "width": 147,
+        "height": 50
+      },
+      "target": {
+        "width": 132,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2679,
+      "name_characters": 7,
+      "source": {
+        "width": 175,
+        "height": 25
+      },
+      "target": {
+        "width": 116,
+        "height": 50
+      },
+      "layout_reference_id": 2680,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2679,
+      "name_characters": 10,
+      "source": {
+        "width": 195,
+        "height": 25
+      },
+      "target": {
+        "width": 116,
+        "height": 50
+      },
+      "layout_reference_id": 2680,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2679,
+      "name_characters": 12,
+      "source": {
+        "width": 240,
+        "height": 25
+      },
+      "target": {
+        "width": 132,
+        "height": 50
+      },
+      "layout_reference_id": 2680,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2680,
+      "name_characters": 7,
+      "source": {
+        "width": 103,
+        "height": 50
+      },
+      "target": {
+        "width": 116,
+        "height": 50
+      },
+      "layout_reference_id": 2680,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2680,
+      "name_characters": 10,
+      "source": {
+        "width": 103,
+        "height": 50
+      },
+      "target": {
+        "width": 116,
+        "height": 50
+      },
+      "layout_reference_id": 2680,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2680,
+      "name_characters": 12,
+      "source": {
+        "width": 132,
+        "height": 50
+      },
+      "target": {
+        "width": 132,
+        "height": 50
+      },
+      "layout_reference_id": 2680,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2715,
+      "name_characters": 7,
+      "source": {
+        "width": 87,
+        "height": 50
+      },
+      "target": {
+        "width": 120,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2715,
+      "name_characters": 10,
+      "source": {
+        "width": 107,
+        "height": 50
+      },
+      "target": {
+        "width": 120,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2715,
+      "name_characters": 12,
+      "source": {
+        "width": 152,
+        "height": 50
+      },
+      "target": {
+        "width": 132,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2716,
+      "name_characters": 7,
+      "source": {
+        "width": 107,
+        "height": 50
+      },
+      "target": {
+        "width": 120,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2716,
+      "name_characters": 10,
+      "source": {
+        "width": 107,
+        "height": 50
+      },
+      "target": {
+        "width": 120,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2716,
+      "name_characters": 12,
+      "source": {
+        "width": 132,
+        "height": 50
+      },
+      "target": {
+        "width": 132,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2746,
+      "name_characters": 7,
+      "source": {
+        "width": 149,
+        "height": 25
+      },
+      "target": {
+        "width": 144,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 2746,
+      "name_characters": 10,
+      "source": {
+        "width": 169,
+        "height": 25
+      },
+      "target": {
+        "width": 164,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 2746,
+      "name_characters": 12,
+      "source": {
+        "width": 214,
+        "height": 25
+      },
+      "target": {
+        "width": 209,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 2747,
+      "name_characters": 7,
+      "source": {
+        "width": 77,
+        "height": 50
+      },
+      "target": {
+        "width": 144,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2747,
+      "name_characters": 10,
+      "source": {
+        "width": 87,
+        "height": 50
+      },
+      "target": {
+        "width": 164,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2747,
+      "name_characters": 12,
+      "source": {
+        "width": 132,
+        "height": 50
+      },
+      "target": {
+        "width": 209,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2865,
+      "name_characters": 7,
+      "source": {
+        "width": 124,
+        "height": 50
+      },
+      "target": {
+        "width": 165,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2865,
+      "name_characters": 10,
+      "source": {
+        "width": 124,
+        "height": 50
+      },
+      "target": {
+        "width": 165,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2865,
+      "name_characters": 12,
+      "source": {
+        "width": 132,
+        "height": 50
+      },
+      "target": {
+        "width": 175,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2867,
+      "name_characters": 7,
+      "source": {
+        "width": 146,
+        "height": 25
+      },
+      "target": {
+        "width": 151,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 2867,
+      "name_characters": 10,
+      "source": {
+        "width": 166,
+        "height": 25
+      },
+      "target": {
+        "width": 171,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 2867,
+      "name_characters": 12,
+      "source": {
+        "width": 211,
+        "height": 25
+      },
+      "target": {
+        "width": 216,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 2868,
+      "name_characters": 7,
+      "source": {
+        "width": 74,
+        "height": 50
+      },
+      "target": {
+        "width": 79,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2868,
+      "name_characters": 10,
+      "source": {
+        "width": 87,
+        "height": 50
+      },
+      "target": {
+        "width": 87,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 2868,
+      "name_characters": 12,
+      "source": {
+        "width": 132,
+        "height": 50
+      },
+      "target": {
+        "width": 132,
+        "height": 50
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 50,
+      "width_budget": 240
+    },
+    {
+      "id": 3339,
+      "name_characters": 7,
+      "source": {
+        "width": 114,
+        "height": 25
+      },
+      "target": {
+        "width": 129,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3339,
+      "name_characters": 10,
+      "source": {
+        "width": 114,
+        "height": 25
+      },
+      "target": {
+        "width": 129,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3339,
+      "name_characters": 12,
+      "source": {
+        "width": 114,
+        "height": 25
+      },
+      "target": {
+        "width": 129,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3344,
+      "name_characters": 7,
+      "source": {
+        "width": 206,
+        "height": 25
+      },
+      "target": {
+        "width": 160,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3344,
+      "name_characters": 10,
+      "source": {
+        "width": 206,
+        "height": 25
+      },
+      "target": {
+        "width": 160,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3344,
+      "name_characters": 12,
+      "source": {
+        "width": 206,
+        "height": 25
+      },
+      "target": {
+        "width": 160,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3345,
+      "name_characters": 7,
+      "source": {
+        "width": 175,
+        "height": 25
+      },
+      "target": {
+        "width": 130,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3345,
+      "name_characters": 10,
+      "source": {
+        "width": 175,
+        "height": 25
+      },
+      "target": {
+        "width": 130,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3345,
+      "name_characters": 12,
+      "source": {
+        "width": 175,
+        "height": 25
+      },
+      "target": {
+        "width": 130,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3361,
+      "name_characters": 7,
+      "source": {
+        "width": 109,
+        "height": 25
+      },
+      "target": {
+        "width": 100,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3361,
+      "name_characters": 10,
+      "source": {
+        "width": 109,
+        "height": 25
+      },
+      "target": {
+        "width": 100,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3361,
+      "name_characters": 12,
+      "source": {
+        "width": 109,
+        "height": 25
+      },
+      "target": {
+        "width": 100,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3489,
+      "name_characters": 7,
+      "source": {
+        "width": 50,
+        "height": 25
+      },
+      "target": {
+        "width": 54,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3489,
+      "name_characters": 10,
+      "source": {
+        "width": 50,
+        "height": 25
+      },
+      "target": {
+        "width": 54,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3489,
+      "name_characters": 12,
+      "source": {
+        "width": 50,
+        "height": 25
+      },
+      "target": {
+        "width": 54,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3828,
+      "name_characters": 7,
+      "source": {
+        "width": 54,
+        "height": 33
+      },
+      "target": {
+        "width": 59,
+        "height": 33
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 33,
+      "width_budget": 240
+    },
+    {
+      "id": 3828,
+      "name_characters": 10,
+      "source": {
+        "width": 54,
+        "height": 33
+      },
+      "target": {
+        "width": 59,
+        "height": 33
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 33,
+      "width_budget": 240
+    },
+    {
+      "id": 3828,
+      "name_characters": 12,
+      "source": {
+        "width": 54,
+        "height": 33
+      },
+      "target": {
+        "width": 59,
+        "height": 33
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 33,
+      "width_budget": 240
+    },
+    {
+      "id": 3830,
+      "name_characters": 7,
+      "source": {
+        "width": 67,
+        "height": 33
+      },
+      "target": {
+        "width": 82,
+        "height": 33
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 33,
+      "width_budget": 240
+    },
+    {
+      "id": 3830,
+      "name_characters": 10,
+      "source": {
+        "width": 67,
+        "height": 33
+      },
+      "target": {
+        "width": 82,
+        "height": 33
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 33,
+      "width_budget": 240
+    },
+    {
+      "id": 3830,
+      "name_characters": 12,
+      "source": {
+        "width": 67,
+        "height": 33
+      },
+      "target": {
+        "width": 82,
+        "height": 33
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 33,
+      "width_budget": 240
+    },
+    {
+      "id": 3891,
+      "name_characters": 7,
+      "source": {
+        "width": 58,
+        "height": 25
+      },
+      "target": {
+        "width": 67,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3891,
+      "name_characters": 10,
+      "source": {
+        "width": 58,
+        "height": 25
+      },
+      "target": {
+        "width": 67,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3891,
+      "name_characters": 12,
+      "source": {
+        "width": 58,
+        "height": 25
+      },
+      "target": {
+        "width": 67,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3892,
+      "name_characters": 7,
+      "source": {
+        "width": 57,
+        "height": 25
+      },
+      "target": {
+        "width": 54,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3892,
+      "name_characters": 10,
+      "source": {
+        "width": 57,
+        "height": 25
+      },
+      "target": {
+        "width": 54,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3892,
+      "name_characters": 12,
+      "source": {
+        "width": 57,
+        "height": 25
+      },
+      "target": {
+        "width": 54,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3893,
+      "name_characters": 7,
+      "source": {
+        "width": 43,
+        "height": 25
+      },
+      "target": {
+        "width": 59,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3893,
+      "name_characters": 10,
+      "source": {
+        "width": 43,
+        "height": 25
+      },
+      "target": {
+        "width": 59,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3893,
+      "name_characters": 12,
+      "source": {
+        "width": 43,
+        "height": 25
+      },
+      "target": {
+        "width": 59,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3894,
+      "name_characters": 7,
+      "source": {
+        "width": 93,
+        "height": 25
+      },
+      "target": {
+        "width": 92,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3894,
+      "name_characters": 10,
+      "source": {
+        "width": 93,
+        "height": 25
+      },
+      "target": {
+        "width": 92,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3894,
+      "name_characters": 12,
+      "source": {
+        "width": 93,
+        "height": 25
+      },
+      "target": {
+        "width": 92,
+        "height": 25
+      },
+      "layout_reference_id": null,
+      "allowed_reference_height": 25,
+      "width_budget": 240
+    },
+    {
+      "id": 3923,
+      "name_characters": 7,
+      "source": {
+        "width": 219,
+        "height": 25
+      },
+      "target": {
+        "width": 241,
+        "height": 25
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 3923,
+      "name_characters": 10,
+      "source": {
+        "width": 219,
+        "height": 25
+      },
+      "target": {
+        "width": 241,
+        "height": 25
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 3923,
+      "name_characters": 12,
+      "source": {
+        "width": 219,
+        "height": 25
+      },
+      "target": {
+        "width": 241,
+        "height": 25
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 3925,
+      "name_characters": 7,
+      "source": {
+        "width": 295,
+        "height": 25
+      },
+      "target": {
+        "width": 317,
+        "height": 25
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 3925,
+      "name_characters": 10,
+      "source": {
+        "width": 295,
+        "height": 25
+      },
+      "target": {
+        "width": 317,
+        "height": 25
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 3925,
+      "name_characters": 12,
+      "source": {
+        "width": 295,
+        "height": 25
+      },
+      "target": {
+        "width": 317,
+        "height": 25
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 4359,
+      "name_characters": 7,
+      "source": {
+        "width": 145,
+        "height": 25
+      },
+      "target": {
+        "width": 167,
+        "height": 25
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 4359,
+      "name_characters": 10,
+      "source": {
+        "width": 145,
+        "height": 25
+      },
+      "target": {
+        "width": 167,
+        "height": 25
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 4359,
+      "name_characters": 12,
+      "source": {
+        "width": 145,
+        "height": 25
+      },
+      "target": {
+        "width": 167,
+        "height": 25
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 4361,
+      "name_characters": 7,
+      "source": {
+        "width": 293,
+        "height": 50
+      },
+      "target": {
+        "width": 293,
+        "height": 50
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 4361,
+      "name_characters": 10,
+      "source": {
+        "width": 293,
+        "height": 50
+      },
+      "target": {
+        "width": 293,
+        "height": 50
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 4361,
+      "name_characters": 12,
+      "source": {
+        "width": 293,
+        "height": 50
+      },
+      "target": {
+        "width": 293,
+        "height": 50
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 4362,
+      "name_characters": 7,
+      "source": {
+        "width": 265,
+        "height": 50
+      },
+      "target": {
+        "width": 265,
+        "height": 50
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 4362,
+      "name_characters": 10,
+      "source": {
+        "width": 265,
+        "height": 50
+      },
+      "target": {
+        "width": 265,
+        "height": 50
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 4362,
+      "name_characters": 12,
+      "source": {
+        "width": 265,
+        "height": 50
+      },
+      "target": {
+        "width": 265,
+        "height": 50
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 4375,
+      "name_characters": 7,
+      "source": {
+        "width": 179,
+        "height": 25
+      },
+      "target": {
+        "width": 201,
+        "height": 25
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 4375,
+      "name_characters": 10,
+      "source": {
+        "width": 179,
+        "height": 25
+      },
+      "target": {
+        "width": 201,
+        "height": 25
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 4375,
+      "name_characters": 12,
+      "source": {
+        "width": 179,
+        "height": 25
+      },
+      "target": {
+        "width": 201,
+        "height": 25
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 4377,
+      "name_characters": 7,
+      "source": {
+        "width": 311,
+        "height": 25
+      },
+      "target": {
+        "width": 333,
+        "height": 25
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 4377,
+      "name_characters": 10,
+      "source": {
+        "width": 311,
+        "height": 25
+      },
+      "target": {
+        "width": 333,
+        "height": 25
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 4377,
+      "name_characters": 12,
+      "source": {
+        "width": 311,
+        "height": 25
+      },
+      "target": {
+        "width": 333,
+        "height": 25
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 4378,
+      "name_characters": 7,
+      "source": {
+        "width": 354,
+        "height": 50
+      },
+      "target": {
+        "width": 354,
+        "height": 50
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 4378,
+      "name_characters": 10,
+      "source": {
+        "width": 354,
+        "height": 50
+      },
+      "target": {
+        "width": 354,
+        "height": 50
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    },
+    {
+      "id": 4378,
+      "name_characters": 12,
+      "source": {
+        "width": 354,
+        "height": 50
+      },
+      "target": {
+        "width": 354,
+        "height": 50
+      },
+      "layout_reference_id": 4378,
+      "allowed_reference_height": 50,
+      "width_budget": 354
+    }
+  ],
+  "native_font_unchanged": true,
+  "height_not_increased": false,
+  "paired_native_message_height_respected": true,
+  "translated_archive_sha256": "3b248da373350cd58cd2247fbe85882cc84327a3603726281f638f546bfc44a5",
+  "dol_sha256": "da02a1232240e139ec14a26ee8b4c2818c56f3c2907f5c2391bd81e2dc0842f6",
+  "limits": [
+    "240-pixel width is a conservative test budget, not a verified live balloon boundary",
+    "Trainer-name references additionally use the original widest referenced trainer line as a font-metric envelope; live frame unverified",
+    "Where specified, wrapping uses the original equivalent two-line message as a height reference; live layout still unverified",
+    "Message lookup returns test text; native font measurement executes without GPU",
+    "Actual battle balloon layout and rendering still need Dolphin"
+  ],
+  "dolphin_visual_tested": false
+}

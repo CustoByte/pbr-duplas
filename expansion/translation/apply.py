@@ -6,7 +6,7 @@ from prepare_campaign_doubles import read_archive, sha
 from translation.messages import RESOURCE, read_messages, write_messages, readable, validate_target
 
 
-def prepare(archive, approval_path=None):
+def prepare(archive, approval_path=None, trainer_names=False):
     approval_path = approval_path or Path(__file__).with_name('approved.json')
     approval = json.loads(approval_path.read_text())
     if sha(archive) != approval['archive_sha256']:
@@ -31,6 +31,11 @@ def prepare(archive, approval_path=None):
                         raise ValueError('A protected name was changed')
                 rows[index] = validate_target(original[index], target)
                 changed.add(index)
+    references = set()
+    if trainer_names:
+        from translation.trainer_names import rename_references
+        rows, references = rename_references(rows, 'battle_dialogue_reference_ids')
+        changed.update(references)
     updated = write_messages(header, rows)
     output = rebuild_archive(archive, {RESOURCE: updated})
     result = dict(read_archive(output))
@@ -43,7 +48,9 @@ def prepare(archive, approval_path=None):
         'untouched_message_count': len(rows)-len(changed),
         'untouched_archive_resources': len(entries)-1,
         'dynamic_variables_formatting_and_pause_markers_preserved': True,
-        'unapproved_text_changed': False, 'names_translated': False,
+        'unapproved_text_changed': False, 'names_translated': bool(references),
+        'trainer_reference_message_ids': sorted(references),
+        'pokemon_move_nature_and_item_names_changed': False,
         'source_sha256': sha(archive), 'target_sha256': sha(output),
         'approval_sha256': sha(approval_path.read_bytes()),
         'dolphin_visual_tested': False,
@@ -55,10 +62,11 @@ if __name__ == '__main__':
     p.add_argument('--original', type=Path, required=True)
     p.add_argument('--output', type=Path, required=True)
     p.add_argument('--report', type=Path, required=True)
+    p.add_argument('--trainer-names', action='store_true', help='Pair with the reviewed mes_common build')
     a = p.parse_args()
     if a.original.resolve() == a.output.resolve() or a.output.exists():
         raise ValueError('Choose a new output; never overwrite the original')
-    output, report = prepare(a.original.read_bytes())
+    output, report = prepare(a.original.read_bytes(), trainer_names=a.trainer_names)
     a.output.parent.mkdir(parents=True, exist_ok=True)
     a.output.write_bytes(output)
     a.report.write_text(json.dumps(report, indent=2)+'\n')

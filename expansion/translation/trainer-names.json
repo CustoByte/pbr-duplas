@@ -7,7 +7,7 @@
       "replacement": "Pedro",
       "identity": "Gateway Colosseum master",
       "approval": "approved-by-user",
-      "status": "waiting-for-original-mes_common.fsys",
+      "status": "applied-in-local-build-awaiting-complete-battle-translation",
       "battle_dialogue_reference_ids": [
         3923,
         3925,
@@ -18,10 +18,34 @@
         4377,
         4378
       ],
-      "applied": false,
+      "applied": true,
       "review_batch": 1,
       "number": 1,
-      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html"
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html",
+      "common_message_index": 6404,
+      "native_message_id": 6405,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddc2a00",
+          "record": 0
+        },
+        {
+          "resource": "0x1ddc2a00",
+          "record": 1
+        },
+        {
+          "resource": "0x1df42a00",
+          "record": 0
+        },
+        {
+          "resource": "0x1df42a00",
+          "record": 6
+        }
+      ],
+      "common_reference_ids": [
+        9294
+      ],
+      "battle_dialogue_layout_reference_id": 4378
     },
     {
       "review_batch": 1,
@@ -30,9 +54,17 @@
       "replacement": "Arthur",
       "identity": "Gateway, Leader-in-Training",
       "approval": "approved-by-user",
-      "status": "waiting-for-original-mes_common.fsys",
-      "applied": false,
-      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html"
+      "status": "applied-in-local-build-awaiting-complete-battle-translation",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html",
+      "common_message_index": 6406,
+      "native_message_id": 6407,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddb2a00",
+          "record": 1
+        }
+      ]
     },
     {
       "review_batch": 1,
@@ -41,9 +73,17 @@
       "replacement": "Caio",
       "identity": "Gateway, Ordinary Guy",
       "approval": "approved-by-user",
-      "status": "waiting-for-original-mes_common.fsys",
-      "applied": false,
-      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html"
+      "status": "applied-in-local-build-awaiting-complete-battle-translation",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html",
+      "common_message_index": 6428,
+      "native_message_id": 6429,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddb2a00",
+          "record": 23
+        }
+      ]
     },
     {
       "review_batch": 1,
@@ -52,9 +92,17 @@
       "replacement": "Bruno",
       "identity": "Gateway, Tomboy",
       "approval": "approved-by-user",
-      "status": "waiting-for-original-mes_common.fsys",
-      "applied": false,
-      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html"
+      "status": "applied-in-local-build-awaiting-complete-battle-translation",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html",
+      "common_message_index": 6424,
+      "native_message_id": 6425,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddb2a00",
+          "record": 19
+        }
+      ]
     },
     {
       "review_batch": 1,
@@ -63,10 +111,18 @@
       "replacement": "Laura",
       "identity": "Gateway, Hiking Girl",
       "approval": "approved-by-user",
-      "status": "waiting-for-original-mes_common.fsys",
-      "applied": false,
+      "status": "applied-in-local-build-awaiting-complete-battle-translation",
+      "applied": true,
       "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html",
-      "action": "rename"
+      "action": "rename",
+      "common_message_index": 6426,
+      "native_message_id": 6427,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddb2a00",
+          "record": 21
+        }
+      ]
     },
     {
       "review_batch": 1,
@@ -75,10 +131,18 @@
       "replacement": "Alan",
       "identity": "Gateway, Traveling Guy",
       "approval": "approved-by-user",
-      "status": "waiting-for-original-mes_common.fsys",
-      "applied": false,
+      "status": "applied-in-local-build-awaiting-complete-battle-translation",
+      "applied": true,
       "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html",
-      "action": "rename"
+      "action": "rename",
+      "common_message_index": 6422,
+      "native_message_id": 6423,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddb2a00",
+          "record": 17
+        }
+      ]
     },
     {
       "review_batch": 1,
@@ -87,10 +151,18 @@
       "replacement": "Alice",
       "identity": "Gateway, Three Sisters",
       "approval": "approved-by-user",
-      "status": "waiting-for-original-mes_common.fsys",
-      "applied": false,
+      "status": "applied-in-local-build-awaiting-complete-battle-translation",
+      "applied": true,
       "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html",
-      "action": "rename"
+      "action": "rename",
+      "common_message_index": 6419,
+      "native_message_id": 6420,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddb2a00",
+          "record": 14
+        }
+      ]
     },
     {
       "review_batch": 1,
@@ -99,10 +171,26 @@
       "replacement": "Sara",
       "identity": "Main Street Colosseum leader",
       "approval": "approved-by-user",
-      "status": "waiting-for-original-mes_common.fsys",
-      "applied": false,
+      "status": "applied-in-local-build-awaiting-complete-battle-translation",
+      "applied": true,
       "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
-      "action": "rename"
+      "action": "rename",
+      "common_message_index": 6435,
+      "native_message_id": 6436,
+      "native_trainer_records": [
+        {
+          "resource": "0x1dde2a00",
+          "record": 0
+        },
+        {
+          "resource": "0x1dde2a00",
+          "record": 1
+        },
+        {
+          "resource": "0x1ded2a00",
+          "record": 0
+        }
+      ]
     },
     {
       "review_batch": 1,
@@ -114,7 +202,23 @@
       "status": "kept-original",
       "applied": false,
       "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html",
-      "action": "keep"
+      "action": "keep",
+      "common_message_index": 6466,
+      "native_message_id": 6467,
+      "native_trainer_records": [
+        {
+          "resource": "0x1de02a00",
+          "record": 0
+        },
+        {
+          "resource": "0x1de02a00",
+          "record": 1
+        },
+        {
+          "resource": "0x1ded2a00",
+          "record": 1
+        }
+      ]
     },
     {
       "review_batch": 1,
@@ -123,10 +227,26 @@
       "replacement": "Luiza",
       "identity": "Neon Colosseum leader",
       "approval": "approved-by-user",
-      "status": "waiting-for-original-mes_common.fsys",
-      "applied": false,
+      "status": "applied-in-local-build-awaiting-complete-battle-translation",
+      "applied": true,
       "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/neon-colosseum.html",
-      "action": "rename"
+      "action": "rename",
+      "common_message_index": 6497,
+      "native_message_id": 6498,
+      "native_trainer_records": [
+        {
+          "resource": "0x1de22a00",
+          "record": 0
+        },
+        {
+          "resource": "0x1de22a00",
+          "record": 1
+        },
+        {
+          "resource": "0x1ded2a00",
+          "record": 2
+        }
+      ]
     },
     {
       "review_batch": 2,
@@ -135,11 +255,19 @@
       "replacement": "Lucas",
       "identity": "Main Street, Passionate Rider",
       "approval": "approved-by-user-delegation",
-      "status": "waiting-for-original-mes_common.fsys",
-      "applied": false,
+      "status": "applied-in-local-build-awaiting-complete-battle-translation",
+      "applied": true,
       "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
       "selection_basis": "User authorized common Brazilian names for this batch",
-      "action": "rename"
+      "action": "rename",
+      "common_message_index": 6444,
+      "native_message_id": 6445,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddd2a00",
+          "record": 8
+        }
+      ]
     },
     {
       "review_batch": 2,
@@ -148,11 +276,19 @@
       "replacement": "Rafael",
       "identity": "Main Street, Three Brothers",
       "approval": "approved-by-user-delegation",
-      "status": "waiting-for-original-mes_common.fsys",
-      "applied": false,
+      "status": "applied-in-local-build-awaiting-complete-battle-translation",
+      "applied": true,
       "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
       "selection_basis": "User authorized common Brazilian names for this batch",
-      "action": "rename"
+      "action": "rename",
+      "common_message_index": 6449,
+      "native_message_id": 6450,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddd2a00",
+          "record": 13
+        }
+      ]
     },
     {
       "review_batch": 2,
@@ -161,11 +297,19 @@
       "replacement": "Beatriz",
       "identity": "Main Street, Tomboy",
       "approval": "approved-by-user-delegation",
-      "status": "waiting-for-original-mes_common.fsys",
-      "applied": false,
+      "status": "applied-in-local-build-awaiting-complete-battle-translation",
+      "applied": true,
       "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
       "selection_basis": "User authorized common Brazilian names for this batch",
-      "action": "rename"
+      "action": "rename",
+      "common_message_index": 6455,
+      "native_message_id": 6456,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddd2a00",
+          "record": 19
+        }
+      ]
     },
     {
       "review_batch": 2,
@@ -174,11 +318,19 @@
       "replacement": "Camila",
       "identity": "Main Street, Picnic Girl",
       "approval": "approved-by-user-delegation",
-      "status": "waiting-for-original-mes_common.fsys",
-      "applied": false,
+      "status": "applied-in-local-build-awaiting-complete-battle-translation",
+      "applied": true,
       "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
       "selection_basis": "User authorized common Brazilian names for this batch",
-      "action": "rename"
+      "action": "rename",
+      "common_message_index": 6446,
+      "native_message_id": 6447,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddd2a00",
+          "record": 10
+        }
+      ]
     },
     {
       "review_batch": 2,
@@ -187,11 +339,19 @@
       "replacement": "Gabriel",
       "identity": "Main Street, Youthful Couple",
       "approval": "approved-by-user-delegation",
-      "status": "waiting-for-original-mes_common.fsys",
-      "applied": false,
+      "status": "applied-in-local-build-awaiting-complete-battle-translation",
+      "applied": true,
       "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
       "selection_basis": "User authorized common Brazilian names for this batch",
-      "action": "rename"
+      "action": "rename",
+      "common_message_index": 6451,
+      "native_message_id": 6452,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddd2a00",
+          "record": 15
+        }
+      ]
     },
     {
       "review_batch": 2,
@@ -200,11 +360,19 @@
       "replacement": "Felipe",
       "identity": "Main Street, Sci-Fi Maniac",
       "approval": "approved-by-user-delegation",
-      "status": "waiting-for-original-mes_common.fsys",
-      "applied": false,
+      "status": "applied-in-local-build-awaiting-complete-battle-translation",
+      "applied": true,
       "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
       "selection_basis": "User authorized common Brazilian names for this batch",
-      "action": "rename"
+      "action": "rename",
+      "common_message_index": 6445,
+      "native_message_id": 6446,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddd2a00",
+          "record": 9
+        }
+      ]
     },
     {
       "review_batch": 2,
@@ -213,11 +381,19 @@
       "replacement": "Gustavo",
       "identity": "Waterfall, Pikachu Fan",
       "approval": "approved-by-user-delegation",
-      "status": "waiting-for-original-mes_common.fsys",
-      "applied": false,
+      "status": "applied-in-local-build-awaiting-complete-battle-translation",
+      "applied": true,
       "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html",
       "selection_basis": "User authorized common Brazilian names for this batch",
-      "action": "rename"
+      "action": "rename",
+      "common_message_index": 6469,
+      "native_message_id": 6470,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddf2a00",
+          "record": 2
+        }
+      ]
     },
     {
       "review_batch": 2,
@@ -226,11 +402,19 @@
       "replacement": "Henrique",
       "identity": "Waterfall, Bug-Catching Man",
       "approval": "approved-by-user-delegation",
-      "status": "waiting-for-original-mes_common.fsys",
-      "applied": false,
+      "status": "applied-in-local-build-awaiting-complete-battle-translation",
+      "applied": true,
       "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html",
       "selection_basis": "User authorized common Brazilian names for this batch",
-      "action": "rename"
+      "action": "rename",
+      "common_message_index": 6490,
+      "native_message_id": 6491,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddf2a00",
+          "record": 23
+        }
+      ]
     },
     {
       "review_batch": 2,
@@ -239,11 +423,19 @@
       "replacement": "Juliana",
       "identity": "Waterfall, Leader-in-Training",
       "approval": "approved-by-user-delegation",
-      "status": "waiting-for-original-mes_common.fsys",
-      "applied": false,
+      "status": "applied-in-local-build-awaiting-complete-battle-translation",
+      "applied": true,
       "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html",
       "selection_basis": "User authorized common Brazilian names for this batch",
-      "action": "rename"
+      "action": "rename",
+      "common_message_index": 6467,
+      "native_message_id": 6468,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddf2a00",
+          "record": 0
+        }
+      ]
     },
     {
       "review_batch": 2,
@@ -252,17 +444,25 @@
       "replacement": "Fernanda",
       "identity": "Waterfall, Swimming Club Member",
       "approval": "approved-by-user-delegation",
-      "status": "waiting-for-original-mes_common.fsys",
-      "applied": false,
+      "status": "applied-in-local-build-awaiting-complete-battle-translation",
+      "applied": true,
       "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html",
       "selection_basis": "User authorized common Brazilian names for this batch",
-      "action": "rename"
+      "action": "rename",
+      "common_message_index": 6472,
+      "native_message_id": 6473,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddf2a00",
+          "record": 5
+        }
+      ]
     }
   ],
-  "required_source": "mes_common.fsys from the original USA RPBE01 revision 0 image; verify catalogue before changing labels",
+  "required_source": "Original mes_common.fsys received and exact names verified; no additional upload needed for these twenty names.",
   "review_batch_size": 10,
   "catalogue_complete": false,
-  "catalogue_note": "Names checked against public trainer lists; map native message IDs against the supplied original archive before applying any rename.",
+  "catalogue_note": "Exact English names matched in supplied USA mes_common; global message IDs and resource bytes checked against captured native message lookup.",
   "review_batches": [
     {
       "batch": 1,
@@ -271,7 +471,8 @@
         10
       ],
       "status": "choices-complete",
-      "renames_applied": false
+      "renames_applied": true,
+      "distribution": "local-only-until-battle-translation-complete"
     },
     {
       "batch": 2,
@@ -280,8 +481,13 @@
         20
       ],
       "status": "choices-complete",
-      "renames_applied": false,
-      "selection": "common-Brazilian-names-delegated-by-user"
+      "renames_applied": true,
+      "selection": "common-Brazilian-names-delegated-by-user",
+      "distribution": "local-only-until-battle-translation-complete"
     }
-  ]
+  ],
+  "common_archive_sha256": "43fdff322a8d4fa9b79fcc9b22a22f6d0f536c4cf72ee7c83a713763c10d9689",
+  "common_resource_sha256": "a64b7eb1fb524073089b3b7a47606e369881038f8e86c4e0a4b823582ea257e7",
+  "common_resource_id": "27c10000",
+  "publication_policy": "Do not publish new files or playable updates until all requested battle texts are translated and reviewed."
 }

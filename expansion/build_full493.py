@@ -12,7 +12,9 @@ from waterfall_fix import prepare as fix_waterfall
 from encounter_expansion import build as expand,CAPACITY_EDITS
 
 
-def build(dol,common,deck,coop_base=None,tournament_rules=True,battle_text=None):
+def build(dol,common,deck,coop_base=None,tournament_rules=True,battle_text=None,trainer_text=None):
+    if trainer_text is not None and battle_text is None:
+        raise ValueError('Trainer labels and battle name references must be built together')
     vanilla=dol
     base,table,_=prepare(dol,common,deck)
     base,_=prepare_shiny(base);base,_=prepare_build(base)
@@ -42,8 +44,12 @@ def build(dol,common,deck,coop_base=None,tournament_rules=True,battle_text=None)
     files={'main.dol':bytes(out),'common.fsys':base_common,'deck.fsys':expanded}
     if battle_text is not None:
         from translation.apply import prepare as translate_battle
-        files['menu_fight_s.fsys'],report['battle_translation']=translate_battle(battle_text)
+        files['menu_fight_s.fsys'],report['battle_translation']=translate_battle(battle_text,trainer_names=trainer_text is not None)
         report['output_sha256']['menu_fight_s.fsys']=sha(files['menu_fight_s.fsys'])
+    if trainer_text is not None:
+        from translation.trainer_names import prepare as rename_trainers
+        files['mes_common.fsys'],report['trainer_names']=rename_trainers(trainer_text)
+        report['output_sha256']['mes_common.fsys']=sha(files['mes_common.fsys'])
     return files,report,policy
 
 if __name__=='__main__':
@@ -51,7 +57,8 @@ if __name__=='__main__':
     for n in ('original-dol','original-common','original-deck','output'):p.add_argument('--'+n,type=Path,required=True)
     p.add_argument('--coop-base',type=Path)
     p.add_argument('--original-battle-text',type=Path,help='Original menu_fight_s.fsys for user-approved battle translations')
-    a=p.parse_args();files,report,policy=build(a.original_dol.read_bytes(),a.original_common.read_bytes(),a.original_deck.read_bytes(),a.coop_base.read_bytes() if a.coop_base else None,battle_text=a.original_battle_text.read_bytes() if a.original_battle_text else None)
+    p.add_argument('--original-trainer-text',type=Path,help='Original mes_common.fsys for reviewed trainer names; requires battle text')
+    a=p.parse_args();files,report,policy=build(a.original_dol.read_bytes(),a.original_common.read_bytes(),a.original_deck.read_bytes(),a.coop_base.read_bytes() if a.coop_base else None,battle_text=a.original_battle_text.read_bytes() if a.original_battle_text else None,trainer_text=a.original_trainer_text.read_bytes() if a.original_trainer_text else None)
     if a.output.exists() and any(a.output.iterdir()):raise ValueError('Output directory must be new/empty; original files are never overwritten')
     a.output.mkdir(parents=True,exist_ok=True)
     for name,data in files.items():(a.output/name).write_bytes(data)
