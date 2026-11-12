@@ -20,6 +20,12 @@ def verify(capture, dol, original, translated):
     before = read_messages(dict(read_archive(original))[RESOURCE])[1]
     after = read_messages(dict(read_archive(translated))[RESOURCE])[1]
     approval = json.loads(Path(__file__).with_name('approved.json').read_text())
+    canonical = {}
+    for batch in approval['batches']:
+        if batch['status'] == 'approved-by-user':
+            for entry in batch['entries']:
+                for index in entry['ids']:
+                    canonical.setdefault(before[index], index)
     references = {index: entry['layout_reference_id']
                   for batch in approval['batches'] if batch['status']=='approved-by-user'
                   for entry in batch['entries'] if 'layout_reference_id' in entry
@@ -28,6 +34,10 @@ def verify(capture, dol, original, translated):
     trainer_frames = {index: entry['battle_dialogue_layout_reference_id']
                       for entry in approved_entries() if 'battle_dialogue_layout_reference_id' in entry
                       for index in entry.get('battle_dialogue_reference_ids', [])}
+    for index, source in enumerate(before):
+        first = canonical.get(source)
+        if first in references:
+            references.setdefault(index, references[first])
     cases = []
     def fixture_text(row, name):
         return readable(row).replace('{0025}', name).replace('{0015}', name).replace('▼', '')

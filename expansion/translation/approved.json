@@ -311,6 +311,84 @@
           "layout_reference_id": 10
         }
       ]
+    },
+    {
+      "batch": 6,
+      "status": "approved-by-user",
+      "entries": [
+        {
+          "concept": "I'm perfect, am I not?",
+          "ids": [
+            13
+          ],
+          "target": "{F006}{F101}Sou impecável,\nnão sou?",
+          "layout_reference_id": 10
+        },
+        {
+          "concept": "My perfect skills...",
+          "ids": [
+            14
+          ],
+          "target": "{F006}{F101}Minhas habilidades\nperfeitas...",
+          "layout_reference_id": 10
+        },
+        {
+          "concept": "Easy, easy!",
+          "ids": [
+            15
+          ],
+          "target": "{F006}{F101}Fácil, fácil!"
+        },
+        {
+          "concept": "That was easy! See my strength?",
+          "ids": [
+            16
+          ],
+          "target": "{F006}{F101}Foi fácil!\nViu minha força?"
+        },
+        {
+          "concept": "I let my guard down...",
+          "ids": [
+            17
+          ],
+          "target": "{F006}{F101}Baixei a guarda..."
+        },
+        {
+          "concept": "I'm on a roll!",
+          "ids": [
+            18
+          ],
+          "target": "{F006}{F101}Estou com tudo!"
+        },
+        {
+          "concept": "No one can stop me!",
+          "ids": [
+            19
+          ],
+          "target": "{F006}{F101}Ninguém pode me parar!"
+        },
+        {
+          "concept": "I just got stopped... Why now?",
+          "ids": [
+            20
+          ],
+          "target": "{F006}{F101}Me pararam...\nPor que agora?"
+        },
+        {
+          "concept": "I live for battles.",
+          "ids": [
+            21
+          ],
+          "target": "{F006}{F101}Eu vivo pelas batalhas."
+        },
+        {
+          "concept": "It's so fun, that I can't get enough!",
+          "ids": [
+            22
+          ],
+          "target": "{F006}{F101}É tão divertido que\nnão consigo parar!"
+        }
+      ]
     }
   ]
 }

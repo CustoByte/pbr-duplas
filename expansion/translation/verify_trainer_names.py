@@ -63,6 +63,17 @@ def verify(capture, dol, original_common, translated_common, original_battle, tr
         cases.append({'original': entry['original'], 'replacement': entry['replacement'],
                       'native_message_id': gid, 'width': result & 65535, 'height': result >> 16})
     reference_cases = 0
+    battle_lookup_cases = 0
+    for index, (source, target) in enumerate(zip(battle_before, battle_after)):
+        if source == target:
+            continue
+        identifiers = global_ids.get((2, index+1), [])
+        assert identifiers, ('Unmapped changed battle message', index)
+        for gid in identifiers:
+            pointer = h.call(0x8024FB34, (context, gid))
+            h.abi()
+            assert bytes(h.uc.mem_read(pointer, len(target))) == target
+            battle_lookup_cases += 1
     for entry in approved_entries():
         for index in entry.get('battle_dialogue_reference_ids', []):
             gid = global_ids[(2, index+1)][0]
@@ -82,6 +93,7 @@ def verify(capture, dol, original_common, translated_common, original_battle, tr
             'native_common_message_lookups': lookup_cases, 'reviewed_names': len(cases),
             'renamed_names': sum(c['original']!=c['replacement'] for c in cases),
             'native_battle_reference_lookups': reference_cases, 'name_font_cases': cases,
+            'native_changed_battle_message_lookups': battle_lookup_cases,
             'Marina_Joel_Joey_Crystal_Colosseum_Sierra_Leone_preserved': True,
             'original_global_message_mapping_preserved': True,
             'common_sha256': sha(translated_common), 'battle_sha256': sha(translated_battle),

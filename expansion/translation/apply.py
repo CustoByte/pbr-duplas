@@ -18,6 +18,7 @@ def prepare(archive, approval_path=None, trainer_names=False):
     header, original = read_messages(resource)
     rows = list(original)
     changed = set()
+    approved_sources = {}
     for batch in approval['batches']:
         if batch['status'] != 'approved-by-user':
             continue
@@ -30,7 +31,21 @@ def prepare(archive, approval_path=None, trainer_names=False):
                     if readable(original[index]).count(name) != target.count(name):
                         raise ValueError('A protected name was changed')
                 rows[index] = validate_target(original[index], target)
+                previous = approved_sources.get(original[index])
+                if previous and previous[1] != rows[index]:
+                    raise ValueError('Identical source phrases have conflicting approved translations')
+                approved_sources.setdefault(original[index], (index, rows[index]))
                 changed.add(index)
+    # An approved phrase also covers exact repetitions of its original bytes,
+    # including identical font, parameters, pauses and line layout. No fuzzy
+    # matching or translation of different wording is performed.
+    duplicate_of = {}
+    for index, source in enumerate(original):
+        if index not in changed and source in approved_sources:
+            canonical, translated = approved_sources[source]
+            rows[index] = translated
+            changed.add(index)
+            duplicate_of[index] = canonical
     references = set()
     if trainer_names:
         from translation.trainer_names import rename_references
@@ -45,6 +60,8 @@ def prepare(archive, approval_path=None, trainer_names=False):
         'status': 'applied-approved-battle-text-awaiting-Dolphin-visual-check',
         'language': 'pt-BR', 'approved_batches': [b['batch'] for b in approval['batches'] if b['status']=='approved-by-user'],
         'changed_message_ids': sorted(changed), 'changed_message_count': len(changed),
+        'exact_duplicate_count': len(duplicate_of),
+        'exact_duplicate_of': {str(k): v for k, v in sorted(duplicate_of.items())},
         'untouched_message_count': len(rows)-len(changed),
         'untouched_archive_resources': len(entries)-1,
         'dynamic_variables_formatting_and_pause_markers_preserved': True,

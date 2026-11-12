@@ -1,0 +1,78 @@
+{
+  "batch": 7,
+  "status": "awaiting-user-approval",
+  "category": "trainer-battle-dialogue",
+  "publication": "held-until-complete-battle-translation",
+  "entries": [
+    {
+      "ids": [
+        23
+      ],
+      "source": "If I battle this much, I'm bound to lose...",
+      "proposed": "De tanto batalhar, uma hora eu perco..."
+    },
+    {
+      "ids": [
+        24
+      ],
+      "source": "I'm going all out!",
+      "proposed": "Vou dar tudo de mim!"
+    },
+    {
+      "ids": [
+        25
+      ],
+      "source": "I didn't have to be so serious, did I?",
+      "proposed": "Nem precisava levar tão a sério, né?"
+    },
+    {
+      "ids": [
+        26
+      ],
+      "source": "I did my best. I have no regrets!",
+      "proposed": "Dei o meu melhor. Não me arrependo!"
+    },
+    {
+      "ids": [
+        27
+      ],
+      "source": "I've gotten stronger?",
+      "proposed": "Fiquei mais forte?"
+    },
+    {
+      "ids": [
+        28
+      ],
+      "source": "Wow! I have gotten stronger!",
+      "proposed": "Uau! Fiquei mais forte!"
+    },
+    {
+      "ids": [
+        29
+      ],
+      "source": "I still have a long way to go!",
+      "proposed": "Ainda tenho muito a melhorar!"
+    },
+    {
+      "ids": [
+        30
+      ],
+      "source": "I'll soon be stronger!",
+      "proposed": "Logo estarei mais forte!"
+    },
+    {
+      "ids": [
+        31
+      ],
+      "source": "Yes! I'm one step closer!",
+      "proposed": "Isso! Estou um passo mais perto!"
+    },
+    {
+      "ids": [
+        32
+      ],
+      "source": "Arrrrr! I want to be stronger!",
+      "proposed": "Argh! Quero ficar mais forte!"
+    }
+  ]
+}
