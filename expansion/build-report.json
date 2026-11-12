@@ -1,0 +1,199 @@
+{
+  "status": "implemented-awaiting-in-game-trade-and-campaign-validation",
+  "singleplayer_default": true,
+  "waterfall": {
+    "status": "implemented-awaiting-native-and-Dolphin-validation",
+    "scope_floor": 1002,
+    "waterfall_records": [
+      8,
+      9,
+      10
+    ],
+    "selected_count": 6,
+    "pair_count": 2,
+    "original_dol_sha256": "ecb89c86f2eca30151561d9ee86a2ff260b2b2b3c9b4eb9429e04368392a2af9",
+    "source_dol_sha256": "10913e96306bd0f8ef85f07c1d95d73ca90cbe923added8b513809640163fe96",
+    "output_dol_sha256": "f6d29b96f49e4801ad5b43f16445b1d16fdcc904c3d1f19c06cbdc5355857d6e",
+    "output_common_sha256": "a3667703d2bf2e6733c6d40e4709869982f98e45b9ad029a9f7d7d9fec883d57",
+    "reserved_end": "80642000",
+    "original_blocks_read_from_user_copy": true,
+    "other_floor_quartet_restoration_retained": true,
+    "shiny_vm_helpers_not_overwritten": true,
+    "dolphin_tested": false
+  },
+  "encounters": {
+    "status": "expanded-data-awaiting-native-path-and-gameplay-validation",
+    "original_species_count": 488,
+    "new_species_ids": [
+      251,
+      489,
+      491,
+      492,
+      493
+    ],
+    "catalog_species_count": 493,
+    "expanded_pools": [
+      {
+        "deck": "1df52800",
+        "original_records": 404,
+        "added_records": 1300,
+        "original_prefix_preserved": true,
+        "added_average_rank_counts": {
+          "0": 165,
+          "1": 1,
+          "2": 61,
+          "3": 49,
+          "4": 69,
+          "5": 81,
+          "7": 874
+        },
+        "native_candidate_upper_bound": 1359
+      },
+      {
+        "deck": "1df62800",
+        "original_records": 350,
+        "added_records": 1300,
+        "original_prefix_preserved": true,
+        "added_average_rank_counts": {
+          "0": 165,
+          "1": 1,
+          "2": 61,
+          "3": 49,
+          "4": 69,
+          "5": 81,
+          "7": 874
+        },
+        "native_candidate_upper_bound": 1305
+      },
+      {
+        "deck": "1dfa2800",
+        "original_records": 302,
+        "added_records": 1300,
+        "original_prefix_preserved": true,
+        "added_average_rank_counts": {
+          "0": 165,
+          "1": 1,
+          "2": 61,
+          "3": 49,
+          "4": 69,
+          "5": 81,
+          "7": 874
+        },
+        "native_candidate_upper_bound": 1257
+      },
+      {
+        "deck": "1dfb2800",
+        "original_records": 308,
+        "added_records": 1300,
+        "original_prefix_preserved": true,
+        "added_average_rank_counts": {
+          "0": 165,
+          "1": 1,
+          "2": 61,
+          "3": 49,
+          "4": 69,
+          "5": 81,
+          "7": 874
+        },
+        "native_candidate_upper_bound": 1263
+      },
+      {
+        "deck": "27842800",
+        "original_records": 277,
+        "added_records": 1300,
+        "original_prefix_preserved": true,
+        "added_average_rank_counts": {
+          "0": 165,
+          "1": 1,
+          "2": 61,
+          "3": 49,
+          "4": 69,
+          "5": 81,
+          "7": 874
+        },
+        "native_candidate_upper_bound": 1232
+      },
+      {
+        "deck": "27852800",
+        "original_records": 277,
+        "added_records": 1300,
+        "original_prefix_preserved": true,
+        "added_average_rank_counts": {
+          "0": 165,
+          "1": 1,
+          "2": 61,
+          "3": 49,
+          "4": 69,
+          "5": 81,
+          "7": 874
+        },
+        "native_candidate_upper_bound": 1232
+      }
+    ],
+    "all_species_in_advanced_variants": true,
+    "advanced_weak_weight": 1,
+    "advanced_strong_weight": 4,
+    "legendary_weight": 1,
+    "rank_filter": "Original rank eligibility is AverageRank +/- 1; zero-based native rank",
+    "fixed_original_records_and_trainers_preserved": true,
+    "dedicated_little_pools_preserved": true,
+    "trade_unlock_eligibility_storage_code_changed": false,
+    "source_deck_sha256": "c1a478be1ca447a47fe3efb2064de07bc3dffe883f52a180b403dab7469ddfdc",
+    "output_deck_sha256": "0532a445c219722df65d5d16b095a85195e43c86749f35f1d373c9b2ceab04ef",
+    "dolphin_tested": false,
+    "trade_persistence_tested": false,
+    "warning": "Catalog inclusion is not proof of complete trainer-generation, trade eligibility or save persistence"
+  },
+  "tournament_rules": {
+    "status": "implemented-awaiting-native-and-Dolphin-validation",
+    "source_dol_sha256": "a45fc7d800730630ad955dca74b40a41488dd8e7e328d9d8322ff752e7b0d6d9",
+    "output_dol_sha256": "91d0ceacd6a138948d3519f37b7f1715f143481c7148f1f57e3f84750db50189",
+    "chance_basis_points_by_rank": [
+      300,
+      328,
+      357,
+      385,
+      414,
+      442,
+      471,
+      500
+    ],
+    "survival_maximum_native_tier": 6,
+    "masters_difficulty_source": "Original set index, records 31..38",
+    "roll": "Per generated CPU Pokemon, native LCG with unbiased rejection sampling",
+    "bonus": "floor(highest actual recalculated stat * 110 / 100), one stat only",
+    "boss_rules": "Ranks 6/7 replace weakest BST member with a distinct legendary; rank 8 shiny Mewtwo; Little Battle excluded",
+    "gateway_mewtwo": "Rank 8 only, variable legal Gen 4 coverage sets; no immediate set repeat within session",
+    "hp_included": true,
+    "status_bonus_text": "base (+bonus), compact if needed; native measured font/bounds; narrow layouts keep original effective value; HP shows current/base (+bonus)",
+    "tie_order": [
+      "HP",
+      "Attack",
+      "Defense",
+      "SpAttack",
+      "SpDefense",
+      "Speed"
+    ],
+    "bonus_recalculation_idempotent": true,
+    "shiny_pid_preserves_nature_and_gender": true,
+    "unown_letter_preserved": true,
+    "shiny_identity_method": "Preserve PID/public trainer ID/name; update hidden secret ID with native PK4 setter",
+    "existing_rental_shiny_appearance_preserved": true,
+    "direct_save_file_writes": false,
+    "dolphin_tested": false,
+    "payload_sha256": "b26b8b74d69a1523bffd1cdadd538d3bf0e38e91d26ca7b9b84eaf00657e54cd",
+    "reserved_end": "80646000"
+  },
+  "capacity_slots": 2048,
+  "capacity_patch_count": 6,
+  "output_sha256": {
+    "main.dol": "91d0ceacd6a138948d3519f37b7f1715f143481c7148f1f57e3f84750db50189",
+    "common.fsys": "a3667703d2bf2e6733c6d40e4709869982f98e45b9ad029a9f7d7d9fec883d57",
+    "deck.fsys": "0532a445c219722df65d5d16b095a85195e43c86749f35f1d373c9b2ceab04ef"
+  },
+  "complete": false,
+  "dolphin_tested": false,
+  "trade_save_tested": false,
+  "shiny_rank_and_bonus_change": "Included with native-verified rank/bonus/status/boss rules",
+  "coop_waterfall_note": "Existing 2+2 cooperative draft does not cover six-member Waterfall; single-player remains supported"
+}

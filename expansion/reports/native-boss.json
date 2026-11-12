@@ -1,0 +1,2603 @@
+{
+  "status": "passed-native-cpu-dispatch-and-boss-rules",
+  "dispatch_cases": 107,
+  "mewtwo_rank_gate_cases": 8,
+  "consecutive_mewtwo_sets_checked": 32,
+  "distinct_mewtwo_sets": 13,
+  "existing_mewtwo_and_sunset_reserve_cases": 2,
+  "results": [
+    {
+      "record": 2,
+      "rank": 1,
+      "boss": true,
+      "little": false,
+      "before": [
+        108,
+        327,
+        218,
+        32,
+        364,
+        12
+      ],
+      "after": [
+        108,
+        327,
+        218,
+        32,
+        364,
+        12
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 2,
+      "rank": 2,
+      "boss": true,
+      "little": false,
+      "before": [
+        441,
+        83,
+        5,
+        455,
+        153,
+        388
+      ],
+      "after": [
+        441,
+        83,
+        5,
+        455,
+        153,
+        388
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 2,
+      "rank": 3,
+      "boss": true,
+      "little": false,
+      "before": [
+        164,
+        18,
+        311,
+        2,
+        319,
+        408
+      ],
+      "after": [
+        164,
+        18,
+        311,
+        2,
+        319,
+        408
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 2,
+      "rank": 4,
+      "boss": true,
+      "little": false,
+      "before": [
+        40,
+        85,
+        317,
+        478,
+        3,
+        87
+      ],
+      "after": [
+        40,
+        85,
+        317,
+        478,
+        3,
+        87
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 2,
+      "rank": 5,
+      "boss": true,
+      "little": false,
+      "before": [
+        234,
+        115,
+        405,
+        78,
+        229,
+        123
+      ],
+      "after": [
+        234,
+        115,
+        405,
+        78,
+        229,
+        123
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 2,
+      "rank": 6,
+      "boss": true,
+      "little": false,
+      "before": [
+        52,
+        53,
+        401,
+        389,
+        260,
+        297
+      ],
+      "after": [
+        52,
+        53,
+        486,
+        389,
+        260,
+        297
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 2,
+      "rank": 7,
+      "boss": true,
+      "little": false,
+      "before": [
+        233,
+        463,
+        392,
+        457,
+        450,
+        471
+      ],
+      "after": [
+        233,
+        463,
+        392,
+        486,
+        450,
+        471
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 2,
+      "rank": 8,
+      "boss": true,
+      "little": false,
+      "before": [
+        263,
+        233,
+        133,
+        143,
+        216,
+        157
+      ],
+      "after": [
+        150,
+        233,
+        133,
+        143,
+        216,
+        157
+      ],
+      "mewtwo": [
+        {
+          "moves": [
+            94,
+            58,
+            247,
+            182
+          ],
+          "shiny": true,
+          "nature": 10
+        }
+      ]
+    },
+    {
+      "record": 6,
+      "rank": 1,
+      "boss": true,
+      "little": false,
+      "before": [
+        8,
+        311,
+        256,
+        312,
+        12,
+        417
+      ],
+      "after": [
+        8,
+        311,
+        256,
+        312,
+        12,
+        417
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 6,
+      "rank": 2,
+      "boss": true,
+      "little": false,
+      "before": [
+        8,
+        28,
+        5,
+        479,
+        40,
+        417
+      ],
+      "after": [
+        8,
+        28,
+        5,
+        479,
+        40,
+        417
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 6,
+      "rank": 3,
+      "boss": true,
+      "little": false,
+      "before": [
+        87,
+        479,
+        148,
+        311,
+        288,
+        417
+      ],
+      "after": [
+        87,
+        479,
+        148,
+        311,
+        288,
+        417
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 6,
+      "rank": 4,
+      "boss": true,
+      "little": false,
+      "before": [
+        340,
+        101,
+        354,
+        171,
+        123,
+        417
+      ],
+      "after": [
+        340,
+        101,
+        354,
+        171,
+        123,
+        417
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 6,
+      "rank": 5,
+      "boss": true,
+      "little": false,
+      "before": [
+        310,
+        139,
+        195,
+        25,
+        424,
+        417
+      ],
+      "after": [
+        310,
+        139,
+        195,
+        25,
+        424,
+        417
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 6,
+      "rank": 6,
+      "boss": true,
+      "little": false,
+      "before": [
+        139,
+        171,
+        424,
+        405,
+        463,
+        417
+      ],
+      "after": [
+        139,
+        171,
+        424,
+        405,
+        463,
+        245
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 6,
+      "rank": 7,
+      "boss": true,
+      "little": false,
+      "before": [
+        80,
+        25,
+        3,
+        474,
+        430,
+        417
+      ],
+      "after": [
+        80,
+        245,
+        3,
+        474,
+        430,
+        417
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 6,
+      "rank": 8,
+      "boss": true,
+      "little": false,
+      "before": [
+        152,
+        157,
+        253,
+        370,
+        299,
+        405
+      ],
+      "after": [
+        150,
+        157,
+        253,
+        370,
+        299,
+        405
+      ],
+      "mewtwo": [
+        {
+          "moves": [
+            94,
+            396,
+            58,
+            182
+          ],
+          "shiny": true,
+          "nature": 10
+        }
+      ]
+    },
+    {
+      "record": 9,
+      "rank": 1,
+      "boss": true,
+      "little": false,
+      "before": [
+        329,
+        413,
+        443,
+        271,
+        8,
+        12
+      ],
+      "after": [
+        329,
+        413,
+        443,
+        271,
+        8,
+        12
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 9,
+      "rank": 2,
+      "boss": true,
+      "little": false,
+      "before": [
+        340,
+        193,
+        267,
+        271,
+        444,
+        414
+      ],
+      "after": [
+        340,
+        193,
+        267,
+        271,
+        444,
+        414
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 9,
+      "rank": 3,
+      "boss": true,
+      "little": false,
+      "before": [
+        292,
+        394,
+        221,
+        8,
+        259,
+        205
+      ],
+      "after": [
+        292,
+        394,
+        221,
+        8,
+        259,
+        205
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 9,
+      "rank": 4,
+      "boss": true,
+      "little": false,
+      "before": [
+        62,
+        321,
+        87,
+        76,
+        47,
+        423
+      ],
+      "after": [
+        62,
+        321,
+        87,
+        76,
+        47,
+        423
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 9,
+      "rank": 5,
+      "boss": true,
+      "little": false,
+      "before": [
+        87,
+        80,
+        319,
+        208,
+        123,
+        134
+      ],
+      "after": [
+        87,
+        80,
+        319,
+        208,
+        123,
+        134
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 9,
+      "rank": 6,
+      "boss": true,
+      "little": false,
+      "before": [
+        321,
+        226,
+        389,
+        208,
+        127,
+        344
+      ],
+      "after": [
+        321,
+        383,
+        389,
+        208,
+        127,
+        344
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 9,
+      "rank": 7,
+      "boss": true,
+      "little": false,
+      "before": [
+        112,
+        127,
+        134,
+        9,
+        131,
+        80
+      ],
+      "after": [
+        383,
+        127,
+        134,
+        9,
+        131,
+        80
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 9,
+      "rank": 8,
+      "boss": true,
+      "little": false,
+      "before": [
+        219,
+        253,
+        256,
+        259,
+        288,
+        311
+      ],
+      "after": [
+        219,
+        150,
+        256,
+        259,
+        288,
+        311
+      ],
+      "mewtwo": [
+        {
+          "moves": [
+            94,
+            396,
+            58,
+            182
+          ],
+          "shiny": true,
+          "nature": 10
+        }
+      ]
+    },
+    {
+      "record": 12,
+      "rank": 1,
+      "boss": true,
+      "little": false,
+      "before": [
+        438,
+        434,
+        274,
+        413,
+        12,
+        315
+      ],
+      "after": [
+        438,
+        434,
+        274,
+        413,
+        12,
+        315
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 12,
+      "rank": 2,
+      "boss": true,
+      "little": false,
+      "before": [
+        95,
+        455,
+        15,
+        2,
+        12,
+        315
+      ],
+      "after": [
+        95,
+        455,
+        15,
+        2,
+        12,
+        315
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 12,
+      "rank": 3,
+      "boss": true,
+      "little": false,
+      "before": [
+        213,
+        189,
+        89,
+        435,
+        312,
+        315
+      ],
+      "after": [
+        213,
+        189,
+        89,
+        435,
+        312,
+        315
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 12,
+      "rank": 4,
+      "boss": true,
+      "little": false,
+      "before": [
+        42,
+        476,
+        416,
+        286,
+        55,
+        407
+      ],
+      "after": [
+        42,
+        476,
+        416,
+        286,
+        55,
+        407
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 12,
+      "rank": 5,
+      "boss": true,
+      "little": false,
+      "before": [
+        112,
+        286,
+        241,
+        3,
+        460,
+        407
+      ],
+      "after": [
+        112,
+        286,
+        241,
+        3,
+        460,
+        407
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 12,
+      "rank": 6,
+      "boss": true,
+      "little": false,
+      "before": [
+        286,
+        112,
+        389,
+        452,
+        160,
+        407
+      ],
+      "after": [
+        377,
+        112,
+        389,
+        452,
+        160,
+        407
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 12,
+      "rank": 7,
+      "boss": true,
+      "little": false,
+      "before": [
+        470,
+        452,
+        472,
+        409,
+        9,
+        407
+      ],
+      "after": [
+        470,
+        452,
+        472,
+        377,
+        9,
+        407
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 12,
+      "rank": 8,
+      "boss": true,
+      "little": false,
+      "before": [
+        69,
+        71,
+        31,
+        106,
+        427,
+        264
+      ],
+      "after": [
+        150,
+        71,
+        31,
+        106,
+        427,
+        264
+      ],
+      "mewtwo": [
+        {
+          "moves": [
+            94,
+            396,
+            58,
+            182
+          ],
+          "shiny": true,
+          "nature": 10
+        }
+      ]
+    },
+    {
+      "record": 15,
+      "rank": 1,
+      "boss": true,
+      "little": false,
+      "before": [
+        411,
+        75,
+        299,
+        311,
+        256,
+        239
+      ],
+      "after": [
+        411,
+        75,
+        299,
+        311,
+        256,
+        239
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 15,
+      "rank": 2,
+      "boss": true,
+      "little": false,
+      "before": [
+        95,
+        180,
+        444,
+        256,
+        259,
+        239
+      ],
+      "after": [
+        95,
+        180,
+        444,
+        256,
+        259,
+        239
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 15,
+      "rank": 3,
+      "boss": true,
+      "little": false,
+      "before": [
+        312,
+        67,
+        305,
+        28,
+        95,
+        239
+      ],
+      "after": [
+        312,
+        67,
+        305,
+        28,
+        95,
+        239
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 15,
+      "rank": 4,
+      "boss": true,
+      "little": false,
+      "before": [
+        330,
+        348,
+        337,
+        237,
+        125,
+        125
+      ],
+      "after": [
+        330,
+        348,
+        337,
+        237,
+        125,
+        125
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 15,
+      "rank": 5,
+      "boss": true,
+      "little": false,
+      "before": [
+        310,
+        195,
+        330,
+        214,
+        76,
+        125
+      ],
+      "after": [
+        310,
+        195,
+        330,
+        214,
+        76,
+        125
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 15,
+      "rank": 6,
+      "boss": true,
+      "little": false,
+      "before": [
+        310,
+        213,
+        139,
+        392,
+        247,
+        125
+      ],
+      "after": [
+        310,
+        213,
+        139,
+        392,
+        145,
+        125
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 15,
+      "rank": 7,
+      "boss": true,
+      "little": false,
+      "before": [
+        142,
+        466,
+        31,
+        214,
+        473,
+        466
+      ],
+      "after": [
+        142,
+        466,
+        145,
+        214,
+        473,
+        466
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 15,
+      "rank": 8,
+      "boss": true,
+      "little": false,
+      "before": [
+        260,
+        101,
+        142,
+        246,
+        257,
+        466
+      ],
+      "after": [
+        260,
+        101,
+        142,
+        150,
+        257,
+        466
+      ],
+      "mewtwo": [
+        {
+          "moves": [
+            94,
+            396,
+            58,
+            182
+          ],
+          "shiny": true,
+          "nature": 10
+        }
+      ]
+    },
+    {
+      "record": 18,
+      "rank": 1,
+      "boss": true,
+      "little": false,
+      "before": [
+        351,
+        433,
+        83,
+        268,
+        390,
+        269
+      ],
+      "after": [
+        351,
+        433,
+        83,
+        268,
+        390,
+        269
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 18,
+      "rank": 2,
+      "boss": true,
+      "little": false,
+      "before": [
+        40,
+        203,
+        402,
+        444,
+        256,
+        28
+      ],
+      "after": [
+        40,
+        203,
+        402,
+        444,
+        256,
+        28
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 18,
+      "rank": 3,
+      "boss": true,
+      "little": false,
+      "before": [
+        400,
+        337,
+        404,
+        317,
+        416,
+        99
+      ],
+      "after": [
+        400,
+        337,
+        404,
+        317,
+        416,
+        99
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 18,
+      "rank": 4,
+      "boss": true,
+      "little": false,
+      "before": [
+        202,
+        113,
+        227,
+        423,
+        361,
+        478
+      ],
+      "after": [
+        202,
+        113,
+        227,
+        423,
+        361,
+        478
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 18,
+      "rank": 5,
+      "boss": true,
+      "little": false,
+      "before": [
+        234,
+        80,
+        103,
+        171,
+        338,
+        38
+      ],
+      "after": [
+        234,
+        80,
+        103,
+        171,
+        338,
+        38
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 18,
+      "rank": 6,
+      "boss": true,
+      "little": false,
+      "before": [
+        468,
+        124,
+        55,
+        478,
+        389,
+        308
+      ],
+      "after": [
+        468,
+        124,
+        55,
+        478,
+        389,
+        486
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 18,
+      "rank": 7,
+      "boss": true,
+      "little": false,
+      "before": [
+        80,
+        463,
+        127,
+        9,
+        409,
+        470
+      ],
+      "after": [
+        486,
+        463,
+        127,
+        9,
+        409,
+        470
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 18,
+      "rank": 8,
+      "boss": true,
+      "little": false,
+      "before": [
+        392,
+        336,
+        144,
+        48,
+        287,
+        292
+      ],
+      "after": [
+        392,
+        336,
+        144,
+        48,
+        287,
+        150
+      ],
+      "mewtwo": [
+        {
+          "moves": [
+            94,
+            396,
+            58,
+            182
+          ],
+          "shiny": true,
+          "nature": 10
+        }
+      ]
+    },
+    {
+      "record": 20,
+      "rank": 1,
+      "boss": true,
+      "little": true,
+      "before": [
+        118,
+        177,
+        86,
+        29,
+        37,
+        406
+      ],
+      "after": [
+        118,
+        177,
+        86,
+        29,
+        37,
+        406
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 20,
+      "rank": 2,
+      "boss": true,
+      "little": true,
+      "before": [
+        140,
+        239,
+        155,
+        287,
+        120,
+        72
+      ],
+      "after": [
+        140,
+        239,
+        155,
+        287,
+        120,
+        72
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 20,
+      "rank": 3,
+      "boss": true,
+      "little": true,
+      "before": [
+        439,
+        84,
+        418,
+        366,
+        72,
+        207
+      ],
+      "after": [
+        439,
+        84,
+        418,
+        366,
+        72,
+        207
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 20,
+      "rank": 4,
+      "boss": true,
+      "little": true,
+      "before": [
+        345,
+        111,
+        190,
+        72,
+        109,
+        193
+      ],
+      "after": [
+        345,
+        111,
+        190,
+        72,
+        109,
+        193
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 20,
+      "rank": 5,
+      "boss": true,
+      "little": true,
+      "before": [
+        46,
+        433,
+        447,
+        23,
+        339,
+        52
+      ],
+      "after": [
+        46,
+        433,
+        447,
+        23,
+        339,
+        52
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 20,
+      "rank": 6,
+      "boss": true,
+      "little": true,
+      "before": [
+        393,
+        79,
+        1,
+        152,
+        387,
+        43
+      ],
+      "after": [
+        393,
+        79,
+        1,
+        152,
+        387,
+        43
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 20,
+      "rank": 7,
+      "boss": true,
+      "little": true,
+      "before": [
+        446,
+        137,
+        320,
+        198,
+        77,
+        207
+      ],
+      "after": [
+        446,
+        137,
+        320,
+        198,
+        77,
+        207
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 20,
+      "rank": 8,
+      "boss": true,
+      "little": true,
+      "before": [
+        443,
+        453,
+        316,
+        48,
+        56,
+        66
+      ],
+      "after": [
+        443,
+        453,
+        316,
+        48,
+        56,
+        66
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 22,
+      "rank": 1,
+      "boss": true,
+      "little": false,
+      "before": [
+        256,
+        444,
+        77,
+        391,
+        372,
+        156
+      ],
+      "after": [
+        256,
+        444,
+        77,
+        391,
+        372,
+        156
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 22,
+      "rank": 2,
+      "boss": true,
+      "little": false,
+      "before": [
+        372,
+        219,
+        444,
+        156,
+        148,
+        37
+      ],
+      "after": [
+        372,
+        219,
+        444,
+        156,
+        148,
+        37
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 22,
+      "rank": 3,
+      "boss": true,
+      "little": false,
+      "before": [
+        444,
+        334,
+        391,
+        126,
+        256,
+        5
+      ],
+      "after": [
+        444,
+        334,
+        391,
+        126,
+        256,
+        5
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 22,
+      "rank": 4,
+      "boss": true,
+      "little": false,
+      "before": [
+        136,
+        330,
+        37,
+        78,
+        148,
+        229
+      ],
+      "after": [
+        136,
+        330,
+        37,
+        78,
+        148,
+        229
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 22,
+      "rank": 5,
+      "boss": true,
+      "little": false,
+      "before": [
+        229,
+        334,
+        38,
+        78,
+        330,
+        323
+      ],
+      "after": [
+        229,
+        334,
+        38,
+        78,
+        330,
+        323
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 22,
+      "rank": 6,
+      "boss": true,
+      "little": false,
+      "before": [
+        334,
+        136,
+        38,
+        330,
+        229,
+        78
+      ],
+      "after": [
+        380,
+        136,
+        38,
+        330,
+        229,
+        78
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 22,
+      "rank": 7,
+      "boss": true,
+      "little": false,
+      "before": [
+        38,
+        334,
+        199,
+        409,
+        474,
+        68
+      ],
+      "after": [
+        38,
+        384,
+        199,
+        409,
+        474,
+        68
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 22,
+      "rank": 8,
+      "boss": true,
+      "little": false,
+      "before": [
+        143,
+        169,
+        196,
+        214,
+        217,
+        230
+      ],
+      "after": [
+        143,
+        169,
+        196,
+        150,
+        217,
+        230
+      ],
+      "mewtwo": [
+        {
+          "moves": [
+            94,
+            396,
+            58,
+            182
+          ],
+          "shiny": true,
+          "nature": 10
+        }
+      ]
+    },
+    {
+      "record": 25,
+      "rank": 1,
+      "boss": true,
+      "little": false,
+      "before": [
+        256,
+        413,
+        391,
+        237,
+        436,
+        447
+      ],
+      "after": [
+        256,
+        413,
+        391,
+        237,
+        436,
+        447
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 25,
+      "rank": 2,
+      "boss": true,
+      "little": false,
+      "before": [
+        237,
+        303,
+        82,
+        305,
+        391,
+        447
+      ],
+      "after": [
+        237,
+        303,
+        82,
+        305,
+        391,
+        447
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 25,
+      "rank": 3,
+      "boss": true,
+      "little": false,
+      "before": [
+        447,
+        237,
+        391,
+        205,
+        375,
+        447
+      ],
+      "after": [
+        447,
+        237,
+        391,
+        205,
+        375,
+        447
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 25,
+      "rank": 4,
+      "boss": true,
+      "little": false,
+      "before": [
+        106,
+        107,
+        237,
+        205,
+        208,
+        448
+      ],
+      "after": [
+        106,
+        107,
+        237,
+        205,
+        208,
+        448
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 25,
+      "rank": 5,
+      "boss": true,
+      "little": false,
+      "before": [
+        68,
+        454,
+        62,
+        476,
+        208,
+        448
+      ],
+      "after": [
+        68,
+        454,
+        62,
+        476,
+        208,
+        448
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 25,
+      "rank": 6,
+      "boss": true,
+      "little": false,
+      "before": [
+        107,
+        106,
+        476,
+        208,
+        227,
+        448
+      ],
+      "after": [
+        379,
+        106,
+        476,
+        208,
+        227,
+        448
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 25,
+      "rank": 7,
+      "boss": true,
+      "little": false,
+      "before": [
+        68,
+        160,
+        470,
+        430,
+        474,
+        448
+      ],
+      "after": [
+        379,
+        160,
+        470,
+        430,
+        474,
+        448
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 25,
+      "rank": 8,
+      "boss": true,
+      "little": false,
+      "before": [
+        147,
+        310,
+        160,
+        193,
+        461,
+        356
+      ],
+      "after": [
+        150,
+        310,
+        160,
+        193,
+        461,
+        356
+      ],
+      "mewtwo": [
+        {
+          "moves": [
+            94,
+            396,
+            58,
+            182
+          ],
+          "shiny": true,
+          "nature": 10
+        }
+      ]
+    },
+    {
+      "record": 28,
+      "rank": 1,
+      "boss": true,
+      "little": false,
+      "before": [
+        93,
+        425,
+        274,
+        261,
+        434,
+        302
+      ],
+      "after": [
+        93,
+        425,
+        274,
+        261,
+        434,
+        302
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 28,
+      "rank": 2,
+      "boss": true,
+      "little": false,
+      "before": [
+        479,
+        198,
+        302,
+        355,
+        274,
+        261
+      ],
+      "after": [
+        479,
+        198,
+        302,
+        355,
+        274,
+        261
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 28,
+      "rank": 3,
+      "boss": true,
+      "little": false,
+      "before": [
+        198,
+        435,
+        292,
+        354,
+        93,
+        479
+      ],
+      "after": [
+        198,
+        435,
+        292,
+        354,
+        93,
+        479
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 28,
+      "rank": 4,
+      "boss": true,
+      "little": false,
+      "before": [
+        200,
+        215,
+        229,
+        319,
+        93,
+        442
+      ],
+      "after": [
+        200,
+        215,
+        229,
+        319,
+        93,
+        442
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 28,
+      "rank": 5,
+      "boss": true,
+      "little": false,
+      "before": [
+        200,
+        319,
+        229,
+        478,
+        452,
+        342
+      ],
+      "after": [
+        200,
+        319,
+        229,
+        478,
+        452,
+        342
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 28,
+      "rank": 6,
+      "boss": true,
+      "little": false,
+      "before": [
+        356,
+        430,
+        452,
+        426,
+        442,
+        478
+      ],
+      "after": [
+        487,
+        430,
+        452,
+        426,
+        442,
+        478
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 28,
+      "rank": 7,
+      "boss": true,
+      "little": false,
+      "before": [
+        452,
+        356,
+        463,
+        430,
+        25,
+        472
+      ],
+      "after": [
+        452,
+        356,
+        463,
+        430,
+        487,
+        472
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 28,
+      "rank": 8,
+      "boss": true,
+      "little": false,
+      "before": [
+        459,
+        402,
+        261,
+        153,
+        156,
+        159
+      ],
+      "after": [
+        459,
+        402,
+        150,
+        153,
+        156,
+        159
+      ],
+      "mewtwo": [
+        {
+          "moves": [
+            94,
+            396,
+            58,
+            182
+          ],
+          "shiny": true,
+          "nature": 10
+        }
+      ]
+    },
+    {
+      "record": 30,
+      "rank": 1,
+      "boss": true,
+      "little": false,
+      "before": [
+        341,
+        413,
+        397,
+        125,
+        434,
+        81
+      ],
+      "after": [
+        341,
+        413,
+        397,
+        125,
+        434,
+        81
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 30,
+      "rank": 2,
+      "boss": true,
+      "little": false,
+      "before": [
+        259,
+        162,
+        180,
+        294,
+        5,
+        1
+      ],
+      "after": [
+        259,
+        162,
+        180,
+        294,
+        5,
+        1
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 30,
+      "rank": 3,
+      "boss": true,
+      "little": false,
+      "before": [
+        207,
+        457,
+        51,
+        305,
+        351,
+        417
+      ],
+      "after": [
+        207,
+        457,
+        51,
+        305,
+        351,
+        417
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 30,
+      "rank": 4,
+      "boss": true,
+      "little": false,
+      "before": [
+        87,
+        337,
+        128,
+        113,
+        247,
+        28
+      ],
+      "after": [
+        87,
+        337,
+        128,
+        113,
+        247,
+        28
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 30,
+      "rank": 5,
+      "boss": true,
+      "little": false,
+      "before": [
+        284,
+        400,
+        24,
+        344,
+        205,
+        424
+      ],
+      "after": [
+        284,
+        400,
+        24,
+        344,
+        205,
+        424
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 30,
+      "rank": 6,
+      "boss": true,
+      "little": false,
+      "before": [
+        224,
+        275,
+        178,
+        55,
+        160,
+        22
+      ],
+      "after": [
+        224,
+        275,
+        178,
+        55,
+        160,
+        480
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 30,
+      "rank": 7,
+      "boss": true,
+      "little": false,
+      "before": [
+        157,
+        94,
+        121,
+        181,
+        65,
+        352
+      ],
+      "after": [
+        157,
+        94,
+        121,
+        181,
+        65,
+        379
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 30,
+      "rank": 8,
+      "boss": true,
+      "little": false,
+      "before": [
+        101,
+        347,
+        154,
+        215,
+        383,
+        306
+      ],
+      "after": [
+        101,
+        150,
+        154,
+        215,
+        383,
+        306
+      ],
+      "mewtwo": [
+        {
+          "moves": [
+            94,
+            396,
+            58,
+            182
+          ],
+          "shiny": true,
+          "nature": 10
+        }
+      ]
+    },
+    {
+      "record": 31,
+      "rank": 1,
+      "boss": true,
+      "little": false,
+      "before": [
+        383,
+        185,
+        59,
+        470,
+        430,
+        465
+      ],
+      "after": [
+        383,
+        185,
+        59,
+        470,
+        430,
+        465
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 32,
+      "rank": 2,
+      "boss": true,
+      "little": false,
+      "before": [
+        250,
+        185,
+        78,
+        450,
+        460,
+        467
+      ],
+      "after": [
+        250,
+        185,
+        78,
+        450,
+        460,
+        467
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 33,
+      "rank": 3,
+      "boss": true,
+      "little": false,
+      "before": [
+        486,
+        68,
+        169,
+        350,
+        480,
+        467
+      ],
+      "after": [
+        486,
+        68,
+        169,
+        350,
+        480,
+        467
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 34,
+      "rank": 4,
+      "boss": true,
+      "little": false,
+      "before": [
+        115,
+        185,
+        428,
+        122,
+        245,
+        382
+      ],
+      "after": [
+        115,
+        185,
+        428,
+        122,
+        245,
+        382
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 35,
+      "rank": 5,
+      "boss": true,
+      "little": false,
+      "before": [
+        185,
+        461,
+        392,
+        405,
+        306,
+        490
+      ],
+      "after": [
+        185,
+        461,
+        392,
+        405,
+        306,
+        490
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 36,
+      "rank": 6,
+      "boss": true,
+      "little": false,
+      "before": [
+        468,
+        49,
+        124,
+        445,
+        282,
+        36
+      ],
+      "after": [
+        468,
+        486,
+        124,
+        445,
+        282,
+        36
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 37,
+      "rank": 7,
+      "boss": true,
+      "little": false,
+      "before": [
+        76,
+        248,
+        428,
+        245,
+        473,
+        416
+      ],
+      "after": [
+        76,
+        248,
+        428,
+        245,
+        473,
+        377
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 38,
+      "rank": 8,
+      "boss": true,
+      "little": false,
+      "before": [
+        242,
+        68,
+        25,
+        101,
+        423,
+        229
+      ],
+      "after": [
+        242,
+        68,
+        150,
+        101,
+        423,
+        229
+      ],
+      "mewtwo": [
+        {
+          "moves": [
+            94,
+            396,
+            58,
+            182
+          ],
+          "shiny": true,
+          "nature": 10
+        }
+      ]
+    },
+    {
+      "record": 2,
+      "rank": 1,
+      "boss": false,
+      "little": false,
+      "before": [
+        301,
+        209,
+        120,
+        79,
+        434,
+        451
+      ],
+      "after": [
+        301,
+        209,
+        120,
+        79,
+        434,
+        451
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 2,
+      "rank": 2,
+      "boss": false,
+      "little": false,
+      "before": [
+        161,
+        133,
+        458,
+        216,
+        69,
+        5
+      ],
+      "after": [
+        161,
+        133,
+        458,
+        216,
+        69,
+        5
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 2,
+      "rank": 3,
+      "boss": false,
+      "little": false,
+      "before": [
+        441,
+        18,
+        213,
+        137,
+        388,
+        404
+      ],
+      "after": [
+        441,
+        18,
+        213,
+        137,
+        388,
+        404
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 2,
+      "rank": 4,
+      "boss": false,
+      "little": false,
+      "before": [
+        234,
+        164,
+        159,
+        279,
+        148,
+        95
+      ],
+      "after": [
+        234,
+        164,
+        159,
+        279,
+        148,
+        95
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 2,
+      "rank": 5,
+      "boss": false,
+      "little": false,
+      "before": [
+        113,
+        53,
+        26,
+        205,
+        206,
+        342
+      ],
+      "after": [
+        113,
+        53,
+        26,
+        205,
+        206,
+        342
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 2,
+      "rank": 6,
+      "boss": false,
+      "little": false,
+      "before": [
+        18,
+        210,
+        332,
+        212,
+        229,
+        321
+      ],
+      "after": [
+        18,
+        210,
+        332,
+        212,
+        229,
+        321
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 2,
+      "rank": 7,
+      "boss": false,
+      "little": false,
+      "before": [
+        233,
+        143,
+        169,
+        426,
+        135,
+        130
+      ],
+      "after": [
+        233,
+        143,
+        169,
+        426,
+        135,
+        130
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 2,
+      "rank": 8,
+      "boss": false,
+      "little": false,
+      "before": [
+        295,
+        233,
+        208,
+        389,
+        158,
+        87
+      ],
+      "after": [
+        295,
+        233,
+        208,
+        389,
+        158,
+        87
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 2,
+      "rank": 8,
+      "boss": false,
+      "little": false,
+      "before": [
+        85,
+        295,
+        9,
+        477,
+        306,
+        424
+      ],
+      "after": [
+        85,
+        295,
+        9,
+        477,
+        306,
+        424
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 9,
+      "rank": 8,
+      "boss": false,
+      "little": false,
+      "before": [
+        194,
+        160,
+        279,
+        378,
+        317,
+        428
+      ],
+      "after": [
+        194,
+        160,
+        279,
+        378,
+        317,
+        428
+      ],
+      "mewtwo": []
+    },
+    {
+      "record": 25,
+      "rank": 8,
+      "boss": false,
+      "little": false,
+      "before": [
+        453,
+        257,
+        396,
+        334,
+        89,
+        321
+      ],
+      "after": [
+        453,
+        257,
+        396,
+        334,
+        89,
+        321
+      ],
+      "mewtwo": []
+    }
+  ],
+  "dol_sha256": "91d0ceacd6a138948d3519f37b7f1715f143481c7148f1f57e3f84750db50189",
+  "deck_sha256": "0532a445c219722df65d5d16b095a85195e43c86749f35f1d373c9b2ceab04ef",
+  "stubs": [
+    "Archive pointer lookup",
+    "Scratch allocation/free"
+  ],
+  "limits": [
+    "Explicit rank, boss flag, trainer-index and RNG fixtures",
+    "No live battle, Trade UI or save/load"
+  ],
+  "dolphin_tested": false
+}

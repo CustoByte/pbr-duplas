@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "applicator_delta_scenarios": 18,
+  "updater_download_cache_update_failure_save_scenario": true,
+  "runtime": "PowerShell 7 on Linux",
+  "limits": [
+    "Image tool is simulated; no Windows GUI or actual DolphinTool RVZ conversion",
+    "Real input file COPY/ADD patch reconstruction separately verified for all three files"
+  ]
+}

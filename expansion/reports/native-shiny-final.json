@@ -1,0 +1,31 @@
+{
+  "status": "passed-native-shiny-and-stat-construction",
+  "threshold_contexts": 312,
+  "rng_transition_cases": 254,
+  "tail_rejection_cases": 24,
+  "generated_species": 493,
+  "observed_shiny": 26,
+  "secret_id_updates": 26,
+  "native_stat_comparisons": 493,
+  "repeat_recalculations": 986,
+  "no_resurrection_checks": 26,
+  "dol_sha256": "91d0ceacd6a138948d3519f37b7f1715f143481c7148f1f57e3f84750db50189",
+  "deck_sha256": "0532a445c219722df65d5d16b095a85195e43c86749f35f1d373c9b2ceab04ef",
+  "chance_basis_points_by_rank": [
+    300,
+    328,
+    357,
+    385,
+    414,
+    442,
+    471,
+    500
+  ],
+  "limits": [
+    "Explicit generator rank/RNG context fixtures",
+    "Heap allocation/free are scratch fixtures",
+    "No real battle damage, model render, Trade UI eligibility or NAND save/load"
+  ],
+  "dolphin_tested": false,
+  "trade_save_tested": false
+}
