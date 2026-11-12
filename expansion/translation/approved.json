@@ -465,6 +465,87 @@
           "target": "{F006}{F101}Argh! Quero ficar\nmais forte!"
         }
       ]
+    },
+    {
+      "batch": 8,
+      "status": "approved-by-user",
+      "entries": [
+        {
+          "concept": "Battles require skill!",
+          "ids": [
+            33
+          ],
+          "target": "{F006}{F101}Batalhas exigem\nhabilidade!",
+          "layout_reference_id": 10
+        },
+        {
+          "concept": "This is how a Pokémon veteran fights!",
+          "ids": [
+            34
+          ],
+          "target": "{F006}{F101}É assim que se batalha\ncom experiência!"
+        },
+        {
+          "concept": "I have to start all over again!",
+          "ids": [
+            35
+          ],
+          "target": "{F006}{F101}Tenho que recomeçar\ndo zero!"
+        },
+        {
+          "concept": "I rule Pokétopia!",
+          "ids": [
+            36
+          ],
+          "target": "{F006}{F101}Eu domino Pokétopia!",
+          "protected_names": [
+            "Pokétopia"
+          ]
+        },
+        {
+          "concept": "Come back in 1,000 years!",
+          "ids": [
+            37
+          ],
+          "target": "{F006}{F101}Volte daqui a mil anos!"
+        },
+        {
+          "concept": "I guess there's always someone stronger...",
+          "ids": [
+            38
+          ],
+          "target": "{F006}{F101}Acho que sempre há\nalguém mais forte..."
+        },
+        {
+          "concept": "I've been busy lately!",
+          "ids": [
+            39
+          ],
+          "target": "{F006}{F101}Tenho andado\nna correria!",
+          "layout_reference_id": 10
+        },
+        {
+          "concept": "Yes! I won! On to the next battle!",
+          "ids": [
+            40
+          ],
+          "target": "{F006}{F101}Isso! Eu venci!\nVamos à próxima batalha!"
+        },
+        {
+          "concept": "I lost my momentum!",
+          "ids": [
+            41
+          ],
+          "target": "{F006}{F101}Perdi o embalo!"
+        },
+        {
+          "concept": "This is getting easier!",
+          "ids": [
+            42
+          ],
+          "target": "{F006}{F101}Está ficando mais fácil!"
+        }
+      ]
     }
   ]
 }
