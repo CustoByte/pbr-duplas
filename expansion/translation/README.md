@@ -2,10 +2,10 @@
 
 Escopo aprovado: todos os diálogos e menus exibidos durante as batalhas,
 incluindo comandos, seleção e troca, confirmações, informações de golpes,
-avisos e resultados. Cada texto deve passar pela revisão em lotes de dez,
+avisos e resultados. Cada texto deve passar pela revisão em lotes de vinte,
 conforme a preferência mais recente do usuário.
 Não traduzir nomes de Pokémon, golpes, natures ou itens. Nomes de treinadores
-serão escolhidos individualmente pelo usuário, apresentados em lotes de dez.
+serão escolhidos individualmente pelo usuário, apresentados em lotes de vinte.
 A primeira escolha é Joe → Pedro. O arquivo mes_common.fsys foi recebido:
 os 20 nomes revisados foram localizados, 19 trocas aplicadas na preparação
 local e Marina preservada. As referências a Joe foram atualizadas para Pedro,

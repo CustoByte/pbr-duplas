@@ -1,0 +1,148 @@
+{
+  "batch": 10,
+  "status": "awaiting-user-approval",
+  "category": "trainer-battle-dialogue",
+  "publication": "held-until-complete-battle-translation",
+  "entries": [
+    {
+      "ids": [
+        53
+      ],
+      "source": "No one has more friends than me!",
+      "proposed": "Ninguém tem mais amigos do que eu!"
+    },
+    {
+      "ids": [
+        54
+      ],
+      "source": "I have tons of friends!",
+      "proposed": "Tenho um monte de amigos!"
+    },
+    {
+      "ids": [
+        55
+      ],
+      "source": "Make lots of friends by battling a bunch!",
+      "proposed": "Faça muitos amigos batalhando bastante!"
+    },
+    {
+      "ids": [
+        56
+      ],
+      "source": "I'm not sad! I just made a new friend.",
+      "proposed": "Não estou triste! Fiz uma nova amizade."
+    },
+    {
+      "ids": [
+        57
+      ],
+      "source": "Let's be friends!",
+      "proposed": "Vamos ser amigos!"
+    },
+    {
+      "ids": [
+        58
+      ],
+      "source": "Yeah! We're friends from now on!",
+      "proposed": "Isso! Agora somos amigos!"
+    },
+    {
+      "ids": [
+        59
+      ],
+      "source": "You're my rival, not my friend!",
+      "proposed": "Você é meu rival, não meu amigo!"
+    },
+    {
+      "ids": [
+        60
+      ],
+      "source": "My love will never die!",
+      "proposed": "Meu amor nunca vai morrer!"
+    },
+    {
+      "ids": [
+        61
+      ],
+      "source": "Did you see that? The power of love!",
+      "proposed": "Viu só? É o poder do amor!"
+    },
+    {
+      "ids": [
+        62
+      ],
+      "source": "Even though I lost, I still love them!",
+      "proposed": "Mesmo perdendo, ainda amo todos eles!"
+    },
+    {
+      "ids": [
+        63
+      ],
+      "source": "Come, sandstorm!",
+      "proposed": "Venha, tempestade de areia!"
+    },
+    {
+      "ids": [
+        64
+      ],
+      "source": "It's a storm of wins wherever I go!",
+      "proposed": "Por onde eu passo, chovem vitórias!"
+    },
+    {
+      "ids": [
+        65
+      ],
+      "source": "I don't want to hear a storm of boos!",
+      "proposed": "Não quero ouvir uma tempestade de vaias!"
+    },
+    {
+      "ids": [
+        66
+      ],
+      "source": "Come, hail!",
+      "proposed": "Venha, granizo!"
+    },
+    {
+      "ids": [
+        67
+      ],
+      "source": "What? That's it? That's all you got?",
+      "proposed": "O quê? Só isso? É só isso que você tem?"
+    },
+    {
+      "ids": [
+        68
+      ],
+      "source": "Crushed by a total defeat!",
+      "proposed": "Uma derrota esmagadora!"
+    },
+    {
+      "ids": [
+        69
+      ],
+      "source": "Come, rain!",
+      "proposed": "Venha, chuva!"
+    },
+    {
+      "ids": [
+        70
+      ],
+      "source": "The rain was a blessing for me!",
+      "proposed": "A chuva foi uma bênção para mim!"
+    },
+    {
+      "ids": [
+        71
+      ],
+      "source": "It's pouring rain inside my heart...",
+      "proposed": "Chove forte dentro do meu coração..."
+    },
+    {
+      "ids": [
+        72
+      ],
+      "source": "I hope it'll be sunny!",
+      "proposed": "Tomara que faça sol!"
+    }
+  ]
+}

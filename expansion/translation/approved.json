@@ -2,7 +2,7 @@
   "language": "pt-BR",
   "archive_sha256": "43493306dfbe78a2efb98f6510e1b159f85ac05022ed759fe2bec0fcc5b8b5f1",
   "resource_sha256": "b89de0bf6438d69d029fa225677b7c213638c72f1155e1191c3085d455e6289c",
-  "review_batch_size": 10,
+  "review_batch_size": 20,
   "batches": [
     {
       "batch": 1,
@@ -544,6 +544,85 @@
             42
           ],
           "target": "{F006}{F101}Está ficando mais fácil!"
+        }
+      ]
+    },
+    {
+      "batch": 9,
+      "status": "approved-by-user",
+      "entries": [
+        {
+          "concept": "Battles are easy once you're used to them!",
+          "ids": [
+            43
+          ],
+          "target": "{F006}{F101}Com a prática, as\nbatalhas ficam fáceis!"
+        },
+        {
+          "concept": "There are things I still don't know?",
+          "ids": [
+            44
+          ],
+          "target": "{F006}{F101}Ainda há coisas\nque eu não sei?"
+        },
+        {
+          "concept": "Life is a challenge!",
+          "ids": [
+            45
+          ],
+          "target": "{F006}{F101}A vida é um desafio!"
+        },
+        {
+          "concept": "Yeah! I moved a step forward!",
+          "ids": [
+            46
+          ],
+          "target": "{F006}{F101}Isso! Avancei\nmais um passo!"
+        },
+        {
+          "concept": "I'll never give up! I will win next time!",
+          "ids": [
+            47
+          ],
+          "target": "{F006}{F101}Nunca vou desistir!\nNa próxima, eu venço!"
+        },
+        {
+          "concept": "I'm still a beginner!",
+          "ids": [
+            48
+          ],
+          "target": "{F006}{F101}Ainda sou iniciante!"
+        },
+        {
+          "concept": "Pokémon battles are so much fun!",
+          "ids": [
+            49
+          ],
+          "target": "{F006}{F101}Batalhas Pokémon são\nmuito divertidas!",
+          "protected_names": [
+            "Pokémon"
+          ]
+        },
+        {
+          "concept": "Battles aren't so easy for a beginner...",
+          "ids": [
+            50
+          ],
+          "target": "{F006}{F101}Para iniciantes,\nbatalhar não é tão fácil..."
+        },
+        {
+          "concept": "Everyone is my friend!",
+          "ids": [
+            51
+          ],
+          "target": "{F006}{F101}Todo mundo é meu amigo!"
+        },
+        {
+          "concept": "I've entered a new world of friendship!",
+          "ids": [
+            52
+          ],
+          "target": "{F006}{F101}Entrei num novo\nmundo de amizades!"
         }
       ]
     }

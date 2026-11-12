@@ -1,5 +1,5 @@
 {
-  "review_mode": "ten-trainers-per-batch-individually-chosen-names",
+  "review_mode": "twenty-trainers-per-batch-individually-chosen-names",
   "scope": "All trainer names; explicit exception to keeping other proper names unchanged",
   "entries": [
     {
@@ -460,7 +460,7 @@
     }
   ],
   "required_source": "Original mes_common.fsys received and exact names verified; no additional upload needed for these twenty names.",
-  "review_batch_size": 10,
+  "review_batch_size": 20,
   "catalogue_complete": false,
   "catalogue_note": "Exact English names matched in supplied USA mes_common; global message IDs and resource bytes checked against captured native message lookup.",
   "review_batches": [
