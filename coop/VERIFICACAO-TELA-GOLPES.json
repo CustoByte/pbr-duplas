@@ -1,0 +1,56 @@
+{
+  "capture": {
+    "game_id": "RPBE01",
+    "dolphin_version": "Dolphin 2609b",
+    "state_version": 192
+  },
+  "base_dol_sha256": "10913e96306bd0f8ef85f07c1d95d73ca90cbe923added8b513809640163fe96",
+  "loaded_executable_sections": [
+    {
+      "index": 0,
+      "bytes": 9440,
+      "status": "identical"
+    },
+    {
+      "index": 1,
+      "bytes": 4057888,
+      "status": "identical"
+    },
+    {
+      "index": 2,
+      "bytes": 2048,
+      "status": "identical"
+    }
+  ],
+  "loaded_executable_bytes": 4069376,
+  "input_router_replay": {
+    "status": "passed",
+    "disabled_comparisons": 242,
+    "p1_only_menu_cases": 121,
+    "routed_owner_phase_read_cases": 220,
+    "handoff_release_barrier": "passed",
+    "same_owner_next_actor_barrier": "passed",
+    "disconnect_no_fallback_to_p1": "passed",
+    "policy_tests": 8,
+    "actual_game_input_functions": [
+      "8005b5ec",
+      "802492e0",
+      "802492d8",
+      "80249310"
+    ],
+    "controller_count_in_supplied_state": 2,
+    "game_input_stubs": [],
+    "changed_dol_sha256": "60beba089b616867ef0c2adf21257302f0ef414027d0d8c63b41f38a0c55dfe2",
+    "status_in_game": "Not integrated; disabled at boot",
+    "limits": [
+      "Cached input/connection values seeded explicitly; no live controller polling",
+      "No battle actor, draft or replacement UI hooks",
+      "No two-player Dolphin test",
+      "No online session test",
+      "Policy model is not yet wired to the game; not a playable coop release"
+    ]
+  },
+  "actor_detection_integrated": false,
+  "playable_coop": false,
+  "privacy": "No savestate, RAM, roster, trainer identity or save data included"
+}
