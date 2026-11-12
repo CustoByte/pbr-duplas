@@ -1,0 +1,32 @@
+{
+  "status": "packaged-for-manual-validation",
+  "release": "v0.10.0-coop-test.1",
+  "activated_sha256": "c9a1b12b0c950b3475f3a645cf4cbdf7fdeb9b7653b1a4e19546bdda4ace933a",
+  "disabled_sha256": "47ef4e5b5ac44505990bff286ec3c26d2ac53210de79bb2451ce8bae6cecdc67",
+  "stable_common_preserved": true,
+  "stable_feed_unchanged": true,
+  "dolphin_gameplay_tested": false,
+  "netplay_tested": false,
+  "files": {
+    "aplicador-core.zip": {
+      "bytes": 2264121,
+      "sha256": "fbe4a5ee767c59a914480b8a0f7d21b192769ffe91dd8bd0bd9bc47bb3cdbe16"
+    },
+    "PBR-Coop-Teste-Windows.zip": {
+      "bytes": 2261253,
+      "sha256": "9665e3fa571dffede8f7b5708be62276648cdd66a73cefcb50ead274a0c39f51"
+    },
+    "PBR-Coop-Teste-Mac.zip": {
+      "bytes": 2260304,
+      "sha256": "c6a9bd87d2721f4627067dc79c6d19389dd1d7d4a6573e501d2eaf258288d956"
+    },
+    "update.json": {
+      "bytes": 457,
+      "sha256": "c3c95d707838bae005c3a36adb78c9ac580cb267e61a244deacfc18491400bf2"
+    }
+  },
+  "limits": [
+    "Underlying applicators previously tested; this candidate package has structural checks only",
+    "No full ROM, rendering, physical-controller or NetPlay validation in this environment"
+  ]
+}

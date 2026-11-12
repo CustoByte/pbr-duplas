@@ -1,0 +1,44 @@
+{
+  "status": "passed",
+  "captured_interfaces": [
+    {
+      "mode": 2,
+      "active_position": 0,
+      "callback": "80061c98"
+    },
+    {
+      "mode": 6,
+      "active_position": 1,
+      "callback": "80061598"
+    }
+  ],
+  "disabled_native_ui_comparisons": 14,
+  "native_ui_confirm_transitions": 2,
+  "native_ui_cancel_transitions": 2,
+  "logical_party_ownership_cases": 16,
+  "guard_cases": 44,
+  "same_actor_new_decision_epochs": 6,
+  "native_party_reorder_survivor_cases": 4,
+  "cursor_and_nonvolatile_registers_preserved": true,
+  "native_actor_mapping_getter": "803cc838",
+  "input_stubs": [],
+  "native_party_reorder_function": "803c96d4",
+  "ui_feedback_sound_stub": "8005c04c (feedback ids 1, 2, 3 only)",
+  "paired_single_context_instructions_skipped": [
+    "8000ad80",
+    "8000ad88",
+    "8000ae88",
+    "8000ae90"
+  ],
+  "dol_bytes_added": 0,
+  "prototype_dol_sha256": "fcdf964b87ebd195797bc9f10365b1e1269196a78ea76f46162c72f6229b43de",
+  "activation": "Disabled at boot; explicit test owner table required",
+  "limits": [
+    "Only the two registered command UI families captured here are routed automatically",
+    "Button caches, connection values and owner table are explicit test fixtures",
+    "Alternate mappings include fixtures and native reorder calls; no HP/faint simulation",
+    "Draft ownership, reserve restrictions, targets and battle lifecycle are unfinished",
+    "No physical-controller Dolphin test or NetPlay test; not a playable coop release"
+  ],
+  "privacy": "No private state, RAM or roster included"
+}

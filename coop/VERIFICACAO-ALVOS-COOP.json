@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "disabled_native_callback_comparisons": 84,
+  "owned_callback_comparisons": 288,
+  "wrong_player_blocked": 288,
+  "release_barrier_cases": 288,
+  "target_result_comparisons": 240,
+  "target_profile_initializations": 48,
+  "survivor_native_reorder_cases": 144,
+  "invalid_binding_cases": 36,
+  "native_main_dialog_calls": 8,
+  "ally_target_owned_by_attacker_cases": 4,
+  "fainted_target_mask_cases": 64,
+  "prototype_sha256": "47ef4e5b5ac44505990bff286ec3c26d2ac53210de79bb2451ce8bae6cecdc67",
+  "enabled_at_boot": false,
+  "native_callbacks": {
+    "command": "80060eec",
+    "moves": "80061598",
+    "targets": "80061c98"
+  },
+  "native_target_eligibility": "80063a40",
+  "target_owner": "Attacker logical party owner; target ownership does not transfer input",
+  "input_cursor_target_getter_or_callback_stubs": [],
+  "audio_and_psq_exceptions": "Same narrow feedback stubs and four context PSQ skips as verify_coop_draft",
+  "fixtures": [
+    "Owner tables and button/connection caches",
+    "Native widget animation-complete field",
+    "Native HP setter and mapping fixtures/native reorder; no damage engine"
+  ],
+  "limits": [
+    "No rendered UI, physical controllers, complete battle or NetPlay",
+    "Native numeric target profiles tested; not every move/ability interaction",
+    "Full auxiliary navigation, special screens, prompt rendering/refresh and full battle flow need Dolphin validation"
+  ],
+  "private_data_published": false
+}

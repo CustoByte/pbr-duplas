@@ -1,0 +1,15 @@
+{
+  "project_complete": false,
+  "status": "experimental_candidate_awaiting_full_game_validation",
+  "implemented_native": ["two_picks_each_and_ownership", "command_move_target_routing", "own_reserves_and_survivor", "auxiliary_shortcuts_and_details_input", "result_to_p1_and_final_ownership_clear", "battle_prompt_p1_p2_prefix"],
+  "verified_in_isolation": true,
+  "full_dolphin_boot_tested": false,
+  "two_physical_controllers_tested": false,
+  "full_campaign_special_rules_tested": false,
+  "full_summary_navigation_tested": false,
+  "prompt_layout_and_refresh_tested": false,
+  "netplay_tested": false,
+  "save_persistence_tested": false,
+  "stable_latest_feed_changed": false,
+  "experimental_channel_opt_in": true
+}

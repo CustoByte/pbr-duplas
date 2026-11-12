@@ -1,0 +1,28 @@
+name: Publish opt-in coop candidate
+on:
+  push:
+    branches: [feat/coop-input-foundation]
+    paths:
+      - .github/workflows/coop-candidate.yml
+      - coop/prebuilt/**
+      - coop/release_coop.py
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  candidate:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install development parser
+        run: python3 -m pip install --user capstone==5.0.6
+      - name: Fetch published stable mod core (no ROM)
+        run: curl --fail --location --retry 2 https://github.com/CustoByte/pbr-duplas/releases/download/v0.9.1-monferno/aplicador-core.zip --output /tmp/stable-core.zip
+      - name: Reproduce and verify candidate packages
+        env:
+          PYTHONPATH: coop:mod-source
+        run: python3 coop/release_coop.py --stable-core /tmp/stable-core.zip --root . --work /tmp/coop-build --output /tmp/coop-dist
+      - name: Publish experimental assets without changing latest
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create v0.10.0-coop-test.1 /tmp/coop-dist/* --prerelease --latest=false --target "$GITHUB_SHA" --title 'PBR Coop — candidata experimental para teste' --notes-file coop/RELEASE-NOTES.md

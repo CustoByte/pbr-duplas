@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "policy_legality_cases": 9216,
+  "preserved_native_rejections": 7684,
+  "native_party_input_cases": 72,
+  "native_callback_transitions": 72,
+  "disabled_validation_comparisons": 144,
+  "native_reorder_survivor_cases": 8,
+  "guard_cases": 34,
+  "cancel_cases": 12,
+  "disconnected_owner_cases": 12,
+  "disabled_input_comparisons": 84,
+  "release_barrier_cases": 12,
+  "prototype_sha256": "47ef4e5b5ac44505990bff286ec3c26d2ac53210de79bb2451ce8bae6cecdc67",
+  "enabled_at_boot": false,
+  "native_validation": "801722bc",
+  "native_party_callback": "80062b50",
+  "native_hp_setter": "803deb54",
+  "native_hp_getter": "803e100c field 0xa2",
+  "native_party_reorder": "803c96d4",
+  "input_validation_hp_or_party_getter_stubs": [],
+  "fixtures": [
+    "Owner table and controller caches",
+    "HP through native setter, not battle damage",
+    "Selector/display party and row permutations",
+    "Party callback input-ready phase and focus"
+  ],
+  "audio_and_psq_exceptions": "Same narrow feedback stubs and four context PSQ skips as verify_coop_draft",
+  "limits": [
+    "No physical controllers, rendered replacement battle or NetPlay test",
+    "Selector layout inferred from native validator; not captured during a real replacement",
+    "Native 0x505a rejection text has not been checked visually",
+    "Full auxiliary navigation, special screens, prompt rendering/refresh and full battle flow need Dolphin validation"
+  ],
+  "private_data_published": false
+}
