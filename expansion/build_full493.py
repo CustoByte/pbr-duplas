@@ -29,8 +29,11 @@ def build(dol,common,deck,coop_base=None,tournament_rules=True):
     if tournament_rules:
         from tournament_shiny import prepare as add_tournament_rules
         out,tournament=add_tournament_rules(bytes(out))
+        from unlimited_coupons import prepare as add_unlimited_coupons
+        out,coupons=add_unlimited_coupons(bytes(out))
     report={'status':'implemented-awaiting-in-game-trade-and-campaign-validation',
         'singleplayer_default':coop_base is None,'waterfall':wf,'encounters':encounters,'tournament_rules':tournament,
+        'unlimited_coupons':coupons if tournament_rules else None,
         'capacity_slots':2048,'capacity_patch_count':len(CAPACITY_EDITS),
         'output_sha256':{'main.dol':sha(out),'common.fsys':sha(base_common),'deck.fsys':sha(expanded)},
         'complete':False,'dolphin_tested':False,'trade_save_tested':False,

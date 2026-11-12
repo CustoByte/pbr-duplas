@@ -184,10 +184,40 @@
     "payload_sha256": "b26b8b74d69a1523bffd1cdadd538d3bf0e38e91d26ca7b9b84eaf00657e54cd",
     "reserved_end": "80646000"
   },
+  "unlimited_coupons": {
+    "status": "implemented-awaiting-Dolphin-shop-validation",
+    "source_dol_sha256": "91d0ceacd6a138948d3519f37b7f1715f143481c7148f1f57e3f84750db50189",
+    "output_dol_sha256": "da02a1232240e139ec14a26ee8b4c2818c56f3c2907f5c2391bd81e2dc0842f6",
+    "property": 8,
+    "displayed_balance": 999999,
+    "behavior": "Coupon reads return 999999; native coupon writes store 999999",
+    "existing_save_supported": true,
+    "external_save_edits": false,
+    "availability_and_inventory_checks_changed": false,
+    "dolphin_tested": false,
+    "changed_address_ranges": [
+      [
+        "0x80645f00",
+        "0x80645f1c"
+      ],
+      [
+        "0x80645f40",
+        "0x80645f58"
+      ],
+      [
+        "0x801675bc",
+        "0x801675c0"
+      ],
+      [
+        "0x8016746c",
+        "0x80167470"
+      ]
+    ]
+  },
   "capacity_slots": 2048,
   "capacity_patch_count": 6,
   "output_sha256": {
-    "main.dol": "91d0ceacd6a138948d3519f37b7f1715f143481c7148f1f57e3f84750db50189",
+    "main.dol": "da02a1232240e139ec14a26ee8b4c2818c56f3c2907f5c2391bd81e2dc0842f6",
     "common.fsys": "a3667703d2bf2e6733c6d40e4709869982f98e45b9ad029a9f7d7d9fec883d57",
     "deck.fsys": "0532a445c219722df65d5d16b095a85195e43c86749f35f1d373c9b2ceab04ef"
   },

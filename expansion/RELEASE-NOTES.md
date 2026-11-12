@@ -1,3 +1,10 @@
+## Novidade desta atualização: Poké Coupons ilimitados
+
+O jogador tem 999.999 Poké Coupons disponíveis e o saldo permanece no máximo
+após compras, inclusive ao carregar um save já existente. A loja mantém seu
+estoque e os desbloqueios normais da campanha. Foram verificadas 72 compras
+pela rotina nativa; a confirmação visual e salvar/carregar precisam do Dolphin.
+
 Candidata Windows com Full493, Waterfall em três duplas independentes, shinies
 progressivos com bônus de 10% e indicação nos atributos, e chefes com lendários
 nos ranks 6–8 (Little Battle excluído). Rank 8 recebe Mewtwo shiny; no Gateway,

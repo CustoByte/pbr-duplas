@@ -9,6 +9,10 @@ seu canal separado; a seleção cooperativa 2+2 ainda não cobre o Waterfall de 
 
 ## Alterações incluídas
 
+- Poké Coupons ilimitados: saldo de 999.999, disponível mesmo em saves
+  existentes e mantido após compras. Estoque, desbloqueios e inventário usam
+  as regras originais. Testadas 72 compras pela rotina nativa; a loja real e
+  salvar/carregar ainda precisam ser conferidos no Dolphin.
 - 493 espécies alcançáveis nos pools variáveis compatíveis, inclusive no rank
   final repetível. Registros originais, treinadores, IA e regras de nível
   preservados; seis pools ampliados e listas internas aumentadas para 2048.

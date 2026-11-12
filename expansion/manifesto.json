@@ -1,5 +1,5 @@
 {
-  "mod_version": "full493-waterfall-shiny-bosses-v0.11.0-test.1",
+  "mod_version": "full493-waterfall-shiny-bosses-coupons-v0.11.0-test.2",
   "game_id": "RPBE01",
   "revision": 0,
   "original_sha256": {
@@ -6762,8 +6762,8 @@
     {
       "package_path": "patches/main.dol.pbrdelta",
       "installed_path": "sys/main.dol",
-      "sha256": "91d0ceacd6a138948d3519f37b7f1715f143481c7148f1f57e3f84750db50189",
-      "patch_sha256": "7ef593c1d9c8c6ab103194eaeb91c61d521675a991198f6089f94dba44b2854f",
+      "sha256": "da02a1232240e139ec14a26ee8b4c2818c56f3c2907f5c2391bd81e2dc0842f6",
+      "patch_sha256": "317383db665c7ca2ff86eeee011a9756358f063c0ad6ab0d82300eb05de2b6df",
       "format": "pbr-delta-v1"
     },
     {

@@ -14,6 +14,9 @@
    caber sem corte/sobreposição; registrar a tela se permanecer só o total.
 8. Gateway: Mewtwo só no rank 8 e conjuntos variados. Não se espera encontrar
    todas as espécies nem um shiny em poucos desafios: as chances são aleatórias.
+9. Loja: carregar um save antigo, conferir 999.999 Poké Coupons, comprar
+   vários produtos e verificar o inventário. O saldo deve continuar no máximo.
+   Salvar pelo jogo, fechar e reabrir; conferir produtos e saldo novamente.
 
 Para relatar problema: versão do Dolphin, nome do coliseu, rank, rodada e ação
 que provocou o erro. Confirmar se a mesma situação funciona na cópia original.
