@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "version": "v0.9.0-monferno",
-  "package_url": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.9.0-monferno/aplicador-core.zip",
-  "package_sha256": "003bf6ce3a629315d92a38ad2611525012bac779a181a0846bf0ffebf7254da8",
+  "version": "v0.9.1-monferno",
+  "package_url": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.9.1-monferno/aplicador-core.zip",
+  "package_sha256": "5808b2f055209d09b3170b29b27fd36216bb4f3dd473bfaaf0a32c9cfc925c0e",
   "save_policy": "Preserve Dolphin user data; same RPBE01 game identity",
   "dolphin_gameplay_tested": false
 }

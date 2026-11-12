@@ -1,5 +1,10 @@
 # Histórico
 
+## v0.9.1-monferno
+
+- Usa o getter próprio da estrutura de batalha ao reconhecer a cópia que recebe a Lum Berry entre lutas, respeitando a decodificação e o checksum diferido.
+- Regressão adicional para esse estado; mantém o conjunto de Monferno da v0.9.0.
+
 ## v0.9.0-monferno
 
 - Monferno original de Nate: Adamant (+ATK, −Sp. ATK), Grass Knot → Blaze Kick, Sunny Day → Close Combat e Meadow Plate → Lum Berry.

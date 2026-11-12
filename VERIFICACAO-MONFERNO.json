@@ -6,6 +6,7 @@
   "arena_reservation_cases": 14,
   "consecutive_berry_consumption_restore_cycles": 3,
   "scope_and_consumed_pp_and_battle_item_checks": "passed",
+  "party_decryption_lock_preserved": true,
   "abi_nonvolatile_registers_and_stack": "passed",
   "private_existing_memory_replay": {
     "existing_state_migrated": true,
@@ -21,7 +22,7 @@
     "ivs_evs_ability_trainer_id_preserved": true,
     "idempotent": true
   },
-  "main_dol_sha256": "e2d2915d7ea849429675be871ea00486a416f6816678bfbcca5f1142874c1b96",
+  "main_dol_sha256": "10913e96306bd0f8ef85f07c1d95d73ca90cbe923added8b513809640163fe96",
   "limits": [
     "No Dolphin boot/rendering/gameplay execution",
     "No actual save-file persistence test",

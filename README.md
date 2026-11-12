@@ -6,7 +6,7 @@ Aplicador experimental para Windows 10/11 e macOS 12+. Utiliza sua imagem origin
 
 [**Baixar o aplicador para Windows**](https://github.com/CustoByte/pbr-duplas/releases/latest/download/PBR-Duplas-Aplicador-Windows.zip)
 
-**Novidade — v0.9.0-monferno:** Monferno do passe de Nate recebe natureza Adamant, Fire Punch, Mach Punch, Blaze Kick, Close Combat e Lum Berry. Funciona também com a campanha existente; a Berry é consumida durante a luta e volta na preparação da próxima. Para atualizar, feche o Dolphin e abra o mesmo aplicador Windows/Mac com internet. [Detalhes e verificações](MONFERNO.md).
+**Novidade — v0.9.1-monferno:** Monferno do passe de Nate recebe natureza Adamant, Fire Punch, Mach Punch, Blaze Kick, Close Combat e Lum Berry. Funciona também com a campanha existente; a Berry é consumida durante a luta e volta na preparação da próxima. Para atualizar, feche o Dolphin e abra o mesmo aplicador Windows/Mac com internet. [Detalhes e verificações](MONFERNO.md).
 
 O efeito shiny nos dois passes iniciais e a campanha em duplas permanecem ativos. [Detalhes do efeito shiny da v8](SHINY-PASSES.md).
 

@@ -64,6 +64,14 @@ def verify(v8,v9,common,diagnostics=None):
     # Another trainer's same-PID Pokemon must keep its consumed item.
     pid=get(mon,0);h.pokemon(QUERY,pid,0x24681357,391);h.put(QUERY+0x400,0)
     h.call(CARRY,(QUERY,6,QUERY+0x400));assert get(QUERY,6)==0
+    # A battle Pokemon can have the party-decryption lock set while the
+    # checksum is deferred. Use the party getter, respecting that lock.
+    h.u.mem_write(QUERY,bytes(h.u.mem_read(mon,0x8C))+bytes(0x20))
+    h.u.mem_write(QUERY+4,struct.pack('>H',0x8000))
+    h.u.mem_write(QUERY+6,b'\x00\x00');h.put(QUERY+0x400,0)
+    h.call(CARRY,(QUERY,6,QUERY+0x400))
+    assert h.call(0x803E100C,(QUERY,6,0))==157
+    assert struct.unpack('>H',h.u.mem_read(QUERY+4,2))[0]==0x8000
     # Both aliases clamp arbitrary loader values below the section; normal
     # default and later heap allocations retain their exact requested value.
     for setter in(0x8026EABC,0x8026EACC):
@@ -106,7 +114,7 @@ def verify(v8,v9,common,diagnostics=None):
             'other_pokemon_and_pass_data_unchanged':True,'ivs_evs_ability_trainer_id_preserved':True,'idempotent':True}
     return {'status':'passed','identity_nature_fixtures':cases,'native_getter_setter_stubs':[],
         'maximum_nature_search_iterations':bound,'arena_reservation_cases':14,'consecutive_berry_consumption_restore_cycles':berry_cycles,
-        'scope_and_consumed_pp_and_battle_item_checks':'passed','abi_nonvolatile_registers_and_stack':'passed',
+        'scope_and_consumed_pp_and_battle_item_checks':'passed','party_decryption_lock_preserved':True,'abi_nonvolatile_registers_and_stack':'passed',
         'private_existing_memory_replay':private,'main_dol_sha256':sha(v9),
         'limits':['No Dolphin boot/rendering/gameplay execution','No actual save-file persistence test',
             'Modified rental data may be persisted when the game saves normally; applicator does not edit save files']}
