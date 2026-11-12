@@ -82,8 +82,11 @@ def verify(capture, dol, original_common, translated_common, original_battle, tr
             assert bytes(h.uc.mem_read(pointer, len(row))) == row
             assert entry['replacement'] in readable(row)
             reference_cases += 1
-    for index in (5890, 6372, 6466, 6521, 6735, 7842, 8108):
+    for index in (5890, 6372, 6466, 6521, 6735, 8108):
         assert common_before[index] == common_after[index]
+    # The records label at 7842 is now legitimately translated; preserve
+    # the place name itself rather than freezing the surrounding sentence.
+    assert readable(common_before[7842]).count('Crystal Colosseum') == readable(common_after[7842]).count('Crystal Colosseum') == 1
     for index in (9294,):
         gid = global_ids[(1, index+1)][0]
         result = h.call(0x8024FBBC, (context, gid, 1, 0), limit=3000000)

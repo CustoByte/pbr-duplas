@@ -1,4 +1,31 @@
-## PBR — mais 1.000 textos de batalha (teste 8)
+## PBR — mensagens de combate e campanha (teste 9)
+
+### Tradução
+
+- Mais 2.007 textos: 1.731 mensagens/falas de batalha e 276 textos comuns.
+- Cobertura dos avisos pendentes da caixa preta: status, dano, drenagem,
+  clima, recuo, cura, substitutos, golpes, habilidades e itens.
+- Drenagem de HP usa “vida”, conforme solicitado.
+- Sono mantém “esta dormindo bastante.”.
+- Menus de passes, visual do treinador, regras, salvamento e conexão DS.
+- Nomes de Pokémon, golpes, itens, natures e habilidades preservados.
+- Caracteres de português incompatíveis com a fonte usam letras sem acentos.
+
+### Atualização
+
+Feche o Dolphin e abra o mesmo `INICIAR-TESTE-WINDOWS.cmd`.
+Ele busca esta versão e as próximas no mesmo endereço de atualização.
+O aplicativo reaproveita os caminhos e preserva o save normal do jogo.
+
+### Verificações
+
+Arquivos reconstruídos dos originais, comandos e variáveis preservados,
+busca nativa de mensagens e medidas de fonte conferidas. Mensagens longas
+usam também o formato de três linhas existente no jogo.
+**A aparência dos balões, o redimensionamento real e a campanha precisam
+ser testados no Dolphin.** A tradução do jogo inteiro continua em andamento.
+
+### Histórico: teste 8
 
 - 1.000 mensagens novas, em 721 conjuntos de falas de treinadores.
 - Entrada, desafio, vitória, derrota e chamadas dos Pokémon em português.

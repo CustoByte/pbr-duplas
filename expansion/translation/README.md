@@ -1,5 +1,12 @@
 # Tradução de batalha — português brasileiro
 
+Atual: teste 9, mais 2.007 textos novos (1.731 de batalha e 276 comuns).
+O escopo foi ampliado para o jogo inteiro. Todas as mensagens em inglês
+pendentes da caixa preta identificadas no MESG de batalha foram tratadas;
+nomes protegidos e abreviações nativas permanecem originais.
+Os testes nativos passaram; renderização e dimensionamento real no Dolphin
+ainda precisam de inspeção. A tradução completa do jogo segue em andamento.
+
 Teste 8: mais 1.000 mensagens novas em 721 conjuntos de falas de treinadores;
 2.631 mensagens de batalha alteradas no total. O usuário autorizou tradução
 e publicação em lotes de 1.000 mensagens sem revisão individual.

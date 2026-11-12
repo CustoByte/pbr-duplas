@@ -1,4 +1,17 @@
-# Teste 7 — publicação imediata autorizada
+# Teste 9 — lote de 2.007 textos concluído
+
+Prioridade atual: mensagens da caixa preta de todos os efeitos e status.
+Mais 1.731 textos/falas no arquivo de batalha e 276 textos comuns.
+Total acumulado no arquivo de batalha: 4.362 mensagens alteradas.
+Rótulos de sono, veneno, queimadura, paralisia, congelamento, confusão
+e paixão também traduzidos. Drenagem de HP usa “vida”.
+Nomes de Pokémon, golpes, itens, natures e habilidades preservados.
+
+O usuário ampliou o escopo para o jogo inteiro; o isolamento de descrições
+somente em batalha deixou de ser necessário. O jogo inteiro ainda não está
+traduzido. A revisão dos balões no Dolphin continua necessária.
+
+## Histórico do teste 7 (superado pelas instruções atuais)
 
 A instrução mais recente autoriza publicar a parte aplicada e verificada,
 substituindo a suspensão anterior. A tradução continua parcial.

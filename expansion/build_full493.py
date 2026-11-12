@@ -47,8 +47,8 @@ def build(dol,common,deck,coop_base=None,tournament_rules=True,battle_text=None,
         files['menu_fight_s.fsys'],report['battle_translation']=translate_battle(battle_text,trainer_names=trainer_text is not None)
         report['output_sha256']['menu_fight_s.fsys']=sha(files['menu_fight_s.fsys'])
     if trainer_text is not None:
-        from translation.trainer_names import prepare as rename_trainers
-        files['mes_common.fsys'],report['trainer_names']=rename_trainers(trainer_text)
+        from translation.common_text import prepare as translate_common
+        files['mes_common.fsys'],report['common_translation']=translate_common(trainer_text)
         report['output_sha256']['mes_common.fsys']=sha(files['mes_common.fsys'])
     return files,report,policy
 

@@ -17,21 +17,20 @@
 9. Loja: carregar um save antigo, conferir 999.999 Poké Coupons, comprar
    vários produtos e verificar o inventário. O saldo deve continuar no máximo.
    Salvar pelo jogo, fechar e reabrir; conferir produtos e saldo novamente.
-10. Tradução dos lotes 1 a 4: conferir uso de Pound, erro de ataque, desmaio,
-    “Acerto crítico!”, “Não é muito eficaz...”, “É Super eficaz!”, “Mas falhou!”
-    e “Não afeta [Pokémon]...”. A grafia de “É Super eficaz!” é intencional.
-    Verificar nomes longos, fonte, pausas e ausência de cortes nos balões.
-    Conferir também LUTAR, DESISTIR/Desistir, Voltar, Trocar e Ver golpes nos
-    botões e menus da batalha. Conferir também os dez status do lote 4, em
-    especial “está dormindo bastante.” e as duas linhas em queimadura e
-    descongelamento com nomes longos. Outros golpes ainda não foram traduzidos.
-    A troca Joe → Pedro está apenas registrada; o nome principal aguarda arquivo.
+10. Teste 9: conferir a caixa preta em veneno, queimadura, sono, paralisia,
+    congelamento, confusão, clima, habilidades, itens e recuperação de HP.
+    Drenagem deve usar “vida”; sono continuado, “esta dormindo bastante.”.
+    Verificar nomes longos, fonte, pausas e ausência de cortes nos balões,
+    principalmente mensagens com três linhas e vários nomes dinâmicos.
+    Nomes de golpes, Pokémon, itens e natures devem continuar em inglês.
+    Textos de português usam letras sem acentos incompatíveis com a fonte.
+    Conferir também os menus de passes, aparência, regras e salvamento.
 
 Para relatar problema: versão do Dolphin, nome do coliseu, rank, rodada e ação
 que provocou o erro. Confirmar se a mesma situação funciona na cópia original.
 Não apagar a ROM original nem a cópia anterior antes de validar esta candidata.
 
-11. Teste 7: conferir anúncios de golpes para ambos os lados, nomes longos,
+11. Conferir anúncios de golpes para ambos os lados, nomes longos,
     falas aprovadas e os dezenove nomes escolhidos. Joe deve aparecer como
     Pedro; Marina permanece Marina. Confirmar nomes em inglês dos golpes,
     Pokémon, natures e itens. As demais falas e descrições ainda podem estar

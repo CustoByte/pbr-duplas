@@ -1,5 +1,5 @@
 {
-  "mod_version": "full493-coupons-battle-ptbr-v0.11.0-test.8",
+  "mod_version": "full493-battle-effects-ptbr-v0.11.0-test.9",
   "game_id": "RPBE01",
   "revision": 0,
   "original_sha256": {
@@ -6786,15 +6786,15 @@
       "installed_path": "files/menu_fight_s.fsys",
       "package_path": "patches/menu_fight_s.fsys.pbrdelta",
       "format": "pbr-delta-v1",
-      "sha256": "78bb10d72f3317c84be97b2276e1ebe4bfb5714289475ecc95897c257a8c6bc3",
-      "patch_sha256": "8822201f1cdcbd153be24f38a330fd7bf9b49a67267533be9b3ba66df74bb820"
+      "sha256": "18f2c53d97eb9b094f102a2e95f07eb53d416da3a759eea2850384506289456f",
+      "patch_sha256": "1cf08e8056e5aca2e8c0af513614871e27b9417079d9d01281838c22fa9982d1"
     },
     {
       "installed_path": "files/mes_common.fsys",
       "package_path": "patches/mes_common.fsys.pbrdelta",
       "format": "pbr-delta-v1",
-      "sha256": "8e1e21eaffec7741e0e165e593e1a4c8e5fdec6f84193228583a3d47f2765c8a",
-      "patch_sha256": "df035ce83da62ea7b221522ed249f7cd0f756c4a5f1db6b64812bc15c2fdcac9"
+      "sha256": "3851882d2a4dcd69f779fe149aaee6822b0e0c5e0715e5d7976fa7fc7914dde7",
+      "patch_sha256": "9c1a76fbb64de045abd08e99991d467cf3b83c79fd23915a98d1f4f2e1bcaf80"
     }
   ]
 }
