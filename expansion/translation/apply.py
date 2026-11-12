@@ -20,7 +20,7 @@ def prepare(archive, approval_path=None, trainer_names=False):
     changed = set()
     approved_sources = {}
     for batch in approval['batches']:
-        if batch['status'] != 'approved-by-user':
+        if batch['status'] not in ('approved-by-user', 'approved-by-user-delegation'):
             continue
         for entry in batch['entries']:
             for index in entry['ids']:
@@ -58,7 +58,7 @@ def prepare(archive, approval_path=None, trainer_names=False):
     assert all(row == original[i] for i, row in enumerate(rows) if i not in changed)
     return output, {
         'status': 'applied-approved-battle-text-awaiting-Dolphin-visual-check',
-        'language': 'pt-BR', 'approved_batches': [b['batch'] for b in approval['batches'] if b['status']=='approved-by-user'],
+        'language': 'pt-BR', 'approved_batches': [b['batch'] for b in approval['batches'] if b['status'] in ('approved-by-user', 'approved-by-user-delegation')],
         'changed_message_ids': sorted(changed), 'changed_message_count': len(changed),
         'exact_duplicate_count': len(duplicate_of),
         'exact_duplicate_of': {str(k): v for k, v in sorted(duplicate_of.items())},

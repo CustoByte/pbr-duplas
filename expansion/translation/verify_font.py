@@ -22,12 +22,12 @@ def verify(capture, dol, original, translated):
     approval = json.loads(Path(__file__).with_name('approved.json').read_text())
     canonical = {}
     for batch in approval['batches']:
-        if batch['status'] == 'approved-by-user':
+        if batch['status'] in ('approved-by-user', 'approved-by-user-delegation'):
             for entry in batch['entries']:
                 for index in entry['ids']:
                     canonical.setdefault(before[index], index)
     references = {index: entry['layout_reference_id']
-                  for batch in approval['batches'] if batch['status']=='approved-by-user'
+                  for batch in approval['batches'] if batch['status'] in ('approved-by-user', 'approved-by-user-delegation')
                   for entry in batch['entries'] if 'layout_reference_id' in entry
                   for index in entry['ids']}
     from translation.trainer_names import approved_entries

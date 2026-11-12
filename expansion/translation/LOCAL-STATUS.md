@@ -34,3 +34,25 @@ etapa de nomes. Builds completos locais usam as duas opções adicionais:
 
 As opções juntas mantêm consistentes os nomes principais e as referências
 nas falas. O aplicador público ainda não inclui esta preparação local.
+
+## Autorização mais recente e trabalho em andamento
+
+O usuário delegou a tradução restante sem revisão de cada lote e autorizou
+publicar no GitHub somente quando a tradução completa estiver pronta.
+A restrição confirmada é traduzir descrições compartilhadas somente durante
+as batalhas; fora delas, devem continuar no idioma original.
+
+- Lote 10: vinte textos aprovados e aplicados; total humano de 93 textos.
+- Mensagens de uso de golpes: todas as 1.401 variantes preparadas e medidas,
+  preservando os 467 nomes de golpes.
+- Build local atual: 1631 mensagens de batalha alteradas; 4893 casos de fonte passaram.
+- Falas: 2.028 rascunhos automáticos coletados, ainda NÃO aplicados; precisam
+  de revisão de contexto, terminologia e ajuste às medidas dos balões.
+- A publicação ainda NÃO está pronta. O isolamento das descrições comuns
+  dentro da batalha NÃO foi implementado nem testado.
+
+Pesquisa para a separação: inicialização da UI de batalha em 0x8005EA98 e
+limpeza em 0x8005F1DC; avaliar uma flag própria e redirecionamento dos IDs
+comuns para cópias traduzidas anexadas ao MESG da batalha. Preservar a busca
+nativa fora da batalha e a lógica de texto dos bônus shiny. Os endereços
+foram inspecionados, mas nenhum novo hook foi aplicado.
