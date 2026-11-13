@@ -17,6 +17,7 @@ SLOTS = {
 
 ANCHORS = {
     "origin": "PBR_StaticRoot",
+    "direct_set": "PBR_StaticRoot",
     "center": "Waist",
     "ef_leye": "Head",
     "ef_reye": "Head",
@@ -31,7 +32,7 @@ ANCHORS = {
     "ef_lrfoot": "LFoot",
     "ef_rffoot": "RFoot",
     "ef_rrfoot": "RFoot",
-    "ef_o": "Tail03",
+    "ef_o": "Waist",
     "ct_bust": "Spine02",
     "ct_bust_move": "Spine02",
     "ct_all": "SnivyMotion",

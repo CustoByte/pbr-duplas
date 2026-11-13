@@ -22,12 +22,18 @@ quando um pacote completo for construído e o feed for atualizado.
 - Nome independente `SNIVY`: ID global 21775, índice local 9996, busca
   nativa por espécie e por registro de atributos. Os registros anteriores
   e demais categorias de texto permanecem preservados. Ver [NAMES.md](NAMES.md).
-- Dez testes de estrutura, identidades, catálogo e cadastro do nome.
+- Ligação de modelo independente: espécie 501 → modelo 670 → catálogo
+  `pkx_501.fsys`; 25 campos de pontos e 22 campos de animações conferidos
+  por getters nativos. Preservadas 670 linhas anteriores e 501 índices de
+  modelo das espécies anteriores. Ver [MODEL-REGISTRY.md](MODEL-REGISTRY.md).
+- SDR regenerado com `direct_set` e vínculo central corrigido, passando
+  pelas verificações de geometria, texturas, metadados e UVs.
+- Quinze testes de estrutura, identidades, catálogo, nome e associação de modelo.
 
 ## Implementação restante antes de empacotar
 
-- Incorporar o cadastro de nome já verificado ao construtor integrado;
-  completar o registro de modelo, ícones e limites de espécie no motor.
+- Incorporar os cadastros de nome e modelo já verificados ao construtor
+  integrado; completar ícones, variantes gráficas e limites de espécie.
 - Retratos próprios dentro da moldura branca em todas as interfaces.
 - Entrega de um Passe Little Battle pronto em uma vaga vazia, sem perda
   de passes anteriores; seleção, elegibilidade e persistência.

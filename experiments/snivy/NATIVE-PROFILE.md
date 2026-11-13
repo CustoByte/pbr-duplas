@@ -90,6 +90,11 @@ PYTHONPATH=mod-source python experiments/snivy/verify_native_asset.py \
 
 ## Pendências para entrar no jogo
 
+Atualização posterior: [MODEL-REGISTRY.md](MODEL-REGISTRY.md) documenta
+a associação independente da linha de modelo e o SDR regenerado com 21
+pontos de efeito/controle. Os relatórios deste perfil anterior representam
+o SDR de 20 pontos, que não atende ao novo requisito `direct_set` sem regeneração.
+
 1. Reservar IDs de recursos independentes, expandir o mapeamento de modelos
    e construir o pacote Snivy, sem usar os IDs de Grotle ou sentinelas Egg.
 2. Resolver limites de espécie, aquisição, menus e save/load para o ID novo.
