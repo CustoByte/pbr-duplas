@@ -1,0 +1,39 @@
+{
+  "source_urls": [
+    "https://pokeapi.co/api/v2/pokemon/snivy/",
+    "https://pokeapi.co/api/v2/pokemon-species/snivy/"
+  ],
+  "retrieved_utc": "2026-11-13",
+  "source_sha256": [
+    "1c8b5243f8236cb3dd7440c0ecdc74e4931a6be6188b01352ef2a35abc631706",
+    "e42e83e9d83f34fa6a5cc365a499f50ef6c95736e29a86691b2b61ab835eaf6c"
+  ],
+  "species_id": 495,
+  "moves": {
+    "tackle": {
+      "native_move_id": 33,
+      "generation_5_source": "level-up",
+      "level": 1
+    },
+    "leer": {
+      "native_move_id": 43,
+      "generation_5_source": "level-up",
+      "level": 4
+    },
+    "magical-leaf": {
+      "native_move_id": 345,
+      "generation_5_source": "egg",
+      "level": 0
+    },
+    "protect": {
+      "native_move_id": 182,
+      "generation_5_source": "machine",
+      "level": 0
+    }
+  },
+  "ability": "Overgrow",
+  "ability_id": 65,
+  "hidden_ability_implemented": false,
+  "gen4_shared_mechanics_preserved": true,
+  "proof": "Sunny Park set is legal in Gen5; native move behavior uses PBR Gen4 rules"
+}

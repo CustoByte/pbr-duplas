@@ -112,3 +112,7 @@ O pedido anterior de recursos gráficos está atendido. A etapa seguinte já
 produziu uma prova de conversão SDR e uma prévia animada fora do jogo.
 Consulte [GRAPHICS.md](GRAPHICS.md) para resultados, reprodução e limitações.
 A associação do modelo à nova espécie na versão USA continua pendente.
+
+A solicitação posterior de disponibilização ao jogador no Sunny Park,
+incluindo conjunto, prova de construção e bloqueios de publicação, está em
+[SUNNY-PARK.md](SUNNY-PARK.md).
