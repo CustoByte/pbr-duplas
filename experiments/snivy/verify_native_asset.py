@@ -25,13 +25,20 @@ def verify(data, reference, expected_uv):
     for target, source in zip(actual["actions"], template["actions"]):
         if target["flags"] != source["flags"]:
             raise ValueError("Native body/material flags differ")
-        for field in ("start", "end"):
-            if not math.isclose(
-                target[field] / target["length"],
-                source[field] / source["length"],
-                abs_tol=1e-6,
-            ):
-                raise ValueError("Reference timing fraction differs")
+        if target["name"] in ("damage", "kime_a"):
+            # These authored clips return to idle before their native end marker.
+            if not (math.isclose(target["start"], 0, abs_tol=1e-6)
+                    and math.isclose(target["end"], target["length"], abs_tol=1e-6)
+                    and math.isclose(target["length"], 1, abs_tol=1e-6)):
+                raise ValueError("Authored recovery must play its complete one-second clip")
+        else:
+            for field in ("start", "end"):
+                if not math.isclose(
+                    target[field] / target["length"],
+                    source[field] / source["length"],
+                    abs_tol=1e-6,
+                ):
+                    raise ValueError("Reference timing fraction differs")
     names = {node["name"] for node in actual["nodes"]}
     if set(ANCHORS) - names:
         raise ValueError("Missing effect/control attachment names")
@@ -139,6 +146,7 @@ def verify(data, reference, expected_uv):
         max_uv_error=max_error,
         blink_changes_and_restores_uv=True,
         reference_metadata_matched=True,
+        authored_full_recovery_actions=["damage", "kime_a"],
         sdr_sha256=actual["sha256"],
         native_game_tested=False,
         effects_positions_calibrated=False,

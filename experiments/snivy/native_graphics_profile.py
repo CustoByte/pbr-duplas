@@ -63,11 +63,12 @@ def configure(exporter, contract):
             exporter.actions[name]["length"] / exporter.FRAME_RATE,
             1 / exporter.FRAME_RATE,
         )
-        for offset, value in (
-            (4, source["start"] / source["length"] * length),
-            (8, source["end"] / source["length"] * length),
-            (12, length),
-        ):
+        # Grotle's damage marker ends at 40% of its own recovery clip.
+        # Snivy must finish its authored recovery before returning to wait.
+        markers = ((0, length, length) if name in ('damage', 'kime_a') else
+                   (source['start'] / source['length'] * length,
+                    source['end'] / source['length'] * length, length))
+        for offset, value in zip((4, 8, 12), markers):
             file.write("float", value, address, offset=offset)
         for i, value in enumerate(source["flags"]):
             file.write("uchar", value, address, offset=40 + i)

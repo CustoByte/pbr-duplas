@@ -1,5 +1,5 @@
 {
-  "kind": "candidate 3 public-core converter using bundled Python 3.10 and pinned SDKs",
+  "kind": "test4 public-core local conversion: approved fluidity profile",
   "protected_resources_bundled_in_public_project": false,
   "original_face_entries_preserved": 645,
   "original_body_entries_preserved": 645,
@@ -9,11 +9,15 @@
     "actions": 12,
     "nodes": 119,
     "effect_control_attachments": 21,
-    "uv_scalar_samples": 6360,
+    "uv_scalar_samples": 5760,
     "max_uv_error": 1.043081283569336e-07,
     "blink_changes_and_restores_uv": true,
     "reference_metadata_matched": true,
-    "sdr_sha256": "5f35016708c270cfc8893df37a353c94cd2fd145450a042e3e6b3512ab140bb0",
+    "authored_full_recovery_actions": [
+      "damage",
+      "kime_a"
+    ],
+    "sdr_sha256": "96de8996a874d1cdc0ec03cf566c024af30be8c8d54b8d7f52dbe051e3be8a4d",
     "native_game_tested": false,
     "effects_positions_calibrated": false,
     "event_synchronization_verified": false
@@ -27,8 +31,8 @@
   },
   "outputs": {
     "pkx_501.fsys": {
-      "bytes": 2572544,
-      "sha256": "ea6de445cbfda3efbe9811cdc7ab4845da8096be7866fb31eba2b2432c7e8002"
+      "bytes": 2385184,
+      "sha256": "a343e97c6f56b1cc93daf6f7b4833431a54223a82d4fa32b71c5a350b509e2f4"
     },
     "menu_face.fsys": {
       "bytes": 2679296,
@@ -43,16 +47,14 @@
     "pkx_388.fsys": "ce02a053b41bc806391bf3bb4606faffcae3edc7b974120959d25f488f75afb8",
     "menu_face.fsys": "05f0037c6cecf8a4e958d616a71c6c30af6d1d4dc37f4615d3051afff1f53e9a",
     "menu_pokemon.fsys": "8c39595a3b6176b709475674e143266f093bf657ff0bd025ddf6dea1cd1fbdad",
-    "normal_sdr": "5f35016708c270cfc8893df37a353c94cd2fd145450a042e3e6b3512ab140bb0"
+    "normal_sdr": "96de8996a874d1cdc0ec03cf566c024af30be8c8d54b8d7f52dbe051e3be8a4d"
   },
   "playable": false,
   "ready_to_publish": false,
   "updater_changed": false,
   "remaining": [
-    "Actual Windows Dolphin complete battle, eye appearance, summary framing and save/load"
+    "Windows in-game event timing, visual transition and load-time confirmation"
   ],
-  "dependency_bootstrap_verified_on": "Linux x86_64",
-  "windows_platform_execution_verified": false,
   "all_four_blender_stages_passed": true,
-  "game_assets_in_public_package": false
+  "public_game_assets": false
 }

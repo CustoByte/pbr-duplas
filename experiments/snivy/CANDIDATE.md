@@ -130,6 +130,33 @@ e escala própria de 0,72 em vez de 0,54. As outras espécies e a orientação d
 batalha não são alteradas. Olhos, enquadramento e batalha completa precisam de
 nova conferência visual no Dolphin do Windows.
 
+## Candidata 4 — fluidez aprovada na prévia
+
+Após o usuário confirmar que a candidata 3 entrou em batalha, relatou salto na
+seleção e retorno brusco após dano. A comparação privada dos SDRs foi mostrada
+a 30 fps e aprovada antes desta integração.
+
+- `kime_a` usa uma postura calma de NorIdle0, com 31 amostras e retorno
+  gradual para a pose inicial nos oito quadros finais. Mantém slot próprio,
+  reprodução única e conclusão; não se troca por uma ação de loop infinito.
+- `damage` mantém DamF0 com entrada/recuperação suaves. O marcador final
+  acompanha o segundo completo, em vez de cortar a reação aos 40% herdados do
+  Grotle. A pose final coincide com o início de `wait`.
+- A geometria, os vértices deformados e as texturas são verificados contra as
+  poses de origem ou as transições explicitamente compostas. As outras ações
+  continuam com seus mapeamentos e tempos anteriores.
+- O modelo tem cerca de 2,36 MB, aproximadamente 5% menor que a candidata 3.
+  Isso não é uma medição do tempo de carregar o ginásio no Windows.
+- O pipeline inclui fluidity_profile.py na chave de cache; o mesmo CMD
+  reconverte os recursos localmente uma vez e reutiliza os caminhos já salvos.
+
+`fluidity-preview-proof.json` registra a proposta e sua aprovação. As prévias
+não são distribuídas como arquivos de jogo, e os vídeos não entram no núcleo
+do instalador. A movimentação final e o controle de eventos ainda devem ser
+conferidos no Dolphin após atualizar, usando save normal e sem save state
+antigo. Não houve alteração de moveset, Nature, habilidade, item ou passes
+nesta revisão de animação.
+
 ## Evidências e limites
 
 - `pass-delivery-proof.json`: código nativo da captura, registradores ampliados,

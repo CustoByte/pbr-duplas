@@ -28,7 +28,7 @@ def pipeline_key(source, originals):
              'graphics_verify', 'native_graphics_profile', 'render_portraits',
              'prepare_graphics_tools', 'icon_textures', 'shiny_variant',
              'resource_packages', 'pkx_reference', 'verify_native_asset',
-             'build_local_assets', 'model_registry', 'icon_registry', 'catalog', 'sdr_track_storage')
+             'build_local_assets', 'model_registry', 'icon_registry', 'catalog', 'sdr_track_storage', 'fluidity_profile')
     files = [SCRIPTS / (name + '.py') for name in local]
     files += [ROOT / 'mod-source' / (name + '.py') for name in
               ('prepare_campaign_doubles', 'inspect_fsys', 'team_series_asm', 'lzss_encode')]

@@ -1,0 +1,36 @@
+{
+  "kind": "unpublished before/after animation proposal",
+  "published": false,
+  "source": "decoded SDR at every 30 fps frame",
+  "before_sdr_sha256": "f123a73a4df0ffd7215b82521997267a6fdb45e18fd438e99c6f280171909d4b",
+  "after_sdr_sha256": "360be3d35fb6bb3dbcb65a71def332a9bd2d8e174532056f8c6bf2911d50a5f7",
+  "before": {
+    "initial_to_wait": 9.150276580718682,
+    "selection_to_wait": 2.4644333517406283,
+    "damage_to_wait": 4.834865765606688,
+    "damage_marker_end_seconds": 0.3999999761581421,
+    "selection_marker_end_seconds": 2.1666667461395264
+  },
+  "after": {
+    "initial_to_wait": 9.150276580718682,
+    "selection_to_wait": 0.0,
+    "damage_to_wait": 0.0,
+    "damage_marker_end_seconds": 1.0,
+    "selection_marker_end_seconds": 1.0
+  },
+  "source_model_bytes": 2482184,
+  "proposal_model_bytes": 2358184,
+  "model_reduction_percent": 5.0,
+  "geometry_roundtrip_passed": true,
+  "native_loading_passed": true,
+  "video_frames": 216,
+  "video_fps": 30,
+  "video_seconds": 7.2,
+  "limits": [
+    "Studio preview, not a Dolphin capture; demonstrations cut at declared file markers",
+    "Actual selection event routing and transition timing require in-game validation",
+    "No Windows gym-load timings measured; no claim that byte reduction equals time reduction"
+  ],
+  "user_approved": true,
+  "approval_scope": "Implement the demonstrated selection/damage proposal and publish Windows update"
+}

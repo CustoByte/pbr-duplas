@@ -49,6 +49,8 @@ def package(integrated, originals, payload, output, version):
     core['manifesto.json'] = (json.dumps(manifest, indent=2) + '\n').encode()
     for directory in ('experiments/snivy', 'mod-source', 'expansion'):
         for p in (ROOT / directory).glob('*.py'):
+            if p.name in ('render_fluidity_preview.py', 'encode_fluidity_preview.py'):
+                continue  # Developer-only preview tools; not installer dependencies.
             if p.name.startswith(('test_', 'verify_')) and p.name != 'verify_native_asset.py':
                 continue
             core[p.relative_to(ROOT).as_posix()] = p.read_bytes()
@@ -89,6 +91,6 @@ if __name__ == '__main__':
     p = argparse.ArgumentParser(description=__doc__)
     for name in ('integrated', 'originals', 'payload', 'output'):
         p.add_argument('--' + name, type=Path, required=True)
-    p.add_argument('--version', default='v0.12.0-snivy-test.3')
+    p.add_argument('--version', default='v0.12.0-snivy-test.4')
     a = p.parse_args()
     print(json.dumps(package(a.integrated, a.originals, a.payload, a.output, a.version), indent=2))

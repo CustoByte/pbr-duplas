@@ -26,7 +26,10 @@ source = bpy.data.objects["Tsutarja"]
 source_mesh = bpy.data.objects["TsutarjaSkin"]
 scene = bpy.context.scene
 C = Matrix.Rotation(-math.pi / 2, 4, "X")
-slots = json.loads((ROOT / "conversion-report.json").read_text())["candidate_mapping"]
+conversion = json.loads((ROOT / "conversion-report.json").read_text())
+slots = conversion["candidate_mapping"]
+authored = conversion.get("fluidity_profile", {})
+authored_poses = json.loads((ROOT / "expected-poses.json").read_text()) if authored else {}
 io = pbr.importer
 with open(os.devnull, "w") as quiet, contextlib.redirect_stdout(quiet):
     model = io.parseModel(str(ROOT / "snivy-experimental.sdr"))
@@ -96,9 +99,9 @@ for actionid, action in io.anim_dict.items():
             report["material_only_actions"].append(name)
             continue
     source.animation_data.action = bpy.data.actions[slots[name] + " (Tsutarja)"]
-    end = int(source.animation_data.action.frame_range[1])
+    end = conversion["actions"][name]["frames"] - 1
     frames = (
-        list(range(end + 1)) if name in ("idle", "wait") else sorted({0, end // 2, end})
+        list(range(end + 1)) if name in ("idle", "wait") or name in authored else sorted({0, end // 2, end})
     )
     for frame in frames:
         scene.frame_set(frame)
@@ -110,6 +113,8 @@ for actionid, action in io.anim_dict.items():
             @ b.matrix
             for b in source.pose.bones
         }
+        if name in authored:
+            poses = {bone: Matrix(rows) for bone, rows in authored_poses[name][str(frame)].items()}
         time = frame / 30
         world = {}
         for bone in skele.bones:
@@ -152,13 +157,24 @@ for actionid, action in io.anim_dict.items():
             for bone_index, weight in decoded.weights[index].items():
                 bone = skele.bones[bone_index]
                 position += weight * (world[bone.name] @ bone.inverseBindMatrix @ point)
-            target = C @ evaluated.matrix_world @ evaluated.data.vertices[index].co
+            if name in authored:
+                original_vertex = source_mesh.data.vertices[index]
+                original_point = C @ source_mesh.matrix_world @ original_vertex.co
+                target = Vector((0, 0, 0))
+                for group in original_vertex.groups:
+                    bone_name = source_mesh.vertex_groups[group.group].name
+                    exported_name = 'SnivyMotion' if bone_name == 'Origin' else bone_name
+                    original_bind = C @ source.matrix_world @ source.data.bones[bone_name].matrix_local
+                    target += group.weight * (poses[exported_name] @ original_bind.inverted() @ original_point)
+            else:
+                target = C @ evaluated.matrix_world @ evaluated.data.vertices[index].co
             vertex_error = max(vertex_error, (position - target).length)
     report["actions"][name] = {
         "max_vertex_distance": vertex_error,
         "max_matrix_error": worst,
         "worst_bone": worstbone,
         "sampled_frames": frames,
+        "authored_transition": name in authored,
     }
 report["passed"] = (
     len(report["actions"]) + len(report["material_only_actions"])

@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "version": "v0.12.0-snivy-test.3",
-  "package_url": "https://raw.githubusercontent.com/CustoByte/pbr-duplas/v0.12.0-snivy-test.3/expansion/packages/snivy-test3/aplicador-core.zip",
-  "package_sha256": "e286aa35de2bf3b9fa01a52cdcdc568d1d3df1b82813be22eddef5f330f644b0",
+  "version": "v0.12.0-snivy-test.4",
+  "package_url": "https://raw.githubusercontent.com/CustoByte/pbr-duplas/v0.12.0-snivy-test.4/expansion/packages/snivy-test4/aplicador-core.zip",
+  "package_sha256": "0120afc47a08b539a4d27351c4a5ef8eba332ca757433645c094efd225dbd4c2",
   "channel": "full493-test",
   "dolphin_tested": false,
   "local_snivy_source_required": true,

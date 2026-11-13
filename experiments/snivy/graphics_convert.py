@@ -19,6 +19,10 @@ args = arguments()
 ROOT = args.workdir
 if args.native_contract:
     from native_graphics_profile import SLOTS, ANCHORS
+    from fluidity_profile import SLOTS as FLUIDITY, idle_weight
+    SLOTS = dict(SLOTS)
+    for name, profile in FLUIDITY.items():
+        SLOTS[name] = profile["source"]
 load_brres_addon(args)
 pbr = load_pbr_addon(args)
 from sdr_track_storage import writer as compact_track_writer
@@ -176,6 +180,13 @@ report = {
     "material_body_channels_separated": bool(args.native_contract),
 }
 expected = {}
+idle_anchor = {}
+if args.native_contract:
+    src.animation_data.action = bpy.data.actions['NorIdle0 (Tsutarja)']
+    scene.frame_set(0)
+    idle_anchor = {bone.name: C @ src.matrix_world @ src.pose.bones[bone.name].matrix
+                   for bone in source_bones}
+    report['fluidity_profile'] = FLUIDITY
 for slot, source_name in SLOTS.items():
     source_action = bpy.data.actions[f"{source_name} (Tsutarja)"]
     src.animation_data.action = source_action
@@ -198,6 +209,8 @@ for slot, source_name in SLOTS.items():
         mat.node_tree.animation_data.action = a
         setattr(mat, "prop_" + slot, a)
     end = int(source_action.frame_range[1])
+    if args.native_contract and slot in FLUIDITY:
+        end = FLUIDITY[slot]["last_frame"]
     if args.native_contract and slot.startswith("tx_"):
         end = 4 if slot == "tx_wink" else 10
     expected_uv[slot] = {}
@@ -210,6 +223,11 @@ for slot, source_name in SLOTS.items():
             b.name: C @ src.matrix_world @ src.pose.bones[b.name].matrix
             for b in source_bones
         }
+        if args.native_contract and slot in FLUIDITY:
+            weight = idle_weight(slot, frame, end)
+            if weight:
+                poses = {name: (idle_anchor[name].copy() if weight >= 1 else matrix.lerp(idle_anchor[name], weight))
+                         for name, matrix in poses.items()}
         for b in source_bones:
             pb = rig.pose.bones[names[b.name]]
             local = (
@@ -246,7 +264,7 @@ for slot, source_name in SLOTS.items():
         for b in source_bones:
             dif = rig.pose.bones[names[b.name]].matrix - poses[b.name]
             maximum_error = max(maximum_error, max(abs(x) for row in dif for x in row))
-        if frame in (0, end // 2, end):
+        if frame in (0, end // 2, end) or (args.native_contract and slot in FLUIDITY):
             expected[slot][str(frame)] = {
                 names[b.name]: [list(row) for row in poses[b.name]]
                 for b in source_bones
