@@ -93,7 +93,7 @@ def build(dol, payload):
     # The original summary camera has a fixed 495-entry array and clamps new
     # species to Egg. Give 501 its own small-biped camera entry instead, keeping
     # every original array byte and every legacy lookup unchanged.
-    camera_row = struct.pack(">4f", -5.5, -3.0, 0.0, 0.54)
+    camera_row = struct.pack(">4f", -5.5, -3.0, 0.0, 0.72)
     output[offset + CAMERA_ROW - SECTION_BASE:offset + CAMERA_ROW - SECTION_BASE + 16] = camera_row
     position = [d(11, 0, 0, 501), 0x40820028,
                 d(15, 3, 0, 0x8064), d(24, 3, 3, 0x6640),
@@ -110,6 +110,19 @@ def build(dol, payload):
         body_code = b"".join(struct.pack(">I", w) for w in words)
         output[offset + address - SECTION_BASE:offset + address - SECTION_BASE + len(body_code)] = body_code
         struct.pack_into(">I", output, file_offset(dol, hook), branch(hook, address))
+    # Summary-only look-at adjustment: Snivy's eyes sit on the sides of its
+    # snout. Turn it about 25 degrees away from the default frontal view.
+    # The existing setter consumes r3=model, r4=target vector. Other species
+    # retain every input byte and still execute the same native setter.
+    summary_hook, summary_code = 0x80104740, 0x80646800
+    if word(dol, file_offset(dol, summary_hook)) != branch(summary_hook, 0x8003AE58, True):
+        raise ValueError("Unexpected summary orientation setter")
+    words = [d(40, 0, 3, 0x510), d(11, 0, 0, 501), 0x4082000C,
+             d(48, 0, 2, -0x741C), d(52, 0, 4, 0),
+             branch(summary_code + 20, 0x8003AE58)]
+    code = b"".join(struct.pack(">I", w) for w in words)
+    output[offset + summary_code - SECTION_BASE:offset + summary_code - SECTION_BASE + len(code)] = code
+    struct.pack_into(">I", output, file_offset(dol, summary_hook), branch(summary_hook, summary_code, True))
     for hook in (0x800E85B4, 0x800E85D0, 0x800E8908):
         if word(dol, file_offset(dol, hook)) != branch(hook, 0x8063C000):
             raise ValueError("Existing Monferno accessor hook differs")

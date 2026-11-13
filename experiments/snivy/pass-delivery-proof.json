@@ -321,7 +321,7 @@
     }
   ],
   "source_dol_sha256": "da02a1232240e139ec14a26ee8b4c2818c56f3c2907f5c2391bd81e2dc0842f6",
-  "target_dol_sha256": "e5f28f92c3a6597f0eac870e357f1c361b28f89fa0590a4340ba943fa76a03a1",
+  "target_dol_sha256": "893ac438ec56139122fdf3411d4262085a6e94c89844a56b10060ad8cc82c85b",
   "scratch_allocation_sizes": [
     22,
     24,

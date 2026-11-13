@@ -89,6 +89,6 @@ if __name__ == '__main__':
     p = argparse.ArgumentParser(description=__doc__)
     for name in ('integrated', 'originals', 'payload', 'output'):
         p.add_argument('--' + name, type=Path, required=True)
-    p.add_argument('--version', default='v0.12.0-snivy-test.2')
+    p.add_argument('--version', default='v0.12.0-snivy-test.3')
     a = p.parse_args()
     print(json.dumps(package(a.integrated, a.originals, a.payload, a.output, a.version), indent=2))

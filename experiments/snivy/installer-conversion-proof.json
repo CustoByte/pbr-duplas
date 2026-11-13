@@ -1,5 +1,5 @@
 {
-  "kind": "candidate 2 public-core converter executed with bundled Python 3.10 and pinned SDKs",
+  "kind": "candidate 3 public-core converter using bundled Python 3.10 and pinned SDKs",
   "protected_resources_bundled_in_public_project": false,
   "original_face_entries_preserved": 645,
   "original_body_entries_preserved": 645,
@@ -10,16 +10,16 @@
     "nodes": 119,
     "effect_control_attachments": 21,
     "uv_scalar_samples": 6360,
-    "max_uv_error": 2.9802322387695312e-08,
+    "max_uv_error": 1.043081283569336e-07,
     "blink_changes_and_restores_uv": true,
     "reference_metadata_matched": true,
-    "sdr_sha256": "2d4e51a8aee6d3cfbc86e5e6c714ac1cbf5909deaa7815cdfb88be6d3321c301",
+    "sdr_sha256": "5f35016708c270cfc8893df37a353c94cd2fd145450a042e3e6b3512ab140bb0",
     "native_game_tested": false,
     "effects_positions_calibrated": false,
     "event_synchronization_verified": false
   },
   "shiny_variant": {
-    "changed_texture_pixels": 67664,
+    "changed_texture_pixels": 78387,
     "alpha_bits_preserved": true,
     "geometry_actions_and_metadata_preserved": true,
     "color_policy": "green hue +0.07; other hues preserved",
@@ -27,33 +27,32 @@
   },
   "outputs": {
     "pkx_501.fsys": {
-      "bytes": 5699104,
-      "sha256": "d6e800c694c49a969e4dd5825807e3c4246faad42a545deacd26696838fafaa3"
+      "bytes": 2572544,
+      "sha256": "ea6de445cbfda3efbe9811cdc7ab4845da8096be7866fb31eba2b2432c7e8002"
     },
     "menu_face.fsys": {
-      "bytes": 2679264,
-      "sha256": "b2af0ba04de5779544c76879543cff3d56e55897144f426175701fc1e9227083"
+      "bytes": 2679296,
+      "sha256": "754fa47d5db9c51790bce6da8720663778939fed3ba6b1217784a2cc0957bb38"
     },
     "menu_pokemon.fsys": {
       "bytes": 2255680,
-      "sha256": "54f3041e7f46ee5974d443af2cc0d57ddba4b5178197d60869eaa48534bac409"
+      "sha256": "bc04d7c6f8959c8e33fb650341f1e780bd584824f16446c341c5391e3fbd1c28"
     }
   },
   "source_sha256": {
     "pkx_388.fsys": "ce02a053b41bc806391bf3bb4606faffcae3edc7b974120959d25f488f75afb8",
     "menu_face.fsys": "05f0037c6cecf8a4e958d616a71c6c30af6d1d4dc37f4615d3051afff1f53e9a",
     "menu_pokemon.fsys": "8c39595a3b6176b709475674e143266f093bf657ff0bd025ddf6dea1cd1fbdad",
-    "normal_sdr": "2d4e51a8aee6d3cfbc86e5e6c714ac1cbf5909deaa7815cdfb88be6d3321c301"
+    "normal_sdr": "5f35016708c270cfc8893df37a353c94cd2fd145450a042e3e6b3512ab140bb0"
   },
   "playable": false,
   "ready_to_publish": false,
   "updater_changed": false,
   "remaining": [
-    "Actual Windows Dolphin model render, summary responsiveness, battle transition, effects and save/load"
+    "Actual Windows Dolphin complete battle, eye appearance, summary framing and save/load"
   ],
   "dependency_bootstrap_verified_on": "Linux x86_64",
   "windows_platform_execution_verified": false,
-  "macos_platform_execution_verified": false,
   "all_four_blender_stages_passed": true,
   "game_assets_in_public_package": false
 }

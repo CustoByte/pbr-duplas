@@ -21,6 +21,8 @@ if args.native_contract:
     from native_graphics_profile import SLOTS, ANCHORS
 load_brres_addon(args)
 pbr = load_pbr_addon(args)
+from sdr_track_storage import writer as compact_track_writer
+pbr.exporter.writeKeyframes = compact_track_writer(30)
 bpy.ops.wm.open_mainfile(filepath=str(ROOT / "snivy-source.blend"))
 scene = bpy.context.scene
 scene.render.fps = 30
@@ -102,6 +104,16 @@ for slot in mesh.material_slots:
     bs.inputs["Roughness"].default_value = 0.8
     tx = n.new("ShaderNodeTexImage")
     tx.image = t.imgs[0].img
+    # GX repeat addressing requires power-of-two dimensions. The source eye
+    # atlas is 192x384: resample a private export copy to 256x512, retaining
+    # normalized UVs, atlas cell positions and all blink/sleep states.
+    w, h = tx.image.size
+    target = (1 << (w - 1).bit_length(), 1 << (h - 1).bit_length())
+    if target != (w, h):
+        tx.image = tx.image.copy()
+        tx.image.name = t.imgs[0].img.name + "_PBR_POT"
+        tx.image.scale(*target)
+        tx.image.pack()
     tx.extension = "REPEAT"
     uv = n.new("ShaderNodeUVMap")
     uv.uv_map = mesh.data.uv_layers[0].name

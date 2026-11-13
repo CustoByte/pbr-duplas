@@ -100,6 +100,7 @@ def scene_inventory(data):
                 width=u16(at),
                 height=u16(at + 2),
                 encoding=u32(at + 8),
+                wrap_s=u32(at + 16), wrap_t=u32(at + 20),
                 data_offset=pixels,
                 data_size=size,
             )

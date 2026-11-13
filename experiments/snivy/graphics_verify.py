@@ -43,6 +43,12 @@ report = {
 for material in model["materials"]:
     source_name = material.name.removeprefix("Snivy_")
     original = bpy.data.materials[source_name].brres.textures[0].imgs[0].img
+    source_dimensions = list(original.size)
+    w, h = original.size
+    target = (1 << (w - 1).bit_length(), 1 << (h - 1).bit_length())
+    if target != (w, h):
+        original = original.copy()
+        original.scale(*target)
     decoded = model["images"][model["textures"][material.textureIndex].imageIndex]
     if [decoded.width, decoded.height] != list(original.size) or not decoded.pixels:
         raise RuntimeError("Missing or resized SDR texture: " + material.name)
@@ -66,7 +72,9 @@ for material in model["materials"]:
     report["textures"].append(
         {
             "name": material.name,
+            "source_dimensions": source_dimensions,
             "dimensions": [decoded.width, decoded.height],
+            "repeat_dimensions_are_power_of_two": all(v > 0 and v & (v - 1) == 0 for v in (decoded.width, decoded.height)),
             "max_rgb_error": rgb_error,
             "max_alpha_error": alpha_error,
         }

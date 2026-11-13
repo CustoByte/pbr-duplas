@@ -102,6 +102,34 @@ e a transição da tela preta ainda exigem novo teste no Dolphin do Windows.
 O conversor local refaz os recursos afetados; os caminhos originais são
 reutilizados pelo mesmo CMD e o instalador preserva a imagem anterior.
 
+## Correções da candidata 3
+
+A captura da tela preta confirmou o DOL da candidata 2. O arquivo da Snivy
+terminava de ser lido, porém a alocação nativa de 8.156.264 bytes retornava zero.
+Sem registro do recurso, a rotina 80039254 permanecia esperando indefinidamente.
+
+A nova codificação compartilha apenas arrays imutáveis idênticos de valores e
+tempos, preservando cabeçalhos/caches independentes. Arredonda canais para seis
+casas decimais e colapsa amostras consecutivas iguais. Mantém as 12 ações e a
+taxa original de 30 fps. O roundtrip de matrizes, vértices, UV e texturas precisa
+passar antes do empacotamento. Há também um teto de 3 MiB para o SDR convertido.
+
+Na captura real, o modelo de cerca de 2,48 MB passou na alocação, na relocação
+de cena e no registro nativos; a rotina de espera conseguiu retornar. A prova
+está em black-screen-fix-proof.json. Somente syscalls de manutenção de cache
+foram omitidas no Unicorn, cuja RAM já é coerente; os alocadores, parser,
+registro e rotina de espera executaram sem substituições. Isso ainda não é
+uma batalha completa renderizada no Dolphin.
+
+A textura dos olhos usava repetição com dimensões 192x384. Uma cópia privada
+passa a 256x512, mantendo as coordenadas normalizadas e todas as expressões.
+A validação rejeita dimensões que não sejam potências de dois em texturas com
+repetição/espelhamento. A tela de resumo altera apenas a Snivy: alvo de direção
+com X=-3 em vez de 7, resultando em aproximadamente 25 graus a mais de perfil,
+e escala própria de 0,72 em vez de 0,54. As outras espécies e a orientação de
+batalha não são alteradas. Olhos, enquadramento e batalha completa precisam de
+nova conferência visual no Dolphin do Windows.
+
 ## Evidências e limites
 
 - `pass-delivery-proof.json`: código nativo da captura, registradores ampliados,

@@ -26,6 +26,8 @@ def build(workdir, reference, face_archive, body_archive, output):
     source = reference.read_bytes()
     contract = inspect_package(source)
     normal = (workdir / "snivy-experimental.sdr").read_bytes()
+    if len(normal) > 3 * 1024 * 1024:
+        raise ValueError("Converted model exceeds the audited 3 MiB memory budget")
     expected_uv = json.loads((workdir / "expected-uv.json").read_text())
     native_asset = verify_asset(normal, contract, expected_uv)
     roundtrip = json.loads((workdir / "roundtrip-report.json").read_text())

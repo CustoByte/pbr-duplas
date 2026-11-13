@@ -53,6 +53,11 @@ def verify(data, reference, expected_uv):
             raise ValueError("Invalid material name")
         return read(offset, end - offset).decode("ascii")
 
+    for texture in actual["textures"]:
+        for dimension, wrap in ((texture["width"], texture["wrap_s"]),
+                                (texture["height"], texture["wrap_t"])):
+            if wrap in (1, 2) and (dimension <= 0 or dimension & (dimension - 1)):
+                raise ValueError("GX repeat/mirror requires power-of-two texture dimensions")
     curves = {}
     for material_index in range(u16(30)):
         material = u32(u32(20) + 4 * material_index)
