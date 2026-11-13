@@ -3,7 +3,7 @@
   "outputs": {
     "main.dol": {
       "bytes": 4547360,
-      "sha256": "a4d66a4f8ab7f3b84298d55f8a95b79e0e78b62a8a91e20b63576b673d32d05d"
+      "sha256": "e5f28f92c3a6597f0eac870e357f1c361b28f89fa0590a4340ba943fa76a03a1"
     },
     "common.fsys": {
       "bytes": 441888,
@@ -15,7 +15,7 @@
     },
     "GSfsys.toc": {
       "bytes": 46944,
-      "sha256": "9613f09540cde7b1a65ad39e9c3ace1e4f588099ce467def30bdf6cf06f61ec9"
+      "sha256": "920fa6c107b420439bb51af7ab950b4d2b10cf3ac39a01a9fbb989a6c8b0f16b"
     }
   },
   "modified_common_resources": [

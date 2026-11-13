@@ -19,7 +19,7 @@ class PackageURLTests(unittest.TestCase):
         rejected = [
             feed['package_url'].replace('CustoByte', 'SomeoneElse'),
             feed['package_url'].replace('/pbr-duplas/', '/pbr-duplas-evil/'),
-            feed['package_url'].replace('/v0.12.0-snivy-test.1/', '/main/'),
+            feed['package_url'].replace('/' + feed['version'] + '/', '/main/'),
             feed['package_url'].replace('raw.githubusercontent.com', 'raw.githubusercontent.com.evil.test'),
             feed['package_url'].replace('https://', 'http://'),
             feed['package_url'] + '?redirect=evil', feed['package_url'] + '#other',

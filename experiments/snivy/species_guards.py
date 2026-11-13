@@ -22,6 +22,8 @@ SITES = (
     0x80026FCC, 0x80027098,
     0x80058C6C,  # Native menu Pokémon-presence predicate, original limit 495.
     0x80058CE4,  # Companion menu presence/sanity predicate, same range check.
+    0x8005D1F4, 0x8005D4A4,  # Face request and drawing reject IDs >495.
+    0x8005DB8C, 0x8005DE38,  # Body request and drawing use the same guard.
 )
 
 

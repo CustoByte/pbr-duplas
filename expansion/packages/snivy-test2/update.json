@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "version": "v0.12.0-snivy-test.2",
+  "package_url": "https://raw.githubusercontent.com/CustoByte/pbr-duplas/v0.12.0-snivy-test.2/expansion/packages/snivy-test2/aplicador-core.zip",
+  "package_sha256": "34da48ce1ecd45121cdb5bd410884d90e4d1d912950e486b3e96d47476ca42c8",
+  "channel": "full493-test",
+  "dolphin_tested": false,
+  "local_snivy_source_required": true,
+  "save_policy": "Original image and normal save files untouched by installer"
+}

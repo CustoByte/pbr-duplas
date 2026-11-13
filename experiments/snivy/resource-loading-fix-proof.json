@@ -1,0 +1,29 @@
+{
+  "passed": true,
+  "previous_native_path": "pkx_501.fsys.fsys",
+  "fixed_native_path": "pkx_501.fsys",
+  "portrait_request_and_draw_guards": 4,
+  "native_boundary_cases": 44,
+  "legacy_guard_results_preserved": true,
+  "native_fsys_texture_lookups": [
+    {
+      "archive": "menu_face.fsys",
+      "entry_index": 645,
+      "filetype": 6,
+      "native_handler_found": true,
+      "sha256": "b2af0ba04de5779544c76879543cff3d56e55897144f426175701fc1e9227083"
+    },
+    {
+      "archive": "menu_pokemon.fsys",
+      "entry_index": 645,
+      "filetype": 6,
+      "native_handler_found": true,
+      "sha256": "54f3041e7f46ee5974d443af2cc0d57ddba4b5178197d60869eaa48534bac409"
+    }
+  ],
+  "old_portrait_handler_type_14_differs_from_native_gtx_handler": true,
+  "limits": [
+    "No DVD I/O, GPU texture upload, model render or full battle",
+    "Actual Windows Dolphin retest required for summary responsiveness and battle transition"
+  ]
+}

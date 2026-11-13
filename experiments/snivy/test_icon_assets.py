@@ -54,7 +54,7 @@ class IconAssetTests(unittest.TestCase):
             data.extend(payload)
             data.extend(bytes((-len(data)) % 32))
             for offset, value in ((0, index + 1), (4, at), (8, len(payload)),
-                                  (12, 0x80000000), (20, len(payload))):
+                                  (12, 0x80000000), (20, len(payload)), (0x20, 6)):
                 struct.pack_into(">I", data, header + offset, value)
         data.extend(bytes(28) + b"FSYS")
         struct.pack_into(">I", data, 32, len(data))
@@ -67,6 +67,7 @@ class IconAssetTests(unittest.TestCase):
         self.assertEqual(read_archive(result), read_archive(original) + [(0x7BEA0C00, payload)])
         table = word(result, word(result, 24))
         new_header = word(result, table + 8)
+        self.assertEqual(word(result, new_header + 0x20), 6)
         self.assertLess(new_header + 112, word(result, 28))
         self.assertLess(table + 12, word(result, 28))
         with self.assertRaises(ValueError):

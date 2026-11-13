@@ -34,8 +34,10 @@ def append_resource(archive, identity, payload, name):
     if len(record) != 112:
         raise ValueError("Truncated native resource header")
     for offset, value in ((0, identity), (8, len(payload)), (0x10, 0),
-                          (0x18, 0), (0x1C, 0), (0x20, len(name)), (0x24, name_at)):
+                          (0x18, 0), (0x1C, 0), (0x24, name_at)):
         struct.pack_into(">I", record, offset, value)
+    # +0x20 is the native file-handler type (GTX=6), not name length.
+    # Preserve the audited texture handler from the original record.
     output.extend(record)
     output.extend(bytes((-len(output)) % 16))
     new_table = len(output)

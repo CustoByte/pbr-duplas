@@ -7,7 +7,8 @@ ISO. Runtime relocation is kept separate from the on-disk relative pointers.
 import struct
 
 SNIVY_ARCHIVE_ID = 0x2000
-SNIVY_ARCHIVE_NAME = "pkx_501.fsys"
+# Native getFsysPath appends .fsys. The catalog stores the basename only.
+SNIVY_ARCHIVE_NAME = "pkx_501"
 
 
 def entries(data):
@@ -43,7 +44,7 @@ def append_archive(data, identity=SNIVY_ARCHIVE_ID, name=SNIVY_ARCHIVE_NAME):
     if not 0 < identity <= 0xFFFFFFFF or any(r[0] == identity for r in old):
         raise ValueError("Archive ID is invalid or already registered")
     if (
-        not name.endswith(".fsys") or not name.isascii()
+        not name or name.endswith(".fsys") or not name.isascii()
         or any(c in name for c in ("/", "\\", "\0"))
         or any(r[1] == name for r in old)
     ):

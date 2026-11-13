@@ -46,7 +46,8 @@ mais retratos normal/shiny. Os 645 recursos anteriores de cada arquivo de
 retratos são preservados. A cor shiny usa uma variante de tonalidade do modelo
 local; não foi confirmada como reprodução exata da arte shiny oficial.
 
-Somente duas verificações de presença de interface admitiram o novo índice.
+Duas verificações de presença e quatro verificações de solicitação/desenho de
+retratos admitem o novo índice.
 Os outros limites pesquisados em species_guards.py não são todos ativados:
 limites de bancos de áudio originais permanecem protegidos. Tabelas fixas de
 previsão e narração recebem caminhos específicos para 501, sem ler além dos
@@ -83,6 +84,23 @@ privados e ficam no computador do jogador. As dependências têm revisões/SHA25
 em sdk-downloads.json; adaptações em prepare_graphics_tools.py. BerryBush usa
 GPL-3.0-or-later; Blender GPL; Pillow HPND. Não se redistribui o exportador PBR:
 a ferramenta obtém a revisão pública fixada para uso local.
+
+## Correções da candidata 2
+
+A candidata 1 tinha três erros confirmados pelo código nativo e pelos prints:
+o catálogo armazenava `pkx_501.fsys`, embora o jogo acrescente `.fsys`, gerando
+`pkx_501.fsys.fsys`; quatro rotas de retratos rejeitavam a espécie 501; e o
+novo cabeçalho FSYS registrava o comprimento do nome como tipo de recurso, em
+vez de preservar o tipo GTX 6. A candidata 2 corrige esses pontos, sem trocar
+Snivy por outra espécie nem desativar seu carregamento.
+
+`resource-loading-fix-proof.json` registra a reprodução do caminho incorreto,
+a resolução corrigida pelo formatador nativo, 44 casos de borda das quatro
+rotas de retratos e a busca nativa dos dois recursos GTX no índice 645.
+Isso não comprova a execução de uma batalha completa: a resposta dos botões
+e a transição da tela preta ainda exigem novo teste no Dolphin do Windows.
+O conversor local refaz os recursos afetados; os caminhos originais são
+reutilizados pelo mesmo CMD e o instalador preserva a imagem anterior.
 
 ## Evidências e limites
 

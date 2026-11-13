@@ -10,8 +10,8 @@ class CatalogTests(unittest.TestCase):
         data[:4] = b"GLLA"
         struct.pack_into(">I", data, 8, 2)
         struct.pack_into(">I", data, 16, 64)
-        data[32:38] = b"a.fsys"
-        data[40:46] = b"b.fsys"
+        data[32:38] = b"a\0\0\0\0\0"
+        data[40:46] = b"b\0\0\0\0\0"
         struct.pack_into(">4I", data, 64, 7, 32, 123, 8)
         struct.pack_into(">4I", data, 80, 9, 40, 456, 16)
         return bytes(data)
@@ -21,7 +21,7 @@ class CatalogTests(unittest.TestCase):
         new = append_archive(old)
         start, rows = entries(new)
         self.assertEqual(rows[:-1], entries(old)[1])
-        self.assertEqual(rows[-1][:2], (0x2000, "pkx_501.fsys"))
+        self.assertEqual(rows[-1][:2], (0x2000, "pkx_501"))
         self.assertEqual(new[start:start + 32], old[64:96])
         restored = bytearray(new[:len(old)])
         restored[8:12] = old[8:12]
@@ -39,8 +39,8 @@ class CatalogTests(unittest.TestCase):
 
     def test_rejects_collisions_and_duplicate_application(self):
         old = self.source()
-        for identity, name in ((7, "c.fsys"), (11, "a.fsys"), (0, "x.fsys"),
-                               (11, "../x.fsys"), (11, "x\0.fsys")):
+        for identity, name in ((7, "c"), (11, "a"), (0, "x"),
+                               (11, "../x"), (11, "x\0"), (11, "pkx_501.fsys")):
             with self.assertRaises(ValueError):
                 append_archive(old, identity, name)
         with self.assertRaises(ValueError):

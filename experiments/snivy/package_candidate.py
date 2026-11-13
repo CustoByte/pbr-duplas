@@ -11,13 +11,13 @@ import tempfile
 from convert_local import ROOT, digest
 
 
-def package(integrated, originals, payload, output):
+def package(integrated, originals, payload, output, version):
     import sys
     sys.path[:0] = [str(ROOT / 'expansion')]
     from binary_delta import create, sha
     from package_release import zipped
     manifest = json.loads((ROOT / 'expansion/manifesto.json').read_text())
-    manifest['mod_version'] = 'v0.12.0-snivy-test.1'
+    manifest['mod_version'] = version
     manifest['local_snivy_assets'] = True
     manifest['dolphin_tested'] = False
     manifest['snivy_limitations'] = ['Snivy cry and spoken name silent: no recording supplied',
@@ -89,5 +89,6 @@ if __name__ == '__main__':
     p = argparse.ArgumentParser(description=__doc__)
     for name in ('integrated', 'originals', 'payload', 'output'):
         p.add_argument('--' + name, type=Path, required=True)
+    p.add_argument('--version', default='v0.12.0-snivy-test.2')
     a = p.parse_args()
-    print(json.dumps(package(a.integrated, a.originals, a.payload, a.output), indent=2))
+    print(json.dumps(package(a.integrated, a.originals, a.payload, a.output, a.version), indent=2))
