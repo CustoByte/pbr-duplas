@@ -83,3 +83,28 @@ Referências auditadas (não se aplicaram endereços PAL ao DOL USA):
 O experimento não demonstra renderização, batalhas, ativação de Overgrow,
 elegibilidade, obtenção em Battle Pass ou persistência. Nenhuma dessas
 etapas deve ser anunciada como funcional antes de testes próprios.
+
+## Recurso gráfico recebido
+
+Foi recebido `Tsutarja.brres` de PokéPark 2 USA, SHA-256
+`42ee39d351dc05e4f509267a2ce540286b134f6e8d024b776175a4c75c5a9308`.
+O arquivo original permanece privado e não faz parte do repositório.
+`inspect_brres.py` percorre os dicionários BRRES, valida limites e conta
+seções; `brres-inventory.json` contém apenas metadados, sem os recursos.
+
+Inventário: 1 MDL0 v11, 5 TEX0 v3, 117 CHR0 v5 e 105 SRT0 v5.
+A ação `NorIdle0` declara 84 frames e repetição; `Atk0_0`, 36 frames;
+`DamF0`, 31 frames. As três têm 48 trilhas de transformação.
+`Faint0` declara repetição no arquivo fonte: é necessário verificar o
+comportamento esperado antes de mapear essa ação para derrota no PBR.
+Os nomes permitem selecionar candidatos, mas não comprovam seu conteúdo
+visual. Ainda não houve conversão, reprodução ou importação no PBR.
+
+```sh
+python experiments/snivy/inspect_brres.py /caminho/Tsutarja.brres \
+  --report /tmp/snivy-brres.json
+```
+
+O pedido anterior de recursos gráficos está atendido para iniciar a análise.
+Próxima etapa: decodificar geometria/esqueleto/curvas e verificar reprodução,
+antes de exportar SDR e registrar referências de modelo na versão USA.
