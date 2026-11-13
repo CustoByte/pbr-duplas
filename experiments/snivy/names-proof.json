@@ -1,0 +1,32 @@
+{
+  "kind": "offline native species name dispatch, global lookup and font metrics",
+  "passed": true,
+  "original_species_name_results_preserved": 501,
+  "original_stats_name_results_preserved": 501,
+  "stats_name_binding_verified": true,
+  "original_global_map_entries_preserved": 21774,
+  "original_common_messages_preserved": 9995,
+  "native_common_message_lookups": 9996,
+  "other_message_category_results_preserved": 90,
+  "seeded_caller_state_preservation_cases": 9,
+  "snivy_internal_id": 501,
+  "snivy_global_name_id": 21775,
+  "snivy_local_message_index_one_based": 9996,
+  "snivy_name": "SNIVY",
+  "width": 51,
+  "height": 25,
+  "memory_arena_aliases_verified": 2,
+  "source_dol_sha256": "da02a1232240e139ec14a26ee8b4c2818c56f3c2907f5c2391bd81e2dc0842f6",
+  "target_dol_sha256": "bbbb63e9f958f8ff4b36da7e0948fff335cb2b87b5607fec0d90eda7b2bb7fb5",
+  "source_map_sha256": "4c3101b2b83854ce7cdc08fd526059a6d6b137ac4f8401cc9cc40ee187e24f8f",
+  "target_map_sha256": "2f2ff1827e8d20fbb556e6868bd8a71ad35f8b5f0e24a3ccc5453b002178057e",
+  "source_messages_sha256": "814dfc4f812915a262e39a4805e8d87cb24b6e41a5176eb7ccc913aab03bafe8",
+  "target_messages_sha256": "926ba0f5602685d8b085ff7f6f24c35335b918e4b0623d98b19f9fdd7ac9d114",
+  "playable": false,
+  "published_in_updater": false,
+  "limits": [
+    "Scratch registration only; no real FSYS loading",
+    "No icons, pass delivery, model dispatch or save integration",
+    "Font metrics do not prove layout in the actual game UI"
+  ]
+}

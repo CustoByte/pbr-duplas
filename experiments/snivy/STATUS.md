@@ -19,11 +19,15 @@ quando um pacote completo for construído e o feed for atualizado.
   busca nativa do novo ID e restauração do catálogo original.
 - Conversão experimental de geometria, 12 ações e UVs. Os relatórios
   gráficos anteriores descrevem os limites de cada prova.
-- Sete testes de estrutura/identidades e validação do catálogo.
+- Nome independente `SNIVY`: ID global 21775, índice local 9996, busca
+  nativa por espécie e por registro de atributos. Os registros anteriores
+  e demais categorias de texto permanecem preservados. Ver [NAMES.md](NAMES.md).
+- Dez testes de estrutura, identidades, catálogo e cadastro do nome.
 
 ## Implementação restante antes de empacotar
 
-- Registro completo de nome, modelo, ícones e limites de espécie no motor.
+- Incorporar o cadastro de nome já verificado ao construtor integrado;
+  completar o registro de modelo, ícones e limites de espécie no motor.
 - Retratos próprios dentro da moldura branca em todas as interfaces.
 - Entrega de um Passe Little Battle pronto em uma vaga vazia, sem perda
   de passes anteriores; seleção, elegibilidade e persistência.

@@ -26,9 +26,10 @@ O funcionamento dos golpes continua sendo o nativo da quarta geração.
 Contrary, habilidade oculta posterior, não foi implementada.
 Fontes e hashes em `sunny-park-legality.json`.
 
-`sunny_park.py` prepara os dados de construção. Os campos de nome, modelo
-e catálogo continuam sem registro final: esses dados não devem ser usados
-diretamente em uma versão pública do jogo.
+`sunny_park.py` prepara os dados de construção. O nome pode ser associado
+ao cadastro independente descrito em [NAMES.md](NAMES.md); modelo e integração
+final continuam pendentes. Esses dados não devem ser usados diretamente
+em uma versão pública do jogo.
 
 `verify_sunny_park.py` executa as rotinas nativas USA:
 

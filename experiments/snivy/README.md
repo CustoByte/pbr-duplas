@@ -49,7 +49,7 @@ aumentar apenas um contador não torna as demais rotinas seguras.
 Com Python e os módulos já usados pelo projeto:
 
 ```sh
-PYTHONPATH=experiments/snivy python -m unittest discover -s experiments/snivy -p 'test_*.py'
+PYTHONPATH=experiments/snivy:expansion:mod-source python -m unittest discover -s experiments/snivy -p 'test_*.py'
 PYTHONPATH=experiments/snivy:expansion:mod-source:coop:/caminho/harness \
 python experiments/snivy/verify_native.py \
   --capture /caminho/diagnostics-command \

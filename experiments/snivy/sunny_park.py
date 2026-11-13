@@ -28,12 +28,17 @@ NATIVE_IV_MIN_RANGE = (
 NATIVE_EV_BUDGETS = (1, 100, 200, 300, 400, 500, 510, 510)
 
 
-def stats_row():
+def stats_row(global_name_id=None):
     row = bytearray(52)
     # Gen4 TM17 Protect compatibility; remaining learnset work is separate.
     struct.pack_into(">I", row, 0, 1 << 16)
     struct.pack_into(">HH", row, 20, 6, 81)  # 0.6 m, 8.1 kg
-    # Names/model references remain unresolved and are not copied from Grotle.
+    # Model remains unresolved. Name IDs come from global registration,
+    # not from a MESG row index or species + 10.
+    if global_name_id is not None:
+        if not 0 < global_name_id <= 65535:
+            raise ValueError("Global species name must fit uint16")
+        struct.pack_into(">HH", row, 24, global_name_id, global_name_id)
     row[30:36] = bytes((45, 45, 55, 63, 45, 55))
     row[36:40] = bytes((12, 12, 45, 62))
     struct.pack_into(">H", row, 40, 0x0100)  # one Speed EV yield
