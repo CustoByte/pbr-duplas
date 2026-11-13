@@ -27,6 +27,7 @@ def arguments():
     parser.add_argument("--workdir", type=Path, required=True)
     parser.add_argument("--berrybush", type=Path, required=True)
     parser.add_argument("--pbr-addon", type=Path, required=True)
+    parser.add_argument("--preview-action", default="idle")
     args = parser.parse_args(sys.argv[sys.argv.index("--") + 1 :])
     if not (3, 3, 0) <= bpy.app.version < (3, 5, 0):
         raise RuntimeError("Requires Blender 3.3 or 3.4 for BerryBush compatibility")

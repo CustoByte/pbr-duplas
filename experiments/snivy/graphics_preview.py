@@ -23,7 +23,15 @@ with open(os.devnull, "w") as quiet, contextlib.redirect_stdout(quiet):
     model = io.parseModel(str(ROOT / "snivy-experimental.sdr"))
 skele = model["skeletons"][0]
 decoded = model["meshes"][0]
-action = io.anim_dict[0]
+matches = [a for a in io.anim_dict.values() if a["name"] == args.preview_action]
+if len(matches) != 1:
+    raise ValueError("Unknown preview action: " + args.preview_action)
+action = matches[0]
+conversion = json.loads((ROOT / "conversion-report.json").read_text())
+clip_frames = conversion["actions"][args.preview_action]["frames"]
+step = 3 if args.preview_action == "idle" else max(1, round(clip_frames / 18))
+frame_indices = list(range(0, clip_frames, step))
+frame_dir = ROOT / (args.preview_action + "-frames")
 bpy.ops.object.select_all(action="SELECT")
 bpy.ops.object.delete(use_global=False)
 faces = []
@@ -102,11 +110,12 @@ def frame_vertices(frame):
     return result
 
 
-coords = frame_vertices(0)
+sampled_vertices = {frame: frame_vertices(frame) for frame in frame_indices}
+coords = [v for vertices in sampled_vertices.values() for v in vertices]
 mn = Vector(tuple(min(v[i] for v in coords) for i in range(3)))
 mx = Vector(tuple(max(v[i] for v in coords) for i in range(3)))
 center = (mn + mx) / 2
-span = max(mx - mn)
+span = max(mx - mn) if args.preview_action == "idle" else (mx - mn).length
 scene = bpy.context.scene
 bpy.ops.object.camera_add(
     location=center + Vector((span * 0.85, -span * 1.6, span * 0.6))
@@ -126,18 +135,18 @@ for loc, energy, size in [((1, -2, 3), 90, 4), ((-2, -0.5, 1), 50, 3)]:
 scene.world.color = (0.2, 0.2, 0.2)
 scene.render.engine = "CYCLES"
 scene.cycles.device = "CPU"
-scene.cycles.samples = 12
+scene.cycles.samples = 12 if args.preview_action == "idle" else 4
 scene.render.resolution_x = 480
 scene.render.resolution_y = 480
 scene.render.resolution_percentage = 100
 scene.view_settings.view_transform = "Standard"
 scene.view_settings.look = "Medium High Contrast"
 scene.render.image_settings.file_format = "PNG"
-(ROOT / "idle-frames").mkdir(exist_ok=True)
+frame_dir.mkdir(exist_ok=True)
 first = None
 max_motion = 0
-for index, frame in enumerate(range(0, 84, 3)):
-    coords = frame_vertices(frame)
+for index, frame in enumerate(frame_indices):
+    coords = sampled_vertices[frame]
     if first is None:
         first = coords
     else:
@@ -145,15 +154,24 @@ for index, frame in enumerate(range(0, 84, 3)):
     for v, co in zip(mesh.vertices, coords):
         v.co = co
     mesh.update()
-    scene.render.filepath = str(ROOT / "idle-frames" / f"{index:03d}.png")
+    scene.render.filepath = str(frame_dir / f"{index:03d}.png")
     bpy.ops.render.render(write_still=True)
 print("DECODED_SDR_PREVIEW_OK", "max_vertex_motion", max_motion)
-(ROOT / "preview-report.json").write_text(
+(
+    ROOT
+    / (
+        "preview-report.json"
+        if args.preview_action == "idle"
+        else "preview-" + args.preview_action + "-report.json"
+    )
+).write_text(
     json.dumps(
         {
             "source": "decoded experimental SDR",
-            "frames": 28,
-            "frame_step": 3,
+            "action": args.preview_action,
+            "frames": len(frame_indices),
+            "frame_step": step,
+            "output_fps": 30 / step,
             "assumed_source_fps": 30,
             "max_vertex_motion": max_motion,
             "native_game_render": False,

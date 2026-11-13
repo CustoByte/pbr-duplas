@@ -1,0 +1,314 @@
+{
+  "kind": "Native USA captured model tables and shared script inventory; no Snivy integration",
+  "capture_hashes": {
+    "mem1.bin": "1ebca9dd672c2601a849edf55f3b46bd92ffe337b8503321b74ea62e3ab785d5",
+    "mem2.bin": "dae4c59240b1d78db67196c0aff45143a43f3fd2344562b2092d33603c4cc9ea"
+  },
+  "reference_models": [
+    {
+      "name": "moukazaru",
+      "object_address": "80f5f530",
+      "nodes": 118,
+      "actions": [
+        {
+          "index": 0,
+          "name": "wait",
+          "seconds": 1.0,
+          "flags": "01010100"
+        },
+        {
+          "index": 1,
+          "name": "down",
+          "seconds": 4.5,
+          "flags": "00010100"
+        },
+        {
+          "index": 2,
+          "name": "damage",
+          "seconds": 4.0,
+          "flags": "00010100"
+        },
+        {
+          "index": 3,
+          "name": "run",
+          "seconds": 0.5,
+          "flags": "01010100"
+        },
+        {
+          "index": 4,
+          "name": "kime",
+          "seconds": 4.583333492279053,
+          "flags": "00010100"
+        },
+        {
+          "index": 5,
+          "name": "punch",
+          "seconds": 4.5,
+          "flags": "00010100"
+        },
+        {
+          "index": 6,
+          "name": "tx_wink",
+          "seconds": 0.15000000596046448,
+          "flags": "00000100"
+        },
+        {
+          "index": 7,
+          "name": "tx_sleep",
+          "seconds": 0.1666666716337204,
+          "flags": "00000100"
+        },
+        {
+          "index": 8,
+          "name": "tx_wakeup",
+          "seconds": 0.1666666716337204,
+          "flags": "00000100"
+        },
+        {
+          "index": 9,
+          "name": "kime_a",
+          "seconds": 4.6666669845581055,
+          "flags": "00010100"
+        }
+      ]
+    },
+    {
+      "name": "hikozaru",
+      "object_address": "81016690",
+      "nodes": 98,
+      "actions": [
+        {
+          "index": 0,
+          "name": "wait",
+          "seconds": 1.0,
+          "flags": "01010100"
+        },
+        {
+          "index": 1,
+          "name": "run",
+          "seconds": 0.5,
+          "flags": "01010100"
+        },
+        {
+          "index": 2,
+          "name": "damage",
+          "seconds": 4.6666669845581055,
+          "flags": "00010100"
+        },
+        {
+          "index": 3,
+          "name": "down",
+          "seconds": 4.1666669845581055,
+          "flags": "00010100"
+        },
+        {
+          "index": 4,
+          "name": "tackle",
+          "seconds": 4.5,
+          "flags": "00010100"
+        },
+        {
+          "index": 5,
+          "name": "punch",
+          "seconds": 3.750000238418579,
+          "flags": "00010100"
+        },
+        {
+          "index": 6,
+          "name": "kime",
+          "seconds": 5.000000476837158,
+          "flags": "00010100"
+        },
+        {
+          "index": 7,
+          "name": "tx_wink",
+          "seconds": 0.13333334028720856,
+          "flags": "00000100"
+        },
+        {
+          "index": 8,
+          "name": "tx_sleep",
+          "seconds": 0.20000001788139343,
+          "flags": "00000100"
+        },
+        {
+          "index": 9,
+          "name": "tx_wakeup",
+          "seconds": 0.20000001788139343,
+          "flags": "00000100"
+        },
+        {
+          "index": 10,
+          "name": "kime_a",
+          "seconds": 4.833333492279053,
+          "flags": "00010100"
+        }
+      ]
+    },
+    {
+      "name": "hayashigame",
+      "object_address": "810d6050",
+      "nodes": 76,
+      "actions": [
+        {
+          "index": 0,
+          "name": "wait",
+          "seconds": 2.0,
+          "flags": "01010100"
+        },
+        {
+          "index": 1,
+          "name": "run",
+          "seconds": 0.5,
+          "flags": "01010100"
+        },
+        {
+          "index": 2,
+          "name": "damage",
+          "seconds": 4.1666669845581055,
+          "flags": "00010100"
+        },
+        {
+          "index": 3,
+          "name": "down",
+          "seconds": 4.100000381469727,
+          "flags": "00010100"
+        },
+        {
+          "index": 4,
+          "name": "tackle",
+          "seconds": 5.500000476837158,
+          "flags": "00010100"
+        },
+        {
+          "index": 5,
+          "name": "kime",
+          "seconds": 4.5,
+          "flags": "00010100"
+        },
+        {
+          "index": 6,
+          "name": "kime_a",
+          "seconds": 4.0,
+          "flags": "00010100"
+        },
+        {
+          "index": 7,
+          "name": "tx_wink",
+          "seconds": 0.13333334028720856,
+          "flags": "00000100"
+        },
+        {
+          "index": 8,
+          "name": "tx_sleep",
+          "seconds": 0.3333333432674408,
+          "flags": "00000100"
+        },
+        {
+          "index": 9,
+          "name": "tx_wakeup",
+          "seconds": 0.3333333432674408,
+          "flags": "00000100"
+        },
+        {
+          "index": 10,
+          "name": "mamoru",
+          "seconds": 4.5,
+          "flags": "00010100"
+        },
+        {
+          "index": 11,
+          "name": "kime_phy",
+          "seconds": 4.0,
+          "flags": "00010100"
+        }
+      ]
+    }
+  ],
+  "native_names": [
+    "damage",
+    "down",
+    "kime",
+    "kime_a",
+    "kime_phy",
+    "mamoru",
+    "punch",
+    "run",
+    "tackle",
+    "tx_sleep",
+    "tx_wakeup",
+    "tx_wink",
+    "wait"
+  ],
+  "prototype_names": [
+    "damage",
+    "faint",
+    "idle",
+    "move_phys",
+    "move_spec",
+    "run",
+    "tx_sleep",
+    "tx_wakeup",
+    "tx_wink"
+  ],
+  "missing_native_names": [
+    "down",
+    "kime",
+    "kime_a",
+    "kime_phy",
+    "mamoru",
+    "punch",
+    "tackle",
+    "wait"
+  ],
+  "fight_common_sha256": "4a6464f6a5f60ca05eb8c5e362a5b67c45b45c60f1f206ab4b369e101deb1b23",
+  "shared_ball_script_resource": "024d1200",
+  "shared_ball_script_names": [
+    "_ballout",
+    "actballin",
+    "actballout",
+    "actballoutall",
+    "actballthrow",
+    "actballthrowall",
+    "actballthrowboss",
+    "ballin",
+    "ballout",
+    "ballthrow",
+    "createball",
+    "freeball",
+    "freeballaction",
+    "freeballactionwait",
+    "initball",
+    "initballaction",
+    "initballfreefg",
+    "initmodelballthrow",
+    "isballaction",
+    "isballfree",
+    "isloadballaction",
+    "loadballin",
+    "loadballout",
+    "loadballoutall",
+    "loadballthrow",
+    "loadballthrowall",
+    "runballaction",
+    "runloadballaction",
+    "scaletoball",
+    "setballaction",
+    "setballattach",
+    "setballdettach",
+    "setballvisble",
+    "setloadballaction",
+    "setscaleball",
+    "waitballfree"
+  ],
+  "ball_event_execution_verified": false,
+  "snivy_native_binding_verified": false,
+  "required_runtime_tests": [
+    "continuous idle through command selection",
+    "physical/special/status/Protect dispatch and return to idle",
+    "damage, faint and forced replacement",
+    "send-out, recall, switching and Pok\u00e9 Ball effects",
+    "sleep/wakeup/blink with independent material channels",
+    "simultaneous double battle actors and event completion"
+  ]
+}

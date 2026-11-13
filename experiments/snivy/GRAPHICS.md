@@ -106,3 +106,7 @@ ossos, materiais e curvas, preservando o arquivo BRRES original.
   nenhum comportamento de batalha, habilidade, IA ou persistência.
 
 Não publicar este SDR no atualizador como se fosse um Snivy jogável.
+
+A auditoria posterior dos eventos e nomes nativos está em
+[ANIMATION-LIFECYCLE.md](ANIMATION-LIFECYCLE.md), incluindo a dependência
+de uma referência de pacote Pokémon original para a integração ao jogo.
