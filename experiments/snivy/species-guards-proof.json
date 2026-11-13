@@ -1,0 +1,207 @@
+{
+  "kind": "offline native selective species guards and menu presence predicate",
+  "passed": true,
+  "bridges": [
+    {
+      "site": "800124a0",
+      "register": 6,
+      "old_limit": 493,
+      "thunk": "80646200"
+    },
+    {
+      "site": "80013e1c",
+      "register": 21,
+      "old_limit": 493,
+      "thunk": "80646210"
+    },
+    {
+      "site": "80013ff4",
+      "register": 21,
+      "old_limit": 493,
+      "thunk": "80646220"
+    },
+    {
+      "site": "80014084",
+      "register": 21,
+      "old_limit": 493,
+      "thunk": "80646230"
+    },
+    {
+      "site": "80014330",
+      "register": 21,
+      "old_limit": 493,
+      "thunk": "80646240"
+    },
+    {
+      "site": "80014370",
+      "register": 21,
+      "old_limit": 493,
+      "thunk": "80646250"
+    },
+    {
+      "site": "80014438",
+      "register": 21,
+      "old_limit": 493,
+      "thunk": "80646260"
+    },
+    {
+      "site": "800144a8",
+      "register": 21,
+      "old_limit": 493,
+      "thunk": "80646270"
+    },
+    {
+      "site": "80015608",
+      "register": 6,
+      "old_limit": 493,
+      "thunk": "80646280"
+    },
+    {
+      "site": "80015670",
+      "register": 6,
+      "old_limit": 493,
+      "thunk": "80646290"
+    },
+    {
+      "site": "800156d8",
+      "register": 6,
+      "old_limit": 493,
+      "thunk": "806462a0"
+    },
+    {
+      "site": "80015740",
+      "register": 6,
+      "old_limit": 493,
+      "thunk": "806462b0"
+    },
+    {
+      "site": "800157a8",
+      "register": 6,
+      "old_limit": 493,
+      "thunk": "806462c0"
+    },
+    {
+      "site": "8001b938",
+      "register": 18,
+      "old_limit": 493,
+      "thunk": "806462d0"
+    },
+    {
+      "site": "8001ee34",
+      "register": 18,
+      "old_limit": 493,
+      "thunk": "806462e0"
+    },
+    {
+      "site": "800218c0",
+      "register": 18,
+      "old_limit": 493,
+      "thunk": "806462f0"
+    },
+    {
+      "site": "800219d0",
+      "register": 19,
+      "old_limit": 493,
+      "thunk": "80646300"
+    },
+    {
+      "site": "80021ae0",
+      "register": 19,
+      "old_limit": 493,
+      "thunk": "80646310"
+    },
+    {
+      "site": "80021bf0",
+      "register": 19,
+      "old_limit": 493,
+      "thunk": "80646320"
+    },
+    {
+      "site": "80021d00",
+      "register": 19,
+      "old_limit": 493,
+      "thunk": "80646330"
+    },
+    {
+      "site": "80021e10",
+      "register": 19,
+      "old_limit": 493,
+      "thunk": "80646340"
+    },
+    {
+      "site": "80021f08",
+      "register": 19,
+      "old_limit": 493,
+      "thunk": "80646350"
+    },
+    {
+      "site": "80023bb4",
+      "register": 5,
+      "old_limit": 493,
+      "thunk": "80646360"
+    },
+    {
+      "site": "80023c28",
+      "register": 5,
+      "old_limit": 493,
+      "thunk": "80646370"
+    },
+    {
+      "site": "80023c9c",
+      "register": 5,
+      "old_limit": 493,
+      "thunk": "80646380"
+    },
+    {
+      "site": "80023d10",
+      "register": 5,
+      "old_limit": 493,
+      "thunk": "80646390"
+    },
+    {
+      "site": "80023d84",
+      "register": 5,
+      "old_limit": 493,
+      "thunk": "806463a0"
+    },
+    {
+      "site": "80026f40",
+      "register": 3,
+      "old_limit": 493,
+      "thunk": "806463b0"
+    },
+    {
+      "site": "80026fcc",
+      "register": 30,
+      "old_limit": 493,
+      "thunk": "806463c0"
+    },
+    {
+      "site": "80027098",
+      "register": 3,
+      "old_limit": 493,
+      "thunk": "806463d0"
+    },
+    {
+      "site": "80058c6c",
+      "register": 0,
+      "old_limit": 495,
+      "thunk": "806463e0"
+    }
+  ],
+  "native_compare_cases": 1116,
+  "all_gprs_lr_ctr_xer_preserved": true,
+  "all_other_species_values_keep_original_comparison": true,
+  "egg_and_alternate_form_indices_not_shifted": true,
+  "original_menu_presence_for_snivy": 0,
+  "patched_menu_presence_for_snivy": 1,
+  "source_dol_sha256": "bbbb63e9f958f8ff4b36da7e0948fff335cb2b87b5607fec0d90eda7b2bb7fb5",
+  "target_dol_sha256": "f4902ce57169bed8c5ad2ed6c4a5756d388425b53207d2b75381f61d3e8e025d",
+  "limits": [
+    "Known audited guards only; not a proof that every species-dependent path is complete",
+    "No Little Battle validation, player pass delivery or actual gameplay",
+    "No table registration or model loading in this proof"
+  ],
+  "playable": false,
+  "published_in_updater": false
+}

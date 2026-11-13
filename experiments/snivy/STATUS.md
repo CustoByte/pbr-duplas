@@ -28,17 +28,30 @@ quando um pacote completo for construído e o feed for atualizado.
   modelo das espécies anteriores. Ver [MODEL-REGISTRY.md](MODEL-REGISTRY.md).
 - SDR regenerado com `direct_set` e vínculo central corrigido, passando
   pelas verificações de geometria, texturas, metadados e UVs.
-- Quinze testes de estrutura, identidades, catálogo, nome e associação de modelo.
+- Retratos normal/shiny para ambos os lados dentro da moldura circular e
+  miniatura corporal, codificados nos atlases nativos. IDs e metadados
+  evolutivos conferidos por getters reais; ver [LOCAL-ASSETS.md](LOCAL-ASSETS.md).
+- Pacotes gráficos privados gerados a partir dos arquivos locais, mantendo
+  os 645 recursos anteriores de cada arquivo de ícones. Variante shiny
+  preserva geometria, animações e alfa; aparência final no jogo não validada.
+- 31 guardas seletivos de espécie verificados em 1.116 casos PPC; o
+  predicado nativo de presença do menu passa a reconhecer 501 sem admitir
+  os índices intermediários. Ver [SPECIES-GUARDS.md](SPECIES-GUARDS.md).
+- Dezenove testes de estrutura, identidades, catálogo, nome, modelo,
+  atlas e empacotamento de recursos.
 
 ## Implementação restante antes de empacotar
 
-- Incorporar os cadastros de nome e modelo já verificados ao construtor
-  integrado; completar ícones, variantes gráficas e limites de espécie.
-- Retratos próprios dentro da moldura branca em todas as interfaces.
+- Incorporar nomes, modelos, ícones e guardas ao construtor integrado;
+  completar estruturas de IA, evolução/aprendizado e demais caminhos
+  dependentes de espécie antes de habilitar o registro no jogo.
+- Confirmar os retratos próprios e suas variantes nas interfaces reais.
 - Entrega de um Passe Little Battle pronto em uma vaga vazia, sem perda
   de passes anteriores; seleção, elegibilidade e persistência.
 - Migração da vaga Charmeleon do Rental Pass 37 para Snivy nível 50,
   preservando o Monferno do passe 38 e os demais dados do jogador.
+- Fechar flags e validação dos passes pessoais sem copiar cegamente flags
+  de Rental Pass. Ver [PASS-INVESTIGATION.md](PASS-INVESTIGATION.md).
 - Integração das variantes visuais, bônus shiny e restauração de item.
 - Calibração de pontos de efeito, deslocamento, eventos e interpolação;
   o SDR experimental de cerca de 8 MB ainda precisa de avaliação de memória.

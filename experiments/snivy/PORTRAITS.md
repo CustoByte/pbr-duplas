@@ -1,5 +1,8 @@
 # Retratos e identificação da Snivy
 
+Atualização: [LOCAL-ASSETS.md](LOCAL-ASSETS.md) descreve os atlases gerados
+e a prova nativa de associação. A validação nas telas reais segue pendente.
+
 Requisito do jogador: mostrar um retrato próprio da Snivy em todas as
 interfaces que pedem um ícone de Pokémon, enquadrado no círculo branco
 nativo, como os seis retratos do Battle Pass enviado como referência.

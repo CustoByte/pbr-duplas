@@ -1,0 +1,30 @@
+{
+  "kind": "offline native portrait table lookup and private archive structure",
+  "passed": true,
+  "original_face_rows_preserved": 495,
+  "original_body_rows_preserved": 495,
+  "original_icon_rows_preserved": 562,
+  "new_icon_index": 562,
+  "face_resource": "7bea0c00",
+  "body_resource": "6bea0c00",
+  "gender_references_verified": 4,
+  "native_form_count": 1,
+  "native_has_evolution": true,
+  "face_atlas_dimensions": [
+    96,
+    96
+  ],
+  "body_atlas_dimensions": [
+    54,
+    108
+  ],
+  "face_texture_sha256": "69247156baf852837e78bb973eecfea3b7e2b3b16d2579eba29a551f9907babf",
+  "body_texture_sha256": "5927356e183717dfcc05fe81f39023eb3a60238f1dc2f1c8158a1ed005282ff5",
+  "limits": [
+    "No actual UI render or FSYS loading in Dolphin",
+    "NFE flag is not a complete Little Battle eligibility test",
+    "No player pass delivery or save/load"
+  ],
+  "playable": false,
+  "published_in_updater": false
+}

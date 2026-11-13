@@ -1,0 +1,77 @@
+{
+  "kind": "private local graphics preparation, not an installable game update",
+  "protected_resources_bundled_in_public_project": false,
+  "original_face_entries_preserved": 645,
+  "original_body_entries_preserved": 645,
+  "native_asset_validation": {
+    "kind": "offline native-profile asset validation",
+    "passed": true,
+    "actions": 12,
+    "nodes": 119,
+    "effect_control_attachments": 21,
+    "uv_scalar_samples": 6360,
+    "max_uv_error": 2.9802322387695312e-08,
+    "blink_changes_and_restores_uv": true,
+    "reference_metadata_matched": true,
+    "sdr_sha256": "2d4e51a8aee6d3cfbc86e5e6c714ac1cbf5909deaa7815cdfb88be6d3321c301",
+    "native_game_tested": false,
+    "effects_positions_calibrated": false,
+    "event_synchronization_verified": false
+  },
+  "shiny_variant": {
+    "changed_texture_pixels": 67664,
+    "alpha_bits_preserved": true,
+    "geometry_actions_and_metadata_preserved": true,
+    "color_policy": "green hue +0.07; other hues preserved",
+    "visually_matched_to_official_art": false
+  },
+  "outputs": {
+    "pkx_501.fsys": {
+      "bytes": 5699104,
+      "sha256": "d6e800c694c49a969e4dd5825807e3c4246faad42a545deacd26696838fafaa3"
+    },
+    "menu_face.fsys": {
+      "bytes": 2679264,
+      "sha256": "7fa06bf083a1e740cfc9a0a2175d9a4a7d8bde957f884382a53b96ecd91138b1"
+    },
+    "menu_pokemon.fsys": {
+      "bytes": 2255648,
+      "sha256": "8a54246d4795aac4d8e6327e99c5fb1bf0782dcd692c533cc6a9f2c590937650"
+    }
+  },
+  "source_sha256": {
+    "pkx_388.fsys": "ce02a053b41bc806391bf3bb4606faffcae3edc7b974120959d25f488f75afb8",
+    "menu_face.fsys": "05f0037c6cecf8a4e958d616a71c6c30af6d1d4dc37f4615d3051afff1f53e9a",
+    "menu_pokemon.fsys": "8c39595a3b6176b709475674e143266f093bf657ff0bd025ddf6dea1cd1fbdad",
+    "normal_sdr": "2d4e51a8aee6d3cfbc86e5e6c714ac1cbf5909deaa7815cdfb88be6d3321c301"
+  },
+  "playable": false,
+  "ready_to_publish": false,
+  "updater_changed": false,
+  "remaining": [
+    "Integrated common/DOL build",
+    "Safe pass delivery and persistence",
+    "Full Little Battle eligibility",
+    "AI species-dependent structures",
+    "In-game effects/animation/memory validation",
+    "Local conversion integration in updater"
+  ],
+  "independent_local_rebuild_byte_identical": true,
+  "render_metadata": {
+    "source": "private converted Snivy rig",
+    "render_size": [
+      384,
+      384
+    ],
+    "variants": [
+      "normal",
+      "shiny"
+    ],
+    "views": [
+      "face",
+      "body"
+    ],
+    "shiny_policy": "green hue +0.07; other hues/alpha preserved; visual review pending",
+    "rendered_in_dolphin": false
+  }
+}

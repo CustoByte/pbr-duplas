@@ -1,5 +1,10 @@
 # Associação independente do modelo Snivy
 
+Etapa posterior: [LOCAL-ASSETS.md](LOCAL-ASSETS.md) documenta a criação
+privada do arquivo normal/shiny e dos ícones. Os IDs abaixo deixaram de
+ser apenas reservas nos artefatos privados, mas o carregamento real e a
+integração ao jogo continuam pendentes.
+
 Etapa de cadastro e prova de busca nativa. **Não é carregamento ou exibição
 do modelo no Dolphin e não altera a versão do atualizador.**
 
