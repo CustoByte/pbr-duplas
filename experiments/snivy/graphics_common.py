@@ -28,6 +28,7 @@ def arguments():
     parser.add_argument("--berrybush", type=Path, required=True)
     parser.add_argument("--pbr-addon", type=Path, required=True)
     parser.add_argument("--preview-action", default="idle")
+    parser.add_argument("--native-reference", type=Path)
     args = parser.parse_args(sys.argv[sys.argv.index("--") + 1 :])
     if not (3, 3, 0) <= bpy.app.version < (3, 5, 0):
         raise RuntimeError("Requires Blender 3.3 or 3.4 for BerryBush compatibility")
@@ -36,6 +37,12 @@ def arguments():
             "This experiment was audited for the supplied Tsutarja.brres only"
         )
     args.workdir.mkdir(parents=True, exist_ok=True)
+    args.native_contract = None
+    if args.native_reference:
+        sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "mod-source"))
+        from pkx_reference import inspect_package
+
+        args.native_contract = inspect_package(args.native_reference.read_bytes())
     return args
 
 
@@ -60,4 +67,8 @@ def load_pbr_addon(args, register=True):
     spec.loader.exec_module(module)
     if register:
         module.register()
+        if args.native_contract:
+            from native_graphics_profile import configure
+
+            configure(module.exporter, args.native_contract)
     return module

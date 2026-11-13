@@ -17,6 +17,8 @@ from graphics_common import arguments, load_brres_addon, load_pbr_addon, SLOTS
 
 args = arguments()
 ROOT = args.workdir
+if args.native_contract:
+    from native_graphics_profile import SLOTS, ANCHORS
 load_brres_addon(args)
 pbr = load_pbr_addon(args)
 bpy.ops.wm.open_mainfile(filepath=str(ROOT / "snivy-source.blend"))
@@ -52,6 +54,15 @@ for bone in source_bones:
     b.tail = (0, 0.1, 0)
     b.matrix = C @ src.matrix_world @ bone.matrix_local
     b.parent = helper
+if args.native_contract:
+    for anchor, parent_name in ANCHORS.items():
+        parent = data.edit_bones[names.get(parent_name, parent_name)]
+        point = data.edit_bones.new(anchor)
+        point.head = (0, 0, 0)
+        point.tail = (0, 0.05, 0)
+        point.matrix = parent.matrix.copy()
+        point.parent = parent
+        point.use_deform = False
 bpy.ops.object.mode_set(mode="OBJECT")
 for b in rig.pose.bones:
     b.rotation_mode = "XYZ"
@@ -105,6 +116,27 @@ bpy.context.view_layer.objects.active = mesh
 bpy.ops.object.modifier_move_up(modifier=mod.name)
 bpy.ops.object.modifier_apply(modifier=mod.name)
 
+
+def material_state(action_name):
+    for sm, mat, mp in matpairs:
+        action = bpy.data.actions.get(
+            f"{action_name} ({sm.name})"
+        ) or bpy.data.actions.get(f"BRRES Initial State ({sm.name})")
+        if sm.animation_data:
+            sm.animation_data.action = action
+    scene.frame_set(0)
+    return {
+        sm.name: (
+            tuple(sm.brres.textures[0].transform.scale),
+            tuple(sm.brres.textures[0].transform.translation),
+        )
+        for sm, mat, mp in matpairs
+    }
+
+
+open_uv = material_state("BRRES Initial State") if args.native_contract else None
+closed_uv = material_state("Sleep0_1") if args.native_contract else None
+expected_uv = {}
 report = {
     "candidate_mapping": SLOTS,
     "mapping_gameplay_validated": False,
@@ -119,6 +151,17 @@ report = {
         "native TEV lighting",
     ],
     "pbr_game_tested": False,
+    "native_reference_sha256": (
+        args.native_contract["source_sha256"] if args.native_contract else None
+    ),
+    "attachment_bone_parents": ANCHORS if args.native_contract else {},
+    "attachment_positions_calibrated": False,
+    "timing_markers": (
+        "normalized native-reference fractions; manual timing pending"
+        if args.native_contract
+        else "prototype"
+    ),
+    "material_body_channels_separated": bool(args.native_contract),
 }
 expected = {}
 for slot, source_name in SLOTS.items():
@@ -143,6 +186,9 @@ for slot, source_name in SLOTS.items():
         mat.node_tree.animation_data.action = a
         setattr(mat, "prop_" + slot, a)
     end = int(source_action.frame_range[1])
+    if args.native_contract and slot.startswith("tx_"):
+        end = 4 if slot == "tx_wink" else 10
+    expected_uv[slot] = {}
     max_shear = 0
     maximum_error = 0
     expected[slot] = {}
@@ -201,8 +247,17 @@ for slot, source_name in SLOTS.items():
                 )
             sx, sy = t.scale
             tx, ty = t.translation
+            if args.native_contract and slot.startswith("tx_"):
+                closed = slot == "tx_sleep" or (
+                    slot == "tx_wink" and sm.name == "Eye" and frame in (1, 2)
+                )
+                (sx, sy), (tx, ty) = (closed_uv if closed else open_uv)[sm.name]
             mp.inputs["Scale"].default_value = (sx, sy, 1)
             mp.inputs["Location"].default_value = (-sx * tx, -sy * ty, 0)
+            expected_uv[slot].setdefault(str(frame), {})[mat.name] = {
+                "translation": [-sx * tx, 1 + sy * ty],
+                "scale": [sx, sy],
+            }
             mp.inputs["Scale"].keyframe_insert("default_value", frame=frame)
             mp.inputs["Location"].keyframe_insert("default_value", frame=frame)
     if maximum_error > 0.0005:
@@ -227,9 +282,13 @@ for o in list(scene.objects):
     if o not in (rig, mesh):
         o.hide_render = True
         o.hide_set(True)
-rig.animation_data.action = data.prop_idle
+rig.animation_data.action = getattr(
+    data, "prop_wait" if args.native_contract else "prop_idle"
+)
 for sm, mat, mp in matpairs:
-    mat.node_tree.animation_data.action = mat.prop_idle
+    mat.node_tree.animation_data.action = getattr(
+        mat, "prop_wait" if args.native_contract else "prop_idle"
+    )
 scene.frame_set(0)
 for image in bpy.data.images:
     if image.name.startswith("Tsutarja"):
@@ -243,5 +302,6 @@ bpy.context.view_layer.objects.active = rig
 bpy.ops.wm.save_as_mainfile(filepath=str(ROOT / "snivy-export.blend"))
 bpy.ops.pbr.pbrexport(filepath=str(ROOT / "snivy-experimental.sdr"))
 (ROOT / "expected-poses.json").write_text(json.dumps(expected))
+(ROOT / "expected-uv.json").write_text(json.dumps(expected_uv))
 (ROOT / "conversion-report.json").write_text(json.dumps(report, indent=2))
 print("SDR_PROBE_EXPORTED", flush=True)

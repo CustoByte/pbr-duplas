@@ -61,6 +61,12 @@ def prepare(berrybush, pbr):
     replace(
         pbr / "exporter/exporter.py",
         [
+            (
+                "action_ids = ['idle', 'run', 'damage', 'faint', 'move_phys', 'move_spec',\n"
+                "                  'tx_wink', 'tx_sleep', 'tx_wakeup']",
+                "action_ids = globals().get('SNIVY_ACTION_IDS', ['idle', 'run', 'damage', 'faint', 'move_phys', 'move_spec',\n"
+                "                  'tx_wink', 'tx_sleep', 'tx_wakeup'])",
+            ),
             ("rel_tol=1e-05, abs_tol=0.001", "rel_tol=1e-08, abs_tol=1e-08"),
             (
                 "file.write('uchar', 0x8, entryAddr, offset=0x6)",

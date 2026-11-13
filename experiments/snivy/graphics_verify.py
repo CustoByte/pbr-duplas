@@ -34,6 +34,7 @@ skele = model["skeletons"][0]
 report = {
     "kind": "SDR decoded matrix/skin/texture roundtrip, not Dolphin",
     "actions": {},
+    "material_only_actions": [],
     "textures": [],
     "sdr_sha256": hashlib.sha256(
         (ROOT / "snivy-experimental.sdr").read_bytes()
@@ -77,9 +78,20 @@ for actionid, action in io.anim_dict.items():
     vertex_error = 0
     if name not in slots:
         continue
+    if args.native_contract:
+        reference_action = next(
+            a
+            for a in args.native_contract["resources"][0]["actions"]
+            if a["name"] == name
+        )
+        if not reference_action["flags"][1]:
+            report["material_only_actions"].append(name)
+            continue
     source.animation_data.action = bpy.data.actions[slots[name] + " (Tsutarja)"]
     end = int(source.animation_data.action.frame_range[1])
-    frames = list(range(end + 1)) if name == "idle" else sorted({0, end // 2, end})
+    frames = (
+        list(range(end + 1)) if name in ("idle", "wait") else sorted({0, end // 2, end})
+    )
     for frame in frames:
         scene.frame_set(frame)
         dep = bpy.context.evaluated_depsgraph_get()
@@ -140,7 +152,9 @@ for actionid, action in io.anim_dict.items():
         "worst_bone": worstbone,
         "sampled_frames": frames,
     }
-report["passed"] = len(report["actions"]) == len(slots) and not any(
+report["passed"] = (
+    len(report["actions"]) + len(report["material_only_actions"])
+) == len(slots) and not any(
     v["max_vertex_distance"] > 0.005 or v["max_matrix_error"] > 0.0005
     for v in report["actions"].values()
 )

@@ -110,3 +110,5 @@ Não publicar este SDR no atualizador como se fosse um Snivy jogável.
 A auditoria posterior dos eventos e nomes nativos está em
 [ANIMATION-LIFECYCLE.md](ANIMATION-LIFECYCLE.md), incluindo a dependência
 de uma referência de pacote Pokémon original para a integração ao jogo.
+Essa referência foi recebida posteriormente; o resultado está em
+[NATIVE-PROFILE.md](NATIVE-PROFILE.md).

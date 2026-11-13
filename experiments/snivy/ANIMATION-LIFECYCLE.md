@@ -56,14 +56,14 @@ O inventário de nomes não comprova seus argumentos nem sua execução para
 o Snivy. Os efeitos e o controle de escala não devem ser substituídos por
 uma simples animação do corpo sem o restante do evento nativo.
 
-## Próxima dependência de arquivo
+## Referência de arquivo recebida
 
-Falta uma referência completa de arquivo Pokémon nativo: **pkx_388.fsys**
-(Grotle), presente na raiz do sistema de arquivos da versão USA fornecida.
-A captura permite auditar as tabelas carregadas, mas não substitui o pacote
-original com todos os seus recursos, identificadores e metadados de carga.
-Esse arquivo permitirá comparar o empacotamento e vínculos antes de montar
-o pacote independente do Snivy. Não será alterado nem redistribuído.
+O arquivo solicitado **pkx_388.fsys** (Grotle) foi recebido e analisado.
+Sua comparação permitiu gerar um perfil gráfico novo com 12 ações, canais
+de materiais e pontos/controles nativos. Consulte
+[NATIVE-PROFILE.md](NATIVE-PROFILE.md) para os resultados atuais.
+O original não foi alterado nem redistribuído. A integração ao jogo continua
+pendente; o recebimento do pacote não comprova reprodução em batalha.
 
 No Dolphin para Mac: abrir as propriedades de Pokémon Battle Revolution,
 ir a Sistema de Arquivos, expandir a Partição de Dados, localizar o arquivo
