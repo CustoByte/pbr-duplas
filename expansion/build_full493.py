@@ -12,7 +12,7 @@ from waterfall_fix import prepare as fix_waterfall
 from encounter_expansion import build as expand,CAPACITY_EDITS
 
 
-def build(dol,common,deck,coop_base=None,tournament_rules=True,battle_text=None,trainer_text=None):
+def build(dol,common,deck,coop_base=None,tournament_rules=True,battle_text=None,trainer_text=None,reviewed_ui=True):
     if trainer_text is not None and battle_text is None:
         raise ValueError('Trainer labels and battle name references must be built together')
     vanilla=dol
@@ -50,6 +50,12 @@ def build(dol,common,deck,coop_base=None,tournament_rules=True,battle_text=None,
         from translation.common_text import prepare as translate_common
         files['mes_common.fsys'],report['common_translation']=translate_common(trainer_text)
         report['output_sha256']['mes_common.fsys']=sha(files['mes_common.fsys'])
+    if reviewed_ui and trainer_text is not None:
+        from ui.apply_review import prepare as apply_ui_review
+        for name in ('menu_fight_s.fsys','mes_common.fsys'):
+            files[name]=apply_ui_review(files[name],name)
+            report['output_sha256'][name]=sha(files[name])
+        report['reviewed_ui']={'version':'test.11','native_font_tildes':True,'dolphin_visual_tested':False}
     return files,report,policy
 
 if __name__=='__main__':
@@ -58,7 +64,19 @@ if __name__=='__main__':
     p.add_argument('--coop-base',type=Path)
     p.add_argument('--original-battle-text',type=Path,help='Original menu_fight_s.fsys for user-approved battle translations')
     p.add_argument('--original-trainer-text',type=Path,help='Original mes_common.fsys for reviewed trainer names; requires battle text')
+    p.add_argument('--ui-original-directory',type=Path,help='Extracted original files for synchronized menus, tutorial and title')
     a=p.parse_args();files,report,policy=build(a.original_dol.read_bytes(),a.original_common.read_bytes(),a.original_deck.read_bytes(),a.coop_base.read_bytes() if a.coop_base else None,battle_text=a.original_battle_text.read_bytes() if a.original_battle_text else None,trainer_text=a.original_trainer_text.read_bytes() if a.original_trainer_text else None)
+    if a.ui_original_directory:
+        from binary_delta import apply as apply_delta
+        manifest=json.loads(Path(__file__).with_name('manifesto.json').read_text())
+        for entry in manifest['replacements']:
+            name=Path(entry['installed_path']).name
+            if name in files:continue
+            candidates=list(a.ui_original_directory.rglob(name))
+            if len(candidates)!=1:raise ValueError('Need exactly one original '+name)
+            patch=Path(__file__).with_name('prebuilt')/Path(entry['package_path']).name
+            files[name]=apply_delta(candidates[0].read_bytes(),patch.read_bytes())
+            report['output_sha256'][name]=sha(files[name])
     if a.output.exists() and any(a.output.iterdir()):raise ValueError('Output directory must be new/empty; original files are never overwritten')
     a.output.mkdir(parents=True,exist_ok=True)
     for name,data in files.items():(a.output/name).write_bytes(data)

@@ -1,21 +1,22 @@
-# Próximo lote autorizado
+# Continuidade
 
-O usuário ampliou o escopo em 12/11/2026: traduzir o jogo inteiro,
-respeitando as regras anteriores de qualidade e nomes protegidos.
-A restrição anterior de traduzir apenas durante a batalha foi substituída.
+Último pedido: corrigir transbordamento, acentos e título 2, traduzir 2.500
+textos inéditos e publicar. O usuário forneceu os menus e aprovou a integração
+do numeral. Não é necessário pedir aprovação de novo para essas mudanças.
 
-Concluir mais 2.000 mensagens novas antes da próxima publicação.
-O lote anterior de 1.000 foi publicado automaticamente como teste 8 antes
-de chegar a nova instrução; execução 43311334172 concluída com sucesso.
-Não publicar outra atualização apenas para documentar este pedido.
+O teste 11 prepara/publica as correções prioritárias, 316 mensagens inéditas,
+2.395 revisões de texto e 1.595 ajustes só de formatação. A meta de 2.500
+inéditas não foi atingida; 2.184 dessa meta ainda não foram entregues.
+Isso não significa que existam exatamente 2.184 mensagens faltantes no jogo:
+é a diferença da meta pedida. O total real exige classificação do restante.
+Não completar contagem usando cópias, nomes preservados ou espaços.
 
-Preservar nomes de Pokémon, golpes, itens, natures e abilities.
-Manter as escolhas já aprovadas para nomes brasileiros de treinadores.
-Usar frases naturais, controles e variáveis idênticos, fonte original,
-linhas compatíveis com os balões e alternativa sem acentos para glifos
-incompatíveis. Testes nativos não comprovam a aparência real no Dolphin.
+Mensagens fora do envelope específico original ainda precisam de revisão;
+a auditoria não prova transbordamento real na GPU. Priorizar falas e tutoriais
+longos e revisar termos em contexto. O serviço de rascunho retornou 429;
+os rascunhos indisponíveis não foram promovidos nem apresentados como prontos.
 
-O lote foi concluído com 2.007 textos novos, incluindo os sete rótulos de
-status adicionais. Prioridade posterior do usuário incorporada: cobrir as
-mensagens da caixa preta de todos os golpes, status e efeitos.
-Os relatórios nativos não substituem a inspeção real dos balões no Dolphin.
+Antes de fechar a validação visual, testar no Dolphin menu Batalha, descrições,
+acentos nas dez fontes e o instante do título 2 ao surgir Press Any Button.
+Não afirmar que o título já foi testado na emulação ou que o jogo está 100%.
+Os caminhos e saves continuam no mesmo atualizador de teste do Windows.

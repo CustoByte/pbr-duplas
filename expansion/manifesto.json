@@ -1,5 +1,5 @@
 {
-  "mod_version": "full493-ptbr-lot5000-v0.11.0-test.10",
+  "mod_version": "full493-ui-ptbr-title2-v0.11.0-test.11",
   "game_id": "RPBE01",
   "revision": 0,
   "original_sha256": {
@@ -8,7 +8,14 @@
     "files/common.fsys": "75ba89e3bb859ac32ad655517e001928e7bf9ad655c675584256dd2a21393b36",
     "files/deck.fsys": "c1a478be1ca447a47fe3efb2064de07bc3dffe883f52a180b403dab7469ddfdc",
     "files/menu_fight_s.fsys": "43493306dfbe78a2efb98f6510e1b159f85ac05022ed759fe2bec0fcc5b8b5f1",
-    "files/mes_common.fsys": "43fdff322a8d4fa9b79fcc9b22a22f6d0f536c4cf72ee7c83a713763c10d9689"
+    "files/mes_common.fsys": "43fdff322a8d4fa9b79fcc9b22a22f6d0f536c4cf72ee7c83a713763c10d9689",
+    "files/menu_bpass2.fsys": "2bb1292cdd0b9535a4212647485bbe776110f4037ce94cfcdc5bbc029fd0c598",
+    "files/menu_btutorial.fsys": "c201646282e5d7a3892a304be64955fad026e8702cdd6cd3cd742347f98950fa",
+    "files/menu_name2.fsys": "9fd789a2ea0d625f6dd64bae17bdc9b40b5b6895835e819ce83e1efacbec678f",
+    "files/mes_bpass_e.fsys": "333985ffa04f50f9ed3abcf9effdeed7812fbaade8ac2ea423864d8c4d25caf7",
+    "files/mes_fight_e.fsys": "614788aa0222cb812c4e70caef8e2f1332dec904882774dabae36aceb4ea023d",
+    "files/mes_name_e.fsys": "98d2bbe67c8af254428298b7a357b1fde322afbb453f3db1fbe3ce072d1d92d6",
+    "files/title.fsys": "73be12f3f7c8027fd4e1200b5297501290f9883d82a3ffa5ddf81083a5ef10ae"
   },
   "game_files": [
     {
@@ -6786,15 +6793,64 @@
       "installed_path": "files/menu_fight_s.fsys",
       "package_path": "patches/menu_fight_s.fsys.pbrdelta",
       "format": "pbr-delta-v1",
-      "sha256": "96332d208f03462e6467c6ab419506f33b12b7b705af397cf9b1187d487c7157",
-      "patch_sha256": "70d945171810f37d3e9e408093a282c5a5f6f1058d7a4540806e404e381ae97d"
+      "sha256": "12fc637013acf78d77d2526eaf02fdb22a4b33e28f8cd75ed6c11b5121cab115",
+      "patch_sha256": "94a3147489ed7fcaeee6dbee08af4362d56b3028da5339642baf67ab46230b0e"
     },
     {
       "installed_path": "files/mes_common.fsys",
       "package_path": "patches/mes_common.fsys.pbrdelta",
       "format": "pbr-delta-v1",
-      "sha256": "0ec19a6d7f3b581ceb5f57110307fd51728fb7c9f08862215b48a97de94e670c",
-      "patch_sha256": "7877c1f55d13d8aada64a129bc3d68ada476e13200222b4f7de7ca5ece1397da"
+      "sha256": "5858bd574340ca75ccd45949255d9ec1f7c61b68eed95411ca4d64b4499b14ea",
+      "patch_sha256": "1a33849ae82999506402ae958f4157473ec1fcae129d400f633f37ae65eeed7f"
+    },
+    {
+      "installed_path": "files/menu_bpass2.fsys",
+      "package_path": "patches/menu_bpass2.fsys.pbrdelta",
+      "format": "pbr-delta-v1",
+      "sha256": "dda758f217cc611bf1e5386768ecacc13632930c10e155ffdefa2d0b00427473",
+      "patch_sha256": "e96543b59d519c8c0a86d7a82b6a9cad8a8f8b84fa57a18e4ce634f11c860575"
+    },
+    {
+      "installed_path": "files/menu_btutorial.fsys",
+      "package_path": "patches/menu_btutorial.fsys.pbrdelta",
+      "format": "pbr-delta-v1",
+      "sha256": "b9940dc2e5c410c058401e45f775275c7d8ca388355467e29955c7b43d334bdf",
+      "patch_sha256": "baa04b7309151fab1f3bb1a6a1fe4fed5dcecc9374037cfce058bde3b1fccbd6"
+    },
+    {
+      "installed_path": "files/menu_name2.fsys",
+      "package_path": "patches/menu_name2.fsys.pbrdelta",
+      "format": "pbr-delta-v1",
+      "sha256": "2c4e802866698503d7a8994d22e932f0a25d029891e11edeab748ea5d4ad34d0",
+      "patch_sha256": "288a6d53d9c84a13c5db5b88f07d0129c7e1daf9b0df153a3800288619e450cc"
+    },
+    {
+      "installed_path": "files/mes_bpass_e.fsys",
+      "package_path": "patches/mes_bpass_e.fsys.pbrdelta",
+      "format": "pbr-delta-v1",
+      "sha256": "2ab6d8e9450a4fa45cfedce21c3c03a922d217a3d596f8c456e44646fe577916",
+      "patch_sha256": "bb8dd6f4f2d7ef0ca3aec8b1668655f7f2d584145187ebd0f28bcd8ca2875e0c"
+    },
+    {
+      "installed_path": "files/mes_fight_e.fsys",
+      "package_path": "patches/mes_fight_e.fsys.pbrdelta",
+      "format": "pbr-delta-v1",
+      "sha256": "67ee2c7843b83bcac5ed15ed3c4e10e25a9b85305dd398c7823d942d14921af6",
+      "patch_sha256": "7e43eca5362116b6136d6816c42db1a8d6b2fce5d9c591d9a80596a4a0a46689"
+    },
+    {
+      "installed_path": "files/mes_name_e.fsys",
+      "package_path": "patches/mes_name_e.fsys.pbrdelta",
+      "format": "pbr-delta-v1",
+      "sha256": "5e29d6151cde367def02744abbdf21057cc63b13798a85789ed0f3b87443ac59",
+      "patch_sha256": "60f5136eeef3a53aeba6de49bc8c08076be7efa0795337b2ed9ff627e1482e3f"
+    },
+    {
+      "installed_path": "files/title.fsys",
+      "package_path": "patches/title.fsys.pbrdelta",
+      "format": "pbr-delta-v1",
+      "sha256": "ffdab8acb35584dfcb12813f32422caa62f5e90bcd299a82d44cf9c3049e2c9f",
+      "patch_sha256": "eecc0821a4c05b11e5062f439722214f32cf92971aeaaede51dc1948347b5d89"
     }
   ]
 }

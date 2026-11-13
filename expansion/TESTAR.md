@@ -42,3 +42,17 @@ Não apagar a ROM original nem a cópia anterior antes de validar esta candidata
     pequenos e campos dinamicos. As medidas automaticas usam referencias
     dos textos originais; nao substituem a conferencia visual no Dolphin.
     Registrar a tela e o contexto de qualquer texto cortado ou sem sentido.
+
+12. Teste 11: no menu Batalha, conferir que Coliseu e Batalha Livre ficam
+    centralizados e não se sobrepõem. Batalha Tutorial deve manter duas linhas.
+    Abrir as descrições de Batalha Livre, Coliseu e Loja, avançando cada página.
+    Nenhuma linha deve passar da borda da caixa.
+13. Conferir “você”, “fará”, “não”, “ação”, “condições”, “É Super eficaz!” e
+    nomes protegidos nas várias telas/fontes. Registrar qualquer quadrado,
+    letra cortada ou acento errado; a fonte não foi reduzida.
+14. Iniciar o jogo do zero: conferir a posição e nitidez do 2 no título, ausência
+    de cortes, a animação inicial e se o 2 aparece no momento esperado em
+    relação a Press Any Button. O tempo exato não foi validado na GPU.
+15. Trocar entre passes, batalha, cadastro de nome e tutorial; verificar se
+    textos traduzidos continuam traduzidos após os menus recarregarem.
+    O lote inclui 316 mensagens novas; não é a tradução completa do jogo.

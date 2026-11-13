@@ -1,15 +1,16 @@
 # Tradução — português brasileiro
 
 Escopo atual: textos do jogo inteiro, dentro e fora das batalhas.
-O teste 10 acrescenta 5.000 mensagens novas: 808 no arquivo de batalha
-e 4.192 no arquivo comum. A tradução integral continua em andamento.
+O teste 11 corrige interface e acentos, sincroniza os MESG de menus e acrescenta
+316 mensagens novas. A meta de 2.500 inéditas não foi concluída. A tradução
+integral continua em andamento. Veja ui/README.md e RELEASE-NOTES.md.
 
 Preservar os nomes de Pokémon, golpes, itens, natures e habilidades.
 Manter somente as mudanças de nomes de treinadores já aprovadas.
 Não alterar equipes, atributos, regras, gráficos ou saves para traduzir textos.
 Drenagem de HP usa “vida”; sono continuado, “esta dormindo bastante.”.
-Português usa letras sem acento onde necessário e pontuação compatível,
-preservando os caracteres dos nomes originais que já existem na fonte.
+Português usa acentos nativos e os quatro glifos novos de til nas dez fontes.
+Pontuação e nomes originais continuam preservados.
 
 Cada tradução conserva os controles e parâmetros do texto original.
 Conferir valores numéricos e abreviações pelo contexto: SWITCH é TROCAR,

@@ -1,0 +1,69 @@
+{
+  "tag": "v0.11.0-full493-test.11",
+  "core_sha256": "c217c062dc4ce5031a72f30df70bcc7eef81417baf89870903b611754ab1e5b1",
+  "assets": {
+    "aplicador-core.zip": {
+      "bytes": 1553054,
+      "sha256": "c217c062dc4ce5031a72f30df70bcc7eef81417baf89870903b611754ab1e5b1"
+    },
+    "update.json": {
+      "bytes": 404,
+      "sha256": "6c9fec3f9ce9784db7ebb3e4fc83b56d0800367488493e6d397be2c0f018d017"
+    },
+    "INICIAR-TESTE-WINDOWS.cmd": {
+      "bytes": 256,
+      "sha256": "a4d8cf891c0d77ed4756fd223718fcfce075ee3002ec5bbfa06b2df4e3622316"
+    },
+    "PBR-Full493-Windows.zip": {
+      "bytes": 1557014,
+      "sha256": "e222d74b4a3bcd7351bfa93878fe8308ead4c45d696dae1631925b14076e698d"
+    },
+    "LEIA-ME.txt": {
+      "bytes": 1247,
+      "sha256": "8e060be2a3f770f78efa2f2a61c765849155c4809d76302debed410429c7c8c7"
+    },
+    "TESTAR.md": {
+      "bytes": 4010,
+      "sha256": "5b391dab938e29d4593a15839d17217164fcd152ffc7b671e8e450a7829b53fd"
+    },
+    "SHA256SUMS.txt": {
+      "bytes": 499,
+      "sha256": "b6cfbd7f7f0721c4a7a0080ee8195575426f1e1795fb438560654ef95e3a6153"
+    }
+  },
+  "feed": {
+    "schema": 1,
+    "version": "v0.11.0-full493-test.11",
+    "package_url": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.11.0-full493-test.11/aplicador-core.zip",
+    "package_sha256": "c217c062dc4ce5031a72f30df70bcc7eef81417baf89870903b611754ab1e5b1",
+    "save_policy": "Original image read only; same normal Dolphin save directory",
+    "channel": "full493-test",
+    "dolphin_tested": false
+  },
+  "new_messages": 316,
+  "visible_revisions": 2395,
+  "layout_only_revisions": 1595,
+  "new_translation_goal_2500_met": false,
+  "dolphin_render_tested": false,
+  "source_rebuild_byte_identical": true,
+  "rebuilt_files": [
+    "menu_name2.fsys",
+    "mes_name_e.fsys",
+    "title.fsys",
+    "menu_fight_s.fsys",
+    "menu_bpass2.fsys",
+    "menu_btutorial.fsys",
+    "mes_bpass_e.fsys",
+    "mes_fight_e.fsys",
+    "deck.fsys",
+    "common.fsys",
+    "mes_common.fsys",
+    "main.dol"
+  ],
+  "checks": {
+    "translation_and_interface_unit_tests": 13,
+    "applicator_tests": 19,
+    "native_tilde_registrations": 40,
+    "all_fsys_deltas_applied_by_powershell": true
+  }
+}

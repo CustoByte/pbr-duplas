@@ -3,7 +3,7 @@
 Caches each source independently, retains all control tokens and names,
 and rejects damaged responses. Editorial and native layout review follow.
 """
-import argparse,concurrent.futures,json,re,urllib.parse,urllib.request
+import argparse,concurrent.futures,json,re,time,urllib.parse,urllib.request,urllib.error
 from pathlib import Path
 from translation.messages import TOKEN,read_messages,readable
 from prepare_campaign_doubles import read_archive
@@ -55,6 +55,9 @@ def collect(inventory,common,cache_path,prior_paths):
             try:
                 data=json.load(urllib.request.urlopen(url,timeout=30))
                 return ''.join(x[0] or '' for x in data[0])
+            except urllib.error.HTTPError as error:
+                if attempt==2 or error.code!=429:raise
+                time.sleep(min(60,max(10,int(error.headers.get("Retry-After","30")))))
             except Exception:
                 if attempt==2:raise
     def translate(batch):
@@ -76,7 +79,7 @@ def collect(inventory,common,cache_path,prior_paths):
         return out
     print('New requests:',len(batches),'new unique drafts:',len(work),flush=True)
     cache_path.write_text(json.dumps(cache,ensure_ascii=False,indent=2)+'\n')
-    with concurrent.futures.ThreadPoolExecutor(max_workers=2) as pool:
+    with concurrent.futures.ThreadPoolExecutor(max_workers=1) as pool:
         for number,result in enumerate(pool.map(translate,batches),1):
             cache.update(result)
             cache_path.write_text(json.dumps(cache,ensure_ascii=False,indent=2)+'\n')

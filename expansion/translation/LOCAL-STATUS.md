@@ -1,16 +1,18 @@
-# Teste 10 — lote de 5.000 mensagens
+# Teste 11
 
-- 808 textos/falas de batalha e 4.192 textos comuns novos.
-- Total novo confirmado por comparação com os arquivos publicados no teste 9.
-- Descrições, tutoriais, menus, informações de Pokémon e falas de treinadores.
-- Tabelas de nomes protegidas; os 19 nomes brasileiros já aprovados continuam.
-- Nenhuma mudança nos arquivos de jogabilidade main.dol, common.fsys e deck.fsys.
-- Letras sem acento e pontuação compatível; fonte original mantida.
-- Fonte medida no código nativo usando referências dos textos originais.
-- A inspeção das janelas reais e do texto no Dolphin continua necessária.
-- Não é a tradução completa do jogo. Os rascunhos que não passaram na
-  revisão/medição ficam para lotes posteriores e não entram no pacote.
+Publicação de correções: 316 IDs novos, 2.395 revisões visíveis e 1.595 ajustes
+somente de formatação. Cópias entre arquivos não contam novamente.
+A meta solicitada de 2.500 traduções inéditas NÃO foi concluída.
 
-O usuário ampliou o escopo para o jogo inteiro. A restrição antiga de
-traduzir descrições compartilhadas somente em batalha foi substituída.
-As atualizações usam o mesmo INICIAR-TESTE-WINDOWS.cmd e preservam o save.
+Corrigidas as âncoras dos botões e encurtadas as mensagens relatadas.
+Glifos ã/õ/Ã/Õ adicionados às dez fontes e registrados pelo carregador nativo.
+Demais acentos restaurados com vocabulário explícito e nomes protegidos.
+Título 2 integrado somente à textura nítida, sem mudar geometria/animações.
+
+Arquivos recebidos de menus, idiomas e título estão disponíveis localmente.
+Eles incluem duplicatas dos mesmos MESG; não justificam contá-los como novos.
+A auditoria de envelopes conserva candidatos existentes para revisão visual;
+novos rascunhos fora da referência não são promovidos. Não afirmar que todas
+as telas foram verificadas na GPU nem que a tradução foi finalizada.
+
+Ver ui/README.md, reports/ui-translation-test11.json e os relatórios nativos.

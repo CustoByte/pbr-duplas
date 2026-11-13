@@ -1,7 +1,7 @@
 """Package mod-owned scripts and binary delta patches only; no game files."""
 import argparse,hashlib,io,json,gzip,zipfile
 from pathlib import Path
-TAG='v0.11.0-full493-test.10'
+TAG='v0.11.0-full493-test.11'
 REPO='https://github.com/CustoByte/pbr-duplas'
 FEED='https://raw.githubusercontent.com/CustoByte/pbr-duplas/feat/full493-waterfall/expansion/update-test.json'
 
@@ -42,8 +42,8 @@ def package(root,output):
       'Feche o Dolphin antes de atualizar. Carregue o save DO JOGO; nao use save state de outra versao.\r\n'
       'A ROM original e os saves nao sao alterados pelo aplicador. A RVZ anterior e preservada em uma atualizacao.\r\n\r\n'
       'Candidata single-player com Full493, Waterfall, shinies, chefes e traducao parcial.\r\n'
-      'Inclui mais 5000 textos de menus, descricoes, tutoriais e falas de batalha.\r\n'
-      'Textos da caixa preta revisados; a traducao do jogo inteiro continua em andamento.\r\n'
+      'Inclui correcoes dos menus, acentos portugueses, titulo 2 e novos textos.\r\n'
+      'A meta de 2500 mensagens ineditas nao foi concluida; copias nao contam de novo.\r\n'
       'Os testes nativos passaram; batalhas reais, visual, trocas e salvar/carregar ainda precisam do Dolphin.\r\n'
       'Leia TESTAR.md na release. O canal estavel/Mac anterior nao foi substituido.\r\n').encode('ascii')
     starter={'PBR-Full493/INICIAR-TESTE-WINDOWS.cmd':cmd,
