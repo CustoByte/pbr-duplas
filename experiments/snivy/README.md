@@ -69,8 +69,9 @@ são distribuídos. O relatório registra os hashes e a saída observada.
   inexistentes nem alterar as regras de Little Battle.
 - Importar os recursos próprios de Snivy e testar menus e batalhas reais.
 
-Para a etapa gráfica faltam os recursos de Snivy de uma cópia legítima
-de PokéPark 2. O exportador PBR suporta SDR e ações como idle, damage,
+Na investigação inicial faltavam os recursos de Snivy de PokéPark 2;
+eles foram recebidos posteriormente, conforme o registro abaixo.
+O exportador PBR suporta SDR e ações como idle, damage,
 faint, move_phys e move_spec, mas não comprova conversão direta do formato
 de PokéPark 2. Precisam ser validados esqueleto, materiais, root motion,
 eventos, entrada/retorno e loops. Nenhum modelo foi importado nesta prova.
@@ -98,13 +99,16 @@ A ação `NorIdle0` declara 84 frames e repetição; `Atk0_0`, 36 frames;
 `Faint0` declara repetição no arquivo fonte: é necessário verificar o
 comportamento esperado antes de mapear essa ação para derrota no PBR.
 Os nomes permitem selecionar candidatos, mas não comprovam seu conteúdo
-visual. Ainda não houve conversão, reprodução ou importação no PBR.
+visual. Ao concluir esse inventário, ainda não havia conversão ou reprodução.
+Os resultados da etapa gráfica posterior estão em `GRAPHICS.md`; a importação
+no motor do jogo continua pendente.
 
 ```sh
 python experiments/snivy/inspect_brres.py /caminho/Tsutarja.brres \
   --report /tmp/snivy-brres.json
 ```
 
-O pedido anterior de recursos gráficos está atendido para iniciar a análise.
-Próxima etapa: decodificar geometria/esqueleto/curvas e verificar reprodução,
-antes de exportar SDR e registrar referências de modelo na versão USA.
+O pedido anterior de recursos gráficos está atendido. A etapa seguinte já
+produziu uma prova de conversão SDR e uma prévia animada fora do jogo.
+Consulte [GRAPHICS.md](GRAPHICS.md) para resultados, reprodução e limitações.
+A associação do modelo à nova espécie na versão USA continua pendente.
