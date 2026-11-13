@@ -55,7 +55,10 @@ def build(dol,common,deck,coop_base=None,tournament_rules=True,battle_text=None,
         for name in ('menu_fight_s.fsys','mes_common.fsys'):
             files[name]=apply_ui_review(files[name],name)
             report['output_sha256'][name]=sha(files[name])
-        report['reviewed_ui']={'version':'test.12','native_font_tildes':True,'dolphin_visual_tested':False}
+        from ui.apply_screenshot_review import prepare as apply_screenshot_fixes
+        files['mes_common.fsys']=apply_screenshot_fixes(files['mes_common.fsys'])
+        report['output_sha256']['mes_common.fsys']=sha(files['mes_common.fsys'])
+        report['reviewed_ui']={'version':'test.13','native_font_tildes':True,'dolphin_visual_tested':False}
     return files,report,policy
 
 if __name__=='__main__':

@@ -30,3 +30,18 @@ original. O instante exato em relação ao aviso de botão ainda exige Dolphin.
 
 O teste no Dolphin, inclusive renderização, salvamento e carga real de
 arquivos, permanece necessário. Uma captura de RAM não substitui esse teste.
+
+## Teste 13 — revisão dos prints
+
+`screenshot-review-test13.json` é uma sobreposição com hashes sobre o teste 12.
+`apply_screenshot_review.py` reproduz o arquivo sem mudar os comandos existentes.
+As quebras antes de comandos de alinhamento são restauradas, incluindo linhas
+em branco intencionais; novos títulos não são re-centralizados na mesma linha.
+O aviso 8442 usa recuo com espaços medidos na fonte, dentro da extensão do texto
+original. Nenhuma âncora de desenho é mudada para centralizar esse aviso.
+
+`verify_screenshots.py` verifica as telas relatadas, proteção de nomes, natures,
+campos e glifos. `help-caption-test13.json` documenta as outras mensagens similares
+encurtadas e medidas. Esses testes não substituem a conferência da posição
+real das caixas no Dolphin. O source builder aplica a sobreposição após o lote
+anterior; o aplicador público continua distribuindo apenas patches diferenciais.

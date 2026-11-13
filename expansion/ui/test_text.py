@@ -1,7 +1,7 @@
 import re,struct,unittest
 from ui.accent_text import lexicon,restore
 from ui.font_ptbr import prepare,blocks,records,bitmap
-from ui.layout_text import wrap
+from ui.layout_text import wrap,preserve_alignment_breaks
 from translation.messages import TOKEN,encoded
 
 def metric(text):
@@ -21,6 +21,11 @@ def fixture_font():
 class TextFixTests(unittest.TestCase):
     def test_supported_accents_and_names(self):
         self.assertEqual(restore('{F001}Voce nao fara isso com Fire Punch.',lexicon(),['Fire Punch']),'{F001}Você não fará isso com Fire Punch.')
+    def test_seed_verb_accent_preserves_conjunction(self):
+        text='Uma semente e plantada e drena HP para curar o usuario.'
+        self.assertEqual(restore(text,lexicon()),'Uma semente é plantada e drena HP para curar o usuário.')
+    def test_negative_possible_verb_accent(self):
+        self.assertEqual(restore('Não e possível salvar HP e PP.',lexicon()),'Não é possível salvar HP e PP.')
     def test_ambiguous_e_is_not_globally_replaced(self):
         self.assertEqual(restore('Atk e Def',lexicon()),'Atk e Def')
     def test_new_font_letters_keep_original_glyphs(self):
@@ -36,6 +41,20 @@ class TextFixTests(unittest.TestCase):
         target='{F001}{F101}{8011}{FFEF} {0003:0002}Coliseu'
         result,cases=wrap(source,target,metric)
         self.assertEqual(result,'{F001}{F101}{8011}{FFEF}\n{0003:0002}Coliseu')
+    def test_mid_caption_alignment_restores_line(self):
+        source='{F001}{F101}{0003:0002}Check{8011}{FFFA}\n{0003:0002}Moves'
+        target='{F001}{F101}{0003:0002}Ver{8011}{FFFA} {0003:0002}golpes'
+        fixed=preserve_alignment_breaks(source,target)
+        self.assertIn('{FFFA}\n{0003:0002}',fixed)
+        self.assertEqual(preserve_alignment_breaks(source,fixed),fixed)
+    def test_alignment_keeps_intentional_blank_line(self):
+        source='{F001}{F101}{0003:0002}One\n \n{0003:0002}Two'
+        target='{F001}{F101}{0003:0002}Um\n\n{0003:0002}Dois'
+        self.assertEqual(preserve_alignment_breaks(source,target),target)
+    def test_inline_alignment_is_not_broken(self):
+        source='{F001}{F101}{0003:0002}Check Moves'
+        target='{F001}{F101}{0003:0002}Golpes'
+        self.assertEqual(preserve_alignment_breaks(source,target),target)
     def test_pages_and_colors_are_preserved(self):
         source='{F001}{F101}{0027}In {0005:0001}Free Battle{0005:0005}, play\nwith a friend.{0028}{000D}\n{0027}Two players.{0028}{000D}'
         target='{F001}{F101}{0027}Na {0005:0001}Batalha Livre{0005:0005}, jogue com um amigo.{0028}{000D}\n{0027}Dois jogadores.{0028}{000D}'
@@ -43,5 +62,21 @@ class TextFixTests(unittest.TestCase):
         self.assertEqual(TOKEN.findall(source),TOKEN.findall(result))
         self.assertEqual(result.count('{000D}'),2)
         self.assertIn('{000D}\n{0027}',result)
+
+
+class ScreenshotReviewTests(unittest.TestCase):
+    def test_centering_keeps_native_control_set(self):
+        from ui.apply_screenshot_review import validate
+        source=encoded('{F001}{F101}{0005:0003}No Pokémon.\nCopy Pokémon first.')
+        target='{F001}{F101}{0005:0003}   Sem Pokémon.\n   Copie Pokémon.'
+        self.assertEqual(validate(source,target,8442,{}),encoded(target))
+        with self.assertRaises(ValueError):validate(source,target.replace('   Sem','{0003:0002}Sem'),8442,{})
+        with self.assertRaises(ValueError):validate(source,target.replace('{0005:0003}',''),8442,{})
+    def test_name_and_level_fields_cannot_disappear(self):
+        from ui.apply_screenshot_review import validate
+        source=encoded('{F002}{F101}{0060} {0061}, {005F}\n{0062}\nMet at {FFFB} {0063}.')
+        target='{F002}{F101}{0061} {0060} {005F}\n{0062}\nObtido no {FFFB} {0063}.'
+        self.assertEqual(validate(source,target,8307,{}),encoded(target))
+        with self.assertRaises(ValueError):validate(source,target.replace('{0063}',''),8307,{})
 
 if __name__=='__main__':unittest.main()

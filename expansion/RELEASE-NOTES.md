@@ -1,48 +1,49 @@
-## PBR — Interface, acentos e título 2 (teste 12)
+## PBR — Correções dos prints (teste 13)
 
-### Interface
+### Menus e botões
 
-- Corrigida a quebra de alinhamento que sobrepunha os títulos dos botões.
-- Botões do menu Batalha com textos curtos: Coliseu, Batalha Livre e Batalha Tutorial.
-- Descrição de Batalha Livre encurtada, com páginas e cores preservadas.
-- Revisadas também as descrições do Coliseu, Loja e outras mensagens do menu.
-- Mesma fonte e tamanho de texto; não foi aumentada a caixa para esconder o problema.
+- Restauradas as quebras entre linhas centralizadas que estavam sobrepondo textos.
+- Rótulos curtos para Atributos, Golpes, Dados, Notas, Novo Passe e save rápido.
+- Cabeçalho “Dados do Pokémon”, identificadores “N. ID” e “N. Pokédex”.
+- “Tempo:” no lugar do rótulo que invadia o tempo de jogo.
+- Botão Registros com nome do jogador em linha própria.
+- Correções compartilhadas: valem para os Pokémon que usam essas telas.
 
-### Acentos
+### Notas e descrições
 
-- Restaurados acentos portugueses já suportados pela fonte, como em “você” e “fará”.
-- Adicionados ã, õ, Ã e Õ nas dez fontes usando os traços originais do til.
-- Ajustado o limite vertical do Õ maiúsculo em duas variantes de fonte.
-- Preservados todos os desenhos das letras originais.
-- Registro dos 40 glifos e dimensões dos casos relatados verificados no código nativo.
+- “Notas do treinador” no lugar de “Memorando do instrutor”.
+- Natureza em português, preservando os 25 nomes de natures em inglês.
+- Dia, mês, ano, local e nível separados, conservando os dados originais.
+- Preferências alimentares e características revisadas, incluindo “Come de tudo.”.
+- Overgrow, Blaze, Torrent e Swarm: descrição de ativação com até 1/3 do HP,
+  removendo a tradução incorreta “em um piscar de olhos”.
+- Descrições longas de golpes e avisos semelhantes encurtadas nas duas variantes
+  quando a mesma frase existia em mais de uma tela. Nomes dos golpes preservados.
 
-### Título
+### Tipos e acentos
 
-- “2” amarelo e azul integrado à textura nítida de Battle Revolution.
-- Preservados geometria, personagens, comandos e animações originais.
-- O instante exato do surgimento em relação a Press Any Button ainda precisa ser conferido no Dolphin.
+- Gelo, Dragão, Sombrio, Inseto, Voador, Terrestre, Lutador, Pedra e Aço.
+- Planta, Normal e Psíquico consistentes nas tabelas correspondentes.
+- Acentos contextuais, como “Uma semente é plantada” e “usuário”.
+- Preservado o “e” de ligação, como em “Ataque e Defesa”.
 
-### Tradução
+### Avisos do Depósito
 
-- **316 mensagens inéditas:** 129 comuns, 24 de batalha, 119 do tutorial e 44 de cadastro/teclado.
-- **2.395 mensagens existentes com texto/acento revisado.**
-- **1.595 ajustes somente de formatação**, contados separadamente.
-- Sincronizadas as cópias das mensagens em outros arquivos de menus para evitar retorno ao inglês ao trocar de tela.
-- Cópias repetidas não entram novamente na contagem de traduções.
-- Nomes protegidos e nomes brasileiros de treinadores aprovados foram mantidos.
+- Aviso sobre criar um Passe Pessoal reduzido a duas linhas.
+- Aviso sem Pokémon encurtado, com linhas equilibradas e recuo medido na fonte
+  original para melhorar a centralização sem mudar a origem de desenho da caixa.
+- Cor amarela e comandos existentes preservados.
 
-**A meta de 2.500 mensagens inéditas não foi concluída.** Os arquivos recebidos
-contêm muitas cópias, nomes protegidos e rótulos iguais em português. Esta versão
-publica as correções prioritárias e as mensagens novas que passaram na revisão,
-sem apresentar acentos ou cópias como traduções inéditas.
+### Atualização e validação
 
-### Atualização e testes
+Feche o Dolphin e abra o mesmo **INICIAR-TESTE-WINDOWS.cmd**.
+Inicie o jogo novamente e carregue o **save normal**, sem save state antigo.
+A ROM original, os saves, o título 2, as equipes e os atributos permanecem.
 
-Feche o Dolphin e abra o mesmo `INICIAR-TESTE-WINDOWS.cmd`.
-A ROM original e o save normal são preservados. Não use save state antigo.
-Jogabilidade, equipes e atributos não foram alterados neste lote.
+Esta versão reúne revisões de texto e formatação dos casos enviados e de
+mensagens semelhantes. Não representa um lote de 2.500 traduções inéditas.
 
-Verificações nativas e do aplicador passaram, mas **não houve teste visual no
-Dolphin**. Outras mensagens ainda têm candidatos a revisão de comprimento;
-os limites usados na auditoria são referências dos textos originais, não uma
-prova dos limites de cada janela real. A tradução do jogo continua parcial.
+As verificações incluem campos dinâmicos, fontes, tipos, nomes protegidos,
+quebras de alinhamento, medidas nativas e reprodução dos arquivos. **Não houve
+teste visual no Dolphin neste ambiente**: a posição final do aviso e os demais
+casos precisam ser confirmados em jogo. A tradução integral continua parcial.

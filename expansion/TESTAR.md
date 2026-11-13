@@ -56,3 +56,13 @@ Não apagar a ROM original nem a cópia anterior antes de validar esta candidata
 15. Trocar entre passes, batalha, cadastro de nome e tutorial; verificar se
     textos traduzidos continuam traduzidos após os menus recarregarem.
     O lote inclui 316 mensagens novas; não é a tradução completa do jogo.
+
+16. Teste 13: conferir todos os casos reportados: Novo Passe, Apagar save rápido,
+    Registros, Atributos/Golpes/Dados/Notas, nome e número de identificação,
+    tempo de jogo, tipo Aço/Dragão e demais tipos, descrição de Overgrow,
+    Leech Seed, nature em inglês, data/local/nível separados e “Come de tudo.”.
+    Repetir as telas de dados com mais de um Pokémon. Verificar que não mudou
+    nome, nature, item equipado, golpes nem os atributos reais do Pokémon.
+17. Abrir os avisos do Depósito sem Pokémon e de criação de Passe Pessoal.
+    Conferir as duas linhas, cor amarela, recuo/centralização e ausência de
+    cortes. As posições ainda não foram verificadas em uma GPU real.

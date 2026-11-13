@@ -1,5 +1,5 @@
 {
-  "mod_version": "full493-ui-ptbr-title2-v0.11.0-test.12",
+  "mod_version": "full493-screenshot-fixes-ptbr-v0.11.0-test.13",
   "game_id": "RPBE01",
   "revision": 0,
   "original_sha256": {
@@ -6800,8 +6800,8 @@
       "installed_path": "files/mes_common.fsys",
       "package_path": "patches/mes_common.fsys.pbrdelta",
       "format": "pbr-delta-v1",
-      "sha256": "1dc22d8d3a864ebe3273f175738e29adaa9f6312a3222a89915f8f12a8f1e682",
-      "patch_sha256": "4f63dc713838cdefb6d6044f002d155ae24b20c98155bc0477904eee6de2b2f6"
+      "sha256": "2c11522997038296096ea001cd40912b89acced4e85eb95d1c08c31842558c2b",
+      "patch_sha256": "5ff64fe6e2ab49e19b1c6dc15ec913763b2a7224a13f51855d335ffa951e7865"
     },
     {
       "installed_path": "files/menu_bpass2.fsys",

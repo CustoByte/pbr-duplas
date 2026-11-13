@@ -54,3 +54,21 @@ def wrap(source,target,metrics):
     if source.endswith('\n'):output=output.rstrip()+'\n'
     validate_target(encoded(source),output)
     return output,cases
+
+def preserve_alignment_breaks(source,target):
+    """Restore hard breaks before matching alignment commands in each caption.
+
+    Width measurements alone do not catch this: re-centering twice on one
+    baseline paints both labels over one another.
+    """
+    alignment=re.compile(r'\{0003:[0-9A-F]{4}\}')
+    original=list(alignment.finditer(source));translated=list(alignment.finditer(target))
+    if [m[0] for m in original]!=[m[0] for m in translated]:
+        raise ValueError('Alignment command sequence changed')
+    for a,b in reversed(list(zip(original,translated))):
+        whitespace=re.search(r'\s*$',source[:a.start()])[0]
+        breaks=whitespace.count('\n')
+        if breaks:
+            target=target[:b.start()].rstrip()+'\n'*breaks+target[b.start():]
+    validate_target(encoded(source),target)
+    return target
