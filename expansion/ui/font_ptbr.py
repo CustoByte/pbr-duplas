@@ -38,7 +38,9 @@ def extend_block(block):
         base_pixels=unpack_pixels(base,bitmap(block,base))
         ink_top=next((y for y,row in enumerate(base_pixels) if any(n>=8 for n in row)),0)
         actual_top=base[3]+ink_top
-        top=max(0,actual_top-5)
+        # The native loader stores top - 1 in an unsigned byte.
+        # Zero would wrap to 255 and misplace the capital tilde.
+        top=max(1,actual_top-5)
         accent_rows=actual_top-top
         if accent_rows<2:raise ValueError('No room above native letter body')
         template=bytearray(base);template[3]=top

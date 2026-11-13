@@ -28,7 +28,9 @@ class TextFixTests(unittest.TestCase):
         a,b=blocks(original)[0],blocks(result)[0];ra,rb=records(a),records(b)
         self.assertEqual(len(rb),len(ra)+4)
         for c,r in ra.items():self.assertEqual(bitmap(a,r),bitmap(b,rb[c]))
-        for c in 'ãõÃÕ':self.assertIn(ord(c),rb)
+        for c in 'ãõÃÕ':
+            self.assertIn(ord(c),rb)
+            self.assertGreaterEqual(rb[ord(c)][3],1)
     def test_button_anchor_newline_is_preserved(self):
         source='{F001}{F101}{8011}{FFEF}\n{0003:0002}Colosseum Battle'
         target='{F001}{F101}{8011}{FFEF} {0003:0002}Coliseu'

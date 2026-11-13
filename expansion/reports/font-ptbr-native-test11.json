@@ -1,245 +1,285 @@
 {
-  "font_sha256": "3ea93a49750a8d0f8b6e8ce2d37cf29fc841686285029f0ae3b90d8c950e26ad",
+  "font_sha256": "e4187dee6bc33eb368445acde98ba7d2f187294a7f9fc3441c78df95c85cd905",
   "native_tilde_cases": [
     {
       "font": 0,
       "character": "ã",
       "native_glyph_slot": 190,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 7
     },
     {
       "font": 0,
       "character": "õ",
       "native_glyph_slot": 208,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 7
     },
     {
       "font": 0,
       "character": "Ã",
       "native_glyph_slot": 158,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 3
     },
     {
       "font": 0,
       "character": "Õ",
       "native_glyph_slot": 176,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 3
     },
     {
       "font": 1,
       "character": "ã",
       "native_glyph_slot": 190,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 3
     },
     {
       "font": 1,
       "character": "õ",
       "native_glyph_slot": 208,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 3
     },
     {
       "font": 1,
       "character": "Ã",
       "native_glyph_slot": 158,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 0
     },
     {
       "font": 1,
       "character": "Õ",
       "native_glyph_slot": 176,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 0
     },
     {
       "font": 2,
       "character": "ã",
       "native_glyph_slot": 190,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 4
     },
     {
       "font": 2,
       "character": "õ",
       "native_glyph_slot": 208,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 4
     },
     {
       "font": 2,
       "character": "Ã",
       "native_glyph_slot": 158,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 1
     },
     {
       "font": 2,
       "character": "Õ",
       "native_glyph_slot": 176,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 1
     },
     {
       "font": 3,
       "character": "ã",
       "native_glyph_slot": 190,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 7
     },
     {
       "font": 3,
       "character": "õ",
       "native_glyph_slot": 208,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 7
     },
     {
       "font": 3,
       "character": "Ã",
       "native_glyph_slot": 158,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 3
     },
     {
       "font": 3,
       "character": "Õ",
       "native_glyph_slot": 176,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 3
     },
     {
       "font": 4,
       "character": "ã",
       "native_glyph_slot": 190,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 3
     },
     {
       "font": 4,
       "character": "õ",
       "native_glyph_slot": 208,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 3
     },
     {
       "font": 4,
       "character": "Ã",
       "native_glyph_slot": 158,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 0
     },
     {
       "font": 4,
       "character": "Õ",
       "native_glyph_slot": 176,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 0
     },
     {
       "font": 5,
       "character": "ã",
       "native_glyph_slot": 190,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 4
     },
     {
       "font": 5,
       "character": "õ",
       "native_glyph_slot": 208,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 4
     },
     {
       "font": 5,
       "character": "Ã",
       "native_glyph_slot": 158,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 1
     },
     {
       "font": 5,
       "character": "Õ",
       "native_glyph_slot": 176,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 1
     },
     {
       "font": 6,
       "character": "ã",
       "native_glyph_slot": 190,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 4
     },
     {
       "font": 6,
       "character": "õ",
       "native_glyph_slot": 208,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 3
     },
     {
       "font": 6,
       "character": "Ã",
       "native_glyph_slot": 158,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 1
     },
     {
       "font": 6,
       "character": "Õ",
       "native_glyph_slot": 176,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 1
     },
     {
       "font": 7,
       "character": "ã",
       "native_glyph_slot": 190,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 4
     },
     {
       "font": 7,
       "character": "õ",
       "native_glyph_slot": 208,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 4
     },
     {
       "font": 7,
       "character": "Ã",
       "native_glyph_slot": 158,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 2
     },
     {
       "font": 7,
       "character": "Õ",
       "native_glyph_slot": 176,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 1
     },
     {
       "font": 8,
       "character": "ã",
       "native_glyph_slot": 190,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 4
     },
     {
       "font": 8,
       "character": "õ",
       "native_glyph_slot": 208,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 3
     },
     {
       "font": 8,
       "character": "Ã",
       "native_glyph_slot": 158,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 1
     },
     {
       "font": 8,
       "character": "Õ",
       "native_glyph_slot": 176,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 1
     },
     {
       "font": 9,
       "character": "ã",
       "native_glyph_slot": 190,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 4
     },
     {
       "font": 9,
       "character": "õ",
       "native_glyph_slot": 208,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 4
     },
     {
       "font": 9,
       "character": "Ã",
       "native_glyph_slot": 158,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 2
     },
     {
       "font": 9,
       "character": "Õ",
       "native_glyph_slot": 176,
-      "bitmap_registered": true
+      "bitmap_registered": true,
+      "native_top_offset": 1
     }
   ],
   "reported_ui_cases": [

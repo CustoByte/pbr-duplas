@@ -4,7 +4,7 @@
 textos inéditos e publicar. O usuário forneceu os menus e aprovou a integração
 do numeral. Não é necessário pedir aprovação de novo para essas mudanças.
 
-O teste 11 prepara/publica as correções prioritárias, 316 mensagens inéditas,
+O teste 12 publica as correções prioritárias, 316 mensagens inéditas,
 2.395 revisões de texto e 1.595 ajustes só de formatação. A meta de 2.500
 inéditas não foi atingida; 2.184 dessa meta ainda não foram entregues.
 Isso não significa que existam exatamente 2.184 mensagens faltantes no jogo:

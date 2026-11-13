@@ -1,4 +1,4 @@
-## PBR — Interface, acentos e título 2 (teste 11)
+## PBR — Interface, acentos e título 2 (teste 12)
 
 ### Interface
 
@@ -12,6 +12,7 @@
 
 - Restaurados acentos portugueses já suportados pela fonte, como em “você” e “fará”.
 - Adicionados ã, õ, Ã e Õ nas dez fontes usando os traços originais do til.
+- Ajustado o limite vertical do Õ maiúsculo em duas variantes de fonte.
 - Preservados todos os desenhos das letras originais.
 - Registro dos 40 glifos e dimensões dos casos relatados verificados no código nativo.
 

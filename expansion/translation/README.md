@@ -1,7 +1,7 @@
 # Tradução — português brasileiro
 
 Escopo atual: textos do jogo inteiro, dentro e fora das batalhas.
-O teste 11 corrige interface e acentos, sincroniza os MESG de menus e acrescenta
+O teste 12 corrige interface e acentos, sincroniza os MESG de menus e acrescenta
 316 mensagens novas. A meta de 2.500 inéditas não foi concluída. A tradução
 integral continua em andamento. Veja ui/README.md e RELEASE-NOTES.md.
 

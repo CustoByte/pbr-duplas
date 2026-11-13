@@ -40,5 +40,7 @@ class Metrics:
                 slot=struct.unpack('>H',self.h.uc.mem_read(m+ord(c)*2,2))[0]
                 address=self.ctx+i*0xA004+0xD98+slot*8
                 assert slot!=65535 and self.h.get(address)!=0,(i,c)
-                cases.append({'font':i,'character':c,'native_glyph_slot':slot,'bitmap_registered':True})
+                top=bytes(self.h.uc.mem_read(address+5,1))[0]
+                assert top<64,(i,c,'Invalid vertical glyph offset',top)
+                cases.append({'font':i,'character':c,'native_glyph_slot':slot,'bitmap_registered':True,'native_top_offset':top})
         return cases

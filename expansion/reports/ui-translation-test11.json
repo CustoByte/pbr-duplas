@@ -3075,7 +3075,7 @@
           "reason": "new-draft-exceeds-source-envelope"
         }
       ],
-      "target_sha256": "5858bd574340ca75ccd45949255d9ec1f7c61b68eed95411ca4d64b4499b14ea"
+      "target_sha256": "1dc22d8d3a864ebe3273f175738e29adaa9f6312a3222a89915f8f12a8f1e682"
     },
     "menu_fight_s.fsys": {
       "new_message_ids": [
@@ -56598,5 +56598,6 @@
     "New candidates exceeding the source reference were not promoted.",
     "No full game/ROM is present for Dolphin rendering, title timing, battle or save testing.",
     "The requested 2500 new translations are not complete; repeated copies are excluded from the count."
-  ]
+  ],
+  "publication_version": "v0.11.0-full493-test.12"
 }
