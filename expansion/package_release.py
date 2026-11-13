@@ -10,7 +10,7 @@ def zipped(files):
     out=io.BytesIO()
     with zipfile.ZipFile(out,'w',zipfile.ZIP_DEFLATED,compresslevel=9) as z:
         for name,data in sorted(files.items()):
-            i=zipfile.ZipInfo(name,(2026,11,12,0,0,0));i.compress_type=zipfile.ZIP_DEFLATED;i.external_attr=0o100644<<16
+            i=zipfile.ZipInfo(name,(2026,11,12,0,0,0));i.compress_type=zipfile.ZIP_DEFLATED;i.external_attr=(0o100755 if name.endswith(('.command','.sh')) else 0o100644)<<16
             z.writestr(i,data)
     data=out.getvalue()
     with zipfile.ZipFile(io.BytesIO(data)) as z:

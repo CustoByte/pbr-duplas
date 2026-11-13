@@ -1,0 +1,82 @@
+{
+  "generation": "black-white",
+  "supported_native_levelup": [
+    {
+      "level": 1,
+      "move_id": 33,
+      "name": "tackle"
+    },
+    {
+      "level": 4,
+      "move_id": 43,
+      "name": "leer"
+    },
+    {
+      "level": 7,
+      "move_id": 22,
+      "name": "vine-whip"
+    },
+    {
+      "level": 10,
+      "move_id": 35,
+      "name": "wrap"
+    },
+    {
+      "level": 13,
+      "move_id": 74,
+      "name": "growth"
+    },
+    {
+      "level": 19,
+      "move_id": 73,
+      "name": "leech-seed"
+    },
+    {
+      "level": 22,
+      "move_id": 72,
+      "name": "mega-drain"
+    },
+    {
+      "level": 25,
+      "move_id": 21,
+      "name": "slam"
+    },
+    {
+      "level": 28,
+      "move_id": 348,
+      "name": "leaf-blade"
+    },
+    {
+      "level": 34,
+      "move_id": 202,
+      "name": "giga-drain"
+    },
+    {
+      "level": 37,
+      "move_id": 378,
+      "name": "wring-out"
+    },
+    {
+      "level": 40,
+      "move_id": 380,
+      "name": "gastro-acid"
+    },
+    {
+      "level": 43,
+      "move_id": 437,
+      "name": "leaf-storm"
+    }
+  ],
+  "excluded_unsupported_moves": [
+    {
+      "level": 16,
+      "move_id": 536,
+      "name": "leaf-tornado"
+    },
+    {
+      "level": 31,
+      "move_id": 489,
+      "name": "coil"
+    }
+  ]
+}

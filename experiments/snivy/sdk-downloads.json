@@ -1,0 +1,52 @@
+{
+  "berrybush": {
+    "url": "https://codeload.github.com/hayden0729/berrybush/zip/5ff000f7362a3b18cc55e871fc3e1f645eb5e206",
+    "sha256": "bc138b2234faf4279de763c6e4d52c22044ed4c8b973d21c2b89c11c4b2d8ee5",
+    "bytes": 62629684
+  },
+  "pbr-addon": {
+    "url": "https://codeload.github.com/bgsamm/pbr-models-import-export/zip/ed18e4fd606bf66b670c71c2484bf9fc86ea5b7d",
+    "sha256": "08a90192bcfb654d2f43099ee53345fad06da09b76bf0ed0610fda80210df1ad",
+    "bytes": 27799
+  },
+  "pillow": [
+    {
+      "url": "https://files.pythonhosted.org/packages/0e/69/a31cccd538ca0b5272be2a38347f8839b97a14be104ea08b0db92f749c74/pillow-10.4.0-cp310-cp310-macosx_10_10_x86_64.whl",
+      "sha256": "4d9667937cfa347525b319ae34375c37b9ee6b525440f3ef48542fcf66f2731e",
+      "filename": "pillow-10.4.0-cp310-cp310-macosx_10_10_x86_64.whl"
+    },
+    {
+      "url": "https://files.pythonhosted.org/packages/9a/9e/4143b907be8ea0bce215f2ae4f7480027473f8b61fcedfda9d851082a5d2/pillow-10.4.0-cp310-cp310-macosx_11_0_arm64.whl",
+      "sha256": "543f3dc61c18dafb755773efc89aae60d06b6596a63914107f75459cf984164d",
+      "filename": "pillow-10.4.0-cp310-cp310-macosx_11_0_arm64.whl"
+    },
+    {
+      "url": "https://files.pythonhosted.org/packages/b5/5b/6651c288b08df3b8c1e2f8c1152201e0b25d240e22ddade0f1e242fc9fa0/pillow-10.4.0-cp310-cp310-manylinux_2_28_x86_64.whl",
+      "sha256": "a985e028fc183bf12a77a8bbf36318db4238a3ded7fa9df1b9a133f1cb79f8fc",
+      "filename": "pillow-10.4.0-cp310-cp310-manylinux_2_28_x86_64.whl"
+    },
+    {
+      "url": "https://files.pythonhosted.org/packages/f4/72/0203e94a91ddb4a9d5238434ae6c1ca10e610e8487036132ea9bf806ca2a/pillow-10.4.0-cp310-cp310-win_amd64.whl",
+      "sha256": "ecd85a8d3e79cd7158dec1c9e5808e821feea088e2f69a974db5edf84dc53141",
+      "filename": "pillow-10.4.0-cp310-cp310-win_amd64.whl"
+    }
+  ],
+  "blender": {
+    "blender-3.3.21-macos-arm64.dmg": {
+      "url": "https://download.blender.org/release/Blender3.3/blender-3.3.21-macos-arm64.dmg",
+      "sha256": "8f2306c761a8d71c9426e9dc254ed7c7db96133d5333c8233e61e0a6dd526947"
+    },
+    "blender-3.3.21-macos-x64.dmg": {
+      "url": "https://download.blender.org/release/Blender3.3/blender-3.3.21-macos-x64.dmg",
+      "sha256": "c12a9ae93193139d0af89d04759ca0aa8c5c90f2058985c9459685c9475cff1d"
+    },
+    "blender-3.3.21-linux-x64.tar.xz": {
+      "url": "https://download.blender.org/release/Blender3.3/blender-3.3.21-linux-x64.tar.xz",
+      "sha256": "2af68b71c6bb24e2d3e21a3e2db39ac7d736b6c7843c049089efea83ccf1f18d"
+    },
+    "blender-3.3.21-windows-x64.zip": {
+      "url": "https://download.blender.org/release/Blender3.3/blender-3.3.21-windows-x64.zip",
+      "sha256": "abef0a6936ab400607ac05e5ee4dca45c80bab3bb00eac44b47540febbec90ff"
+    }
+  }
+}

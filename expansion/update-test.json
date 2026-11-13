@@ -1,9 +1,10 @@
 {
   "schema": 1,
-  "version": "v0.11.0-full493-test.13",
-  "package_url": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.11.0-full493-test.13/aplicador-core.zip",
-  "package_sha256": "8c22ad4b22af101e2b112735ee9e1b6dd1941b745ca315d8b763abe92f62901f",
-  "save_policy": "Original image read only; same normal Dolphin save directory",
+  "version": "v0.12.0-snivy-test.1",
+  "package_url": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.12.0-snivy-test.1/aplicador-core.zip",
+  "package_sha256": "04d6e06c938aba20c42807a47e13c5457d8b20dae279f343a8f0b5c7f40d5b10",
   "channel": "full493-test",
-  "dolphin_tested": false
+  "dolphin_tested": false,
+  "local_snivy_source_required": true,
+  "save_policy": "Original image and normal save files untouched by installer"
 }

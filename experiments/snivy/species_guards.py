@@ -21,6 +21,7 @@ SITES = (
     0x80023C9C, 0x80023D10, 0x80023D84, 0x80026F40,
     0x80026FCC, 0x80027098,
     0x80058C6C,  # Native menu Pokémon-presence predicate, original limit 495.
+    0x80058CE4,  # Companion menu presence/sanity predicate, same range check.
 )
 
 

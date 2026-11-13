@@ -1,0 +1,60 @@
+{
+  "kind": "full local converter orchestration using freshly downloaded pinned SDKs and Blender bundled Python 3.10",
+  "protected_resources_bundled_in_public_project": false,
+  "original_face_entries_preserved": 645,
+  "original_body_entries_preserved": 645,
+  "native_asset_validation": {
+    "kind": "offline native-profile asset validation",
+    "passed": true,
+    "actions": 12,
+    "nodes": 119,
+    "effect_control_attachments": 21,
+    "uv_scalar_samples": 6360,
+    "max_uv_error": 2.9802322387695312e-08,
+    "blink_changes_and_restores_uv": true,
+    "reference_metadata_matched": true,
+    "sdr_sha256": "af56919236b3b5886fdada442f7cc82f235788f45fec4065f207bfdb50aec7b0",
+    "native_game_tested": false,
+    "effects_positions_calibrated": false,
+    "event_synchronization_verified": false
+  },
+  "shiny_variant": {
+    "changed_texture_pixels": 67664,
+    "alpha_bits_preserved": true,
+    "geometry_actions_and_metadata_preserved": true,
+    "color_policy": "green hue +0.07; other hues preserved",
+    "visually_matched_to_official_art": false
+  },
+  "outputs": {
+    "pkx_501.fsys": {
+      "bytes": 5699072,
+      "sha256": "86410bd94bdecd2de5f02c9c0d6c908b06956edceb19209f3fa4661a1bfafd92"
+    },
+    "menu_face.fsys": {
+      "bytes": 2679264,
+      "sha256": "7fa06bf083a1e740cfc9a0a2175d9a4a7d8bde957f884382a53b96ecd91138b1"
+    },
+    "menu_pokemon.fsys": {
+      "bytes": 2255680,
+      "sha256": "d2a7a8deddce72cb38acd3cf8f939279c1dc512cd119b6c30104add4835d9949"
+    }
+  },
+  "source_sha256": {
+    "pkx_388.fsys": "ce02a053b41bc806391bf3bb4606faffcae3edc7b974120959d25f488f75afb8",
+    "menu_face.fsys": "05f0037c6cecf8a4e958d616a71c6c30af6d1d4dc37f4615d3051afff1f53e9a",
+    "menu_pokemon.fsys": "8c39595a3b6176b709475674e143266f093bf657ff0bd025ddf6dea1cd1fbdad",
+    "normal_sdr": "af56919236b3b5886fdada442f7cc82f235788f45fec4065f207bfdb50aec7b0"
+  },
+  "playable": false,
+  "ready_to_publish": false,
+  "updater_changed": false,
+  "remaining": [
+    "Actual Dolphin model load, battle effects/animation synchronization and save/load",
+    "Windows and macOS platform execution; bootstrap/converter executed on Linux only"
+  ],
+  "dependency_bootstrap_verified_on": "Linux x86_64",
+  "windows_platform_execution_verified": false,
+  "macos_platform_execution_verified": false,
+  "all_four_blender_stages_passed": true,
+  "game_assets_in_public_package": false
+}

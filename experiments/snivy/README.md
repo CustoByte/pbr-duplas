@@ -1,3 +1,6 @@
+> Estado integrado mais recente: [CANDIDATE.md](CANDIDATE.md). Os relatos
+> abaixo documentam etapas anteriores; não substituem a lista atual de limites.
+
 # Snivy: experimento isolado de registro
 
 Estado consolidado mais recente: [STATUS.md](STATUS.md). Os resultados

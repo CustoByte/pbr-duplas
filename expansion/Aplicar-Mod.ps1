@@ -1,4 +1,5 @@
-﻿# Windows PowerShell 5.1+. No Python, administrator rights or game downloads.
+﻿# Windows PowerShell 5.1+. No administrator rights or game downloads.
+# Optional Snivy conversion uses the hash-pinned portable Blender Python.
 [CmdletBinding()]
 param(
     [string]$ImagePath,
@@ -6,6 +7,7 @@ param(
     [string]$OutputPath,
     [string]$DolphinPath,
     [string]$StatePath,
+    [string]$SnivySourcePath,
     [switch]$DoNotLaunch,
     [switch]$NoGui
 )
@@ -116,6 +118,13 @@ try {
     }
     Note 'A imagem original sera somente lida. Nenhum save sera modificado.'
     $manifest = Get-Content -LiteralPath (Join-Path $PackageRoot 'manifesto.json') -Raw | ConvertFrom-Json
+    if ($manifest.local_snivy_assets) {
+        . (Join-Path $PackageRoot 'Preparar-Snivy.ps1')
+        if (-not $SnivySourcePath -and $savedState -and $savedState.snivy_source) { $SnivySourcePath = $savedState.snivy_source }
+        if (-not $SnivySourcePath -or -not (Test-Path -LiteralPath $SnivySourcePath -PathType Leaf)) {
+            $SnivySourcePath = Choose-Open 'Selecione Tsutarja.brres extraido do seu PokePark 2' 'Snivy BRRES|*.brres'
+        }
+    }
     foreach ($entry in $manifest.replacements) {
         if ($entry.package_path -match '(^[\/]|(^|[\/])\.\.([\/]|$)|:)' -or
             $entry.installed_path -notmatch '^(sys/main\.dol|files/.+)$' -or
@@ -211,6 +220,16 @@ try {
             $expectedFiles[$relative] = @{ size = (Get-Item -LiteralPath $destination).Length; sha256 = $entry.sha256 }
         }
     }
+    if ($manifest.local_snivy_assets) {
+        $snivyDataRoot = if ($StatePath) { Split-Path ([IO.Path]::GetFullPath($StatePath)) -Parent } else { Join-Path ([Environment]::GetFolderPath('LocalApplicationData')) 'PBR-Duplas' }
+        $snivyCache = Join-Path $snivyDataRoot 'Snivy'
+        $assets = Prepare-Snivy $partition $SnivySourcePath $snivyCache
+        foreach ($name in @('pkx_501.fsys', 'menu_face.fsys', 'menu_pokemon.fsys')) {
+            $destination = Join-Path $partition ('files/' + $name)
+            Copy-Item -LiteralPath (Join-Path $assets $name) -Destination $destination -Force
+            $expectedFiles[$name] = @{ size = (Get-Item -LiteralPath $destination).Length; sha256 = (Hash $destination) }
+        }
+    }
     $built = Join-Path $JobRoot 'resultado.rvz'
     Note '[4/5] Gerando uma nova RVZ com o mod instalado...'
     Run-Tool -Arguments @('convert', '-i', (Join-Path $partition 'sys/main.dol'), '-o', $built,
@@ -261,6 +280,7 @@ try {
             tool_path = $ToolPath; dolphin_path = $DolphinPath
             image_sha256 = $report.sha256; manifest_sha256 = $manifestHash
             mod_version = $manifest.mod_version
+            snivy_source = $SnivySourcePath
         }
         $state | ConvertTo-Json | Set-Content -LiteralPath ($StatePath + '.tmp') -Encoding UTF8
         Move-Item -LiteralPath ($StatePath + '.tmp') -Destination $StatePath -Force

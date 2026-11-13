@@ -11,6 +11,11 @@ import subprocess
 
 
 def revision(root, expected):
+    marker = root / ".verified-sdk-revision"
+    if not (root / ".git").exists() and marker.is_file():
+        if marker.read_text().strip() != expected:
+            raise ValueError("Unexpected verified SDK revision")
+        return
     actual = subprocess.check_output(
         ["git", "-C", str(root), "rev-parse", "HEAD"], text=True
     ).strip()
