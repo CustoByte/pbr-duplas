@@ -15,10 +15,27 @@ from unicorn import ppc_const as ppc
 from prepare_campaign_doubles import read_archive, sha
 from verify_coop_draft import DraftReplay
 from registry import RESOURCE, append_stats
-from sunny_park import plan, stats_row, deck_row, MOVES, EVS
+from sunny_park import (
+    plan,
+    stats_row,
+    deck_row,
+    MOVES,
+    EVS,
+    NATIVE_IV_MIN_RANGE,
+    NATIVE_EV_BUDGETS,
+)
 
 
-def verify(capture, dol_path, common_path):
+def verify(capture, dol_path, common_path, rank=None, level=5):
+    if level not in (5, 50) or (level == 50 and rank is not None):
+        raise ValueError("Use level 5 with optional rank, or fixed level 50")
+    moves, pp = MOVES, (35, 30, 20, 10)
+    row = deck_row(rank)
+    requested = plan(rank)
+    if level == 50:
+        import starter_pass
+        row, requested = starter_pass.deck_row(), starter_pass.plan()
+        moves, pp = starter_pass.MOVES, starter_pass.EXPECTED_PP
     dol, common = dol_path.read_bytes(), common_path.read_bytes()
     if (
         sha(dol) != "da02a1232240e139ec14a26ee8b4c2818c56f3c2907f5c2391bd81e2dc0842f6"
@@ -53,13 +70,14 @@ def verify(capture, dol_path, common_path):
         0x81D10000,
     )
     h.uc.mem_write(ctx, bytes(0x10000))
-    h.put(ctx + 0x10, 7)
+    h.put(ctx + 0x10, 7 if rank is None else rank - 1)
     h.put(ctx + 0x14, 6)
-    h.put(ctx + 0x6C, 5)
+    h.put(ctx + 0x6C, level)
     h.put(ctx + 0x60, trainer)
     h.put(party + 0x28, 0x13572468)
-    h.uc.mem_write(party + 0xC, b"\1")
-    h.uc.mem_write(row_address, deck_row())
+    h.uc.mem_write(party + 0xC, b"\1" if rank is None else b"\0")
+    h.put(party + 0x10, 7 if rank is None else rank - 1)
+    h.uc.mem_write(row_address, row)
     heap = [0x81C00000]
     allocations = []
 
@@ -100,13 +118,20 @@ def verify(capture, dol_path, common_path):
         and result["held_item"] == 157
         and result["ability"] == 65
     ), result
-    assert result["pid"] % 25 == 10 and result["moves"] == list(MOVES), result
-    assert (
-        result["pp"] == [35, 30, 20, 10]
-        and result["ivs"] == [31] * 6
-        and result["evs"] == list(EVS)
-    ), result
-    assert result["experience"] == h.call(0x803DF14C, (501, 5)) == 135, result
+    assert result["pid"] % 25 == 10 and result["moves"] == list(moves), result
+    assert result["pp"] == list(pp), result
+    if rank is None:
+        assert result["ivs"] == [31] * 6 and result["evs"] == list(EVS), result
+    else:
+        low, span = NATIVE_IV_MIN_RANGE[rank - 1]
+        assert all(low <= v < low + span for v in result["ivs"]), result
+        assert (
+            all(v <= 252 for v in result["evs"])
+            and sum(result["evs"]) <= NATIVE_EV_BUDGETS[rank - 1]
+        ), result
+    assert result["experience"] == h.call(0x803DF14C, (501, level)), result
+    if level == 5:
+        assert result["experience"] == 135, result
     party_dest = 0x81D12000
     h.uc.mem_write(party_dest, bytes(0xA4))
     h.call(0x803DFD78, (dest, party_dest), limit=3000000)
@@ -116,25 +141,28 @@ def verify(capture, dol_path, common_path):
         party_get(field) for field in range(163, 169)
     ]
     result["species_or_egg"] = get(173)
-    assert result["level"] == 5 and result["stats_hp_atk_def_speed_spatk_spdef"] == [
-        21,
-        9,
-        12,
-        17,
-        14,
-        12,
-    ], result
+    base = (45, 45, 55, 63, 45, 55)
+    expected = [
+        ((2 * b + iv + ev // 4) * level) // 100 + (level + 10 if i == 0 else 5)
+        for i, (b, iv, ev) in enumerate(zip(base, result["ivs"], result["evs"]))
+    ]
+    expected[1] = expected[1] * 90 // 100
+    expected[3] = expected[3] * 110 // 100
+    assert (
+        result["level"] == level
+        and result["stats_hp_atk_def_speed_spatk_spdef"] == expected
+    ), result
     assert result["species_or_egg"] == 501, result
     copied = 0x81D11000
     h.uc.mem_write(copied, bytes(h.uc.mem_read(party_dest, 0xA4)))
     assert h.call(0x803DE52C, (copied, 5, 0)) == 501
     assert h.call(0x803DE52C, (copied, 6, 0)) == 157
-    assert h.call(0x803E100C, (copied, 160, 0)) == 5
+    assert h.call(0x803E100C, (copied, 160, 0)) == level
     h.put(reference, old)
     return dict(
-        kind="native offline level-5 constructor proof",
+        kind=f"native offline level-{level} constructor proof",
         passed=True,
-        requested_set=plan(),
+        requested_set=requested,
         readback=result,
         allocation_sizes=sorted(set(allocations)),
         limits=[
@@ -144,6 +172,7 @@ def verify(capture, dol_path, common_path):
             "Name/model registry fields remain unresolved",
         ],
         released=False,
+        tested_rank=rank,
     )
 
 
@@ -151,7 +180,9 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     for name in ("capture", "dol", "common", "report"):
         parser.add_argument("--" + name, type=Path, required=True)
+    parser.add_argument("--rank", type=int, choices=range(1, 9))
+    parser.add_argument("--level", type=int, choices=(5, 50), default=5)
     args = parser.parse_args()
-    result = verify(args.capture, args.dol, args.common)
+    result = verify(args.capture, args.dol, args.common, args.rank, args.level)
     args.report.write_text(json.dumps(result, indent=2) + "\n")
     print(json.dumps(result, indent=2))

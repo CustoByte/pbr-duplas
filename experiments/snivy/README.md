@@ -1,5 +1,8 @@
 # Snivy: experimento isolado de registro
 
+Estado consolidado mais recente: [STATUS.md](STATUS.md). Os resultados
+abaixo registram etapas anteriores; não comprovam uma versão jogável.
+
 Base: RPBE01 USA revisão 0, publicação test13, commit
 `93d318a052b3f3b7d026d1bebab6783a04a1a195`.
 Este módulo não é importado pelo construtor das versões públicas.

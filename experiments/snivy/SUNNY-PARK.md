@@ -55,12 +55,12 @@ Resultados: `sunny-park-proof.json`. O conjunto **não foi inserido num
 pool de adversários como substituto de uma opção do jogador**. A seleção
 e migração da vaga efetiva do jogador ainda precisam ser implementadas.
 
-## Arquivo necessário para avançar com o pacote independente
+## Catálogo recebido e verificado
 
-É necessário o **GSfsys.toc original da ROM RPBE01**, encontrado na raiz
-do sistema de arquivos. O FST fornecido indica tamanho de 29.248 bytes.
-Esse catálogo associa identificadores globais a nomes de arquivos FSYS.
-O registro novo deve acrescentar o pacote Snivy e preservar os existentes.
+O **GSfsys.toc original da ROM RPBE01** foi recebido: 29.248 bytes,
+1.102 registros. `catalog.py` acrescenta `pkx_501.fsys` sob o ID livre
+`0x2000`, preservando os registros antigos e os bytes originais, exceto
+os campos de contagem e posição da nova tabela.
 
 A captura de memória contém uma instância GLLA desse catálogo, mas seus
 campos de nomes já são ponteiros absolutos e há outros campos preenchidos
@@ -68,8 +68,56 @@ durante o carregamento. Não é uma cópia confiável do arquivo original para
 gerar uma alteração distribuível com preservação byte a byte. Não foi usada
 para inventar um novo arquivo original ou um hash de entrada.
 
-No Mac: Dolphin → Propriedades de Pokémon Battle Revolution → Sistema
-de Arquivos → Partição de Dados → GSfsys.toc → Control+clique → Extrair.
+`verify_catalog.py` executou a busca USA real `8024c32c`: os 1.102 IDs
+anteriores e seus nomes foram preservados, o novo ID foi encontrado e
+um ID inexistente continuou retornando zero. A restauração do ponteiro
+original foi conferida. Isso não testa carregar/renderizar o arquivo novo.
+Resultado em `catalog-proof.json`. Não é necessário reenviar esse catálogo.
+
+## Passe solicitado e balanceamento
+
+O usuário escolheu **receber um Passe Little Battle pronto com Snivy**.
+O Little Battle original não empresta os Rental Passes iniciais de nível 50.
+A entrega deve escolher uma vaga pessoal vazia, preservar passes e Pokémon
+existentes e garantir seleção/uso/salvamento sem exigir uma conexão DS.
+A rotina de entrega ainda não está implementada.
+
+Os IVs 31 e 508 EVs acima são um fixture de estresse, não o balanceamento
+final. Foram conferidos os oito parâmetros de dificuldade do DOL USA:
+
+| Rank | IVs nativos | Orçamento total de EVs |
+| --- | --- | --- |
+| 1 | 1–6 | 1 |
+| 2 | 5–10 | 100 |
+| 3 | 9–14 | 200 |
+| 4 | 13–18 | 300 |
+| 5 | 17–22 | 400 |
+| 6 | 21–25 | 500 |
+| 7 | 24–28 | 510 |
+| 8 | 27–30 | 510 |
+
+`verify_sunny_park.py --rank N` verifica construção e cálculo de atributos
+com cada perfil nativo. Não modifica automaticamente o Pokémon do jogador
+conforme ele sobe de rank. O passe pronto precisa de um perfil fixo adequado
+ao início do torneio; não deve ganhar IVs/EVs a cada leitura ou batalha.
+
+## Segundo conjunto: Rental Pass inicial, nível 50
+
+O outro passe inicial é o Red/Cyndy, índice 37. A vaga 1 (base zero) contém
+**Charmeleon**, espécie 5, e será a vaga substituída. O Monferno modificado
+do passe 38 deve permanecer intacto.
+
+`starter_pass.py` prepara Timid, Overgrow, Lum Berry, Energy Ball, Glare,
+Leech Seed e Protect; IVs 31, EVs HP4/Speed252/SpAtk252. O teste nativo
+confirmou nível 50, experiência 117360, PP 10/30/10/10 e atributos sem bônus
+HP121/Atk58/Def75/Speed126/SpAtk97/SpDef75. São os atributos-base oficiais,
+sem inflar a espécie inteira ou afetar o Little Battle. O conjunto favorece
+Speed e suporte; não garante poder equivalente ao de espécies evoluídas.
+
+Resultado em `starter-pass-proof.json`. **Não é migração real do passe**:
+a substituição persistente, aparência shiny e bônus existentes ainda precisam
+ser integrados e verificados. Os retratos solicitados estão especificados em
+[PORTRAITS.md](PORTRAITS.md).
 
 ## Bloqueios de publicação
 

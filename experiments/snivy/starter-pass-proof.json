@@ -1,0 +1,119 @@
+{
+  "kind": "native offline level-50 constructor proof",
+  "passed": true,
+  "requested_set": {
+    "tournament": "Initial Red/Cyndy Rental Pass",
+    "level": 50,
+    "national_id": 495,
+    "provisional_internal_id": 501,
+    "nature": "Timid",
+    "ability": "Overgrow",
+    "item": "Lum Berry",
+    "moves": [
+      "Energy Ball",
+      "Glare",
+      "Leech Seed",
+      "Protect"
+    ],
+    "gen5_legal_sources": [
+      "TM53",
+      "egg",
+      "level 19",
+      "TM17"
+    ],
+    "ivs": [
+      31,
+      31,
+      31,
+      31,
+      31,
+      31
+    ],
+    "ev_order": "HP/Atk/Def/Speed/SpAtk/SpDef",
+    "evs": [
+      4,
+      0,
+      0,
+      252,
+      252,
+      0
+    ],
+    "original_species_replaced": false,
+    "requested_change": "Replace Charmeleon in the other initial Rental Pass",
+    "live_player_slot_selected": false,
+    "playable": false,
+    "ready_to_publish": false,
+    "training_policy": "Fixed level-50 special attacker/support set",
+    "target_pass_index": 37,
+    "target_slot_zero_based": 1,
+    "expected_original_species": 5,
+    "preserve_monferno_pass_index": 38,
+    "expected_unboosted_stats_hp_atk_def_speed_spatk_spdef": [
+      121,
+      58,
+      75,
+      126,
+      97,
+      75
+    ]
+  },
+  "readback": {
+    "species": 501,
+    "held_item": 157,
+    "ability": 65,
+    "pid": 2637307735,
+    "moves": [
+      412,
+      137,
+      73,
+      182
+    ],
+    "pp": [
+      10,
+      30,
+      10,
+      10
+    ],
+    "ivs": [
+      31,
+      31,
+      31,
+      31,
+      31,
+      31
+    ],
+    "evs": [
+      4,
+      0,
+      0,
+      252,
+      252,
+      0
+    ],
+    "experience": 117360,
+    "level": 50,
+    "stats_hp_atk_def_speed_spatk_spdef": [
+      121,
+      58,
+      75,
+      126,
+      97,
+      75
+    ],
+    "species_or_egg": 501
+  },
+  "allocation_sizes": [
+    32,
+    44,
+    164,
+    404
+  ],
+  "limits": [
+    "No model dispatch or render",
+    "No Little Battle player eligibility test",
+    "No roster migration, real save/load or Dolphin battle",
+    "Name/model registry fields remain unresolved"
+  ],
+  "released": false,
+  "tested_rank": null
+}
