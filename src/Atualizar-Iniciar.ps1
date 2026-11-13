@@ -22,6 +22,20 @@ function Download([string]$Source, [string]$Target, [int]$Timeout) {
 function FileHash([string]$Path) {
     return (Get-FileHash -LiteralPath $Path -Algorithm SHA256).Hash.ToLowerInvariant()
 }
+function Assert-PackageUrl([string]$Url) {
+    $uri = $null
+    if (-not [Uri]::TryCreate($Url, [UriKind]::Absolute, [ref]$uri) -or
+        $uri.Scheme -ne 'https' -or $uri.Port -ne 443 -or $uri.UserInfo -or $uri.Query -or $uri.Fragment) {
+        throw 'Endereco de pacote invalido.'
+    }
+    $release = $uri.Host -eq 'github.com' -and
+        $uri.AbsolutePath.StartsWith('/CustoByte/pbr-duplas/releases/download/', [StringComparison]::Ordinal)
+    # Tool/delta ZIPs can also be published in this repository. Keep the
+    # repository, immutable tag/commit, directory and filename constrained.
+    $repositoryZip = $uri.Host -eq 'raw.githubusercontent.com' -and
+        $uri.AbsolutePath -cmatch '^/CustoByte/pbr-duplas/(v[A-Za-z0-9._-]+|[a-f0-9]{40})/expansion/packages/[A-Za-z0-9._-]+/aplicador-core\.zip$'
+    if (-not ($release -or $repositoryZip)) { throw 'Pacote fora do repositorio autorizado.' }
+}
 function Validate-Zip([string]$Path, [string]$Destination) {
     Add-Type -AssemblyName System.IO.Compression.FileSystem
     $zip = [IO.Compression.ZipFile]::OpenRead($Path)
@@ -54,10 +68,7 @@ try {
         if ($feed.schema -ne 1 -or $feed.package_sha256 -notmatch '^[a-f0-9]{64}$') { throw 'Manifesto de atualizacao incompativel.' }
         $url = [string]$feed.package_url
         if ($url.StartsWith('https://')) {
-            $uri = [Uri]$url
-            if ($uri.Host -ne 'github.com' -or -not $uri.AbsolutePath.StartsWith('/CustoByte/pbr-duplas/releases/download/')) {
-                throw 'Pacote fora do repositorio autorizado.'
-            }
+            Assert-PackageUrl $url
         } elseif (-not $NoGui) { throw 'Endereco de pacote invalido.' }
         $package = Join-Path $cache ($feed.package_sha256 + '.zip')
         if (-not (Test-Path -LiteralPath $package) -or (FileHash $package) -ne $feed.package_sha256) {
