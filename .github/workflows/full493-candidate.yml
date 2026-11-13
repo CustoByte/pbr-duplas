@@ -19,15 +19,19 @@ jobs:
         run: python3 expansion/test_delta_update.py
       - name: Package source-dependent delta candidate
         run: python3 expansion/package_release.py --output /tmp/full493-release
+      - name: Verify translation terminology and protected fields
+        env:
+          PYTHONPATH: expansion:mod-source
+        run: python3 -m unittest translation.test_lot5000 -v
       - name: Confirm feed matches reproducible core
         run: cmp expansion/update-test.json /tmp/full493-release/update.json
       - name: Publish test release without changing stable
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          tag=v0.11.0-full493-test.9
+          tag=v0.11.0-full493-test.10
           if gh release view "$tag" --repo "$GITHUB_REPOSITORY" >/dev/null 2>&1; then
             gh release upload "$tag" /tmp/full493-release/* --repo "$GITHUB_REPOSITORY" --clobber
           else
-            gh release create "$tag" /tmp/full493-release/* --repo "$GITHUB_REPOSITORY" --prerelease --latest=false --target "$GITHUB_SHA" --title 'PBR — 2.007 textos, efeitos e status em portugues (teste 9)' --notes-file expansion/RELEASE-NOTES.md
+            gh release create "$tag" /tmp/full493-release/* --repo "$GITHUB_REPOSITORY" --prerelease --latest=false --target "$GITHUB_SHA" --title 'PBR — 5.000 textos novos dentro e fora das batalhas (teste 10)' --notes-file expansion/RELEASE-NOTES.md
           fi

@@ -20,6 +20,7 @@ def prepare(archive, approval_path=None, trainer_names=False):
     rows = list(original)
     changed = set()
     approved_sources = {}
+    all_sources = {}
     for batch in approval['batches']:
         if batch['status'] not in ('approved-by-user', 'approved-by-user-delegation'):
             continue
@@ -27,15 +28,18 @@ def prepare(archive, approval_path=None, trainer_names=False):
             for index in entry['ids']:
                 if index in changed:
                     raise ValueError('Duplicate translation ID')
-                target = compatible(entry['target'], entry.get('protected_names', []))
+                target = (entry['target'] if entry.get('glyph_policy') == 'prepared-ascii-with-original-names'
+                          else compatible(entry['target'], entry.get('protected_names', [])))
                 for name in entry.get('protected_names', []):
                     if readable(original[index]).count(name) != target.count(name):
                         raise ValueError('A protected name was changed')
                 rows[index] = validate_target(original[index], target)
-                previous = approved_sources.get(original[index])
+                previous = all_sources.get(original[index])
                 if previous and previous[1] != rows[index]:
                     raise ValueError('Identical source phrases have conflicting approved translations')
-                approved_sources.setdefault(original[index], (index, rows[index]))
+                all_sources.setdefault(original[index], (index, rows[index]))
+                if batch.get('propagate_exact_duplicates', True):
+                    approved_sources.setdefault(original[index], (index, rows[index]))
                 changed.add(index)
     # An approved phrase also covers exact repetitions of its original bytes,
     # including identical font, parameters, pauses and line layout. No fuzzy

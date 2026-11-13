@@ -30942,6 +30942,5670 @@
           "layout_reference_id": 10
         }
       ]
+    },
+    {
+      "batch": 14,
+      "status": "approved-by-user-delegation",
+      "category": "full-game-lot-5000",
+      "propagate_exact_duplicates": false,
+      "entries": [
+        {
+          "ids": [
+            976
+          ],
+          "target": "{F006}{F101}Estou melhorando minha\nhabilidade bem rapido!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            977
+          ],
+          "target": "{F006}{F101}Minha habilidade esta\nmelhorando devagar?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            979
+          ],
+          "target": "{F006}{F101}Estou pegando o jeito!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            980
+          ],
+          "target": "{F006}{F101}Acho que ainda nao\npeguei o jeito.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            991
+          ],
+          "target": "{F006}{F101}Viu a forca do meu amor?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            992
+          ],
+          "target": "{F006}{F101}Mesmo perdendo, amo\nestes Pokémon!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            998
+          ],
+          "target": "{F006}{F101}Uma derrota\nesmagadora!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1003
+          ],
+          "target": "{F006}{F101}Ceu azul! Digo, uma\nvitoria clara!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1004
+          ],
+          "target": "{F006}{F101}Ah, nao! Parece que vai\nchover!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1007
+          ],
+          "target": "{F006}{F101}E dificil sem um rival\nfavoravel!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1013
+          ],
+          "target": "{F006}{F101}Como voce fez meu ritmo\nparar?!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1016
+          ],
+          "target": "{F006}{F101}Uau! Voce lutou de forma\neletrizante!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1017
+          ],
+          "target": "{F006}{F101}Quer se sujar de grama?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1021
+          ],
+          "target": "{F006}{F101}Pensar com calma sempre\ntraz vitorias!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1022
+          ],
+          "target": "{F006}{F101}Snif! Me empolguei\ndemais!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1024
+          ],
+          "target": "{F006}{F101}Meu espirito e firme! Nao\nposso perder!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1025
+          ],
+          "target": "{F006}{F101}Seu espirito de luta era\nmais forte?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1026
+          ],
+          "target": "{F006}{F101}O veneno goteja\ndevagar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1033
+          ],
+          "target": "{F006}{F101}Viva! Sinto que posso\nvoar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1034
+          ],
+          "target": "{F006}{F101}Droga! Me empolguei\ndemais!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1035
+          ],
+          "target": "{F006}{F101}Consegue igualar minha\nhabilidade?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1036
+          ],
+          "target": "{F006}{F101}Batalhas se vencem com o\ncoracao!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1038
+          ],
+          "target": "{F006}{F101}Adoro os Pokémon\nInseto!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1039
+          ],
+          "target": "{F006}{F101}Nunca me canso dos\nPokémon Inseto!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1040
+          ],
+          "target": "{F006}{F101}Ainda adoro os Pokémon\nInseto!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1042
+          ],
+          "target": "{F006}{F101}Meu rock derrubou voce?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1043
+          ],
+          "target": "{F006}{F101}Este solo nao e a rocha\nque pensei.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1046
+          ],
+          "target": "{F006}{F101}Nem acredito! Voce leu\nminha mente!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1048
+          ],
+          "target": "{F006}{F101}Minha coragem assustou\nvoce?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1049
+          ],
+          "target": "{F006}{F101}Odeio admitir, mas voce\ntem coragem!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1050
+          ],
+          "target": "{F006}{F101}Nao fique bravo quando\neu vencer!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1051
+          ],
+          "target": "{F006}{F101}Hehe! Como eu esperava!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1052
+          ],
+          "target": "{F006}{F101}Baixei a guarda! Que\nraiva!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1055
+          ],
+          "target": "{F006}{F101}Por que?! Nao pode ser!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1063
+          ],
+          "target": "{F006}{F101}Hum! Achou que ia me\nvencer?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1064
+          ],
+          "target": "{F006}{F101}Voce me venceu! Nao vou\nesquecer!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1069
+          ],
+          "target": "{F006}{F101}Venci porque lembrei das\nlicoes!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1070
+          ],
+          "target": "{F006}{F101}Por que? Fiz o que me\nensinaram!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1073
+          ],
+          "target": "{F006}{F101}O nervosismo limitou\nminha forca!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1075
+          ],
+          "target": "{F006}{F101}As batalhas vao evoluir\nno futuro!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1076
+          ],
+          "target": "{F006}{F101}Meu novo visual nao\nbastou!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1078
+          ],
+          "target": "{F006}{F101}Pokémon vao evoluir no\nfuturo?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1079
+          ],
+          "target": "{F006}{F101}Perdi por so pensar no\nfuturo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1081
+          ],
+          "target": "{F006}{F101}Sou como PACHIRISU:\nbeleza e forca!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1082
+          ],
+          "target": "{F006}{F101}PACHIRISU tem beleza e\nforca!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1085
+          ],
+          "target": "{F006}{F101}Como vou encarar\nPIKACHU?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1087
+          ],
+          "target": "{F006}{F101}Meu senso de moda me fez\nvencer!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1090
+          ],
+          "target": "{F006}{F101}Vermelho e branco dao\nsorte!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1091
+          ],
+          "target": "{F006}{F101}Vermelho e branco nao\ndavam sorte?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1094
+          ],
+          "target": "{F006}{F101}Ate com coragem se pode\nperder!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1097
+          ],
+          "target": "{F006}{F101}A correnteza estava a\nseu favor?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1107
+          ],
+          "target": "{F006}{F101}Quer ver um verdadeiro\ncampeao?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1108
+          ],
+          "target": "{F006}{F101}Viu? Dignidade de\ncampeao!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1110
+          ],
+          "target": "{F006}{F101}Estrelas fazem assim!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1111
+          ],
+          "target": "{F006}{F101}Gostou de lutar com uma\nestrela?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            1112
+          ],
+          "target": "{F006}{F101}Mesmo perdendo,\ncontinuo uma estrela.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3835
+          ],
+          "target": "{F000}{F101}{0003:0002}Usar {0016} em qual Pokémon?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3840
+          ],
+          "target": "{F000}{F101}{001D} ja esta na batalha.{000D}",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3841
+          ],
+          "target": "{F000}{F101}{001D} nao tem mais energia para\na batalha!{000D}",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3842
+          ],
+          "target": "{F000}{F101}{001D} ja foi selecionado.{000D}",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3845
+          ],
+          "target": "{F000}{F101}{0015} nao tem\nmais golpes!{000D}",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3846
+          ],
+          "target": "{F000}{F101}Este golpe esta sem PP!{000D}",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3847
+          ],
+          "target": "{F000}{F101}{0003:0002}Voce quer ceder?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3848
+          ],
+          "target": "{F000}{F101}{0003:0002}Placar das rodadas",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3885
+          ],
+          "target": "{F000}{F101}{001D} nao pode ser desligado!{000D}",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3908
+          ],
+          "target": "{F006}{F101}Vou te mostrar minhas\nhabilidades de batalha!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3909
+          ],
+          "target": "{F006}{F101}Nao e facil vencer um mestre\ncomo eu!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3910
+          ],
+          "target": "{F006}{F101}Tive um mau pressentimento\nsobre isso...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3915
+          ],
+          "target": "{F006}{F101}Existe uma maneira real de usar\nitens.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3917
+          ],
+          "target": "{F006}{F101}O que achou do meu uso sabio dos\nitens?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3918
+          ],
+          "target": "{F006}{F101}Uau! Concentrei-me\ndemais na estrategia!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3924
+          ],
+          "target": "{F006}{F101}Foi isso que me trouxe\nate aqui!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3926
+          ],
+          "target": "{F006}{F101}Ser mais forte nao e motivo de\narrogancia!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3931
+          ],
+          "target": "{F006}{F101}Olhe para este grupo\nmajestoso!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3933
+          ],
+          "target": "{F006}{F101}Seus ataques nem sequer\nos arranharam!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3934
+          ],
+          "target": "{F006}{F101}Como voce pode\nvence-los...?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3937
+          ],
+          "target": "{F006}{F101}Entao, como foi a sua\nmagnifica festa?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3938
+          ],
+          "target": "{F006}{F101}Depois da festa que fiz, e assim\nque me paga?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3942
+          ],
+          "target": "{F006}{F101}Ah, nao! Minha\nestrategia era tao boa!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3947
+          ],
+          "target": "{F006}{F101}Voce entende as taticas de\nbatalha?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3949
+          ],
+          "target": "{F006}{F101}Voce nao pode me vencer\nsem taticas adequadas!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3950
+          ],
+          "target": "{F006}{F101}Eu perdi. Voce realmente sabe\nlutar.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3957
+          ],
+          "target": "{F006}{F101}Voce foi enganado pela minha\nbeleza?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3958
+          ],
+          "target": "{F006}{F101}Voce nao entende minha beleza!?\nQue chato!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3963
+          ],
+          "target": "{F006}{F101}Oh, voce esta sentindo a\npressao?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3965
+          ],
+          "target": "{F006}{F101}Nao guarde rancor por essa\nperda!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3966
+          ],
+          "target": "{F006}{F101}Voce me venceu! Mas eu vou te\nassombrar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3967
+          ],
+          "target": "{F006}{F101}Ouvi dizer que e seu\naniversario!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3969
+          ],
+          "target": "{F006}{F101}Nao fique nervoso na\nminha frente!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3970
+          ],
+          "target": "{F006}{F101}E assim que retribui\nminha gentileza?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3971
+          ],
+          "target": "{F006}{F101}Tenho certeza que posso\nvencer!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3973
+          ],
+          "target": "{F006}{F101}Sempre digo a mim mesmo que posso\nvencer!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3974
+          ],
+          "target": "{F006}{F101}Fiquei consumido pela nocao de\nque voce poderia ser forte...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3979
+          ],
+          "target": "{F006}{F101}Lutaremos com trabalho\nem equipe!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3981
+          ],
+          "target": "{F006}{F101}Sim! Temos o espirito de luta!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3982
+          ],
+          "target": "{F006}{F101}Nosso trabalho em equipe\nesta quebrado!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3987
+          ],
+          "target": "{F006}{F101}O que voce quer com a familia de\nKruger?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3988
+          ],
+          "target": "{F006}{F101}Momento perfeito. Eu vou\nlutar com voce!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3990
+          ],
+          "target": "{F006}{F101}Rrrgh... quero quebrar\nalguma coisa!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3995
+          ],
+          "target": "{F006}{F101}Nao vou largar minha\npresa...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3997
+          ],
+          "target": "{F006}{F101}Explorar fraquezas e meu segredo\npara vencer!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3998
+          ],
+          "target": "{F006}{F101}Nao acredito que deixei minha\npresa ir.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4001
+          ],
+          "target": "{F006}{F101}Humph. Voce e tao jovem que ainda\nfica animado com seu aniversario?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4002
+          ],
+          "target": "{F006}{F101}Voce nao deveria se divertir\nmuito. Voce vai perder!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4003
+          ],
+          "target": "{F006}{F101}Tente encontrar minha\nfraqueza!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4005
+          ],
+          "target": "{F006}{F101}Hum! Eu treinei para superar\nminhas fraquezas!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4006
+          ],
+          "target": "{F006}{F101}Achei que superei minhas\nfraquezas!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4011
+          ],
+          "target": "{F006}{F101}Quao alto voce pode treinar suas\nestatisticas?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4013
+          ],
+          "target": "{F006}{F101}Em termos de estatisticas, fui\nmelhor!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4014
+          ],
+          "target": "{F006}{F101}Achei que nossas estatisticas\neram iguais!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4021
+          ],
+          "target": "{F006}{F101}Entao, voce provavelmente\nnao sabe por que perdeu?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4022
+          ],
+          "target": "{F006}{F101}Por que eu perdi...? E\nmagico!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4027
+          ],
+          "target": "{F006}{F101}Entao voce quer uma batalha\nlendaria...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4031
+          ],
+          "target": "{F006}{F101}Nao importa quanto voce\nenvelhece...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4033
+          ],
+          "target": "{F006}{F101}Voce ainda e muito\njovem...!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4035
+          ],
+          "target": "{F006}{F101}Isso esta ficando dificil\npara voce?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4036
+          ],
+          "target": "{F006}{F101}Eu nao vou pegar leve com\nvoce!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4037
+          ],
+          "target": "{F006}{F101}Perdeu aqui? Ainda tem muito a\naprender!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4044
+          ],
+          "target": "{F006}{F101}...Somos todos grandes e\nfortes!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4045
+          ],
+          "target": "{F006}{F101}Sim! Isso e o que eu\nesperava do meu Pokémon!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4046
+          ],
+          "target": "{F006}{F101}Isso nao pode ser verdade!! Como\nmeu Pokémon poderia perder?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4051
+          ],
+          "target": "{F006}{F101}Tanto Pokémon quanto\ntreinadores...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4053
+          ],
+          "target": "{F006}{F101}Hmm... estou evoluindo\nrapidamente!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4054
+          ],
+          "target": "{F006}{F101}Pokémon sao os unicos\nque evoluem!?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4059
+          ],
+          "target": "{F006}{F101}Estes sao meus parceiros mais\nfortes!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4061
+          ],
+          "target": "{F006}{F101}Como esperado dos meus\nparceiros! Bom trabalho!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4062
+          ],
+          "target": "{F006}{F101}Nem eles vencem... Esse e\nnosso nivel...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4063
+          ],
+          "target": "{F006}{F101}Vamos comemorar seu\naniversario!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4064
+          ],
+          "target": "{F006}{F101}Vou apresentar meus\nparceiros!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4065
+          ],
+          "target": "{F006}{F101}Como esta sua parceria com\nseu Pokémon?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4066
+          ],
+          "target": "{F006}{F101}A parceria entre voce e seu\nPokémon e perfeita!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4069
+          ],
+          "target": "{F006}{F101}Nesse nivel, seu sonho sera\nso um sonho!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4070
+          ],
+          "target": "{F006}{F101}Eu perdi!?! Deve ser um\nsonho ruim!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4077
+          ],
+          "target": "{F006}{F101}As vezes voce nao deve ler\nmuito sobre as coisas!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4078
+          ],
+          "target": "{F006}{F101}Voce leu totalmente minha\nmente...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4083
+          ],
+          "target": "{F006}{F101}Que tipo de movimentos voce\ntem?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4085
+          ],
+          "target": "{F006}{F101}Nao tema: use os golpes do rival a\nseu favor!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4086
+          ],
+          "target": "{F006}{F101}Aprendi muito com sua habilidade!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4091
+          ],
+          "target": "{F006}{F101}Me pergunto quanto tempo voce\nconsegue aguentar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4092
+          ],
+          "target": "{F006}{F101}Eu nao vou pegar leve com\nvoce!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4093
+          ],
+          "target": "{F006}{F101}Ah, voce e muito duro consigo\nmesmo. Que chato!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4094
+          ],
+          "target": "{F006}{F101}Voce suportou bem. Eu te\nelogio!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4095
+          ],
+          "target": "{F006}{F101}Vou te ensinar isso no seu\naniversario!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4096
+          ],
+          "target": "{F006}{F101}A responsabilidade de\nser adulto!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4097
+          ],
+          "target": "{F006}{F101}Voce deve ser responsavel\npelo seu proprio plano!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4098
+          ],
+          "target": "{F006}{F101}Eu perdi... Mas a culpa e\nminha...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4099
+          ],
+          "target": "{F006}{F101}Dizem que grandes movimentos nao\nsao precisos.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4100
+          ],
+          "target": "{F006}{F101}Voce nao deveria me\nvender a descoberto!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4107
+          ],
+          "target": "{F006}{F101}Vou usar um peso\nsuperpesado!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4109
+          ],
+          "target": "{F006}{F101}Voce ficou intimidado pelo nosso\npoder!?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4117
+          ],
+          "target": "{F006}{F101}Me preocupei no comeco,\nmas nem precisava.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4118
+          ],
+          "target": "{F006}{F101}Acho que estava muito\nanimado!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4125
+          ],
+          "target": "{F006}{F101}Nao pode me vencer. Nao\nfique frustrado!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4127
+          ],
+          "target": "{F006}{F101}Este aniversario voce nunca\nesquecera!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4129
+          ],
+          "target": "{F006}{F101}Voce deve refletir sobre\nsua inexperiencia.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4130
+          ],
+          "target": "{F006}{F101}Hmm... Nunca se esqueca\ndessa determinacao!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4131
+          ],
+          "target": "{F006}{F101}Vamos ter uma batalha\ndecisiva!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4133
+          ],
+          "target": "{F006}{F101}Voce congelou porque eu\nera muito forte?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4134
+          ],
+          "target": "{F006}{F101}Eu nao posso acreditar o quao\nforte voce e! Estou com arrepios!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4139
+          ],
+          "target": "{F006}{F101}Posso ouvir os aplausos\nagora.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4141
+          ],
+          "target": "{F006}{F101}Este e um agradavel rugido de\nlouvor! Nada e impossivel!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4142
+          ],
+          "target": "{F006}{F101}Esses aplausos sao todos\nseus...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4148
+          ],
+          "target": "{F006}{F101}E por isso que lutar e\ndivertido!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4149
+          ],
+          "target": "{F006}{F101}Nao vacile, aconteca o\nque acontecer!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4150
+          ],
+          "target": "{F006}{F101}Que bobagem da minha parte...\neu vacilei...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4157
+          ],
+          "target": "{F006}{F101}Sera que algum dia alguem\nvai me superar?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4158
+          ],
+          "target": "{F006}{F101}Bravo! O inicio de uma nova\nlenda!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4159
+          ],
+          "target": "{F006}{F101}A cada ano, voce\nenvelhecera.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4160
+          ],
+          "target": "{F006}{F101}Voce esta perto de se\ntornar uma lenda.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4161
+          ],
+          "target": "{F006}{F101}Voce ainda e jovem. Nao desista.\nPor favor, volte novamente.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4162
+          ],
+          "target": "{F006}{F101}Bravo! Aguardo seu progresso!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4164
+          ],
+          "target": "{F006}{F101}Tudo bem, vamos nos\ndivertir!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4165
+          ],
+          "target": "{F006}{F101}Nao leve a serio. Batalhar e\ndiversao!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4166
+          ],
+          "target": "{F006}{F101}O que...!? ...Bem... Entao,\nvoce se divertiu?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4167
+          ],
+          "target": "{F006}{F101}As batalhas sao o espetaculo\nfinal!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4169
+          ],
+          "target": "{F006}{F101}E so para mostrar, mas vou com tudo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4170
+          ],
+          "target": "{F006}{F101}Voce...! Isto e apenas para\nmostrar! Hum...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4171
+          ],
+          "target": "{F006}{F101}As batalhas sao puro\nentretenimento!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4174
+          ],
+          "target": "{F006}{F101}E divertido para voce, mas nao\npara mim!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4176
+          ],
+          "target": "{F006}{F101}Eu sei que posso fazer\nmelhor que isso!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4177
+          ],
+          "target": "{F006}{F101}Ah! Eu me interessei demais. Desculpe\npor isso!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4178
+          ],
+          "target": "{F006}{F101}Ah! Eu me interessei demais. Ainda nao e\nhora.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4179
+          ],
+          "target": "{F006}{F101}Ouvi dizer que e seu\naniversario!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4180
+          ],
+          "target": "{F006}{F101}Vamos aumentar isso no\nseu dia especial!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4181
+          ],
+          "target": "{F006}{F101}Ah... uau! Desculpe! Eu fui e bati em\nvoce no seu aniversario!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4182
+          ],
+          "target": "{F006}{F101}Nao fique todo arrogante so\nporque e seu aniversario!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4183
+          ],
+          "target": "{F006}{F101}Pokétopia... Qual e a \"topia\"?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4185
+          ],
+          "target": "{F006}{F101}Hahaha! Eu nao estou te\ncontando!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4186
+          ],
+          "target": "{F006}{F101}O paraiso de um Pokémon. Uma\nutopia!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4201
+          ],
+          "target": "{F006}{F101}Eu te direi se voce conseguir\nme vencer!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4202
+          ],
+          "target": "{F006}{F101}E tudo sobre BUIZEL e MANTYKE!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4215
+          ],
+          "target": "{F006}{F101}Embora eu goste muito de\nPIKACHU...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4216
+          ],
+          "target": "{F006}{F101}...Posso usar outro\nPokémon tambem!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4217
+          ],
+          "target": "{F006}{F101}Nao faca bico. Parece um\nPIKACHU!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4231
+          ],
+          "target": "{F006}{F101}Se voce me vencer 10\nvezes...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4233
+          ],
+          "target": "{F006}{F101}Hahaha. Sinto muito, mas isso foi por\npouco.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4234
+          ],
+          "target": "{F006}{F101}Mesmo voce me vencendo,\nnao foi sua estreia...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4247
+          ],
+          "target": "{F006}{F101}Esta e realmente uma terra cheia\nde maravilhas!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4249
+          ],
+          "target": "{F006}{F101}Minhas batalhas tambem sao\ncheias de admiracao e espanto!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4263
+          ],
+          "target": "{F006}{F101}Um Coliseu flutuando na agua...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4265
+          ],
+          "target": "{F006}{F101}Aposto que aquela batalha deixou\nvoce tonto!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4266
+          ],
+          "target": "{F006}{F101}Isso me deixou um pouco tonto...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4279
+          ],
+          "target": "{F006}{F101}Acabei de caminhar pela ilha!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4281
+          ],
+          "target": "{F006}{F101}Claro que e otimo vencer uma\nbatalha, nao acha?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4298
+          ],
+          "target": "{F006}{F101}So nao estou pronto para o\nfuturo...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4328
+          ],
+          "target": "{F006}{F101}Vou mandar voce para as\nprofundezas escuras!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4343
+          ],
+          "target": "{F006}{F101}Este com certeza e um lugar\nbonito.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4344
+          ],
+          "target": "{F006}{F101}Um lugar perfeito para\nfugir!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4346
+          ],
+          "target": "{F006}{F101}Isso com certeza nao me afastou de tudo.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4391
+          ],
+          "target": "{F006}{F101}Nos somos os irmaos\nlutadores!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4392
+          ],
+          "target": "{F006}{F101}O irmao mais velho ataca\nprimeiro!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4407
+          ],
+          "target": "{F006}{F101}As tres irmas fantasmas estao\naqui!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4410
+          ],
+          "target": "{F006}{F101}Eu vou te vencer na\nproxima vez!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4424
+          ],
+          "target": "{F006}{F101}Estou tao perdido! O que\neu faco?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4455
+          ],
+          "target": "{F006}{F101}Eu simplesmente decidi\npassar por aqui...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4456
+          ],
+          "target": "{F006}{F101}Este lugar e divertido!\nEsta se divertindo?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4458
+          ],
+          "target": "{F006}{F101}Talvez eu faca outra jornada agora.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4489
+          ],
+          "target": "{F006}{F101}Humph! Voce nao\nconsegue nem responder!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4490
+          ],
+          "target": "{F006}{F101}Entao fui eu quem levou uma\nsurra!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4521
+          ],
+          "target": "{F006}{F101}Viva! Otimo trabalho,\npessoal!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4522
+          ],
+          "target": "{F006}{F101}Ah, nao... Perdemos.\nDesculpe, pessoal.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4537
+          ],
+          "target": "{F006}{F101}Deixe chover! Essa\nchuva foi uma bencao!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4551
+          ],
+          "target": "{F006}{F101}Eu apenas gosto de ser normal e\nme encaixar.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4553
+          ],
+          "target": "{F006}{F101}Acabei de mostrar o poder\ndo Pokémon do tipo Normal!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4554
+          ],
+          "target": "{F006}{F101}Nao importa se eu perder...\nainda serei normal... Certo?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4568
+          ],
+          "target": "{F006}{F101}Espero que voce goste da\nsua batalha!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4570
+          ],
+          "target": "{F006}{F101}Ah nao, eu perdi. Mas foi\ndivertido!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4573
+          ],
+          "target": "{F006}{F101}Toda aquela atencao do publico\ndeixou voce nervoso?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4574
+          ],
+          "target": "{F006}{F101}Parece que fiquei um pouco nervoso.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4579
+          ],
+          "target": "{F006}{F101}Voce gosta do meu rabo? Nao e\nfofo?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4581
+          ],
+          "target": "{F006}{F101}Quero uma batalha fofa e focada!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4582
+          ],
+          "target": "{F006}{F101}Acho que estava muito distraido com meu\nrabo...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4585
+          ],
+          "target": "{F006}{F101}Eu ganhei! Mas feliz aniversario\nde qualquer maneira!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4586
+          ],
+          "target": "{F006}{F101}Eu preciso ficar maior e mais forte\ntambem!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4587
+          ],
+          "target": "{F006}{F101}O edificio mais a esquerda em\nPokétopia...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4589
+          ],
+          "target": "{F006}{F101}Eu te direi se voce conseguir\nme vencer!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4590
+          ],
+          "target": "{F006}{F101}A resposta e REGIGIGAS!\nProcure!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4604
+          ],
+          "target": "{F006}{F101}E em breve serei o Lider\ndo Coliseu!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4605
+          ],
+          "target": "{F006}{F101}Sim! Voce ve isso? Tao\nsuave!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4619
+          ],
+          "target": "{F006}{F101}Estou no \"Fa Clube PIKACHU\"!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4620
+          ],
+          "target": "{F006}{F101}Voce se juntara a nos\npara amar PIKACHU?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4622
+          ],
+          "target": "{F006}{F101}O que? Voce nao quer\nparticipar?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4635
+          ],
+          "target": "{F006}{F101}Sou tao solido quanto um\nMaster Ball!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4636
+          ],
+          "target": "{F006}{F101}Eu vou ganhar isso! Nao\nduvide de mim!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4638
+          ],
+          "target": "{F006}{F101}Urgh! Ainda ha muito que\naprender.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4651
+          ],
+          "target": "{F006}{F101}Pokétopia esta cheio de\nmisterios!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4683
+          ],
+          "target": "{F006}{F101}Eu treino caminhando por\ntodos os lugares!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4685
+          ],
+          "target": "{F006}{F101}Eu sabia! Meu treino diario valeu a\npena!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4700
+          ],
+          "target": "{F006}{F101}Tenho 100% de certeza\nque vou ganhar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4715
+          ],
+          "target": "{F006}{F101}Estou na estrada ha muito\ntempo.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4716
+          ],
+          "target": "{F006}{F101}Esta e minha primeira\nbatalha em algum tempo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4731
+          ],
+          "target": "{F006}{F101}Voce gostou da minha roupa\nmais nova?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4733
+          ],
+          "target": "{F006}{F101}Se a roupa te assustou, entao nao\nhavia como voce ter vencido!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4747
+          ],
+          "target": "{F006}{F101}Hoje esta perfeito para um\npiquenique!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4749
+          ],
+          "target": "{F006}{F101}Tambem foi o dia perfeito para uma\nbatalha!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4750
+          ],
+          "target": "{F006}{F101}Acho que nao era o dia certo\npara uma batalha...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4765
+          ],
+          "target": "{F006}{F101}Somos gemeos e estamos\notimos!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4766
+          ],
+          "target": "{F006}{F101}Nao somos bons o suficiente\nsozinhos!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4782
+          ],
+          "target": "{F006}{F101}Dois de nos fazemos um\nhomem.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4795
+          ],
+          "target": "{F006}{F101}Os irmaos lutadores\ngovernam!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4797
+          ],
+          "target": "{F006}{F101}Sou o mais novo, mas o mais forte!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4811
+          ],
+          "target": "{F006}{F101}Vaia! Somos as tres irmas\nfantasmas!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4814
+          ],
+          "target": "{F006}{F101}Eep! Minhas irmas vao ficar com raiva!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4827
+          ],
+          "target": "{F006}{F101}Estou aproveitando\nminha juventude!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4829
+          ],
+          "target": "{F006}{F101}Hum. O doce sabor da vitoria e\ndo amor...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4830
+          ],
+          "target": "{F006}{F101}O fracasso faz parte da\njuventude...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4859
+          ],
+          "target": "{F006}{F101}E melhor voce levar isso a serio!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4862
+          ],
+          "target": "{F006}{F101}Eu perdi...? Mas... eu\nfiz tudo...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4878
+          ],
+          "target": "{F006}{F101}Perdi... vou ganhar na\nproxima!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4892
+          ],
+          "target": "{F006}{F101}Voce vera o quao forte\neu realmente sou!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4893
+          ],
+          "target": "{F006}{F101}Ver! Eu disse que eu era\nforte!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4894
+          ],
+          "target": "{F006}{F101}Nao acredito que perdi... O\nmundo e um lugar tao grande.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4907
+          ],
+          "target": "{F006}{F101}Vamos aproveitar esta\nbatalha!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4909
+          ],
+          "target": "{F006}{F101}Essa foi uma grande\nbatalha!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4910
+          ],
+          "target": "{F006}{F101}Perdi... Mas pelo menos me\ndiverti!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4925
+          ],
+          "target": "{F006}{F101}Muito bem! Todos voces\nse sairam muito bem!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4926
+          ],
+          "target": "{F006}{F101}Eu... eu nao estou\nchateado...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4939
+          ],
+          "target": "{F006}{F101}Minha sorte diz que vou\nvencer!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4955
+          ],
+          "target": "{F006}{F101}Meu poder esta nas coisas\nnormais.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4957
+          ],
+          "target": "{F006}{F101}A potencia normal nao e tao\nnormal!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4958
+          ],
+          "target": "{F006}{F101}Talvez meu poder fosse\nsimplesmente normal, afinal...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4971
+          ],
+          "target": "{F006}{F101}Um majestoso Coliseu, nao e?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4974
+          ],
+          "target": "{F006}{F101}Acho que preciso de mais\ntreinamento...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4979
+          ],
+          "target": "{F006}{F101}Eu sou um treinador de alto\ncalibre!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4980
+          ],
+          "target": "{F006}{F101}Va em direcao ao seu\nobjetivo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4981
+          ],
+          "target": "{F006}{F101}Estou constantemente\nalcancando meu objetivo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4982
+          ],
+          "target": "{F006}{F101}Hmmm... Ainda falta muito...\nate atingir meu objetivo.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4983
+          ],
+          "target": "{F006}{F101}Eu treino em uma mountain\nbike!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4985
+          ],
+          "target": "{F006}{F101}Voce esta fora de forma!\nVoce deve treinar mais!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4987
+          ],
+          "target": "{F006}{F101}Ouvi dizer que e seu\naniversario!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4988
+          ],
+          "target": "{F006}{F101}Eu nao estou pegando\nleve com voce!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4989
+          ],
+          "target": "{F006}{F101}Desculpe, eu ganhei! Mas feliz\naniversario!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4990
+          ],
+          "target": "{F006}{F101}Hmm... odeio aceitar a derrota,\nmas acho que hoje e o \"seu\" dia.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5008
+          ],
+          "target": "{F006}{F101}Meu objetivo e ser um\nLider do Coliseu!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5009
+          ],
+          "target": "{F006}{F101}Estou um passo mais perto do meu\nsonho!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5010
+          ],
+          "target": "{F006}{F101}O caminho para se tornar um\nLider do Coliseu e dificil...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5040
+          ],
+          "target": "{F006}{F101}Parece que teremos uma\nboa batalha!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5041
+          ],
+          "target": "{F006}{F101}Quero colocar esse ar e agua\nem uma bola e levar para casa!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5055
+          ],
+          "target": "{F006}{F101}Nos somos os exploradores\nda ilha!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5057
+          ],
+          "target": "{F006}{F101}Esta batalha sob as cataratas e a\nmaior!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5058
+          ],
+          "target": "{F006}{F101}Explorar demais me deixou\nfraco!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5071
+          ],
+          "target": "{F006}{F101}Voce poderia nadar ate as\ncataratas?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5074
+          ],
+          "target": "{F006}{F101}Que pena! Vou sentar embaixo\ndas cachoeiras para me punir!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5088
+          ],
+          "target": "{F006}{F101}Vamos ter uma batalha\nrefrescante!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5090
+          ],
+          "target": "{F006}{F101}Acho que vou admirar a vista...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5104
+          ],
+          "target": "{F006}{F101}Deviamos ser amigos da\ntopia!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5105
+          ],
+          "target": "{F006}{F101}Agora somos amigos\nPokétopia, 'amigo topia!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5106
+          ],
+          "target": "{F006}{F101}Voce nao quer ser meu amigo\nPokétopia, 'amigo topia?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5153
+          ],
+          "target": "{F006}{F101}Voce estava perto! Isso\nfoi muito bom!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5167
+          ],
+          "target": "{F006}{F101}Voce pode derrotar os gemeos mais\nfortes?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5169
+          ],
+          "target": "{F006}{F101}Sim, Tiera! Nos SOMOS os\nmelhores!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5183
+          ],
+          "target": "{F006}{F101}Voce pode derrotar os gemeos mais\nfortes?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5185
+          ],
+          "target": "{F006}{F101}Sim, Tiana! Nos SOMOS os\nmelhores!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5199
+          ],
+          "target": "{F006}{F101}Nos somos os irmaos\nlutadores!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5201
+          ],
+          "target": "{F006}{F101}Eu luto por causa dos meus\nirmaos, mas e cansativo...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5202
+          ],
+          "target": "{F006}{F101}Pra ser sincero, prefiro\nestudar do que lutar!!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5215
+          ],
+          "target": "{F006}{F101}Nos somos as tres Irmas\nFantasmas!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5217
+          ],
+          "target": "{F006}{F101}Nao subestime nosso poder\nfantasma levianamente!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5218
+          ],
+          "target": "{F006}{F101}Voce... Voce e um espiao\ndas Irmas Psiquicas?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5231
+          ],
+          "target": "{F006}{F101}Voce esta aproveitando sua\njuventude?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5234
+          ],
+          "target": "{F006}{F101}Eu irei gritar para o\noceano!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5249
+          ],
+          "target": "{F006}{F101}Que pena para voce. Eu\nganhei!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5250
+          ],
+          "target": "{F006}{F101}Voce nao e tao ruim... eu\nfui brindado...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5263
+          ],
+          "target": "{F006}{F101}Somos diferentes, voce e\neu!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5265
+          ],
+          "target": "{F006}{F101}Agora, o que voce acha do meu\npoder!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5266
+          ],
+          "target": "{F006}{F101}Afinal, voce me mostrou a\ndiferenca entre voce e eu!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5279
+          ],
+          "target": "{F006}{F101}As batalhas sao uma\nquestao de espirito!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5281
+          ],
+          "target": "{F006}{F101}Eu te disse, e tudo uma\nquestao de espirito!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5282
+          ],
+          "target": "{F006}{F101}As vezes, o espirito por\nsi so nao e suficiente.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5297
+          ],
+          "target": "{F006}{F101}Se voce trabalhar duro,\nPokémon retribuira o favor!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5313
+          ],
+          "target": "{F006}{F101}Viva! Eu realmente estou\nem alta!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5314
+          ],
+          "target": "{F006}{F101}Uau! Minha sorte esta\ndesaparecendo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5346
+          ],
+          "target": "{F006}{F101}Perder uma batalha e\nhorrivel.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5359
+          ],
+          "target": "{F006}{F101}Eu sou o cara que pega\ninsetos!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5362
+          ],
+          "target": "{F006}{F101}Todos esses bugs nao sao\nsuficientes?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5378
+          ],
+          "target": "{F006}{F101}Voce e habilidoso e sortudo\ntambem!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5379
+          ],
+          "target": "{F006}{F101}Eu me pergunto de que lado\nesta a sorte?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5381
+          ],
+          "target": "{F006}{F101}Voce veio para a batalha\ncom um pouco de sorte!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5382
+          ],
+          "target": "{F006}{F101}Voce tem sorte! Mas nao da\nproxima vez!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5384
+          ],
+          "target": "{F006}{F101}Eu me pergunto quem vai\nganhar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5389
+          ],
+          "target": "{F006}{F101}Acho que meu veneno chegou\nate voce!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5391
+          ],
+          "target": "{F006}{F101}Entao, quantos anos\nvoce tem?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5394
+          ],
+          "target": "{F006}{F101}Voce ainda e jovem. Voce se\ntornara mais forte.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5397
+          ],
+          "target": "{F006}{F101}Um dia me tornarei um\nLider do Coliseu!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5398
+          ],
+          "target": "{F006}{F101}Nesse ritmo, tornar-se um\nLider do Coliseu e impossivel.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5411
+          ],
+          "target": "{F006}{F101}Voce ja andou na roda gigante?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5413
+          ],
+          "target": "{F006}{F101}Eu vou te dizer se voce\nconseguir me vencer!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5429
+          ],
+          "target": "{F006}{F101}Estou vestindo uma fantasia\nPIKACHU. Eu nao vou perder!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5430
+          ],
+          "target": "{F006}{F101}Oh nao! Usei essas orelhas\nPIKACHU a toa!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5446
+          ],
+          "target": "{F006}{F101}Eu nao coletei o suficiente...?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5460
+          ],
+          "target": "{F006}{F101}...Mas esta atmosfera\nemocionante nao e ruim!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5461
+          ],
+          "target": "{F006}{F101}Eu realmente pertenco a\neste mundo glamoroso!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5475
+          ],
+          "target": "{F006}{F101}Quer fazer parte do nosso\nclube de natacao?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5476
+          ],
+          "target": "{F006}{F101}O oceano de Pokétopia e\notimo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5477
+          ],
+          "target": "{F006}{F101}Esta resolvido! Voce e\nmeu aluno!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5478
+          ],
+          "target": "{F006}{F101}Eu estava planejando\nfazer de voce meu aluno!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5491
+          ],
+          "target": "{F006}{F101}Quer se juntar ao meu\nclube de caminhada?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5492
+          ],
+          "target": "{F006}{F101}As montanhas de\nPokétopia sao otimas!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5493
+          ],
+          "target": "{F006}{F101}Esta resolvido! Somos\ncompanheiros de equipe!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5507
+          ],
+          "target": "{F006}{F101}Bem, eu me pergunto quem e\nmais forte?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5509
+          ],
+          "target": "{F006}{F101}A resposta fui eu! Muito\nfacil!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5525
+          ],
+          "target": "{F006}{F101}Humph. Eu bati em voce\ncom forca!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5526
+          ],
+          "target": "{F006}{F101}Ei! O que voce pensa que esta\nfazendo??",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5555
+          ],
+          "target": "{F006}{F101}Sinta o ritmo! Vamos batalhar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5557
+          ],
+          "target": "{F006}{F101}O ritmo e importante quando voce\nluta!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5571
+          ],
+          "target": "{F006}{F101}Meu nome e Madison. Prazer em\nconhece-lo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5574
+          ],
+          "target": "{F006}{F101}Socorro, Madeline! Essa\npessoa foi ma comigo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5587
+          ],
+          "target": "{F006}{F101}O nome e Madeline! Prazer em\nconhece-lo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5603
+          ],
+          "target": "{F006}{F101}Somos os Tres Irmaos Voadores!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5604
+          ],
+          "target": "{F006}{F101}Irmao mais velho! Aqui\nvou eu!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5605
+          ],
+          "target": "{F006}{F101}Nao voe porque voce perdeu!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5606
+          ],
+          "target": "{F006}{F101}Que droga! Eu voarei\npara longe!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5619
+          ],
+          "target": "{F006}{F101}Somos as tres Irmas Psiquicas...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5621
+          ],
+          "target": "{F006}{F101}Voce realmente acha que pode me\nvencer?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5622
+          ],
+          "target": "{F006}{F101}Voce... Voce e um espiao\ndas Irmas Fantasmas?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5667
+          ],
+          "target": "{F006}{F101}Vamos ter uma batalha epica e\nlegal!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5669
+          ],
+          "target": "{F006}{F101}A frieza e a chave para a\nvitoria!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5683
+          ],
+          "target": "{F006}{F101}Suspiro... Sera que posso\nvencer?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5685
+          ],
+          "target": "{F006}{F101}Eu ganhei!? Pode ter sido um\nacaso, mas ganhei!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5717
+          ],
+          "target": "{F006}{F101}Ver! Voce deveria ter ouvido\nos mais velhos!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5718
+          ],
+          "target": "{F006}{F101}O que!? Sou eu quem\ndeveria se arrepender!?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5733
+          ],
+          "target": "{F006}{F101}Tehehehe! Eu ganhei de\nnovo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5734
+          ],
+          "target": "{F006}{F101}Vou contar para o papai\nsobre voce!!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5747
+          ],
+          "target": "{F006}{F101}Teremos uma batalha\nglamorosa!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5749
+          ],
+          "target": "{F006}{F101}O que voce acha? Nao foi\nglamoroso?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5781
+          ],
+          "target": "{F006}{F101}Se voce gosta deste lugar,\nvolte novamente! Nao desista!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5782
+          ],
+          "target": "{F006}{F101}Desisto! Fiquei fascinado\npelos cristais.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5785
+          ],
+          "target": "{F006}{F101}Hahaha. Como foi isso!\nVoce esta chocado?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5786
+          ],
+          "target": "{F006}{F101}Hmmm... Nao e eletrizante o\nsuficiente.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5789
+          ],
+          "target": "{F006}{F101}Foi uma batalha muito boa!\nVamos fazer isso de novo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5790
+          ],
+          "target": "{F006}{F101}Voce sera grande no\nfuturo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5795
+          ],
+          "target": "{F006}{F101}Ouvi dizer que e seu\naniversario!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5796
+          ],
+          "target": "{F006}{F101}Esta batalha e meu\npresente para voce!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5799
+          ],
+          "target": "{F006}{F101}A escada rolante do\nPokétopia...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5801
+          ],
+          "target": "{F006}{F101}Dica: e um predio chique a\ndireita do Pokétopia!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5815
+          ],
+          "target": "{F006}{F101}Este e um Coliseu\ntranquilo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5816
+          ],
+          "target": "{F006}{F101}Isso e perfeito para\ntreinar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5818
+          ],
+          "target": "{F006}{F101}Oh meu Deus! Essa perda\ndoi!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5832
+          ],
+          "target": "{F006}{F101}Estou muito velho para\nme vestir como PIKACHU?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5833
+          ],
+          "target": "{F006}{F101}Eu nunca vou crescer! Vou\nme vestir assim para sempre!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5834
+          ],
+          "target": "{F006}{F101}Eu nunca vou crescer! Vou\nme vestir assim para sempre!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5849
+          ],
+          "target": "{F006}{F101}Voce e um Net Ball? Por\nfavor, volte novamente!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5863
+          ],
+          "target": "{F006}{F101}Uma pedra brilhante em\numa caverna...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5866
+          ],
+          "target": "{F006}{F101}Ah! Achei que poderia\nvencer se lutasse aqui!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5881
+          ],
+          "target": "{F006}{F101}Eu sempre fico linda\nquando estou lutando!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5882
+          ],
+          "target": "{F006}{F101}Como voce ousa me\nderrotar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5895
+          ],
+          "target": "{F006}{F101}Finalmente chegamos a\ncaverna!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5897
+          ],
+          "target": "{F006}{F101}Eu venci a batalha! Eu\nestou tao feliz!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5913
+          ],
+          "target": "{F006}{F101}Eu vejo. Voce ainda nao\nchegou la!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5927
+          ],
+          "target": "{F006}{F101}Uma viagem de bicicleta e\notima, mas...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5928
+          ],
+          "target": "{F006}{F101}...uma batalha pacifica\ntambem e boa!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5943
+          ],
+          "target": "{F006}{F101}E assim que o futuro se parece?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5944
+          ],
+          "target": "{F006}{F101}Vamos ter uma luta\nfuturista!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5945
+          ],
+          "target": "{F006}{F101}Em qualquer futuro,\nPokémon estara la!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5946
+          ],
+          "target": "{F006}{F101}Eu me pergunto se meu\nfuturo e brilhante?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5959
+          ],
+          "target": "{F006}{F101}As viagens de batalha\nsao otimas!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5961
+          ],
+          "target": "{F006}{F101}Eu gostaria de ficar e\nviajar um pouco mais!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5962
+          ],
+          "target": "{F006}{F101}Chega de viajar. Estou\nindo para casa.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5975
+          ],
+          "target": "{F006}{F101}Irmao, eu nao quero brigar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5977
+          ],
+          "target": "{F006}{F101}O que? Irmao mais velho,\neu ganhei!!!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5978
+          ],
+          "target": "{F006}{F101}Ver! Eu te disse que nao\nposso vencer!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5991
+          ],
+          "target": "{F006}{F101}Sou melhor que meu irmao mais\nnovo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5993
+          ],
+          "target": "{F006}{F101}Eu te disse que somos\ndiferentes!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6007
+          ],
+          "target": "{F006}{F101}Somos os Tres Irmaos Voadores!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6009
+          ],
+          "target": "{F006}{F101}Um dia voarei no jato\nPokétopia!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6010
+          ],
+          "target": "{F006}{F101}Estou me sentindo como\nse tivesse caido!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6023
+          ],
+          "target": "{F006}{F101}Somos as Tres Irmas Psiquicas!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6025
+          ],
+          "target": "{F006}{F101}Irma mais velha, eu\nganhei!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6042
+          ],
+          "target": "{F006}{F101}Eu perdi! Eu culpo minha\nquerida!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6071
+          ],
+          "target": "{F006}{F101}Humph. Voce pode me\nvencer?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6074
+          ],
+          "target": "{F006}{F101}O que?!? Voce ganhou!?!\nQue acaso!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6087
+          ],
+          "target": "{F006}{F101}Voce e um bom amigo de Pokémon?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6090
+          ],
+          "target": "{F006}{F101}Estou impressionado com sua\namizade!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6106
+          ],
+          "target": "{F006}{F101}Que pena! Nao vou perder\nda proxima vez!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6119
+          ],
+          "target": "{F006}{F101}Voce quer que eu pegue leve com\nvoce?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6138
+          ],
+          "target": "{F006}{F101}Boo hoo hoo... Nao quero mais\nlutar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6154
+          ],
+          "target": "{F006}{F101}Eu perdi!? Isso nao fazia\nparte do meu plano legal!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6167
+          ],
+          "target": "{F006}{F101}Sou firme como o tipo\nPedra!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6169
+          ],
+          "target": "{F006}{F101}Por isso sou firme como o\ntipo Pedra!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6170
+          ],
+          "target": "{F006}{F101}Perdi, mas sigo fiel ao tipo Pedra!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6185
+          ],
+          "target": "{F006}{F101}Ganhar e o dobro do prazer!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6186
+          ],
+          "target": "{F006}{F101}Perder e o dobro da\ntristeza!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6200
+          ],
+          "target": "{F006}{F101}Voce vai levar um choque\ncom isso!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6202
+          ],
+          "target": "{F006}{F101}Estou chocado! Como eu\npoderia perder...!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6217
+          ],
+          "target": "{F006}{F101}E um pecado ser tao\nbonito?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6218
+          ],
+          "target": "{F006}{F101}Mesmo na derrota, sou\nlinda!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6231
+          ],
+          "target": "{F006}{F101}Nao! So quero Pokémon do tipo\nPedra!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6233
+          ],
+          "target": "{F006}{F101}So gosto de Pokémon do\ntipo Pedra!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6234
+          ],
+          "target": "{F006}{F101}Nao, nao, nao! Nao vou\nadmitir a derrota!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6249
+          ],
+          "target": "{F006}{F101}Voce pode chorar se\nquiser!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6250
+          ],
+          "target": "{F006}{F101}Droga! Lute comigo de\nnovo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6263
+          ],
+          "target": "{F006}{F101}Os Pokémon eletricos sao chocantes!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6279
+          ],
+          "target": "{F006}{F101}Voce quer ver minha danca elegante?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6285
+          ],
+          "target": "{F006}{F101}Tsk tsk... Voce e louco\npor mim, nao e?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6286
+          ],
+          "target": "{F006}{F101}Se voce e meu fa, aja como um!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6288
+          ],
+          "target": "{F006}{F101}Isso me da vontade de\ndancar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6289
+          ],
+          "target": "{F006}{F101}Gosto tanto de dancar quanto de\nlutar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6291
+          ],
+          "target": "{F006}{F101}Minhas batalhas sao tao\nlindas...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6293
+          ],
+          "target": "{F006}{F101}Beleza e forca sao a\nmesma coisa!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6294
+          ],
+          "target": "{F006}{F101}Agora sairei lindamente\napos a derrota!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6295
+          ],
+          "target": "{F006}{F101}Vou te dar um beijo de\naniversario!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6301
+          ],
+          "target": "{F006}{F101}Eu te direi se voce conseguir\nme vencer!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6302
+          ],
+          "target": "{F006}{F101}A resposta e 15. Tente\nconta-la mais tarde!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6315
+          ],
+          "target": "{F006}{F101}O Mestre do Coliseu e forte!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6331
+          ],
+          "target": "{F006}{F101}Estamos recrutando membros agora\nmesmo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6332
+          ],
+          "target": "{F006}{F101}Junte-se a nos! Voce nao\nvai?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6333
+          ],
+          "target": "{F006}{F101}O que? Ah, e o \"Fa Clube\nPIKACHU\"!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6334
+          ],
+          "target": "{F006}{F101}Voce nem ouviu o nome do\nnosso clube!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6347
+          ],
+          "target": "{F006}{F101}Vamos ter uma batalha\nexcelente!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6349
+          ],
+          "target": "{F006}{F101}Inspire, expire. Voce\ndeveria relaxar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6350
+          ],
+          "target": "{F006}{F101}Inspire, expire. Esqueci\nde respirar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6363
+          ],
+          "target": "{F006}{F101}Este e um dia perfeito para uma\nsoneca!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6366
+          ],
+          "target": "{F006}{F101}Multar! Agora vou para a\ncama!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6379
+          ],
+          "target": "{F006}{F101}Quero tomar banho na fonte.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6382
+          ],
+          "target": "{F006}{F101}Voce choveu no meu\ndesfile!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6397
+          ],
+          "target": "{F006}{F101}Por que voce nao se\njunta a nos?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6414
+          ],
+          "target": "{F006}{F101}Baixei a guarda porque\nme senti tao bem!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6443
+          ],
+          "target": "{F006}{F101}Eu sou o protetor da floresta!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6445
+          ],
+          "target": "{F006}{F101}Eu protegi a floresta!\nEu me sinto bem!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6446
+          ],
+          "target": "{F006}{F101}Acho que deveria parar\nde brincar...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6459
+          ],
+          "target": "{F006}{F101}Estamos aqui em uma viagem\nde campo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6461
+          ],
+          "target": "{F006}{F101}Obrigado por uma memoria\nmaravilhosa.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6462
+          ],
+          "target": "{F006}{F101}Eu ia fazer uma\nlembranca tao boa!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6475
+          ],
+          "target": "{F006}{F101}Vou lutar pela Sra.\nSashay!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6476
+          ],
+          "target": "{F006}{F101}Sra. Sashay, me veja\nlutar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6477
+          ],
+          "target": "{F006}{F101}Eu ganhei, Sra. Sashay!!\nHuh? Onde ela esta?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6491
+          ],
+          "target": "{F006}{F101}Sra. Sashay esta\nassistindo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6492
+          ],
+          "target": "{F006}{F101}Meu coracao esta\nbatendo forte!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6493
+          ],
+          "target": "{F006}{F101}Quero ser forte e bonita, assim\ncomo a Sra. Sashay!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6507
+          ],
+          "target": "{F006}{F101}Nos somos os Tres Irmaos\nVoadores!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6509
+          ],
+          "target": "{F006}{F101}Sou o mais novo, mas mais forte\nque meus outros irmaos!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6510
+          ],
+          "target": "{F006}{F101}Voce so pensa que sou\ngrande, mas nao forte!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6523
+          ],
+          "target": "{F006}{F101}Somos as Tres Irmas Psiquicas...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6525
+          ],
+          "target": "{F006}{F101}Viva! Nos vencemos! Sim,\nvencemos!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6539
+          ],
+          "target": "{F006}{F101}Meu querido! Onde voce\nesta?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6540
+          ],
+          "target": "{F006}{F101}Multar. Eu sou seu\noponente!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6541
+          ],
+          "target": "{F006}{F101}Voce! Voce viu meu querido?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6542
+          ],
+          "target": "{F006}{F101}Que perda de tempo! Onde\nvoce esta, querido?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6555
+          ],
+          "target": "{F006}{F101}Pronto quando voce\nestiver!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6557
+          ],
+          "target": "{F006}{F101}Ver? Minha defesa e\nimpecavel!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6558
+          ],
+          "target": "{F006}{F101}Entao esse foi o meu\nponto fraco!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6573
+          ],
+          "target": "{F006}{F101}A batalha tambem deve ser linda!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6587
+          ],
+          "target": "{F006}{F101}As batalhas Pokémon sao\ndivertidas!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6589
+          ],
+          "target": "{F006}{F101}Viva! As batalhas sao\ndivertidas!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6605
+          ],
+          "target": "{F006}{F101}Bonitinho! Legal!\nObrigado a todos!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6606
+          ],
+          "target": "{F006}{F101}Meu coracao esta doendo\npela perda...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6619
+          ],
+          "target": "{F006}{F101}Eles sao tao fofos que eu\npoderia comer...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6621
+          ],
+          "target": "{F006}{F101}Bons meninos e meninas,\nvoces se sairam bem!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6622
+          ],
+          "target": "{F006}{F101}Perdemos! Isso nao e\nbom...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6635
+          ],
+          "target": "{F006}{F101}Pokémon, Pokémon, tao\nfofo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6637
+          ],
+          "target": "{F006}{F101}Bonito e forte! Voces\nsao os melhores!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6652
+          ],
+          "target": "{F006}{F101}Voce deve dizer isso se\nperder!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6653
+          ],
+          "target": "{F006}{F101}Vamos dizer isso juntos!\nAroma!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6654
+          ],
+          "target": "{F006}{F101}Queria fazer desta uma\nsaudacao popular... Aroma!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6669
+          ],
+          "target": "{F006}{F101}Eu preciso de uma batalha mais\ndesafiadora!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6670
+          ],
+          "target": "{F006}{F101}Poxa! Por que eu perco\npara alguem como voce!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6699
+          ],
+          "target": "{F006}{F101}Vamos ter uma batalha\nacalorada!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6701
+          ],
+          "target": "{F006}{F101}Eu queimei voce?\nDesculpe, desculpe!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6703
+          ],
+          "target": "{F006}{F101}Serei conhecido em todo o\npais!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6710
+          ],
+          "target": "{F006}{F101}Acho que estava\nsuperaquecido!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6713
+          ],
+          "target": "{F006}{F101}Isso e bom! Estou me\ntornando poderoso!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6714
+          ],
+          "target": "{F006}{F101}Serei mais poderoso! Embora eu\nesteja um pouco magro agora!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6715
+          ],
+          "target": "{F006}{F101}Ouvi dizer que e seu\naniversario!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6717
+          ],
+          "target": "{F006}{F101}Desculpe, desculpe! Eu\nganhei!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6719
+          ],
+          "target": "{F006}{F101}Agarrando-se a um edificio\nPokétopia.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6722
+          ],
+          "target": "{F006}{F101}A resposta e TOXICROAK!\nE otimo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6735
+          ],
+          "target": "{F006}{F101}Entre os candidatos a lider...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6737
+          ],
+          "target": "{F006}{F101}Estou a frente dos outros\ncandidatos! Humph!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6738
+          ],
+          "target": "{F006}{F101}Nao! Eu pensei que era o\nmelhor!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6753
+          ],
+          "target": "{F006}{F101}Eu vejo, eu vejo. Eu sei\nque pareco com PIKACHU.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6754
+          ],
+          "target": "{F006}{F101}O que?!? Eu nao pareco\ncom PIKACHU?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6767
+          ],
+          "target": "{F006}{F101}Vamos ter uma hiper\nbatalha!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6801
+          ],
+          "target": "{F006}{F101}As batalhas devem ser\nquentes!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6816
+          ],
+          "target": "{F006}{F101}Vamos ter uma batalha\nacalorada!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6817
+          ],
+          "target": "{F006}{F101}O poder do Pokémon estava com\nforca total!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6833
+          ],
+          "target": "{F006}{F101}Pokétopia e realmente um\nlugar interessante!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6834
+          ],
+          "target": "{F006}{F101}Acho que minha tecnica\nnao foi boa o suficiente.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6847
+          ],
+          "target": "{F006}{F101}Eu sou o chefe da equipe de\nmotociclistas!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6849
+          ],
+          "target": "{F006}{F101}Vou deixar voce se juntar a\nminha equipe de bicicletas!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6863
+          ],
+          "target": "{F006}{F101}Estou em busca de um tesouro\nescondido!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6865
+          ],
+          "target": "{F006}{F101}Os tesouros sao todos\nmeus!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6895
+          ],
+          "target": "{F006}{F101}As pessoas nos chamam de\n\"Gemeos Lava\"!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6896
+          ],
+          "target": "{F006}{F101}Vamos ter uma batalha\nacalorada!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6897
+          ],
+          "target": "{F006}{F101}Quente como lava. Nao\nvamos perder!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6911
+          ],
+          "target": "{F006}{F101}As pessoas nos chamam de \"Gemeos\ndo Vulcao\"!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6912
+          ],
+          "target": "{F006}{F101}Vamos fazer uma luta\nintensa!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6930
+          ],
+          "target": "{F006}{F101}Hmm... O amor nos torna\nfracos...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6946
+          ],
+          "target": "{F006}{F101}Acho que nao estava\npreparado!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6975
+          ],
+          "target": "{F006}{F101}As batalhas sao sobre\nfluxo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6977
+          ],
+          "target": "{F006}{F101}Quem sentir o fluxo vencera!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6993
+          ],
+          "target": "{F006}{F101}Estou cada vez mais\naquecido!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7009
+          ],
+          "target": "{F006}{F101}Pegue um Pokémon do tipo\nVoador e venha voar comigo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7010
+          ],
+          "target": "{F006}{F101}Oh nao! Minha cabeca estava nas\nnuvens!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7041
+          ],
+          "target": "{F006}{F101}Voce deveria estar honrado por\npoder lutar neste local antigo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7043
+          ],
+          "target": "{F006}{F101}O sol poente nao te entristece?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7045
+          ],
+          "target": "{F006}{F101}Eu ganhei... Mas por que me sinto\ntao vazio?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7046
+          ],
+          "target": "{F006}{F101}Entendo... Agora eu\nentendo...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7047
+          ],
+          "target": "{F006}{F101}Vamos ter uma batalha\nmemoravel!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7049
+          ],
+          "target": "{F006}{F101}Como foi? Voce fez boas\nlembrancas?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7050
+          ],
+          "target": "{F006}{F101}Perder tambem e uma boa\nlembranca.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7054
+          ],
+          "target": "{F006}{F101}Lutei sinceramente. Nao\nme arrependo.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7055
+          ],
+          "target": "{F006}{F101}Ouvi dizer que e seu\naniversario?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7058
+          ],
+          "target": "{F006}{F101}Uma derrota total!\nParabens!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7059
+          ],
+          "target": "{F006}{F101}O edificio Pokétopia a direita.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7061
+          ],
+          "target": "{F006}{F101}Eu te direi se voce conseguir\nme vencer!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7062
+          ],
+          "target": "{F006}{F101}A resposta e DUGTRIO!\nConfira mais tarde!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7078
+          ],
+          "target": "{F006}{F101}Ainda preciso de mais\ntreinamento...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7092
+          ],
+          "target": "{F006}{F101}Vamos travar uma\nbatalha eletrizante!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7094
+          ],
+          "target": "{F006}{F101}Estou eletrizado com sua\nbatalha!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7109
+          ],
+          "target": "{F006}{F101}E otimo vencer uma batalha!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7110
+          ],
+          "target": "{F006}{F101}E uma sensacao horrivel\nperder uma batalha!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7123
+          ],
+          "target": "{F006}{F101}O por do sol e lindo, nao e?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7142
+          ],
+          "target": "{F006}{F101}Este oceano e um lugar\nassustador...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7157
+          ],
+          "target": "{F006}{F101}Tive uma batalha energica, como\nsempre. Obrigado, Sr. Sol!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7158
+          ],
+          "target": "{F006}{F101}Perdi... Mas foi muito\ngratificante!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7171
+          ],
+          "target": "{F006}{F101}Que local de batalha\ngigantesco!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7172
+          ],
+          "target": "{F006}{F101}Quer saber quem o\nconstruiu?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7173
+          ],
+          "target": "{F006}{F101}E uma honra vencer neste\nsolo sagrado!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7174
+          ],
+          "target": "{F006}{F101}Me sinto responsavel por\nperder...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7187
+          ],
+          "target": "{F006}{F101}O por do sol esta queimando\nmeus olhos!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7189
+          ],
+          "target": "{F006}{F101}Doi voce saber a diferenca\nem nosso poder?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7205
+          ],
+          "target": "{F006}{F101}Para se vestir assim,\ncerto?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7219
+          ],
+          "target": "{F006}{F101}Acabei de voltar de um\npiquenique!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7237
+          ],
+          "target": "{F006}{F101}Alguem esta pensando no\ntempo. Eu sei isso!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7254
+          ],
+          "target": "{F006}{F101}Voce e muito bom, meu\nconvidado. Eu me diverti.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7258
+          ],
+          "target": "{F006}{F101}Bem, e uma questao de\nsorte ganhar ou perder.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7262
+          ],
+          "target": "{F006}{F101}Nao acredito que voce\nrealmente me venceu!!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7263
+          ],
+          "target": "{F006}{F101}Aqui! Sempre que voce estiver\npronto!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7265
+          ],
+          "target": "{F006}{F101}Voce nao pode me\ninfluenciar.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7266
+          ],
+          "target": "{F006}{F101}Eu nao esperava esse\nmovimento!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7267
+          ],
+          "target": "{F006}{F101}Entendo... e seu\naniversario...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7268
+          ],
+          "target": "{F006}{F101}Eu nao vou pegar leve com\nvoce!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7269
+          ],
+          "target": "{F006}{F101}Como voce se sente ao envelhecer?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7270
+          ],
+          "target": "{F006}{F101}Temo o que voce sera no futuro!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7271
+          ],
+          "target": "{F006}{F101}Flutuando acima do ceu Pokétopia...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7273
+          ],
+          "target": "{F006}{F101}Eu vou te dizer se voce\nconseguir me vencer!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7274
+          ],
+          "target": "{F006}{F101}A resposta e LUNATONE e STARYU.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7287
+          ],
+          "target": "{F006}{F101}Treinar so me deixa mais forte!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7290
+          ],
+          "target": "{F006}{F101}Ainda falta muito para se\ntornar um Lider do Coliseu!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7303
+          ],
+          "target": "{F006}{F101}Estou no \"Fa Clube PIKACHU\"!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7305
+          ],
+          "target": "{F006}{F101}Voce gostaria de\nparticipar?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7306
+          ],
+          "target": "{F006}{F101}Quem no mundo e voce, afinal?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7319
+          ],
+          "target": "{F006}{F101}Eu jogo minha bola de uma\nforma legal!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7321
+          ],
+          "target": "{F006}{F101}A pose que faco quando ganho uma\nbatalha tambem deve ser legal!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7335
+          ],
+          "target": "{F006}{F101}Uma noite em um castelo na\nfloresta...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7336
+          ],
+          "target": "{F006}{F101}Ei, ei, ei! Voce esta com\nmedo?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7337
+          ],
+          "target": "{F006}{F101}Talvez eu tenha te assustado\ndemais?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7338
+          ],
+          "target": "{F006}{F101}Voce e tao forte! Voce\nme assustou!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7351
+          ],
+          "target": "{F006}{F101}Talvez eu devesse ir nadar...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7354
+          ],
+          "target": "{F006}{F101}Que pena! Eu vou me\nacalmar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7367
+          ],
+          "target": "{F006}{F101}Um passeio noturno e\notimo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7368
+          ],
+          "target": "{F006}{F101}E assim e uma batalha\nnoturna!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7370
+          ],
+          "target": "{F006}{F101}Vou me esconder no escuro...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7383
+          ],
+          "target": "{F006}{F101}Estou me fundindo com o poder\nPokémon!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7385
+          ],
+          "target": "{F006}{F101}Com a fusao do Pokémon e do meu\npoder, o resultado foi obvio!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7386
+          ],
+          "target": "{F006}{F101}O que? Acho que nao nos\ncombinamos muito bem...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7399
+          ],
+          "target": "{F006}{F101}Um cavaleiro intenso\nentra!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7401
+          ],
+          "target": "{F006}{F101}Por que voce nao faz uma\nviagem intensa?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7417
+          ],
+          "target": "{F006}{F101}Minha batalha nao foi\nfantastica?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7418
+          ],
+          "target": "{F006}{F101}Meu? Perder? Isso deve ser uma\nilusao!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7450
+          ],
+          "target": "{F006}{F101}Chefe! Por favor, finja\nque voce nao viu isso!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7463
+          ],
+          "target": "{F006}{F101}Voce nunca chegara perto de\nKruger!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7479
+          ],
+          "target": "{F006}{F101}Eu me tornarei mais forte que\nele!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7481
+          ],
+          "target": "{F006}{F101}Voce viu isso, irmao? Eu\nvou superar voce!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7482
+          ],
+          "target": "{F006}{F101}Nossa, eu perdi! Nao\nconte a ele, ok?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7495
+          ],
+          "target": "{F006}{F101}Eu nao posso perder para\nele!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7497
+          ],
+          "target": "{F006}{F101}Voce viu isso, irmao? Eu\nnao posso perder!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7498
+          ],
+          "target": "{F006}{F101}Ah, eu perdi! Nao conte ao\nmeu irmao, ok?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7511
+          ],
+          "target": "{F006}{F101}Eu me pergunto se eles\nestao bem?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7514
+          ],
+          "target": "{F006}{F101}Soluco! Perdi porque estava me\npreocupando com outra pessoa!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7528
+          ],
+          "target": "{F006}{F101}Tenho certeza que vou\nvencer!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7529
+          ],
+          "target": "{F006}{F101}Uau! Acho que realmente\nganhei!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7530
+          ],
+          "target": "{F006}{F101}Meu? Perder? Eu nao entendo\nisso!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7546
+          ],
+          "target": "{F006}{F101}Acho que nao posso vencer do\njeito que estou...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7559
+          ],
+          "target": "{F006}{F101}Voce nao deveria me levar de\nanimo leve!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7561
+          ],
+          "target": "{F006}{F101}Esta batalha foi doce como\nacucar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7562
+          ],
+          "target": "{F006}{F101}Eu levei voce muito\nlevianamente...!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7575
+          ],
+          "target": "{F006}{F101}Agora voce vai lutar\ncomigo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7578
+          ],
+          "target": "{F006}{F101}Hmmm, que pena... Mas\nbom trabalho a todos!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7591
+          ],
+          "target": "{F006}{F101}Eu vou te mostrar o poder das\ntrevas!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7593
+          ],
+          "target": "{F006}{F101}Agora voce conhece meu\npoder sombrio!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7594
+          ],
+          "target": "{F006}{F101}Realmente nao foi minha\nculpa!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7607
+          ],
+          "target": "{F006}{F101}Eu luto com o tipo Fantasma...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7608
+          ],
+          "target": "{F006}{F101}...Para superar meu medo\ndeles!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7609
+          ],
+          "target": "{F006}{F101}Agora ninguem vai me chamar de\ncovarde!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7610
+          ],
+          "target": "{F006}{F101}Argh! O que voce esta fazendo\ncomigo?!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7623
+          ],
+          "target": "{F006}{F101}Eu tambem quero ser\nvidente.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7625
+          ],
+          "target": "{F006}{F101}Eu me pergunto se meu\nfeitico funcionou!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7626
+          ],
+          "target": "{F006}{F101}Meu feitico... Nao\nfuncionou!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7639
+          ],
+          "target": "{F006}{F101}Eu vencerei com meu espirito de\nluta!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7642
+          ],
+          "target": "{F006}{F101}Ninguem pode superar meu\nespirito de luta!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7655
+          ],
+          "target": "{F006}{F101}Teremos o melhor show de\ntodos!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7658
+          ],
+          "target": "{F006}{F101}Incrivel! Esta e a ilusao\nfinal!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7659
+          ],
+          "target": "{F006}{F101}Finalmente chegamos a\nisso!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7661
+          ],
+          "target": "{F006}{F101}Hummm! Desculpe. Por\nfavor, volte novamente!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7669
+          ],
+          "target": "{F006}{F101}Eu acho que este e o fim da sua\nsorte?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7673
+          ],
+          "target": "{F006}{F101}Isso foi perto. Nao desista!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7674
+          ],
+          "target": "{F006}{F101}Voce me pegou! Mas foi divertido.\nObrigado!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7675
+          ],
+          "target": "{F006}{F101}Voce percorreu um longo\ncaminho!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7676
+          ],
+          "target": "{F006}{F101}Mas voce nao pode me\nderrotar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7677
+          ],
+          "target": "{F006}{F101}Viva! Foi uma batalha e\ntanto!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7678
+          ],
+          "target": "{F006}{F101}Eu perdi?!? Voce se tornou tao\nforte!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7681
+          ],
+          "target": "{F006}{F101}Que alegria nascer no mesmo\nuniverso de Pokémon!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7682
+          ],
+          "target": "{F006}{F101}Eu quero ser a poeira vagando\npelo universo...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7683
+          ],
+          "target": "{F006}{F101}Eu me pergunto ate onde\nvoce chegara?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7685
+          ],
+          "target": "{F006}{F101}Eu vou lutar com voce a qualquer\nhora. Nao desista!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7686
+          ],
+          "target": "{F006}{F101}Ficarei de olho no seu\nprogresso.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7687
+          ],
+          "target": "{F006}{F101}Entao esta e sua 50a\nbatalha?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7689
+          ],
+          "target": "{F006}{F101}Isso foi perto, mas voce\nconsegue. Volte novamente",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7691
+          ],
+          "target": "{F006}{F101}Voce chegou ate aqui?\nImpressionante!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7693
+          ],
+          "target": "{F006}{F101}Isso foi muito perto! Volte novamente!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7694
+          ],
+          "target": "{F006}{F101}Voce se saiu bem, lutando em\nbatalhas tao severas.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7695
+          ],
+          "target": "{F006}{F101}Batalhando no seu\naniversario...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7697
+          ],
+          "target": "{F006}{F101}Por que voce nao faz uma festa em\nvez de uma batalha?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7699
+          ],
+          "target": "{F006}{F101}Flutuando no ceu Pokétopia.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7701
+          ],
+          "target": "{F006}{F101}Eu te direi se voce conseguir\nme vencer!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7702
+          ],
+          "target": "{F006}{F101}A resposta e LUNATONE e STARYU!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7711
+          ],
+          "target": "{F006}{F101}Treinar so me deixa mais forte!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7714
+          ],
+          "target": "{F006}{F101}Ainda falta muito para se\ntornar um Lider do Coliseu!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7723
+          ],
+          "target": "{F006}{F101}Estou no \"Fa-clube PIKACHU\"!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7725
+          ],
+          "target": "{F006}{F101}Voce gostaria de\nparticipar?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7726
+          ],
+          "target": "{F006}{F101}Quem no mundo e voce, afinal?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7735
+          ],
+          "target": "{F006}{F101}Eu jogo minha bola de uma\nforma legal!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7737
+          ],
+          "target": "{F006}{F101}A pose que faco quando ganho uma\nbatalha tambem deve ser legal!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7747
+          ],
+          "target": "{F006}{F101}Uma noite em um castelo na\nfloresta...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7748
+          ],
+          "target": "{F006}{F101}Ei, ei, ei! Voce esta com\nmedo?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7749
+          ],
+          "target": "{F006}{F101}Talvez eu tenha te assustado\ndemais?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7750
+          ],
+          "target": "{F006}{F101}Voce e tao forte! Voce\nme assustou!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7759
+          ],
+          "target": "{F006}{F101}Talvez eu devesse ir nadar...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7762
+          ],
+          "target": "{F006}{F101}Que pena! Eu vou me\nacalmar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7771
+          ],
+          "target": "{F006}{F101}Um passeio noturno e\notimo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7772
+          ],
+          "target": "{F006}{F101}E assim e uma batalha\nnoturna!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7774
+          ],
+          "target": "{F006}{F101}Vou me esconder no escuro...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7783
+          ],
+          "target": "{F006}{F101}Estou me fundindo com o poder\nPokémon!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7785
+          ],
+          "target": "{F006}{F101}Com a fusao do Pokémon e do meu\npoder, o resultado foi obvio!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7786
+          ],
+          "target": "{F006}{F101}O que? Acho que nao nos\ncombinamos muito bem...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7795
+          ],
+          "target": "{F006}{F101}Um cavaleiro intenso\nentra!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7797
+          ],
+          "target": "{F006}{F101}Por que voce nao faz uma\nviagem intensa?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7809
+          ],
+          "target": "{F006}{F101}Minha batalha nao foi\nfantastica?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7810
+          ],
+          "target": "{F006}{F101}Meu? Perder? Isso deve ser uma\nilusao!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7834
+          ],
+          "target": "{F006}{F101}Chefe! Por favor, finja\nque voce nao viu isso!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7843
+          ],
+          "target": "{F006}{F101}Voce nunca chegara perto de\nKruger!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7855
+          ],
+          "target": "{F006}{F101}Eu me tornarei mais forte que\nele!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7857
+          ],
+          "target": "{F006}{F101}Voce viu isso, irmao? Eu\nvou superar voce!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7858
+          ],
+          "target": "{F006}{F101}Nossa, eu perdi! Nao\nconte a ele, ok?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7867
+          ],
+          "target": "{F006}{F101}Eu nao posso perder para\nele!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7869
+          ],
+          "target": "{F006}{F101}Voce viu isso, irmao? Eu\nnao posso perder!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7870
+          ],
+          "target": "{F006}{F101}Ah, eu perdi! Nao conte ao\nmeu irmao, ok?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7879
+          ],
+          "target": "{F006}{F101}Eu me pergunto se eles\nestao bem?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7882
+          ],
+          "target": "{F006}{F101}Soluco! Perdi porque estava me\npreocupando com outra pessoa!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7892
+          ],
+          "target": "{F006}{F101}Tenho certeza que vou\nvencer!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7893
+          ],
+          "target": "{F006}{F101}Uau! Acho que realmente\nganhei!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7894
+          ],
+          "target": "{F006}{F101}Meu? Perder? Eu nao entendo\nisso!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7906
+          ],
+          "target": "{F006}{F101}Acho que nao posso vencer do\njeito que estou...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7915
+          ],
+          "target": "{F006}{F101}Voce nao deveria me levar de\nanimo leve!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7917
+          ],
+          "target": "{F006}{F101}Esta batalha foi doce como\nacucar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7918
+          ],
+          "target": "{F006}{F101}Eu levei voce muito\nlevianamente...!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7927
+          ],
+          "target": "{F006}{F101}Agora voce vai lutar\ncomigo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7930
+          ],
+          "target": "{F006}{F101}Hmmm, que pena... Mas\nbom trabalho a todos!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7941
+          ],
+          "target": "{F006}{F101}Voce nao precisava ter medo. Eu\nte assustei?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7942
+          ],
+          "target": "{F006}{F101}Voce nao precisava ser tao\nserio!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7951
+          ],
+          "target": "{F006}{F101}Eu luto com o tipo Fantasma...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7952
+          ],
+          "target": "{F006}{F101}...Para superar meu medo\ndeles!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7953
+          ],
+          "target": "{F006}{F101}Agora ninguem vai me chamar de\ncovarde!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7954
+          ],
+          "target": "{F006}{F101}Eek! O que voce esta fazendo\ncomigo?!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7963
+          ],
+          "target": "{F006}{F101}Eu tambem quero ser\nvidente.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7965
+          ],
+          "target": "{F006}{F101}Eu me pergunto se meu\nfeitico funcionou!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7966
+          ],
+          "target": "{F006}{F101}Meu feitico... Nao\nfuncionou!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7975
+          ],
+          "target": "{F006}{F101}Eu vencerei com meu espirito de\nluta!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7978
+          ],
+          "target": "{F006}{F101}Ninguem pode superar meu\nespirito de luta!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7987
+          ],
+          "target": "{F006}{F101}Jogue uma bola como se estivesse\njogando uma corda!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7989
+          ],
+          "target": "{F006}{F101}Nao sou legal como um\ncowboy?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7990
+          ],
+          "target": "{F006}{F101}Eu nao poderia ser tao legal\nquanto um cowboy!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7999
+          ],
+          "target": "{F006}{F101}Assim como varrer a estrada!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8014
+          ],
+          "target": "{F006}{F101}Perdi, mas serei mais forte\nno futuro!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8023
+          ],
+          "target": "{F006}{F101}Alguns lutarao, alguns\nassistirao.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8024
+          ],
+          "target": "{F006}{F101}Nao e divertido se voce\nnao esta lutando!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8026
+          ],
+          "target": "{F006}{F101}Mas ainda tenho que continuar\nlutando!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8037
+          ],
+          "target": "{F006}{F101}Como fico com esse velho\ntraje aristocratico?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8038
+          ],
+          "target": "{F006}{F101}Desculpe, acho que brinquei\num pouco demais.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8048
+          ],
+          "target": "{F006}{F101}Eu quero lutar para\nsempre!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8049
+          ],
+          "target": "{F006}{F101}Eu nao vou voltar. Serei\ncampeao aqui!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8050
+          ],
+          "target": "{F006}{F101}Voce pode ir para casa na\nminha casa?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8059
+          ],
+          "target": "{F006}{F101}Minha namorada esta lutando\nmuito...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8061
+          ],
+          "target": "{F006}{F101}Viva! Vou me deliciar com uma boa\nrefeicao!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8062
+          ],
+          "target": "{F006}{F101}Ah, nao... acho que vou\ntorcer pela minha namorada.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8071
+          ],
+          "target": "{F006}{F101}Meu namorado esta lutando\nmuito...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8085
+          ],
+          "target": "{F006}{F101}Viva! Uma grande vitoria\npara mim!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8086
+          ],
+          "target": "{F006}{F101}Voce e forte! Uma derrota\ntotal!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8095
+          ],
+          "target": "{F006}{F101}Voce pode derrotar meu\nplano?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8098
+          ],
+          "target": "{F006}{F101}Acho que seu plano foi um pouco\nmelhor!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8107
+          ],
+          "target": "{F006}{F101}Voce sera minha terceira\nvitoria consecutiva!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8109
+          ],
+          "target": "{F006}{F101}Sim! Tres vitorias\nconsecutivas!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8110
+          ],
+          "target": "{F006}{F101}Droga! Devo comecar tudo de\nnovo!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8121
+          ],
+          "target": "{F006}{F101}Eu ganhei! Vamos batalhar\nnovamente!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8122
+          ],
+          "target": "{F006}{F101}Oh nao. Perdi... Mas vou\nganhar na proxima!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8131
+          ],
+          "target": "{F006}{F101}Voce e um treinador\ninteligente?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8134
+          ],
+          "target": "{F006}{F101}Voce e inteligente. Aprendi uma\nlicao!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8157
+          ],
+          "target": "{F006}{F101}Nossa... Quanto mais\nforte vou ficar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8167
+          ],
+          "target": "{F006}{F101}Eu nao vim ate aqui para perder!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8203
+          ],
+          "target": "{F006}{F101}Vim testar minhas\nhabilidades.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8204
+          ],
+          "target": "{F006}{F101}Devo sempre chegar mais\nalto!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8205
+          ],
+          "target": "{F006}{F101}Estou muito bem, nao\nestou?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8217
+          ],
+          "target": "{F006}{F101}Estou sempre treinando com\nPokémon!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8218
+          ],
+          "target": "{F006}{F101}Como meu punho de ferro\npoderia ser derrotado!?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8227
+          ],
+          "target": "{F006}{F101}Quer pegar alguns insetos\ncomigo?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8230
+          ],
+          "target": "{F006}{F101}Voce vai simplesmente\nignorar meu convite?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8253
+          ],
+          "target": "{F006}{F101}O tipo Voador e muito bom!!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8254
+          ],
+          "target": "{F006}{F101}Voce arruinou meu humor\nde voar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8265
+          ],
+          "target": "{F006}{F101}O que esta errado? Seus labios\nestao palidos!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8266
+          ],
+          "target": "{F006}{F101}Uau! Por que voce fez isso?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8277
+          ],
+          "target": "{F006}{F101}Voce sente isso? Nossos\nmusculos intensos!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8287
+          ],
+          "target": "{F006}{F101}Voce acha que pode me\nvencer...?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8288
+          ],
+          "target": "{F006}{F101}Volte em um milhao de\nanos!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8301
+          ],
+          "target": "{F006}{F101}Nao vou perder com meu\nminusculo Pokémon!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8305
+          ],
+          "target": "{F006}{F101}Nao vou perder com meu\nminusculo Pokémon!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8309
+          ],
+          "target": "{F006}{F101}Nao vou perder com meu\nminusculo Pokémon!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8313
+          ],
+          "target": "{F006}{F101}Nao vou perder com meu\nminusculo Pokémon!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8623
+          ],
+          "target": "{F006}{F101}Bom trabalho, meu caro\nPokémon!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8624
+          ],
+          "target": "{F006}{F101}O que voce fez com meu querido\nPokémon!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8627
+          ],
+          "target": "{F006}{F101}Nao vou perder com meu\nminusculo Pokémon!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8629
+          ],
+          "target": "{F006}{F101}A batalha deve ser tao bonita...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8631
+          ],
+          "target": "{F006}{F101}Beleza e forca sao a mesma coisa!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8632
+          ],
+          "target": "{F006}{F101}Mesmo quando perco, sou linda!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8633
+          ],
+          "target": "{F006}{F101}Vou te dar um beijo de\naniversario!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8635
+          ],
+          "target": "{F006}{F101}Vou te beijar no proximo\nano!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8691
+          ],
+          "target": "{F006}{F101}Esse e o fim da batalha\npara voce!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8721
+          ],
+          "target": "{F006}{F101}Fico feliz em lutar com\nvoce!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3491
+          ],
+          "target": "{F001}{F101}POKEMON",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3829
+          ],
+          "target": "{F000}{F101}POKEMON",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3834
+          ],
+          "target": "{F000}{F101}{0003:0002}O que {0015} fara?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3836
+          ],
+          "target": "{F000}{F101}{0015}",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3875
+          ],
+          "target": "{F000}{F101}{0003:0002}Sim",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            3899
+          ],
+          "target": "{F000}{F101}Qual Pokémon?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4147
+          ],
+          "target": "{F006}{F101}Qualquer coisa pode\nacontecer...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            4991
+          ],
+          "target": "{F006}{F101}Somos Lideres em\nTreinamento.",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5023
+          ],
+          "target": "{F006}{F101}Aparencia PIKACHU de\ncorpo inteiro!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5427
+          ],
+          "target": "{F006}{F101}Orelhas longas e\npontudas...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5459
+          ],
+          "target": "{F006}{F101}Geralmente estou\nexplorando...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5715
+          ],
+          "target": "{F006}{F101}Voce vai se arrepender\ndisso!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            5763
+          ],
+          "target": "{F006}{F101}Finalmente chegou a\nhora!!!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6040
+          ],
+          "target": "{F006}{F101}Quem se importa de\nqualquer maneira!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            6299
+          ],
+          "target": "{F006}{F101}Edificios Pokémon de\nPokétopia...",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            7203
+          ],
+          "target": "{F006}{F101}O que e \"ficcao\ncientifica\"?",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8276
+          ],
+          "target": "{F006}{F101}Observar!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8639
+          ],
+          "target": "{F000}{F101}{0003:0002}Sair",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8643
+          ],
+          "target": "{F000}{F101}{0003:0002}Claro!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        },
+        {
+          "ids": [
+            8646
+          ],
+          "target": "{F000}{F101}{0003:0002}{000E} Vitoria!",
+          "glyph_policy": "prepared-ascii-with-original-names"
+        }
+      ]
     }
   ],
   "review_mode": "remaining-translation-delegated-by-user",

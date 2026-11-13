@@ -12,7 +12,7 @@ from translation.messages import read_messages, readable
 from translation.trainer_names import plan, approved_entries
 
 
-def verify(capture, dol, original_common, translated_common, original_battle, translated_battle):
+def verify(capture, dol, original_common, translated_common, original_battle, translated_battle, original_deck=None):
     h = DraftReplay(capture, dol)
     context = 0x8048062C
     count = h.get(context + 0xD34)
@@ -82,11 +82,30 @@ def verify(capture, dol, original_common, translated_common, original_battle, tr
             assert bytes(h.uc.mem_read(pointer, len(row))) == row
             assert entry['replacement'] in readable(row)
             reference_cases += 1
-    for index in (5890, 6372, 6466, 6521, 6735, 8108):
+    for index in (6372, 6466, 6521):
         assert common_before[index] == common_after[index]
     # The records label at 7842 is now legitimately translated; preserve
     # the place name itself rather than freezing the surrounding sentence.
     assert readable(common_before[7842]).count('Crystal Colosseum') == readable(common_after[7842]).count('Crystal Colosseum') == 1
+    protected_trainer_count=0
+    if original_deck is not None:
+        native_names=set()
+        for resource,data in read_archive(original_deck):
+            if data[:4]!=b'DCKT':continue
+            for i in range(struct.unpack_from('>I',data,8)[0]):
+                native_names.add(struct.unpack_from('>H',data,16+i*152+6)[0])
+        reverse={gid:key for key,identifiers in global_ids.items() for gid in identifiers}
+        aliases={e['common_message_index']:'{F001}{F101}'+e['replacement'] for e in approved_entries()}
+        for gid in native_names:
+            version,local=reverse[gid];assert version==1
+            index=local-1
+            expected=aliases.get(index,readable(common_before[index]))
+            assert readable(common_after[index])==expected,('Trainer name changed',gid,index)
+            protected_trainer_count+=1
+    # Localization may change country/place labels, but cannot leak trainer
+    # aliases into Sierra Leone or Crystal Colosseum.
+    assert 'Fernanda' not in readable(common_after[5890])
+    assert 'Alice' not in readable(common_after[6735])
     for index in (9294,):
         gid = global_ids[(1, index+1)][0]
         result = h.call(0x8024FBBC, (context, gid, 1, 0), limit=3000000)
@@ -97,7 +116,9 @@ def verify(capture, dol, original_common, translated_common, original_battle, tr
             'renamed_names': sum(c['original']!=c['replacement'] for c in cases),
             'native_battle_reference_lookups': reference_cases, 'name_font_cases': cases,
             'native_changed_battle_message_lookups': battle_lookup_cases,
-            'Marina_Joel_Joey_Crystal_Colosseum_Sierra_Leone_preserved': True,
+            'protected_native_trainer_names':protected_trainer_count,
+            'Marina_Joel_Joey_preserved': True,
+            'trainer_aliases_not_leaked_into_place_labels':True,
             'original_global_message_mapping_preserved': True,
             'common_sha256': sha(translated_common), 'battle_sha256': sha(translated_battle),
             'dol_sha256': sha(dol), 'dolphin_visual_tested': False,
@@ -110,8 +131,9 @@ if __name__ == '__main__':
     p = argparse.ArgumentParser(description=__doc__)
     for n in ('capture','dol','original-common','translated-common','original-battle','translated-battle','output'):
         p.add_argument('--'+n, type=Path, required=True)
+    p.add_argument('--original-deck',type=Path)
     a = p.parse_args()
     report = verify(a.capture, a.dol.read_bytes(), a.original_common.read_bytes(), a.translated_common.read_bytes(),
-                    a.original_battle.read_bytes(), a.translated_battle.read_bytes())
+                    a.original_battle.read_bytes(), a.translated_battle.read_bytes(),a.original_deck.read_bytes() if a.original_deck else None)
     a.output.write_text(json.dumps(report, ensure_ascii=False, indent=2)+'\n')
     print(json.dumps({k:v for k,v in report.items() if k!='name_font_cases'}, indent=2))

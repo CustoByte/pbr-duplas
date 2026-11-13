@@ -1,43 +1,31 @@
-# Tradução de batalha — português brasileiro
+# Tradução — português brasileiro
 
-Atual: teste 9, mais 2.007 textos novos (1.731 de batalha e 276 comuns).
-O escopo foi ampliado para o jogo inteiro. Todas as mensagens em inglês
-pendentes da caixa preta identificadas no MESG de batalha foram tratadas;
-nomes protegidos e abreviações nativas permanecem originais.
-Os testes nativos passaram; renderização e dimensionamento real no Dolphin
-ainda precisam de inspeção. A tradução completa do jogo segue em andamento.
+Escopo atual: textos do jogo inteiro, dentro e fora das batalhas.
+O teste 10 acrescenta 5.000 mensagens novas: 808 no arquivo de batalha
+e 4.192 no arquivo comum. A tradução integral continua em andamento.
 
-Teste 8: mais 1.000 mensagens novas em 721 conjuntos de falas de treinadores;
-2.631 mensagens de batalha alteradas no total. O usuário autorizou tradução
-e publicação em lotes de 1.000 mensagens sem revisão individual.
+Preservar os nomes de Pokémon, golpes, itens, natures e habilidades.
+Manter somente as mudanças de nomes de treinadores já aprovadas.
+Não alterar equipes, atributos, regras, gráficos ou saves para traduzir textos.
+Drenagem de HP usa “vida”; sono continuado, “esta dormindo bastante.”.
+Português usa letras sem acento onde necessário e pontuação compatível,
+preservando os caracteres dos nomes originais que já existem na fonte.
 
-Escopo aprovado: todos os diálogos e menus exibidos durante as batalhas,
-incluindo comandos, seleção e troca, confirmações, informações de golpes,
-avisos e resultados. Revisão e publicação em lotes de 1.000 mensagens,
-conforme a preferência mais recente do usuário.
-Não traduzir nomes de Pokémon, golpes, natures ou itens. Nomes de treinadores
-serão escolhidos individualmente pelo usuário, apresentados em lotes de vinte.
-A primeira escolha é Joe → Pedro. O arquivo mes_common.fsys foi recebido:
-os 20 nomes revisados foram localizados, 19 trocas aplicadas na preparação
-local e Marina preservada. As referências a Joe foram atualizadas para Pedro,
-sem alterar nomes de lugares ou outras palavras parecidas. Preservar os nomes das
-abilities nesta etapa para manter a terminologia consistente.
+Cada tradução conserva os controles e parâmetros do texto original.
+Conferir valores numéricos e abreviações pelo contexto: SWITCH é TROCAR,
+e Sp. Def não é “Sp. Definitivamente”. Não contar textos inalterados,
+mudanças só de espaços ou os rascunhos pendentes como traduções novas.
 
-**Publicação imediata autorizada na instrução mais recente:** a versão de
- teste contém apenas textos já aplicados e verificados. A conclusão das demais
- falas e do isolamento de descrições compartilhadas continua pendente.
- Os rascunhos não são incluídos pelo aplicador.
+A validação usa as fontes nativas e referências de textos da mesma família.
+Isso não prova os limites reais das janelas: o visual deve ser testado no
+Dolphin. Não reduzir a fonte para esconder mensagens que não cabem.
 
-Não mudar os menus da campanha, descrições de loja ou o idioma do save.
-Usar frases naturais e curtas, preservando o sentido, os parâmetros dinâmicos,
-as pausas, as páginas e a formatação nativa. Não reduzir a fonte para esconder
-texto que não cabe. Medir com as fontes do jogo e testar os limites com nomes
-longos antes de incluir cada mensagem no pacote.
+O usuário autorizou tradução em lote e publicação sem revisão individual.
+Publicar o lote somente após concluir a seleção e os testes.
+O mesmo INICIAR-TESTE-WINDOWS.cmd continua buscando as atualizações.
+ROM, saves, arquivos originais e capturas de RAM não entram no pacote.
 
-Uma tradução só pode ser chamada de visualmente validada depois de conferir
-as telas no Dolphin. A verificação de arquivos e fontes não substitui esse teste.
-
-Fonte disponível para análise local: recurso MESG 0x27c31800, dentro de
-menu_fight_s.fsys, USA RPBE01 revisão 0. Contém 9.233 IDs, incluindo campos
-vazios, mensagens de combate, falas e listas de nomes que devem ser preservadas.
-O arquivo original não é distribuído por este repositório.
+Os rascunhos privados e resultados não aprovados não são usados pelo build.
+approved.json contém as mensagens de batalha aprovadas por delegação.
+review-common-next2000.json e review-common-lot5000.json contêm os textos
+comuns aprovados; os nomes de treinadores continuam em trainer-names.json.

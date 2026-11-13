@@ -13,13 +13,21 @@ def prepare(archive):
     resource=int(plan()['common_resource_id'],16)
     entries=dict(read_archive(renamed))
     header,rows=read_messages(entries[resource]);before=list(rows)
-    config=json.loads(Path(__file__).with_name('review-common-next2000.json').read_text())
-    if config['status']!='approved-by-user-delegation':raise ValueError('Common translations not ready for publication')
-    for key,body in config['targets_by_id'].items():
-        i=int(key);source=readable(rows[i]);prefix=re.match(r'^(?:\{F[0-9A-F]{3}\})+',source)[0]
-        rows[i]=validate_target(rows[i],prefix+compatible(body))
+    count=0;seen=set()
+    for filename in ('review-common-next2000.json','review-common-lot5000.json'):
+        path=Path(__file__).with_name(filename)
+        if not path.exists():continue
+        config=json.loads(path.read_text())
+        if config['status']!='approved-by-user-delegation':raise ValueError('Common translations not ready for publication')
+        for key,body in config['targets_by_id'].items():
+            i=int(key)
+            if i in seen:raise ValueError('Duplicate common translation index')
+            seen.add(i);source=readable(rows[i]);prefix=re.match(r'^(?:\{F[0-9A-F]{3}\})+',source)[0]
+            target=body if config.get('glyph_policy') == 'prepared-ascii-with-original-names' else compatible(body)
+            rows[i]=validate_target(rows[i],prefix+target)
+            count+=1
     changed=[i for i,(a,b) in enumerate(zip(before,rows)) if a!=b]
-    assert len(changed)==len(config['targets_by_id'])
+    assert len(changed)==count
     output=rebuild_archive(renamed,{resource:write_messages(header,rows)})
     actual=dict(read_archive(output))
     assert all(actual[k]==v for k,v in entries.items() if k!=resource)

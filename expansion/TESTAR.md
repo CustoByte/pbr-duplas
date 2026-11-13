@@ -17,7 +17,7 @@
 9. Loja: carregar um save antigo, conferir 999.999 Poké Coupons, comprar
    vários produtos e verificar o inventário. O saldo deve continuar no máximo.
    Salvar pelo jogo, fechar e reabrir; conferir produtos e saldo novamente.
-10. Teste 9: conferir a caixa preta em veneno, queimadura, sono, paralisia,
+10. Teste 10: conferir a caixa preta em veneno, queimadura, sono, paralisia,
     congelamento, confusão, clima, habilidades, itens e recuperação de HP.
     Drenagem deve usar “vida”; sono continuado, “esta dormindo bastante.”.
     Verificar nomes longos, fonte, pausas e ausência de cortes nos balões,
@@ -35,3 +35,10 @@ Não apagar a ROM original nem a cópia anterior antes de validar esta candidata
     Pedro; Marina permanece Marina. Confirmar nomes em inglês dos golpes,
     Pokémon, natures e itens. As demais falas e descrições ainda podem estar
     em inglês: esta tradução é parcial.
+
+12. Conferir os novos textos de menus, tutoriais, descricoes de golpes, itens
+    e habilidades, dentro e fora de batalha. Este lote inclui 5.000 textos
+    novos. Verificar principalmente nomes longos, quebras de linha, baloes
+    pequenos e campos dinamicos. As medidas automaticas usam referencias
+    dos textos originais; nao substituem a conferencia visual no Dolphin.
+    Registrar a tela e o contexto de qualquer texto cortado ou sem sentido.
