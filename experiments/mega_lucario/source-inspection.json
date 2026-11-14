@@ -1,0 +1,52 @@
+{
+  "status": "source_candidate_not_converted",
+  "archive_sha256": "88615654e1b4212708ed30a736ae65bd3476836d5f2473a429ee1587c78a0171",
+  "fbx_version": 6100,
+  "reader": "ufbx 0.0.5",
+  "mesh_count": 1,
+  "vertices": 4757,
+  "triangles": 9198,
+  "bones": 99,
+  "skin_deformers": 1,
+  "materials": 3,
+  "animation_stacks": [
+    {
+      "name": "Take 001",
+      "start_seconds": 0,
+      "end_seconds": 1,
+      "content_verified": false
+    }
+  ],
+  "textures": [
+    {
+      "name": "pm0448_51_BodyA1.png",
+      "size": [
+        512,
+        256
+      ],
+      "mode": "RGB"
+    },
+    {
+      "name": "pm0448_51_BodyB1.png",
+      "size": [
+        512,
+        256
+      ],
+      "mode": "RGB"
+    },
+    {
+      "name": "pm0448_51_Eye1.png",
+      "size": [
+        256,
+        256
+      ],
+      "mode": "RGB"
+    }
+  ],
+  "blender_direct_import": false,
+  "converted_to_pbr": false,
+  "gameplay_tested": false,
+  "source_license": "not_supplied",
+  "permission_assertion": "user_confirmed_permission_to_use",
+  "conversion_status": "C ufbx v0.17.1 intermediate and Blender import succeeded"
+}

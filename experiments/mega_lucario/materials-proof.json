@@ -1,0 +1,11 @@
+{
+  "passed": true,
+  "actions": 12,
+  "nodes": 117,
+  "uv_samples": 7944,
+  "max_uv_error": 4.768371586472142e-08,
+  "sdr_sha256": "722b0e2e764438c982b32a2d9d0fc84c4880697b412b5cd8fb99cea650246d0a",
+  "bytes": 2364904,
+  "native_game_tested": false,
+  "effect_positions_calibrated": false
+}

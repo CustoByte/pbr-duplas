@@ -1,0 +1,212 @@
+{
+  "source_file": "pkx_448.fsys",
+  "source_sha256": "e77ee784794c9e24fad632437b8f63709084227848d4e162f8e05eeb2dbce85a",
+  "source_size": 791200,
+  "object_name": "lucario",
+  "node_count": 91,
+  "resources": [
+    {
+      "resource_id": "09770400",
+      "decoded_size": 664928
+    },
+    {
+      "resource_id": "20340400",
+      "decoded_size": 664928
+    }
+  ],
+  "actions": [
+    {
+      "index": 0,
+      "name": "wait",
+      "start": 0.0,
+      "end": 1.3333333730697632,
+      "length": 1.3333333730697632,
+      "flags": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "bone_filter_count": 0,
+      "material_filter_count": 0
+    },
+    {
+      "index": 1,
+      "name": "run",
+      "start": 0.0,
+      "end": 0.5,
+      "length": 0.5,
+      "flags": [
+        1,
+        1,
+        1,
+        0
+      ],
+      "bone_filter_count": 0,
+      "material_filter_count": 0
+    },
+    {
+      "index": 2,
+      "name": "down",
+      "start": 0.0,
+      "end": 2.1500000953674316,
+      "length": 2.816666841506958,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "bone_filter_count": 0,
+      "material_filter_count": 0
+    },
+    {
+      "index": 3,
+      "name": "kick",
+      "start": 0.23333334922790527,
+      "end": 1.1500000953674316,
+      "length": 1.9833334684371948,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "bone_filter_count": 0,
+      "material_filter_count": 0
+    },
+    {
+      "index": 4,
+      "name": "punch",
+      "start": 1.4000000953674316,
+      "end": 1.9166667461395264,
+      "length": 2.816666841506958,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "bone_filter_count": 0,
+      "material_filter_count": 0
+    },
+    {
+      "index": 5,
+      "name": "damage",
+      "start": 0.0,
+      "end": 1.4833334684371948,
+      "length": 2.4833333492279053,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "bone_filter_count": 0,
+      "material_filter_count": 0
+    },
+    {
+      "index": 6,
+      "name": "kime_b",
+      "start": 1.3166667222976685,
+      "end": 1.5666667222976685,
+      "length": 1.9833334684371948,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "bone_filter_count": 0,
+      "material_filter_count": 0
+    },
+    {
+      "index": 7,
+      "name": "kime_a",
+      "start": 1.9000000953674316,
+      "end": 2.4833333492279053,
+      "length": 2.9833335876464844,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "bone_filter_count": 0,
+      "material_filter_count": 0
+    },
+    {
+      "index": 8,
+      "name": "kime",
+      "start": 1.4833334684371948,
+      "end": 2.4000000953674316,
+      "length": 2.9833335876464844,
+      "flags": [
+        0,
+        1,
+        1,
+        0
+      ],
+      "bone_filter_count": 0,
+      "material_filter_count": 0
+    },
+    {
+      "index": 9,
+      "name": "tx_wink",
+      "start": 0.0,
+      "end": 0.15000000596046448,
+      "length": 0.15000000596046448,
+      "flags": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "bone_filter_count": 0,
+      "material_filter_count": 1
+    },
+    {
+      "index": 10,
+      "name": "tx_sleep",
+      "start": 0.0,
+      "end": 0.98333340883255,
+      "length": 0.98333340883255,
+      "flags": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "bone_filter_count": 0,
+      "material_filter_count": 1
+    },
+    {
+      "index": 11,
+      "name": "tx_wakeup",
+      "start": 0.0,
+      "end": 0.4833333492279053,
+      "length": 0.4833333492279053,
+      "flags": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "bone_filter_count": 0,
+      "material_filter_count": 1
+    }
+  ],
+  "texture_dimensions": [
+    [
+      512,
+      512
+    ],
+    [
+      512,
+      512
+    ]
+  ],
+  "variants_have_same_actions": true,
+  "runtime_tested": false,
+  "mega_model_received": false
+}

@@ -1,0 +1,87 @@
+{
+  "schema": 1,
+  "status": "graphics_candidate_verified_offline_not_installed",
+  "name": "Mega Lucario",
+  "national_id": 448,
+  "form": "mega",
+  "independent_selection": true,
+  "battle_transformation": false,
+  "types": [
+    "Fighting",
+    "Steel"
+  ],
+  "base_stats": {
+    "hp": 70,
+    "attack": 145,
+    "defense": 88,
+    "special_attack": 140,
+    "special_defense": 70,
+    "speed": 112
+  },
+  "ability": {
+    "name": "Adaptability",
+    "native_id": 91
+  },
+  "candidate_allocation": {
+    "internal_id": 502,
+    "model_row": 671,
+    "archive_id": 8193,
+    "runtime_verified": false
+  },
+  "moveset": [
+    {
+      "name": "Bullet Punch",
+      "native_id": 418
+    },
+    {
+      "name": "Close Combat",
+      "native_id": 370
+    },
+    {
+      "name": "Aura Sphere",
+      "native_id": 396
+    },
+    {
+      "name": "Protect",
+      "native_id": 182
+    }
+  ],
+  "nature": {
+    "name": "Hardy",
+    "native_id": 0
+  },
+  "item": {
+    "name": null,
+    "native_id": 0
+  },
+  "ivs": {
+    "hp": 31,
+    "attack": 31,
+    "defense": 31,
+    "special_attack": 31,
+    "special_defense": 31,
+    "speed": 31
+  },
+  "evs": {
+    "hp": 4,
+    "attack": 128,
+    "defense": 0,
+    "special_attack": 128,
+    "special_defense": 0,
+    "speed": 248
+  },
+  "pass_placement": {
+    "kind": "initial_rental",
+    "replace_species": "Ivysaur",
+    "replace_national_id": 2,
+    "level": 50,
+    "preserve_snivy": true
+  },
+  "source_model": {
+    "file": "LucarioMega.fbx",
+    "format": "FBX 6100",
+    "permission": "user_confirmed",
+    "converted": true,
+    "gameplay_verified": false
+  }
+}
