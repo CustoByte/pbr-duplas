@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "version": "v0.13.0-mega-lucario-test.2",
-  "package_url": "https://raw.githubusercontent.com/CustoByte/pbr-duplas/v0.13.0-mega-lucario-test.2/expansion/packages/mega-lucario-test2/aplicador-core.zip",
-  "package_sha256": "695eb42c7700fdff12669645bdf8687256c8960a7ff85d7be383d7b9c271ff83",
+  "version": "v0.13.0-mega-lucario-test.3",
+  "package_url": "https://raw.githubusercontent.com/CustoByte/pbr-duplas/v0.13.0-mega-lucario-test.3/expansion/packages/mega-lucario-test3/aplicador-core.zip",
+  "package_sha256": "caae464c41998e4c5243b96b97ef271096eb955380934dfec1bce4ad20722063",
   "channel": "full493-test",
   "dolphin_tested": false,
   "local_snivy_source_required": true,

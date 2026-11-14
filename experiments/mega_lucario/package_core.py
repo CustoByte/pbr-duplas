@@ -5,12 +5,12 @@ ROOT=Path(__file__).resolve().parents[2]
 sys.path[:0]=[str(ROOT/'expansion'),str(ROOT/'mod-source')]
 from binary_delta import create,apply,sha
 from package_release import zipped
-VERSION='v0.13.0-mega-lucario-test.2'
+VERSION='v0.13.0-mega-lucario-test.3'
 
 def package(integrated,originals,output):
  source=ROOT/'expansion/packages/dialogue-test2/aplicador-core.zip'
  if sha(source.read_bytes())!='032a15a4e80fb08dd8a6988ec061dffa530d4ca580f283bf5e33263568e01526':raise ValueError('Published baseline core differs')
- for name in ('native-proof.json','runtime-proof.json','loading-proof.json','selection-proof.json'):
+ for name in ('native-proof.json','runtime-proof.json','loading-proof.json','selection-proof.json','names-proof.json'):
   if not json.loads((integrated/name).read_text()).get('passed'):raise ValueError('Missing native proof: '+name)
  with zipfile.ZipFile(source) as z:files={n:z.read(n) for n in z.namelist()}
  manifest=json.loads(files['manifesto.json']);manifest.update(mod_version=VERSION,local_mega_assets=True)
@@ -34,9 +34,14 @@ def package(integrated,originals,output):
  for name in ('Aplicar-Mod.ps1','Preparar-Mega-Lucario.ps1'):files[name]=(ROOT/'expansion'/name).read_bytes()
  for p in Path(__file__).resolve().parent.rglob('*'):
   if p.is_file() and '__pycache__' not in p.parts and p.suffix.lower() in ('.py','.c','.json','.md','.txt','.exe'):files[p.relative_to(ROOT).as_posix()]=p.read_bytes()
- text='''MEGA LUCARIO — TESTE 2 — WINDOWS
+ text='''MEGA LUCARIO — TESTE 3 — WINDOWS
 Execute o mesmo INICIAR-TESTE-WINDOWS.cmd que voce ja utiliza.
 O atualizador conserva as 433 correcoes de texto da versao anterior.
+
+Correcoes desta versao: nome completo MEGA LUCARIO em Strings dinamicas,
+reparo do nome vazio em Megas ja entregues e leitura correta de Pokemon
+com checksum adiado durante a batalha. O registro serializado nao foi ampliado.
+O aviso Invalid read foi relatado e continua sem confirmacao de resolucao.
 
 No passe inicial da Cyndy, o Mega Lucario ocupa o lugar do Ivysaur.
 A Snivy continua no outro slot; o passe Little Battle e o Lucario normal permanecem.

@@ -155,7 +155,7 @@
   "model_catalog_chain_verified": true,
   "effect_roles_verified": 25,
   "action_roles_verified": 22,
-  "dol_sha256": "75c55f195954aa434c7dcbedfc5888fae38c43b5aff5b70616549d9954c996d9",
+  "dol_sha256": "ca62af848c3ef88d3bf9164c8c52af6f75508124358517f177228191594c4b7c",
   "gameplay_verified": false,
   "save_file_modified": false
 }

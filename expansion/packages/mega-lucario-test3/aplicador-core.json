@@ -1,0 +1,76 @@
+{
+  "version": "v0.13.0-mega-lucario-test.3",
+  "package_sha256": "caae464c41998e4c5243b96b97ef271096eb955380934dfec1bce4ad20722063",
+  "bytes": 2085387,
+  "archive_checks": [
+    {
+      "path": "sys/main.dol",
+      "target_sha256": "ca62af848c3ef88d3bf9164c8c52af6f75508124358517f177228191594c4b7c",
+      "patched": true
+    },
+    {
+      "path": "files/common.fsys",
+      "target_sha256": "9ac7dcbe5c95bfef35f13412393a6acfa77fb90d8b207ff0d8cb4867a62895b3",
+      "patched": true
+    },
+    {
+      "path": "files/deck.fsys",
+      "target_sha256": "0532a445c219722df65d5d16b095a85195e43c86749f35f1d373c9b2ceab04ef",
+      "patched": false
+    },
+    {
+      "path": "files/menu_fight_s.fsys",
+      "target_sha256": "9bada56367c88a895b63c06a7641b8eb1732bcd95fe2ce5c38c20fbc04bc2503",
+      "patched": false
+    },
+    {
+      "path": "files/mes_common.fsys",
+      "target_sha256": "c8a8c4a9950238aed5ea3e2f9964dda848abc08a72bc212844f6512bfa7bdd06",
+      "patched": true
+    },
+    {
+      "path": "files/menu_bpass2.fsys",
+      "target_sha256": "784b3f5ef218081ed4d60d5502de33605f0aafd2a204e2a6debf1592826a7366",
+      "patched": false
+    },
+    {
+      "path": "files/menu_btutorial.fsys",
+      "target_sha256": "05c0fcda3be55e8f9a3cb68ce629942a06d93bc589705779ca51b3876e530792",
+      "patched": false
+    },
+    {
+      "path": "files/menu_name2.fsys",
+      "target_sha256": "2c4e802866698503d7a8994d22e932f0a25d029891e11edeab748ea5d4ad34d0",
+      "patched": false
+    },
+    {
+      "path": "files/mes_bpass_e.fsys",
+      "target_sha256": "352654e76b7af55a169dd0a60959ca2f37043038a682d4ad633621134a71485a",
+      "patched": false
+    },
+    {
+      "path": "files/mes_fight_e.fsys",
+      "target_sha256": "0d15e60ebb803a42d2a4a716c23456197eb5dd1f892644bd6bca8f238d162d7b",
+      "patched": false
+    },
+    {
+      "path": "files/mes_name_e.fsys",
+      "target_sha256": "5e29d6151cde367def02744abbdf21057cc63b13798a85789ed0f3b87443ac59",
+      "patched": false
+    },
+    {
+      "path": "files/title.fsys",
+      "target_sha256": "ffdab8acb35584dfcb12813f32422caa62f5e90bcd299a82d44cf9c3049e2c9f",
+      "patched": false
+    },
+    {
+      "path": "files/GSfsys.toc",
+      "target_sha256": "65f8ec1f24993fe1d839f4783693c9bf4c8b8eb87f8771261b64b508a0428e0a",
+      "patched": true
+    }
+  ],
+  "game_assets_distributed": false,
+  "original_and_save_files_modified": false,
+  "dolphin_tested": false,
+  "published": false
+}

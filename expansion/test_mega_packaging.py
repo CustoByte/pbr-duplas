@@ -10,7 +10,9 @@ class MegaPackagingTests(unittest.TestCase):
   with self.assertRaisesRegex(ValueError,"No module named 'translation'"):
    check_runtime_imports(ROOT/'expansion/packages/mega-lucario-test1/aplicador-core.zip')
  def test_new_package_imports_without_checkout_on_pythonpath(self):
-  check_runtime_imports(ROOT/'expansion/packages/mega-lucario-test2/aplicador-core.zip')
+  feed=json.loads((ROOT/'expansion/update-test.json').read_text())
+  relative=feed['package_url'].split('/'+feed['version']+'/',1)[1]
+  check_runtime_imports(ROOT/relative)
  def test_failure_outside_worker_stages_is_logged(self):
   path=ROOT/'experiments/mega_lucario/convert_local.py'
   spec=importlib.util.spec_from_file_location('mega_error_fixture',path);module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)

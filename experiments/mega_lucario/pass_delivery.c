@@ -6,12 +6,24 @@ typedef unsigned int u32;
 #error Missing audited preceding accessor
 #endif
 #define GET ((u32 (*)(void *,u32,u32))0x803DE52Cu)
-#define SET ((void (*)(void *,u32,const u32 *))0x803DECA8u)
+#define SET ((void (*)(void *,u32,const void *))0x803DECA8u)
+#define PARTY_GET ((u32 (*)(void *,u32,u32))0x803E100Cu)
+#define UNCHECKED_GET ((u32 (*)(void *,u32,u32))0x803DE5C4u)
 #define CTOR ((void (*)(void *,void *,const void *,void *,u32))0x8017D750u)
 #define BASE_STATS ((void (*)(u32,void *))0x803E052Cu)
 #define WORD(p) (*(volatile u32 *)(p))
 #define HALF(p) (*(volatile u16 *)(p))
 static volatile u32 busy;
+/* Keep the serialized Gen4 nickname at its native 10-character size. The
+ * display getter expands this private marker to the complete species name. */
+static const u16 name_marker[11]={0x0137,0x01AE,0x0136,0x013F,0x012D,0x012B,0x013C,0x0133,0x0139,0xFFFF,0xFFFF};
+static const u16 display_name[13]={0x0137,0x012F,0x0131,0x012B,0x01DE,0x0136,0x013F,0x012D,0x012B,0x013C,0x0133,0x0139,0xFFFF};
+static void repair_name(u8 *mon) {
+ u16 raw[11];
+ GET(mon,116,(u32)raw);
+ if(raw[0]==0 || raw[0]==0xFFFF) SET(mon,116,name_marker);
+}
+
 static void zero(u8 *p,u32 n) { while(n--) *p++=0; }
 static int ready(void) {
  u32 *stats=(u32 *)WORD(0x80625184u), *models=(u32 *)WORD(0x80625174u);
@@ -46,6 +58,7 @@ static int construct(u8 *out) {
    ot^=0x00080000u;SET(out,7,&ot);
   }
  }
+ repair_name(out);
  if(GET(out,5,0)!=502||GET(out,160,0)!=50||GET(out,173,0)!=502||GET(out,10,0)!=91||GET(out,6,0)!=0) return 0;
  for(i=0;i<4;i++)if(GET(out,0x36+i,0)!=moves[i])return 0;
  return 1;
@@ -58,6 +71,8 @@ u32 mega_accessor(u32 address) {
   /* Only the original level-50 Ivysaur in the requested starter slot. */
   if(GET(slot,5,0)==2 && GET(slot,160,0)==50 && construct(generated)) {
    for(i=0;i<0x8C;i++)slot[i]=generated[i];
+  } else if(GET(slot,5,0)==502) {
+   repair_name(slot);
   }
   busy=0;
  }
@@ -70,9 +85,25 @@ u32 mega_accessor(u32 address) {
  * at 146/181/108/163/176/90. Naturally shiny Mega records still receive the bonus.
  */
 u32 mega_appearance(void *mon) {
- if(GET(mon,5,0)==502) {
-  u32 pid=GET(mon,0,0),ot=GET(mon,7,0);
+ if(PARTY_GET(mon,5,0)==502) {
+  u32 pid=PARTY_GET(mon,0,0),ot=PARTY_GET(mon,7,0);
   return ((u32 (*)(u32,u32))0x803DF75Cu)(ot,pid);
  }
  return ((u32 (*)(void *))0x8064D800u)(mon);
+}
+
+/* Called only from the native nickname-to-String-object getter. Never copy
+ * twelve characters into the fixed serialized PK4 nickname buffer. */
+u32 mega_display_name(void *mon,u16 *text) {
+ u16 raw[11];u32 i,marker=1,empty=1;
+ if(!text || text[0]<13 || UNCHECKED_GET(mon,5,0)!=502) return 0;
+ UNCHECKED_GET(mon,116,(u32)raw);
+ for(i=0;i<10;i++) {
+  if(raw[i]!=name_marker[i]) marker=0;
+  if(raw[i]!=0 && raw[i]!=0xFFFF) empty=0;
+ }
+ if(!marker && !empty) return 0; /* Respect player-selected nicknames. */
+ text[1]=12;
+ for(i=0;i<13;i++)text[4+i]=display_name[i];
+ return 1;
 }

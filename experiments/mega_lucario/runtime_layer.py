@@ -80,6 +80,19 @@ def patch(dol,payload):
  for site in (0x80104DAC,0x80104EA4):
   old=target(site,word(dol,file_offset(dol,site)));a=cursor
   install(site,[d(11,0,0,502),0x40820008,d(14,0,0,448),branch(a+12,old)])
+ # Grow heap String objects requested for Gen4 nicknames. The constructor
+ # allocates the larger backing buffer; no pointer/party record layout changes.
+ site=0x803E2604
+ if word(dol,file_offset(dol,site))!=d(37,1,1,-16):raise ValueError('Unexpected String constructor')
+ a=cursor;install(site,[d(11,0,3,11),0x40820008,d(14,3,0,16),d(37,1,1,-16),branch(a+16,site+4)])
+ # The unchecked getter has already established checksum/lock state. Expand
+ # only default Mega names in its dynamic String output, not raw PK4 fields.
+ site=0x803DE978
+ if word(dol,file_offset(dol,site))!=0x7FC3F378:raise ValueError('Unexpected nickname String getter')
+ a=cursor
+ install(site,[0x7F23CB78,0x7FC4F378,branch(a+8,payload['symbols']['mega_display_name'],True),
+               d(11,0,3,0),0x41820008,branch(a+20,0x803DE984),
+               0x7FC3F378,branch(a+28,site+4)])
  if cursor>PAYLOAD:raise ValueError('Trampolines exceed reservation')
  # Preserve the forced-rental-shiny policy for every pre-existing species.
  # Only the new Mega uses the native PID/OT appearance predicate.
