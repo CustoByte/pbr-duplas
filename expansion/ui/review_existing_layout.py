@@ -12,7 +12,7 @@ from pathlib import Path
 from prepare_campaign_doubles import read_archive, sha
 from encounter_expansion import rebuild_archive
 from translation.messages import TOKEN, read_messages, readable, write_messages
-from ui.dialogue_layout import reflow, validate_layout
+from ui.dialogue_layout import reflow, validate_layout, LEAD
 from ui.dialogue_editorial import concise, eligible, validate_editorial
 
 RESOURCES = {'common': ('mes_common.fsys',0x27C10000), 'battle': ('menu_fight_s.fsys',0x27C31800),
@@ -58,9 +58,9 @@ def review(originals, baseline, metrics, output):
             report['checked'] += 1
             source,before = readable(original),readable(translated)
             # These entries are alternative titles shown in the same title
-            # selector: Master Class and Master of Masters, same native font.
-            width_reference = (metrics(readable(source_rows[9274]))[0]
-                               if kind == 'common' and index == 9270 else None)
+            # selector, including Swimming Club Member, in the same native font.
+            width_reference = (max(metrics(readable(source_rows[n]))[0] for n in range(9264,9341))
+                               if kind == 'common' and 9264 <= index <= 9340 else None)
             after,case = reflow(kind,index,source,before,metrics,names,width_reference)
             editorial = []
             if case['status'] != 'bounded' and eligible(kind,index):
@@ -76,7 +76,12 @@ def review(originals, baseline, metrics, output):
                 candidate,newcase = reflow(kind,index,source,manual_text,metrics,names,width_reference)
                 if newcase['status'] != 'bounded' and index in manual.get('nonworsening_fixed_caption_ids',[]):
                     old_size,new_size=metrics(before),metrics(manual_text)
-                    if new_size[0] <= old_size[0] and new_size[1] <= old_size[1]:
+                    allowed_height=old_size[1]
+                    if LEAD.match(source)[0] == LEAD.match(manual_text)[0]:
+                        # Repair a lost native leading newline, rather than
+                        # treating the broken prior baseline as the height cap.
+                        allowed_height=max(allowed_height,metrics(source)[1])
+                    if new_size[0] <= old_size[0] and new_size[1] <= allowed_height:
                         candidate=manual_text
                         newcase=dict(status='reviewed-no-size-increase',pages=[],extra_pages=0,
                                      before_metric=old_size,after_metric=new_size,physical_frame_verified=False)

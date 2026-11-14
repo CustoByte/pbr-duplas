@@ -1,3 +1,13 @@
+# Lote adicional: manter o mesmo CMD
+
+A test.2 acrescenta 51 correções, totalizando 433 sobre Snivy test.4. Não há
+traduções inéditas. Correções de controles/títulos e acentos foram revistas
+contra o inglês, com 47 testes de texto e atualização. A revisão geral continua;
+não pedir prints nem fornecer outro launcher como condição para corrigir.
+O pacote e seu SHA estão em packages/dialogue-test2; usar o canal existente.
+
+---
+
 # Canal publicado — reutilizar o CMD existente
 
 A atualização `v0.12.1-dialogue-test.1` é entregue pelo mesmo feed

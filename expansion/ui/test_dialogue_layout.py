@@ -96,6 +96,11 @@ class DialogueLayoutTests(unittest.TestCase):
         self.assertEqual(report['status'],'bounded')
         self.assertEqual(report['extra_pages'],0)
 
+    def test_name_guard_does_not_treat_mistica_as_the_move_mist(self):
+        validate_editorial('{F001}{F101}Garota Mistica','{F001}{F101}Garota mística',{'Mist'})
+        with self.assertRaises(ValueError):
+            validate_editorial('{F001}{F101}Usa Mist.','{F001}{F101}Usa Névoa.',{'Mist'})
+
     def test_editorial_cannot_drop_negation(self):
         before='{F001}{F101}O usuário não pode agir por 2 turnos.'
         with self.assertRaises(ValueError):validate_editorial(before,before.replace('não ',''))

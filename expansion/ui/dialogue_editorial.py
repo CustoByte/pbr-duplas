@@ -1,5 +1,7 @@
 """Explicit concise phrasing for existing static descriptions, never new text IDs."""
 import re
+from collections import Counter
+from functools import lru_cache
 from translation.messages import TOKEN, encoded
 
 # Each replacement retains subject/condition/effect; numerical values, names,
@@ -51,6 +53,14 @@ def concise(text):
     return target, applied
 
 
+@lru_cache(maxsize=8)
+def name_matcher(names):
+    if not names:
+        return None
+    ordered=sorted(names,key=lambda name:(-len(name),name))
+    return re.compile(r'(?<!\w)(?:'+'|'.join(re.escape(name) for name in ordered)+r')(?!\w)')
+
+
 def validate_editorial(before, after, names=(), allow_pages=False):
     from ui.dialogue_layout import validate_presentation
     validate_presentation(before,after,allow_pages)
@@ -60,9 +70,12 @@ def validate_editorial(before, after, names=(), allow_pages=False):
     for word in ('não', 'nunca', 'sempre', 'apenas', 'somente'):
         if len(re.findall(r'\b'+word+r'\b', a,re.I)) != len(re.findall(r'\b'+word+r'\b',b,re.I)):
             raise ValueError('Description revision changed a qualifier')
-    for name in names:
-        if name in a and a.count(name) != b.count(name):
-            raise ValueError('Description revision changed a protected name: '+name)
+    matcher=name_matcher(frozenset(names))
+    if matcher is not None:
+        old_names=Counter(matcher.findall(a)); new_names=Counter(matcher.findall(b))
+        for name,count in old_names.items():
+            if new_names[name]!=count:
+                raise ValueError('Description revision changed a protected name: '+name)
     if encoded(before)[:8] != encoded(after)[:8]:
         raise ValueError('Description revision changed fonts')
     return encoded(after)

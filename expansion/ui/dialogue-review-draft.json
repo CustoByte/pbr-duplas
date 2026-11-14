@@ -4,7 +4,7 @@
     "mes_common.fsys": {
       "base_sha256": "72616c5f217a1580e231862c8efca8b1006c76182dc662ebe8018fb46ab9eea7",
       "resource": "0x27c10000",
-      "target_sha256": "680260c5d9f9d2e1e6378af3a9d5cdcb5a84cea8276e434a877e9a507ee8005b",
+      "target_sha256": "974f8f4794a82e6c51ceaec13f9b0c4aa377295ec23f651622babe2777f824ab",
       "targets_by_id": {
         "1570": {
           "source_sha256": "66e398617da3cb6a5fd0737a6a53fb4cce4601a9d59b77101ee9f0efc70a6db7",
@@ -1944,9 +1944,63 @@
           "extra_pages": 0,
           "status": "bounded"
         },
+        "9266": {
+          "source_sha256": "7d8c03350a31625123156e326f348b78cffa9e33f94a9dcb58a36ff8fd89b50a",
+          "target": "{F001}{F101}Líder do Coliseu",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9268": {
+          "source_sha256": "6d98b13b237742e8602b46315fb0a1eafea752845db43f1f0ef83983a581439b",
+          "target": "{F001}{F101}Rei da Sobrevivência",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9269": {
+          "source_sha256": "0ea747a82bd8ca988081480a871d2c10844ae649b9f38b5a212ff1d667453be0",
+          "target": "{F001}{F101}Líder em treinamento",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
         "9270": {
           "source_sha256": "912c012e9f7525ec866e626e175c711cf1321d292079ca0f7254bd556cbc84f9",
           "target": "{F001}{F101}Classe Mestre",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9271": {
+          "source_sha256": "d23edbe32b9e3876ebd6f54beb6829b4e088d52875d0a9cec516594488019a64",
+          "target": "{F001}{F101}Mestre Júnior",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9272": {
+          "source_sha256": "ff2aca3c4eec71cba1fdcf899044a412eb5555b7b870d1e06d2879ed29344ccc",
+          "target": "{F001}{F101}Mestre Intermediário",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9273": {
+          "source_sha256": "d09ffe02be48be33d5ce8e3eff41b9e991534e69b0928873a1c7d06f294475ed",
+          "target": "{F001}{F101}Mestre Sênior",
           "editorial_rules": [
             "explicit reviewed menu rephrase"
           ],
@@ -1960,7 +2014,277 @@
             "explicit reviewed menu rephrase"
           ],
           "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9276": {
+          "source_sha256": "9afc9fdcb7eab852c89f216a6cd4a29a1e31ae79bba0e8daf24ea6a41cdbbd00",
+          "target": "{F001}{F101}Coleciona Poké Ball",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9277": {
+          "source_sha256": "ab6954504122cbcd902cfc0d6af175a5a159d95d7e892e1edd93dfaa96244131",
+          "target": "{F001}{F101}Membro da Expedição",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9278": {
+          "source_sha256": "c1fdc06b032c3ccbf25e2028b090ef35a7f2bc01fc831baab8393324bfd40e27",
+          "target": "{F001}{F101}Membro do Clube de Natação",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
           "status": "reviewed-no-size-increase"
+        },
+        "9280": {
+          "source_sha256": "cb45ab763abca62e5c0f6153b7eea17e971581e21e4111362146c2e076e153eb",
+          "target": "{F001}{F101}Maníaco por tecnologia",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "reviewed-no-size-increase"
+        },
+        "9287": {
+          "source_sha256": "48d50b52cc1322f788b2329e231f8c772cf836d2c30e00ff84e59f593d34b787",
+          "target": "{F001}{F101}Excursionista",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9288": {
+          "source_sha256": "cda2bbbc2e0666d9969f1721923e4bee4d167cb1ec89a76fedb0ad8075b7de8a",
+          "target": "{F001}{F101}Brinca de caubói",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9289": {
+          "source_sha256": "8579082a74086670108c07be47272793ca4d38146645d3b5ba489f38ccdd24d1",
+          "target": "{F001}{F101}Aprendiz de mágico",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9290": {
+          "source_sha256": "b0c4739f1fc0fe6152462971a32fd97cefe191f638263e029f3fe783e2cfec60",
+          "target": "{F001}{F101}Fã de ficção científica",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "reviewed-no-size-increase"
+        },
+        "9291": {
+          "source_sha256": "629127bb396e256d3f2a36984369393e71fe71261cf7459e98109687f3e4ebdc",
+          "target": "{F001}{F101}Brinca de pirata",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9294": {
+          "source_sha256": "928b19dc5a19bc9f16ba487b21828de1bf84eabe59d229d0c72ea463cc09a787",
+          "target": "{F001}{F101}Fã de Pedro",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9295": {
+          "source_sha256": "20f3e0f264438c2ee6c6d0b73cc650a322558f33a0ee9ed9420c92bd18fb3e2d",
+          "target": "{F001}{F101}Fã-clube de Sashay",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9297": {
+          "source_sha256": "6350fe2773abddf4546f74c5c4cbc30e67e742fc3952ef72e0c82a8d88289665",
+          "target": "{F001}{F101}Irmãos gêmeos",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9298": {
+          "source_sha256": "5e501294ee051ab89f81a34ccace8b55226f122c318252d875412cb2867c4a7c",
+          "target": "{F001}{F101}Irmãs gêmeas",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9300": {
+          "source_sha256": "c45af03aa6736addcc189f2f051043b93b3d02a3c8df2dfce50c5db1b13f260c",
+          "target": "{F001}{F101}Três irmãs",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9304": {
+          "source_sha256": "a8d2f9f31308488aff49cc824dfadd82430bfec3b5f8b064c8b49e77b5c18cfe",
+          "target": "{F001}{F101}Irmãos unidos",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9305": {
+          "source_sha256": "a8d2f9f31308488aff49cc824dfadd82430bfec3b5f8b064c8b49e77b5c18cfe",
+          "target": "{F001}{F101}Irmãos unidos",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9306": {
+          "source_sha256": "5a4a902304a1db64ce280644b0a2698470e90499dd4153870f0f1f160825ede9",
+          "target": "{F001}{F101}Casal intergeracional",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9309": {
+          "source_sha256": "2baf204e925cebe1c5fc919a7d0cbddf43b85a8201d70a9c34bbd30edf94f99d",
+          "target": "{F001}{F101}Lobo solitário",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9313": {
+          "source_sha256": "624df2fbe58b2842eb8de571da1bf65f43dfbde09b4820d574da0167512057f8",
+          "target": "{F001}{F101}Maníaco por fofura",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9316": {
+          "source_sha256": "9d172688b044d88d75a457e0a19ceb4ea3543cabcddba3fdb4f30b0f7d435233",
+          "target": "{F001}{F101}Pequeno lenhador",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9317": {
+          "source_sha256": "8e36e77aadd69cad5da53d0ba1a585285ac0c15d2d71c4b9eb202d3f69e548af",
+          "target": "{F001}{F101}Caçador de insetos",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9323": {
+          "source_sha256": "e1a68547fc64d8406605ab0a8f61295576c378c48e41cca415a7b849a729fbf9",
+          "target": "{F001}{F101}Menino dragão",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9326": {
+          "source_sha256": "3a7cdfadad97e2cfce955f520ddf9ef9f82f38e30102244e4d578303dba99da0",
+          "target": "{F001}{F101}Homem medroso",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9327": {
+          "source_sha256": "65c1a97b47330edd3783cef0a673729ccd7c3c53396a6223dc5e9790bf5c74c7",
+          "target": "{F001}{F101}Garota mística",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9328": {
+          "source_sha256": "ff3e6169244d5f04f5f2478785fb046ee2696b5aadfdebb7dfcf06c7c68399ab",
+          "target": "{F001}{F101}Corpo de aço",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9330": {
+          "source_sha256": "8a29db9fb9914bfb6e826eb05d0370890af48f82ab3876b560d526a90adaa59c",
+          "target": "{F001}{F101}Menino de língua venenosa",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "reviewed-no-size-increase"
+        },
+        "9331": {
+          "source_sha256": "ef2ac7d3c195ebf6ffb7613dd4483208f172ab033194d9840353f34b8810dba6",
+          "target": "{F001}{F101}Garota que salpica",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9333": {
+          "source_sha256": "fd555c5e5e5c1ab19ee0c151d7461d8ca643602bab58d4ed4f5e3741715e65dd",
+          "target": "{F001}{F101}Senhora aromática",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9334": {
+          "source_sha256": "20e3539b53139f8adb938d3f1896800a693ec3756c50f0832835d51c1c92d312",
+          "target": "{F001}{F101}Caçadora de insetos",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9335": {
+          "source_sha256": "f596cf1889909542f6882bd519690c44ec1ea75cb6d06c1746c895b3537075bb",
+          "target": "{F001}{F101}Beleza elegante",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
         },
         "9403": {
           "source_sha256": "28329cfecf3c1a749e701ef073839925b82bb56ae3bbeabf1d0984b4cd6931a3",
@@ -1983,6 +2307,24 @@
         "9406": {
           "source_sha256": "bf10886ce5aad904918ede895cf26b2b4d4467d3f9f671bdcba11fcc64e17853",
           "target": "{F001}{F101}{0027}Isso é incrível! Que conquista\nimpressionante!{0028}{000D}\n{0027}Alcançar 100 vitórias na Batalha de\nSobrevivência é um grande marco!{0028}{0067}",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9407": {
+          "source_sha256": "aba2b11758d2257e27abff37b1dced313d2df2ab876b2e22061311541df1337c",
+          "target": "{F001}{F100}{0003:0003}{0005:0003}Batalha única: 3",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "reviewed-no-size-increase"
+        },
+        "9409": {
+          "source_sha256": "3709a1f05e74e189cdeda843575808c59f2bcf7d0ad93711a5ba070b597e03da",
+          "target": "{F001}{F100}{0003:0003}{0005:0003}Sem restrição",
           "editorial_rules": [
             "explicit reviewed menu rephrase"
           ],
@@ -2033,6 +2375,123 @@
           ],
           "extra_pages": 0,
           "status": "bounded"
+        },
+        "9444": {
+          "source_sha256": "c72de911908bef19e08a463e37ae6b7c69303837b70dfa9671a42b1ded0b5c3f",
+          "target": "{F000}{F101}{0003:0002}Wii Remote: tipo A",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9445": {
+          "source_sha256": "083c1ba97f9cd1586e07b3f8abad255043a7b1c3ed00a89308e29f8ed54f6745",
+          "target": "{F000}{F101}{0003:0002}Wii Remote: tipo B",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9447": {
+          "source_sha256": "3d9d307c3db8154438c9d164e5209fd36a7d2b123e77b0d3b29a4e4c8942c8c7",
+          "target": "{F001}{F101}Ponteiro/direcional +",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9448": {
+          "source_sha256": "9198063ba68ce9070e546af32bfc1672eab1b8c522a0ee2a9a0795c1e5cfe268",
+          "target": "{F001}{F101}Botão A",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9450": {
+          "source_sha256": "e3105584ca6aa5ee6bd57b292a83b1528711809ec4e2bfd448bcab7187e3367a",
+          "target": "{F001}{F101}Botão 2",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9451": {
+          "source_sha256": "27f0e5c8d2fed099b377dd91925f9436feaf1f335236ba59ffb2ee42d7305889",
+          "target": "{F001}{F101}Botão 1",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9460": {
+          "source_sha256": "2d19e53bcc0e8d8a9a36a19020a6840c6b322a56e1e995860dd850575ab5e11e",
+          "target": "{F001}{F100}{0003:0003}{0005:0003}Vale tudo",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9471": {
+          "source_sha256": "b6c2d76960f93387ac2fb02fd007c083b4f4ef2b3ffbc280e558813660f5a56d",
+          "target": "{F001}{F101}Batalha única",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "reviewed-no-size-increase"
+        },
+        "9481": {
+          "source_sha256": "8df5b5e7c67eda415c8124d84f8e078519ec61e88c35fcc26ebc5ed9b30650ef",
+          "target": "{F001}{F101}{8011}{FFEF}\nBatalha com um amigo",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "reviewed-no-size-increase"
+        },
+        "9482": {
+          "source_sha256": "2116c743d725ffab28e2617c006b08815d1c0436cbd5c56fc8e6163726e86f99",
+          "target": "{F001}{F101}Na Batalha com alguém, seu adversário\né escolhido ao acaso entre jogadores\nconectados à Nintendo Wi-Fi Connection.",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9483": {
+          "source_sha256": "18063a28f1c1dedfb62ace5fec93bb8fe51ad45d7f4f6118e80357250f6e2d28",
+          "target": "{F001}{F101}Na Batalha com um amigo, escolha alguém\nda sua lista de amigos conectado à\nNintendo Wi-Fi Connection.",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9496": {
+          "source_sha256": "4c3af689995dc68c79ae9b4393f1d1dbbb54c4c2e9d9561be5d35c3555f670d2",
+          "target": "{F000}{F101}{0003:0002}{0005:0003}Encerrar a busca.",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9499": {
+          "source_sha256": "98d2ab0f6ef2902c96ad59234e3aa03664f37873fcc64cb76be5e74342346703",
+          "target": "{F000}{F101}{0003:0002}Sala de batalha com amigo",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "reviewed-no-size-increase"
         },
         "9564": {
           "source_sha256": "ef2f0d29ca2f918656cd4851001e2d06ff25ab9820449eeb737a8b399672fbef",

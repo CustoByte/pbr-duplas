@@ -1,9 +1,9 @@
 {
   "status": "passed-offline-review-not-complete",
   "checked_changed_message_ids": 10006,
-  "prepared_corrections": 382,
+  "prepared_corrections": 433,
   "added_continuation_controls": 50,
-  "pending_conservative_flags": 2658,
+  "pending_conservative_flags": 2598,
   "new_translations": 0,
   "native_paging": {
     "passed": true,
@@ -227,6 +227,12 @@
   "tilde_registration_cases": 40,
   "archives": [
     {
+      "filename": "mes_name_e.fsys",
+      "reproduced": true,
+      "non_message_resources_unchanged": true,
+      "changed_resources": []
+    },
+    {
       "filename": "mes_bpass_e.fsys",
       "reproduced": true,
       "non_message_resources_unchanged": true,
@@ -243,26 +249,6 @@
       ]
     },
     {
-      "filename": "menu_name2.fsys",
-      "reproduced": true,
-      "non_message_resources_unchanged": true,
-      "changed_resources": []
-    },
-    {
-      "filename": "mes_name_e.fsys",
-      "reproduced": true,
-      "non_message_resources_unchanged": true,
-      "changed_resources": []
-    },
-    {
-      "filename": "menu_bpass2.fsys",
-      "reproduced": true,
-      "non_message_resources_unchanged": true,
-      "changed_resources": [
-        "0x27c31800"
-      ]
-    },
-    {
       "filename": "menu_fight_s.fsys",
       "reproduced": true,
       "non_message_resources_unchanged": true,
@@ -271,11 +257,25 @@
       ]
     },
     {
+      "filename": "menu_name2.fsys",
+      "reproduced": true,
+      "non_message_resources_unchanged": true,
+      "changed_resources": []
+    },
+    {
       "filename": "menu_btutorial.fsys",
       "reproduced": true,
       "non_message_resources_unchanged": true,
       "changed_resources": [
         "0x2a431800"
+      ]
+    },
+    {
+      "filename": "menu_bpass2.fsys",
+      "reproduced": true,
+      "non_message_resources_unchanged": true,
+      "changed_resources": [
+        "0x27c31800"
       ]
     },
     {
@@ -292,11 +292,12 @@
   "player_feed_changed": false,
   "dolphin_visual_tested": false,
   "review_complete": false,
-  "contextual_main_menu_targets": 89,
-  "no_screenshot_dependency": true,
-  "text_and_update_workflow_tests_passed": 46,
+  "contextual_main_menu_targets": 140,
+  "new_corrections_since_test1": 51,
+  "text_and_update_workflow_tests_passed": 47,
   "delivery": "existing-auto-updater",
   "new_launcher_required": false,
-  "channel_version": "v0.12.1-dialogue-test.1",
-  "channel_package_sha256": "3e4cfe10d6e0a8b94886b1ca04b1333ccd4b57f5473290cbbf0f7c1219a3d869"
+  "channel_version": "v0.12.1-dialogue-test.2",
+  "channel_package_sha256": "032a15a4e80fb08dd8a6988ec061dffa530d4ca580f283bf5e33263568e01526",
+  "no_screenshot_dependency": true
 }
