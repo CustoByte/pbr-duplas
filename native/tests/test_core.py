@@ -23,7 +23,11 @@ class NativeLauncherTests(unittest.TestCase):
         stream = io.BytesIO()
         with zipfile.ZipFile(stream, 'w') as archive:
             for name, content in entries:
-                archive.writestr(name, content)
+                # ZipInfo normalizes Windows separators at construction. Restore
+                # the raw entry name to exercise a malicious ZIP on every OS.
+                entry = zipfile.ZipInfo(name)
+                entry.filename = name
+                archive.writestr(entry, content)
         return stream.getvalue()
 
     def feed(self, data, version='v0.1.0-test.1'):
