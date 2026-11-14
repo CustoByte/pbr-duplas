@@ -1,0 +1,39 @@
+{
+  "passed": true,
+  "kind": "native PPC isolated runtime/FSYS dispatch, no GPU or disc I/O",
+  "boundary_cases": 90,
+  "cry_bank_boundary_cases": 21,
+  "mega_cry_bank": 448,
+  "mega_prediction_row_safe": true,
+  "all_other_species_comparisons_preserved": true,
+  "legacy_name_cases": 504,
+  "mega_name_id": 21776,
+  "path": "pkx_502.fsys",
+  "resource_handlers": [
+    {
+      "archive": "menu_face.fsys",
+      "resource": "7beb0c00",
+      "index": 646,
+      "handler_type": 6
+    },
+    {
+      "archive": "menu_pokemon.fsys",
+      "resource": "6beb0c00",
+      "index": 646,
+      "handler_type": 6
+    },
+    {
+      "archive": "pkx_502.fsys",
+      "resource": "73eb0400",
+      "index": 0,
+      "handler_type": 2
+    },
+    {
+      "archive": "pkx_502.fsys",
+      "resource": "63eb0400",
+      "index": 1,
+      "handler_type": 2
+    }
+  ],
+  "gameplay_verified": false
+}

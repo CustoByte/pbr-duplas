@@ -1,0 +1,18 @@
+{
+  "passed": true,
+  "kind": "native four-pick selection and packing in reconstructed UI fixture",
+  "modes": [
+    {
+      "coop": false,
+      "selected_species": [
+        502,
+        501,
+        8,
+        148
+      ],
+      "four_picks_packed": true
+    }
+  ],
+  "original_pass_memory_untouched": true,
+  "gameplay_verified": false
+}

@@ -8,6 +8,7 @@ param(
     [string]$DolphinPath,
     [string]$StatePath,
     [string]$SnivySourcePath,
+    [string]$MegaSourcePath,
     [switch]$DoNotLaunch,
     [switch]$NoGui
 )
@@ -125,6 +126,13 @@ try {
             $SnivySourcePath = Choose-Open 'Selecione Tsutarja.brres extraido do seu PokePark 2' 'Snivy BRRES|*.brres'
         }
     }
+    if ($manifest.local_mega_assets) {
+        . (Join-Path $PackageRoot 'Preparar-Mega-Lucario.ps1')
+        if (-not $MegaSourcePath -and $savedState -and $savedState.mega_source) { $MegaSourcePath = $savedState.mega_source }
+        if (-not $MegaSourcePath -or -not (Test-Path -LiteralPath $MegaSourcePath -PathType Leaf)) {
+            $MegaSourcePath = Choose-Open 'Selecione o mega-lucario.zip usado na previa aprovada' 'Mega Lucario ZIP|*.zip'
+        }
+    }
     foreach ($entry in $manifest.replacements) {
         if ($entry.package_path -match '(^[\/]|(^|[\/])\.\.([\/]|$)|:)' -or
             $entry.installed_path -notmatch '^(sys/main\.dol|files/.+)$' -or
@@ -230,6 +238,16 @@ try {
             $expectedFiles[$name] = @{ size = (Get-Item -LiteralPath $destination).Length; sha256 = (Hash $destination) }
         }
     }
+    if ($manifest.local_mega_assets) {
+        if (-not $manifest.local_snivy_assets) { throw 'O Mega Lucario requer a etapa cumulativa da Snivy.' }
+        $megaCache = Join-Path $snivyDataRoot 'MegaLucario'
+        $megaAssets = Prepare-MegaLucario $partition $MegaSourcePath $megaCache $snivyCache
+        foreach ($name in @('pkx_502.fsys', 'menu_face.fsys', 'menu_pokemon.fsys')) {
+            $destination = Join-Path $partition ('files/' + $name)
+            Copy-Item -LiteralPath (Join-Path $megaAssets $name) -Destination $destination -Force
+            $expectedFiles[$name] = @{ size = (Get-Item -LiteralPath $destination).Length; sha256 = (Hash $destination) }
+        }
+    }
     $built = Join-Path $JobRoot 'resultado.rvz'
     Note '[4/5] Gerando uma nova RVZ com o mod instalado...'
     Run-Tool -Arguments @('convert', '-i', (Join-Path $partition 'sys/main.dol'), '-o', $built,
@@ -281,6 +299,7 @@ try {
             image_sha256 = $report.sha256; manifest_sha256 = $manifestHash
             mod_version = $manifest.mod_version
             snivy_source = $SnivySourcePath
+            mega_source = $MegaSourcePath
         }
         $state | ConvertTo-Json | Set-Content -LiteralPath ($StatePath + '.tmp') -Encoding UTF8
         Move-Item -LiteralPath ($StatePath + '.tmp') -Destination $StatePath -Force

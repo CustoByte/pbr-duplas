@@ -1,0 +1,161 @@
+{
+  "passed": true,
+  "kind": "native PPC replay on private cloned pass memory, not Dolphin gameplay",
+  "records": [
+    {
+      "pass_index": 37,
+      "slot": 0,
+      "species": 502,
+      "level": 50,
+      "moves": [
+        418,
+        370,
+        396,
+        182
+      ],
+      "pp": [
+        30,
+        5,
+        20,
+        10
+      ],
+      "ability": 91,
+      "item": 0,
+      "nature": 0,
+      "ivs": [
+        31,
+        31,
+        31,
+        31,
+        31,
+        31
+      ],
+      "evs": [
+        4,
+        128,
+        0,
+        248,
+        128,
+        0
+      ],
+      "presence": 1,
+      "illegal": 0,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        146,
+        181,
+        108,
+        163,
+        176,
+        90
+      ]
+    },
+    {
+      "pass_index": 37,
+      "slot": 1,
+      "species": 501,
+      "level": 50,
+      "moves": [
+        412,
+        137,
+        73,
+        182
+      ],
+      "pp": [
+        10,
+        30,
+        10,
+        10
+      ],
+      "ability": 65,
+      "item": 157,
+      "nature": 10,
+      "ivs": [
+        31,
+        31,
+        31,
+        31,
+        31,
+        31
+      ],
+      "evs": [
+        4,
+        0,
+        0,
+        252,
+        252,
+        0
+      ],
+      "presence": 1,
+      "illegal": 0,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        121,
+        58,
+        75,
+        138,
+        97,
+        75
+      ]
+    },
+    {
+      "pass_index": 0,
+      "slot": 0,
+      "species": 501,
+      "level": 5,
+      "moves": [
+        33,
+        43,
+        345,
+        182
+      ],
+      "pp": [
+        35,
+        30,
+        20,
+        10
+      ],
+      "ability": 65,
+      "item": 157,
+      "nature": 10,
+      "ivs": [
+        15,
+        15,
+        15,
+        15,
+        15,
+        15
+      ],
+      "evs": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "presence": 1,
+      "illegal": 0,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        20,
+        9,
+        11,
+        13,
+        10,
+        11
+      ]
+    }
+  ],
+  "changed_passes": [
+    0,
+    37
+  ],
+  "readiness_guard": true,
+  "idempotent_delivery": true,
+  "original_capture_memory_untouched": true,
+  "snivy_and_little_pass_preserved": true,
+  "model_catalog_chain_verified": true,
+  "effect_roles_verified": 25,
+  "action_roles_verified": 22,
+  "dol_sha256": "75c55f195954aa434c7dcbedfc5888fae38c43b5aff5b70616549d9954c996d9",
+  "gameplay_verified": false,
+  "save_file_modified": false
+}

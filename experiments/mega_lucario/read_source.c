@@ -3,6 +3,10 @@
 #include "ufbx.h"
 #include <stdio.h>
 #include <stdlib.h>
+#ifdef _WIN32
+#include <windows.h>
+#include <wchar.h>
+#endif
 static FILE *out;
 static void string(ufbx_string s) {
  fputc('"',out); for(size_t i=0;i<s.length;i++) { unsigned char c=s.data[i];
@@ -10,12 +14,22 @@ static void string(ufbx_string s) {
 }
 static void vec(ufbx_vec3 v) {fprintf(out,"[%.17g,%.17g,%.17g]",v.x,v.y,v.z);}
 static void mat(ufbx_matrix m) {fputc('[',out);for(int i=0;i<4;i++){if(i)fputc(',',out);vec(m.cols[i]);}fputc(']',out);}
-int main(int argc,char **argv) {
+static int run(int argc,char **argv) {
  if(argc!=3){fprintf(stderr,"usage: read_source input.fbx private-output.json\n");return 2;}
  ufbx_load_opts opts={0};ufbx_error error;
  ufbx_scene *s=ufbx_load_file(argv[1],&opts,&error);
  if(!s){char b[2048];ufbx_format_error(b,sizeof(b),&error);fprintf(stderr,"%s\n",b);return 1;}
- out=fopen(argv[2],"w");if(!out){ufbx_free_scene(s);return 1;}
+
+#ifdef _WIN32
+ int wide_count=MultiByteToWideChar(CP_UTF8,MB_ERR_INVALID_CHARS,argv[2],-1,NULL,0);
+ wchar_t *wide_output=(wchar_t *)malloc((size_t)wide_count*sizeof(wchar_t));
+ if(!wide_count||!wide_output){ufbx_free_scene(s);return 1;}
+ MultiByteToWideChar(CP_UTF8,MB_ERR_INVALID_CHARS,argv[2],-1,wide_output,wide_count);
+ out=_wfopen(wide_output,L"w");free(wide_output);
+#else
+ out=fopen(argv[2],"w");
+#endif
+if(!out){ufbx_free_scene(s);return 1;}
  fprintf(out,"{\"schema\":1,\"nodes\":[");
  for(size_t i=0;i<s->nodes.count;i++){ufbx_node*n=s->nodes.data[i];if(i)fputc(',',out);
  fprintf(out,"{\"id\":%u,\"name\":",n->typed_id);string(n->name);
@@ -39,3 +53,19 @@ int main(int argc,char **argv) {
  fprintf(out,"],\"takes\":[");for(size_t i=0;i<s->anim_stacks.count;i++){if(i)fputc(',',out);ufbx_anim_stack*a=s->anim_stacks.data[i];fprintf(out,"{\"name\":");string(a->name);fprintf(out,",\"start\":%.17g,\"end\":%.17g}",a->time_begin,a->time_end);}fprintf(out,"]}\n");
  int failed=ferror(out);if(fclose(out))failed=1;ufbx_free_scene(s);return failed?1:0;
 }
+
+#ifdef _WIN32
+int wmain(int argc,wchar_t **wide_args) {
+ if(argc!=3)return 2;
+ char *args[3]={0};
+ for(int i=0;i<3;i++){
+  int n=WideCharToMultiByte(CP_UTF8,0,wide_args[i],-1,NULL,0,NULL,NULL);
+  args[i]=(char *)malloc((size_t)n);
+  if(!n||!args[i])return 1;
+  WideCharToMultiByte(CP_UTF8,0,wide_args[i],-1,args[i],n,NULL,NULL);
+ }
+ int result=run(argc,args);for(int i=0;i<3;i++)free(args[i]);return result;
+}
+#else
+int main(int argc,char **argv){return run(argc,argv);}
+#endif

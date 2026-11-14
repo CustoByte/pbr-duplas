@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "version": "v0.12.1-dialogue-test.2",
-  "package_url": "https://raw.githubusercontent.com/CustoByte/pbr-duplas/v0.12.1-dialogue-test.2/expansion/packages/dialogue-test2/aplicador-core.zip",
-  "package_sha256": "032a15a4e80fb08dd8a6988ec061dffa530d4ca580f283bf5e33263568e01526",
+  "version": "v0.13.0-mega-lucario-test.1",
+  "package_url": "https://raw.githubusercontent.com/CustoByte/pbr-duplas/v0.13.0-mega-lucario-test.1/expansion/packages/mega-lucario-test1/aplicador-core.zip",
+  "package_sha256": "c1f894a37e2099683e6704d154ca1600de7407a2d9649481ef2fe45df1337d31",
   "channel": "full493-test",
   "dolphin_tested": false,
   "local_snivy_source_required": true,
@@ -10,5 +10,8 @@
   "translation_corrections": 433,
   "new_translations": 0,
   "review_complete": false,
-  "additional_corrections": 51
+  "additional_corrections": 51,
+  "local_mega_source_required": true,
+  "mega_internal_id": 502,
+  "mega_rental_replacement": "Ivysaur"
 }

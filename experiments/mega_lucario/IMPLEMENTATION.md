@@ -56,17 +56,51 @@ SHA-256 de `ufbx.c`: `a6663d3be07e68b6b4b4fbca692e21a7449097f60b83fdc2b634f00b16
 A biblioteca não é incluída nesta pasta. Os scripts Blender documentam seus
 argumentos; usar Blender 3.3.21 e o exportador já configurado para a Snivy.
 
-## Ainda pendente antes de instalar/publicar
+## Integração cumulativa — candidata test.1
 
-Registros cumulativos de espécie/modelo/nome/retratos; ampliação dos desvios e
-limites do executável para admitir 502 sem quebrar 501; substituição dirigida do
-Ivysaur e entrega em saves existentes; calibração das âncoras de efeito/câmera;
-inspeção contínua dos ciclos de corrida e dos ossos adicionais; visualização das
-transições no jogo; testes de habilidade, golpes, menu, carregamento e batalha.
-A entrada/retorno à Pokébola depende também do controle e dos efeitos nativos,
-não apenas de uma animação corporal exportada.
+`registrations.py` acrescenta a espécie interna 502 (nacional 448, forma Mega),
+modelo 671, arquivo 8193, nome global 21776 e retratos independentes. As linhas
+originais e a Snivy permanecem byte a byte. A evolução fica vazia e o learnset/TMs
+herdam o Lucario. Os quatro golpes solicitados são entregues pelo construtor nativo.
 
-Não instalado, não publicado e nenhum teste real de Dolphin foi realizado.
+`runtime_layer.py` reserva 0x8064c000..0x80652000 por meio do arena clamp existente.
+Acrescenta caminhos seletivos para 502 nos limites de menu, nomes, previsão,
+narrador e câmera. A câmera inicial usa a linha do Lucario normal. Os três
+caminhos de áudio mapeiam apenas o novo índice para o banco de grito 448;
+o narrador mantém a proteção de tabela, sem inventar um nome falado.
+
+`pass_delivery.c` encadeia o accessor existente da Snivy. Troca apenas o Ivysaur
+nível 50 do passe 37, slot 0, por Mega. Mantém o slot 1 da Snivy e o passe Little.
+A entrega é idempotente e só ocorre com todas as tabelas e catálogo registrados.
+O construtor do mod anterior força aparência shiny nas identidades dos passes
+iniciais e adiciona 10% ao maior atributo. Somente a nova espécie usa o predicado
+PID/OT nativo e nasce normal, para respeitar os atributos combinados. Todas as
+espécies antigas mantêm sua política de aparência/bônus. Shiny natural do Mega
+continua podendo receber o bônus, mas reutiliza a arte normal nesta candidata.
+
+`native-proof.json`: construção, quatro golpes/PP, habilidade, item, natureza,
+IVs, EVs, atributos, presença/validade e segunda chamada sem reset. Confirma também
+as duas Snivy. Trabalha sobre cópia privada da memória, sem escrever saves.
+`runtime-proof.json`: 90 casos de limites de menu, 21 casos de banco de grito,
+504 nomes legados, previsão segura e lookup nativo dos quatro recursos gráficos.
+`loading-proof.json`: os modelos Snivy e Mega foram alocados e relocados juntos
+pelas rotinas nativas, sem sobreposição, e o Mega retornou pronto. A fixture
+reaponta um descritor FSYS capturado; não prova DVD I/O ou upload na GPU.
+`selection-proof.json`: seleção e empacotamento nativos dos quatro Pokémon em
+uma fixture reconstruída de UI solo, incluindo Mega e Snivy. Não é UI real.
+
+O instalador Windows mantém o mesmo atualizador. Faz Snivy primeiro e Mega depois,
+acrescentando os retratos sem perder os anteriores. Pede o ZIP aprovado uma vez,
+lembra seu caminho, usa cache validado e reutiliza o SDK Blender da Snivy.
+`convert_local.py` foi executado integralmente no Linux com os arquivos privados.
+O leitor Windows x64 foi compilado a partir do mesmo C e ufbx MIT; não foi
+executado no Windows neste ambiente. Os testes reais de PowerShell usaram
+fixtures para imagens/conversão, verificando ordem, falhas e preservação de save.
+
+Ainda é necessário testar a batalha real no Dolphin Windows, efeitos/câmera,
+entrada/retorno à Pokébola, transições e save/load pelo próprio jogo. Isso não
+impede disponibilizar a candidata experimental, mas não equivale a gameplay
+completo validado. Nenhum save ou imagem original é alterado pelo instalador.
 
 ## Prévia em vídeo
 

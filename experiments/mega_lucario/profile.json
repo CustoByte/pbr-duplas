@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "status": "graphics_candidate_verified_offline_not_installed",
+  "status": "integrated_experimental_candidate_native_replay_passed",
   "name": "Mega Lucario",
   "national_id": 448,
   "form": "mega",
@@ -26,7 +26,8 @@
     "internal_id": 502,
     "model_row": 671,
     "archive_id": 8193,
-    "runtime_verified": false
+    "runtime_verified": false,
+    "native_dispatch_verified": true
   },
   "moveset": [
     {
@@ -75,7 +76,9 @@
     "replace_species": "Ivysaur",
     "replace_national_id": 2,
     "level": 50,
-    "preserve_snivy": true
+    "preserve_snivy": true,
+    "native_delivery_verified": true,
+    "normal_appearance": true
   },
   "source_model": {
     "file": "LucarioMega.fbx",
