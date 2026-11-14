@@ -1,0 +1,20 @@
+{
+  "status": "passed-individual-move-sources",
+  "species_checked": 493,
+  "occupied_move_slots_checked": 1945,
+  "failures": [],
+  "reference": "https://github.com/smogon/pokemon-showdown/tree/master/data",
+  "reference_file_sha256": {
+    "pokedex": "5e572601f4700f99835845eee5cd3e53362e43d885e2753fcc32418f636b83ed",
+    "learnsets": "cdab542e58b6d276122cce4ee2ff5597123f773cd1d053ecbfd4b81a54d1bafb",
+    "moves": "19d96eac13d7d89f13b42a975672ee75b8ad4dac011c66898ea811f2e3ef7681"
+  },
+  "dol_sha256": "a45fc7d800730630ad955dca74b40a41488dd8e7e328d9d8322ff752e7b0d6d9",
+  "deck_sha256": "0532a445c219722df65d5d16b095a85195e43c86749f35f1d373c9b2ceab04ef",
+  "limits": [
+    "One native generated set per species",
+    "Does not prove simultaneous egg/event-source compatibility",
+    "Original dynamic move resolver remains native; additional seeds can choose other legal moves",
+    "No rendered battle or save/load"
+  ]
+}

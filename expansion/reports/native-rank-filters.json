@@ -1,0 +1,1202 @@
+{
+  "status": "passed-native-rank-and-level-filters",
+  "native_filter": "8017e32c",
+  "cases": 144,
+  "maximum_candidates": 1086,
+  "all493_at_rank8_in_both_normal_level_rules": true,
+  "dedicated_little_pools_unchanged": true,
+  "results": [
+    {
+      "deck": "1df52800",
+      "cases": [
+        {
+          "level_rule": 1,
+          "rank": 1,
+          "candidates": 283,
+          "species": 221,
+          "appended_candidates": 166,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 2,
+          "candidates": 409,
+          "species": 266,
+          "appended_candidates": 227,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 3,
+          "candidates": 292,
+          "species": 157,
+          "appended_candidates": 111,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 4,
+          "candidates": 335,
+          "species": 204,
+          "appended_candidates": 179,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 5,
+          "candidates": 337,
+          "species": 211,
+          "appended_candidates": 199,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 6,
+          "candidates": 285,
+          "species": 178,
+          "appended_candidates": 150,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 7,
+          "candidates": 1086,
+          "species": 493,
+          "appended_candidates": 955,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 1,
+          "rank": 8,
+          "candidates": 958,
+          "species": 493,
+          "appended_candidates": 874,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 2,
+          "rank": 1,
+          "candidates": 166,
+          "species": 166,
+          "appended_candidates": 166,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 2,
+          "candidates": 227,
+          "species": 227,
+          "appended_candidates": 227,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 3,
+          "candidates": 111,
+          "species": 111,
+          "appended_candidates": 111,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 4,
+          "candidates": 179,
+          "species": 179,
+          "appended_candidates": 179,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 5,
+          "candidates": 199,
+          "species": 199,
+          "appended_candidates": 199,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 6,
+          "candidates": 150,
+          "species": 150,
+          "appended_candidates": 150,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 7,
+          "candidates": 955,
+          "species": 493,
+          "appended_candidates": 955,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 2,
+          "rank": 8,
+          "candidates": 874,
+          "species": 493,
+          "appended_candidates": 874,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 6,
+          "rank": 1,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 2,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 3,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 4,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 5,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 6,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 7,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 8,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        }
+      ]
+    },
+    {
+      "deck": "1df62800",
+      "cases": [
+        {
+          "level_rule": 1,
+          "rank": 1,
+          "candidates": 257,
+          "species": 207,
+          "appended_candidates": 166,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 2,
+          "candidates": 360,
+          "species": 258,
+          "appended_candidates": 227,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 3,
+          "candidates": 227,
+          "species": 150,
+          "appended_candidates": 111,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 4,
+          "candidates": 307,
+          "species": 203,
+          "appended_candidates": 179,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 5,
+          "candidates": 332,
+          "species": 210,
+          "appended_candidates": 199,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 6,
+          "candidates": 286,
+          "species": 178,
+          "appended_candidates": 150,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 7,
+          "candidates": 1086,
+          "species": 493,
+          "appended_candidates": 955,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 1,
+          "rank": 8,
+          "candidates": 958,
+          "species": 493,
+          "appended_candidates": 874,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 2,
+          "rank": 1,
+          "candidates": 166,
+          "species": 166,
+          "appended_candidates": 166,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 2,
+          "candidates": 227,
+          "species": 227,
+          "appended_candidates": 227,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 3,
+          "candidates": 111,
+          "species": 111,
+          "appended_candidates": 111,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 4,
+          "candidates": 179,
+          "species": 179,
+          "appended_candidates": 179,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 5,
+          "candidates": 199,
+          "species": 199,
+          "appended_candidates": 199,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 6,
+          "candidates": 150,
+          "species": 150,
+          "appended_candidates": 150,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 7,
+          "candidates": 955,
+          "species": 493,
+          "appended_candidates": 955,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 2,
+          "rank": 8,
+          "candidates": 874,
+          "species": 493,
+          "appended_candidates": 874,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 6,
+          "rank": 1,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 2,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 3,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 4,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 5,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 6,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 7,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 8,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        }
+      ]
+    },
+    {
+      "deck": "1dfa2800",
+      "cases": [
+        {
+          "level_rule": 1,
+          "rank": 1,
+          "candidates": 223,
+          "species": 201,
+          "appended_candidates": 166,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 2,
+          "candidates": 318,
+          "species": 254,
+          "appended_candidates": 227,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 3,
+          "candidates": 213,
+          "species": 142,
+          "appended_candidates": 111,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 4,
+          "candidates": 294,
+          "species": 197,
+          "appended_candidates": 179,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 5,
+          "candidates": 326,
+          "species": 207,
+          "appended_candidates": 199,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 6,
+          "candidates": 283,
+          "species": 178,
+          "appended_candidates": 150,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 7,
+          "candidates": 1085,
+          "species": 493,
+          "appended_candidates": 955,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 1,
+          "rank": 8,
+          "candidates": 958,
+          "species": 493,
+          "appended_candidates": 874,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 2,
+          "rank": 1,
+          "candidates": 166,
+          "species": 166,
+          "appended_candidates": 166,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 2,
+          "candidates": 227,
+          "species": 227,
+          "appended_candidates": 227,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 3,
+          "candidates": 111,
+          "species": 111,
+          "appended_candidates": 111,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 4,
+          "candidates": 179,
+          "species": 179,
+          "appended_candidates": 179,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 5,
+          "candidates": 199,
+          "species": 199,
+          "appended_candidates": 199,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 6,
+          "candidates": 150,
+          "species": 150,
+          "appended_candidates": 150,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 7,
+          "candidates": 955,
+          "species": 493,
+          "appended_candidates": 955,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 2,
+          "rank": 8,
+          "candidates": 874,
+          "species": 493,
+          "appended_candidates": 874,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 6,
+          "rank": 1,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 2,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 3,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 4,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 5,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 6,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 7,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 8,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        }
+      ]
+    },
+    {
+      "deck": "1dfb2800",
+      "cases": [
+        {
+          "level_rule": 1,
+          "rank": 1,
+          "candidates": 229,
+          "species": 201,
+          "appended_candidates": 166,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 2,
+          "candidates": 323,
+          "species": 253,
+          "appended_candidates": 227,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 3,
+          "candidates": 212,
+          "species": 141,
+          "appended_candidates": 111,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 4,
+          "candidates": 294,
+          "species": 197,
+          "appended_candidates": 179,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 5,
+          "candidates": 327,
+          "species": 207,
+          "appended_candidates": 199,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 6,
+          "candidates": 284,
+          "species": 178,
+          "appended_candidates": 150,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 7,
+          "candidates": 1085,
+          "species": 493,
+          "appended_candidates": 955,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 1,
+          "rank": 8,
+          "candidates": 958,
+          "species": 493,
+          "appended_candidates": 874,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 2,
+          "rank": 1,
+          "candidates": 166,
+          "species": 166,
+          "appended_candidates": 166,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 2,
+          "candidates": 227,
+          "species": 227,
+          "appended_candidates": 227,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 3,
+          "candidates": 111,
+          "species": 111,
+          "appended_candidates": 111,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 4,
+          "candidates": 179,
+          "species": 179,
+          "appended_candidates": 179,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 5,
+          "candidates": 199,
+          "species": 199,
+          "appended_candidates": 199,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 6,
+          "candidates": 150,
+          "species": 150,
+          "appended_candidates": 150,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 7,
+          "candidates": 955,
+          "species": 493,
+          "appended_candidates": 955,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 2,
+          "rank": 8,
+          "candidates": 874,
+          "species": 493,
+          "appended_candidates": 874,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 6,
+          "rank": 1,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 2,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 3,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 4,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 5,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 6,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 7,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 8,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        }
+      ]
+    },
+    {
+      "deck": "27842800",
+      "cases": [
+        {
+          "level_rule": 1,
+          "rank": 1,
+          "candidates": 233,
+          "species": 202,
+          "appended_candidates": 166,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 2,
+          "candidates": 331,
+          "species": 254,
+          "appended_candidates": 227,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 3,
+          "candidates": 222,
+          "species": 150,
+          "appended_candidates": 111,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 4,
+          "candidates": 301,
+          "species": 203,
+          "appended_candidates": 179,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 5,
+          "candidates": 331,
+          "species": 210,
+          "appended_candidates": 199,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 6,
+          "candidates": 284,
+          "species": 178,
+          "appended_candidates": 150,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 7,
+          "candidates": 1043,
+          "species": 493,
+          "appended_candidates": 955,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 1,
+          "rank": 8,
+          "candidates": 915,
+          "species": 493,
+          "appended_candidates": 874,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 2,
+          "rank": 1,
+          "candidates": 166,
+          "species": 166,
+          "appended_candidates": 166,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 2,
+          "candidates": 227,
+          "species": 227,
+          "appended_candidates": 227,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 3,
+          "candidates": 111,
+          "species": 111,
+          "appended_candidates": 111,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 4,
+          "candidates": 179,
+          "species": 179,
+          "appended_candidates": 179,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 5,
+          "candidates": 199,
+          "species": 199,
+          "appended_candidates": 199,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 6,
+          "candidates": 150,
+          "species": 150,
+          "appended_candidates": 150,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 7,
+          "candidates": 955,
+          "species": 493,
+          "appended_candidates": 955,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 2,
+          "rank": 8,
+          "candidates": 874,
+          "species": 493,
+          "appended_candidates": 874,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 6,
+          "rank": 1,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 2,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 3,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 4,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 5,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 6,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 7,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 8,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        }
+      ]
+    },
+    {
+      "deck": "27852800",
+      "cases": [
+        {
+          "level_rule": 1,
+          "rank": 1,
+          "candidates": 233,
+          "species": 201,
+          "appended_candidates": 166,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 2,
+          "candidates": 330,
+          "species": 253,
+          "appended_candidates": 227,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 3,
+          "candidates": 221,
+          "species": 150,
+          "appended_candidates": 111,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 4,
+          "candidates": 301,
+          "species": 203,
+          "appended_candidates": 179,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 5,
+          "candidates": 332,
+          "species": 210,
+          "appended_candidates": 199,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 6,
+          "candidates": 285,
+          "species": 178,
+          "appended_candidates": 150,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 1,
+          "rank": 7,
+          "candidates": 1043,
+          "species": 493,
+          "appended_candidates": 955,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 1,
+          "rank": 8,
+          "candidates": 915,
+          "species": 493,
+          "appended_candidates": 874,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 2,
+          "rank": 1,
+          "candidates": 166,
+          "species": 166,
+          "appended_candidates": 166,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 2,
+          "candidates": 227,
+          "species": 227,
+          "appended_candidates": 227,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 3,
+          "candidates": 111,
+          "species": 111,
+          "appended_candidates": 111,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 4,
+          "candidates": 179,
+          "species": 179,
+          "appended_candidates": 179,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 5,
+          "candidates": 199,
+          "species": 199,
+          "appended_candidates": 199,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 6,
+          "candidates": 150,
+          "species": 150,
+          "appended_candidates": 150,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 2,
+          "rank": 7,
+          "candidates": 955,
+          "species": 493,
+          "appended_candidates": 955,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 2,
+          "rank": 8,
+          "candidates": 874,
+          "species": 493,
+          "appended_candidates": 874,
+          "appended_legendary_species": 35
+        },
+        {
+          "level_rule": 6,
+          "rank": 1,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 2,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 3,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 4,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 5,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 6,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 7,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        },
+        {
+          "level_rule": 6,
+          "rank": 8,
+          "candidates": 0,
+          "species": 0,
+          "appended_candidates": 0,
+          "appended_legendary_species": 0
+        }
+      ]
+    }
+  ],
+  "dol_sha256": "a45fc7d800730630ad955dca74b40a41488dd8e7e328d9d8322ff752e7b0d6d9",
+  "deck_sha256": "0532a445c219722df65d5d16b095a85195e43c86749f35f1d373c9b2ceab04ef",
+  "stubs": [
+    "Scratch allocation/free only at 801df6b4/801df6fc"
+  ],
+  "limits": [
+    "All-types trainer fixture; full trainer generation tested separately",
+    "No actual tournament dispatch, battle, Trade UI or save/load"
+  ],
+  "dolphin_tested": false
+}

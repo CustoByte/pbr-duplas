@@ -1,0 +1,15 @@
+{
+  "kind": "offline native catalog lookup; no archive loading or rendering",
+  "passed": true,
+  "original_entries_preserved": 1102,
+  "added_id": 8192,
+  "added_name": "pkx_501.fsys",
+  "source_sha256": "da886839e93a719a04833795f2407417cccded696d7e92e49087065dbf3ee26e",
+  "target_sha256": "9613f09540cde7b1a65ad39e9c3ace1e4f588099ce467def30bdf6cf06f61ec9",
+  "original_bytes": 29248,
+  "target_bytes": 46944,
+  "native_lookup": "8024c32c",
+  "restoration_verified": true,
+  "playable": false,
+  "published_in_updater": false
+}

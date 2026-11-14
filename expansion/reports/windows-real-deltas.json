@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "real_file_delta_roundtrips": 3,
+  "runtime": "PowerShell 7 on Linux",
+  "limitations": [
+    "No actual Windows dialog or DolphinTool RVZ conversion"
+  ],
+  "target_sha256": {
+    "main.dol": "91d0ceacd6a138948d3519f37b7f1715f143481c7148f1f57e3f84750db50189",
+    "common.fsys": "a3667703d2bf2e6733c6d40e4709869982f98e45b9ad029a9f7d7d9fec883d57",
+    "deck.fsys": "0532a445c219722df65d5d16b095a85195e43c86749f35f1d373c9b2ceab04ef"
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "version": "v0.12.1-dialogue-test.2",
+  "package_sha256": "032a15a4e80fb08dd8a6988ec061dffa530d4ca580f283bf5e33263568e01526",
+  "archive_checks": [
+    {
+      "name": "main.dol",
+      "delta_roundtrip": true,
+      "changed": false
+    },
+    {
+      "name": "common.fsys",
+      "delta_roundtrip": true,
+      "changed": false
+    },
+    {
+      "name": "deck.fsys",
+      "delta_roundtrip": true,
+      "changed": false
+    },
+    {
+      "name": "menu_fight_s.fsys",
+      "delta_roundtrip": true,
+      "changed": true
+    },
+    {
+      "name": "mes_common.fsys",
+      "delta_roundtrip": true,
+      "changed": true
+    },
+    {
+      "name": "menu_bpass2.fsys",
+      "delta_roundtrip": true,
+      "changed": true
+    },
+    {
+      "name": "menu_btutorial.fsys",
+      "delta_roundtrip": true,
+      "changed": true
+    },
+    {
+      "name": "menu_name2.fsys",
+      "delta_roundtrip": true,
+      "changed": false
+    },
+    {
+      "name": "mes_bpass_e.fsys",
+      "delta_roundtrip": true,
+      "changed": true
+    },
+    {
+      "name": "mes_fight_e.fsys",
+      "delta_roundtrip": true,
+      "changed": true
+    },
+    {
+      "name": "mes_name_e.fsys",
+      "delta_roundtrip": true,
+      "changed": false
+    },
+    {
+      "name": "title.fsys",
+      "delta_roundtrip": true,
+      "changed": false
+    },
+    {
+      "name": "GSfsys.toc",
+      "delta_roundtrip": true,
+      "changed": false
+    }
+  ],
+  "changed_messages": 433,
+  "extra_pages": 50,
+  "new_translations": 0,
+  "game_assets_distributed": false,
+  "published": false,
+  "review_complete": false,
+  "dolphin_visual_tested": false,
+  "delivery": "existing-auto-updater",
+  "new_launcher_required": false
+}

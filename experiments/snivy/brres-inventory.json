@@ -1,0 +1,2279 @@
+{
+  "sha256": "42ee39d351dc05e4f509267a2ce540286b134f6e8d024b776175a4c75c5a9308",
+  "size": 1204480,
+  "section_count": 229,
+  "folders": {
+    "3DModels(NW4R)": [
+      {
+        "name": "Tsutarja",
+        "format": "MDL0",
+        "offset": 3872,
+        "size": 76896,
+        "version": 11
+      }
+    ],
+    "Textures(NW4R)": [
+      {
+        "name": "TsutarjaBodyNl",
+        "format": "TEX0",
+        "offset": 80768,
+        "size": 32832,
+        "version": 3
+      },
+      {
+        "name": "TsutarjaEnvNl",
+        "format": "TEX0",
+        "offset": 113600,
+        "size": 1088,
+        "version": 3
+      },
+      {
+        "name": "TsutarjaEyeNl",
+        "format": "TEX0",
+        "offset": 114688,
+        "size": 36928,
+        "version": 3
+      },
+      {
+        "name": "TsutarjaMouthNl",
+        "format": "TEX0",
+        "offset": 151616,
+        "size": 8256,
+        "version": 3
+      },
+      {
+        "name": "TsutarjaSpecularNl",
+        "format": "TEX0",
+        "offset": 159872,
+        "size": 1088,
+        "version": 3
+      }
+    ],
+    "AnmChr(NW4R)": [
+      {
+        "name": "Atk0_0",
+        "format": "CHR0",
+        "offset": 160960,
+        "size": 8544,
+        "version": 5,
+        "frames": 36,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Atk0_1",
+        "format": "CHR0",
+        "offset": 169504,
+        "size": 4180,
+        "version": 5,
+        "frames": 45,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Atk0_2",
+        "format": "CHR0",
+        "offset": 173684,
+        "size": 7478,
+        "version": 5,
+        "frames": 41,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Atk1_0",
+        "format": "CHR0",
+        "offset": 181164,
+        "size": 7200,
+        "version": 5,
+        "frames": 31,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Atk1_1",
+        "format": "CHR0",
+        "offset": 188364,
+        "size": 3484,
+        "version": 5,
+        "frames": 45,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Atk1_2",
+        "format": "CHR0",
+        "offset": 191848,
+        "size": 5967,
+        "version": 5,
+        "frames": 26,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Atk2_0",
+        "format": "CHR0",
+        "offset": 197816,
+        "size": 12104,
+        "version": 5,
+        "frames": 91,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Atk3_0",
+        "format": "CHR0",
+        "offset": 209920,
+        "size": 8848,
+        "version": 5,
+        "frames": 81,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Atk4_0",
+        "format": "CHR0",
+        "offset": 218768,
+        "size": 14871,
+        "version": 5,
+        "frames": 46,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Atk4_1",
+        "format": "CHR0",
+        "offset": 233640,
+        "size": 14215,
+        "version": 5,
+        "frames": 46,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Atk5_0",
+        "format": "CHR0",
+        "offset": 247856,
+        "size": 14182,
+        "version": 5,
+        "frames": 91,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "AvoidB0",
+        "format": "CHR0",
+        "offset": 262040,
+        "size": 7944,
+        "version": 5,
+        "frames": 31,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "AvoidF0",
+        "format": "CHR0",
+        "offset": 269984,
+        "size": 8460,
+        "version": 5,
+        "frames": 31,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "AvoidL0",
+        "format": "CHR0",
+        "offset": 278444,
+        "size": 7896,
+        "version": 5,
+        "frames": 31,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "AvoidR0",
+        "format": "CHR0",
+        "offset": 286340,
+        "size": 8120,
+        "version": 5,
+        "frames": 31,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Brake0",
+        "format": "CHR0",
+        "offset": 294460,
+        "size": 7400,
+        "version": 5,
+        "frames": 31,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Brake1",
+        "format": "CHR0",
+        "offset": 301860,
+        "size": 8880,
+        "version": 5,
+        "frames": 61,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "BrowB0_0",
+        "format": "CHR0",
+        "offset": 310740,
+        "size": 3911,
+        "version": 5,
+        "frames": 6,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "BrowB0_1",
+        "format": "CHR0",
+        "offset": 314652,
+        "size": 6496,
+        "version": 5,
+        "frames": 31,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "BrowB0_2",
+        "format": "CHR0",
+        "offset": 321148,
+        "size": 6395,
+        "version": 5,
+        "frames": 26,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "BrowF0_0",
+        "format": "CHR0",
+        "offset": 327544,
+        "size": 3992,
+        "version": 5,
+        "frames": 6,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "BrowF0_1",
+        "format": "CHR0",
+        "offset": 331536,
+        "size": 5496,
+        "version": 5,
+        "frames": 31,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "BrowF0_2",
+        "format": "CHR0",
+        "offset": 337032,
+        "size": 6487,
+        "version": 5,
+        "frames": 26,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Call0",
+        "format": "CHR0",
+        "offset": 343520,
+        "size": 8560,
+        "version": 5,
+        "frames": 121,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Change0",
+        "format": "CHR0",
+        "offset": 352080,
+        "size": 8300,
+        "version": 5,
+        "frames": 31,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Change1",
+        "format": "CHR0",
+        "offset": 360380,
+        "size": 6448,
+        "version": 5,
+        "frames": 31,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "ChangeL0",
+        "format": "CHR0",
+        "offset": 366828,
+        "size": 5928,
+        "version": 5,
+        "frames": 31,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "ChangeR0",
+        "format": "CHR0",
+        "offset": 372756,
+        "size": 5892,
+        "version": 5,
+        "frames": 31,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Charge0",
+        "format": "CHR0",
+        "offset": 378648,
+        "size": 4528,
+        "version": 5,
+        "frames": 30,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "DamB0",
+        "format": "CHR0",
+        "offset": 383176,
+        "size": 7536,
+        "version": 5,
+        "frames": 31,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "DamB1",
+        "format": "CHR0",
+        "offset": 390712,
+        "size": 5018,
+        "version": 5,
+        "frames": 21,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "DamF0",
+        "format": "CHR0",
+        "offset": 395732,
+        "size": 6976,
+        "version": 5,
+        "frames": 31,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "DamF1",
+        "format": "CHR0",
+        "offset": 402708,
+        "size": 5210,
+        "version": 5,
+        "frames": 21,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Dash0",
+        "format": "CHR0",
+        "offset": 407920,
+        "size": 6549,
+        "version": 5,
+        "frames": 16,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "DashHit0",
+        "format": "CHR0",
+        "offset": 414472,
+        "size": 9604,
+        "version": 5,
+        "frames": 31,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "DashHit1",
+        "format": "CHR0",
+        "offset": 424076,
+        "size": 15448,
+        "version": 5,
+        "frames": 111,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "DashHit2",
+        "format": "CHR0",
+        "offset": 439524,
+        "size": 9028,
+        "version": 5,
+        "frames": 31,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "DashHit3",
+        "format": "CHR0",
+        "offset": 448552,
+        "size": 11732,
+        "version": 5,
+        "frames": 61,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Down0_0",
+        "format": "CHR0",
+        "offset": 460284,
+        "size": 11996,
+        "version": 5,
+        "frames": 76,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Down0_1",
+        "format": "CHR0",
+        "offset": 472280,
+        "size": 3618,
+        "version": 5,
+        "frames": 80,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Down1_1",
+        "format": "CHR0",
+        "offset": 475900,
+        "size": 3618,
+        "version": 5,
+        "frames": 80,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Faint0",
+        "format": "CHR0",
+        "offset": 479520,
+        "size": 5020,
+        "version": 5,
+        "frames": 80,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Fall0",
+        "format": "CHR0",
+        "offset": 484540,
+        "size": 3484,
+        "version": 5,
+        "frames": 30,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Fall1",
+        "format": "CHR0",
+        "offset": 488024,
+        "size": 4152,
+        "version": 5,
+        "frames": 30,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Fall2",
+        "format": "CHR0",
+        "offset": 492176,
+        "size": 4404,
+        "version": 5,
+        "frames": 30,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Fall3",
+        "format": "CHR0",
+        "offset": 496580,
+        "size": 3864,
+        "version": 5,
+        "frames": 30,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "HeadDam0",
+        "format": "CHR0",
+        "offset": 500444,
+        "size": 16148,
+        "version": 5,
+        "frames": 241,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "HideSeek0",
+        "format": "CHR0",
+        "offset": 516592,
+        "size": 4660,
+        "version": 5,
+        "frames": 84,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "ItmHold0",
+        "format": "CHR0",
+        "offset": 521252,
+        "size": 12876,
+        "version": 5,
+        "frames": 61,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "ItmHold1",
+        "format": "CHR0",
+        "offset": 534128,
+        "size": 13204,
+        "version": 5,
+        "frames": 61,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "ItmIdle0",
+        "format": "CHR0",
+        "offset": 547332,
+        "size": 5400,
+        "version": 5,
+        "frames": 80,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "ItmIdle1",
+        "format": "CHR0",
+        "offset": 552732,
+        "size": 5400,
+        "version": 5,
+        "frames": 80,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "ItmPut0",
+        "format": "CHR0",
+        "offset": 558132,
+        "size": 14032,
+        "version": 5,
+        "frames": 61,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "ItmPut1",
+        "format": "CHR0",
+        "offset": 572164,
+        "size": 14212,
+        "version": 5,
+        "frames": 61,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "ItmThrow0",
+        "format": "CHR0",
+        "offset": 586376,
+        "size": 14972,
+        "version": 5,
+        "frames": 61,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "ItmThrow1",
+        "format": "CHR0",
+        "offset": 601348,
+        "size": 14834,
+        "version": 5,
+        "frames": 61,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "ItmWalk0",
+        "format": "CHR0",
+        "offset": 616184,
+        "size": 8624,
+        "version": 5,
+        "frames": 30,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "ItmWalk1",
+        "format": "CHR0",
+        "offset": 624808,
+        "size": 8772,
+        "version": 5,
+        "frames": 30,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Joy0",
+        "format": "CHR0",
+        "offset": 633580,
+        "size": 7346,
+        "version": 5,
+        "frames": 121,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Jump0_0",
+        "format": "CHR0",
+        "offset": 640928,
+        "size": 3426,
+        "version": 5,
+        "frames": 5,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Jump0_1",
+        "format": "CHR0",
+        "offset": 644356,
+        "size": 5668,
+        "version": 5,
+        "frames": 27,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Jump0_2",
+        "format": "CHR0",
+        "offset": 650024,
+        "size": 5200,
+        "version": 5,
+        "frames": 26,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Jump0_3",
+        "format": "CHR0",
+        "offset": 655224,
+        "size": 4167,
+        "version": 5,
+        "frames": 6,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Jump1_0",
+        "format": "CHR0",
+        "offset": 659392,
+        "size": 4238,
+        "version": 5,
+        "frames": 5,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Jump1_1",
+        "format": "CHR0",
+        "offset": 663632,
+        "size": 5868,
+        "version": 5,
+        "frames": 27,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Jump1_2",
+        "format": "CHR0",
+        "offset": 669500,
+        "size": 5324,
+        "version": 5,
+        "frames": 26,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Jump1_3",
+        "format": "CHR0",
+        "offset": 674824,
+        "size": 4167,
+        "version": 5,
+        "frames": 6,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Jump2_1",
+        "format": "CHR0",
+        "offset": 678992,
+        "size": 6380,
+        "version": 5,
+        "frames": 31,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Landing0",
+        "format": "CHR0",
+        "offset": 685372,
+        "size": 6892,
+        "version": 5,
+        "frames": 31,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Landing1",
+        "format": "CHR0",
+        "offset": 692264,
+        "size": 8276,
+        "version": 5,
+        "frames": 61,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Landing3",
+        "format": "CHR0",
+        "offset": 700540,
+        "size": 7754,
+        "version": 5,
+        "frames": 41,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Load00",
+        "format": "CHR0",
+        "offset": 708296,
+        "size": 14130,
+        "version": 5,
+        "frames": 720,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Load03",
+        "format": "CHR0",
+        "offset": 722428,
+        "size": 6124,
+        "version": 5,
+        "frames": 240,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Load04",
+        "format": "CHR0",
+        "offset": 728552,
+        "size": 24624,
+        "version": 5,
+        "frames": 240,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Load05",
+        "format": "CHR0",
+        "offset": 753176,
+        "size": 8254,
+        "version": 5,
+        "frames": 240,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Load11",
+        "format": "CHR0",
+        "offset": 761432,
+        "size": 22828,
+        "version": 5,
+        "frames": 220,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Load13",
+        "format": "CHR0",
+        "offset": 784260,
+        "size": 47885,
+        "version": 5,
+        "frames": 240,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Load15",
+        "format": "CHR0",
+        "offset": 832148,
+        "size": 44065,
+        "version": 5,
+        "frames": 200,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Load30",
+        "format": "CHR0",
+        "offset": 876216,
+        "size": 15832,
+        "version": 5,
+        "frames": 240,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Load32",
+        "format": "CHR0",
+        "offset": 892048,
+        "size": 6768,
+        "version": 5,
+        "frames": 240,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Load33",
+        "format": "CHR0",
+        "offset": 898816,
+        "size": 7448,
+        "version": 5,
+        "frames": 240,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Load50",
+        "format": "CHR0",
+        "offset": 906264,
+        "size": 14948,
+        "version": 5,
+        "frames": 240,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Load51",
+        "format": "CHR0",
+        "offset": 921212,
+        "size": 4012,
+        "version": 5,
+        "frames": 120,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Load53",
+        "format": "CHR0",
+        "offset": 925224,
+        "size": 7736,
+        "version": 5,
+        "frames": 200,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "LookL0",
+        "format": "CHR0",
+        "offset": 932960,
+        "size": 5596,
+        "version": 5,
+        "frames": 91,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "LookR0",
+        "format": "CHR0",
+        "offset": 938556,
+        "size": 5416,
+        "version": 5,
+        "frames": 91,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Lose0_0",
+        "format": "CHR0",
+        "offset": 943972,
+        "size": 5140,
+        "version": 5,
+        "frames": 51,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Lose0_1",
+        "format": "CHR0",
+        "offset": 949112,
+        "size": 4108,
+        "version": 5,
+        "frames": 100,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "NorIdle0",
+        "format": "CHR0",
+        "offset": 953220,
+        "size": 6136,
+        "version": 5,
+        "frames": 84,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Pushed0",
+        "format": "CHR0",
+        "offset": 959356,
+        "size": 5028,
+        "version": 5,
+        "frames": 60,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Random00",
+        "format": "CHR0",
+        "offset": 964384,
+        "size": 6024,
+        "version": 5,
+        "frames": 169,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Random01",
+        "format": "CHR0",
+        "offset": 970408,
+        "size": 7400,
+        "version": 5,
+        "frames": 189,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Random02",
+        "format": "CHR0",
+        "offset": 977808,
+        "size": 7912,
+        "version": 5,
+        "frames": 171,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Random03",
+        "format": "CHR0",
+        "offset": 985720,
+        "size": 8828,
+        "version": 5,
+        "frames": 161,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Random04",
+        "format": "CHR0",
+        "offset": 994548,
+        "size": 7472,
+        "version": 5,
+        "frames": 136,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Random05",
+        "format": "CHR0",
+        "offset": 1002020,
+        "size": 8976,
+        "version": 5,
+        "frames": 256,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "RotL0",
+        "format": "CHR0",
+        "offset": 1010996,
+        "size": 6564,
+        "version": 5,
+        "frames": 31,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Run0",
+        "format": "CHR0",
+        "offset": 1017560,
+        "size": 8009,
+        "version": 5,
+        "frames": 24,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Sad0",
+        "format": "CHR0",
+        "offset": 1025572,
+        "size": 8108,
+        "version": 5,
+        "frames": 121,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "SelectIdleL0",
+        "format": "CHR0",
+        "offset": 1033680,
+        "size": 5064,
+        "version": 5,
+        "frames": 84,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "SelectIdleR0",
+        "format": "CHR0",
+        "offset": 1038744,
+        "size": 6152,
+        "version": 5,
+        "frames": 84,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Shake0_0",
+        "format": "CHR0",
+        "offset": 1044896,
+        "size": 4752,
+        "version": 5,
+        "frames": 60,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Shake0_1",
+        "format": "CHR0",
+        "offset": 1049648,
+        "size": 10384,
+        "version": 5,
+        "frames": 141,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Sleep0_0",
+        "format": "CHR0",
+        "offset": 1060032,
+        "size": 21574,
+        "version": 5,
+        "frames": 261,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Sleep0_1",
+        "format": "CHR0",
+        "offset": 1081608,
+        "size": 3836,
+        "version": 5,
+        "frames": 140,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Sleep0_2",
+        "format": "CHR0",
+        "offset": 1085444,
+        "size": 7027,
+        "version": 5,
+        "frames": 22,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "StandUp0",
+        "format": "CHR0",
+        "offset": 1092472,
+        "size": 8308,
+        "version": 5,
+        "frames": 46,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "StandUp1",
+        "format": "CHR0",
+        "offset": 1100780,
+        "size": 8308,
+        "version": 5,
+        "frames": 46,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Talk0",
+        "format": "CHR0",
+        "offset": 1109088,
+        "size": 11292,
+        "version": 5,
+        "frames": 151,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "ToWin0",
+        "format": "CHR0",
+        "offset": 1120380,
+        "size": 5970,
+        "version": 5,
+        "frames": 21,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "TryIdle0",
+        "format": "CHR0",
+        "offset": 1126352,
+        "size": 6552,
+        "version": 5,
+        "frames": 80,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Walk0",
+        "format": "CHR0",
+        "offset": 1132904,
+        "size": 7776,
+        "version": 5,
+        "frames": 48,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Walk1",
+        "format": "CHR0",
+        "offset": 1140680,
+        "size": 6368,
+        "version": 5,
+        "frames": 48,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "What0",
+        "format": "CHR0",
+        "offset": 1147048,
+        "size": 5948,
+        "version": 5,
+        "frames": 61,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Win0_0",
+        "format": "CHR0",
+        "offset": 1152996,
+        "size": 5144,
+        "version": 5,
+        "frames": 41,
+        "tracks": 48,
+        "loop": false
+      },
+      {
+        "name": "Win0_1",
+        "format": "CHR0",
+        "offset": 1158140,
+        "size": 4330,
+        "version": 5,
+        "frames": 100,
+        "tracks": 48,
+        "loop": true
+      },
+      {
+        "name": "Yawn0",
+        "format": "CHR0",
+        "offset": 1162472,
+        "size": 7804,
+        "version": 5,
+        "frames": 151,
+        "tracks": 48,
+        "loop": false
+      }
+    ],
+    "AnmTexSrt(NW4R)": [
+      {
+        "name": "Atk0_0",
+        "format": "SRT0",
+        "offset": 1170276,
+        "size": 228,
+        "version": 5,
+        "frames": 36,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Atk0_1",
+        "format": "SRT0",
+        "offset": 1170504,
+        "size": 148,
+        "version": 5,
+        "frames": 45,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Atk0_2",
+        "format": "SRT0",
+        "offset": 1170652,
+        "size": 216,
+        "version": 5,
+        "frames": 41,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Atk1_0",
+        "format": "SRT0",
+        "offset": 1170868,
+        "size": 228,
+        "version": 5,
+        "frames": 31,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Atk1_1",
+        "format": "SRT0",
+        "offset": 1171096,
+        "size": 148,
+        "version": 5,
+        "frames": 45,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Atk1_2",
+        "format": "SRT0",
+        "offset": 1171244,
+        "size": 228,
+        "version": 5,
+        "frames": 26,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Atk2_0",
+        "format": "SRT0",
+        "offset": 1171472,
+        "size": 460,
+        "version": 5,
+        "frames": 91,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Atk3_0",
+        "format": "SRT0",
+        "offset": 1171932,
+        "size": 460,
+        "version": 5,
+        "frames": 81,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Atk4_0",
+        "format": "SRT0",
+        "offset": 1172392,
+        "size": 140,
+        "version": 5,
+        "frames": 46,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Atk4_1",
+        "format": "SRT0",
+        "offset": 1172532,
+        "size": 140,
+        "version": 5,
+        "frames": 46,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Atk5_0",
+        "format": "SRT0",
+        "offset": 1172672,
+        "size": 524,
+        "version": 5,
+        "frames": 91,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "AvoidB0",
+        "format": "SRT0",
+        "offset": 1173196,
+        "size": 452,
+        "version": 5,
+        "frames": 31,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "AvoidF0",
+        "format": "SRT0",
+        "offset": 1173648,
+        "size": 452,
+        "version": 5,
+        "frames": 31,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "AvoidL0",
+        "format": "SRT0",
+        "offset": 1174100,
+        "size": 452,
+        "version": 5,
+        "frames": 31,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "AvoidR0",
+        "format": "SRT0",
+        "offset": 1174552,
+        "size": 452,
+        "version": 5,
+        "frames": 31,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Brake0",
+        "format": "SRT0",
+        "offset": 1175004,
+        "size": 140,
+        "version": 5,
+        "frames": 31,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Brake1",
+        "format": "SRT0",
+        "offset": 1175144,
+        "size": 140,
+        "version": 5,
+        "frames": 61,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "BrowB0_0",
+        "format": "SRT0",
+        "offset": 1175284,
+        "size": 280,
+        "version": 5,
+        "frames": 6,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "BrowB0_1",
+        "format": "SRT0",
+        "offset": 1175564,
+        "size": 156,
+        "version": 5,
+        "frames": 31,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "BrowB0_2",
+        "format": "SRT0",
+        "offset": 1175720,
+        "size": 224,
+        "version": 5,
+        "frames": 26,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "BrowF0_0",
+        "format": "SRT0",
+        "offset": 1175944,
+        "size": 304,
+        "version": 5,
+        "frames": 6,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "BrowF0_1",
+        "format": "SRT0",
+        "offset": 1176248,
+        "size": 148,
+        "version": 5,
+        "frames": 31,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "BrowF0_2",
+        "format": "SRT0",
+        "offset": 1176396,
+        "size": 272,
+        "version": 5,
+        "frames": 26,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Call0",
+        "format": "SRT0",
+        "offset": 1176668,
+        "size": 300,
+        "version": 5,
+        "frames": 121,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Change0",
+        "format": "SRT0",
+        "offset": 1176968,
+        "size": 564,
+        "version": 5,
+        "frames": 31,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Change1",
+        "format": "SRT0",
+        "offset": 1177532,
+        "size": 300,
+        "version": 5,
+        "frames": 31,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "ChangeL0",
+        "format": "SRT0",
+        "offset": 1177832,
+        "size": 140,
+        "version": 5,
+        "frames": 31,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "ChangeR0",
+        "format": "SRT0",
+        "offset": 1177972,
+        "size": 140,
+        "version": 5,
+        "frames": 31,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Charge0",
+        "format": "SRT0",
+        "offset": 1178112,
+        "size": 148,
+        "version": 5,
+        "frames": 30,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "DamB0",
+        "format": "SRT0",
+        "offset": 1178260,
+        "size": 388,
+        "version": 5,
+        "frames": 31,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "DamB1",
+        "format": "SRT0",
+        "offset": 1178648,
+        "size": 388,
+        "version": 5,
+        "frames": 21,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "DamF0",
+        "format": "SRT0",
+        "offset": 1179036,
+        "size": 388,
+        "version": 5,
+        "frames": 31,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "DamF1",
+        "format": "SRT0",
+        "offset": 1179424,
+        "size": 388,
+        "version": 5,
+        "frames": 21,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Dash0",
+        "format": "SRT0",
+        "offset": 1179812,
+        "size": 140,
+        "version": 5,
+        "frames": 16,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "DashHit0",
+        "format": "SRT0",
+        "offset": 1179952,
+        "size": 436,
+        "version": 5,
+        "frames": 31,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "DashHit1",
+        "format": "SRT0",
+        "offset": 1180388,
+        "size": 436,
+        "version": 5,
+        "frames": 111,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "DashHit2",
+        "format": "SRT0",
+        "offset": 1180824,
+        "size": 392,
+        "version": 5,
+        "frames": 31,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "DashHit3",
+        "format": "SRT0",
+        "offset": 1181216,
+        "size": 636,
+        "version": 5,
+        "frames": 61,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Down0_0",
+        "format": "SRT0",
+        "offset": 1181852,
+        "size": 412,
+        "version": 5,
+        "frames": 76,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Down0_1",
+        "format": "SRT0",
+        "offset": 1182264,
+        "size": 148,
+        "version": 5,
+        "frames": 80,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Down1_1",
+        "format": "SRT0",
+        "offset": 1182412,
+        "size": 148,
+        "version": 5,
+        "frames": 80,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "FaceBattle",
+        "format": "SRT0",
+        "offset": 1182560,
+        "size": 148,
+        "version": 5,
+        "frames": 1,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "FaceDef",
+        "format": "SRT0",
+        "offset": 1182708,
+        "size": 264,
+        "version": 5,
+        "frames": 9,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "FaceEmot",
+        "format": "SRT0",
+        "offset": 1182972,
+        "size": 260,
+        "version": 5,
+        "frames": 4,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Faint0",
+        "format": "SRT0",
+        "offset": 1183232,
+        "size": 156,
+        "version": 5,
+        "frames": 80,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Fall0",
+        "format": "SRT0",
+        "offset": 1183388,
+        "size": 140,
+        "version": 5,
+        "frames": 30,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Fall1",
+        "format": "SRT0",
+        "offset": 1183528,
+        "size": 148,
+        "version": 5,
+        "frames": 30,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Fall2",
+        "format": "SRT0",
+        "offset": 1183676,
+        "size": 156,
+        "version": 5,
+        "frames": 30,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Fall3",
+        "format": "SRT0",
+        "offset": 1183832,
+        "size": 140,
+        "version": 5,
+        "frames": 30,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "HeadDam0",
+        "format": "SRT0",
+        "offset": 1183972,
+        "size": 588,
+        "version": 5,
+        "frames": 241,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "HideSeek0",
+        "format": "SRT0",
+        "offset": 1184560,
+        "size": 148,
+        "version": 5,
+        "frames": 84,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "ItmPut0",
+        "format": "SRT0",
+        "offset": 1184708,
+        "size": 140,
+        "version": 5,
+        "frames": 61,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "ItmPut1",
+        "format": "SRT0",
+        "offset": 1184848,
+        "size": 140,
+        "version": 5,
+        "frames": 61,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "ItmThrow0",
+        "format": "SRT0",
+        "offset": 1184988,
+        "size": 300,
+        "version": 5,
+        "frames": 61,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "ItmThrow1",
+        "format": "SRT0",
+        "offset": 1185288,
+        "size": 300,
+        "version": 5,
+        "frames": 61,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Joy0",
+        "format": "SRT0",
+        "offset": 1185588,
+        "size": 668,
+        "version": 5,
+        "frames": 121,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Jump0_0",
+        "format": "SRT0",
+        "offset": 1186256,
+        "size": 140,
+        "version": 5,
+        "frames": 5,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Jump0_1",
+        "format": "SRT0",
+        "offset": 1186396,
+        "size": 140,
+        "version": 5,
+        "frames": 27,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Jump0_2",
+        "format": "SRT0",
+        "offset": 1186536,
+        "size": 140,
+        "version": 5,
+        "frames": 26,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Jump0_3",
+        "format": "SRT0",
+        "offset": 1186676,
+        "size": 140,
+        "version": 5,
+        "frames": 6,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Jump1_0",
+        "format": "SRT0",
+        "offset": 1186816,
+        "size": 140,
+        "version": 5,
+        "frames": 5,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Jump1_1",
+        "format": "SRT0",
+        "offset": 1186956,
+        "size": 140,
+        "version": 5,
+        "frames": 27,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Jump1_2",
+        "format": "SRT0",
+        "offset": 1187096,
+        "size": 140,
+        "version": 5,
+        "frames": 26,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Jump1_3",
+        "format": "SRT0",
+        "offset": 1187236,
+        "size": 140,
+        "version": 5,
+        "frames": 6,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Jump2_1",
+        "format": "SRT0",
+        "offset": 1187376,
+        "size": 140,
+        "version": 5,
+        "frames": 31,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Landing0",
+        "format": "SRT0",
+        "offset": 1187516,
+        "size": 140,
+        "version": 5,
+        "frames": 31,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Landing1",
+        "format": "SRT0",
+        "offset": 1187656,
+        "size": 300,
+        "version": 5,
+        "frames": 61,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Landing3",
+        "format": "SRT0",
+        "offset": 1187956,
+        "size": 140,
+        "version": 5,
+        "frames": 41,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Load03",
+        "format": "SRT0",
+        "offset": 1188096,
+        "size": 660,
+        "version": 5,
+        "frames": 240,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Load04",
+        "format": "SRT0",
+        "offset": 1188756,
+        "size": 372,
+        "version": 5,
+        "frames": 240,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Load05",
+        "format": "SRT0",
+        "offset": 1189128,
+        "size": 540,
+        "version": 5,
+        "frames": 240,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Load11",
+        "format": "SRT0",
+        "offset": 1189668,
+        "size": 564,
+        "version": 5,
+        "frames": 220,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Load13",
+        "format": "SRT0",
+        "offset": 1190232,
+        "size": 420,
+        "version": 5,
+        "frames": 240,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Load15",
+        "format": "SRT0",
+        "offset": 1190652,
+        "size": 1088,
+        "version": 5,
+        "frames": 200,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Load30",
+        "format": "SRT0",
+        "offset": 1191740,
+        "size": 140,
+        "version": 5,
+        "frames": 240,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Load32",
+        "format": "SRT0",
+        "offset": 1191880,
+        "size": 300,
+        "version": 5,
+        "frames": 240,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Load33",
+        "format": "SRT0",
+        "offset": 1192180,
+        "size": 360,
+        "version": 5,
+        "frames": 240,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Load50",
+        "format": "SRT0",
+        "offset": 1192540,
+        "size": 396,
+        "version": 5,
+        "frames": 240,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Load51",
+        "format": "SRT0",
+        "offset": 1192936,
+        "size": 148,
+        "version": 5,
+        "frames": 120,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Load53",
+        "format": "SRT0",
+        "offset": 1193084,
+        "size": 436,
+        "version": 5,
+        "frames": 200,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "LookL0",
+        "format": "SRT0",
+        "offset": 1193520,
+        "size": 300,
+        "version": 5,
+        "frames": 91,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "LookR0",
+        "format": "SRT0",
+        "offset": 1193820,
+        "size": 300,
+        "version": 5,
+        "frames": 91,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Lose0_0",
+        "format": "SRT0",
+        "offset": 1194120,
+        "size": 436,
+        "version": 5,
+        "frames": 51,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Lose0_1",
+        "format": "SRT0",
+        "offset": 1194556,
+        "size": 148,
+        "version": 5,
+        "frames": 100,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Pushed0",
+        "format": "SRT0",
+        "offset": 1194704,
+        "size": 156,
+        "version": 5,
+        "frames": 60,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Random00",
+        "format": "SRT0",
+        "offset": 1194860,
+        "size": 140,
+        "version": 5,
+        "frames": 169,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Random01",
+        "format": "SRT0",
+        "offset": 1195000,
+        "size": 484,
+        "version": 5,
+        "frames": 189,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Random02",
+        "format": "SRT0",
+        "offset": 1195484,
+        "size": 420,
+        "version": 5,
+        "frames": 171,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Random03",
+        "format": "SRT0",
+        "offset": 1195904,
+        "size": 300,
+        "version": 5,
+        "frames": 161,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Random04",
+        "format": "SRT0",
+        "offset": 1196204,
+        "size": 300,
+        "version": 5,
+        "frames": 136,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Random05",
+        "format": "SRT0",
+        "offset": 1196504,
+        "size": 420,
+        "version": 5,
+        "frames": 256,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "RotL0",
+        "format": "SRT0",
+        "offset": 1196924,
+        "size": 140,
+        "version": 5,
+        "frames": 31,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Sad0",
+        "format": "SRT0",
+        "offset": 1197064,
+        "size": 612,
+        "version": 5,
+        "frames": 121,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Shake0_0",
+        "format": "SRT0",
+        "offset": 1197676,
+        "size": 148,
+        "version": 5,
+        "frames": 60,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Shake0_1",
+        "format": "SRT0",
+        "offset": 1197824,
+        "size": 428,
+        "version": 5,
+        "frames": 141,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Sleep0_0",
+        "format": "SRT0",
+        "offset": 1198252,
+        "size": 684,
+        "version": 5,
+        "frames": 261,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Sleep0_1",
+        "format": "SRT0",
+        "offset": 1198936,
+        "size": 156,
+        "version": 5,
+        "frames": 140,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Sleep0_2",
+        "format": "SRT0",
+        "offset": 1199092,
+        "size": 340,
+        "version": 5,
+        "frames": 22,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "StandUp0",
+        "format": "SRT0",
+        "offset": 1199432,
+        "size": 460,
+        "version": 5,
+        "frames": 46,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "StandUp1",
+        "format": "SRT0",
+        "offset": 1199892,
+        "size": 460,
+        "version": 5,
+        "frames": 46,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "ToWin0",
+        "format": "SRT0",
+        "offset": 1200352,
+        "size": 140,
+        "version": 5,
+        "frames": 21,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "What0",
+        "format": "SRT0",
+        "offset": 1200492,
+        "size": 300,
+        "version": 5,
+        "frames": 61,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Win0_0",
+        "format": "SRT0",
+        "offset": 1200792,
+        "size": 316,
+        "version": 5,
+        "frames": 41,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Win0_1",
+        "format": "SRT0",
+        "offset": 1201108,
+        "size": 156,
+        "version": 5,
+        "frames": 100,
+        "tracks": 2,
+        "loop": false
+      },
+      {
+        "name": "Yawn0",
+        "format": "SRT0",
+        "offset": 1201264,
+        "size": 508,
+        "version": 5,
+        "frames": 151,
+        "tracks": 2,
+        "loop": false
+      }
+    ]
+  },
+  "converted_to_pbr": false,
+  "visually_verified": false
+}

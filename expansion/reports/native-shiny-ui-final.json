@@ -1,0 +1,21 @@
+{
+  "status": "passed-native-status-text-and-font-metrics",
+  "bonus_winner_cases": 12,
+  "display_cases": 360,
+  "annotated_cases": 16,
+  "original_font_color_and_bounds_preserved": true,
+  "font_never_shrunk": true,
+  "compact_space_fallback": true,
+  "narrow_or_short_bounds_keep_original_effective_value": true,
+  "no_pokemon_mutation_by_ui": true,
+  "dol_sha256": "91d0ceacd6a138948d3519f37b7f1715f143481c7148f1f57e3f84750db50189",
+  "stubs": [
+    "Scratch allocation/free",
+    "Final text draw (record arguments, no GPU)"
+  ],
+  "limits": [
+    "Synthetic width/height cases; live resource layouts not loaded",
+    "Visual appearance outside/inside battle still needs Dolphin screenshots"
+  ],
+  "dolphin_tested": false
+}

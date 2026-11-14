@@ -1,0 +1,78 @@
+{
+  "batch": 5,
+  "status": "approved-by-user",
+  "category": "trainer-battle-dialogue",
+  "publication": "held-until-complete-battle-translation",
+  "entries": [
+    {
+      "ids": [
+        3
+      ],
+      "source": "All right! Let's go!",
+      "proposed": "Certo! Vamos lá!"
+    },
+    {
+      "ids": [
+        4
+      ],
+      "source": "Go!",
+      "proposed": "Vai!"
+    },
+    {
+      "ids": [
+        5
+      ],
+      "source": "Good job, [Pokémon]!",
+      "proposed": "Bom trabalho, [Pokémon]!"
+    },
+    {
+      "ids": [
+        6
+      ],
+      "source": "[Pokémon], it's you!",
+      "proposed": "[Pokémon], é com você!"
+    },
+    {
+      "ids": [
+        7
+      ],
+      "source": "Yes! I won!",
+      "proposed": "Isso! Eu venci!"
+    },
+    {
+      "ids": [
+        8
+      ],
+      "source": "I lost!",
+      "proposed": "Eu perdi!"
+    },
+    {
+      "ids": [
+        9
+      ],
+      "source": "Glad to meet you!",
+      "proposed": "Prazer em conhecer você!"
+    },
+    {
+      "ids": [
+        10
+      ],
+      "source": "That was quite a battle! Thank you!",
+      "proposed": "Que batalha! Valeu!"
+    },
+    {
+      "ids": [
+        11
+      ],
+      "source": "You got me! I lost!",
+      "proposed": "Você me venceu! Eu perdi!"
+    },
+    {
+      "ids": [
+        12
+      ],
+      "source": "My skills are perfect!",
+      "proposed": "Minhas habilidades são perfeitas!"
+    }
+  ]
+}

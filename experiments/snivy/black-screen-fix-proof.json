@@ -1,0 +1,35 @@
+{
+  "passed": true,
+  "kind": "native replay of supplied black-screen state",
+  "identical_executable_sections_except_known_status_buffer": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+  ],
+  "capture_dolphin": "Dolphin 2506-25",
+  "fsys_file_read_finished_but_resource_missing": true,
+  "old_unpacked_bytes": 8156264,
+  "original_allocation_failed": true,
+  "compact_unpacked_bytes": 2482184,
+  "compact_sha256": "f123a73a4df0ffd7215b82521997267a6fdb45e18fd438e99c6f280171909d4b",
+  "reduction_percent": 69.57,
+  "native_compact_allocation_succeeded": true,
+  "native_scene_relocation_succeeded": true,
+  "native_resource_ready": true,
+  "captured_wait_routine_returned": true,
+  "summary_orientation_only_changes_snivy": true,
+  "summary_orientation_boundary_cases": 7,
+  "cache_maintenance_syscalls_skipped": [
+    "8026f024",
+    "8026f054",
+    "8026f084"
+  ],
+  "limits": [
+    "No native allocation, resource, parser or waiting routine is substituted",
+    "Not an actual Dolphin battle, GPU render or save/load test"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "batch": 3,
+  "status": "approved-by-user",
+  "category": "battle-menus",
+  "entries": [
+    {"ids": [3489, 3828], "source": "FIGHT", "proposed": "LUTAR"},
+    {"ids": [3830, 3891], "source": "GIVE IN / Give In", "proposed": "DESISTIR / Desistir"},
+    {"ids": [3892], "source": "Return", "proposed": "Voltar"},
+    {"ids": [3893], "source": "Shift", "proposed": "Trocar"},
+    {"ids": [3894], "source": "Moves Info", "proposed": "Ver golpes"}
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "version": "v0.12.1-dialogue-test.1",
+  "package_url": "https://raw.githubusercontent.com/CustoByte/pbr-duplas/v0.12.1-dialogue-test.1/expansion/packages/dialogue-test1/aplicador-core.zip",
+  "package_sha256": "3e4cfe10d6e0a8b94886b1ca04b1333ccd4b57f5473290cbbf0f7c1219a3d869",
+  "channel": "full493-test",
+  "dolphin_tested": false,
+  "local_snivy_source_required": true,
+  "save_policy": "Original image and normal save files untouched by installer",
+  "translation_corrections": 382,
+  "new_translations": 0,
+  "review_complete": false
+}

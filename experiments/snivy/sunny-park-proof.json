@@ -1,0 +1,105 @@
+{
+  "kind": "native offline level-5 constructor proof",
+  "passed": true,
+  "requested_set": {
+    "tournament": "Sunny Park \u2014 Little Battle",
+    "level": 5,
+    "national_id": 495,
+    "provisional_internal_id": 501,
+    "nature": "Timid",
+    "ability": "Overgrow",
+    "item": "Lum Berry",
+    "moves": [
+      "Tackle",
+      "Leer",
+      "Magical Leaf",
+      "Protect"
+    ],
+    "gen5_legal_sources": [
+      "level 1",
+      "level 4",
+      "egg",
+      "TM"
+    ],
+    "ivs": [
+      31,
+      31,
+      31,
+      31,
+      31,
+      31
+    ],
+    "ev_order": "HP/Atk/Def/Speed/SpAtk/SpDef",
+    "evs": [
+      4,
+      0,
+      0,
+      252,
+      252,
+      0
+    ],
+    "original_species_replaced": false,
+    "requested_change": "one player-usable roster slot, restricted to Little Battle",
+    "live_player_slot_selected": false,
+    "playable": false,
+    "ready_to_publish": false
+  },
+  "readback": {
+    "species": 501,
+    "held_item": 157,
+    "ability": 65,
+    "pid": 2637307735,
+    "moves": [
+      33,
+      43,
+      345,
+      182
+    ],
+    "pp": [
+      35,
+      30,
+      20,
+      10
+    ],
+    "ivs": [
+      31,
+      31,
+      31,
+      31,
+      31,
+      31
+    ],
+    "evs": [
+      4,
+      0,
+      0,
+      252,
+      252,
+      0
+    ],
+    "experience": 135,
+    "level": 5,
+    "stats_hp_atk_def_speed_spatk_spdef": [
+      21,
+      9,
+      12,
+      17,
+      14,
+      12
+    ],
+    "species_or_egg": 501
+  },
+  "allocation_sizes": [
+    32,
+    44,
+    164,
+    404
+  ],
+  "limits": [
+    "No model dispatch or render",
+    "No Little Battle player eligibility test",
+    "No roster migration, real save/load or Dolphin battle",
+    "Name/model registry fields remain unresolved"
+  ],
+  "released": false
+}

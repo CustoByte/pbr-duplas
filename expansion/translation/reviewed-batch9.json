@@ -1,0 +1,78 @@
+{
+  "batch": 9,
+  "status": "approved-by-user",
+  "category": "trainer-battle-dialogue",
+  "publication": "held-until-complete-battle-translation",
+  "entries": [
+    {
+      "ids": [
+        43
+      ],
+      "source": "Battles are easy once you're used to them!",
+      "proposed": "Com a prática, as batalhas ficam fáceis!"
+    },
+    {
+      "ids": [
+        44
+      ],
+      "source": "There are things I still don't know?",
+      "proposed": "Ainda há coisas que eu não sei?"
+    },
+    {
+      "ids": [
+        45
+      ],
+      "source": "Life is a challenge!",
+      "proposed": "A vida é um desafio!"
+    },
+    {
+      "ids": [
+        46
+      ],
+      "source": "Yeah! I moved a step forward!",
+      "proposed": "Isso! Avancei mais um passo!"
+    },
+    {
+      "ids": [
+        47
+      ],
+      "source": "I'll never give up! I will win next time!",
+      "proposed": "Nunca vou desistir! Na próxima, eu venço!"
+    },
+    {
+      "ids": [
+        48
+      ],
+      "source": "I'm still a beginner!",
+      "proposed": "Ainda sou iniciante!"
+    },
+    {
+      "ids": [
+        49
+      ],
+      "source": "Pokémon battles are so much fun!",
+      "proposed": "Batalhas Pokémon são muito divertidas!"
+    },
+    {
+      "ids": [
+        50
+      ],
+      "source": "Battles aren't so easy for a beginner...",
+      "proposed": "Para iniciantes, batalhar não é tão fácil..."
+    },
+    {
+      "ids": [
+        51
+      ],
+      "source": "Everyone is my friend!",
+      "proposed": "Todo mundo é meu amigo!"
+    },
+    {
+      "ids": [
+        52
+      ],
+      "source": "I've entered a new world of friendship!",
+      "proposed": "Entrei num novo mundo de amizades!"
+    }
+  ]
+}

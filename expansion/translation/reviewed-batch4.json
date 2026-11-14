@@ -1,0 +1,86 @@
+{
+  "status": "approved-by-user-with-correction-to-entry-6",
+  "entries": [
+    {
+      "ids": [
+        2612,
+        2613
+      ],
+      "source": "[Pokémon] fell asleep!",
+      "proposed": "[Pokémon] adormeceu!"
+    },
+    {
+      "ids": [
+        2628,
+        2629
+      ],
+      "source": "[Pokémon] was poisoned!",
+      "proposed": "[Pokémon] foi envenenado!"
+    },
+    {
+      "ids": [
+        2650,
+        2651
+      ],
+      "source": "[Pokémon] was burned!",
+      "proposed": "[Pokémon] foi queimado!"
+    },
+    {
+      "ids": [
+        2666,
+        2667
+      ],
+      "source": "[Pokémon] was frozen solid!",
+      "proposed": "[Pokémon] foi congelado!"
+    },
+    {
+      "ids": [
+        2679,
+        2680
+      ],
+      "source": "[Pokémon] thawed out!",
+      "proposed": "[Pokémon] descongelou!"
+    },
+    {
+      "ids": [
+        2865
+      ],
+      "source": "[Pokémon] is fast asleep.",
+      "proposed": "[Pokémon] está dormindo bastante."
+    },
+    {
+      "ids": [
+        2867,
+        2868
+      ],
+      "source": "[Pokémon] woke up!",
+      "proposed": "[Pokémon] acordou!"
+    },
+    {
+      "ids": [
+        2644,
+        2645
+      ],
+      "source": "[Pokémon] was badly poisoned!",
+      "proposed": "[Pokémon] foi gravemente envenenado!"
+    },
+    {
+      "ids": [
+        2715,
+        2716
+      ],
+      "source": "[Pokémon] is confused!",
+      "proposed": "[Pokémon] está confuso!"
+    },
+    {
+      "ids": [
+        2746,
+        2747
+      ],
+      "source": "[Pokémon] flinched!",
+      "proposed": "[Pokémon] hesitou!"
+    }
+  ],
+  "category": "battle-status-messages",
+  "batch": 4
+}

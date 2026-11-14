@@ -1,0 +1,515 @@
+{
+  "font_sha256": "e4187dee6bc33eb368445acde98ba7d2f187294a7f9fc3441c78df95c85cd905",
+  "native_tilde_cases": [
+    {
+      "font": 0,
+      "character": "ã",
+      "native_glyph_slot": 190,
+      "bitmap_registered": true,
+      "native_top_offset": 7
+    },
+    {
+      "font": 0,
+      "character": "õ",
+      "native_glyph_slot": 208,
+      "bitmap_registered": true,
+      "native_top_offset": 7
+    },
+    {
+      "font": 0,
+      "character": "Ã",
+      "native_glyph_slot": 158,
+      "bitmap_registered": true,
+      "native_top_offset": 3
+    },
+    {
+      "font": 0,
+      "character": "Õ",
+      "native_glyph_slot": 176,
+      "bitmap_registered": true,
+      "native_top_offset": 3
+    },
+    {
+      "font": 1,
+      "character": "ã",
+      "native_glyph_slot": 190,
+      "bitmap_registered": true,
+      "native_top_offset": 3
+    },
+    {
+      "font": 1,
+      "character": "õ",
+      "native_glyph_slot": 208,
+      "bitmap_registered": true,
+      "native_top_offset": 3
+    },
+    {
+      "font": 1,
+      "character": "Ã",
+      "native_glyph_slot": 158,
+      "bitmap_registered": true,
+      "native_top_offset": 0
+    },
+    {
+      "font": 1,
+      "character": "Õ",
+      "native_glyph_slot": 176,
+      "bitmap_registered": true,
+      "native_top_offset": 0
+    },
+    {
+      "font": 2,
+      "character": "ã",
+      "native_glyph_slot": 190,
+      "bitmap_registered": true,
+      "native_top_offset": 4
+    },
+    {
+      "font": 2,
+      "character": "õ",
+      "native_glyph_slot": 208,
+      "bitmap_registered": true,
+      "native_top_offset": 4
+    },
+    {
+      "font": 2,
+      "character": "Ã",
+      "native_glyph_slot": 158,
+      "bitmap_registered": true,
+      "native_top_offset": 1
+    },
+    {
+      "font": 2,
+      "character": "Õ",
+      "native_glyph_slot": 176,
+      "bitmap_registered": true,
+      "native_top_offset": 1
+    },
+    {
+      "font": 3,
+      "character": "ã",
+      "native_glyph_slot": 190,
+      "bitmap_registered": true,
+      "native_top_offset": 7
+    },
+    {
+      "font": 3,
+      "character": "õ",
+      "native_glyph_slot": 208,
+      "bitmap_registered": true,
+      "native_top_offset": 7
+    },
+    {
+      "font": 3,
+      "character": "Ã",
+      "native_glyph_slot": 158,
+      "bitmap_registered": true,
+      "native_top_offset": 3
+    },
+    {
+      "font": 3,
+      "character": "Õ",
+      "native_glyph_slot": 176,
+      "bitmap_registered": true,
+      "native_top_offset": 3
+    },
+    {
+      "font": 4,
+      "character": "ã",
+      "native_glyph_slot": 190,
+      "bitmap_registered": true,
+      "native_top_offset": 3
+    },
+    {
+      "font": 4,
+      "character": "õ",
+      "native_glyph_slot": 208,
+      "bitmap_registered": true,
+      "native_top_offset": 3
+    },
+    {
+      "font": 4,
+      "character": "Ã",
+      "native_glyph_slot": 158,
+      "bitmap_registered": true,
+      "native_top_offset": 0
+    },
+    {
+      "font": 4,
+      "character": "Õ",
+      "native_glyph_slot": 176,
+      "bitmap_registered": true,
+      "native_top_offset": 0
+    },
+    {
+      "font": 5,
+      "character": "ã",
+      "native_glyph_slot": 190,
+      "bitmap_registered": true,
+      "native_top_offset": 4
+    },
+    {
+      "font": 5,
+      "character": "õ",
+      "native_glyph_slot": 208,
+      "bitmap_registered": true,
+      "native_top_offset": 4
+    },
+    {
+      "font": 5,
+      "character": "Ã",
+      "native_glyph_slot": 158,
+      "bitmap_registered": true,
+      "native_top_offset": 1
+    },
+    {
+      "font": 5,
+      "character": "Õ",
+      "native_glyph_slot": 176,
+      "bitmap_registered": true,
+      "native_top_offset": 1
+    },
+    {
+      "font": 6,
+      "character": "ã",
+      "native_glyph_slot": 190,
+      "bitmap_registered": true,
+      "native_top_offset": 4
+    },
+    {
+      "font": 6,
+      "character": "õ",
+      "native_glyph_slot": 208,
+      "bitmap_registered": true,
+      "native_top_offset": 3
+    },
+    {
+      "font": 6,
+      "character": "Ã",
+      "native_glyph_slot": 158,
+      "bitmap_registered": true,
+      "native_top_offset": 1
+    },
+    {
+      "font": 6,
+      "character": "Õ",
+      "native_glyph_slot": 176,
+      "bitmap_registered": true,
+      "native_top_offset": 1
+    },
+    {
+      "font": 7,
+      "character": "ã",
+      "native_glyph_slot": 190,
+      "bitmap_registered": true,
+      "native_top_offset": 4
+    },
+    {
+      "font": 7,
+      "character": "õ",
+      "native_glyph_slot": 208,
+      "bitmap_registered": true,
+      "native_top_offset": 4
+    },
+    {
+      "font": 7,
+      "character": "Ã",
+      "native_glyph_slot": 158,
+      "bitmap_registered": true,
+      "native_top_offset": 2
+    },
+    {
+      "font": 7,
+      "character": "Õ",
+      "native_glyph_slot": 176,
+      "bitmap_registered": true,
+      "native_top_offset": 1
+    },
+    {
+      "font": 8,
+      "character": "ã",
+      "native_glyph_slot": 190,
+      "bitmap_registered": true,
+      "native_top_offset": 4
+    },
+    {
+      "font": 8,
+      "character": "õ",
+      "native_glyph_slot": 208,
+      "bitmap_registered": true,
+      "native_top_offset": 3
+    },
+    {
+      "font": 8,
+      "character": "Ã",
+      "native_glyph_slot": 158,
+      "bitmap_registered": true,
+      "native_top_offset": 1
+    },
+    {
+      "font": 8,
+      "character": "Õ",
+      "native_glyph_slot": 176,
+      "bitmap_registered": true,
+      "native_top_offset": 1
+    },
+    {
+      "font": 9,
+      "character": "ã",
+      "native_glyph_slot": 190,
+      "bitmap_registered": true,
+      "native_top_offset": 4
+    },
+    {
+      "font": 9,
+      "character": "õ",
+      "native_glyph_slot": 208,
+      "bitmap_registered": true,
+      "native_top_offset": 4
+    },
+    {
+      "font": 9,
+      "character": "Ã",
+      "native_glyph_slot": 158,
+      "bitmap_registered": true,
+      "native_top_offset": 2
+    },
+    {
+      "font": 9,
+      "character": "Õ",
+      "native_glyph_slot": 176,
+      "bitmap_registered": true,
+      "native_top_offset": 1
+    }
+  ],
+  "reported_ui_cases": [
+    {
+      "id": 7060,
+      "pages": [
+        {
+          "original": [
+            146,
+            50
+          ],
+          "translated": [
+            62,
+            50
+          ],
+          "width_budget": 146,
+          "same_button_reference": null
+        }
+      ]
+    },
+    {
+      "id": 7061,
+      "pages": [
+        {
+          "original": [
+            96,
+            50
+          ],
+          "translated": [
+            116,
+            50
+          ],
+          "width_budget": 146,
+          "same_button_reference": 7060
+        }
+      ]
+    },
+    {
+      "id": 7062,
+      "pages": [
+        {
+          "original": [
+            69,
+            50
+          ],
+          "translated": [
+            69,
+            50
+          ],
+          "width_budget": 69,
+          "same_button_reference": null
+        }
+      ]
+    },
+    {
+      "id": 9152,
+      "pages": [
+        {
+          "original": [
+            455,
+            50
+          ],
+          "translated": [
+            385,
+            50
+          ],
+          "width_budget": 455,
+          "same_button_reference": null
+        },
+        {
+          "original": [
+            512,
+            75
+          ],
+          "translated": [
+            337,
+            75
+          ],
+          "width_budget": 512,
+          "same_button_reference": null
+        },
+        {
+          "original": [
+            0,
+            25
+          ],
+          "translated": [
+            0,
+            25
+          ],
+          "width_budget": 0,
+          "same_button_reference": null
+        }
+      ]
+    },
+    {
+      "id": 9154,
+      "pages": [
+        {
+          "original": [
+            549,
+            50
+          ],
+          "translated": [
+            342,
+            50
+          ],
+          "width_budget": 549,
+          "same_button_reference": null
+        },
+        {
+          "original": [
+            489,
+            50
+          ],
+          "translated": [
+            285,
+            50
+          ],
+          "width_budget": 489,
+          "same_button_reference": null
+        },
+        {
+          "original": [
+            478,
+            75
+          ],
+          "translated": [
+            268,
+            75
+          ],
+          "width_budget": 478,
+          "same_button_reference": null
+        },
+        {
+          "original": [
+            0,
+            25
+          ],
+          "translated": [
+            0,
+            25
+          ],
+          "width_budget": 0,
+          "same_button_reference": null
+        }
+      ]
+    },
+    {
+      "id": 9193,
+      "pages": [
+        {
+          "original": [
+            338,
+            50
+          ],
+          "translated": [
+            232,
+            50
+          ],
+          "width_budget": 338,
+          "same_button_reference": null
+        },
+        {
+          "original": [
+            162,
+            50
+          ],
+          "translated": [
+            118,
+            50
+          ],
+          "width_budget": 162,
+          "same_button_reference": null
+        },
+        {
+          "original": [
+            0,
+            25
+          ],
+          "translated": [
+            0,
+            25
+          ],
+          "width_budget": 0,
+          "same_button_reference": null
+        }
+      ]
+    },
+    {
+      "id": 9194,
+      "pages": [
+        {
+          "original": [
+            372,
+            50
+          ],
+          "translated": [
+            295,
+            50
+          ],
+          "width_budget": 372,
+          "same_button_reference": null
+        },
+        {
+          "original": [
+            170,
+            50
+          ],
+          "translated": [
+            148,
+            50
+          ],
+          "width_budget": 170,
+          "same_button_reference": null
+        },
+        {
+          "original": [
+            0,
+            25
+          ],
+          "translated": [
+            0,
+            25
+          ],
+          "width_budget": 0,
+          "same_button_reference": null
+        }
+      ]
+    }
+  ],
+  "dolphin_render_tested": false
+}

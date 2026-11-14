@@ -1,0 +1,267 @@
+{
+  "kind": "offline native model dispatch and attachment/animation table lookup",
+  "passed": true,
+  "original_model_rows_preserved": 670,
+  "original_species_model_indices_preserved": 501,
+  "new_model_index": 670,
+  "snivy_internal_id": 501,
+  "fsys_id": "00002000",
+  "archive_name": "pkx_501.fsys",
+  "reserved_normal_resource": "73ea0400",
+  "reserved_shiny_resource": "63ea0400",
+  "catalog_chain_verified": true,
+  "restored_original_pointers": true,
+  "node_roles": [
+    {
+      "role": "damage_1",
+      "node": "ef_damage",
+      "index": 109
+    },
+    {
+      "role": "mouth",
+      "node": "ef_mouth",
+      "index": 75
+    },
+    {
+      "role": "left_eye",
+      "node": "ef_leye",
+      "index": 76
+    },
+    {
+      "role": "right_eye",
+      "node": "ef_reye",
+      "index": 77
+    },
+    {
+      "role": "root_1",
+      "node": "PBR_StaticRoot",
+      "index": 0
+    },
+    {
+      "role": "left_arm",
+      "node": "ef_lfhand",
+      "index": 47
+    },
+    {
+      "role": "right_arm",
+      "node": "ef_rfhand",
+      "index": 85
+    },
+    {
+      "role": "left_foot",
+      "node": "ef_lffoot",
+      "index": 15
+    },
+    {
+      "role": "right_foot",
+      "node": "ef_rffoot",
+      "index": 23
+    },
+    {
+      "role": "center",
+      "node": "ef_o",
+      "index": 113
+    },
+    {
+      "role": "control_all_move_1",
+      "node": "ct_all_move",
+      "index": 115
+    },
+    {
+      "role": "head",
+      "node": "ef_head",
+      "index": 78
+    },
+    {
+      "role": "right_hand",
+      "node": "ef_rfhand",
+      "index": 85
+    },
+    {
+      "role": "right_foot_2",
+      "node": "ef_rffoot",
+      "index": 23
+    },
+    {
+      "role": "root_2",
+      "node": "PBR_StaticRoot",
+      "index": 0
+    },
+    {
+      "role": "root_3",
+      "node": "PBR_StaticRoot",
+      "index": 0
+    },
+    {
+      "role": "root_4",
+      "node": "PBR_StaticRoot",
+      "index": 0
+    },
+    {
+      "role": "root_5",
+      "node": "PBR_StaticRoot",
+      "index": 0
+    },
+    {
+      "role": "root_6",
+      "node": "PBR_StaticRoot",
+      "index": 0
+    },
+    {
+      "role": "damage_2",
+      "node": "ef_damage",
+      "index": 109
+    },
+    {
+      "role": "direct_set",
+      "node": "direct_set",
+      "index": 117
+    },
+    {
+      "role": "control_bust",
+      "node": "ct_bust",
+      "index": 110
+    },
+    {
+      "role": "control_bust_move",
+      "node": "ct_bust_move",
+      "index": 111
+    },
+    {
+      "role": "control_all",
+      "node": "ct_all",
+      "index": 114
+    },
+    {
+      "role": "control_all_move_2",
+      "node": "ct_all_move",
+      "index": 115
+    }
+  ],
+  "action_roles": [
+    {
+      "role": "battle_idle",
+      "action": "wait",
+      "index": 0
+    },
+    {
+      "role": "special_move",
+      "action": "kime",
+      "index": 5
+    },
+    {
+      "role": "physical_move",
+      "action": "tackle",
+      "index": 4
+    },
+    {
+      "role": "punch_1",
+      "action": "kime_phy",
+      "index": 11
+    },
+    {
+      "role": "kick",
+      "action": "kime_phy",
+      "index": 11
+    },
+    {
+      "role": "fly",
+      "action": "wait",
+      "index": 0
+    },
+    {
+      "role": "dive",
+      "action": "wait",
+      "index": 0
+    },
+    {
+      "role": "punch_2",
+      "action": "tackle",
+      "index": 4
+    },
+    {
+      "role": "damage",
+      "action": "damage",
+      "index": 2
+    },
+    {
+      "role": "faint",
+      "action": "down",
+      "index": 3
+    },
+    {
+      "role": "hover",
+      "action": "wait",
+      "index": 0
+    },
+    {
+      "role": "unknown_idle_2",
+      "action": "kime_a",
+      "index": 6
+    },
+    {
+      "role": "unknown_idle_3",
+      "action": "mamoru",
+      "index": 10
+    },
+    {
+      "role": "unknown_idle_4",
+      "action": "wait",
+      "index": 0
+    },
+    {
+      "role": "unknown_idle_5",
+      "action": "wait",
+      "index": 0
+    },
+    {
+      "role": "unknown_idle_6",
+      "action": "wait",
+      "index": 0
+    },
+    {
+      "role": "status",
+      "action": "wait",
+      "index": 0
+    },
+    {
+      "role": "run",
+      "action": "run",
+      "index": 1
+    },
+    {
+      "role": "summary_idle",
+      "action": "wait",
+      "index": 0
+    },
+    {
+      "role": "blink",
+      "action": "tx_wink",
+      "index": 7
+    },
+    {
+      "role": "sleep",
+      "action": "tx_sleep",
+      "index": 8
+    },
+    {
+      "role": "wake",
+      "action": "tx_wakeup",
+      "index": 9
+    }
+  ],
+  "converted_scene_nodes": 119,
+  "converted_scene_actions": 12,
+  "sdr_sha256": "2d4e51a8aee6d3cfbc86e5e6c714ac1cbf5909deaa7815cdfb88be6d3321c301",
+  "source_models_sha256": "9b5e85448e62c755bf85134836463c08c729faa107f2ab63a244ad78f82e1388",
+  "target_models_sha256": "9ee98a66791804713c142d3dd05d5dba564d12c147df88b35f23b998a661e2a4",
+  "model_row_hex": "300000000000200073ea040063ea04004190000001f50000006d4b4c4d002f550f1771734e551700000000006d756e6f72730005040b0b000004020300060a000000000100070809",
+  "playable": false,
+  "published_in_updater": false,
+  "limits": [
+    "No actual FSYS or SDR loading/rendering",
+    "Shiny resource ID reserved; shiny variant not built in this step",
+    "Camera, run speed, effect positions and action semantics need in-game calibration",
+    "No global eligibility, pass migration, icons or save/load test"
+  ]
+}

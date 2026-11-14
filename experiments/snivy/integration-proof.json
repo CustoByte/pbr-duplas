@@ -1,0 +1,39 @@
+{
+  "kind": "private integrated build; no gameplay or save validation",
+  "outputs": {
+    "main.dol": {
+      "bytes": 4547360,
+      "sha256": "893ac438ec56139122fdf3411d4262085a6e94c89844a56b10060ad8cc82c85b"
+    },
+    "common.fsys": {
+      "bytes": 441888,
+      "sha256": "bd299419dc295d21aa047c413947d8ce22b0d0c014e5433796861ff0b274fefb"
+    },
+    "mes_common.fsys": {
+      "bytes": 480384,
+      "sha256": "72616c5f217a1580e231862c8efca8b1006c76182dc662ebe8018fb46ab9eea7"
+    },
+    "GSfsys.toc": {
+      "bytes": 46944,
+      "sha256": "920fa6c107b420439bb51af7ab950b4d2b10cf3ac39a01a9fbb989a6c8b0f16b"
+    }
+  },
+  "modified_common_resources": [
+    "007d0200",
+    "00800200",
+    "00810200",
+    "00820200",
+    "008b0000",
+    "12a90200",
+    "16410200",
+    "1d9d0200"
+  ],
+  "unchanged_resources_preserved": true,
+  "updater_changed": false,
+  "dolphin_gameplay_verified": false,
+  "limits": [
+    "Local graphics conversion and installer integration required",
+    "Snivy cry and spoken name deliberately silent: no supplied recording",
+    "Manual Dolphin battle, camera and save/load checks required"
+  ]
+}

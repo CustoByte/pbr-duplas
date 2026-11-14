@@ -1,0 +1,3986 @@
+{
+  "status": "passed-native-trainer-generation-fixtures",
+  "native_trainer_generator": "8017ec70",
+  "native_pokemon_constructor": "8017d750",
+  "pool_and_pk4_selection_stubs": [],
+  "resource_and_allocation_stubs": [
+    "801e00fc expanded DCKP pointer",
+    "801728e4/801df6b4 allocation",
+    "80172a14/801df6fc free"
+  ],
+  "results": [
+    {
+      "colosseum_record": 2,
+      "pokemon_deck": "1dfa2800",
+      "trainer_deck": "1ddb2a00",
+      "teams_generated": 250,
+      "native_pokemon_built": 1500,
+      "species_reached": 493,
+      "first_native_generation_witness": {
+        "163": {
+          "attempt": 1,
+          "trainer_record": 0
+        },
+        "333": {
+          "attempt": 1,
+          "trainer_record": 0
+        },
+        "266": {
+          "attempt": 1,
+          "trainer_record": 0
+        },
+        "408": {
+          "attempt": 1,
+          "trainer_record": 0
+        },
+        "233": {
+          "attempt": 1,
+          "trainer_record": 0
+        },
+        "442": {
+          "attempt": 1,
+          "trainer_record": 0
+        },
+        "217": {
+          "attempt": 2,
+          "trainer_record": 1
+        },
+        "351": {
+          "attempt": 2,
+          "trainer_record": 1
+        },
+        "105": {
+          "attempt": 2,
+          "trainer_record": 1
+        },
+        "376": {
+          "attempt": 2,
+          "trainer_record": 1
+        },
+        "131": {
+          "attempt": 2,
+          "trainer_record": 1
+        },
+        "135": {
+          "attempt": 2,
+          "trainer_record": 1
+        },
+        "466": {
+          "attempt": 3,
+          "trainer_record": 2
+        },
+        "462": {
+          "attempt": 3,
+          "trainer_record": 2
+        },
+        "360": {
+          "attempt": 3,
+          "trainer_record": 2
+        },
+        "242": {
+          "attempt": 3,
+          "trainer_record": 2
+        },
+        "307": {
+          "attempt": 3,
+          "trainer_record": 2
+        },
+        "230": {
+          "attempt": 3,
+          "trainer_record": 2
+        },
+        "85": {
+          "attempt": 4,
+          "trainer_record": 3
+        },
+        "330": {
+          "attempt": 4,
+          "trainer_record": 3
+        },
+        "392": {
+          "attempt": 4,
+          "trainer_record": 3
+        },
+        "31": {
+          "attempt": 4,
+          "trainer_record": 3
+        },
+        "121": {
+          "attempt": 4,
+          "trainer_record": 3
+        },
+        "492": {
+          "attempt": 5,
+          "trainer_record": 4
+        },
+        "470": {
+          "attempt": 5,
+          "trainer_record": 4
+        },
+        "350": {
+          "attempt": 5,
+          "trainer_record": 4
+        },
+        "472": {
+          "attempt": 5,
+          "trainer_record": 4
+        },
+        "212": {
+          "attempt": 5,
+          "trainer_record": 4
+        },
+        "37": {
+          "attempt": 5,
+          "trainer_record": 4
+        },
+        "341": {
+          "attempt": 6,
+          "trainer_record": 5
+        },
+        "126": {
+          "attempt": 6,
+          "trainer_record": 5
+        },
+        "465": {
+          "attempt": 6,
+          "trainer_record": 5
+        },
+        "143": {
+          "attempt": 6,
+          "trainer_record": 5
+        },
+        "414": {
+          "attempt": 6,
+          "trainer_record": 5
+        },
+        "76": {
+          "attempt": 7,
+          "trainer_record": 6
+        },
+        "329": {
+          "attempt": 7,
+          "trainer_record": 6
+        },
+        "295": {
+          "attempt": 7,
+          "trainer_record": 6
+        },
+        "474": {
+          "attempt": 8,
+          "trainer_record": 7
+        },
+        "74": {
+          "attempt": 8,
+          "trainer_record": 7
+        },
+        "463": {
+          "attempt": 8,
+          "trainer_record": 7
+        },
+        "311": {
+          "attempt": 8,
+          "trainer_record": 7
+        },
+        "69": {
+          "attempt": 8,
+          "trainer_record": 7
+        },
+        "218": {
+          "attempt": 9,
+          "trainer_record": 8
+        },
+        "316": {
+          "attempt": 9,
+          "trainer_record": 8
+        },
+        "171": {
+          "attempt": 9,
+          "trainer_record": 8
+        },
+        "281": {
+          "attempt": 9,
+          "trainer_record": 8
+        },
+        "115": {
+          "attempt": 9,
+          "trainer_record": 8
+        },
+        "91": {
+          "attempt": 10,
+          "trainer_record": 9
+        },
+        "339": {
+          "attempt": 10,
+          "trainer_record": 9
+        },
+        "254": {
+          "attempt": 10,
+          "trainer_record": 9
+        },
+        "7": {
+          "attempt": 10,
+          "trainer_record": 9
+        },
+        "27": {
+          "attempt": 10,
+          "trainer_record": 9
+        },
+        "139": {
+          "attempt": 11,
+          "trainer_record": 10
+        },
+        "257": {
+          "attempt": 11,
+          "trainer_record": 10
+        },
+        "389": {
+          "attempt": 11,
+          "trainer_record": 10
+        },
+        "362": {
+          "attempt": 11,
+          "trainer_record": 10
+        },
+        "61": {
+          "attempt": 11,
+          "trainer_record": 10
+        },
+        "186": {
+          "attempt": 11,
+          "trainer_record": 10
+        },
+        "424": {
+          "attempt": 12,
+          "trainer_record": 11
+        },
+        "275": {
+          "attempt": 12,
+          "trainer_record": 11
+        },
+        "467": {
+          "attempt": 12,
+          "trainer_record": 11
+        },
+        "373": {
+          "attempt": 12,
+          "trainer_record": 11
+        },
+        "256": {
+          "attempt": 13,
+          "trainer_record": 12
+        },
+        "478": {
+          "attempt": 13,
+          "trainer_record": 12
+        },
+        "23": {
+          "attempt": 13,
+          "trainer_record": 12
+        },
+        "92": {
+          "attempt": 13,
+          "trainer_record": 12
+        },
+        "241": {
+          "attempt": 13,
+          "trainer_record": 12
+        },
+        "62": {
+          "attempt": 14,
+          "trainer_record": 13
+        },
+        "475": {
+          "attempt": 14,
+          "trainer_record": 13
+        },
+        "68": {
+          "attempt": 14,
+          "trainer_record": 13
+        },
+        "297": {
+          "attempt": 14,
+          "trainer_record": 13
+        },
+        "448": {
+          "attempt": 14,
+          "trainer_record": 13
+        },
+        "66": {
+          "attempt": 14,
+          "trainer_record": 13
+        },
+        "425": {
+          "attempt": 15,
+          "trainer_record": 14
+        },
+        "426": {
+          "attempt": 15,
+          "trainer_record": 14
+        },
+        "477": {
+          "attempt": 15,
+          "trainer_record": 14
+        },
+        "93": {
+          "attempt": 15,
+          "trainer_record": 14
+        },
+        "429": {
+          "attempt": 15,
+          "trainer_record": 14
+        },
+        "94": {
+          "attempt": 15,
+          "trainer_record": 14
+        },
+        "157": {
+          "attempt": 16,
+          "trainer_record": 15
+        },
+        "114": {
+          "attempt": 16,
+          "trainer_record": 15
+        },
+        "8": {
+          "attempt": 16,
+          "trainer_record": 15
+        },
+        "380": {
+          "attempt": 16,
+          "trainer_record": 15
+        },
+        "458": {
+          "attempt": 16,
+          "trainer_record": 15
+        },
+        "469": {
+          "attempt": 17,
+          "trainer_record": 16
+        },
+        "84": {
+          "attempt": 17,
+          "trainer_record": 16
+        },
+        "447": {
+          "attempt": 17,
+          "trainer_record": 16
+        },
+        "344": {
+          "attempt": 17,
+          "trainer_record": 16
+        },
+        "367": {
+          "attempt": 17,
+          "trainer_record": 16
+        },
+        "229": {
+          "attempt": 17,
+          "trainer_record": 16
+        },
+        "25": {
+          "attempt": 18,
+          "trainer_record": 17
+        },
+        "487": {
+          "attempt": 18,
+          "trainer_record": 17
+        },
+        "452": {
+          "attempt": 18,
+          "trainer_record": 17
+        },
+        "86": {
+          "attempt": 18,
+          "trainer_record": 17
+        },
+        "225": {
+          "attempt": 18,
+          "trainer_record": 17
+        },
+        "445": {
+          "attempt": 19,
+          "trainer_record": 18
+        },
+        "160": {
+          "attempt": 19,
+          "trainer_record": 18
+        },
+        "236": {
+          "attempt": 19,
+          "trainer_record": 18
+        },
+        "356": {
+          "attempt": 20,
+          "trainer_record": 19
+        },
+        "3": {
+          "attempt": 20,
+          "trainer_record": 19
+        },
+        "16": {
+          "attempt": 20,
+          "trainer_record": 19
+        },
+        "97": {
+          "attempt": 20,
+          "trainer_record": 19
+        },
+        "273": {
+          "attempt": 21,
+          "trainer_record": 20
+        },
+        "110": {
+          "attempt": 21,
+          "trainer_record": 20
+        },
+        "71": {
+          "attempt": 21,
+          "trainer_record": 20
+        },
+        "11": {
+          "attempt": 22,
+          "trainer_record": 21
+        },
+        "73": {
+          "attempt": 22,
+          "trainer_record": 21
+        },
+        "430": {
+          "attempt": 22,
+          "trainer_record": 21
+        },
+        "365": {
+          "attempt": 23,
+          "trainer_record": 22
+        },
+        "199": {
+          "attempt": 23,
+          "trainer_record": 22
+        },
+        "260": {
+          "attempt": 23,
+          "trainer_record": 22
+        },
+        "278": {
+          "attempt": 23,
+          "trainer_record": 22
+        },
+        "318": {
+          "attempt": 23,
+          "trainer_record": 22
+        },
+        "235": {
+          "attempt": 24,
+          "trainer_record": 23
+        },
+        "446": {
+          "attempt": 24,
+          "trainer_record": 23
+        },
+        "173": {
+          "attempt": 24,
+          "trainer_record": 23
+        },
+        "128": {
+          "attempt": 24,
+          "trainer_record": 23
+        },
+        "36": {
+          "attempt": 25,
+          "trainer_record": 0
+        },
+        "272": {
+          "attempt": 25,
+          "trainer_record": 0
+        },
+        "428": {
+          "attempt": 25,
+          "trainer_record": 0
+        },
+        "369": {
+          "attempt": 26,
+          "trainer_record": 1
+        },
+        "405": {
+          "attempt": 27,
+          "trainer_record": 2
+        },
+        "101": {
+          "attempt": 27,
+          "trainer_record": 2
+        },
+        "482": {
+          "attempt": 27,
+          "trainer_record": 2
+        },
+        "197": {
+          "attempt": 28,
+          "trainer_record": 3
+        },
+        "314": {
+          "attempt": 28,
+          "trainer_record": 3
+        },
+        "65": {
+          "attempt": 28,
+          "trainer_record": 3
+        },
+        "182": {
+          "attempt": 29,
+          "trainer_record": 4
+        },
+        "88": {
+          "attempt": 29,
+          "trainer_record": 4
+        },
+        "179": {
+          "attempt": 29,
+          "trainer_record": 4
+        },
+        "6": {
+          "attempt": 29,
+          "trainer_record": 4
+        },
+        "320": {
+          "attempt": 30,
+          "trainer_record": 5
+        },
+        "368": {
+          "attempt": 30,
+          "trainer_record": 5
+        },
+        "207": {
+          "attempt": 30,
+          "trainer_record": 5
+        },
+        "112": {
+          "attempt": 31,
+          "trainer_record": 6
+        },
+        "451": {
+          "attempt": 31,
+          "trainer_record": 6
+        },
+        "142": {
+          "attempt": 31,
+          "trainer_record": 6
+        },
+        "194": {
+          "attempt": 31,
+          "trainer_record": 6
+        },
+        "323": {
+          "attempt": 31,
+          "trainer_record": 6
+        },
+        "396": {
+          "attempt": 32,
+          "trainer_record": 7
+        },
+        "232": {
+          "attempt": 32,
+          "trainer_record": 7
+        },
+        "437": {
+          "attempt": 32,
+          "trainer_record": 7
+        },
+        "317": {
+          "attempt": 32,
+          "trainer_record": 7
+        },
+        "38": {
+          "attempt": 33,
+          "trainer_record": 8
+        },
+        "156": {
+          "attempt": 33,
+          "trainer_record": 8
+        },
+        "18": {
+          "attempt": 34,
+          "trainer_record": 9
+        },
+        "473": {
+          "attempt": 34,
+          "trainer_record": 9
+        },
+        "184": {
+          "attempt": 34,
+          "trainer_record": 9
+        },
+        "387": {
+          "attempt": 35,
+          "trainer_record": 10
+        },
+        "119": {
+          "attempt": 35,
+          "trainer_record": 10
+        },
+        "120": {
+          "attempt": 35,
+          "trainer_record": 10
+        },
+        "468": {
+          "attempt": 36,
+          "trainer_record": 11
+        },
+        "219": {
+          "attempt": 36,
+          "trainer_record": 11
+        },
+        "338": {
+          "attempt": 36,
+          "trainer_record": 11
+        },
+        "269": {
+          "attempt": 37,
+          "trainer_record": 12
+        },
+        "214": {
+          "attempt": 38,
+          "trainer_record": 13
+        },
+        "454": {
+          "attempt": 38,
+          "trainer_record": 13
+        },
+        "354": {
+          "attempt": 39,
+          "trainer_record": 14
+        },
+        "302": {
+          "attempt": 39,
+          "trainer_record": 14
+        },
+        "353": {
+          "attempt": 39,
+          "trainer_record": 14
+        },
+        "464": {
+          "attempt": 40,
+          "trainer_record": 15
+        },
+        "174": {
+          "attempt": 40,
+          "trainer_record": 15
+        },
+        "409": {
+          "attempt": 40,
+          "trainer_record": 15
+        },
+        "411": {
+          "attempt": 41,
+          "trainer_record": 16
+        },
+        "366": {
+          "attempt": 42,
+          "trainer_record": 17
+        },
+        "264": {
+          "attempt": 42,
+          "trainer_record": 17
+        },
+        "306": {
+          "attempt": 43,
+          "trainer_record": 18
+        },
+        "334": {
+          "attempt": 43,
+          "trainer_record": 18
+        },
+        "103": {
+          "attempt": 44,
+          "trainer_record": 19
+        },
+        "208": {
+          "attempt": 44,
+          "trainer_record": 19
+        },
+        "335": {
+          "attempt": 44,
+          "trainer_record": 19
+        },
+        "289": {
+          "attempt": 44,
+          "trainer_record": 19
+        },
+        "249": {
+          "attempt": 44,
+          "trainer_record": 19
+        },
+        "78": {
+          "attempt": 45,
+          "trainer_record": 20
+        },
+        "395": {
+          "attempt": 45,
+          "trainer_record": 20
+        },
+        "346": {
+          "attempt": 45,
+          "trainer_record": 20
+        },
+        "435": {
+          "attempt": 46,
+          "trainer_record": 21
+        },
+        "449": {
+          "attempt": 46,
+          "trainer_record": 21
+        },
+        "423": {
+          "attempt": 47,
+          "trainer_record": 22
+        },
+        "211": {
+          "attempt": 47,
+          "trainer_record": 22
+        },
+        "210": {
+          "attempt": 48,
+          "trainer_record": 23
+        },
+        "35": {
+          "attempt": 48,
+          "trainer_record": 23
+        },
+        "164": {
+          "attempt": 48,
+          "trainer_record": 23
+        },
+        "80": {
+          "attempt": 49,
+          "trainer_record": 0
+        },
+        "450": {
+          "attempt": 49,
+          "trainer_record": 0
+        },
+        "299": {
+          "attempt": 49,
+          "trainer_record": 0
+        },
+        "352": {
+          "attempt": 50,
+          "trainer_record": 1
+        },
+        "20": {
+          "attempt": 50,
+          "trainer_record": 1
+        },
+        "324": {
+          "attempt": 50,
+          "trainer_record": 1
+        },
+        "122": {
+          "attempt": 50,
+          "trainer_record": 1
+        },
+        "181": {
+          "attempt": 51,
+          "trainer_record": 2
+        },
+        "355": {
+          "attempt": 51,
+          "trainer_record": 2
+        },
+        "485": {
+          "attempt": 51,
+          "trainer_record": 2
+        },
+        "322": {
+          "attempt": 51,
+          "trainer_record": 2
+        },
+        "262": {
+          "attempt": 52,
+          "trainer_record": 3
+        },
+        "134": {
+          "attempt": 52,
+          "trainer_record": 3
+        },
+        "422": {
+          "attempt": 52,
+          "trainer_record": 3
+        },
+        "315": {
+          "attempt": 53,
+          "trainer_record": 4
+        },
+        "59": {
+          "attempt": 53,
+          "trainer_record": 4
+        },
+        "226": {
+          "attempt": 54,
+          "trainer_record": 5
+        },
+        "285": {
+          "attempt": 54,
+          "trainer_record": 5
+        },
+        "39": {
+          "attempt": 56,
+          "trainer_record": 7
+        },
+        "294": {
+          "attempt": 56,
+          "trainer_record": 7
+        },
+        "136": {
+          "attempt": 56,
+          "trainer_record": 7
+        },
+        "107": {
+          "attempt": 56,
+          "trainer_record": 7
+        },
+        "390": {
+          "attempt": 57,
+          "trainer_record": 8
+        },
+        "490": {
+          "attempt": 58,
+          "trainer_record": 9
+        },
+        "150": {
+          "attempt": 58,
+          "trainer_record": 9
+        },
+        "79": {
+          "attempt": 59,
+          "trainer_record": 10
+        },
+        "431": {
+          "attempt": 59,
+          "trainer_record": 10
+        },
+        "75": {
+          "attempt": 60,
+          "trainer_record": 11
+        },
+        "127": {
+          "attempt": 60,
+          "trainer_record": 11
+        },
+        "381": {
+          "attempt": 61,
+          "trainer_record": 12
+        },
+        "133": {
+          "attempt": 61,
+          "trainer_record": 12
+        },
+        "331": {
+          "attempt": 61,
+          "trainer_record": 12
+        },
+        "453": {
+          "attempt": 62,
+          "trainer_record": 13
+        },
+        "200": {
+          "attempt": 63,
+          "trainer_record": 14
+        },
+        "224": {
+          "attempt": 64,
+          "trainer_record": 15
+        },
+        "193": {
+          "attempt": 64,
+          "trainer_record": 15
+        },
+        "486": {
+          "attempt": 65,
+          "trainer_record": 16
+        },
+        "167": {
+          "attempt": 65,
+          "trainer_record": 16
+        },
+        "370": {
+          "attempt": 65,
+          "trainer_record": 16
+        },
+        "290": {
+          "attempt": 65,
+          "trainer_record": 16
+        },
+        "221": {
+          "attempt": 67,
+          "trainer_record": 18
+        },
+        "258": {
+          "attempt": 67,
+          "trainer_record": 18
+        },
+        "332": {
+          "attempt": 67,
+          "trainer_record": 18
+        },
+        "348": {
+          "attempt": 67,
+          "trainer_record": 18
+        },
+        "252": {
+          "attempt": 68,
+          "trainer_record": 19
+        },
+        "45": {
+          "attempt": 68,
+          "trainer_record": 19
+        },
+        "455": {
+          "attempt": 68,
+          "trainer_record": 19
+        },
+        "53": {
+          "attempt": 68,
+          "trainer_record": 19
+        },
+        "81": {
+          "attempt": 69,
+          "trainer_record": 20
+        },
+        "440": {
+          "attempt": 69,
+          "trainer_record": 20
+        },
+        "343": {
+          "attempt": 69,
+          "trainer_record": 20
+        },
+        "419": {
+          "attempt": 70,
+          "trainer_record": 21
+        },
+        "125": {
+          "attempt": 70,
+          "trainer_record": 21
+        },
+        "268": {
+          "attempt": 70,
+          "trainer_record": 21
+        },
+        "259": {
+          "attempt": 71,
+          "trainer_record": 22
+        },
+        "99": {
+          "attempt": 71,
+          "trainer_record": 22
+        },
+        "283": {
+          "attempt": 71,
+          "trainer_record": 22
+        },
+        "132": {
+          "attempt": 72,
+          "trainer_record": 23
+        },
+        "398": {
+          "attempt": 72,
+          "trainer_record": 23
+        },
+        "166": {
+          "attempt": 74,
+          "trainer_record": 1
+        },
+        "26": {
+          "attempt": 75,
+          "trainer_record": 2
+        },
+        "280": {
+          "attempt": 75,
+          "trainer_record": 2
+        },
+        "9": {
+          "attempt": 76,
+          "trainer_record": 3
+        },
+        "328": {
+          "attempt": 76,
+          "trainer_record": 3
+        },
+        "33": {
+          "attempt": 77,
+          "trainer_record": 4
+        },
+        "60": {
+          "attempt": 78,
+          "trainer_record": 5
+        },
+        "141": {
+          "attempt": 78,
+          "trainer_record": 5
+        },
+        "246": {
+          "attempt": 79,
+          "trainer_record": 6
+        },
+        "371": {
+          "attempt": 79,
+          "trainer_record": 6
+        },
+        "4": {
+          "attempt": 80,
+          "trainer_record": 7
+        },
+        "481": {
+          "attempt": 80,
+          "trainer_record": 7
+        },
+        "82": {
+          "attempt": 81,
+          "trainer_record": 8
+        },
+        "56": {
+          "attempt": 83,
+          "trainer_record": 10
+        },
+        "309": {
+          "attempt": 83,
+          "trainer_record": 10
+        },
+        "459": {
+          "attempt": 84,
+          "trainer_record": 11
+        },
+        "192": {
+          "attempt": 84,
+          "trainer_record": 11
+        },
+        "471": {
+          "attempt": 84,
+          "trainer_record": 11
+        },
+        "460": {
+          "attempt": 85,
+          "trainer_record": 12
+        },
+        "489": {
+          "attempt": 85,
+          "trainer_record": 12
+        },
+        "461": {
+          "attempt": 85,
+          "trainer_record": 12
+        },
+        "391": {
+          "attempt": 86,
+          "trainer_record": 13
+        },
+        "349": {
+          "attempt": 88,
+          "trainer_record": 15
+        },
+        "276": {
+          "attempt": 88,
+          "trainer_record": 15
+        },
+        "420": {
+          "attempt": 88,
+          "trainer_record": 15
+        },
+        "204": {
+          "attempt": 89,
+          "trainer_record": 16
+        },
+        "277": {
+          "attempt": 89,
+          "trainer_record": 16
+        },
+        "83": {
+          "attempt": 89,
+          "trainer_record": 16
+        },
+        "261": {
+          "attempt": 90,
+          "trainer_record": 17
+        },
+        "178": {
+          "attempt": 90,
+          "trainer_record": 17
+        },
+        "325": {
+          "attempt": 91,
+          "trainer_record": 18
+        },
+        "479": {
+          "attempt": 91,
+          "trainer_record": 18
+        },
+        "213": {
+          "attempt": 93,
+          "trainer_record": 20
+        },
+        "263": {
+          "attempt": 94,
+          "trainer_record": 21
+        },
+        "158": {
+          "attempt": 95,
+          "trainer_record": 22
+        },
+        "222": {
+          "attempt": 95,
+          "trainer_record": 22
+        },
+        "162": {
+          "attempt": 96,
+          "trainer_record": 23
+        },
+        "216": {
+          "attempt": 96,
+          "trainer_record": 23
+        },
+        "116": {
+          "attempt": 97,
+          "trainer_record": 0
+        },
+        "154": {
+          "attempt": 97,
+          "trainer_record": 0
+        },
+        "34": {
+          "attempt": 97,
+          "trainer_record": 0
+        },
+        "51": {
+          "attempt": 98,
+          "trainer_record": 1
+        },
+        "301": {
+          "attempt": 98,
+          "trainer_record": 1
+        },
+        "312": {
+          "attempt": 99,
+          "trainer_record": 2
+        },
+        "248": {
+          "attempt": 102,
+          "trainer_record": 5
+        },
+        "402": {
+          "attempt": 103,
+          "trainer_record": 6
+        },
+        "300": {
+          "attempt": 104,
+          "trainer_record": 7
+        },
+        "342": {
+          "attempt": 104,
+          "trainer_record": 7
+        },
+        "202": {
+          "attempt": 104,
+          "trainer_record": 7
+        },
+        "401": {
+          "attempt": 105,
+          "trainer_record": 8
+        },
+        "100": {
+          "attempt": 106,
+          "trainer_record": 9
+        },
+        "421": {
+          "attempt": 107,
+          "trainer_record": 10
+        },
+        "436": {
+          "attempt": 107,
+          "trainer_record": 10
+        },
+        "77": {
+          "attempt": 108,
+          "trainer_record": 11
+        },
+        "95": {
+          "attempt": 109,
+          "trainer_record": 12
+        },
+        "385": {
+          "attempt": 109,
+          "trainer_record": 12
+        },
+        "57": {
+          "attempt": 110,
+          "trainer_record": 13
+        },
+        "378": {
+          "attempt": 112,
+          "trainer_record": 15
+        },
+        "407": {
+          "attempt": 113,
+          "trainer_record": 16
+        },
+        "117": {
+          "attempt": 113,
+          "trainer_record": 16
+        },
+        "146": {
+          "attempt": 114,
+          "trainer_record": 17
+        },
+        "399": {
+          "attempt": 114,
+          "trainer_record": 17
+        },
+        "169": {
+          "attempt": 118,
+          "trainer_record": 21
+        },
+        "250": {
+          "attempt": 118,
+          "trainer_record": 21
+        },
+        "279": {
+          "attempt": 119,
+          "trainer_record": 22
+        },
+        "321": {
+          "attempt": 119,
+          "trainer_record": 22
+        },
+        "129": {
+          "attempt": 119,
+          "trainer_record": 22
+        },
+        "432": {
+          "attempt": 121,
+          "trainer_record": 0
+        },
+        "111": {
+          "attempt": 121,
+          "trainer_record": 0
+        },
+        "476": {
+          "attempt": 122,
+          "trainer_record": 1
+        },
+        "480": {
+          "attempt": 122,
+          "trainer_record": 1
+        },
+        "87": {
+          "attempt": 122,
+          "trainer_record": 1
+        },
+        "55": {
+          "attempt": 124,
+          "trainer_record": 3
+        },
+        "137": {
+          "attempt": 124,
+          "trainer_record": 3
+        },
+        "287": {
+          "attempt": 125,
+          "trainer_record": 4
+        },
+        "140": {
+          "attempt": 125,
+          "trainer_record": 4
+        },
+        "255": {
+          "attempt": 126,
+          "trainer_record": 5
+        },
+        "298": {
+          "attempt": 126,
+          "trainer_record": 5
+        },
+        "12": {
+          "attempt": 129,
+          "trainer_record": 8
+        },
+        "153": {
+          "attempt": 129,
+          "trainer_record": 8
+        },
+        "196": {
+          "attempt": 131,
+          "trainer_record": 10
+        },
+        "58": {
+          "attempt": 131,
+          "trainer_record": 10
+        },
+        "22": {
+          "attempt": 131,
+          "trainer_record": 10
+        },
+        "384": {
+          "attempt": 131,
+          "trainer_record": 10
+        },
+        "44": {
+          "attempt": 132,
+          "trainer_record": 11
+        },
+        "293": {
+          "attempt": 132,
+          "trainer_record": 11
+        },
+        "106": {
+          "attempt": 133,
+          "trainer_record": 12
+        },
+        "484": {
+          "attempt": 133,
+          "trainer_record": 12
+        },
+        "90": {
+          "attempt": 136,
+          "trainer_record": 15
+        },
+        "267": {
+          "attempt": 136,
+          "trainer_record": 15
+        },
+        "412": {
+          "attempt": 136,
+          "trainer_record": 15
+        },
+        "64": {
+          "attempt": 137,
+          "trainer_record": 16
+        },
+        "149": {
+          "attempt": 137,
+          "trainer_record": 16
+        },
+        "282": {
+          "attempt": 137,
+          "trainer_record": 16
+        },
+        "123": {
+          "attempt": 138,
+          "trainer_record": 17
+        },
+        "96": {
+          "attempt": 140,
+          "trainer_record": 19
+        },
+        "327": {
+          "attempt": 144,
+          "trainer_record": 23
+        },
+        "397": {
+          "attempt": 144,
+          "trainer_record": 23
+        },
+        "427": {
+          "attempt": 144,
+          "trainer_record": 23
+        },
+        "113": {
+          "attempt": 146,
+          "trainer_record": 1
+        },
+        "270": {
+          "attempt": 147,
+          "trainer_record": 2
+        },
+        "441": {
+          "attempt": 148,
+          "trainer_record": 3
+        },
+        "47": {
+          "attempt": 149,
+          "trainer_record": 4
+        },
+        "89": {
+          "attempt": 150,
+          "trainer_record": 5
+        },
+        "363": {
+          "attempt": 152,
+          "trainer_record": 7
+        },
+        "175": {
+          "attempt": 153,
+          "trainer_record": 8
+        },
+        "5": {
+          "attempt": 156,
+          "trainer_record": 11
+        },
+        "286": {
+          "attempt": 157,
+          "trainer_record": 12
+        },
+        "456": {
+          "attempt": 161,
+          "trainer_record": 16
+        },
+        "148": {
+          "attempt": 161,
+          "trainer_record": 16
+        },
+        "52": {
+          "attempt": 161,
+          "trainer_record": 16
+        },
+        "319": {
+          "attempt": 162,
+          "trainer_record": 17
+        },
+        "417": {
+          "attempt": 163,
+          "trainer_record": 18
+        },
+        "337": {
+          "attempt": 165,
+          "trainer_record": 20
+        },
+        "227": {
+          "attempt": 165,
+          "trainer_record": 20
+        },
+        "130": {
+          "attempt": 165,
+          "trainer_record": 20
+        },
+        "54": {
+          "attempt": 167,
+          "trainer_record": 22
+        },
+        "203": {
+          "attempt": 168,
+          "trainer_record": 23
+        },
+        "406": {
+          "attempt": 173,
+          "trainer_record": 4
+        },
+        "271": {
+          "attempt": 177,
+          "trainer_record": 8
+        },
+        "98": {
+          "attempt": 178,
+          "trainer_record": 9
+        },
+        "40": {
+          "attempt": 178,
+          "trainer_record": 9
+        },
+        "152": {
+          "attempt": 184,
+          "trainer_record": 15
+        },
+        "237": {
+          "attempt": 184,
+          "trainer_record": 15
+        },
+        "393": {
+          "attempt": 186,
+          "trainer_record": 17
+        },
+        "102": {
+          "attempt": 186,
+          "trainer_record": 17
+        },
+        "189": {
+          "attempt": 187,
+          "trainer_record": 18
+        },
+        "379": {
+          "attempt": 190,
+          "trainer_record": 21
+        },
+        "444": {
+          "attempt": 190,
+          "trainer_record": 21
+        },
+        "238": {
+          "attempt": 193,
+          "trainer_record": 0
+        },
+        "161": {
+          "attempt": 196,
+          "trainer_record": 3
+        },
+        "240": {
+          "attempt": 197,
+          "trainer_record": 4
+        },
+        "340": {
+          "attempt": 199,
+          "trainer_record": 6
+        },
+        "183": {
+          "attempt": 200,
+          "trainer_record": 7
+        },
+        "274": {
+          "attempt": 201,
+          "trainer_record": 8
+        },
+        "159": {
+          "attempt": 202,
+          "trainer_record": 9
+        },
+        "382": {
+          "attempt": 204,
+          "trainer_record": 11
+        },
+        "138": {
+          "attempt": 205,
+          "trainer_record": 12
+        },
+        "493": {
+          "attempt": 205,
+          "trainer_record": 12
+        },
+        "50": {
+          "attempt": 208,
+          "trainer_record": 15
+        },
+        "180": {
+          "attempt": 208,
+          "trainer_record": 15
+        },
+        "195": {
+          "attempt": 209,
+          "trainer_record": 16
+        },
+        "394": {
+          "attempt": 211,
+          "trainer_record": 18
+        },
+        "168": {
+          "attempt": 212,
+          "trainer_record": 19
+        },
+        "433": {
+          "attempt": 213,
+          "trainer_record": 20
+        },
+        "176": {
+          "attempt": 216,
+          "trainer_record": 23
+        },
+        "190": {
+          "attempt": 216,
+          "trainer_record": 23
+        },
+        "239": {
+          "attempt": 219,
+          "trainer_record": 2
+        },
+        "326": {
+          "attempt": 219,
+          "trainer_record": 2
+        },
+        "1": {
+          "attempt": 220,
+          "trainer_record": 3
+        },
+        "400": {
+          "attempt": 220,
+          "trainer_record": 3
+        },
+        "188": {
+          "attempt": 221,
+          "trainer_record": 4
+        },
+        "13": {
+          "attempt": 222,
+          "trainer_record": 5
+        },
+        "32": {
+          "attempt": 223,
+          "trainer_record": 6
+        },
+        "19": {
+          "attempt": 224,
+          "trainer_record": 7
+        },
+        "220": {
+          "attempt": 225,
+          "trainer_record": 8
+        },
+        "457": {
+          "attempt": 229,
+          "trainer_record": 12
+        },
+        "308": {
+          "attempt": 230,
+          "trainer_record": 13
+        },
+        "144": {
+          "attempt": 232,
+          "trainer_record": 15
+        },
+        "151": {
+          "attempt": 234,
+          "trainer_record": 17
+        },
+        "439": {
+          "attempt": 234,
+          "trainer_record": 17
+        },
+        "284": {
+          "attempt": 237,
+          "trainer_record": 20
+        },
+        "375": {
+          "attempt": 237,
+          "trainer_record": 20
+        },
+        "46": {
+          "attempt": 238,
+          "trainer_record": 21
+        },
+        "491": {
+          "attempt": 241,
+          "trainer_record": 0
+        },
+        "377": {
+          "attempt": 243,
+          "trainer_record": 2
+        },
+        "2": {
+          "attempt": 244,
+          "trainer_record": 3
+        },
+        "67": {
+          "attempt": 247,
+          "trainer_record": 6
+        },
+        "403": {
+          "attempt": 248,
+          "trainer_record": 7
+        },
+        "48": {
+          "attempt": 249,
+          "trainer_record": 8
+        },
+        "305": {
+          "attempt": 250,
+          "trainer_record": 9
+        },
+        "404": {
+          "attempt": 252,
+          "trainer_record": 11
+        },
+        "177": {
+          "attempt": 253,
+          "trainer_record": 12
+        },
+        "304": {
+          "attempt": 256,
+          "trainer_record": 15
+        },
+        "253": {
+          "attempt": 256,
+          "trainer_record": 15
+        },
+        "145": {
+          "attempt": 259,
+          "trainer_record": 18
+        },
+        "372": {
+          "attempt": 259,
+          "trainer_record": 18
+        },
+        "63": {
+          "attempt": 260,
+          "trainer_record": 19
+        },
+        "30": {
+          "attempt": 261,
+          "trainer_record": 20
+        },
+        "41": {
+          "attempt": 265,
+          "trainer_record": 0
+        },
+        "70": {
+          "attempt": 269,
+          "trainer_record": 4
+        },
+        "358": {
+          "attempt": 269,
+          "trainer_record": 4
+        },
+        "14": {
+          "attempt": 270,
+          "trainer_record": 5
+        },
+        "359": {
+          "attempt": 271,
+          "trainer_record": 6
+        },
+        "244": {
+          "attempt": 275,
+          "trainer_record": 10
+        },
+        "49": {
+          "attempt": 280,
+          "trainer_record": 15
+        },
+        "251": {
+          "attempt": 284,
+          "trainer_record": 19
+        },
+        "108": {
+          "attempt": 293,
+          "trainer_record": 4
+        },
+        "223": {
+          "attempt": 294,
+          "trainer_record": 5
+        },
+        "434": {
+          "attempt": 300,
+          "trainer_record": 11
+        },
+        "147": {
+          "attempt": 307,
+          "trainer_record": 18
+        },
+        "347": {
+          "attempt": 308,
+          "trainer_record": 19
+        },
+        "198": {
+          "attempt": 309,
+          "trainer_record": 20
+        },
+        "413": {
+          "attempt": 314,
+          "trainer_record": 1
+        },
+        "364": {
+          "attempt": 316,
+          "trainer_record": 3
+        },
+        "488": {
+          "attempt": 316,
+          "trainer_record": 3
+        },
+        "292": {
+          "attempt": 316,
+          "trainer_record": 3
+        },
+        "416": {
+          "attempt": 318,
+          "trainer_record": 5
+        },
+        "172": {
+          "attempt": 320,
+          "trainer_record": 7
+        },
+        "310": {
+          "attempt": 324,
+          "trainer_record": 11
+        },
+        "415": {
+          "attempt": 330,
+          "trainer_record": 17
+        },
+        "243": {
+          "attempt": 333,
+          "trainer_record": 20
+        },
+        "438": {
+          "attempt": 334,
+          "trainer_record": 21
+        },
+        "388": {
+          "attempt": 340,
+          "trainer_record": 3
+        },
+        "205": {
+          "attempt": 345,
+          "trainer_record": 8
+        },
+        "245": {
+          "attempt": 347,
+          "trainer_record": 10
+        },
+        "187": {
+          "attempt": 348,
+          "trainer_record": 11
+        },
+        "386": {
+          "attempt": 352,
+          "trainer_record": 15
+        },
+        "357": {
+          "attempt": 354,
+          "trainer_record": 17
+        },
+        "185": {
+          "attempt": 356,
+          "trainer_record": 19
+        },
+        "42": {
+          "attempt": 356,
+          "trainer_record": 19
+        },
+        "124": {
+          "attempt": 357,
+          "trainer_record": 20
+        },
+        "215": {
+          "attempt": 362,
+          "trainer_record": 1
+        },
+        "109": {
+          "attempt": 372,
+          "trainer_record": 11
+        },
+        "345": {
+          "attempt": 373,
+          "trainer_record": 12
+        },
+        "209": {
+          "attempt": 373,
+          "trainer_record": 12
+        },
+        "296": {
+          "attempt": 374,
+          "trainer_record": 13
+        },
+        "24": {
+          "attempt": 390,
+          "trainer_record": 5
+        },
+        "443": {
+          "attempt": 394,
+          "trainer_record": 9
+        },
+        "72": {
+          "attempt": 401,
+          "trainer_record": 16
+        },
+        "191": {
+          "attempt": 402,
+          "trainer_record": 17
+        },
+        "28": {
+          "attempt": 403,
+          "trainer_record": 18
+        },
+        "21": {
+          "attempt": 408,
+          "trainer_record": 23
+        },
+        "291": {
+          "attempt": 411,
+          "trainer_record": 2
+        },
+        "17": {
+          "attempt": 429,
+          "trainer_record": 20
+        },
+        "483": {
+          "attempt": 435,
+          "trainer_record": 2
+        },
+        "231": {
+          "attempt": 435,
+          "trainer_record": 2
+        },
+        "265": {
+          "attempt": 444,
+          "trainer_record": 11
+        },
+        "165": {
+          "attempt": 448,
+          "trainer_record": 15
+        },
+        "104": {
+          "attempt": 451,
+          "trainer_record": 18
+        },
+        "361": {
+          "attempt": 464,
+          "trainer_record": 7
+        },
+        "418": {
+          "attempt": 474,
+          "trainer_record": 17
+        },
+        "374": {
+          "attempt": 510,
+          "trainer_record": 5
+        },
+        "288": {
+          "attempt": 514,
+          "trainer_record": 9
+        },
+        "206": {
+          "attempt": 520,
+          "trainer_record": 15
+        },
+        "383": {
+          "attempt": 541,
+          "trainer_record": 12
+        },
+        "43": {
+          "attempt": 545,
+          "trainer_record": 16
+        },
+        "15": {
+          "attempt": 572,
+          "trainer_record": 19
+        },
+        "170": {
+          "attempt": 604,
+          "trainer_record": 3
+        },
+        "303": {
+          "attempt": 617,
+          "trainer_record": 16
+        },
+        "313": {
+          "attempt": 636,
+          "trainer_record": 11
+        },
+        "118": {
+          "attempt": 667,
+          "trainer_record": 18
+        },
+        "336": {
+          "attempt": 690,
+          "trainer_record": 17
+        },
+        "228": {
+          "attempt": 728,
+          "trainer_record": 7
+        },
+        "155": {
+          "attempt": 814,
+          "trainer_record": 21
+        },
+        "29": {
+          "attempt": 861,
+          "trainer_record": 20
+        },
+        "410": {
+          "attempt": 862,
+          "trainer_record": 21
+        },
+        "234": {
+          "attempt": 936,
+          "trainer_record": 23
+        },
+        "201": {
+          "attempt": 952,
+          "trainer_record": 15
+        },
+        "247": {
+          "attempt": 967,
+          "trainer_record": 6
+        },
+        "10": {
+          "attempt": 1595,
+          "trainer_record": 10
+        }
+      }
+    },
+    {
+      "colosseum_record": 9,
+      "pokemon_deck": "1df52800",
+      "trainer_deck": "1ddf2a00",
+      "teams_generated": 274,
+      "native_pokemon_built": 1644,
+      "species_reached": 493,
+      "first_native_generation_witness": {
+        "224": {
+          "attempt": 1,
+          "trainer_record": 0
+        },
+        "226": {
+          "attempt": 1,
+          "trainer_record": 0
+        },
+        "438": {
+          "attempt": 1,
+          "trainer_record": 0
+        },
+        "477": {
+          "attempt": 1,
+          "trainer_record": 0
+        },
+        "429": {
+          "attempt": 1,
+          "trainer_record": 0
+        },
+        "131": {
+          "attempt": 1,
+          "trainer_record": 0
+        },
+        "313": {
+          "attempt": 2,
+          "trainer_record": 1
+        },
+        "12": {
+          "attempt": 2,
+          "trainer_record": 1
+        },
+        "9": {
+          "attempt": 2,
+          "trainer_record": 1
+        },
+        "125": {
+          "attempt": 2,
+          "trainer_record": 1
+        },
+        "214": {
+          "attempt": 2,
+          "trainer_record": 1
+        },
+        "350": {
+          "attempt": 2,
+          "trainer_record": 1
+        },
+        "346": {
+          "attempt": 3,
+          "trainer_record": 2
+        },
+        "254": {
+          "attempt": 3,
+          "trainer_record": 2
+        },
+        "100": {
+          "attempt": 3,
+          "trainer_record": 2
+        },
+        "82": {
+          "attempt": 3,
+          "trainer_record": 2
+        },
+        "45": {
+          "attempt": 3,
+          "trainer_record": 2
+        },
+        "462": {
+          "attempt": 3,
+          "trainer_record": 2
+        },
+        "259": {
+          "attempt": 4,
+          "trainer_record": 3
+        },
+        "369": {
+          "attempt": 4,
+          "trainer_record": 3
+        },
+        "278": {
+          "attempt": 4,
+          "trainer_record": 3
+        },
+        "348": {
+          "attempt": 4,
+          "trainer_record": 3
+        },
+        "451": {
+          "attempt": 4,
+          "trainer_record": 3
+        },
+        "382": {
+          "attempt": 4,
+          "trainer_record": 3
+        },
+        "251": {
+          "attempt": 5,
+          "trainer_record": 4
+        },
+        "1": {
+          "attempt": 5,
+          "trainer_record": 4
+        },
+        "407": {
+          "attempt": 5,
+          "trainer_record": 4
+        },
+        "166": {
+          "attempt": 5,
+          "trainer_record": 4
+        },
+        "339": {
+          "attempt": 6,
+          "trainer_record": 5
+        },
+        "98": {
+          "attempt": 6,
+          "trainer_record": 5
+        },
+        "318": {
+          "attempt": 6,
+          "trainer_record": 5
+        },
+        "213": {
+          "attempt": 6,
+          "trainer_record": 5
+        },
+        "185": {
+          "attempt": 6,
+          "trainer_record": 5
+        },
+        "322": {
+          "attempt": 6,
+          "trainer_record": 5
+        },
+        "330": {
+          "attempt": 7,
+          "trainer_record": 6
+        },
+        "472": {
+          "attempt": 7,
+          "trainer_record": 6
+        },
+        "344": {
+          "attempt": 7,
+          "trainer_record": 6
+        },
+        "338": {
+          "attempt": 7,
+          "trainer_record": 6
+        },
+        "74": {
+          "attempt": 7,
+          "trainer_record": 6
+        },
+        "314": {
+          "attempt": 8,
+          "trainer_record": 7
+        },
+        "212": {
+          "attempt": 8,
+          "trainer_record": 7
+        },
+        "459": {
+          "attempt": 8,
+          "trainer_record": 7
+        },
+        "289": {
+          "attempt": 8,
+          "trainer_record": 7
+        },
+        "31": {
+          "attempt": 8,
+          "trainer_record": 7
+        },
+        "450": {
+          "attempt": 8,
+          "trainer_record": 7
+        },
+        "146": {
+          "attempt": 9,
+          "trainer_record": 8
+        },
+        "448": {
+          "attempt": 9,
+          "trainer_record": 8
+        },
+        "229": {
+          "attempt": 9,
+          "trainer_record": 8
+        },
+        "78": {
+          "attempt": 9,
+          "trainer_record": 8
+        },
+        "256": {
+          "attempt": 9,
+          "trainer_record": 8
+        },
+        "126": {
+          "attempt": 9,
+          "trainer_record": 8
+        },
+        "63": {
+          "attempt": 10,
+          "trainer_record": 9
+        },
+        "408": {
+          "attempt": 10,
+          "trainer_record": 9
+        },
+        "149": {
+          "attempt": 10,
+          "trainer_record": 9
+        },
+        "257": {
+          "attempt": 11,
+          "trainer_record": 10
+        },
+        "67": {
+          "attempt": 11,
+          "trainer_record": 10
+        },
+        "169": {
+          "attempt": 11,
+          "trainer_record": 10
+        },
+        "151": {
+          "attempt": 11,
+          "trainer_record": 10
+        },
+        "475": {
+          "attempt": 11,
+          "trainer_record": 10
+        },
+        "79": {
+          "attempt": 11,
+          "trainer_record": 10
+        },
+        "456": {
+          "attempt": 12,
+          "trainer_record": 11
+        },
+        "420": {
+          "attempt": 12,
+          "trainer_record": 11
+        },
+        "235": {
+          "attempt": 12,
+          "trainer_record": 11
+        },
+        "290": {
+          "attempt": 13,
+          "trainer_record": 12
+        },
+        "88": {
+          "attempt": 13,
+          "trainer_record": 12
+        },
+        "469": {
+          "attempt": 13,
+          "trainer_record": 12
+        },
+        "265": {
+          "attempt": 13,
+          "trainer_record": 12
+        },
+        "453": {
+          "attempt": 14,
+          "trainer_record": 13
+        },
+        "454": {
+          "attempt": 14,
+          "trainer_record": 13
+        },
+        "66": {
+          "attempt": 14,
+          "trainer_record": 13
+        },
+        "292": {
+          "attempt": 15,
+          "trainer_record": 14
+        },
+        "94": {
+          "attempt": 15,
+          "trainer_record": 14
+        },
+        "478": {
+          "attempt": 15,
+          "trainer_record": 14
+        },
+        "93": {
+          "attempt": 15,
+          "trainer_record": 14
+        },
+        "442": {
+          "attempt": 15,
+          "trainer_record": 14
+        },
+        "389": {
+          "attempt": 16,
+          "trainer_record": 15
+        },
+        "152": {
+          "attempt": 16,
+          "trainer_record": 15
+        },
+        "80": {
+          "attempt": 16,
+          "trainer_record": 15
+        },
+        "367": {
+          "attempt": 16,
+          "trainer_record": 15
+        },
+        "393": {
+          "attempt": 16,
+          "trainer_record": 15
+        },
+        "470": {
+          "attempt": 16,
+          "trainer_record": 15
+        },
+        "490": {
+          "attempt": 17,
+          "trainer_record": 16
+        },
+        "432": {
+          "attempt": 17,
+          "trainer_record": 16
+        },
+        "473": {
+          "attempt": 17,
+          "trainer_record": 16
+        },
+        "361": {
+          "attempt": 17,
+          "trainer_record": 16
+        },
+        "433": {
+          "attempt": 17,
+          "trainer_record": 16
+        },
+        "482": {
+          "attempt": 18,
+          "trainer_record": 17
+        },
+        "25": {
+          "attempt": 18,
+          "trainer_record": 17
+        },
+        "312": {
+          "attempt": 18,
+          "trainer_record": 17
+        },
+        "8": {
+          "attempt": 18,
+          "trainer_record": 17
+        },
+        "217": {
+          "attempt": 18,
+          "trainer_record": 17
+        },
+        "204": {
+          "attempt": 19,
+          "trainer_record": 18
+        },
+        "421": {
+          "attempt": 19,
+          "trainer_record": 18
+        },
+        "65": {
+          "attempt": 19,
+          "trainer_record": 18
+        },
+        "4": {
+          "attempt": 19,
+          "trainer_record": 18
+        },
+        "230": {
+          "attempt": 19,
+          "trainer_record": 18
+        },
+        "356": {
+          "attempt": 20,
+          "trainer_record": 19
+        },
+        "3": {
+          "attempt": 20,
+          "trainer_record": 19
+        },
+        "233": {
+          "attempt": 20,
+          "trainer_record": 19
+        },
+        "458": {
+          "attempt": 20,
+          "trainer_record": 19
+        },
+        "471": {
+          "attempt": 20,
+          "trainer_record": 19
+        },
+        "160": {
+          "attempt": 21,
+          "trainer_record": 20
+        },
+        "423": {
+          "attempt": 21,
+          "trainer_record": 20
+        },
+        "419": {
+          "attempt": 21,
+          "trainer_record": 20
+        },
+        "57": {
+          "attempt": 22,
+          "trainer_record": 21
+        },
+        "62": {
+          "attempt": 22,
+          "trainer_record": 21
+        },
+        "392": {
+          "attempt": 22,
+          "trainer_record": 21
+        },
+        "56": {
+          "attempt": 22,
+          "trainer_record": 21
+        },
+        "460": {
+          "attempt": 23,
+          "trainer_record": 22
+        },
+        "71": {
+          "attempt": 23,
+          "trainer_record": 22
+        },
+        "2": {
+          "attempt": 23,
+          "trainer_record": 22
+        },
+        "465": {
+          "attempt": 23,
+          "trainer_record": 22
+        },
+        "272": {
+          "attempt": 23,
+          "trainer_record": 22
+        },
+        "269": {
+          "attempt": 24,
+          "trainer_record": 23
+        },
+        "283": {
+          "attempt": 24,
+          "trainer_record": 23
+        },
+        "165": {
+          "attempt": 24,
+          "trainer_record": 23
+        },
+        "10": {
+          "attempt": 24,
+          "trainer_record": 23
+        },
+        "186": {
+          "attempt": 25,
+          "trainer_record": 0
+        },
+        "91": {
+          "attempt": 25,
+          "trainer_record": 0
+        },
+        "325": {
+          "attempt": 25,
+          "trainer_record": 0
+        },
+        "282": {
+          "attempt": 25,
+          "trainer_record": 0
+        },
+        "127": {
+          "attempt": 26,
+          "trainer_record": 1
+        },
+        "336": {
+          "attempt": 26,
+          "trainer_record": 1
+        },
+        "182": {
+          "attempt": 27,
+          "trainer_record": 2
+        },
+        "243": {
+          "attempt": 27,
+          "trainer_record": 2
+        },
+        "81": {
+          "attempt": 27,
+          "trainer_record": 2
+        },
+        "181": {
+          "attempt": 27,
+          "trainer_record": 2
+        },
+        "417": {
+          "attempt": 27,
+          "trainer_record": 2
+        },
+        "121": {
+          "attempt": 28,
+          "trainer_record": 3
+        },
+        "368": {
+          "attempt": 28,
+          "trainer_record": 3
+        },
+        "347": {
+          "attempt": 28,
+          "trainer_record": 3
+        },
+        "55": {
+          "attempt": 28,
+          "trainer_record": 3
+        },
+        "103": {
+          "attempt": 29,
+          "trainer_record": 4
+        },
+        "285": {
+          "attempt": 29,
+          "trainer_record": 4
+        },
+        "260": {
+          "attempt": 30,
+          "trainer_record": 5
+        },
+        "179": {
+          "attempt": 30,
+          "trainer_record": 5
+        },
+        "139": {
+          "attempt": 30,
+          "trainer_record": 5
+        },
+        "68": {
+          "attempt": 30,
+          "trainer_record": 5
+        },
+        "329": {
+          "attempt": 31,
+          "trainer_record": 6
+        },
+        "411": {
+          "attempt": 31,
+          "trainer_record": 6
+        },
+        "328": {
+          "attempt": 31,
+          "trainer_record": 6
+        },
+        "123": {
+          "attempt": 32,
+          "trainer_record": 7
+        },
+        "44": {
+          "attempt": 32,
+          "trainer_record": 7
+        },
+        "435": {
+          "attempt": 32,
+          "trainer_record": 7
+        },
+        "158": {
+          "attempt": 32,
+          "trainer_record": 7
+        },
+        "5": {
+          "attempt": 33,
+          "trainer_record": 8
+        },
+        "485": {
+          "attempt": 33,
+          "trainer_record": 8
+        },
+        "168": {
+          "attempt": 34,
+          "trainer_record": 9
+        },
+        "277": {
+          "attempt": 34,
+          "trainer_record": 9
+        },
+        "332": {
+          "attempt": 34,
+          "trainer_record": 9
+        },
+        "190": {
+          "attempt": 35,
+          "trainer_record": 10
+        },
+        "156": {
+          "attempt": 35,
+          "trainer_record": 10
+        },
+        "337": {
+          "attempt": 36,
+          "trainer_record": 11
+        },
+        "413": {
+          "attempt": 36,
+          "trainer_record": 11
+        },
+        "464": {
+          "attempt": 36,
+          "trainer_record": 11
+        },
+        "247": {
+          "attempt": 37,
+          "trainer_record": 12
+        },
+        "275": {
+          "attempt": 37,
+          "trainer_record": 12
+        },
+        "308": {
+          "attempt": 38,
+          "trainer_record": 13
+        },
+        "426": {
+          "attempt": 39,
+          "trainer_record": 14
+        },
+        "92": {
+          "attempt": 39,
+          "trainer_record": 14
+        },
+        "141": {
+          "attempt": 40,
+          "trainer_record": 15
+        },
+        "489": {
+          "attempt": 40,
+          "trainer_record": 15
+        },
+        "113": {
+          "attempt": 41,
+          "trainer_record": 16
+        },
+        "109": {
+          "attempt": 41,
+          "trainer_record": 16
+        },
+        "196": {
+          "attempt": 41,
+          "trainer_record": 16
+        },
+        "468": {
+          "attempt": 41,
+          "trainer_record": 16
+        },
+        "362": {
+          "attempt": 41,
+          "trainer_record": 16
+        },
+        "340": {
+          "attempt": 42,
+          "trainer_record": 17
+        },
+        "202": {
+          "attempt": 42,
+          "trainer_record": 17
+        },
+        "466": {
+          "attempt": 43,
+          "trainer_record": 18
+        },
+        "6": {
+          "attempt": 43,
+          "trainer_record": 18
+        },
+        "311": {
+          "attempt": 43,
+          "trainer_record": 18
+        },
+        "395": {
+          "attempt": 43,
+          "trainer_record": 18
+        },
+        "447": {
+          "attempt": 43,
+          "trainer_record": 18
+        },
+        "334": {
+          "attempt": 44,
+          "trainer_record": 19
+        },
+        "306": {
+          "attempt": 44,
+          "trainer_record": 19
+        },
+        "15": {
+          "attempt": 44,
+          "trainer_record": 19
+        },
+        "86": {
+          "attempt": 44,
+          "trainer_record": 19
+        },
+        "102": {
+          "attempt": 44,
+          "trainer_record": 19
+        },
+        "211": {
+          "attempt": 45,
+          "trainer_record": 20
+        },
+        "321": {
+          "attempt": 45,
+          "trainer_record": 20
+        },
+        "363": {
+          "attempt": 45,
+          "trainer_record": 20
+        },
+        "106": {
+          "attempt": 46,
+          "trainer_record": 21
+        },
+        "297": {
+          "attempt": 46,
+          "trainer_record": 21
+        },
+        "406": {
+          "attempt": 47,
+          "trainer_record": 22
+        },
+        "49": {
+          "attempt": 48,
+          "trainer_record": 23
+        },
+        "46": {
+          "attempt": 48,
+          "trainer_record": 23
+        },
+        "163": {
+          "attempt": 49,
+          "trainer_record": 0
+        },
+        "11": {
+          "attempt": 50,
+          "trainer_record": 1
+        },
+        "386": {
+          "attempt": 50,
+          "trainer_record": 1
+        },
+        "24": {
+          "attempt": 50,
+          "trainer_record": 1
+        },
+        "405": {
+          "attempt": 51,
+          "trainer_record": 2
+        },
+        "394": {
+          "attempt": 52,
+          "trainer_record": 3
+        },
+        "370": {
+          "attempt": 52,
+          "trainer_record": 3
+        },
+        "13": {
+          "attempt": 53,
+          "trainer_record": 4
+        },
+        "72": {
+          "attempt": 54,
+          "trainer_record": 5
+        },
+        "267": {
+          "attempt": 54,
+          "trainer_record": 5
+        },
+        "162": {
+          "attempt": 54,
+          "trainer_record": 5
+        },
+        "142": {
+          "attempt": 55,
+          "trainer_record": 6
+        },
+        "232": {
+          "attempt": 55,
+          "trainer_record": 6
+        },
+        "327": {
+          "attempt": 56,
+          "trainer_record": 7
+        },
+        "296": {
+          "attempt": 57,
+          "trainer_record": 8
+        },
+        "59": {
+          "attempt": 57,
+          "trainer_record": 8
+        },
+        "77": {
+          "attempt": 58,
+          "trainer_record": 9
+        },
+        "461": {
+          "attempt": 58,
+          "trainer_record": 9
+        },
+        "424": {
+          "attempt": 58,
+          "trainer_record": 9
+        },
+        "242": {
+          "attempt": 59,
+          "trainer_record": 10
+        },
+        "437": {
+          "attempt": 59,
+          "trainer_record": 10
+        },
+        "128": {
+          "attempt": 60,
+          "trainer_record": 11
+        },
+        "428": {
+          "attempt": 60,
+          "trainer_record": 11
+        },
+        "284": {
+          "attempt": 61,
+          "trainer_record": 12
+        },
+        "237": {
+          "attempt": 62,
+          "trainer_record": 13
+        },
+        "355": {
+          "attempt": 63,
+          "trainer_record": 14
+        },
+        "425": {
+          "attempt": 63,
+          "trainer_record": 14
+        },
+        "130": {
+          "attempt": 64,
+          "trainer_record": 15
+        },
+        "115": {
+          "attempt": 65,
+          "trainer_record": 16
+        },
+        "474": {
+          "attempt": 66,
+          "trainer_record": 17
+        },
+        "27": {
+          "attempt": 67,
+          "trainer_record": 18
+        },
+        "399": {
+          "attempt": 68,
+          "trainer_record": 19
+        },
+        "30": {
+          "attempt": 68,
+          "trainer_record": 19
+        },
+        "116": {
+          "attempt": 69,
+          "trainer_record": 20
+        },
+        "188": {
+          "attempt": 71,
+          "trainer_record": 22
+        },
+        "402": {
+          "attempt": 72,
+          "trainer_record": 23
+        },
+        "48": {
+          "attempt": 72,
+          "trainer_record": 23
+        },
+        "14": {
+          "attempt": 72,
+          "trainer_record": 23
+        },
+        "279": {
+          "attempt": 73,
+          "trainer_record": 0
+        },
+        "118": {
+          "attempt": 73,
+          "trainer_record": 0
+        },
+        "274": {
+          "attempt": 73,
+          "trainer_record": 0
+        },
+        "365": {
+          "attempt": 74,
+          "trainer_record": 1
+        },
+        "248": {
+          "attempt": 74,
+          "trainer_record": 1
+        },
+        "70": {
+          "attempt": 75,
+          "trainer_record": 2
+        },
+        "189": {
+          "attempt": 75,
+          "trainer_record": 2
+        },
+        "199": {
+          "attempt": 76,
+          "trainer_record": 3
+        },
+        "114": {
+          "attempt": 77,
+          "trainer_record": 4
+        },
+        "193": {
+          "attempt": 77,
+          "trainer_record": 4
+        },
+        "484": {
+          "attempt": 78,
+          "trainer_record": 5
+        },
+        "240": {
+          "attempt": 78,
+          "trainer_record": 5
+        },
+        "207": {
+          "attempt": 79,
+          "trainer_record": 6
+        },
+        "383": {
+          "attempt": 79,
+          "trainer_record": 6
+        },
+        "112": {
+          "attempt": 79,
+          "trainer_record": 6
+        },
+        "341": {
+          "attempt": 80,
+          "trainer_record": 7
+        },
+        "467": {
+          "attempt": 81,
+          "trainer_record": 8
+        },
+        "391": {
+          "attempt": 81,
+          "trainer_record": 8
+        },
+        "307": {
+          "attempt": 81,
+          "trainer_record": 8
+        },
+        "238": {
+          "attempt": 82,
+          "trainer_record": 9
+        },
+        "174": {
+          "attempt": 82,
+          "trainer_record": 9
+        },
+        "228": {
+          "attempt": 82,
+          "trainer_record": 9
+        },
+        "97": {
+          "attempt": 82,
+          "trainer_record": 9
+        },
+        "38": {
+          "attempt": 83,
+          "trainer_record": 10
+        },
+        "110": {
+          "attempt": 84,
+          "trainer_record": 11
+        },
+        "446": {
+          "attempt": 84,
+          "trainer_record": 11
+        },
+        "430": {
+          "attempt": 85,
+          "trainer_record": 12
+        },
+        "286": {
+          "attempt": 86,
+          "trainer_record": 13
+        },
+        "194": {
+          "attempt": 88,
+          "trainer_record": 15
+        },
+        "492": {
+          "attempt": 88,
+          "trainer_record": 15
+        },
+        "331": {
+          "attempt": 88,
+          "trainer_record": 15
+        },
+        "409": {
+          "attempt": 89,
+          "trainer_record": 16
+        },
+        "234": {
+          "attempt": 90,
+          "trainer_record": 17
+        },
+        "299": {
+          "attempt": 90,
+          "trainer_record": 17
+        },
+        "89": {
+          "attempt": 90,
+          "trainer_record": 17
+        },
+        "463": {
+          "attempt": 90,
+          "trainer_record": 17
+        },
+        "305": {
+          "attempt": 91,
+          "trainer_record": 18
+        },
+        "401": {
+          "attempt": 91,
+          "trainer_record": 18
+        },
+        "119": {
+          "attempt": 93,
+          "trainer_record": 20
+        },
+        "107": {
+          "attempt": 94,
+          "trainer_record": 21
+        },
+        "187": {
+          "attempt": 95,
+          "trainer_record": 22
+        },
+        "73": {
+          "attempt": 97,
+          "trainer_record": 0
+        },
+        "154": {
+          "attempt": 97,
+          "trainer_record": 0
+        },
+        "415": {
+          "attempt": 98,
+          "trainer_record": 1
+        },
+        "320": {
+          "attempt": 98,
+          "trainer_record": 1
+        },
+        "310": {
+          "attempt": 99,
+          "trainer_record": 2
+        },
+        "222": {
+          "attempt": 100,
+          "trainer_record": 3
+        },
+        "195": {
+          "attempt": 100,
+          "trainer_record": 3
+        },
+        "414": {
+          "attempt": 104,
+          "trainer_record": 7
+        },
+        "476": {
+          "attempt": 104,
+          "trainer_record": 7
+        },
+        "120": {
+          "attempt": 104,
+          "trainer_record": 7
+        },
+        "157": {
+          "attempt": 105,
+          "trainer_record": 8
+        },
+        "324": {
+          "attempt": 105,
+          "trainer_record": 8
+        },
+        "197": {
+          "attempt": 106,
+          "trainer_record": 9
+        },
+        "439": {
+          "attempt": 106,
+          "trainer_record": 9
+        },
+        "280": {
+          "attempt": 107,
+          "trainer_record": 10
+        },
+        "239": {
+          "attempt": 108,
+          "trainer_record": 11
+        },
+        "281": {
+          "attempt": 108,
+          "trainer_record": 11
+        },
+        "138": {
+          "attempt": 109,
+          "trainer_record": 12
+        },
+        "244": {
+          "attempt": 113,
+          "trainer_record": 16
+        },
+        "245": {
+          "attempt": 114,
+          "trainer_record": 17
+        },
+        "210": {
+          "attempt": 114,
+          "trainer_record": 17
+        },
+        "76": {
+          "attempt": 115,
+          "trainer_record": 18
+        },
+        "29": {
+          "attempt": 116,
+          "trainer_record": 19
+        },
+        "223": {
+          "attempt": 117,
+          "trainer_record": 20
+        },
+        "236": {
+          "attempt": 118,
+          "trainer_record": 21
+        },
+        "133": {
+          "attempt": 121,
+          "trainer_record": 0
+        },
+        "326": {
+          "attempt": 121,
+          "trainer_record": 0
+        },
+        "268": {
+          "attempt": 122,
+          "trainer_record": 1
+        },
+        "241": {
+          "attempt": 122,
+          "trainer_record": 1
+        },
+        "288": {
+          "attempt": 122,
+          "trainer_record": 1
+        },
+        "135": {
+          "attempt": 123,
+          "trainer_record": 2
+        },
+        "134": {
+          "attempt": 124,
+          "trainer_record": 3
+        },
+        "206": {
+          "attempt": 126,
+          "trainer_record": 5
+        },
+        "384": {
+          "attempt": 126,
+          "trainer_record": 5
+        },
+        "231": {
+          "attempt": 127,
+          "trainer_record": 6
+        },
+        "358": {
+          "attempt": 128,
+          "trainer_record": 7
+        },
+        "58": {
+          "attempt": 129,
+          "trainer_record": 8
+        },
+        "343": {
+          "attempt": 130,
+          "trainer_record": 9
+        },
+        "445": {
+          "attempt": 132,
+          "trainer_record": 11
+        },
+        "488": {
+          "attempt": 132,
+          "trainer_record": 11
+        },
+        "291": {
+          "attempt": 133,
+          "trainer_record": 12
+        },
+        "371": {
+          "attempt": 133,
+          "trainer_record": 12
+        },
+        "487": {
+          "attempt": 135,
+          "trainer_record": 14
+        },
+        "200": {
+          "attempt": 135,
+          "trainer_record": 14
+        },
+        "140": {
+          "attempt": 138,
+          "trainer_record": 17
+        },
+        "225": {
+          "attempt": 138,
+          "trainer_record": 17
+        },
+        "129": {
+          "attempt": 139,
+          "trainer_record": 18
+        },
+        "295": {
+          "attempt": 140,
+          "trainer_record": 19
+        },
+        "75": {
+          "attempt": 140,
+          "trainer_record": 19
+        },
+        "357": {
+          "attempt": 143,
+          "trainer_record": 22
+        },
+        "253": {
+          "attempt": 143,
+          "trainer_record": 22
+        },
+        "422": {
+          "attempt": 145,
+          "trainer_record": 0
+        },
+        "404": {
+          "attempt": 146,
+          "trainer_record": 1
+        },
+        "170": {
+          "attempt": 147,
+          "trainer_record": 2
+        },
+        "319": {
+          "attempt": 148,
+          "trainer_record": 3
+        },
+        "271": {
+          "attempt": 148,
+          "trainer_record": 3
+        },
+        "191": {
+          "attempt": 149,
+          "trainer_record": 4
+        },
+        "377": {
+          "attempt": 151,
+          "trainer_record": 6
+        },
+        "136": {
+          "attempt": 152,
+          "trainer_record": 7
+        },
+        "83": {
+          "attempt": 152,
+          "trainer_record": 7
+        },
+        "35": {
+          "attempt": 154,
+          "trainer_record": 9
+        },
+        "373": {
+          "attempt": 155,
+          "trainer_record": 10
+        },
+        "412": {
+          "attempt": 155,
+          "trainer_record": 10
+        },
+        "352": {
+          "attempt": 156,
+          "trainer_record": 11
+        },
+        "333": {
+          "attempt": 156,
+          "trainer_record": 11
+        },
+        "104": {
+          "attempt": 157,
+          "trainer_record": 12
+        },
+        "122": {
+          "attempt": 157,
+          "trainer_record": 12
+        },
+        "90": {
+          "attempt": 160,
+          "trainer_record": 15
+        },
+        "455": {
+          "attempt": 160,
+          "trainer_record": 15
+        },
+        "400": {
+          "attempt": 160,
+          "trainer_record": 15
+        },
+        "452": {
+          "attempt": 162,
+          "trainer_record": 17
+        },
+        "345": {
+          "attempt": 167,
+          "trainer_record": 22
+        },
+        "261": {
+          "attempt": 169,
+          "trainer_record": 0
+        },
+        "34": {
+          "attempt": 170,
+          "trainer_record": 1
+        },
+        "60": {
+          "attempt": 172,
+          "trainer_record": 3
+        },
+        "486": {
+          "attempt": 174,
+          "trainer_record": 5
+        },
+        "397": {
+          "attempt": 176,
+          "trainer_record": 7
+        },
+        "20": {
+          "attempt": 178,
+          "trainer_record": 9
+        },
+        "304": {
+          "attempt": 178,
+          "trainer_record": 9
+        },
+        "372": {
+          "attempt": 179,
+          "trainer_record": 10
+        },
+        "316": {
+          "attempt": 180,
+          "trainer_record": 11
+        },
+        "18": {
+          "attempt": 180,
+          "trainer_record": 11
+        },
+        "374": {
+          "attempt": 181,
+          "trainer_record": 12
+        },
+        "177": {
+          "attempt": 181,
+          "trainer_record": 12
+        },
+        "387": {
+          "attempt": 184,
+          "trainer_record": 15
+        },
+        "148": {
+          "attempt": 185,
+          "trainer_record": 16
+        },
+        "376": {
+          "attempt": 187,
+          "trainer_record": 18
+        },
+        "22": {
+          "attempt": 187,
+          "trainer_record": 18
+        },
+        "270": {
+          "attempt": 191,
+          "trainer_record": 22
+        },
+        "47": {
+          "attempt": 192,
+          "trainer_record": 23
+        },
+        "249": {
+          "attempt": 193,
+          "trainer_record": 0
+        },
+        "184": {
+          "attempt": 194,
+          "trainer_record": 1
+        },
+        "99": {
+          "attempt": 196,
+          "trainer_record": 3
+        },
+        "388": {
+          "attempt": 197,
+          "trainer_record": 4
+        },
+        "111": {
+          "attempt": 199,
+          "trainer_record": 6
+        },
+        "481": {
+          "attempt": 202,
+          "trainer_record": 9
+        },
+        "132": {
+          "attempt": 203,
+          "trainer_record": 10
+        },
+        "246": {
+          "attempt": 205,
+          "trainer_record": 12
+        },
+        "480": {
+          "attempt": 211,
+          "trainer_record": 18
+        },
+        "180": {
+          "attempt": 211,
+          "trainer_record": 18
+        },
+        "143": {
+          "attempt": 212,
+          "trainer_record": 19
+        },
+        "26": {
+          "attempt": 212,
+          "trainer_record": 19
+        },
+        "364": {
+          "attempt": 213,
+          "trainer_record": 20
+        },
+        "252": {
+          "attempt": 221,
+          "trainer_record": 4
+        },
+        "273": {
+          "attempt": 221,
+          "trainer_record": 4
+        },
+        "258": {
+          "attempt": 222,
+          "trainer_record": 5
+        },
+        "87": {
+          "attempt": 222,
+          "trainer_record": 5
+        },
+        "61": {
+          "attempt": 227,
+          "trainer_record": 10
+        },
+        "145": {
+          "attempt": 229,
+          "trainer_record": 12
+        },
+        "43": {
+          "attempt": 232,
+          "trainer_record": 15
+        },
+        "298": {
+          "attempt": 234,
+          "trainer_record": 17
+        },
+        "378": {
+          "attempt": 235,
+          "trainer_record": 18
+        },
+        "264": {
+          "attempt": 235,
+          "trainer_record": 18
+        },
+        "443": {
+          "attempt": 236,
+          "trainer_record": 19
+        },
+        "171": {
+          "attempt": 237,
+          "trainer_record": 20
+        },
+        "359": {
+          "attempt": 242,
+          "trainer_record": 1
+        },
+        "315": {
+          "attempt": 245,
+          "trainer_record": 4
+        },
+        "150": {
+          "attempt": 246,
+          "trainer_record": 5
+        },
+        "220": {
+          "attempt": 247,
+          "trainer_record": 6
+        },
+        "335": {
+          "attempt": 248,
+          "trainer_record": 7
+        },
+        "390": {
+          "attempt": 250,
+          "trainer_record": 9
+        },
+        "208": {
+          "attempt": 251,
+          "trainer_record": 10
+        },
+        "85": {
+          "attempt": 251,
+          "trainer_record": 10
+        },
+        "294": {
+          "attempt": 253,
+          "trainer_record": 12
+        },
+        "354": {
+          "attempt": 255,
+          "trainer_record": 14
+        },
+        "302": {
+          "attempt": 255,
+          "trainer_record": 14
+        },
+        "42": {
+          "attempt": 257,
+          "trainer_record": 16
+        },
+        "449": {
+          "attempt": 271,
+          "trainer_record": 6
+        },
+        "23": {
+          "attempt": 272,
+          "trainer_record": 7
+        },
+        "427": {
+          "attempt": 275,
+          "trainer_record": 10
+        },
+        "301": {
+          "attempt": 283,
+          "trainer_record": 18
+        },
+        "410": {
+          "attempt": 284,
+          "trainer_record": 19
+        },
+        "457": {
+          "attempt": 285,
+          "trainer_record": 20
+        },
+        "69": {
+          "attempt": 287,
+          "trainer_record": 22
+        },
+        "101": {
+          "attempt": 291,
+          "trainer_record": 2
+        },
+        "201": {
+          "attempt": 298,
+          "trainer_record": 9
+        },
+        "440": {
+          "attempt": 306,
+          "trainer_record": 17
+        },
+        "219": {
+          "attempt": 308,
+          "trainer_record": 19
+        },
+        "266": {
+          "attempt": 308,
+          "trainer_record": 19
+        },
+        "205": {
+          "attempt": 312,
+          "trainer_record": 23
+        },
+        "436": {
+          "attempt": 314,
+          "trainer_record": 1
+        },
+        "192": {
+          "attempt": 315,
+          "trainer_record": 2
+        },
+        "164": {
+          "attempt": 318,
+          "trainer_record": 5
+        },
+        "39": {
+          "attempt": 318,
+          "trainer_record": 5
+        },
+        "441": {
+          "attempt": 322,
+          "trainer_record": 9
+        },
+        "221": {
+          "attempt": 342,
+          "trainer_record": 5
+        },
+        "353": {
+          "attempt": 342,
+          "trainer_record": 5
+        },
+        "351": {
+          "attempt": 347,
+          "trainer_record": 10
+        },
+        "431": {
+          "attempt": 348,
+          "trainer_record": 11
+        },
+        "276": {
+          "attempt": 348,
+          "trainer_record": 11
+        },
+        "418": {
+          "attempt": 349,
+          "trainer_record": 12
+        },
+        "227": {
+          "attempt": 356,
+          "trainer_record": 19
+        },
+        "309": {
+          "attempt": 363,
+          "trainer_record": 2
+        },
+        "7": {
+          "attempt": 368,
+          "trainer_record": 7
+        },
+        "293": {
+          "attempt": 368,
+          "trainer_record": 7
+        },
+        "262": {
+          "attempt": 377,
+          "trainer_record": 16
+        },
+        "16": {
+          "attempt": 377,
+          "trainer_record": 16
+        },
+        "203": {
+          "attempt": 378,
+          "trainer_record": 17
+        },
+        "96": {
+          "attempt": 378,
+          "trainer_record": 17
+        },
+        "54": {
+          "attempt": 381,
+          "trainer_record": 20
+        },
+        "167": {
+          "attempt": 384,
+          "trainer_record": 23
+        },
+        "28": {
+          "attempt": 390,
+          "trainer_record": 5
+        },
+        "53": {
+          "attempt": 394,
+          "trainer_record": 9
+        },
+        "32": {
+          "attempt": 402,
+          "trainer_record": 17
+        },
+        "19": {
+          "attempt": 410,
+          "trainer_record": 1
+        },
+        "209": {
+          "attempt": 410,
+          "trainer_record": 1
+        },
+        "50": {
+          "attempt": 416,
+          "trainer_record": 7
+        },
+        "323": {
+          "attempt": 417,
+          "trainer_record": 8
+        },
+        "444": {
+          "attempt": 418,
+          "trainer_record": 9
+        },
+        "51": {
+          "attempt": 421,
+          "trainer_record": 12
+        },
+        "434": {
+          "attempt": 426,
+          "trainer_record": 17
+        },
+        "483": {
+          "attempt": 427,
+          "trainer_record": 18
+        },
+        "250": {
+          "attempt": 441,
+          "trainer_record": 8
+        },
+        "198": {
+          "attempt": 444,
+          "trainer_record": 11
+        },
+        "52": {
+          "attempt": 450,
+          "trainer_record": 17
+        },
+        "287": {
+          "attempt": 451,
+          "trainer_record": 18
+        },
+        "215": {
+          "attempt": 452,
+          "trainer_record": 19
+        },
+        "105": {
+          "attempt": 466,
+          "trainer_record": 9
+        },
+        "64": {
+          "attempt": 469,
+          "trainer_record": 12
+        },
+        "479": {
+          "attempt": 471,
+          "trainer_record": 14
+        },
+        "380": {
+          "attempt": 473,
+          "trainer_record": 16
+        },
+        "176": {
+          "attempt": 475,
+          "trainer_record": 18
+        },
+        "398": {
+          "attempt": 493,
+          "trainer_record": 12
+        },
+        "161": {
+          "attempt": 500,
+          "trainer_record": 19
+        },
+        "36": {
+          "attempt": 505,
+          "trainer_record": 0
+        },
+        "218": {
+          "attempt": 513,
+          "trainer_record": 8
+        },
+        "147": {
+          "attempt": 514,
+          "trainer_record": 9
+        },
+        "40": {
+          "attempt": 522,
+          "trainer_record": 17
+        },
+        "144": {
+          "attempt": 524,
+          "trainer_record": 19
+        },
+        "349": {
+          "attempt": 538,
+          "trainer_record": 9
+        },
+        "137": {
+          "attempt": 548,
+          "trainer_record": 19
+        },
+        "416": {
+          "attempt": 552,
+          "trainer_record": 23
+        },
+        "172": {
+          "attempt": 565,
+          "trainer_record": 12
+        },
+        "360": {
+          "attempt": 572,
+          "trainer_record": 19
+        },
+        "159": {
+          "attempt": 573,
+          "trainer_record": 20
+        },
+        "173": {
+          "attempt": 589,
+          "trainer_record": 12
+        },
+        "183": {
+          "attempt": 597,
+          "trainer_record": 20
+        },
+        "95": {
+          "attempt": 607,
+          "trainer_record": 6
+        },
+        "379": {
+          "attempt": 613,
+          "trainer_record": 12
+        },
+        "84": {
+          "attempt": 632,
+          "trainer_record": 7
+        },
+        "255": {
+          "attempt": 657,
+          "trainer_record": 8
+        },
+        "263": {
+          "attempt": 678,
+          "trainer_record": 5
+        },
+        "366": {
+          "attempt": 683,
+          "trainer_record": 10
+        },
+        "155": {
+          "attempt": 716,
+          "trainer_record": 19
+        },
+        "381": {
+          "attempt": 726,
+          "trainer_record": 5
+        },
+        "396": {
+          "attempt": 728,
+          "trainer_record": 7
+        },
+        "375": {
+          "attempt": 730,
+          "trainer_record": 9
+        },
+        "117": {
+          "attempt": 748,
+          "trainer_record": 3
+        },
+        "493": {
+          "attempt": 761,
+          "trainer_record": 16
+        },
+        "491": {
+          "attempt": 785,
+          "trainer_record": 16
+        },
+        "317": {
+          "attempt": 811,
+          "trainer_record": 18
+        },
+        "108": {
+          "attempt": 857,
+          "trainer_record": 16
+        },
+        "303": {
+          "attempt": 883,
+          "trainer_record": 18
+        },
+        "153": {
+          "attempt": 891,
+          "trainer_record": 2
+        },
+        "17": {
+          "attempt": 923,
+          "trainer_record": 10
+        },
+        "342": {
+          "attempt": 930,
+          "trainer_record": 17
+        },
+        "178": {
+          "attempt": 955,
+          "trainer_record": 18
+        },
+        "216": {
+          "attempt": 979,
+          "trainer_record": 18
+        },
+        "300": {
+          "attempt": 1003,
+          "trainer_record": 18
+        },
+        "124": {
+          "attempt": 1018,
+          "trainer_record": 9
+        },
+        "385": {
+          "attempt": 1019,
+          "trainer_record": 10
+        },
+        "37": {
+          "attempt": 1097,
+          "trainer_record": 16
+        },
+        "33": {
+          "attempt": 1162,
+          "trainer_record": 9
+        },
+        "403": {
+          "attempt": 1164,
+          "trainer_record": 11
+        },
+        "21": {
+          "attempt": 1297,
+          "trainer_record": 0
+        },
+        "41": {
+          "attempt": 1451,
+          "trainer_record": 10
+        },
+        "175": {
+          "attempt": 1570,
+          "trainer_record": 9
+        }
+      }
+    }
+  ],
+  "dol_sha256": "91d0ceacd6a138948d3519f37b7f1715f143481c7148f1f57e3f84750db50189",
+  "deck_sha256": "0532a445c219722df65d5d16b095a85195e43c86749f35f1d373c9b2ceab04ef",
+  "limits": [
+    "Explicit rank 8 / level 50 / native Level 30 Open / format and RNG seed fixtures",
+    "Trainer index selected from original DCKT records by harness",
+    "No real opponent UI/AI/damage/render, Trade eligibility or save/load"
+  ],
+  "dolphin_tested": false,
+  "trade_save_tested": false
+}

@@ -1,0 +1,67 @@
+{
+  "source_url": "https://pokeapi.co/api/v2/pokemon/snivy/",
+  "source_sha256": "1c8b5243f8236cb3dd7440c0ecdc74e4931a6be6188b01352ef2a35abc631706",
+  "species": 495,
+  "moves": {
+    "energy-ball": {
+      "native_move_id": 412,
+      "generation_5_sources": [
+        {
+          "version": "black-white",
+          "method": "machine",
+          "level": 0
+        },
+        {
+          "version": "black-2-white-2",
+          "method": "machine",
+          "level": 0
+        }
+      ]
+    },
+    "glare": {
+      "native_move_id": 137,
+      "generation_5_sources": [
+        {
+          "version": "black-white",
+          "method": "egg",
+          "level": 0
+        },
+        {
+          "version": "black-2-white-2",
+          "method": "egg",
+          "level": 0
+        }
+      ]
+    },
+    "leech-seed": {
+      "native_move_id": 73,
+      "generation_5_sources": [
+        {
+          "version": "black-white",
+          "method": "level-up",
+          "level": 19
+        },
+        {
+          "version": "black-2-white-2",
+          "method": "level-up",
+          "level": 19
+        }
+      ]
+    },
+    "protect": {
+      "native_move_id": 182,
+      "generation_5_sources": [
+        {
+          "version": "black-white",
+          "method": "machine",
+          "level": 0
+        },
+        {
+          "version": "black-2-white-2",
+          "method": "machine",
+          "level": 0
+        }
+      ]
+    }
+  }
+}
