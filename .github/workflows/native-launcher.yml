@@ -1,5 +1,6 @@
 name: Native launcher foundation
 on:
+  workflow_dispatch:
   push:
     branches: [project/native-launcher]
     paths: [native/**, .github/workflows/native-launcher.yml]

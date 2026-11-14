@@ -27,7 +27,7 @@ com o PCK compilado que será distribuído, não apenas com os scripts soltos.
 Houve renderização OpenGL real em Linux/X11 com Mesa llvmpipe, sem GPU física.
 Esse teste por software serve para verificar a cena; não prova melhora de FPS
 no PC do usuário. Seus resultados ficam identificados como software no relatório.
-O CI de Windows usa um triângulo animado criado por nós para executar o binário
+O CI de Windows executou com sucesso um triângulo animado criado por nós no binário
 real, importador, skin e animações sem publicar o modelo privado do Pokémon.
 Teste headless não comprova renderização gráfica/performance no Windows.
 
