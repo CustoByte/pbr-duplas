@@ -57,19 +57,23 @@ def review(originals, baseline, metrics, output):
                 continue
             report['checked'] += 1
             source,before = readable(original),readable(translated)
-            after,case = reflow(kind,index,source,before,metrics,names)
+            # These entries are alternative titles shown in the same title
+            # selector: Master Class and Master of Masters, same native font.
+            width_reference = (metrics(readable(source_rows[9274]))[0]
+                               if kind == 'common' and index == 9270 else None)
+            after,case = reflow(kind,index,source,before,metrics,names,width_reference)
             editorial = []
             if case['status'] != 'bounded' and eligible(kind,index):
                 shorter,rules = concise(before)
                 if rules:
                     validate_editorial(before,shorter,names)
-                    candidate,newcase = reflow(kind,index,source,shorter,metrics,names)
+                    candidate,newcase = reflow(kind,index,source,shorter,metrics,names,width_reference)
                     if newcase['status'] == 'bounded':
                         after,case,editorial = candidate,newcase,rules
             manual_text = manual.get(kind,{}).get(str(index))
             if manual_text:
                 validate_editorial(before,manual_text,names)
-                candidate,newcase = reflow(kind,index,source,manual_text,metrics,names)
+                candidate,newcase = reflow(kind,index,source,manual_text,metrics,names,width_reference)
                 if newcase['status'] != 'bounded' and index in manual.get('nonworsening_fixed_caption_ids',[]):
                     old_size,new_size=metrics(before),metrics(manual_text)
                     if new_size[0] <= old_size[0] and new_size[1] <= old_size[1]:

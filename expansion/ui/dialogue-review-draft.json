@@ -4,7 +4,7 @@
     "mes_common.fsys": {
       "base_sha256": "72616c5f217a1580e231862c8efca8b1006c76182dc662ebe8018fb46ab9eea7",
       "resource": "0x27c10000",
-      "target_sha256": "c7472612162c734c9c25f7c8e60fe355edf1e7d00ee92712ffdab93dfb083ba6",
+      "target_sha256": "680260c5d9f9d2e1e6378af3a9d5cdcb5a84cea8276e434a877e9a507ee8005b",
       "targets_by_id": {
         "1570": {
           "source_sha256": "66e398617da3cb6a5fd0737a6a53fb4cce4601a9d59b77101ee9f0efc70a6db7",
@@ -1941,6 +1941,15 @@
           "source_sha256": "beac8e0028bcb3f2b82e5b7ce0ba64a7a0dad26933306528c23c607fa1792892",
           "target": "{F001}{F100}Um Battle Pass foi encontrado no Wii Remote.{000D}\nde P{0017}. No entanto, não foi possível salva-lo\nporque você ja tem 60 Friend Passes.{000D}\nPara salvar o Friend Pass, exclua um dos que\nvocê tem agora e tente novamente.{0067}",
           "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9270": {
+          "source_sha256": "912c012e9f7525ec866e626e175c711cf1321d292079ca0f7254bd556cbc84f9",
+          "target": "{F001}{F101}Classe Mestre",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
           "extra_pages": 0,
           "status": "bounded"
         },

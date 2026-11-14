@@ -73,7 +73,7 @@ Caixas fixas não recebem páginas automaticamente. `dialogue_editorial.py` e
 existentes, mantendo mecânicas, números, negações e nomes. Apenas resultados
 que cabem na referência revisada entram na candidata; outros ficam pendentes.
 
-O levantamento verificou 10.006 IDs alterados e preparou 381 correções, com
+O levantamento verificou 10.006 IDs alterados e preparou 382 correções, com
 50 continuações adicionais. A revisão permanece incompleta: 2.658 alertas
 conservadores ainda dependem de contexto ou da moldura real. São alertas, não
 uma contagem comprovada de defeitos visuais. `dialogue-review-draft.json` não

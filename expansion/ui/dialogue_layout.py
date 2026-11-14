@@ -115,7 +115,7 @@ def paginate_words(prefix, lead, words, width, height, metrics, continuation):
     return output
 
 
-def reflow(kind, index, original, translated, metrics, names=()):
+def reflow(kind, index, original, translated, metrics, names=(), width_reference=None):
     prefix = FONT.match(original)
     if not prefix:
         return translated, dict(status='manual-no-font', pages=[])
@@ -149,6 +149,8 @@ def reflow(kind, index, original, translated, metrics, names=()):
         width, height = sw, sh
         if kind == 'common':
             width = COMMON_WIDTHS.get(index, width)
+            if width_reference is not None:
+                width=max(width,width_reference)
         if kind == 'battle' and prefix.startswith('{F006}'):
             width = max(sw, 240)
             height = max(sh, metrics(prefix + 'M')[1] * 2)

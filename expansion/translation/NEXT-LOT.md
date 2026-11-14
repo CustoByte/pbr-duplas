@@ -8,7 +8,7 @@ A revisão contextual incluiu 89 mensagens/legendas já traduzidas da Anna e dos
 menus principais. Corrigir sentido, concordância, acentos, falsos cognatos e
 terminologia, mesmo quando o texto antigo já cabe pela métrica. Todos os IDs
 editados já diferiam do original; nenhuma tradução inédita foi iniciada.
-A candidata local tem 381 correções no total e 50 continuações extras, após
+A candidata local tem 382 correções no total e 50 continuações extras, após
 aproveitar a maior página original do mesmo diálogo (mesma moldura nativa).
 Há um pacote local de teste v0.12.1-dialogue-review.1, sem publicação/feed novo.
 O texto e a quantidade de caracteres da tradução não equivalem à moldura real;
@@ -24,7 +24,7 @@ menu como prioridade. Não retomar lotes novos antes de encerrar essa revisão.
 
 O levantamento atual mede 10.006 IDs já alterados em quatro tabelas MESG
 canônicas, sem contar suas cópias como traduções adicionais. A candidata local
-prepara 381 correções e 50 continuações novas, com zero traduções inéditas.
+prepara 382 correções e 50 continuações novas, com zero traduções inéditas.
 Os nomes de Pokémon, golpes, itens, natures, habilidades e treinadores aprovados
 continuam protegidos. Não reduzir fontes para ocultar estouros.
 
