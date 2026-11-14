@@ -1,0 +1,21 @@
+{
+  "body_actions": [
+    "damage",
+    "down",
+    "kick",
+    "kime",
+    "kime_a",
+    "kime_b",
+    "punch",
+    "run",
+    "wait"
+  ],
+  "bone_animation_moves": true,
+  "dolphin_used": false,
+  "full_battle_engine": false,
+  "skeleton_bones": 1,
+  "vertices": 3,
+  "waiting_pose_landmarks": {},
+  "kind": "Windows headless, owned animated triangle, not private Mega or GPU benchmark",
+  "published_exe_sha256": "ef90e929ba1a6a4322860285d97f40f4aa349c90329a91b0e8b55b8df0f4cb00"
+}
