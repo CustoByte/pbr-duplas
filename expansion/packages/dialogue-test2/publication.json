@@ -1,0 +1,13 @@
+{
+  "version": "v0.12.1-dialogue-test.2",
+  "package_sha256": "032a15a4e80fb08dd8a6988ec061dffa530d4ca580f283bf5e33263568e01526",
+  "release_url": "https://github.com/CustoByte/pbr-duplas/releases/tag/v0.12.1-dialogue-test.2",
+  "delivery": "existing full493-test CMD feed",
+  "new_launcher_required": false,
+  "immutable_remote_download_sha256_verified": true,
+  "additional_corrections": 51,
+  "cumulative_corrections": 433,
+  "new_translations": 0,
+  "review_complete": false,
+  "dolphin_visual_tested": false
+}
