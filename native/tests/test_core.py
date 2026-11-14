@@ -120,9 +120,25 @@ class NativeLauncherTests(unittest.TestCase):
         self.assertEqual(core.runtime_path(self.home).read_bytes(), b'first')
         self.assertEqual(len(list((self.home / 'releases').iterdir())), 2)
 
+    def test_owned_release_asset_accepted(self):
+        feed = self.feed(b'payload')
+        feed['windows_x64']['url'] = f"https://github.com/CustoByte/pbr-duplas/releases/download/{feed['version']}/PBR-Native-Runtime-Windows.zip"
+        self.assertEqual(core.validate_feed(feed), feed)
+        feed['windows_x64']['url'] = feed['windows_x64']['url'].replace('/CustoByte/', '/OtherOwner/')
+        with self.assertRaises(ValueError):
+            core.validate_feed(feed)
+
+    def test_changed_code_pack_prevents_execution(self):
+        data = self.package([('PBRNative.exe', b'engine'), ('PBRNative.pck', b'code')])
+        self.install(data)
+        exe = core.runtime_path(self.home)
+        exe.with_suffix('.pck').write_bytes(b'tampered code')
+        with self.assertRaisesRegex(ValueError, 'código nativo'):
+            core.runtime_path(self.home)
+
     def test_no_fake_playable_runtime(self):
         self.assertIsNone(core.runtime_path(self.home))
-        feed = json.loads((Path(__file__).resolve().parents[1] / 'update.json').read_text())
+        feed = dict(schema=1, product='pbr-native', runtime_available=False)
         self.assertFalse(core.validate_feed(feed)['runtime_available'])
         with self.assertRaises(ValueError):
             core.install_runtime(self.home, feed)

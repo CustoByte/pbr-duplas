@@ -31,10 +31,10 @@ class Launcher:
         hero = tk.Frame(shell, bg=PANEL, padx=24, pady=22)
         hero.pack(fill='x', pady=24)
         self.label(hero, 'PROJETO EM DESENVOLVIMENTO', 10, ACCENT, PANEL).pack(anchor='w')
-        self.label(hero, 'O próximo passo é o motor nativo.', 20, bg=PANEL).pack(anchor='w', pady=(8, 10))
-        self.label(hero, 'O launcher já prepara sua biblioteca. Ainda não executa batalhas sem Dolphin.',
+        self.label(hero, 'Primeira cena nativa em desenvolvimento.', 20, bg=PANEL).pack(anchor='w', pady=(8, 10))
+        self.label(hero, 'Laboratório 3D independente. A batalha completa do jogo ainda não foi portada.',
                    11, MUTED, PANEL).pack(anchor='w')
-        self.play = self.button(hero, 'Jogar versão nativa', self.launch, primary=True)
+        self.play = self.button(hero, 'Abrir cena nativa', self.launch, primary=True)
         self.play.pack(anchor='w', pady=(18, 0))
         self.play.config(state='disabled')
         card = tk.Frame(shell, bg=PANEL, padx=20, pady=18)
@@ -149,7 +149,11 @@ class Launcher:
         try:
             executable = core.runtime_path(HOME)
             if executable:
-                subprocess.Popen([str(executable), '--data-dir', str(HOME)], cwd=executable.parent)
+                args = [str(executable)]
+                pack = executable.with_suffix('.pck')
+                if pack.is_file(): args.extend(['--main-pack', str(pack)])
+                args.extend(['--', '--data-dir', str(HOME)])
+                subprocess.Popen(args, cwd=executable.parent)
         except Exception as error:
             messagebox.showerror('PBR Native', str(error), parent=self.root)
 

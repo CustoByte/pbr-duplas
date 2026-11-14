@@ -1,2 +1,5 @@
 user-data/
 __pycache__/
+runtime/.godot/
+runtime/*.uid
+packages/

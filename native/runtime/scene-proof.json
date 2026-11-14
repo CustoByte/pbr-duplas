@@ -1,0 +1,29 @@
+{
+  "body_actions": [
+    "damage",
+    "down",
+    "kick",
+    "kime",
+    "kime_a",
+    "kime_b",
+    "punch",
+    "run",
+    "wait"
+  ],
+  "bone_animation_moves": true,
+  "dolphin_used": false,
+  "full_battle_engine": false,
+  "skeleton_bones": 116,
+  "vertices": 5976,
+  "waiting_pose_landmarks": {
+    "Head": "(-0.000013, 1.438902, 0.343372)",
+    "Hips": "(0.000341, 1.077899, 0.368477)",
+    "LFoot": "(0.281461, 0.380282, 0.216622)",
+    "RFoot": "(-0.289752, 0.385102, 0.221995)"
+  },
+  "private_glb_sha256": "44ce9a30e136564f9fb052f7da0139ef5c98585c2fc2c706686d8f4eba4626b5",
+  "private_glb_bytes": 4072512,
+  "source": "Private converted Mega candidate, no model published",
+  "packed_runtime_verified": true,
+  "windows_user_pc_verified": false
+}

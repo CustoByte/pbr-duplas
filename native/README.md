@@ -1,47 +1,47 @@
-# PBR Native — primeira base do launcher
+# PBR Native — launcher e primeira cena 3D
 
-Projeto separado do aplicador Dolphin e do PBR Forge, que permanece pausado.
-**Ainda não há motor nativo, cena 3D ou batalha jogável.** O launcher não converte
-PowerPC/GX em código Windows, nem representa uma otimização medida do jogo.
+Projeto separado do aplicador Dolphin e do PBR Forge (que continua pausado).
+**Agora existe uma cena 3D nativa; ainda não existe o Battle Revolution completo
+portado para Windows.** Consulte [o escopo e as evidências](runtime/PROGRESS.md).
 
-## Executar a base no Windows
+## Testar a cena no Windows
 
-Requer Python 3.11+ com Tcl/Tk. Execute `INICIAR-LAUNCHER.cmd`.
-A distribuição independente do Python ainda não está implementada.
+A release nativa publica `PBR-Native-Runtime-Windows.zip`. Extraia tudo e execute
+`INICIAR-CENA-NATIVA.cmd`. Não precisa de Dolphin, Python ou Godot instalado.
+Abra um GLB convertido localmente. Se recebeu `Mega-Lucario.glb` nesta conversa,
+coloque-o junto do executável para abrir automaticamente; não publique esse modelo.
+Arraste com botão direito para girar, roda para zoom, lista/botões para animações.
+`Medir 10 s` salva `user-data/performance.json`. 60 FPS ainda não é garantido.
+
+## Launcher em desenvolvimento
+
+`INICIAR-LAUNCHER.cmd` ainda requer Python 3.11+ com Tcl/Tk. Sua distribuição
+independente ainda não está implementada. O botão abre a cena nativa disponível,
+não a campanha completa. O atualizador pode instalar a release nativa do GitHub.
 
 A seleção aceita ISO Wii de Battle Revolution e RVZ, inclusive imagens modificadas.
-O arquivo é apenas lido para verificar cabeçalho e calcular SHA-256. A escolha fica
-registrada em `user-data/source.json`, com caminho e hash: **nenhum recurso é extraído
-nesta etapa**. O identificador de jogo dentro de RVZ exige um leitor posterior;
-o cabeçalho RVZ sozinho ainda não confirma qual jogo está dentro do contêiner.
-Não distribua imagens, recursos ou saves no GitHub.
+O arquivo é apenas lido para cabeçalho e SHA-256. A escolha fica em
+`user-data/source.json`: **a extração e importação dessa imagem ainda não existem**.
+O identificador dentro de RVZ exige um leitor posterior; seu cabeçalho sozinho
+não confirma qual jogo está dentro do contêiner. Não publique imagens ou saves.
 
-O canal nativo usa `native/update.json` na branch `project/native-launcher`.
-É independente de `expansion/update-test.json`: não altera a versão Dolphin atual.
-Nesta primeira etapa o manifesto declara explicitamente que não há runtime.
-Quando existir, um pacote Windows será publicado em uma tag imutável deste mesmo
-repositório com SHA-256. O cliente verifica o hash, valida os caminhos do ZIP,
-prepara uma pasta de versão e só então troca o ponteiro da versão ativa.
-A versão anterior pode ser restaurada. Saves/configurações ficam fora das releases.
-O formato inicial instala um runtime inteiro; downloads diferenciais e atualização
-do próprio launcher ainda não estão implementados.
+O canal `native/update.json` na branch `project/native-launcher` é independente
+de `expansion/update-test.json`. As releases têm tag imutável e SHA-256; o cliente
+verifica nomes/caminhos do ZIP e prepara a instalação antes de trocar a versão.
+Verifica também o executável e o PCK ao iniciar. A versão anterior pode ser
+restaurada. Saves/configurações ficam fora das pastas versionadas.
+Neste marco os downloads são do runtime inteiro; atualização diferencial e
+a atualização do próprio launcher ainda não estão implementadas.
 
-## Próximo marco: cena nativa mensurável
+## Desenvolvimento e testes
 
-- Definir e implementar a leitura local dos recursos da imagem selecionada,
-  preservando as alterações presentes nela e registrando incompatibilidades.
-- Renderizar uma cena com modelo e animação em Windows sem Dolphin; não substituir
-  isso por vídeo pré-renderizado ou por abrir o emulador de forma oculta.
-- Medir tempo de quadro, carregamento e memória, com simulação e apresentação
-  desacopladas. 60 FPS é uma meta ainda não verificada.
-- Depois incorporar regras de batalha, efeitos, interface e áudio. A decompilação
-  disponível é parcial e mira PAL; nossa base modificada é USA RPBE01. Isso exige
-  adaptação e não oferece hoje um port Windows pronto.
+- `python -m unittest discover -s native/tests -v`
+- `godot --headless --path native/runtime -- --model /caminho/model.glb --self-test`
+- `godot --headless --path native/runtime --export-pack Windows /destino/PBRNative.pck`
+- `native/tools/package_runtime.py` gera o pacote com o Godot oficial verificado.
+- O CI executa o binário Windows real com um modelo de teste criado por nós.
 
-## Testes
-
-`python -m unittest discover -s native/tests -v`
-
-Os testes verificam registro somente para leitura, recusa de caminhos inseguros,
-falha de hash sem trocar a versão ativa e recuperação da versão anterior.
-A interface precisa de validação visual no Windows.
+O exportador local de GLB usa o `.blend` privado convertido anteriormente; não
+é um importador universal do jogo. A decompilação disponível é parcial e PAL,
+enquanto nossa base modificada é USA RPBE01. A adaptação dos sistemas de batalha
+continua sendo trabalho substancial, posterior a esta cena inicial.

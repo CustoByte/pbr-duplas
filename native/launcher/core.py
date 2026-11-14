@@ -80,8 +80,9 @@ def validate_feed(feed):
     package = feed.get('windows_x64', {})
     url = urlsplit(package.get('url', ''))
     prefix = f'/CustoByte/pbr-duplas/{version}/native/packages/'
-    if (url.scheme != 'https' or url.netloc != 'raw.githubusercontent.com'
-            or not url.path.startswith(prefix) or not url.path.endswith('.zip')
+    raw_owned = url.netloc == 'raw.githubusercontent.com' and url.path.startswith(prefix) and url.path.endswith('.zip')
+    release_owned = url.netloc == 'github.com' and url.path == f'/CustoByte/pbr-duplas/releases/download/{version}/PBR-Native-Runtime-Windows.zip'
+    if (url.scheme != 'https' or not (raw_owned or release_owned)
             or url.query or url.fragment or '..' in PurePosixPath(url.path).parts):
         raise ValueError('Pacote fora do repositório e da versão autorizados.')
     if not re.fullmatch('[a-f0-9]{64}', package.get('sha256', '')):
@@ -149,6 +150,8 @@ def install_runtime(home: Path, feed, progress=None):
         expanded.mkdir()
         unpack_runtime(package, expanded)
         receipt = dict(version=feed['version'], sha256=digest(expanded / 'PBRNative.exe'))
+        if (expanded / 'PBRNative.pck').is_file():
+            receipt['pck_sha256'] = digest(expanded / 'PBRNative.pck')
         target = releases / feed['version']
         if target.exists():
             raise ValueError('Essa versão já está instalada; a instalação existente foi preservada.')
@@ -171,6 +174,10 @@ def runtime_path(home: Path):
     executable = home / 'releases' / version / 'PBRNative.exe'
     if not executable.is_file() or digest(executable) != receipt.get('sha256'):
         raise ValueError('Executável ausente ou alterado. Reinstale uma versão verificada.')
+    if receipt.get('pck_sha256'):
+        pack = executable.with_suffix('.pck')
+        if not pack.is_file() or digest(pack) != receipt['pck_sha256']:
+            raise ValueError('Pacote de código nativo ausente ou alterado.')
     return executable
 
 
@@ -186,6 +193,10 @@ def rollback(home: Path):
     executable = home / 'releases' / version / 'PBRNative.exe'
     if not executable.is_file() or digest(executable) != previous.get('sha256'):
         raise ValueError('Versão anterior ausente ou alterada.')
+    if previous.get('pck_sha256'):
+        pack = executable.with_suffix('.pck')
+        if not pack.is_file() or digest(pack) != previous['pck_sha256']:
+            raise ValueError('Pacote de código anterior ausente ou alterado.')
     write_json(home / 'current.json', previous)
     if current:
         write_json(home / 'previous.json', current)

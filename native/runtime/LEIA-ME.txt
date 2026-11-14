@@ -1,0 +1,28 @@
+PBR NATIVE — PRIMEIRA CENA 3D — WINDOWS X64
+
+Extraia o ZIP inteiro e execute INICIAR-CENA-NATIVA.cmd.
+Esta cena executa diretamente no Windows, sem Dolphin e sem Python.
+O motor utilizado e o Godot 4.6.3, com licenca MIT (notas incluidas).
+O binario oficial com editor e usado como runtime nesta primeira candidata;
+a reducao do tamanho da distribuicao fica para uma etapa posterior.
+
+Este pacote NAO e o Battle Revolution completo. Ainda nao ha regras de batalha,
+menus do jogo, audio, efeitos de golpes, importacao automatica de ISO ou saves.
+O launcher pode registrar sua ISO modificada, mas ainda nao extrai seus recursos.
+
+Abra o GLB convertido localmente no botao Abrir modelo 3D. O modelo nao esta
+no pacote publico. Se recebeu Mega-Lucario.glb nesta conversa, coloque-o junto
+do executavel para abrir automaticamente. Esse arquivo e somente para seu teste.
+
+Arraste com o botao direito para girar a camera; use a roda para zoom.
+Escolha as animacoes na lista ou nos botoes. Ataques e dano retornam a espera,
+com transicao de 0,18 segundo. O prototipo usa animacoes corporais; as animacoes
+UV de olhos e os efeitos originais do Wii ainda nao foram portados.
+
+Medir 10 s gera user-data/performance.json, sem fechar a janela.
+FPS e tempo por quadro aparecem na tela. Os primeiros 2 segundos de cada
+medicao sao excluidos como aquecimento. A meta e 60 FPS, ainda nao garantida.
+Nao compare os testes por software da nuvem com a GPU do seu computador.
+A medicao desta cena simples nao prova desempenho de uma batalha completa.
+
+A cena e independente da sua RVZ atual; nao altera o jogo nem seus saves.

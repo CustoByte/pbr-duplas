@@ -1,0 +1,16 @@
+{
+  "bytes": 80036265,
+  "sha256": "88585a735aa2e8174ef0a7dffbc187b7f60e31c6e282cc6c8bdf85907add2b47",
+  "public_files": [
+    "PBRNative.exe",
+    "PBRNative.pck",
+    "GODOT-LICENSE.txt",
+    "THIRD-PARTY-NOTICES.txt",
+    "LEIA-ME.txt",
+    "INICIAR-CENA-NATIVA.cmd"
+  ],
+  "game_assets_distributed": false,
+  "engine": "Godot 4.6.3 MIT \u2014 editor binary used as runtime for initial prototype",
+  "native_scene_only": true,
+  "full_battle_engine": false
+}

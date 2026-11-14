@@ -22,3 +22,6 @@ jobs:
       - name: Start the actual Windows interface
         if: runner.os == 'Windows'
         run: python -c "import sys; sys.path.insert(0, 'native/launcher'); import tkinter as tk; from app import Launcher; root = tk.Tk(); root.withdraw(); Launcher(root); root.update(); root.destroy()"
+      - name: Execute the actual native 3D runtime on Windows
+        if: runner.os == 'Windows'
+        run: python native/tools/check_windows_runtime.py
