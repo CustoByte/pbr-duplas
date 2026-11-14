@@ -1,9 +1,9 @@
 {
   "status": "passed-offline-review-not-complete",
   "checked_changed_message_ids": 10006,
-  "prepared_corrections": 377,
-  "added_continuation_controls": 52,
-  "pending_conservative_flags": 2660,
+  "prepared_corrections": 381,
+  "added_continuation_controls": 50,
+  "pending_conservative_flags": 2658,
   "new_translations": 0,
   "native_paging": {
     "passed": true,
@@ -227,20 +227,6 @@
   "tilde_registration_cases": 40,
   "archives": [
     {
-      "filename": "mes_common.fsys",
-      "reproduced": true,
-      "non_message_resources_unchanged": true,
-      "changed_resources": [
-        "0x27c10000"
-      ]
-    },
-    {
-      "filename": "mes_name_e.fsys",
-      "reproduced": true,
-      "non_message_resources_unchanged": true,
-      "changed_resources": []
-    },
-    {
       "filename": "menu_btutorial.fsys",
       "reproduced": true,
       "non_message_resources_unchanged": true,
@@ -249,20 +235,10 @@
       ]
     },
     {
-      "filename": "mes_bpass_e.fsys",
+      "filename": "mes_name_e.fsys",
       "reproduced": true,
       "non_message_resources_unchanged": true,
-      "changed_resources": [
-        "0x27c31800"
-      ]
-    },
-    {
-      "filename": "menu_bpass2.fsys",
-      "reproduced": true,
-      "non_message_resources_unchanged": true,
-      "changed_resources": [
-        "0x27c31800"
-      ]
+      "changed_resources": []
     },
     {
       "filename": "mes_fight_e.fsys",
@@ -285,6 +261,30 @@
       "reproduced": true,
       "non_message_resources_unchanged": true,
       "changed_resources": []
+    },
+    {
+      "filename": "menu_bpass2.fsys",
+      "reproduced": true,
+      "non_message_resources_unchanged": true,
+      "changed_resources": [
+        "0x27c31800"
+      ]
+    },
+    {
+      "filename": "mes_bpass_e.fsys",
+      "reproduced": true,
+      "non_message_resources_unchanged": true,
+      "changed_resources": [
+        "0x27c31800"
+      ]
+    },
+    {
+      "filename": "mes_common.fsys",
+      "reproduced": true,
+      "non_message_resources_unchanged": true,
+      "changed_resources": [
+        "0x27c10000"
+      ]
     }
   ],
   "untranslated_ids_unchanged": true,
@@ -292,9 +292,9 @@
   "player_feed_changed": false,
   "dolphin_visual_tested": false,
   "review_complete": false,
-  "contextual_main_menu_targets": 79,
+  "contextual_main_menu_targets": 89,
   "no_screenshot_dependency": true,
-  "text_unit_tests_passed": 25,
-  "local_review_package_version": "v0.12.1-dialogue-review.1",
-  "local_review_package_sha256": "e9a53a86d2201b576e1dd69600551ff6318fd9e4650bec98dfe2014464ff0d41"
+  "text_and_update_workflow_tests_passed": 46,
+  "delivery": "existing-auto-updater",
+  "new_launcher_required": false
 }

@@ -80,9 +80,21 @@
     "9228": "{F001}{F100}{0027}Usar os Wii Remotes já conectados como controles de P1 e P2 nesta batalha?{0028}",
     "9234": "{F001}{F100}{0027}A conexão dos Wii Remotes é feita no menu HOME.{0028}{000D}\n{0027}Aperte o botão HOME no Wii Remote que está usando para abrir esse menu.{0028}{000D}\n{0027}Escolha Configurações do Wii Remote e, depois, Reconectar.{0028}{000D}\n{0027}Siga as instruções para conectar os controles de P1 e P2.{0028}{000D}\n{0027}Depois de conectar os Wii Remotes de P1 e P2, feche o menu e volte ao jogo.{0028}{000D}\n{0027}Você entrará na Batalha Livre.{0028}{000D}",
     "7076": "{F001}{F101}{8011}{FFEF}\n{0003:0002}Roupas",
-    "9212": "{F001}{F101}{0003:0002}Carregar\n{0003:0002}Passe"
+    "9212": "{F001}{F101}{0003:0002}Carregar\n{0003:0002}Passe",
+    "9406": "{F001}{F101}{0027}Isso é incrível! Que conquista impressionante!{0028}{000D}\n{0027}Alcançar 100 vitórias na Batalha de Sobrevivência é um grande marco!{0028}{0067}",
+    "9411": "{F001}{F101}{0027}Você deve estar exausto depois de tantas vitórias na Batalha de Sobrevivência! Foram quantas? {0018}? Muito bem!{0028}{0067}",
+    "9412": "{F001}{F101}{0027}Você receberá {0017} pontos pela sua sequência de {0018} vitórias!{0028}{0067}",
+    "9415": "{F001}{F101}{0027}Você também receberá {000F} como prêmio por vencer {000E} pela primeira vez!{0028}{0067}",
+    "9416": "{F001}{F101}{0027}Por se tornar o novo campeão de Pokétopia, {0050}, você receberá {000E}, como mestre de Pokétopia!{0028}{000D}\n{0027}Parabéns!{0028}{0067}",
+    "9442": "{F001}{F101}{0027}Muito obrigada! Espero ver você de novo em breve!{0028}{0067}",
+    "9403": "{F001}{F101}Não foi possível ler o disco.\nConsulte o manual de operações\ndo Wii para mais informações.",
+    "9405": "{F001}{F100}Ver as instruções para conectar\nos Wii Remotes ao console Wii?",
+    "9270": "{F001}{F101}Classe Mestre",
+    "9275": "{F001}{F101}Fã de PIKACHU"
   },
   "nonworsening_fixed_caption_ids": [
-    7076
+    7076,
+    9270,
+    9275
   ]
 }

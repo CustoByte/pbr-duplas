@@ -73,8 +73,8 @@ Caixas fixas não recebem páginas automaticamente. `dialogue_editorial.py` e
 existentes, mantendo mecânicas, números, negações e nomes. Apenas resultados
 que cabem na referência revisada entram na candidata; outros ficam pendentes.
 
-O levantamento verificou 10.006 IDs alterados e preparou 377 correções, com
-52 continuações adicionais. A revisão permanece incompleta: 2.660 alertas
+O levantamento verificou 10.006 IDs alterados e preparou 381 correções, com
+50 continuações adicionais. A revisão permanece incompleta: 2.658 alertas
 conservadores ainda dependem de contexto ou da moldura real. São alertas, não
 uma contagem comprovada de defeitos visuais. `dialogue-review-draft.json` não
 é uma aprovação de publicação e não modifica o canal dos jogadores.
@@ -83,7 +83,7 @@ uma contagem comprovada de defeitos visuais. `dialogue-review-draft.json` não
 ### Revisão contextual da recepcionista e dos menus
 
 O usuário não consegue enviar prints; a revisão continua pelos dados existentes.
-`dialogue-menu-editorial.json` agora inclui 79 alvos já traduzidos, revisados
+`dialogue-menu-editorial.json` agora inclui 89 alvos já traduzidos, revisados
 contra o inglês. Foram corrigidos erros como “Treinadores” virar “tênis”, “clear”
 virar “limpar”, concordância da Anna, trechos misturados e nomes de menus
 inconsistentes. “Gear” passa a “Roupas”, em vez de “Engrenagem”, tanto na opção
@@ -105,3 +105,5 @@ o núcleo Snivy test.4 e substituindo apenas deltas de mensagens. Confere o
 roundtrip de todos os 13 arquivos da base; DOL, common, deck, título, catálogo,
 modelo/animações/ícones e nomes da Snivy não mudam. Não publica no GitHub nem
 atualiza o feed dos jogadores. A revisão geral permanece em andamento.
+
+Atualização do canal: v0.12.1-dialogue-test.1 é preparada para o CMD autoatualizável já existente. Não pedir novo launcher ou ZIP manual. Nenhuma tradução inédita neste lote. A revisão geral continua.

@@ -4,7 +4,7 @@
     "mes_common.fsys": {
       "base_sha256": "72616c5f217a1580e231862c8efca8b1006c76182dc662ebe8018fb46ab9eea7",
       "resource": "0x27c10000",
-      "target_sha256": "c5d4c57c9887b08f9d391dbebe29d313c974c5cb40b2cc83da59bae8adc788fa",
+      "target_sha256": "c7472612162c734c9c25f7c8e60fe355edf1e7d00ee92712ffdab93dfb083ba6",
       "targets_by_id": {
         "1570": {
           "source_sha256": "66e398617da3cb6a5fd0737a6a53fb4cce4601a9d59b77101ee9f0efc70a6db7",
@@ -1944,38 +1944,84 @@
           "extra_pages": 0,
           "status": "bounded"
         },
+        "9275": {
+          "source_sha256": "e525397d483cd0593f3f59a1c4850e6110be9281ed7990d52aa35129542f901c",
+          "target": "{F001}{F101}Fã de PIKACHU",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "reviewed-no-size-increase"
+        },
+        "9403": {
+          "source_sha256": "28329cfecf3c1a749e701ef073839925b82bb56ae3bbeabf1d0984b4cd6931a3",
+          "target": "{F001}{F101}Não foi possível ler o disco.\nConsulte o manual de operações\ndo Wii para mais informações.",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9405": {
+          "source_sha256": "d1576c9fe6b667694cb97cf14715e37e41208368251d3e5e593768db069a0fc1",
+          "target": "{F001}{F100}Ver as instruções para conectar\nos Wii Remotes ao console Wii?",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
         "9406": {
           "source_sha256": "bf10886ce5aad904918ede895cf26b2b4d4467d3f9f671bdcba11fcc64e17853",
-          "target": "{F001}{F101}{0027}Isso e absolutamente inacreditavel! E\nsimplesmente incrível!{0028}{000D} {0027}E um grande marco alcancar 100 vitórias na\nBatalha de Sobrevivencia!{0028}{0067}",
-          "editorial_rules": [],
+          "target": "{F001}{F101}{0027}Isso é incrível! Que conquista\nimpressionante!{0028}{000D}\n{0027}Alcançar 100 vitórias na Batalha de\nSobrevivência é um grande marco!{0028}{0067}",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
           "extra_pages": 0,
           "status": "bounded"
         },
         "9411": {
           "source_sha256": "96e067d05318d58ffed3bbdee0ecd20e3d96b1254a42704f7d55fe9b77dd9011",
-          "target": "{F001}{F101}{0027}Aposto que você será derrotado apos suas\nvitórias na Batalha de Sobrevivencia!{0028}{000D}\n{0027}Quantos foram? {0018}? Legal!{0028}{0067}",
-          "editorial_rules": [],
+          "target": "{F001}{F101}{0027}Você deve estar exausto depois de tantas\nvitórias na Batalha de Sobrevivência!{0028}{000D}\n{0027}Foram quantas? {0018}? Muito bem!{0028}{0067}",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
           "extra_pages": 1,
           "status": "bounded"
         },
         "9412": {
           "source_sha256": "2e0f7cf69b82e8d216ecdffc859e6a84d32ee93c1e68ffbef6955fdb46f868d1",
-          "target": "{F001}{F101}{0027}{0017} pontos. será dado a{0028}{000D}\n{0027}você como recompensa por sua sequencia\nde vitórias {0018}!{0028}{0067}",
-          "editorial_rules": [],
-          "extra_pages": 1,
+          "target": "{F001}{F101}{0027}Você receberá {0017} pontos pela sua\nsequência de {0018} vitórias!{0028}{0067}",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
           "status": "bounded"
         },
         "9415": {
           "source_sha256": "3f7f1e644dbeebb590533ccb8820edbe62c178d64290d1e81e306023fcae155d",
-          "target": "{F001}{F101}{0027}Além disso, o {000F} será{0028}{000D}\n{0027}dado a você como recompensa por limpar\n{000E} pela primeira vez!{0028}{0067}",
-          "editorial_rules": [],
-          "extra_pages": 1,
+          "target": "{F001}{F101}{0027}Você também receberá {000F} como\nprêmio por vencer {000E} pela primeira vez!{0028}{0067}",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
           "status": "bounded"
         },
         "9416": {
           "source_sha256": "a1ab38db50d703f2600cdbc14018982a11bf9146a7980c08f10b38af43999dc2",
-          "target": "{F001}{F101}{0027}Em homenagem a se tornar o novo campeao\nde Pokétopia, {0050}, o {000E} será\ndado a você, o mestre de Pokétopia!{0028}{000D}\n{0027}Parabéns!{0028}{0067}",
-          "editorial_rules": [],
+          "target": "{F001}{F101}{0027}Por se tornar o novo campeão de\nPokétopia, {0050}, você receberá\n{000E}, como mestre de Pokétopia!{0028}{000D}\n{0027}Parabéns!{0028}{0067}",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9442": {
+          "source_sha256": "1e55c87616dcd547930c33a36b9130586f2b84d7eb394f8cbd433a84b2d9dec3",
+          "target": "{F001}{F101}{0027}Muito obrigada! Espero ver você\nde novo em breve!{0028}{0067}",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
           "extra_pages": 0,
           "status": "bounded"
         },

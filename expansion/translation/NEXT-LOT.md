@@ -4,15 +4,15 @@ O usuário informou que não consegue tirar prints. Não pedir capturas como
 condição para corrigir textos. Usar os arquivos originais, contexto e fontes
 nativas; manter explícitos os limites da validação visual.
 
-A revisão contextual incluiu 79 mensagens/legendas já traduzidas da Anna e dos
+A revisão contextual incluiu 89 mensagens/legendas já traduzidas da Anna e dos
 menus principais. Corrigir sentido, concordância, acentos, falsos cognatos e
 terminologia, mesmo quando o texto antigo já cabe pela métrica. Todos os IDs
 editados já diferiam do original; nenhuma tradução inédita foi iniciada.
-A candidata local tem 377 correções no total e 52 continuações extras, após
+A candidata local tem 381 correções no total e 50 continuações extras, após
 aproveitar a maior página original do mesmo diálogo (mesma moldura nativa).
 Há um pacote local de teste v0.12.1-dialogue-review.1, sem publicação/feed novo.
 O texto e a quantidade de caracteres da tradução não equivalem à moldura real;
-não declarar que todos os 2.660 alertas conservadores são defeitos visuais.
+não declarar que todos os 2.658 alertas conservadores são defeitos visuais.
 
 ---
 
@@ -24,12 +24,12 @@ menu como prioridade. Não retomar lotes novos antes de encerrar essa revisão.
 
 O levantamento atual mede 10.006 IDs já alterados em quatro tabelas MESG
 canônicas, sem contar suas cópias como traduções adicionais. A candidata local
-prepara 377 correções e 52 continuações novas, com zero traduções inéditas.
+prepara 381 correções e 50 continuações novas, com zero traduções inéditas.
 Os nomes de Pokémon, golpes, itens, natures, habilidades e treinadores aprovados
 continuam protegidos. Não reduzir fontes para ocultar estouros.
 
-A revisão não terminou. Há 2.660 alertas conservadores de dimensão, que não
-significam 2.660 falhas visuais: o tamanho do texto original não é a moldura
+A revisão não terminou. Há 2.658 alertas conservadores de dimensão, que não
+significam 2.658 falhas visuais: o tamanho do texto original não é a moldura
 física de cada caixa. Títulos curtos e nomes podem superar essa referência e
 caber normalmente. Não tratar esses alertas como resolvidos sem referência de
 janela ou revisão contextual. Nenhum novo pacote foi publicado.
@@ -55,3 +55,5 @@ A meta anterior de 2.500 traduções inéditas não foi concluída e não deve s
 confundida com o número de correções. Textos inteiros do jogo ainda precisam
 de revisão. Preservar nomes de Pokémon, golpes, itens, natures e habilidades,
 e manter somente os nomes de treinadores já aprovados.
+
+Atualização do canal: v0.12.1-dialogue-test.1 é preparada para o CMD autoatualizável já existente. Não pedir novo launcher ou ZIP manual. Nenhuma tradução inédita neste lote. A revisão geral continua.

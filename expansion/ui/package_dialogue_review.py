@@ -78,3 +78,28 @@ if __name__=='__main__':
     for name in ('review','originals','output'):
         p.add_argument('--'+name,type=Path,required=True)
     a=p.parse_args();print(json.dumps(package(a.review,a.originals,a.output),indent=2))
+
+
+def package_channel(review, originals, output, version):
+    """Produce a flat core for the EXISTING updater, without a new launcher."""
+    import tempfile
+    with tempfile.TemporaryDirectory(prefix='pbr-dialogue-core-') as temporary:
+        wrapped=Path(temporary)/'review.zip'
+        proof=package(review,originals,wrapped,version)
+        prefix='PBR-Revisao-Dialogos/'
+        with zipfile.ZipFile(wrapped) as archive:
+            files={name[len(prefix):]:archive.read(name) for name in archive.namelist()}
+    del files['INICIAR-TESTE-WINDOWS.cmd']
+    files['LEIA-ME-REVISAO.txt']=(
+        'PBR - REVISAO DOS DIALOGOS\r\nVersao: '+version+'\r\n\r\n'
+        'Pacote baixado automaticamente pelo CMD de atualizacao existente.\r\n'
+        'Corrige textos ja traduzidos; nenhuma traducao inedita.\r\n'
+        'Feche o Dolphin antes de executar o mesmo CMD. Os caminhos salvos\r\n'
+        'e o arquivo de jogo gerenciado continuam sendo reutilizados.\r\n'
+        'A imagem original e os saves normais nao sao modificados.\r\n'
+        'A revisao global continua. Validacao visual completa ainda pendente.\r\n').encode()
+    core=zipped(files)
+    output.parent.mkdir(parents=True,exist_ok=True);output.write_bytes(core)
+    proof.update(package_sha256=sha(core),delivery='existing-auto-updater',new_launcher_required=False)
+    output.with_suffix('.json').write_text(json.dumps(proof,indent=2)+'\n')
+    return proof
