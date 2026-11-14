@@ -19,3 +19,6 @@ jobs:
         run: |
           python -m py_compile native/launcher/core.py native/launcher/app.py
           python -m unittest discover -s native/tests -v
+      - name: Start the actual Windows interface
+        if: runner.os == 'Windows'
+        run: python -c "import sys; sys.path.insert(0, 'native/launcher'); import tkinter as tk; from app import Launcher; root = tk.Tk(); root.withdraw(); Launcher(root); root.update(); root.destroy()"
