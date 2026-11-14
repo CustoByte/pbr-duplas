@@ -67,3 +67,12 @@ A entrada/retorno à Pokébola depende também do controle e dos efeitos nativos
 não apenas de uma animação corporal exportada.
 
 Não instalado, não publicado e nenhum teste real de Dolphin foi realizado.
+
+## Prévia em vídeo
+
+`sample_video.py` amostra o SDR final decodificado, sem interpolar quadros ou
+adicionar suavização. `encode_video.py` usa EGL/moderngl e ffmpeg para uma prévia
+com iluminação simplificada, a 30 fps. A câmera fica fixa por trecho; os olhos
+recebem um enquadramento aproximado. O MP4 privado tem 773 quadros (25,77 s),
+960×720, H.264, e passou na decodificação integral. Não inclui efeitos nativos
+de golpes/Pokébola e não é gravação de gameplay. Ver `video-proof.json`.

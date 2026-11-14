@@ -1,0 +1,22 @@
+{
+  "frames": 773,
+  "fps": 30,
+  "seconds": 25.766666666666666,
+  "resolution": [
+    960,
+    720
+  ],
+  "renderer": "llvmpipe (LLVM 19.1.7, 256 bits)",
+  "source_sha256": "722b0e2e764438c982b32a2d9d0fc84c4880697b412b5cd8fb99cea650246d0a",
+  "native_game_render": false,
+  "frame_interpolation": false,
+  "snapshots": [
+    0,
+    220,
+    425,
+    740,
+    760
+  ],
+  "mp4_decode_verified": true,
+  "file_bytes": 1953887
+}
