@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "product": "pbr-native",
+  "version": "v0.1.0-dev",
+  "runtime_available": false,
+  "message": "Launcher em desenvolvimento. Ainda não há um motor nativo jogável publicado."
+}

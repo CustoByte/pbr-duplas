@@ -1,0 +1,21 @@
+name: Native launcher foundation
+on:
+  push:
+    branches: [project/native-launcher]
+    paths: [native/**, .github/workflows/native-launcher.yml]
+  pull_request:
+    paths: [native/**, .github/workflows/native-launcher.yml]
+permissions:
+  contents: read
+jobs:
+  verify:
+    strategy:
+      matrix:
+        os: [windows-latest, ubuntu-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Check syntax and update/import safety
+        run: |
+          python -m py_compile native/launcher/core.py native/launcher/app.py
+          python -m unittest discover -s native/tests -v
