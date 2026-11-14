@@ -1,3 +1,17 @@
+# Canal publicado — reutilizar o CMD existente
+
+A atualização `v0.12.1-dialogue-test.1` é entregue pelo mesmo feed
+`expansion/update-test.json`, em `feat/full493-waterfall`. O usuário pediu
+explicitamente evitar downloads manuais e novos CMDs. Não fornecer outro
+launcher; as próximas correções devem usar esse canal.
+
+Este lote publica 382 correções existentes e 50 continuações adicionais, com
+zero traduções inéditas. Continuar a revisão antes de abrir lotes novos.
+A revisão global e a validação visual completa não estão concluídas.
+O Forge permanece pausado e não entra nesta publicação.
+
+---
+
 # Atualização do pedido: revisão sem depender de prints
 
 O usuário informou que não consegue tirar prints. Não pedir capturas como
