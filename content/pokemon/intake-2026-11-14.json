@@ -1,0 +1,165 @@
+{
+  "schema": 1,
+  "kind": "shared-pokemon-content-intake",
+  "batch": "2026-11-14",
+  "game_assets_distributed": false,
+  "automatic_delivery_implemented": false,
+  "entries": [
+    {
+      "key": "mega-charizard-x",
+      "name": "Mega Charizard X",
+      "national_id": 6,
+      "form": "mega_x",
+      "delivery": "independent_form_requested_like_mega_lucario",
+      "source_zip": {
+        "name": "mega-charizard-x-pokemon.zip",
+        "sha256": "bc42740e2aeadf1fa1ffa4078feb29fa6b284aa24874d492418134d95b5f5234",
+        "bytes": 621135
+      },
+      "geometry": {
+        "format": "glTF 2.0",
+        "meshes": 4,
+        "vertices": 5448,
+        "triangles": 7726,
+        "skin_joint_count": 119,
+        "animation_clips": 0,
+        "referenced_buffers_and_images_present": true
+      },
+      "animation_status": "no_motion_clips_supplied",
+      "configuration": {
+        "status": "awaiting_user_choices",
+        "moves": null,
+        "ability": null,
+        "item": null,
+        "nature": null,
+        "level": null,
+        "evs": null,
+        "rental_pass": null,
+        "replaced_slot": null
+      },
+      "internal_species_id": null,
+      "targets": {
+        "dolphin": "not_installed",
+        "native": "not_imported"
+      }
+    },
+    {
+      "key": "ash-greninja",
+      "name": "Ash-Greninja",
+      "national_id": 658,
+      "form": "ash",
+      "delivery": "independent_form_requested_like_mega_lucario",
+      "source_zip": {
+        "name": "ash-greninja-pokemon.zip",
+        "sha256": "b8f2331444ecdf74817da5a5deba46e6bdbf2b2adcf60bb65dfd46a98807b4b1",
+        "bytes": 867501
+      },
+      "geometry": {
+        "format": "glTF 2.0",
+        "meshes": 4,
+        "vertices": 7014,
+        "triangles": 10814,
+        "skin_joint_count": 103,
+        "animation_clips": 0,
+        "referenced_buffers_and_images_present": true
+      },
+      "animation_status": "no_motion_clips_supplied",
+      "configuration": {
+        "status": "awaiting_user_choices",
+        "moves": null,
+        "ability": null,
+        "item": null,
+        "nature": null,
+        "level": null,
+        "evs": null,
+        "rental_pass": null,
+        "replaced_slot": null
+      },
+      "internal_species_id": null,
+      "targets": {
+        "dolphin": "not_installed",
+        "native": "not_imported"
+      }
+    },
+    {
+      "key": "hydreigon",
+      "name": "Hydreigon",
+      "national_id": 635,
+      "form": "normal",
+      "delivery": "independent_form_requested_like_mega_lucario",
+      "source_zip": {
+        "name": "hydreigon.zip",
+        "sha256": "da51e8f79f1a461eca89f46dd228c555b01f9033fba69c0e8b2dd625c26d048b",
+        "bytes": 1411307
+      },
+      "geometry": {
+        "format": "FBX",
+        "meshes": 1,
+        "vertices": 3131,
+        "triangles": 6198,
+        "skin_joint_count": 71,
+        "animation_stacks": 1,
+        "animation_curves": 0,
+        "animation_keys": 0,
+        "usable_motion_clips": 0
+      },
+      "animation_status": "no_motion_clips_supplied",
+      "configuration": {
+        "status": "awaiting_user_choices",
+        "moves": null,
+        "ability": null,
+        "item": null,
+        "nature": null,
+        "level": null,
+        "evs": null,
+        "rental_pass": null,
+        "replaced_slot": null
+      },
+      "internal_species_id": null,
+      "targets": {
+        "dolphin": "not_installed",
+        "native": "not_imported"
+      }
+    },
+    {
+      "key": "rillaboom",
+      "name": "Rillaboom",
+      "national_id": 812,
+      "form": "normal",
+      "delivery": "independent_form_requested_like_mega_lucario",
+      "source_zip": {
+        "name": "rillaboom.zip",
+        "sha256": "3cd3d4cfd23b69d34a36b960e89f1ed1226fd738606104676b1680e22e897f5c",
+        "bytes": 2936302
+      },
+      "geometry": {
+        "format": "FBX",
+        "meshes": 5,
+        "vertices": 9656,
+        "triangles": 15500,
+        "skin_joint_count": 127,
+        "animation_stacks": 1,
+        "animation_curves": 0,
+        "animation_keys": 0,
+        "usable_motion_clips": 0
+      },
+      "animation_status": "no_motion_clips_supplied",
+      "configuration": {
+        "status": "awaiting_user_choices",
+        "moves": null,
+        "ability": null,
+        "item": null,
+        "nature": null,
+        "level": null,
+        "evs": null,
+        "rental_pass": null,
+        "replaced_slot": null
+      },
+      "internal_species_id": null,
+      "targets": {
+        "dolphin": "not_installed",
+        "native": "not_imported"
+      }
+    }
+  ]
+}
