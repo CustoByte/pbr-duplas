@@ -21,11 +21,11 @@ def apply(files,plan,original_common):
         header,rows=read_messages(data[rid]);rows=list(rows)
         for index,change in entry['targets_by_id'].items():
             i=int(index)
-            if sha(rows[i])!=change['source_sha256'] or change['status']!='bounded':
+            if sha(rows[i])!=change['source_sha256'] or change['status'] not in ('bounded','reviewed-no-size-increase'):
                 raise ValueError('Unreviewed or changed source row')
             before=readable(rows[i]);after=change['target']
             if change['editorial_rules']:
-                rows[i]=validate_editorial(before,after,names)
+                rows[i]=validate_editorial(before,after,names,allow_pages=bool(change['extra_pages']))
             else:
                 rows[i]=validate_layout(before,after,allow_pages=bool(change['extra_pages']))
         resource=write_messages(header,rows)

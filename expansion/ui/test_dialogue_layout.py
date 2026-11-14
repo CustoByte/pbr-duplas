@@ -83,6 +83,19 @@ class DialogueLayoutTests(unittest.TestCase):
         with self.assertRaises(ValueError):validate_editorial(before,after.replace('5','3'),{'Fire Punch'})
         with self.assertRaises(ValueError):validate_editorial(before,after.replace('Fire Punch','Soco'),{'Fire Punch'})
 
+    def test_editorial_can_use_validated_continuation(self):
+        before='{F001}{F101}{0027}O usuário usa Energy Ball.{0028}{0067}'
+        after='{F001}{F101}{0027}Usa{0028}{000D}\n{0027}Energy Ball.{0028}{0067}'
+        validate_editorial(before,after,{'Energy Ball'},allow_pages=True)
+        with self.assertRaises(ValueError):validate_editorial(before,after,{'Energy Ball'})
+
+    def test_reflow_reuses_only_pages_of_same_dialogue(self):
+        source='{F001}{F101}{0027}Hi.{0028}{000D}\n{0027}A longer source\nwith two lines.{0028}{0067}'
+        target='{F001}{F101}{0027}Olá, tudo bem?{0028}{000D}\n{0027}Outro trecho.{0028}{0067}'
+        result,report=reflow('common',9000,source,target,metric)
+        self.assertEqual(report['status'],'bounded')
+        self.assertEqual(report['extra_pages'],0)
+
     def test_editorial_cannot_drop_negation(self):
         before='{F001}{F101}O usuário não pode agir por 2 turnos.'
         with self.assertRaises(ValueError):validate_editorial(before,before.replace('não ',''))

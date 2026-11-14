@@ -67,19 +67,25 @@ def review(originals, baseline, metrics, output):
                     if newcase['status'] == 'bounded':
                         after,case,editorial = candidate,newcase,rules
             manual_text = manual.get(kind,{}).get(str(index))
-            if case['status'] != 'bounded' and manual_text:
+            if manual_text:
                 validate_editorial(before,manual_text,names)
                 candidate,newcase = reflow(kind,index,source,manual_text,metrics,names)
-                if newcase['status'] == 'bounded':
+                if newcase['status'] != 'bounded' and index in manual.get('nonworsening_fixed_caption_ids',[]):
+                    old_size,new_size=metrics(before),metrics(manual_text)
+                    if new_size[0] <= old_size[0] and new_size[1] <= old_size[1]:
+                        candidate=manual_text
+                        newcase=dict(status='reviewed-no-size-increase',pages=[],extra_pages=0,
+                                     before_metric=old_size,after_metric=new_size,physical_frame_verified=False)
+                if newcase['status'] in ('bounded','reviewed-no-size-increase'):
                     after,case,editorial = candidate,newcase,['explicit reviewed menu rephrase']
             record = dict(resource=kind,id=index,before=before,after=after,editorial_rules=editorial,**case)
-            if after != before and case['status'] == 'bounded':
-                rewritten[index] = (validate_editorial(before,after,names) if editorial else
+            if after != before and case['status'] in ('bounded','reviewed-no-size-increase'):
+                rewritten[index] = (validate_editorial(before,after,names,allow_pages=bool(case.get('extra_pages'))) if editorial else
                                     validate_layout(before,after,case.get('pagination_allowed',False)))
                 targets[str(index)] = dict(source_sha256=sha(translated), target=after,
                     editorial_rules=editorial, extra_pages=case.get('extra_pages',0), status=case['status'])
                 report['changed'].append(record)
-            if case['status'] != 'bounded':
+            if case['status'] not in ('bounded','reviewed-no-size-increase'):
                 report['pending'].append(record)
         resource = write_messages(header,rewritten)
         result = rebuild_archive(baseline[filename],{rid:resource}) if targets else baseline[filename]

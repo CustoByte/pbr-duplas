@@ -51,9 +51,9 @@ def concise(text):
     return target, applied
 
 
-def validate_editorial(before, after, names=()):
-    if TOKEN.findall(before) != TOKEN.findall(after):
-        raise ValueError('Description revision changed native controls')
+def validate_editorial(before, after, names=(), allow_pages=False):
+    from ui.dialogue_layout import validate_presentation
+    validate_presentation(before,after,allow_pages)
     if re.findall(r'\d+(?:[.,/]\d+)*', TOKEN.sub('', before)) != re.findall(r'\d+(?:[.,/]\d+)*', TOKEN.sub('', after)):
         raise ValueError('Description revision changed numbers')
     a,b = (re.sub(r'\s+', ' ', x) for x in (before,after))

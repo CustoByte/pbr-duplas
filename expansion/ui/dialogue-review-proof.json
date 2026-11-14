@@ -1,9 +1,9 @@
 {
   "status": "passed-offline-review-not-complete",
   "checked_changed_message_ids": 10006,
-  "prepared_corrections": 352,
-  "added_continuation_controls": 118,
-  "pending_conservative_flags": 2661,
+  "prepared_corrections": 377,
+  "added_continuation_controls": 52,
+  "pending_conservative_flags": 2660,
   "new_translations": 0,
   "native_paging": {
     "passed": true,
@@ -235,27 +235,21 @@
       ]
     },
     {
-      "filename": "menu_name2.fsys",
-      "reproduced": true,
-      "non_message_resources_unchanged": true,
-      "changed_resources": []
-    },
-    {
-      "filename": "mes_bpass_e.fsys",
-      "reproduced": true,
-      "non_message_resources_unchanged": true,
-      "changed_resources": [
-        "0x27c31800"
-      ]
-    },
-    {
       "filename": "mes_name_e.fsys",
       "reproduced": true,
       "non_message_resources_unchanged": true,
       "changed_resources": []
     },
     {
-      "filename": "menu_fight_s.fsys",
+      "filename": "menu_btutorial.fsys",
+      "reproduced": true,
+      "non_message_resources_unchanged": true,
+      "changed_resources": [
+        "0x2a431800"
+      ]
+    },
+    {
+      "filename": "mes_bpass_e.fsys",
       "reproduced": true,
       "non_message_resources_unchanged": true,
       "changed_resources": [
@@ -279,17 +273,28 @@
       ]
     },
     {
-      "filename": "menu_btutorial.fsys",
+      "filename": "menu_fight_s.fsys",
       "reproduced": true,
       "non_message_resources_unchanged": true,
       "changed_resources": [
-        "0x2a431800"
+        "0x27c31800"
       ]
+    },
+    {
+      "filename": "menu_name2.fsys",
+      "reproduced": true,
+      "non_message_resources_unchanged": true,
+      "changed_resources": []
     }
   ],
   "untranslated_ids_unchanged": true,
   "added_snivy_name_unchanged": true,
   "player_feed_changed": false,
   "dolphin_visual_tested": false,
-  "review_complete": false
+  "review_complete": false,
+  "contextual_main_menu_targets": 79,
+  "no_screenshot_dependency": true,
+  "text_unit_tests_passed": 25,
+  "local_review_package_version": "v0.12.1-dialogue-review.1",
+  "local_review_package_sha256": "e9a53a86d2201b576e1dd69600551ff6318fd9e4650bec98dfe2014464ff0d41"
 }

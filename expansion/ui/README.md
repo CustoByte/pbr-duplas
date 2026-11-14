@@ -73,8 +73,35 @@ Caixas fixas não recebem páginas automaticamente. `dialogue_editorial.py` e
 existentes, mantendo mecânicas, números, negações e nomes. Apenas resultados
 que cabem na referência revisada entram na candidata; outros ficam pendentes.
 
-O levantamento verificou 10.006 IDs alterados e preparou 352 correções, com
-118 continuações adicionais. A revisão permanece incompleta: 2.661 alertas
+O levantamento verificou 10.006 IDs alterados e preparou 377 correções, com
+52 continuações adicionais. A revisão permanece incompleta: 2.660 alertas
 conservadores ainda dependem de contexto ou da moldura real. São alertas, não
 uma contagem comprovada de defeitos visuais. `dialogue-review-draft.json` não
 é uma aprovação de publicação e não modifica o canal dos jogadores.
+
+
+### Revisão contextual da recepcionista e dos menus
+
+O usuário não consegue enviar prints; a revisão continua pelos dados existentes.
+`dialogue-menu-editorial.json` agora inclui 79 alvos já traduzidos, revisados
+contra o inglês. Foram corrigidos erros como “Treinadores” virar “tênis”, “clear”
+virar “limpar”, concordância da Anna, trechos misturados e nomes de menus
+inconsistentes. “Gear” passa a “Roupas”, em vez de “Engrenagem”, tanto na opção
+quanto na explicação da NPC. Nomes de Pokémon/golpes/itens/natures/habilidades
+não são traduzidos.
+
+A capacidade de páginas de uma mensagem interativa pode usar a maior página
+original **da mesma mensagem**, pois o avanço nativo mantém a mesma moldura e
+as coordenadas. Não herda dimensões de um menu diferente. O nome do jogador
+`0050` também recebe o cenário conservador de largura no medidor nativo.
+
+Uma legenda fixa explicitamente revisada (`7076`) pode aceitar uma correção
+mais curta que a tradução antiga, com controles e altura preservados, mesmo
+quando a referência literal inglesa é menor. O status registra
+`reviewed-no-size-increase`, sem fingir uma moldura física medida.
+
+`package_dialogue_review.py` gera um pacote local do aplicador, reaproveitando
+o núcleo Snivy test.4 e substituindo apenas deltas de mensagens. Confere o
+roundtrip de todos os 13 arquivos da base; DOL, common, deck, título, catálogo,
+modelo/animações/ícones e nomes da Snivy não mudam. Não publica no GitHub nem
+atualiza o feed dos jogadores. A revisão geral permanece em andamento.

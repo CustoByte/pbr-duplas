@@ -27,7 +27,7 @@ class Metrics:
         def fixture(m):
             c=int(m[0][1:5],16)
             if c>=0xF000 or c in {3,5}:return m[0]
-            if c in {0xF,0x15,0x20,0x21,0x25,0x2C,0x31,0x51}:return 'WWWWWWWWWW'
+            if c in {0xF,0x15,0x20,0x21,0x25,0x2C,0x31,0x50,0x51}:return 'WWWWWWWWWW'
             if c in {0xE,0x17,0x18,0x26}:return '9999'
             return ''
         self.h.uc.mem_write(self.pointer,encoded(TOKEN.sub(fixture,text)))

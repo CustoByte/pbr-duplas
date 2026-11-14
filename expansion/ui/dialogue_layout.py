@@ -18,7 +18,7 @@ def lexical(text):
     return re.sub(r'\s+', '', TOKEN.sub('', text))
 
 
-def validate_layout(before, after, allow_pages=False):
+def validate_presentation(before, after, allow_pages=False):
     """Only whitespace and explicitly authorized extra continuation may change."""
     a, b = TOKEN.findall(before), TOKEN.findall(after)
     if allow_pages:
@@ -31,11 +31,18 @@ def validate_layout(before, after, allow_pages=False):
             a = TOKEN.findall(reset.sub(PAGE, before))
             b = TOKEN.findall(reset.sub(PAGE, after))
         a, b = [x for x in a if x != PAGE], [x for x in b if x != PAGE]
-    if a != b or lexical(before) != lexical(after):
-        raise ValueError('Layout changed text, formatting, variables, or their order')
+    if a != b:
+        raise ValueError('Layout changed formatting, variables, or their order')
     if encoded(before)[:8] != encoded(after)[:8]:
         raise ValueError('Font or style changed')
     return encoded(after)
+
+
+def validate_layout(before, after, allow_pages=False):
+    result=validate_presentation(before,after,allow_pages)
+    if lexical(before)!=lexical(after):
+        raise ValueError('Layout changed translated words')
+    return result
 
 
 def can_paginate(kind, source):
@@ -117,6 +124,17 @@ def reflow(kind, index, original, translated, metrics, names=()):
     if len(source_pages) != len(target_pages):
         raise ValueError('Baseline page structure differs from original')
     paginate = can_paginate(kind, original)
+    dialogue_frame = None
+    if paginate:
+        # Continuation keeps the same native frame/coordinates. Its capacity
+        # is evidenced by all pages of THIS message, never an unrelated menu.
+        sizes = []
+        for n, page in enumerate(source_pages):
+            if not TOKEN.sub('',page).strip(): continue
+            if n and page.startswith('\n'): page=page[1:]
+            sizes.append(metrics(prefix+page))
+        if sizes:
+            dialogue_frame=(min(max(w for w,h in sizes),380),max(h for w,h in sizes))
     output, cases = [], []
     for number, (source, target) in enumerate(zip(source_pages, target_pages)):
         if not TOKEN.sub('', source).strip():
@@ -134,8 +152,8 @@ def reflow(kind, index, original, translated, metrics, names=()):
         if kind == 'battle' and prefix.startswith('{F006}'):
             width = max(sw, 240)
             height = max(sh, metrics(prefix + 'M')[1] * 2)
-        if paginate:
-            width = min(width, 380)
+        if dialogue_frame is not None:
+            width,height=dialogue_frame
         before = measure(target)
         if before[0] <= width and before[1] <= height:
             output.append(target)
@@ -149,7 +167,8 @@ def reflow(kind, index, original, translated, metrics, names=()):
             okay = after[0] <= width and after[1] <= height
         else:
             lead = LEAD.match(target)[0]
-            words = protected_words(target[len(lead):], names)
+            labels = {m[1] for m in re.finditer(r'\{0005:0001\}(.*?)\{0005:0005\}', target, re.S)}
+            words = protected_words(target[len(lead):], set(names) | labels)
             lines = ['']
             for word in words:
                 trial = (lines[-1] + ' ' + word).strip()
