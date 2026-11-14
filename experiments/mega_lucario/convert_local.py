@@ -2,7 +2,7 @@
 
 No model downloads, game data uploads, direct save writes or runtime compilation.
 """
-import argparse,hashlib,json,os,shutil,subprocess,sys,tempfile,zipfile
+import argparse,hashlib,json,os,shutil,subprocess,sys,tempfile,zipfile,traceback
 from pathlib import Path
 HERE=Path(__file__).resolve().parent;ROOT=HERE.parents[1]
 OUTPUTS=('pkx_502.fsys','menu_face.fsys','menu_pokemon.fsys')
@@ -59,7 +59,25 @@ def convert(blender,source,originals,pbr_addon,reader,cache):
   output=work/'assets';report=build(work,originals,output);report.update(key=key,source_sha256=sha(source))
   (output/'verified-cache.json').write_text(json.dumps(report,indent=2)+'\n');output.rename(destination)
  return destination
-if __name__=='__main__':
+def main():
  p=argparse.ArgumentParser(description=__doc__)
  for n in ('blender','source','originals','pbr-addon','reader','cache','result'):p.add_argument('--'+n,type=Path,required=True)
- a=p.parse_args();result=convert(a.blender,a.source,a.originals,a.pbr_addon,a.reader,a.cache);a.result.write_text(json.dumps(dict(private_assets=str(result)),indent=2)+'\n');print(result)
+ a=p.parse_args()
+ try:
+  a.cache.mkdir(parents=True,exist_ok=True)
+  for name in ('last-failure.log','conversion-failure.log'):(a.cache/name).unlink(missing_ok=True)
+  result=convert(a.blender,a.source,a.originals,a.pbr_addon,a.reader,a.cache)
+  a.result.write_text(json.dumps(dict(private_assets=str(result)),indent=2)+'\n');print(result)
+  return 0
+ except Exception:
+  detail=traceback.format_exc()
+  stage_log=a.cache/'last-failure.log'
+  if stage_log.is_file():detail+='\nStage output:\n'+stage_log.read_text(encoding='utf-8',errors='replace')
+  failure=a.cache/'conversion-failure.log'
+  try:
+   a.cache.mkdir(parents=True,exist_ok=True);failure.write_text(detail,encoding='utf-8')
+  except OSError:pass
+  print(detail,file=sys.stderr);print('Mega Lucario: conversion log: '+str(failure),flush=True)
+  return 1
+if __name__=='__main__':
+ raise SystemExit(main())

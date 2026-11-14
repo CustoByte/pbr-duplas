@@ -5,7 +5,7 @@ ROOT=Path(__file__).resolve().parents[2]
 sys.path[:0]=[str(ROOT/'expansion'),str(ROOT/'mod-source')]
 from binary_delta import create,apply,sha
 from package_release import zipped
-VERSION='v0.13.0-mega-lucario-test.1'
+VERSION='v0.13.0-mega-lucario-test.2'
 
 def package(integrated,originals,output):
  source=ROOT/'expansion/packages/dialogue-test2/aplicador-core.zip'
@@ -29,10 +29,12 @@ def package(integrated,originals,output):
   checks.append(dict(path=e['installed_path'],target_sha256=sha(result),patched=name in changed))
  manifest['original_sha256']['files/pkx_448.fsys']='e77ee784794c9e24fad632437b8f63709084227848d4e162f8e05eeb2dbce85a'
  files['manifesto.json']=(json.dumps(manifest,indent=2)+'\n').encode()
+ # The graphics asset builder imports registrations, which needs this parser.
+ files['expansion/translation/messages.py']=(ROOT/'expansion/translation/messages.py').read_bytes()
  for name in ('Aplicar-Mod.ps1','Preparar-Mega-Lucario.ps1'):files[name]=(ROOT/'expansion'/name).read_bytes()
  for p in Path(__file__).resolve().parent.rglob('*'):
   if p.is_file() and '__pycache__' not in p.parts and p.suffix.lower() in ('.py','.c','.json','.md','.txt','.exe'):files[p.relative_to(ROOT).as_posix()]=p.read_bytes()
- text='''MEGA LUCARIO — TESTE 1 — WINDOWS
+ text='''MEGA LUCARIO — TESTE 2 — WINDOWS
 Execute o mesmo INICIAR-TESTE-WINDOWS.cmd que voce ja utiliza.
 O atualizador conserva as 433 correcoes de texto da versao anterior.
 

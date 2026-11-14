@@ -22,7 +22,7 @@ jobs:
       - name: Verify translation terminology and protected fields
         env:
           PYTHONPATH: expansion:mod-source
-        run: python3 -m unittest translation.test_lot5000 ui.test_text -v
+        run: python3 -m unittest translation.test_lot5000 ui.test_text test_mega_packaging -v
       - name: Confirm feed matches verified core
         run: cmp expansion/update-test.json /tmp/full493-release/update.json
       - name: Publish test release without changing stable

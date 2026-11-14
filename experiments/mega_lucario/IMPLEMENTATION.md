@@ -110,3 +110,15 @@ com iluminação simplificada, a 30 fps. A câmera fica fixa por trecho; os olho
 recebem um enquadramento aproximado. O MP4 privado tem 773 quadros (25,77 s),
 960×720, H.264, e passou na decodificação integral. Não inclui efeitos nativos
 de golpes/Pokébola e não é gravação de gameplay. Ver `video-proof.json`.
+
+## Correção do pacote test.2
+
+O pacote test.1 omitia `expansion/translation/messages.py`, importado na montagem
+final dos assets. A reprodução a partir do ZIP publicado, com PYTHONPATH limpo,
+confirmou `ModuleNotFoundError: No module named translation`. O empacotador agora
+inclui esse módulo. A checagem de publicação importa os registros dentro de uma
+extração isolada do pacote, impedindo que arquivos da checkout ocultem dependências
+ausentes. Um teste de regressão confirma a falha do ZIP antigo e o sucesso do novo.
+Falhas fora das etapas Blender também são gravadas em `conversion-failure.log`
+e o instalador apresenta o detalhe e o caminho do log. Localizar o modelo em
+Downloads não causa essa falha. As configurações do personagem não mudaram.

@@ -19,7 +19,11 @@ function Prepare-MegaLucario([string]$Partition, [string]$Source, [string]$Cache
         & $python (Join-Path $scripts 'convert_local.py') --blender $blender --source $Source `
             --originals (Join-Path $Partition 'files') --pbr-addon (Join-Path $dependencies 'pbr-addon') `
             --reader $reader --cache $assetCache --result $resultFile | ForEach-Object { Write-Host $_ }
-        if ($LASTEXITCODE -ne 0) { throw 'Falha na conversao do Mega Lucario. A imagem anterior foi preservada.' }
+        if ($LASTEXITCODE -ne 0) {
+            $failureLog = Join-Path $assetCache 'conversion-failure.log'
+            $detail = if (Test-Path -LiteralPath $failureLog) { (Get-Content -LiteralPath $failureLog -Encoding UTF8 -Tail 8) -join [Environment]::NewLine } else { 'O conversor nao gravou o detalhe da falha.' }
+            throw "Falha na conversao do Mega Lucario.`n$detail`nLog: $failureLog`nA imagem anterior foi preservada."
+        }
         $result = Get-Content -LiteralPath $resultFile -Raw | ConvertFrom-Json
         $output = [IO.Path]::GetFullPath($result.private_assets)
         $allowed = [IO.Path]::GetFullPath($assetCache) + [IO.Path]::DirectorySeparatorChar
