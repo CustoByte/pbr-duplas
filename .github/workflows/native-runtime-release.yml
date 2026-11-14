@@ -1,0 +1,28 @@
+name: Publish native scene runtime
+on:
+  push:
+    branches: [project/native-launcher]
+    paths: [.github/workflows/native-runtime-release.yml]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  build-and-publish:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          ref: project/native-launcher
+      - name: Build and execute actual Windows scene
+        run: python native/tools/release_runtime.py "${{ runner.temp }}/native-release"
+      - name: Publish verified runtime asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload v0.1.0-native-scene.1 "${{ runner.temp }}/native-release/PBR-Native-Runtime-Windows.zip" --repo "$env:GITHUB_REPOSITORY" --clobber
+      - name: Update native feed after upload succeeds
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add native/update.json native/runtime/package-proof.json native/runtime/windows-ci-proof.json
+          git commit -m "Record verified Windows native scene release"
+          git push origin HEAD:project/native-launcher
