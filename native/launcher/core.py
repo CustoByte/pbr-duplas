@@ -104,10 +104,10 @@ def unpack_runtime(package: Path, destination: Path):
             raise ValueError('Pacote expandido excede o limite.')
         seen = set()
         for entry in entries:
-            name = entry.filename
+            name = entry.orig_filename
             path = PurePosixPath(name)
             mode = (entry.external_attr >> 16) & 0o170000
-            if ('\\' in name or ':' in name or path.is_absolute() or '..' in path.parts
+            if (name != entry.filename or '\\' in name or ':' in name or path.is_absolute() or '..' in path.parts
                     or not path.parts or mode == 0o120000
                     or any(p.endswith((' ', '.')) for p in path.parts)
                     or any(p.split('.')[0].upper() in {'CON', 'PRN', 'AUX', 'NUL',
