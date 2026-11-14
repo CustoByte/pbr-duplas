@@ -1,3 +1,28 @@
+# Prioridade atual — revisão do que já foi traduzido
+
+Pedido de 14/11/2026: pausar traduções inéditas e revisar o encaixe de todos os
+textos existentes. O usuário apontou os menus principais e as falas da NPC do
+menu como prioridade. Não retomar lotes novos antes de encerrar essa revisão.
+
+O levantamento atual mede 10.006 IDs já alterados em quatro tabelas MESG
+canônicas, sem contar suas cópias como traduções adicionais. A candidata local
+prepara 352 correções e 118 continuações novas, com zero traduções inéditas.
+Os nomes de Pokémon, golpes, itens, natures, habilidades e treinadores aprovados
+continuam protegidos. Não reduzir fontes para ocultar estouros.
+
+A revisão não terminou. Há 2.661 alertas conservadores de dimensão, que não
+significam 2.661 falhas visuais: o tamanho do texto original não é a moldura
+física de cada caixa. Títulos curtos e nomes podem superar essa referência e
+caber normalmente. Não tratar esses alertas como resolvidos sem referência de
+janela ou revisão contextual. Nenhum novo pacote foi publicado.
+
+Código e plano: `ui/review_existing_layout.py`, `ui/dialogue-review-draft.json`
+e `ui/dialogue-review-proof.json`. Arquivos completos do jogo e o relatório
+privado detalhado ficam somente no workspace. O plano é uma candidata local e
+não foi ligado ao feed dos jogadores.
+
+---
+
 # Continuidade após o teste 13
 
 O usuário autorizou finalizar e publicar todas as correções dos prints.

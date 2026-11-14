@@ -1,0 +1,2721 @@
+{
+  "status": "review-in-progress-not-published",
+  "resources": {
+    "mes_common.fsys": {
+      "base_sha256": "72616c5f217a1580e231862c8efca8b1006c76182dc662ebe8018fb46ab9eea7",
+      "resource": "0x27c10000",
+      "target_sha256": "ae540ea34f2196ae5c548d4a7af24d38f99fbc0c61ce7f08f8cde5e0214b3f18",
+      "targets_by_id": {
+        "1570": {
+          "source_sha256": "66e398617da3cb6a5fd0737a6a53fb4cce4601a9d59b77101ee9f0efc70a6db7",
+          "target": "{F001}{F101}Bebida nutritiva para Pokémon.\nAumenta a Velocidade base de um\nPokémon.",
+          "editorial_rules": [
+            "Uma bebida nutritiva para Pokémon.",
+            "estatistica de velocidade base"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1571": {
+          "source_sha256": "3c33f28f4c8eea7198b9592674fd2f380a6c34e035e6af5cb3d67f9c5e9cb3f3",
+          "target": "{F001}{F101}Bebida nutritiva para Pokémon.\nEleva o Atq. Esp. base de um\nPokémon.",
+          "editorial_rules": [
+            "Uma bebida nutritiva para Pokémon.",
+            "Eleva a base Sp. Estatistica Atk (Sp. Atk)"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1574": {
+          "source_sha256": "78b74217ed31e9001b796a72736322136bd20edf41a3385bef24f4726995e3eb",
+          "target": "{F001}{F101}Bebida nutritiva para Pokémon.\nEleva a Def. Esp. base de um\nPokémon.",
+          "editorial_rules": [
+            "Uma bebida nutritiva para Pokémon.",
+            "Eleva a base Sp. Estatistica de Def (Sp. Def)"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1577": {
+          "source_sha256": "a42552be5d38e3e2523607da55b8b235a526fbfb1f01a41a48a730777d9e4464",
+          "target": "{F001}{F101}Impede a redução de atributos entre\no grupo do Treinador Pokémon por\ncinco turnos apos o uso.",
+          "editorial_rules": [
+            "implicit description subject: Um item que "
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1578": {
+          "source_sha256": "b5edf983c3cbd05f3c8d0615423f6077138b7255127de0e49fcdb328841fd650",
+          "target": "{F001}{F101}Aumenta a chance de acerto crítico\nde um Pokémon em batalha. O efeito\nacaba ao trocar o Pokémon.",
+          "editorial_rules": [
+            "O efeito desaparece se o Pokémon for retirado.",
+            "a taxa de acerto crítico",
+            "implicit description subject: Um item que "
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1579": {
+          "source_sha256": "22d9a0fa4b74a93085937cbe0be3355ba84733b055ee27ad358af7c39052770e",
+          "target": "{F001}{F101}Aumenta a Ataque de um Pokémon em\nbatalha. O efeito acaba ao trocar o\nPokémon.",
+          "editorial_rules": [
+            "O efeito desaparece se o Pokémon for retirado.",
+            "estatistica de ataque",
+            "implicit description subject: Um item que "
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1580": {
+          "source_sha256": "ab138d096f76853dd81e3a1415b181204adcd916424b03ef0dc9a2e6585c00a3",
+          "target": "{F001}{F101}Aumenta a Defesa de um Pokémon em\nbatalha. O efeito acaba ao trocar o\nPokémon.",
+          "editorial_rules": [
+            "O efeito desaparece se o Pokémon for retirado.",
+            "estatistica de Defesa",
+            "implicit description subject: Um item que "
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1581": {
+          "source_sha256": "61c4848f7ab264e8e6f30ac5cd5907c714962d80b686e654ee13532ec68d74d3",
+          "target": "{F001}{F101}Aumenta a Velocidade de um Pokémon\nem batalha. O efeito acaba ao trocar\no Pokémon.",
+          "editorial_rules": [
+            "O efeito desaparece se o Pokémon for retirado.",
+            "estatistica de velocidade",
+            "implicit description subject: Um item que "
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1582": {
+          "source_sha256": "1ee50be3c5796fc0fb7ac89896df0ee4f74d290d57dd0866d952f78cbf44a0c7",
+          "target": "{F001}{F101}Aumenta a precisão de um Pokémon\nem batalha. O efeito acaba ao trocar\no Pokémon.",
+          "editorial_rules": [
+            "O efeito desaparece se o Pokémon for retirado.",
+            "implicit description subject: Um item que "
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1583": {
+          "source_sha256": "68f22b22c6e8dcf9e67108f709b39b5e506456306510dadd34e9392bcde3af35",
+          "target": "{F001}{F101}Aumenta o Atq. Esp. de um Pokémon\nem batalha. O efeito acaba ao trocar\no Pokémon.",
+          "editorial_rules": [
+            "O efeito desaparece se o Pokémon for retirado.",
+            "Sp. Estatistica de ataque",
+            "implicit description subject: Um item que "
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1584": {
+          "source_sha256": "4abb60cac9bdb86dc833d66fc0ea4188af66f62e4eeb7cd0fb1288257a6e6436",
+          "target": "{F001}{F101}Aumenta o Def. Esp. de um Pokémon em\nbatalha. O efeito acaba ao trocar o\nPokémon.",
+          "editorial_rules": [
+            "O efeito desaparece se o Pokémon for retirado.",
+            "Sp. Estatistica de definicao",
+            "implicit description subject: Um item que "
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1611": {
+          "source_sha256": "eb4bc5a54b22186ddf6372e5ab859a541e97e452bf26996c4d84a4989a5e9be7",
+          "target": "{F001}{F101}Uma pérola grande que brilha em uma\nlinda cor prateada. Pode ser\nvendido por um preco alto nas lojas.",
+          "editorial_rules": [
+            "Uma perola bastante grande"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1617": {
+          "source_sha256": "39e7fdefa84ff3eea5eaf4a897a95ac606ac7d3ce4a567f4ba516718cee461e5",
+          "target": "{F001}{F101}Fertilizante para solo macio. Acelera\no crescimento das bagas. Porém,\ntambém seca o solo mais rapidamente.",
+          "editorial_rules": [
+            "Um fertilizante vegetal espalhado em solo macio.",
+            "No entanto,"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1675": {
+          "source_sha256": "f7df1c1fc438861e049fd07cac9c5887493552efd39ebe7115cb9d6e89981f6f",
+          "target": "{F001}{F101}Um ingrediente Poffin. Pode ser\nusado ou segurado por um\nPokémon para descongela-lo.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1735": {
+          "source_sha256": "8434e0b8fc2a52fd09de6ea68eaba2f6c95e097e17f696854de29b1caad3ae5a",
+          "target": "{F001}{F101}Para um Pokémon segurar. Lança\num brilho traicoeiro que diminui a\nprecisão do oponente.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1737": {
+          "source_sha256": "d4a08da9b97a432f34195b5cd6aca6d2c47c0d460920f07ca381ddacc130ed26",
+          "target": "{F001}{F101}Para um Pokémon segurar. E uma cinta\nrigida e pesada que promove um forte\ncrescimento, mas diminui a velocidade.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1738": {
+          "source_sha256": "abf6e45f912cca1cf21a494eb50698f4dc85f6866feb660d8b47157b3692d733",
+          "target": "{F001}{F101}Para um Pokémon segurar. O titular\nrecebe uma parte da Exp da batalha.\nPontos sem batalhar.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1740": {
+          "source_sha256": "8045e2fdd80826d57bfdd7c7d67be00da9ca8139ce0d8b2f9718b90e4579329b",
+          "target": "{F001}{F101}Para um Pokémon segurar. E um sino\ncom um toque reconfortante que\nacalma o portador e o torna amigavel.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1741": {
+          "source_sha256": "04362cffce36610e749aed664d8f0ad32e6a0f7236cbdc124f8ef9b1354ec080",
+          "target": "{F001}{F101}Para um Pokémon segurar. Isso tira\no titular da paixao. Pode ser usado\napenas uma vez.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1744": {
+          "source_sha256": "98da6854d7fc41b3d31e3a9cd8e94294ef06e2ee6a665913126a24ceb4920d01",
+          "target": "{F001}{F101}Para um Pokémon segurar. E um po\nprateado brilhante que aumenta o\npoder dos golpes do tipo Inseto.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1745": {
+          "source_sha256": "5a68719da351249877a25b9767ea70e33db1277a7e127ebb4456673655a8bdc7",
+          "target": "{F001}{F101}Para um Pokémon segurar. Dobra o\npremio em dinheiro de uma batalha\nse o detentor Pokémon participar.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1746": {
+          "source_sha256": "da43315accc75c91aa14d631d4dedc2b734ba038afd121a734d61dea2ac69618",
+          "target": "{F001}{F101}Para um Pokémon segurar. Ajuda a\nmanter o Pokémon selvagem afastado\nse o titular for o primeiro no grupo.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1752": {
+          "source_sha256": "474d290ba9b656e5b64c173becef48d9f54add2366040406c99d8212b9afa0f8",
+          "target": "{F001}{F101}Para um Pokémon segurar. O titular\npode suportar um ataque potencial\nde KO, deixando-o com apenas 1 HP.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1760": {
+          "source_sha256": "0dfabff0e8983dd94491ee49c1e22a3870df61a51ff4369d15f042926f32ab27",
+          "target": "{F001}{F101}Para um Pokémon segurar. E uma\npedra inquebravel que aumenta o\npoder dos golpes do tipo Pedra.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1763": {
+          "source_sha256": "8b359408ed0df2cd9fee22000b2e1625e84a177a702d866b64f9381bcec678cc",
+          "target": "{F001}{F101}Para um Pokémon segurar. E um cinto\nque aumenta a determinacao e\ngolpes do tipo Lutador.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1764": {
+          "source_sha256": "fb4bb3a9ae92f7ac16f9515b2d54e569dd51f22ed1dd7276eb0158ee291ca19a",
+          "target": "{F001}{F101}Para um Pokémon segurar. E um ima\npoderoso que aumenta o poder dos\ngolpes do tipo elétrico.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1765": {
+          "source_sha256": "6742a6c7aedd1b1602cc75da7ac53518c69d09a119aa091e97705b026eb0bf97",
+          "target": "{F001}{F101}Para um Pokémon segurar. E uma joia\nem forma de lagrima que aumenta o\npoder dos golpes do tipo Água.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1766": {
+          "source_sha256": "2e151bb019ca2e40abe5031e3e61acab92ce8ab369e71f6644e9ee2d8216fdea",
+          "target": "{F001}{F101}Para um Pokémon segurar. E um bico\nlongo e afiado que aumenta o\npoder dos golpes do tipo Voador.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1768": {
+          "source_sha256": "2844148e57e29179b66368773f06092014cc5f4e141f4432011ab37649fd1777",
+          "target": "{F001}{F101}Para um Pokémon segurar. E um\npedaco de gelo que repele o calor\ne aumenta os golpes do tipo Gelo.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1772": {
+          "source_sha256": "4ff6f2e36759980f307db9420bb24373fa7ff05996af433d2753c31e91c33699",
+          "target": "{F001}{F101}Para um Pokémon segurar. E uma\npresa dura e afiada que aumenta o\npoder dos golpes do tipo Dragao.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1773": {
+          "source_sha256": "544af642f57ec1bc9ed24307d78dea8466dc916afe314b3e85d7dcc4cd41421e",
+          "target": "{F001}{F101}Para um Pokémon segurar. E um\nlenco suntuoso que aumenta o\npoder dos golpes do tipo Normal.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1775": {
+          "source_sha256": "9de3168004c52b0bddeea139263f4f8364ee369af710b57ad6d7659559aef704",
+          "target": "{F001}{F101}Para um Pokémon segurar. O HP do\ntitular e restaurado um pouco\ncada vez que causa dano.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1776": {
+          "source_sha256": "8326b0d3e1c32dc12c9ca03bd317768e0b624d6947764923d6009420f419b5b2",
+          "target": "{F001}{F101}Para um Pokémon segurar. E um incenso\ncom um aroma curioso que aumenta o\npoder dos golpes do tipo Água.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1789": {
+          "source_sha256": "2f8ea6d09acc8dd87cc223f3c8383f5e8e165d0721d4ee1133e66226db27c9d8",
+          "target": "{F001}{F101}Para um Pokémon segurar. E um\npar de oculos grossos que\naumenta ligeiramente o poder\ndos golpes especiais.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1792": {
+          "source_sha256": "22d3884a0856dd431f48a61912bcc875e3cf983f1a5357f87fee8c5467f80fe0",
+          "target": "{F001}{F101}Para um Pokémon segurar. Aumenta o\npoder dos golpes, mas ao custo de\nalgum HP em cada golpe.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1794": {
+          "source_sha256": "dc28d640ee6356efc2817001cdbd6caf3ffce9ffa65f350506d9ac41dc1e1101",
+          "target": "{F001}{F101}Para um Pokémon segurar. E um orbe\nbizarro que envenena gravemente o\nportador em batalha.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1795": {
+          "source_sha256": "14b2ebf751adc3518f376711deb016ff927ec91de4f56831aa94284a2720b8d8",
+          "target": "{F001}{F101}Para um Pokémon segurar. E um\norbe bizarro que queima quem o\npossui em batalha.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1797": {
+          "source_sha256": "179d9b3c0da252be14ce93c837aa710170707426c2cd8febc4b37fbfddee9f0c",
+          "target": "{F001}{F101}Para um Pokémon segurar. Se tiver HP\ntotal, o titular sofrera um ataque\npotencial de KO, deixando 1 HP.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1811": {
+          "source_sha256": "4a43fb98c3f8b8bb582fb00ca4289b3bbfc7761a80b3e72c59cdf2ae98b355ae",
+          "target": "{F001}{F101}Um item de retencao Pokémon que\npromove ganho de ataque ao subir\nde nível, mas reduz a Velocidade.",
+          "editorial_rules": [
+            "estatistica de velocidade"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1814": {
+          "source_sha256": "689c350b0964cef6e79e10f077db055ce59054b9bcc1c3d5561bdf542a45867c",
+          "target": "{F001}{F101}Um item de retencao Pokémon que\npromove Sp. Def ganha ao subir de\nnível, mas reduz a Velocidade.",
+          "editorial_rules": [
+            "estatistica de velocidade"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1816": {
+          "source_sha256": "98d02642855f0aaf6e224c2fbbde63743e518edab869c78c7371b37168b98b08",
+          "target": "{F001}{F101}Um item de retencao Pokémon que\npromove ganho de HP ao subir de\nnível, mas reduz a Velocidade.",
+          "editorial_rules": [
+            "estatistica de velocidade"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1820": {
+          "source_sha256": "023c6266bd7561dec9f3f34687643ad2976b77880d084d182f6d3cdd4c01b33f",
+          "target": "{F001}{F101}Para um Pokémon segurar. E uma\ntabua de pedra que aumenta o\npoder dos golpes do tipo Fogo.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1821": {
+          "source_sha256": "63fbb2fa2ffb0af0134eb0903afa30a154cf6c89bceb8b1aa84b723975b60c78",
+          "target": "{F001}{F101}Para um Pokémon segurar. E uma\ntabua de pedra que aumenta o\npoder dos golpes do tipo Água.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1822": {
+          "source_sha256": "221289dadd3474ea611460542ac4a2298fb782693b7bbb10dc15525154e1724c",
+          "target": "{F001}{F101}Para um Pokémon segurar. E uma\ntabua de pedra que aumenta o\npoder dos golpes do tipo Elétrico.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1823": {
+          "source_sha256": "8d6260c39f0c69e8ea85dfcf457c8909b6d625892eaa53f5ea982e8a766abb14",
+          "target": "{F001}{F101}Para um Pokémon segurar. E uma\ntabua de pedra que aumenta o\npoder dos golpes do tipo Planta.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1824": {
+          "source_sha256": "63ef142584dea177ccecdcab7cc254100579a29c3acc687414b89d05de1cf0bb",
+          "target": "{F001}{F101}Para um Pokémon segurar. E uma\ntabua de pedra que aumenta o\npoder dos golpes do tipo Gelo.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1825": {
+          "source_sha256": "8d3df82bb7c408e17180aafe2a94c0194e85feae2628ddbc332ecffc4bc038a5",
+          "target": "{F001}{F101}Para um Pokémon segurar. E uma\ntabua de pedra que aumenta o\npoder dos golpes do tipo Lutador.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1826": {
+          "source_sha256": "92508a796ffb53a31ecaf1a370ad0528eb45968ca7f42bc57457bac2a533ba10",
+          "target": "{F001}{F101}Para um Pokémon segurar. E uma\ntabua de pedra que aumenta o\npoder dos golpes do tipo Veneno.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1828": {
+          "source_sha256": "4e450c2d8b721e92b8ee20fde4171135d0a81bff6f499e6f09fb6325330df46b",
+          "target": "{F001}{F101}Para um Pokémon segurar. E uma\ntabua de pedra que aumenta o\npoder dos golpes do tipo Voador.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1829": {
+          "source_sha256": "ca27b572da8a21a6e6c3ace39dd42f1fac19c39b2b4e207d11e7ce9ade2def2d",
+          "target": "{F001}{F101}Para um Pokémon segurar. E uma\ntabua de pedra que aumenta o\npoder dos golpes do tipo Psychic.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1830": {
+          "source_sha256": "cfb157b467f216d33938abf88cc8364635ba081e1f8259788f120cb1523d3c8d",
+          "target": "{F001}{F101}Para um Pokémon segurar. E uma\ntabua de pedra que aumenta o\npoder dos golpes do tipo Inseto.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1831": {
+          "source_sha256": "f35d4de49910351c2070c8b9200b6ab5140382689152f81db97dabd4e029ac52",
+          "target": "{F001}{F101}Para um Pokémon segurar. E uma\ntabua de pedra que aumenta o\npoder dos golpes do tipo Pedra.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1833": {
+          "source_sha256": "98c202fe36eaf402a8371c42505f4cd038699bf89dc0bb1fe81b08f2246e2280",
+          "target": "{F001}{F101}Para um Pokémon segurar. E uma\ntabua de pedra que aumenta o\npoder dos golpes do tipo Dragao.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1834": {
+          "source_sha256": "1887a170036ce71c9ef0cc02dd83744f553d79997191a82fe6e223b3dc4b6c2f",
+          "target": "{F001}{F101}Para um Pokémon segurar. E uma\ntabua de pedra que aumenta o\npoder dos golpes do tipo Sombrio.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1835": {
+          "source_sha256": "d141127af81cfb39a18b5e9faecbc2c3ff695e01db427d0d9cd96e02573834c1",
+          "target": "{F001}{F101}Para um Pokémon segurar. E uma\ntabua de pedra que aumenta o\npoder dos golpes do tipo Aco.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1841": {
+          "source_sha256": "5a68719da351249877a25b9767ea70e33db1277a7e127ebb4456673655a8bdc7",
+          "target": "{F001}{F101}Para um Pokémon segurar. Dobra o\npremio em dinheiro de uma batalha\nse o detentor Pokémon participar.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1842": {
+          "source_sha256": "da43315accc75c91aa14d631d4dedc2b734ba038afd121a734d61dea2ac69618",
+          "target": "{F001}{F101}Para um Pokémon segurar. Ajuda a\nmanter o Pokémon selvagem afastado\nse o titular for o primeiro no grupo.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1848": {
+          "source_sha256": "2d6d858fb3c571307de74b08974ca25bb156858e2574959356dc615468810967",
+          "target": "{F001}{F101}Para um Pokémon segurar. E uma\ngarra afiada que aumenta a chance\nde acerto crítico do titular.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon.",
+            "a taxa de acerto crítico"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1849": {
+          "source_sha256": "a3250acf257cb2fcfd27f11889e9d04442962c1268aefa543377037818cb12bd",
+          "target": "{F001}{F101}Para um Pokémon segurar. Pode\nfazer com que o inimigo estremeca\nquando o portador inflige dano.",
+          "editorial_rules": [
+            "Um item a ser mantido por um Pokémon."
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1906": {
+          "source_sha256": "371081f9b9f797fe1d3e4e831a0db943685668eb923b5360ff7c7b1808b20f63",
+          "target": "{F001}{F101}Ataca com uma carga eletrica. Pode\nusar qualquer eletricidade restante\npara aumentar seu Atq. Esp..",
+          "editorial_rules": [
+            "Sp. Estatistica de ataque",
+            "implicit description subject: O usuário "
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1924": {
+          "source_sha256": "67f803d2cb31b0c142ad18494dba123305992daadb7a2394ab6a0cb7c65c0f0e",
+          "target": "{F001}{F101}Uma danca frenetica para elevar o\nespirito de luta. Aumenta\ndrasticamente a Ataque do usuário.",
+          "editorial_rules": [
+            "estatistica de ataque"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "1936": {
+          "source_sha256": "ed64d7b3627c84807777df14bfd5e0a62c4114a2c318a68641a8700cf2abcd52",
+          "target": "{F001}{F101}O Pokémon aprende Swagger.\nEnfurece o inimigo e o deixa\nconfuso. Porém, também aumenta\ndrasticamente a Ataque do inimigo.",
+          "editorial_rules": [
+            "estatistica de ataque",
+            "No entanto,",
+            "implicit description subject: O usuário "
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3150": {
+          "source_sha256": "1e1640045110ab5ba3605c24b0f6d0473ef0fa59600fcb577fd8b65ff97b4b5a",
+          "target": "{F002}{F101}Aumenta a Ataque do\nPokémon.",
+          "editorial_rules": [
+            "estatistica de ataque"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3168": {
+          "source_sha256": "1ffb2336a630ca93d4a0a48021aea27af796dfcc489eed97596f8eb4ed0db86f",
+          "target": "{F002}{F101}Aumenta a Ataque, mas\ndiminui a precisão.",
+          "editorial_rules": [
+            "estatistica de ataque"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3259": {
+          "source_sha256": "4acc41a9ce88e0de9bdf39b562020558ca293178ab1a25e0cd6e974bcb374101",
+          "target": "{F001}{F101}O inimigo e atingido\npor uma serie de\nsocos que atingem\nde duas a cinco\nvezes seguidas.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3263": {
+          "source_sha256": "72fb76e5c7c79026faa3b3a59f66050766dbd27ef277badd8c288a453df0cee0",
+          "target": "{F001}{F101}O inimigo e socado\ncom um punho\ngelado. Pode\ndeixar o alvo\ncongelado.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3271": {
+          "source_sha256": "605dedb2d321b9af1cc99107de976a33da73b31a8440fd7af5a78727fd26e539",
+          "target": "{F001}{F101}Uma rajada de vento\ne agitada pelas asas\ne lançada contra o\ninimigo para causar\ndanos.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3298": {
+          "source_sha256": "05358d55d3dd2d357962e96a4e1fb39afc456577d9aebd87e3491feeaabfc134",
+          "target": "{F001}{F101}O inimigo recebe um\nolhar intimidador com\nolhos penetrantes. A\nDefesa do alvo e\nreduzida.",
+          "editorial_rules": [
+            "estatistica de Defesa"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3299": {
+          "source_sha256": "cd5630810552c2d2d8a161571594639ec381c8e9b6d5bad3bca849efb5f638ab",
+          "target": "{F001}{F101}O inimigo e mordido\ncom presas\nferozmente afiadas.\nIsso pode fazer o\nalvo recuar.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3300": {
+          "source_sha256": "3cf50385608f142bbf3379666efd4094d79b2934f53c19807621a3fdfcb90f1c",
+          "target": "{F001}{F101}Rosna de forma\ncativante, tornando o\ninimigo menos\ncauteloso. A Ataque\ndo alvo e reduzida.",
+          "editorial_rules": [
+            "estatistica de ataque"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3304": {
+          "source_sha256": "1fe0499f045f4b9833bd0dc5deb1bf19c2969ea40316a1ff8060c32f888a20d6",
+          "target": "{F001}{F101}O inimigo e atingido\npor uma onda de\nchoque destrutiva\nque sempre causa 20\nHP de dano.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3307": {
+          "source_sha256": "85584dad5b983ad7e964246e6204381be16c6bb12b5c8176168e4b7870c44330",
+          "target": "{F001}{F101}O inimigo e atacado\ncom pequenas\nchamas. O alvo\ntambém pode ficar\nqueimado.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3316": {
+          "source_sha256": "33bf85c957de95adc9298c0bfd498cabbf42a934414035ec76e0d0acc7c9a5ec",
+          "target": "{F001}{F101}Um jato de bolhas e\nejetado com forca\nno inimigo. Também\npode diminuir a\nVelocidade do alvo.",
+          "editorial_rules": [
+            "estatistica de velocidade"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3317": {
+          "source_sha256": "b0e27ad56d9081707b4f9e9a91999550a6486aea07a5a9a1e26a8ba5cc90effd",
+          "target": "{F001}{F101}O inimigo e atingido\npor um raio da cor do\narco-iris. Também\npode diminuir a\nAtaque do alvo.",
+          "editorial_rules": [
+            "estatistica de ataque"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3320": {
+          "source_sha256": "107ac5cc8ff1503e4bfdd8915fd0e3e2ac91b4279cb3715918e79c812659df32",
+          "target": "{F001}{F101}Um ataque de\nsaca-rolhas com\no bico afiado\natuando como uma\nfuradeira.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3329": {
+          "source_sha256": "54c1e1d3f7ae6373491c60a48beb0da8cd470093a96db610401802cebee98eb0",
+          "target": "{F001}{F101}O corpo do usuário e\nforcado a crescer\nde uma so vez. Eleva\no Sp. Estatistica de\nataque.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3331": {
+          "source_sha256": "534afdce336855ea7f1eaa94f8d3a641f887eee95790ad8d0849f2dc48a0195c",
+          "target": "{F001}{F101}Um ataque de dois\nturnos. Coleta luz e,\nem seguida, dispara\num feixe agrupado\nno segundo turno.",
+          "editorial_rules": [
+            "implicit description subject: O usuário "
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3352": {
+          "source_sha256": "2d0e5dee1b5180716038182942c3bb0d86898dba7d6bc1f4427da8a3249a736d",
+          "target": "{F001}{F101}Relaxa e ilumina seu\ncorpo para se mover\nmais rápido. Aumenta\ndrasticamente a\nVelocidade.",
+          "editorial_rules": [
+            "estatistica de velocidade"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3360": {
+          "source_sha256": "fd295454fcaab6554d59655f37bcf2d3a8388baab1210b57907c9645219609a7",
+          "target": "{F001}{F101}Um golpe de\nautocura. O usuário\nrestaura seu proprio\nHP em até metade do\nseu HP máximo.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3400": {
+          "source_sha256": "08fb1d0116bf122ed549619dc323e19dd962186e144964ff3ef4386455077258",
+          "target": "{F001}{F101}Um jato de inumeras\nbolhas e lançado no\ninimigo. Também pode\ndiminuir a\nVelocidade do alvo.",
+          "editorial_rules": [
+            "estatistica de velocidade"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3401": {
+          "source_sha256": "d910918ab4e80c7c0428aa99299c47f9b8f5e4b49f2ef6e9d599f34798aef286",
+          "target": "{F001}{F101}O inimigo e atingido\ncom um soco lançado\nritmicamente que\ntambém pode deixa-lo\nconfuso.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3407": {
+          "source_sha256": "6b6f3d266c84b281c1c634be84f3a1e09ca3fbc874f731d600776e74466656fd",
+          "target": "{F001}{F101}O inimigo e golpeado\ncom uma grande\npinca. Este golpe\ntem uma alta taxa de\nacerto crítico.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3426": {
+          "source_sha256": "7bb96300cadd5b3c63c71ab1f1ffb96962b73c48de66ae5ba6930c549ae8b92b",
+          "target": "{F001}{F101}Um inimigo\nadormecido ve um\npesadelo que\ncausa algum dano\na cada turno.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3434": {
+          "source_sha256": "3023e9465099a245104097cd493988df2ab0ac3349a63fe62c8bb181d951101d",
+          "target": "{F001}{F101}Um ataque total\nque se torna mais\npoderoso quanto\nmenos HP o\nusuário tiver.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3444": {
+          "source_sha256": "7ffa2d4c363435d5fb460ecfeb110a3b1d0f68247d478118f98f094d9447939c",
+          "target": "{F001}{F101}Joga lama no rosto\ndo inimigo para\ncausar dano e\ndiminuir sua\nprecisão.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3451": {
+          "source_sha256": "efb64786a4149e38ce4f7884f60e9bdfb140d6e0bd806b74633a1588e7facf82",
+          "target": "{F001}{F101}Ataca com uma rajada\nde ar gelado. Também\nreduz a estatistica\nde velocidade do\nalvo.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3466": {
+          "source_sha256": "d19d6c748f82444a9aa57dbca79372febd7229ddcf28be2816ebeda47c83b441",
+          "target": "{F001}{F101}O inimigo e atingido\npor asas de aco.\nTambém pode\naumentar a Defesa\ndo usuário.",
+          "editorial_rules": [
+            "estatistica de Defesa"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3469": {
+          "source_sha256": "a9712b9d1c311e7b8ab86b65a6adfc92b6b71ed68cd33ee5e7f815181010de8e",
+          "target": "{F001}{F101}Enquanto esta\ndormindo, o usuário\nusa aleatoriamente\num dos golpes que\nconhece.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3487": {
+          "source_sha256": "810b2771b0a5fbc55b6404f3c63614adc48d419f9e2dac524ba703d9fdbf8230",
+          "target": "{F001}{F101}O inimigo e atacado\ncom garras de aco.\nTambém pode\naumentar a Ataque\ndo usuário.",
+          "editorial_rules": [
+            "estatistica de ataque"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3496": {
+          "source_sha256": "64d25c41c5171d9524a74d9f1ba6223031afbc9908b171c0d35341956e37df86",
+          "target": "{F001}{F101}Intensifica o sol\npor cinco turnos,\npotencializando\ngolpes do tipo\nFogo.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3499": {
+          "source_sha256": "e0a4c715b88010c56b5abf32dcf37d8c34a7bf82e695ba501ecea742f6bcbb9a",
+          "target": "{F001}{F101}Se hipnotiza para\ncopiar qualquer\nalteração de\natributos feita pelo\ninimigo.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3516": {
+          "source_sha256": "0e3ff0b0127e4d53d6a38d944b3b710e10a9cb059ab89c6d5023c194d00ffcd5",
+          "target": "{F001}{F101}Atira uma chama\nbranca azulada\nsinistra no inimigo\npara infligir uma\nqueimadura.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3526": {
+          "source_sha256": "bb564d0fad65331b93bfa5b6b0baaae37c822fdfe9d1e743b703cbdfc09fdbca",
+          "target": "{F001}{F101}Pega o inimigo\ndesprevenido e\ntroca o item que o\ninimigo segura pelo\nseu proprio.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3552": {
+          "source_sha256": "b619fa16f1a2a8e4c4637561a3fc0a9467d38c638bed8c712768e045a9637604",
+          "target": "{F001}{F101}Cobre o inimigo com\numa massa de\npenugem que reduz\ndrasticamente a\nAtaque.",
+          "editorial_rules": [
+            "estatistica de ataque"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3553": {
+          "source_sha256": "bff14e850e6edf9442788f0bc8c150d82d9586c118a41c865a19c8cc2bb970e8",
+          "target": "{F001}{F101}Executa uma danca\nvacilante que\nconfunde todos os\nPokémon em\nbatalha.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3558": {
+          "source_sha256": "87e1ba0fc9637ba2e5edeb3442358502647f94db175eec1902964ff9e1c9d011",
+          "target": "{F001}{F101}Relaxa,\nrestaurando seu\nproprio HP em até\nmetade do seu HP\nmáximo.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3560": {
+          "source_sha256": "0d366ef9ef1529765fcc34cdc9f3560746fa514c728d008ecb9a880dafeb0526",
+          "target": "{F001}{F101}Morde o inimigo com\npresas toxicas.\nTambém pode deixar\no inimigo gravemente\nenvenenado.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3583": {
+          "source_sha256": "7f60ab895a1e6e86388508bb6d91fa97d0b0c3d13cee86a9fc4a4988ec049ab4",
+          "target": "{F001}{F101}Prende o inimigo\ndentro de uma\ntempestade de areia\nviolenta por dois a\ncinco turnos.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3626": {
+          "source_sha256": "1b601ae4f8bf0efdfec49722953c33dbe8e322083e36d0465ead82c515cce1df",
+          "target": "{F001}{F101}Se o usuário puder\nusar este ataque\napos o ataque do\ninimigo, seu poder\nserá duplicado.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3650": {
+          "source_sha256": "e8d9e36a0f1e34287bde5aaa8652da9b0ed128c04dcb20b1c62dc37fac7de2a1",
+          "target": "{F001}{F101}O inimigo e atacado\ncom uma onda de\nchoque. Também\npode deixar o alvo\nparalisado.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3656": {
+          "source_sha256": "1c5e6040385dcd40d3814780cc0f772ab01613599537afcd855b53984be361f3",
+          "target": "{F001}{F101}Ataca balancando a\ncauda como se fosse\numa onda violenta em\numa tempestade\nviolenta.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3661": {
+          "source_sha256": "788282490ccd996dcf80634605e6197de952cf3fa14d59a06ae4e90a36e11d17",
+          "target": "{F001}{F101}O inimigo e atacado\ncom uma onda de\nchoque gerada pela\nboca aberta do\nusuário.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3678": {
+          "source_sha256": "89142a6a78a451e78bafae78bcb55918e83f81ae33f573272fbc8eb68e40e440",
+          "target": "{F001}{F101}Morde com presas\ninfundidas a frio.\nTambém pode fazer\no inimigo recuar ou\ncongelar.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3694": {
+          "source_sha256": "0620840043e167736d857490fe9e3bc7910b704b2dfa99df2863a4025d4d6673",
+          "target": "{F001}{F101}Lança uma pedra\nenorme no inimigo\npara atacar. Porém,\ndeve descansar no\npróximo turno.",
+          "editorial_rules": [
+            "No entanto,"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3699": {
+          "source_sha256": "8366fb3036a76ee50c4f3fa3e583b2b7ec2c4950c27b57eef9bfabf3e6cdabf2",
+          "target": "{F001}{F101}Apunhala o inimigo\ncom uma pedra\nafiada. Tem uma alta\ntaxa de acerto\ncrítico.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3713": {
+          "source_sha256": "8beeab413da8f44669db2b321b82418b94ef85fd125e751908d9858c4df86ed0",
+          "target": "{F001}{F101}Acerta o inimigo\ncom a cauda, etc.\nO alvo e atingido\nduas vezes\nseguidas.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3878": {
+          "source_sha256": "3813d903e3fdee885c671eb44780436028f6bda72b2adc92889835abe19b7077",
+          "target": "{F001}{F101}Um lindo chapeu\nPIKACHU. Você\npode ser fofo e\nadoravel.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3895": {
+          "source_sha256": "3813d903e3fdee885c671eb44780436028f6bda72b2adc92889835abe19b7077",
+          "target": "{F001}{F101}Um lindo chapeu\nPIKACHU. Você\npode ser fofo e\nadoravel.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "4071": {
+          "source_sha256": "856af427ea6eba87113acdb9d095cade88caef21ea536aff27ade63284bc0255",
+          "target": "{F001}{F101}Uma jaqueta\ncibernetica com um\npadrao verde claro\nbrilhante.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "4093": {
+          "source_sha256": "3864fc007d69230197c84f8cb1410a5746d482e96ce5f42176fc512cfcf98484",
+          "target": "{F001}{F101}Uma regata\ncibernetica com um\npadrao verde claro\nbrilhante.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "4159": {
+          "source_sha256": "797e8f4a4118f503164fab43eef6ea634dbe65cf65aa82209eb130854415db21",
+          "target": "{F001}{F101}Um vestido\ncibernetico com um\npadrao verde claro\nbrilhante.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "4160": {
+          "source_sha256": "a3b4105c2a65b838330cc79d76fd64f0018ca7b683ad31b33b57bdde12050470",
+          "target": "{F001}{F101}Um vestido para a\npessoa mais intensa.\nTem um padrao de\nchama ardente.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "4224": {
+          "source_sha256": "ee84b77ca363e60a69e061b08289e3f59dc62bed7942448b70abf2efdcc7ded7",
+          "target": "{F001}{F101}Calcas perfeitas para\numa expedicao.\nMaterial resistente e\nmovel.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "4249": {
+          "source_sha256": "3ed92aa1cb3464189ccf5d4ae88fc39690f0e3c765cb4e09c148ac0b5d4b762b",
+          "target": "{F001}{F101}Populares shorts de\nbicicleta pretos com\num padrao verde\nclaro brilhante.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "4415": {
+          "source_sha256": "53bf0bb31a32685074133513596ea3564b97fc6f623ef7959609931d0fad90ce",
+          "target": "{F001}{F101}Luvas elegantes sem\ndedos brancas e\ndouradas com punhos\nprensados.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "4416": {
+          "source_sha256": "3885bef54e14d9e18a65683fa59bc5fbb821212e13a0752fadb9a67cf8ff8d67",
+          "target": "{F001}{F101}Luvas sem dedos em\ncastanho escuro\nprofundo com punhos\nprensados.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "4417": {
+          "source_sha256": "39b4160fd25663ee7237aef9dd9c5a505b1e712ffaf585fc5ec7c6e35e8b5282",
+          "target": "{F001}{F101}Luvas sem dedos\nvermelhas e douradas\nda moda com punhos\nprensados.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "6794": {
+          "source_sha256": "6bb5f5509c717c5b0582d8057a8a0798dcd6eb73b532b1dc3533f7deebfb69e4",
+          "target": "{F001}{F101}{0005:0003}Descrição da batalha: {0005:0005}Batalhas{000D}\neliminatorias abertas apenas para passes\nde aluguel.{000D} {0005:0003}Passes de batalha utilizaveis:{000D}\n{0005:0005}Esta batalha esta aberta apenas para\npasses de aluguel.{000D} {0005:0003}Numero de Pokémon necessários:{000D}\n{0005:0005}Três para uma unica batalha e quatro para\numa batalha dupla.{000D} {0005:0003}Como ganhar: {0005:0005}Você vencerá se os Pokémon\ndo seu oponente forem todos\nnocauteados.{000D}\n{0005:0003}Sobre passes de aluguel:{000D}\n{0005:0005}Se você vencer todas as suas batalhas,\nvocê pode ficar com o Passe de Aluguel. {0067}",
+          "editorial_rules": [],
+          "extra_pages": 4,
+          "status": "bounded"
+        },
+        "6795": {
+          "source_sha256": "d270072ef387d5130ae1d03781d86889ca5fec2832567faef8de47df56202607",
+          "target": "{F001}{F101}{0005:0003}Descrição da batalha: {0005:0005}A A batalha\neliminatoria progride conforme você\nnegocia Pokémon com seu oponente.{000D} {0005:0003}Passes de batalha utilizaveis:{000D}\n{0005:0005}Apenas passes de aluguel podem\nparticipar de uma batalha\ncomercial.{000D} {0005:0003}Numero de passes necessários Pokémon:{000D}\n{0005:0005}Três para uma Batalha Unica e quatro para\numa Batalha Dupla.{000D} {0005:0003}Como Ganhar: {0005:0005}Você vencerá se os Pokémon\ndo seu oponente forem todos nocauteados.{000D} {0005:0003}Sobre Negociacao Pokémon: {0005:0005}Se você vencer\numa batalha, poderá trocar um Pokémon com\nseu oponente.{000D} Pokémon negociado pode ser usado\nimediatamente na próxima batalha.{000D}\nNo entanto, o Pokémon negociado não será\ninteiramente seu até que você termine a\nBatalha Comercial. {0067}",
+          "editorial_rules": [],
+          "extra_pages": 3,
+          "status": "bounded"
+        },
+        "6796": {
+          "source_sha256": "ec7389a635c6ef428a5e700d8ea2330bd9422cea9899d9a27de5d9fabc8e1bf9",
+          "target": "{F001}{F101}{0005:0003}Descrição da batalha:\nBatalha nocaute padrao {0005:0005}A.{000D}\n{0005:0003}Passes de batalha utilizaveis: {0005:0005}Pode usar um\nPasse Pessoal ou um passe de aluguel.{000D}\n{0005:0003}Numero de Pokémon necessários:{000D}\n{0005:0005}Três para uma batalha unica e quatro para\numa batalha dupla.{000D}\n{0005:0003}Como vencer: {0005:0005}Você vencerá se todos os\nPokémon do seu oponente forem\nnocauteados.{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "6797": {
+          "source_sha256": "c1dc7fc0df7010853f29a674222781b9f05fb43258118aab597073a6ddd9f25c",
+          "target": "{F001}{F101}{0005:0003}Descrição da batalha: {0005:0005}Batalha\nPokémon pre-selecionada em ordem.{000D} {0005:0003}Passes de batalha utilizaveis: {0005:0005}Você pode\nusar Passes Pessoais ou passes de aluguel.{000D} {0005:0003}Numero de passes necessários Pokémon:{000D}\n{0005:0005}Cinco para uma Batalha Unica e seis para\numa Batalha Dupla.{000D} {0005:0003}Fluxo de Batalha: {0005:0005}Primeiro, decida a\nordem do Pokémon que você usará. {000D} O Pokémon lutara então - um contra um em\numa Batalha Unica e dois contra dois em uma\nBatalha Dupla - nessa ordem.{000D}\nEsta batalha dura um certo numero de\nrodadas: cinco rodadas para uma Batalha\nUnica e três rodadas para uma Batalha\nDupla.{000D} {0005:0003}Como vencer uma rodada:{000D}\n{0005:0005}Faca o Pokémon do seu oponente\ndesmaiar primeiro.{000D}\n{0005:0003}Como vencer: {0005:0005}Aquele que vencer três\nrodadas primeiro vencerá a Batalha Unica, e\nquem vencer duas rodadas primeiro vencerá\na Batalha Dupla.{0067}",
+          "editorial_rules": [],
+          "extra_pages": 3,
+          "status": "bounded"
+        },
+        "6798": {
+          "source_sha256": "bb7dcbceac8eeabfb9d9b6f2d3fc85252ced659766b208d4d86fcf329ec105eb",
+          "target": "{F001}{F101}{0005:0003}Descrição da batalha: {0005:0005}Os Pokémon que\nentram na batalha são decididos pelo\nvolante. Sua sorte também será testada.{000D}\n{0005:0003}Passes de batalha utilizaveis: {0005:0005}Passes\npersonalizados e passes de aluguel.{000D} {0005:0003}Numero de Pokémon necessários:{000D}\n{0005:0005}Tanto o seu Pokémon quanto o do seu\noponente em cada passe de batalha são\nmisturado e colocado na roda.{000D} Aponte o Wii Remote para a roda giratoria e\nreveze-se escolhendo Pokémon.{000D}\nTrês Pokémon para uma Batalha Unica e\nquatro para uma Batalha Dupla.{000D} {0005:0003}Como vencer: {0005:0005}Você vencerá se conseguir\nnocautear o Pokémon.{0067} do seu oponente",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "6799": {
+          "source_sha256": "6b61cea23a9aeb4d9fd1f8471fda2cfabb6496d3384dd38714d4ab0578fce225",
+          "target": "{F001}{F101}{0005:0003}Descrição da batalha: {0005:0005}Esta e uma batalha\nde torneio com 16 treinadores.{000D}\n{0005:0003}Passes de batalha utilizaveis: {0005:0005}Você pode\nusar Passes Pessoais ou passes de aluguel.{000D}\n{0005:0003}Numero de Pokémon necessários:{000D}\n{0005:0005}Três para uma unica batalha e quatro para\numa batalha dupla.{000D}\n{0005:0003}Como vencer: {0005:0005}Você vencerá se todos os\nPokémon do seu oponente forem\nnocauteados.{000D}\nSe houver empate, você enfrentara o mesmo\noponente novamente.{000D}\n{0005:0003}Sobre o Torneio: {0005:0005}Ha 16 participantes no\ntorneio. Você vencerá o torneio se vencer\ntodas as quatro batalhas. Se você perder\numa batalha, você estara fora.{000D}\n{0005:0003}Como limpar o Coliseu: {0005:0005}O vencedor seguira\nem frente para lutar contra o Lider do\nColiseu e, apos a vitória, limpara o Coliseu.{0067}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "6800": {
+          "source_sha256": "f87efce7f234cb239377a35aba586636b9b1492191ac6040992341d19ff2f356",
+          "target": "{F001}{F101}{0005:0003}Descrição da batalha:\nBatalha{000D}\nde nocaute padrao {0005:0005}A.{000D} {0005:0003}Passes de batalha utilizaveis: {0005:0005}Você pode\nusar Passes Pessoais ou passes de aluguel.{000D} {0005:0003}Numero de Pokémon necessários:{000D}\n{0005:0005}Três para uma batalha unica e quatro para\numa batalha dupla.{000D}\n{0005:0003}Como vencer: {0005:0005}Você vencerá se nocautear\ntodos os Pokémon do seu oponente.{0067}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "6802": {
+          "source_sha256": "7882976df937537ec5edd394bbf6bd4a2bc78f0f19a949018cc2a182ff99ffdb",
+          "target": "{F001}{F101}{0005:0003}Descrição da batalha: {0005:0005}Isso consiste em seis\ntreinadores, incluindo o jogador.{000D}\n{0005:0003}Passes de batalha utilizaveis: {0005:0005}Você pode\nusar Passes Pessoais ou passes de aluguel.{000D}\n{0005:0003}Numero de Pokémon necessários:{000D}\n{0005:0005}Três para uma batalha unica e quatro para\numa batalha dupla.{000D}\n{0005:0003}Como vencer: {0005:0005}Você vencerá se nocautear\ntodos os oponentes Pokémon.{000D}\n{0005:0003}Sobre as Batalhas da Liga: {0005:0005}As Batalhas da\nLiga consistem em seis participantes. Você\nlutara com cada um deles.{000D}\n{0005:0003}Sobre a pontuacao: {0005:0005}O numero de seus\nPokémon restantes no momento da vitória e\nsua pontuacao vencedora. O Treinador com\na maior pontuacao no final e o vencedor.{000D}\n{0005:0003}Como limpar o Coliseu: {0005:0005}Depois de vencer a\nBatalha da Liga, você lutara com o Lider do\nColiseu. Depois de derrotar o Lider do\nColiseu, você limpa o Coliseu.{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "6803": {
+          "source_sha256": "d4b38c4731e2e4ac597bbbdffdc6b31f3fb1781ba392ddc2f793aab3c82d7fbe",
+          "target": "{F001}{F101}{0005:0003}Descrição da batalha: {0005:0005}A Batalha\nnocaute usando Pokémon predefinido.{000D}\n{0005:0003}Passes de batalha utilizaveis:{000D}\n{0005:0005}Você pode usar Passes Pessoais ou passes\nde aluguel. No entanto, em uma Batalha\nSelecionada, você não usará o conjunto\nPokémon no Passe de Batalha.{000D}\n{0005:0003}Participando de Pokémon: {0005:0005}Escolha o\nPokémon que deseja usar entre os 12\nPokémon selecionados aleatoriamente.{000D}\nVocê pode escolher três{000D}\nPokémon para uma batalha unica e quatro\nPokémon para uma batalha dupla.{000D}\n{0005:0003}Como vencer: {0005:0005}Você vencerá se nocautear\ntodos os Pokémon do seu oponente.{0067}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "6804": {
+          "source_sha256": "f87efce7f234cb239377a35aba586636b9b1492191ac6040992341d19ff2f356",
+          "target": "{F001}{F101}{0005:0003}Descrição da batalha:\nBatalha{000D}\nde nocaute padrao {0005:0005}A.{000D} {0005:0003}Passes de batalha utilizaveis: {0005:0005}Você pode\nusar Passes Pessoais ou passes de aluguel.{000D} {0005:0003}Numero de Pokémon necessários:{000D}\n{0005:0005}Três para uma batalha unica e quatro para\numa batalha dupla.{000D}\n{0005:0003}Como vencer: {0005:0005}Você vencerá se nocautear\ntodos os Pokémon do seu oponente.{0067}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "6805": {
+          "source_sha256": "aedcd8de7713f9de4b06d338cea22479c5b07b7a438fb8ad5b586d69f64d272b",
+          "target": "{F001}{F101}{0005:0003}Descrição da batalha: {0005:0005}Uma intensa batalha\nde nocaute onde você tenta obter o máximo\nde vitórias consecutivas possível.{000D}\n{0005:0003}Passes de batalha utilizaveis: {0005:0005}Você pode\nusar Passes Pessoais ou passes de aluguel.{000D} {0005:0003}Numero de necessários Pokémon:{000D}\n{0005:0005}Ao contrario das regras normais, todos os\nPokémon definidos em um Battle Pass podem\nparticipar.{000D} {0005:0003}Como ganhar: {0005:0005}Você vencerá se nocautear\ntodos os Pokémon do seu oponente.{000D} {0005:0003}Recuperação Apos a batalha: {0005:0005}Em uma\nBatalha de{000D}\nSobrevivencia, a saúde do seu Pokémon não\nserá recuperada e eles manterao quaisquer\nproblemas de status que tenham.{000D}\nEm vez disso, você{000D}\nterá a chance de recuperar HP, PP ou curar\nproblemas de status girando a roda.{000D} {0005:0003}Batalhas Duplas: {0005:0005}Para Batalhas{000D}\nDuplas na Batalha de Sobrevivencia, você\nprecisa ter mais de dois Pokémon prontos\nno inicio de cada batalha.{000D} Além disso, mesmo depois de girar a{000D}\nroda, se você tiver apenas um Pokémon para\nlutar, a Batalha de Sobrevivencia terminara.{000D} {0005:0003}Sobre as recompensas: {0005:0005}Dependendo do{000D}\nnumero de vitórias consecutivas que você\nobtiver, você receberá uma certa\nquantidade de Cupons Poke.{000D} Se você perder a{000D}\nbatalha, não receberá nenhum cupom Poke.{000D} Além disso, você receberá uma recompensa{000D}\nna primeira vez que se aposentar apos 50\nvitórias consecutivas ou quando alcancar\n100 vitórias consecutivas.{0067}",
+          "editorial_rules": [],
+          "extra_pages": 8,
+          "status": "bounded"
+        },
+        "6806": {
+          "source_sha256": "265ccd01994a720d12d51c4703f474ff4b6e8afaf4ae0615953a972f608a0b41",
+          "target": "{F001}{F101}{0005:0003}Descrição da batalha:\nBatalha{000D}\nde nocaute padrao {0005:0005}A.{000D} {0005:0003}Passes de batalha utilizaveis: {0005:0005}Você pode\nusar Passes Pessoais ou passes de aluguel.{000D} {0005:0003}Numero de Pokémon necessários:{000D}\n{0005:0005}O campeonato Pokétopia esta apenas no\nformato Double Battle. Quatro Pokémon\npodem participar.{000D} {0005:0003}Como ganhar: {0005:0005}Você vencerá se nocautear\ntodos os Pokémon do seu oponente.{0067}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "6944": {
+          "source_sha256": "8f80d52470ceb86a0576e4cba11124a6d7b871f25b621d23273e4c9dfd3faff3",
+          "target": "{F001}{F101}Retorne aos controles Tipo B Wii\nRemote.{000D}\nOs controles do tipo B são usados\npara controle durante uma batalha.{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "6990": {
+          "source_sha256": "67aec4234f358c50b37152ba25da0b510a4b82a5b60bfef2c99be8b39f9e32e6",
+          "target": "{F000}{F101}Uma batalha selecionada e onde{000D}\nvocê luta usando Pokémon selecionado\nentre 12 Pokémon.{0067} aleatorios.",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "8706": {
+          "source_sha256": "f4550f9b5e92b37759adec22d378589c0f62c8af56f1d0e780ebec20effafa84",
+          "target": "{F002}{F101}Rosna de forma cativante, tornando\no inimigo menos cauteloso. A Ataque\ndo alvo e reduzida.",
+          "editorial_rules": [
+            "estatistica de ataque"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "8722": {
+          "source_sha256": "7649a0111b467f1e4c94f4bdd5498b26d48ff79d90d6a02c3e80c98b0553dca2",
+          "target": "{F002}{F101}Um jato de bolhas e ejetado com\nforca no inimigo. Também pode\ndiminuir a Velocidade do alvo.",
+          "editorial_rules": [
+            "estatistica de velocidade"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "8723": {
+          "source_sha256": "c8a790f1c847a51225b8cfba6044aca23089e22ad0cd7d5f2c0a7420e77e51cd",
+          "target": "{F002}{F101}O inimigo e atingido por um raio da\ncor do arco-iris. Também pode\ndiminuir a Ataque do alvo.",
+          "editorial_rules": [
+            "estatistica de ataque"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "8758": {
+          "source_sha256": "7fcbe875efed3d12e63e2accb11ac104a8ed91b4f68e471fb4d7561acaebe88f",
+          "target": "{F002}{F101}Relaxa e ilumina seu corpo para se\nmover mais rápido. Aumenta\ndrasticamente a Velocidade.",
+          "editorial_rules": [
+            "estatistica de velocidade"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "8857": {
+          "source_sha256": "ac54d92a229932c7a140799d24fe7f6520ddfdc26b206b8c6b05cd8597a1872e",
+          "target": "{F002}{F101}Ataca com uma rajada de ar\ngelado. Também reduz a\nVelocidade do alvo.",
+          "editorial_rules": [
+            "estatistica de velocidade"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "8934": {
+          "source_sha256": "89b848db7527594e2dc230fe0f75acc3ed91370f5f62319b61c56c2e2dccbfc7",
+          "target": "{F002}{F101}Um golpe de autocura. Restaura seu\nproprio HP em até metade do seu HP\nmáximo no próximo turno.",
+          "editorial_rules": [
+            "implicit description subject: O usuário "
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "8952": {
+          "source_sha256": "11fd82545b7984d3d92289ead0a0a76da84b8e93147e8a5c25175439752a5299",
+          "target": "{F002}{F101}Um ataque de dois turnos. Mergulha\ndebaixo d'água no primeiro turno e\ndepois acerta no próximo turno.",
+          "editorial_rules": [
+            "implicit description subject: O usuário "
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "8955": {
+          "source_sha256": "b09cde42c46a67587037a7dc4502540b81872d6f1971268603d81ba84d46f0f2",
+          "target": "{F002}{F101}Olha para as luzes piscando para\nfocar sua mente, aumentando\ndrasticamente seu Atq. Esp..",
+          "editorial_rules": [
+            "Sp. Estatistica de ataque"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9050": {
+          "source_sha256": "1c62f253da65051ef6147073c2a2df14c627b2ece8f550262886f354c4411708",
+          "target": "{F002}{F101}Este golpe permite ao usuário atacar\nprimeiro. Porém, falha se o inimigo não\nestiver preparando um ataque.",
+          "editorial_rules": [
+            "No entanto,"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9058": {
+          "source_sha256": "ab50416c716d2ac9176e031f50cd4c0d6df608007361fe238f9feba1346b26b5",
+          "target": "{F002}{F101}Lustra seu corpo para reduzir o\narrasto. Pode aumentar\ndrasticamente a Velocidade.",
+          "editorial_rules": [
+            "estatistica de velocidade"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9106": {
+          "source_sha256": "c4bf8c0904f17ce34a9efe5621c7276cd99077f70da68d5eae45f7667c9c7a53",
+          "target": "{F002}{F101}Se for do sexo oposto do usuário, o\ninimigo e levado a diminuir\ndrasticamente seu Atq. Esp..",
+          "editorial_rules": [
+            "Sp. Estatistica de ataque"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9126": {
+          "source_sha256": "d2a7aa568a0cbc0fdb486f9b0a00d90973c6cabe5a481ef3f5e13db5f8885741",
+          "target": "{F002}{F101}Gera uma onda de choque\nno próprio corpo. Pode\nreduzir a Def. Esp. do alvo.",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9130": {
+          "source_sha256": "359bcea8d23375931e99e6554cccdcf9904293a470e845f3f8773f7e3693dccf",
+          "target": "{F001}{F101}{0027}Bem-vindo{0028}{000D}\n{0027}ao Pokétopia!{0028}{000D} {0027}Pokétopia e um parque{0028}{000D}\n{0027}tematico de batalha Pokémon onde muitos\ntreinadores de todo o mundo se reunem.{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "9131": {
+          "source_sha256": "1993e4a87ecc5c407748a0ec34db1479f21a18ba3b739aced7259e3a11ab92bd",
+          "target": "{F001}{F101}{0027}Meu nome e Anna. Sou a recepcionista aqui e\nserei seu guia Pokétopia!{0028}{000D} {0027}Obrigado por{0028}{000D}\n{0027}ter vindo!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9135": {
+          "source_sha256": "def32e7dc582d7f7b9d14f767505d43493f01e41ec4a853f8b284b544b80f68e",
+          "target": "{F001}{F101}{0027}Em cada área de{0028}{000D}\n{0027}Pokétopia, você encontrará instalacoes de\nbatalha Pokémon chamadas {0005:0001}Colosseus{0005:0005}.{0028}{000D} {0027}Ha muitos tipos de batalhas realizadas nos\nColiseus.{0028}{000D}\n{0027}Certifique-se de desafiar todos eles!{0028}{000D} {0027}Para entrar em uma batalha Pokémon{0028}{000D}\n{0027}em um Coliseu, você precisa ter um {0005:0001}Battle\nPass{0005:0005} emitido para você por Pokétopia.{0028}{000D} {0027}A Battle Pass e{0028}{000D}\n{0027}um cartao que contem informações sobre um\n{0005:0001}Trainer{0005:0005} e seu {0005:0001}Pokémon{0005:0005}.{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 4,
+          "status": "bounded"
+        },
+        "9136": {
+          "source_sha256": "1653ddb8dc77892fca39392a711bd59e9b7eed806f0c91a3699c66f547022dd6",
+          "target": "{F001}{F101}{0027}Bem, então, em comemoracao{0028}{000D}\n{0027}a sua primeira visita a Pokétopia,\napresento-lhe este Passe de Batalha!{0028}{000D}\n{0027}Este tipo de Passe de Batalha e chamado\nde {0005:0001}Passe de Aluguel{0005:0005}.{0028}{000D}\n{0027}Escolha um que você goste.{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "9137": {
+          "source_sha256": "e695affd2ff73aed9c815c8c1f88ce6a427e6bd661345db0449f6182d7be1b40",
+          "target": "{F001}{F101}O Passe de Batalha{000D}\n{0027}A contem as informações de um Treinador e\naté seis de seus Pokémon.{0028}{000D}\n{0027}A O Treinador e um personagem que luta em\nseu lugar.{0028}{000D}\n{0027}Você pode escolher a aparência, o estilo do\nTreinador e até mesmo o que diz durante\numa batalha (seus bordoes).{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "9143": {
+          "source_sha256": "29a46d4d32cdc81f4c0c714e39740aa6031fc6406b9c5893a96788f2bdafb518",
+          "target": "{F001}{F101}{0027}Se você tiver um jogo DS Pokémon,{0028}{000D}\n{0027}você pode trazer Pokémon que você mesmo\nelevou para Pokétopia \"{0005:0001}Copiando{0005:0005}\" eles!{0028}{000D}\n{0027}Você pode então usar o Pokémon você{0028}{000D}\n{0027}copiou para Pokétopia e criou seu proprio\nBattle Pass chamado \"{0005:0001}Custom Pass{0005:0005}\"!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "9144": {
+          "source_sha256": "bf9da5ffde3b0c055eddb2abf1664ca55ddc7d5e38e162617da92cc9312bcc75",
+          "target": "{F001}{F101}{0027}Para copiar Pokémon de um jogo DS\nPokémon, va para o menu {0005:0001}Storage{0005:0005}.{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9145": {
+          "source_sha256": "c95987138a6601d10a6036f695eb6c0e75bccfd2160cfe6d73c6df82985e95b9",
+          "target": "{F001}{F101}{0027}Em seguida, escolha {0005:0001}Copiar Pokémon{0005:0005}. Este\nprocesso e muito fácil, então experimente!{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9146": {
+          "source_sha256": "7cf4ad2adad7e4d0d94c08afd2d47cf6bcd4c3cf4b56a2076b14de444954fb04",
+          "target": "{F001}{F101}{0027}Você pode participar de{0028}{000D}\n{0027}batalhas Pokémon imediatamente usando o\nPasse de Aluguel que acabou de receber.{0028}{000D} {0027}No entanto, ao contrario de{0028}{000D}\n{0027}um Passe Pessoal, Pokémon não pode ser\ndefinido como um Passe de Aluguel.{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "9147": {
+          "source_sha256": "9ba15ffde57af301df7a399b1a44f6daded6c0f56996f6651e9b1d68f7c2fcc5",
+          "target": "{F001}{F101}{0027}Tudo bem! Va em frente e{0028}{000D}\n{0027}use o Passe de Aluguel por enquanto.{0028}{000D}\n{0027}Também temos varios tipos de Passes de\nAluguel disponíveis.{0028}{000D}\n{0027}Va desafiar alguns Coliseus e conseguir\naqueles passes de aluguel.{0028}{000D} {0027}Além disso, não esqueca{0028}{000D}\n{0027}que se você tiver um jogo DS Pokémon, você\npode copiar o Pokémon que você{0028}{000D} {0027}criou{0028}{000D}\n{0027}naquele DS Jogo Pokémon para Pokétopia.{0028}{000D} {0027}Você pode então usa-los para{0028}{000D}\n{0027}criar seu proprio {0005:0001}Passe personalizado{0005:0005}.{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 5,
+          "status": "bounded"
+        },
+        "9148": {
+          "source_sha256": "a6ff09aebb87a54ae2b55d4be959f4e5f0f574a9ff92ff52b925e777d0757ef5",
+          "target": "{F001}{F101}{0027}Para copiar Pokémon de{0028}{000D}\n{0027}um jogo DS Pokémon,{0028}{000D} {0027}simplesmente va para o{0028}{000D}\n{0027}menu {0005:0001}Storage{0005:0005} e escolha \"{0005:0001}Copiar Pokémon{0005:0005}\"\nsempre que você quero.{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "9149": {
+          "source_sha256": "d22a624219b738958bfdc5a4c5ce639bbb8fa3ef985d6e5a1428a7b1216577f2",
+          "target": "{F001}{F101}{0027}Quando você usa um{0028}{000D}\n{0027}jogo DS Pokémon, certifique-se de copiar\nseu Pokémon para o armazenamento.{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9150": {
+          "source_sha256": "8d11755709e5517d1b1dd8374f6048193e18829e3b32a0dfe85b3f5172079d59",
+          "target": "{F001}{F101}{0027}A seguir,{0028}{000D}\n{0027}deixe-me apresentar os outros menus.{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9151": {
+          "source_sha256": "64398f079515965f343a3e02fd7628e2379d822db36ae7263bcef13d1de5478e",
+          "target": "{F001}{F101}{0027}No menu {0005:0001}Battle Pass{0005:0005}, você pode editar seus{0028}{000D}\n{0027}passes de batalha, alterar a aparência do\nseu treinador, alterar bordoes,{0028}{000D} {0027}e definir{0028}{000D}\n{0027}Pokémon para seus Passes Pessoais.{0028}{000D} {0027}Na loja, você pode comprar equipamentos\npara seu treinador usar.{0028}{000D}\n{0027}Também e dado como recompensa por suas\nconquistas em batalha.{0028}{000D} {0027}Temos varios tipos de equipamentos na\nloja. Não deixe de conferir!{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 3,
+          "status": "bounded"
+        },
+        "9152": {
+          "source_sha256": "f2e7fe7832fe7f51b470dd219c830ded5ad7cad8e382b884190cc62a153796d1",
+          "target": "{F001}{F101}{0027}No menu {0005:0001}Batalha{0005:0005}, escolha{0028}{000D}\n{0027}{0005:0001}Batalha do Coliseu{0005:0005} para disputar os\ntorneios de Pokétopia.{0028}{000D}\n{0027}Em {0005:0001}Batalha Livre{0005:0005}, enfrente seus passes\nou jogue contra um amigo.{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9153": {
+          "source_sha256": "c835b397261e2e2bd60e083be0dd7bd7563a93046dd3fb67cb978a125dbece01",
+          "target": "{F001}{F101}{0027}No menu {0005:0001}Nintendo WFC{0005:0005}, você pode desfrutar\nde batalhas{0028}{000D}\n{0027}Pokémon com outros jogadores que estão\nconectados a conexão Wi-Fi da Nintendo.{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9155": {
+          "source_sha256": "d9863c2c68163b255046066a1a1b94e4b5ba6dc214b6cf0a19a6b47d41531010",
+          "target": "{F001}{F101}{0027}No menu {0005:0001}Perfil{0005:0005}, você pode verificar seu\nperfil e seus registros de batalha.{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9156": {
+          "source_sha256": "1f49f4eeb86c47472dfc6067b2678b198d5571fe725b99e449430aaa7b7c821a",
+          "target": "{F001}{F101}{0027}Finalmente, no menu {0005:0001}Salvar{0005:0005},{0028}{000D}\n{0027}você pode salvar seu progresso em\nPokétopia até agora.{0028}{000D}\n{0027}Por favor, certifique-se de salvar seu\njogo antes de sair de Pokétopia.{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9157": {
+          "source_sha256": "2b95b1c8c6a90681d058ff9c0bdfcb5137e5a2b8900a192d03679048c230f674",
+          "target": "{F001}{F101}{0027}Isso e tudo que tenho para{0028}{000D}\n{0027}mostrar a você por agora.{0028}{000D} {0027}Estou realmente ansioso para ver seu\nexcelente desempenho aqui em Pokétopia.{0028}{000D} {0027}Desejo{0028}{000D}\n{0027}a você o melhor de sorte!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "9159": {
+          "source_sha256": "16c2262ce3536e192973a14e25e2f1841879572218aa8870aa4599e9b88f1080",
+          "target": "{F001}{F101}{0027}Parabéns por{0028}{000D}\n{0027}vencer o campeonato Pokétopia!{0028}{000D}\n{0027}Suas batalhas foram incríveis e\ninspiradoras!{0028}{000D}\n{0027}Tenho assistido suas batalhas através do\nfeed de cobertura ao vivo que configurei\naqui na minha mesa!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "9161": {
+          "source_sha256": "c1945f73cf18e32d3a89127d98b63467ee576fbdf4d6ad1b0203650f790a4a1f",
+          "target": "{F001}{F101}{0027}Mantenha a cabeca erguida!{0028}{000D}\n{0027}Todo mundo perde uma batalha em algum\nmomento! Lembre-se sempre que estou\ntorcendo por você!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9162": {
+          "source_sha256": "a3f0e7b20181d70511ed6741db9452b379dd71ef95a9ca0dda006245ea61732c",
+          "target": "{F001}{F101}{0027}Ótimo trabalho!{0028}{000D} {0027}Como você salvou rapidamente uma batalha{0028}{000D}\n{0027}no Coliseu, na próxima vez que jogar, você\npode começar exatamente de onde parou!{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9164": {
+          "source_sha256": "afb584a63de1d8e32ea4b07c1fcbc8d203e7564ffb9864ad0a3164d162d9972d",
+          "target": "{F001}{F101}{0027}I estou ansioso para ve-lo novamente em\nbreve.{0028}{000D}\n{0027}Mal posso esperar para ver seu excelente\ndesempenho.{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9167": {
+          "source_sha256": "d69c07f304dcca69796b34dd2a46cbb45164417934a6c3f9ef2ea897c5fb88ad",
+          "target": "{F001}{F101}{0027}{0017} pontos. será dado a você como\nrecompensa por limpar {000E} {000F}.{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9168": {
+          "source_sha256": "9e89a27bd8a9aa297cf62ddf2aa9c59ac617ff629d403d71e6268c215011a4c6",
+          "target": "{F001}{F101}{0050}: +{0017} pontos.",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9169": {
+          "source_sha256": "fea76af64dc79cd7bc51258f09b52ba76238a95d01c56eddbc12c44620a8c6d0",
+          "target": "{F001}{F101}{0027}Além disso, o {000F} e{0028}{000D}\n{0027}um novo Battle Pass serão dados a você\ncomo recompensa por limpar{0028}{000D} {0027}{000E} pela{0028}{000D}\n{0027}primeira vez!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "9170": {
+          "source_sha256": "b75e0ecaeeb3692dd559587f143fcc1424c4e4b9ce694fa222869f730a7febfa",
+          "target": "{F001}{F101}{0027}Em homenagem a se{0028}{000D}\n{0027}tornar o novo campeao de Pokétopia, {0050},\nnovos passes de batalha e o {000E} serão\ndados a você, o mestre de Pokétopia!{0028}{000D}\n{0027}Parabéns!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9171": {
+          "source_sha256": "0e81e418a0dd837f1ebb35860a129d08a61017ee3c4083f0defac3324299f4c8",
+          "target": "{F001}{F101}{0027}Além disso, o {000F} será{0028}{000D}\n{0027}dado a você como recompensa por limpar {FFFB}\n50 Todos neste Coliseu pela primeira vez.{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9172": {
+          "source_sha256": "e37b8bcf22dfa062624651d7c8c2e01040b53a0ceaa99aa8be925a0a20b9022f",
+          "target": "{F001}{F101}{0027}Além disso, um novo Passe de Batalha será\ndado{0028}{000D}\n{0027}a você como recompensa por obter vitórias\nde {0017} em uma Batalha de Sobrevivencia!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9173": {
+          "source_sha256": "0f2936a8e16c85d9dec560cc777078c55f3ea19431f6a17f8f7fbe6640c0bf77",
+          "target": "{F001}{F101}{0027}Além disso, um novo Battle Pass e dado{0028}{000D}\n{0027}a você como recompensa por completar\ntodos os conjuntos na Masters Battle!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9174": {
+          "source_sha256": "63e66722b5a4c0fcc76188f27f0483edb62c8538694436ebf10b24b0fc99bebb",
+          "target": "{F001}{F101}{0027}Além disso, um novo passe de batalha{0028}{000D}\n{0027}será dado a você como recompensa pelo\naumento de sua classificacao de treinador!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9177": {
+          "source_sha256": "ff2e767a0e7618bfd9e6e75c5dadf32ca24e0830ce9127864d35299dc02fc24e",
+          "target": "{F001}{F101}{0050}: novo Passe de Batalha!",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9178": {
+          "source_sha256": "e4b848f2d322422dcae9dfb33ea793b9885a39fc6bf391ed3bb7d817d181d9c0",
+          "target": "{F001}{F101}{0027}A{0028}{000D}\n{0027}proposito, tem novidades de Pokétopia.{0028}{000D} {0027}{000E} acaba de inaugurar!\nVocê deveria ir lutar la! {0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9179": {
+          "source_sha256": "f88d8d973a94a76c2840b68de591314d9709b964bbabdc220fd56d85bec325c6",
+          "target": "{F001}{F101}{0027}A{0028}{000D}\n{0027}proposito, ha novidades de Pokétopia.{0028}{000D} {0027}{000E} e {000F} acabaram de abrir!\nVocê deve lutar em ambos os lugares! {0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9180": {
+          "source_sha256": "394a24721288ed63b2b13b71770c4ca9487593c70bbba9f5fafe997bfdb2b876",
+          "target": "{F001}{F101}{0027}Finalmente,{0028}{000D}\n{0027}novidades de Pokétopia.{0028}{000D} {0027}Terminamos de preparar novos desafios em{0028}{000D}\n{0027}alguns dos Coliseus para que você possa\ncontinuar a desfrutar de batalhas aqui!{0028}{000D} {0027}Além disso, a nova regra de nível \"{FFFB} 50 All\"\nesta disponível em cada Coliseu. Você deve\nexperimentar os novos desafios!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "9182": {
+          "source_sha256": "26b10b65b6f11234ec3ec5c1ebf7d74a851e84cadad322e20feab1e6dfc4e2d1",
+          "target": "{F001}{F101}{0027}Muito bem! Um novo Battle Pass será dado a\nvocê, ja que você conferiu todos os\ntutoriais de batalha.{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9183": {
+          "source_sha256": "ff2e767a0e7618bfd9e6e75c5dadf32ca24e0830ce9127864d35299dc02fc24e",
+          "target": "{F001}{F101}{0050}: novo Passe de Batalha!",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9184": {
+          "source_sha256": "9bddc85053c2b5fb88f9f199a13efa07deecf9f7bbc05cec009eeb9b46029f3e",
+          "target": "{F001}{F101}{0027}Este e{0028}{000D}\n{0027}o menu Armazenamento.{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9185": {
+          "source_sha256": "d9011b089db51b54e58597a6eb34ac9dd1c1051af73da5d8ef7cddfdd4289be6",
+          "target": "{F001}{F101}{0027}Em {0005:0001}Copiar Pokémon{0005:0005}, você{0028}{000D}\n{0027}pode copiar seu Pokémon do jogo DS\nPokémon.{0028}{000D} {0027}Pokémon copiado para o{0028}{000D}\n{0027}console Wii será enviado para\nArmazenamento.{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "9186": {
+          "source_sha256": "be09ee9e6a1aa902957cbf4f80c11fb436dc10295aa2cb46db7c69e01bd964fe",
+          "target": "{F001}{F101}{0027}Em {0005:0001}Verifique o armazenamento{0005:0005},{0028}{000D}\n{0027}você pode verificar quais Pokémon ja estão\nsalvos no armazenamento.{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9188": {
+          "source_sha256": "0691e9319ffee83e900a3fa9abbd16e31326cd2ae308d3f5b4113c720f1bba8e",
+          "target": "{F001}{F101}{0027}A {0005:0001}Custom Pass{0005:0005} e{0028}{000D}\n{0027}um Battle Pass que pode ser usado apenas\npor jogadores que copiaram seus Pokémon{0028}{000D} {0027}de um jogo DS Pokémon para o console Wii.{0028}{000D} {0027}Você pode definir seu Pokémon como\nquiser em um Passe Pessoal.{0028}{000D} {0027}Você também pode alterar{0028}{000D}\n{0027}o estilo de personagem do Treinador ou o\ndesign do Passe Pessoal.{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "9189": {
+          "source_sha256": "30fa3abb824dcbec43d14be53d2810e91214405baeb5febb4fed6a30334d0e04",
+          "target": "{F001}{F101}{0027}A {0005:0001}Passe de aluguel{0005:0005} e um passe de batalha\nque pode ser usado por qualquer pessoa.{0028}{000D} {0027}O Pokémon definido em{0028}{000D}\n{0027}um passe de aluguel não pode ser alterado.{0028}{000D} {0027}No entanto, você pode trocar\nPokémon com os outros Passes de Aluguel.{0028}{000D} {0027}Você também pode coordenar a aparência\ndo Treinador ou editar seus bordoes.{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9190": {
+          "source_sha256": "2fbef1ccf73d8cdb57a991a3513adf418b4a2828516b8926d35245e2f6a7ddde",
+          "target": "{F001}{F101}{0027}A {0005:0001}Friend Pass{0005:0005} e{0028}{000D}\n{0027}um Battle Pass que pode ser carregado a\npartir do Wii Remote ou dado a você por{0028}{000D} {0027}um jogador com quem{0028}{000D}\n{0027}você lutou em uma batalha Wi-Fi.{0028}{000D} {0027}Friend Passes são adicionados{0028}{000D}\n{0027}a sua colecao e podem ser usados como\noponentes em Batalhas Gratuitas.{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 3,
+          "status": "bounded"
+        },
+        "9195": {
+          "source_sha256": "20c2404d70e02900e694317dedd209bd0abbf53ed6785ff362620b1eca7b0d39",
+          "target": "{F001}{F101}{0027}No Tutorial de Batalha{0028}{000D}\n{0027}{0005:0001}{0005:0005}, você pode conferir algumas informações\núteis sobre as batalhas Pokémon.{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9198": {
+          "source_sha256": "f5a3c41fb0c4f666a93334f12e7279d7e3a59958242373e773b2b5a8a5f80164",
+          "target": "{F001}{F101}{0027}Em {0005:0001}Lista de amigos{0005:0005}, você pode verificar\nquais jogadores você registrou.{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9203": {
+          "source_sha256": "bd8ae523b15811de30f4eacc87a9b4636a2dcfa782535fab0be713ef5d930d70",
+          "target": "{F001}{F101}{0027}Em {0005:0001}Mystery Gift{0005:0005}, você{0028}{000D}\n{0027}pode comprar certos itens e envia-los\npara o seu jogo DS Pokémon.{0028}{000D} {0027}Existem varios itens em Mystery Gift.{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9207": {
+          "source_sha256": "388d0309d748d5c4aba3dfb5cede5458f1d9e23989a2a9c120ddb36976b6538c",
+          "target": "{F001}{F101}{0027}Nos registros de {0005:0001}{0050}{0005:0005}, você\npode{0028}{000D}\n{0027}verificar seus registros de\njogo até agora.{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9211": {
+          "source_sha256": "051278e7f57496897411ee19fafdb1c3aa6281c9e7a4c58803924b7ea1a603e9",
+          "target": "{F001}{F101}{0027}Em {0005:0001}Carregar Battle Pass{0005:0005},{0028}{000D}\n{0027}você pode registrar Battle Passes de\noutros jogadores como Friend Passes{0028}{000D} {0027}carregando os dados salvos no Wii Remote.{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9213": {
+          "source_sha256": "ca38f253ee56386bd592f73d0ebc51a2c4a09c109a7fd23ce03f71ea596e0d35",
+          "target": "{F001}{F101}Carregue um Battle Pass do Wii Remote P1/P2.",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9214": {
+          "source_sha256": "8cafed76272204c167d32ec40e0fe260ae6df6156806bd93351d879761cced8e",
+          "target": "{F001}{F101}Obrigado por escolher voar com a\nPokétopia Airlines hoje.{000D}\nChegaremos em Pokétopia em apenas alguns\nminutos.{000D}\nReserve um tempo para criar seu proprio\nperfil antes de chegar. Obrigado.{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9215": {
+          "source_sha256": "7e7d3717b57c0b49bab3097293f510b881c14145bcd8ac87f91398780fac2746",
+          "target": "{F001}{F101}{0027}Ola, {0050}.{0028}{000D} {0027}Ha dados de salvamento{0028}{000D}\n{0027}rápido da sua última batalha no Coliseu.{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9222": {
+          "source_sha256": "06cbf70aa1aef17d165e3360167433f7e359e7775daebb8dcb5921f3d02f0247",
+          "target": "{F001}{F101}{0027}Seus dados de{0028}{000D}\n{0027}salvamento rápido foram excluídos.{0028}{000D} {0027}Espero{0028}{000D}\n{0027}que você se divirta hoje!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "9223": {
+          "source_sha256": "26b2d8f1cceb82e9813d03df3a42d4c4a2123c16053105474a86e2c8317f4c3e",
+          "target": "{F001}{F101}{0027}Estou muito impressionado com sua\nconquista incrível!{0028}{000D}\n{0027}Espero que você continue escolhendo\nPokétopia como local para todas as suas\nbatalhas incríveis!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9227": {
+          "source_sha256": "36aefe32921ec3a49d8ea10f592910bd88943176cced148f002ad5fa9da0ec72",
+          "target": "{F001}{F100}{0003:0002}Precisa de ao menos dois passes\npara jogar uma Batalha Livre!{0067}",
+          "editorial_rules": [
+            "explicit reviewed menu rephrase"
+          ],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9234": {
+          "source_sha256": "ced1c8bda4d6f769528674ad1bc02fa921d94536250d05464440d2dc79e2043f",
+          "target": "{F001}{F100}{0027}Wii A conexão remota e feita usando o\nmenu inicial.{0028}{000D}\n{0027}Pressione o botão Home{0028}{000D}\n{0027}no Wii Remote que você esta usando\natualmente para exibir o menu inicial.{0028}{000D} {0027}Escolha a opção Configurações{0028}{000D}\n{0027}Wii Remote e escolha a opção Opção\nde reconectar.{0028}{000D} {0027}Siga as instruções na tela para\nconectar o Wii Remote para P1 e P2.{0028}{000D} {0027}Depois que os Wii Remotes estiverem conectados\npara P1 e P2, feche o menu e retorne ao game.{0028}{000D} {0027}Você{0028}{000D}\n{0027}entrara na Batalha Livre.{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 3,
+          "status": "bounded"
+        },
+        "9236": {
+          "source_sha256": "6305ef635ee8debc067a9b36949b524eaa1bc18df62d720134affba21ea1a5a8",
+          "target": "{F001}{F100}Para batalhar usando dois{000D}\nWii Remotes, você precisara de dois Wii Remotes\nconectados ao console Wii como P1 e P2.{000D} Por favor, tente{000D}\nnovamente.{0067}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        },
+        "9237": {
+          "source_sha256": "2449d3d1ace878306cabdbbdf2ca3337bfdf00d252efbc1b4dd3bdbaccf1a58f",
+          "target": "{F001}{F100}O Battle Pass salvo no Wii Remote de P{0017} foi\ncopiado para o console Wii como um Friend Pass.{000D} Os dados do seu{000D}\nFriend Pass foram atualizados.{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9238": {
+          "source_sha256": "d9ac767edad62526e7175e69826843b06ec3b2af41753ba68347d3c49d81c551",
+          "target": "{F001}{F100}O Battle Pass salvo no Wii Remote de P{0017} foi\ncopiado para o console Wii como um Friend Pass.{0067}",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9239": {
+          "source_sha256": "beac8e0028bcb3f2b82e5b7ce0ba64a7a0dad26933306528c23c607fa1792892",
+          "target": "{F001}{F100}Um Battle Pass foi encontrado no Wii Remote.{000D}\nde P{0017}. No entanto, não foi possível salva-lo\nporque você ja tem 60 Friend Passes.{000D}\nPara salvar o Friend Pass, exclua um dos que\nvocê tem agora e tente novamente.{0067}",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9406": {
+          "source_sha256": "bf10886ce5aad904918ede895cf26b2b4d4467d3f9f671bdcba11fcc64e17853",
+          "target": "{F001}{F101}{0027}Isso e{0028}{000D}\n{0027}absolutamente inacreditavel! E\nsimplesmente incrível!{0028}{000D} {0027}E um grande marco alcancar 100 vitórias na\nBatalha de Sobrevivencia!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9411": {
+          "source_sha256": "96e067d05318d58ffed3bbdee0ecd20e3d96b1254a42704f7d55fe9b77dd9011",
+          "target": "{F001}{F101}{0027}Aposto que você será derrotado apos suas\nvitórias na Batalha de Sobrevivencia!{0028}{000D}\n{0027}Quantos foram? {0018}? Legal!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9412": {
+          "source_sha256": "2e0f7cf69b82e8d216ecdffc859e6a84d32ee93c1e68ffbef6955fdb46f868d1",
+          "target": "{F001}{F101}{0027}{0017} pontos. será dado a{0028}{000D}\n{0027}você como recompensa por sua sequencia\nde vitórias {0018}!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9415": {
+          "source_sha256": "3f7f1e644dbeebb590533ccb8820edbe62c178d64290d1e81e306023fcae155d",
+          "target": "{F001}{F101}{0027}Além disso, o {000F} será{0028}{000D}\n{0027}dado a você como recompensa por limpar\n{000E} pela primeira vez!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9416": {
+          "source_sha256": "a1ab38db50d703f2600cdbc14018982a11bf9146a7980c08f10b38af43999dc2",
+          "target": "{F001}{F101}{0027}Em homenagem a se tornar o novo campeao\nde Pokétopia, {0050}, o {000E} será dado a você, o\nmestre de Pokétopia!{0028}{000D}\n{0027}Parabéns!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9564": {
+          "source_sha256": "ef2f0d29ca2f918656cd4851001e2d06ff25ab9820449eeb737a8b399672fbef",
+          "target": "{F001}{F101}{0005:0003}Este código de amigo{000D}\nnão pode ser registrado\ncomo {0005:0003}.{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9787": {
+          "source_sha256": "bab22c6a8da2665ccc264e52b11aef7c0e0f54906658521fcf707e42499e5e7c",
+          "target": "{F001}{F101}Retorne aos controles laterais Wii\nRemote.{000D}\nOs controles laterais são usados para\ncontrole durante uma batalha.{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9788": {
+          "source_sha256": "6ce6685db1fc35a6eced34a14b146a3aa65a81beddb3abdd85cfbd3903e0cde1",
+          "target": "{F001}{F101}Voltar{000D}\naos controles laterais Wii Remote.{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9794": {
+          "source_sha256": "7077ca580c8ad9517d28808cf980ef3b70523d38382281a616b0c8b625fab381",
+          "target": "{F001}{F101}{0027}Além disso, um novo Battle{0028}{000D}\n{0027}Pass será dado a você desde que você\ntenha alcancado a classificacao mais alta!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9974": {
+          "source_sha256": "7d32115265503142955cd61094e6dae75f6908f2888cbb81002165cb109526b1",
+          "target": "{F001}{F101}{0027}Ah! Vejo que você sabe a senha secreta!{0028}{000D}\n{0027}Pois bem, tenho um presente especial para\nvocê, {0050}!{0028}{000D} {0027}Primeiro, o {000E} foi adicionado ao {0005:0001}Mystery\nGift{0005:0005} no menu {0005:0001}Shop{0005:0005}! Certifique-se de envia-lo\npara o seu jogo DS Pokémon.{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 1,
+          "status": "bounded"
+        },
+        "9977": {
+          "source_sha256": "59efd560dea60664140dd05430ae93d6cc9c78fa5c9cca0106e9095535e89693",
+          "target": "{F001}{F101}{0027}O Passe de Batalha {000E} e um design de\npasse muito raro e muito difícil de obter.{0028}{000D}",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "9979": {
+          "source_sha256": "bb6cdaa72175401a1e34ccc26936fde97c0d32140337020089e701c5844ac5dc",
+          "target": "{F001}{F101}{0027}Você pode encontrar este design de{0028}{000D}\n{0027}passe na lista de passes em branco em\n{0005:0001}Passe personalizado{0005:0005} no menu {0005:0001}Battle Pass{0005:0005}.{0028}{000D}\n{0027}Usando passes em branco, você pode criar\nseus{0028}{000D}\n{0027}proprios passes de batalha nos quais você\npode definir Pokémon do armazenamento.\nCertifique-se de criar um bom passe!{0028}{0067}",
+          "editorial_rules": [],
+          "extra_pages": 2,
+          "status": "bounded"
+        }
+      },
+      "kind": "common"
+    },
+    "menu_fight_s.fsys": {
+      "base_sha256": "12fc637013acf78d77d2526eaf02fdb22a4b33e28f8cd75ed6c11b5121cab115",
+      "resource": "0x27c31800",
+      "target_sha256": "9bada56367c88a895b63c06a7641b8eb1732bcd95fe2ce5c38c20fbc04bc2503",
+      "targets_by_id": {
+        "2568": {
+          "source_sha256": "437e9309d76253a8b4d5c5e0b7257a1199cf990e0627499266fdf5d40ee8136d",
+          "target": "{F001}{F101}{0025} chegou\nao Nv. {0026}!{0027}{0028}▼",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2589": {
+          "source_sha256": "68e0cb85f4427e8b7be98375bcadac9b225a9d869941a21bf9162d42d2be8e9e",
+          "target": "{F001}{F101}{0025} evitou\no ataque!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2599": {
+          "source_sha256": "d4ab56594dbe3f58a264bcdec66954edae10966a8a6c4e0bc0fa92d8fc89a012",
+          "target": "{F001}{F101}{002C} deixou\ncair ${002D} em panico!▼",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2600": {
+          "source_sha256": "a5ada1aab6bcef6ed3ba9b7c48aa40eb12c965467d854a3b6cd497f0b69fa010",
+          "target": "{F001}{F101}{002C} pagou ${002D}\nao vencedor.▼",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2605": {
+          "source_sha256": "554612fabdef382ed7c033d6770aa3ae33c8bf22cb404db7259a423ac8f58658",
+          "target": "{F001}{F101}{0025} impede a\nfuga com {002B}!▼",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2622": {
+          "source_sha256": "95da659f444343312a2c8dfc1ef5313a37846a2f24d732b94b6207753dd9ffa1",
+          "target": "{F001}{F101}{0025} ja\nesta dormindo!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2638": {
+          "source_sha256": "c9446beaeba3c4379b114a09b208c7754818127b295f2c36538810dd11a18a51",
+          "target": "{F001}{F101}{0025} sofre\ncom o veneno!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2647": {
+          "source_sha256": "9e17ca76fa81311da7251eee852e058a59a1d4f7eac37ab4d6241e6ed76f95bb",
+          "target": "{F001}{F101}{0025} teve\nsua vida drenada!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2660": {
+          "source_sha256": "81d2b95226dc3fe6df5a0d70b2c182d5fa827fcc675ca9bcfd8c8bdcbebdfef4",
+          "target": "{F001}{F101}{0025} sofre\ncom a queimadura!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2698": {
+          "source_sha256": "c80e6523df857506f5d9dfdeb8aa6ac3ab1ec23d0813f725c9437ef2dbaf1902",
+          "target": "{F001}{F101}{0025} ja\nesta paralisado!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2707": {
+          "source_sha256": "6a4a740389be0915dd893e768beaf14d074d00122079cd270b32d647c47a8647",
+          "target": "{F001}{F101}{0025}: {002F}\nnão sobe mais!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2708": {
+          "source_sha256": "6a4a740389be0915dd893e768beaf14d074d00122079cd270b32d647c47a8647",
+          "target": "{F001}{F101}{0025}: {002F}\nnão sobe mais!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2710": {
+          "source_sha256": "bab066994b9b892a0abe2ee21deec483fea1a45b353db914fdeccb272cec03a3",
+          "target": "{F001}{F101}{0025}: {002F}\nnão cai mais!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2711": {
+          "source_sha256": "bab066994b9b892a0abe2ee21deec483fea1a45b353db914fdeccb272cec03a3",
+          "target": "{F001}{F101}{0025}: {002F}\nnão cai mais!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2718": {
+          "source_sha256": "5f4708c6b953d95ecb52204350d46d7155c6b5593b519a22d6882446f3cdd10c",
+          "target": "{F001}{F101}{0025} se livrou\nda confusão!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2724": {
+          "source_sha256": "1dc64c49fdd0c9dbb6d5f6cbc69f17a5b9389adf2b8673cee72c0d9defcd5e4a",
+          "target": "{F001}{F101}{0025} ja\nesta confuso!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2743": {
+          "source_sha256": "77737c704443b1d4a2babb7ce519b1c242020d8cd8957a67bb2deaaea372ca99",
+          "target": "{F001}{F101}{0025} virou do\ntipo {0032}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2757": {
+          "source_sha256": "062f6be948af3d166a2020a5a9ef636524c722dcef839ca904b4cb409bda59c1",
+          "target": "{F001}{F101}{0030} aumentou um pouco a\nSp. Def do seu time!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2770": {
+          "source_sha256": "2676d33ed79d057c13b8fe680671d7718fcd3dccfed7903ab981b9eb52581c17",
+          "target": "{F001}{F101}{0025} foi\ndormir!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2777": {
+          "source_sha256": "1b5c5e8421fc2e0e3ae429272fe29509227fc77deba0b0efc77b0d4d13b35521",
+          "target": "{F001}{F101}{0025} provocou\num redemoinho!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2779": {
+          "source_sha256": "0cff10b87b698077655287644017c24d4737e27a829c188cd569a4c2ea579e5b",
+          "target": "{F001}{F101}{0025} absorveu\nluz!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2782": {
+          "source_sha256": "73db3667967c8b63d4d513097800ced863f09b9582d87d083129b65b4cecc455",
+          "target": "{F001}{F101}{0025} recolheu\na cabeca!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2807": {
+          "source_sha256": "f9ea1fb20ae04b7f0955ab10cf4f51219030dab9d51f996cedd0bca26eee691a",
+          "target": "{F001}{F101}{0025} ficou preso\nno vortice!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2810": {
+          "source_sha256": "eaca10797c3d04b32011ca859b75fe44ce436cf5ba6bb5150502cb0172c22ce9",
+          "target": "{F001}{F101}{0025} foi preso\npor Sand Tomb!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2827": {
+          "source_sha256": "ff6f0dfac5f2191e7535d9c9b807131a8ae7b42e8e555041e276db1189f033fa",
+          "target": "{F001}{F101}{0025} sofre\ndano de {0029}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2830": {
+          "source_sha256": "4130028faa28bd43a569abc42654bf6201be3dfec2381868af439cd6173e0728",
+          "target": "{F001}{F101}{0025} escapou\nde {0029}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2839": {
+          "source_sha256": "a64f62b05e72fe70ba7f19e4449c2b281b8b1cd2fd60365aabf812b24208b3fa",
+          "target": "{F001}{F101}{0025} e\nprotegido por Mist!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2842": {
+          "source_sha256": "ed6366defa479486f7349db43bfad4d94d57f1d18546be9ef63a2fecd198cd6a",
+          "target": "{F001}{F101}{0025} esta\nse concentrando!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2847": {
+          "source_sha256": "9b29455528a4b7ddd24bfdb1c43b7544a6c27166edb9986291b4324ad8238ac3",
+          "target": "{F001}{F101}{0025} se\nprotegeu!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2854": {
+          "source_sha256": "2d98853fafe2fc6f195de6301a2b5886c36aaef72b622ab06ad86f710899513d",
+          "target": "{F001}{F101}{0030} rival\nacabou!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2858": {
+          "source_sha256": "68e0cb85f4427e8b7be98375bcadac9b225a9d869941a21bf9162d42d2be8e9e",
+          "target": "{F001}{F101}{0025} evitou\no ataque!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2864": {
+          "source_sha256": "81d10902026873e826c34a86d48077fbc7b061cf03b87dc3eb35d8d2e9024a92",
+          "target": "{F001}{F101}{0025} está\ndormindo bastante.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2876": {
+          "source_sha256": "6720aba3ae84f5f958751bc0ca2f8a112bc038cf99a3278fa984a646833609bd",
+          "target": "{F001}{F101}{0025} esta\nfazendo barulho!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2877": {
+          "source_sha256": "6720aba3ae84f5f958751bc0ca2f8a112bc038cf99a3278fa984a646833609bd",
+          "target": "{F001}{F101}{0025} esta\nfazendo barulho!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2885": {
+          "source_sha256": "df02bd9f0c7f8550b86246f8494a65130be614e95947c584fa0b2b9174bebb63",
+          "target": "{F001}{F101}{0025} não\npode mais estocar!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2894": {
+          "source_sha256": "468b2d28a9b10c07c0b28891f6fd2b69109ee20b1d056a2f853d145bb3b24b56",
+          "target": "{F001}{F101}{0025} não dormiu\npor causa de {002B}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2903": {
+          "source_sha256": "533ecd98f0c44153f72a9a8f51adf2f0f44db1bc6075067dc2f48309bce12e3e",
+          "target": "{F001}{F101}{0025} se\nconfundiu de cansaco!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2906": {
+          "source_sha256": "529a050af65dbc433180dc2ef232bdd7248b794574e93145f15389d08e2381fe",
+          "target": "{F001}{F101}{002C} ganhou $\n{002D}!▼",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2913": {
+          "source_sha256": "2854bdc4b9d0ab46274e63c41e6adbfd2c191a66ad40084d0c9878ce47fe3e44",
+          "target": "{F001}{F101}{0025} fez\num substituto!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2928": {
+          "source_sha256": "a594157049850f626344d2988582564e16fac2aec852e810fac955c7869b61c0",
+          "target": "{F001}{F101}{0025} fica\nmais furioso!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2937": {
+          "source_sha256": "ff3111d0bb0b23cc34dea49a7680e44990ead40f15681e6b1eb8126884204fad",
+          "target": "{F001}{F101}{0025} recebeu\num bis!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2953": {
+          "source_sha256": "e3404ef115ff6b18d8ef7eadba773476b93812cba107a8f5b8fe133efc27fea8",
+          "target": "{F001}{F101}{0025} tenta\nlevar o rival junto!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2968": {
+          "source_sha256": "3f4c351150c782c861b89df7875e61397bb801740a9ac49babf7637a29bd8017",
+          "target": "{F001}{F101}{0025} roubou de\n{0031} rival: {0034}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2973": {
+          "source_sha256": "135730711f101b3baf59452049766432088d1bdbb32a3df025d2f664f2eb4a31",
+          "target": "{F001}{F101}{0025} não\npode mais escapar!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2974": {
+          "source_sha256": "135730711f101b3baf59452049766432088d1bdbb32a3df025d2f664f2eb4a31",
+          "target": "{F001}{F101}{0025} não\npode mais escapar!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2976": {
+          "source_sha256": "c91e21e0f6fed05cd86bb7ee0bea7fc82b15cc81f3e44e1ff6a19ca7094ef19c",
+          "target": "{F001}{F101}{0025} comecou a\nter um pesadelo!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2977": {
+          "source_sha256": "c91e21e0f6fed05cd86bb7ee0bea7fc82b15cc81f3e44e1ff6a19ca7094ef19c",
+          "target": "{F001}{F101}{0025} comecou a\nter um pesadelo!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2979": {
+          "source_sha256": "69531aff41654c05eacd77d5a6b151728d770eb4cfed01f51febd00c5a9ad17b",
+          "target": "{F001}{F101}{0025} esta\npreso em um pesadelo!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "2980": {
+          "source_sha256": "69531aff41654c05eacd77d5a6b151728d770eb4cfed01f51febd00c5a9ad17b",
+          "target": "{F001}{F101}{0025} esta\npreso em um pesadelo!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3007": {
+          "source_sha256": "490049e96ac60a1217e54ccaebf6fc19e40e857ad1f19af12e20918a41b33945",
+          "target": "{F001}{F101}{0025} se\npreparou!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3024": {
+          "source_sha256": "d22e432352d2325fb92cbcaac4f58476c04bf068ca5bcdd0d9aada2f00d87265",
+          "target": "{F001}{F101}{0025} escapou\nde {0031}: {002A}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3025": {
+          "source_sha256": "d22e432352d2325fb92cbcaac4f58476c04bf068ca5bcdd0d9aada2f00d87265",
+          "target": "{F001}{F101}{0025} escapou\nde {0031}: {002A}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3026": {
+          "source_sha256": "82f939d97a28e73fead21e7c712b2d9e7becc83ee26ed881ee59a4c96e8ce9c2",
+          "target": "{F001}{F101}{0025} escapou de\n{0031} rival: {002A}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3037": {
+          "source_sha256": "93e32c3179472e6f7bef666b9ca51449451c8ce1bb88742c79e7aacf321706dc",
+          "target": "{F001}{F101}{0025} previu\num ataque!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3043": {
+          "source_sha256": "e14f68e52e3916a44e98ac9d5d277658f236c5145d7709c78a7319cbd496340e",
+          "target": "{F001}{F101}{0025} selou\no destino: {0029}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3050": {
+          "source_sha256": "a8d527056240f5067e72c4b93ac6735fae754833dde789413c363dc3d2c64eea",
+          "target": "{F001}{F101}{0025} se tornou\no centro das atencoes!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3053": {
+          "source_sha256": "218bf0c610df33f2d832ea608c8eaa50b09a761d28ae0458a9ed7c685236002c",
+          "target": "{F001}{F101}{0025} comecou\na acumular poder!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3065": {
+          "source_sha256": "f40af0e988ca6f45c792aa334b3b142672cc9a8b2f7579bcb6fede8a2c5f2e0a",
+          "target": "{F001}{F101}{0025} caiu\nna provocacao!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3066": {
+          "source_sha256": "f40af0e988ca6f45c792aa334b3b142672cc9a8b2f7579bcb6fede8a2c5f2e0a",
+          "target": "{F001}{F101}{0025} caiu\nna provocacao!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3075": {
+          "source_sha256": "a24645e0795b5e44ee9dfd569e5cf19e342d3703dece2f3e057d39f10807f02d",
+          "target": "{F001}{F101}{0025} trocou\nitens com seu alvo!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3078": {
+          "source_sha256": "f0cba85000616370d3afeb0c64ac7aab905810567077ee958b3eb599224c4b26",
+          "target": "{F001}{F101}{0025} obteve\num {0035}.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3081": {
+          "source_sha256": "87d58a50870760f6781f2c31758a18b9e659169ce858f6f9e08a79223e7d6e49",
+          "target": "{F001}{F101}{0025} obteve\num {0035}.▼ {002E} obteve um {0036}.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3082": {
+          "source_sha256": "87d58a50870760f6781f2c31758a18b9e659169ce858f6f9e08a79223e7d6e49",
+          "target": "{F001}{F101}{0025} obteve\num {0035}.▼ {002E} obteve um {0036}.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3083": {
+          "source_sha256": "f932729a70806405ffa27ca4a3c473a691240f1ca3bcb50cee11dedc46d5499a",
+          "target": "{F001}{F101}{0025} obteve\num {0035}. {002E}▼ rival obteve um\n{0036}.▼",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3088": {
+          "source_sha256": "11ffa15d31b7562878b20410e07f942e16928df1fb397907a3e593ece2ba1e67",
+          "target": "{F001}{F101}{0025} copiou\nde {0031}: {0037}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3089": {
+          "source_sha256": "11ffa15d31b7562878b20410e07f942e16928df1fb397907a3e593ece2ba1e67",
+          "target": "{F001}{F101}{0025} copiou\nde {0031}: {0037}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3090": {
+          "source_sha256": "1c5a6f9f238889d7859aaf4f9fee38b3dc2b984b397cd3f53fb69de2ed138f0e",
+          "target": "{F001}{F101}{0025} copiou de\n{0031} rival: {0037}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3117": {
+          "source_sha256": "8bedd6df4240f521e7573c93d6dadc4076984a46cefff95f7ab7630cd49a9d91",
+          "target": "{F001}{F101}{0025} derrubou\nde {0031}: {0034}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3118": {
+          "source_sha256": "8bedd6df4240f521e7573c93d6dadc4076984a46cefff95f7ab7630cd49a9d91",
+          "target": "{F001}{F101}{0025} derrubou\nde {0031}: {0034}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3127": {
+          "source_sha256": "2d0c9c33b7adab610fb445c9e811c3d91d79e4bc687c7663d8a1fc2a0df93a19",
+          "target": "{F001}{F101}{0025} bloqueou\nos golpes do rival!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3133": {
+          "source_sha256": "add6c17f001a5b70977be4a1a8f70d01373de4d85c838f3ed7e0ac067e29dc37",
+          "target": "{F001}{F101}{0025}: {0029} perdeu todo\no PP por rancor!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3140": {
+          "source_sha256": "212f728cee0ec82cf7cf329156c8d86160ecb014f28d7170dc019d10a8aa0e0a",
+          "target": "{F001}{F101}{0025}:\nMagic Coat▽\nrefletiu {0029}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3162": {
+          "source_sha256": "56e3cd92fbbfcd37fd0093a048c744d4ac744f4fb68aa9db9da1aff8a9f9346c",
+          "target": "{F001}{F101}{0025} se\nconcentrou com {0035}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3165": {
+          "source_sha256": "d62604d91493b1547fd5cd80b771535ad821886185437a5e47dfafe76c2c6d90",
+          "target": "{F001}{F101}{0025} perdeu o\nfoco e não agiu!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3169": {
+          "source_sha256": "e5434846884ea0170a50dae3f65f1a754fef16c58732d76748e7d45b2c447bb0",
+          "target": "{F001}{F101}{0025} foi\nforcado a sair!▼",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3173": {
+          "source_sha256": "46114670f9d3f6a1481d42be91d092c44d3c10c9fed843fe7df17151beb9a61d",
+          "target": "{F001}{F101}{0025} não\ntem mais golpes!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3181": {
+          "source_sha256": "51aaac314808597a8766760f67751c0a12648351d6fbc51908e463ea6320807d",
+          "target": "{F001}{F101}{0025}: {0029} esta\nbloqueado!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3191": {
+          "source_sha256": "d0d235f02605677c3a36c3208c74071a22c73826d87982c326f559a4908ae480",
+          "target": "{F001}{F101}{0025} foi\nprotegido por {002B}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3193": {
+          "source_sha256": "58df6ef4579a96a8eb509d9f141ad881c180a4a9754fc22fd14757fc07afd18f",
+          "target": "{F001}{F101}{0025}: {002B}\nimpede que {002E}\nuse▽ {003B}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3194": {
+          "source_sha256": "58df6ef4579a96a8eb509d9f141ad881c180a4a9754fc22fd14757fc07afd18f",
+          "target": "{F001}{F101}{0025}: {002B}\nimpede que {002E}\nuse▽ {003B}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3200": {
+          "source_sha256": "87b8d2f01ef7323171f00eb5dc81250d2a34e999d04901c51be91711106813c0",
+          "target": "{F001}{F101}{0025} recuperou\nHP com {002B}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3204": {
+          "source_sha256": "65f769251d37c803d8b27e0af01ec4e1320a275b9be44ba998cb4230cf00b105",
+          "target": "{F001}{F101}{0025}: {002B}\nanulou {002A}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3222": {
+          "source_sha256": "e789307b07e1ddb81eb572302013feb713e35964b979cb8aca0b8d2a353197d4",
+          "target": "{F001}{F101}{0025}: {002B}▽\nfortaleceu seus\ngolpes de Fogo!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3224": {
+          "source_sha256": "0d37d5f1e5826ed52369ec84c498755be73a84e2d12ff197e3167394e5ed6f17",
+          "target": "{F001}{F101}{0025} se\nancora com {002B}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3229": {
+          "source_sha256": "b44253e7cf190876fa109d86dba4ea02a8a7ee4b65a3345fba0a32dbc1817cf3",
+          "target": "{F001}{F101}{0025}: {002B}\nreduz {002E} rival: {003D}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3244": {
+          "source_sha256": "11ffa15d31b7562878b20410e07f942e16928df1fb397907a3e593ece2ba1e67",
+          "target": "{F001}{F101}{0025} copiou\nde {0031}: {0037}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3245": {
+          "source_sha256": "11ffa15d31b7562878b20410e07f942e16928df1fb397907a3e593ece2ba1e67",
+          "target": "{F001}{F101}{0025} copiou\nde {0031}: {0037}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3246": {
+          "source_sha256": "1c5a6f9f238889d7859aaf4f9fee38b3dc2b984b397cd3f53fb69de2ed138f0e",
+          "target": "{F001}{F101}{0025} copiou de\n{0031} rival: {0037}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3280": {
+          "source_sha256": "65f769251d37c803d8b27e0af01ec4e1320a275b9be44ba998cb4230cf00b105",
+          "target": "{F001}{F101}{0025}: {002B}\nanulou {002A}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3327": {
+          "source_sha256": "d050547161af36111fd920dca16bcadb610d94563571e2fccb2c509fbffda04f",
+          "target": "{F001}{F101}{0025}: {002F}\ncaiu!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3328": {
+          "source_sha256": "d050547161af36111fd920dca16bcadb610d94563571e2fccb2c509fbffda04f",
+          "target": "{F001}{F101}{0025}: {002F}\ncaiu!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3330": {
+          "source_sha256": "cf1eae65010b5ae9f8776682f8d47d6cc8df5003506bc87cfef17620e155fc69",
+          "target": "{F001}{F101}{0025}: {002F}\ncaiu muito!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3331": {
+          "source_sha256": "cf1eae65010b5ae9f8776682f8d47d6cc8df5003506bc87cfef17620e155fc69",
+          "target": "{F001}{F101}{0025}: {002F}\ncaiu muito!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3419": {
+          "source_sha256": "e14756e9dad2d4de47d40cd94ac8cdf4c4ab6a4bbd6db85696200989a559efe6",
+          "target": "{F001}{F101}{002C} jogou lama\nno {0033}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3422": {
+          "source_sha256": "4549337a0523e790c6899ef140060c35f6ef3a543e3fe704240b1e5cdc5c3988",
+          "target": "{F001}{F101}{002C} usou\num {0035}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3435": {
+          "source_sha256": "e291e6045659d194f66602aa0a7ae2a25b6b5de1d74009f4e0c86a249267b7a7",
+          "target": "{F001}{F101}{0025} foi enviado\nao PC de Bebe!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3461": {
+          "source_sha256": "5b68a29da488756ab05db5153dac1ea1ea8b5b56be5e67efd83e9562c456b588",
+          "target": "{F001}{F101}{0025} curou o\nstatus com {0035}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3464": {
+          "source_sha256": "613ac4ff7ed49ed708a217476f37a0414a66d562670596dbe93ee7e0a3bb4cd3",
+          "target": "{F001}{F101}{0025} recuperou a\nvida com {0035}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3470": {
+          "source_sha256": "5b68a29da488756ab05db5153dac1ea1ea8b5b56be5e67efd83e9562c456b588",
+          "target": "{F001}{F101}{0025} curou o\nstatus com {0035}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3474": {
+          "source_sha256": "64ecbd5af8e24386995f20ca972e91b1f7622944abcb4957ccd6c6bfd512afa7",
+          "target": "{F001}{F101}{0025} restaurou um\npouco de HP usando seu {0035}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3477": {
+          "source_sha256": "df844a3d7317e1c1234fa72cecfba4fd7d52f9ef3cd929b00c63e49024434d17",
+          "target": "{F001}{F101}{0025} resistiu\ncom {0035}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3518": {
+          "source_sha256": "ef65dc1b841de6f71b84acea89b9a27857d003a39eabb96a76e54aba77dcd27f",
+          "target": "{F001}{F101}Você\nvenceu {0041} {0040} e\n{0047}▽ {0042}!▼",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3538": {
+          "source_sha256": "a468d5a9a1547be3a9cb38b7894a4fbc4346ee8df1e50d5199c2eab845c487d7",
+          "target": "{F001}{F101}{0041} {0040} enviou {002E}\ne {0048}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3549": {
+          "source_sha256": "ae8664a96d130bc008120e60493434d0e0f08deca41531bc42343f8e64571f1b",
+          "target": "{F001}{F101}{0025}, vamos\ntrocar! Volte!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3551": {
+          "source_sha256": "4939cb074775cab1b0bcbae4ec30aa88d1e3a13756aa76c9fd9a87cfdef77767",
+          "target": "{F001}{F101}{0025},\ncerto! Volte!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3552": {
+          "source_sha256": "693f9bd24c0390aad001f12ef24e46554b8e98baee0d2a7f37a6d24421aa0bdc",
+          "target": "{F001}{F101}{0025}, chega!\nVolte!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3553": {
+          "source_sha256": "3235945987f20677095c86cc64fedd207baea10a3b1e3d0552df180812732e9c",
+          "target": "{F001}{F101}{0025}, muito\nbem! Volte!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3574": {
+          "source_sha256": "cf962c019b6d7b7d31810427216dc6da188ef0be4f2704c1e5f3e236eafb8962",
+          "target": "{F001}{F101}{0025} trocou\nseu Ataque e Defesa!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3592": {
+          "source_sha256": "50d776d4f092ec3973be420d2122f0c2e0735c581a785e8976dea277653fa2cd",
+          "target": "{F001}{F101}{0025} cercou-se\ncom um veu de água!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3602": {
+          "source_sha256": "7b8ffd2da9207d38a3a53bb916794830a966a78659a6d2bc8b0db23df7758abc",
+          "target": "{F001}{F101}{0025} evita golpes\nTerrestres com {0029}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3611": {
+          "source_sha256": "f8f04f41fcd3245f767acb91c341fd070abfe7a625237acd9e03bad416a4d6e6",
+          "target": "{F001}{F101}{0025} dissipou a\nnevoa profunda com {0029}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3613": {
+          "source_sha256": "b9bc3866a0e1b27b67cd5953550c27e4aa09292715e630d0c65ea71ce18c25e2",
+          "target": "{F001}{F101}{0025} foi\npego pela finta!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3614": {
+          "source_sha256": "b9bc3866a0e1b27b67cd5953550c27e4aa09292715e630d0c65ea71ce18c25e2",
+          "target": "{F001}{F101}{0025} foi\npego pela finta!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3632": {
+          "source_sha256": "c921d71d79023acd5d22e98801854072930f171120aba3d38bd766dde26f0161",
+          "target": "{F001}{F101}{0025} voltou\npara {0040}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3635": {
+          "source_sha256": "8e70807491dc5884f02baea3717c29193f7d7754b8ba60cd07cdee8def1a34a3",
+          "target": "{F001}{F101}{0025} torceu\nas dimensoes!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3638": {
+          "source_sha256": "1060026607877fd2d53c55fdc1493299228934d3bafd4d28126a00892f5e3a69",
+          "target": "{F001}{F101}{0025} restaurou\nas dimensoes!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3647": {
+          "source_sha256": "c5d9b5a37aee75917c43c9dd51bfc39c9c91e2b903ba2a1d5482a31151a9b3bb",
+          "target": "{F001}{F101}{0025} sumiu\nnum instante!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3652": {
+          "source_sha256": "57b8c17eba9d497c52aced433cc8adf4b177f34ba61b42b61d70bc84f980c92f",
+          "target": "{F001}{F101}{0025} tem\n{002B}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3655": {
+          "source_sha256": "3ba6c48183776649f643ef1dd9052671c434c5da8c36c10cedb19c32ba98fd7b",
+          "target": "{F001}{F101}{0025} e\nferido por seu {002B}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3661": {
+          "source_sha256": "79ea11ab4868dbff40f150fdfafaf0f500c826aef5c807fd98523af18ef5fc17",
+          "target": "{F001}{F101}{0025} perdeu HP\npor {002B}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3677": {
+          "source_sha256": "ef3bdacb9968890da50466804900d0c511d380e38eb02256b2140b083f5ba49d",
+          "target": "{F001}{F101}{0025} esta lento\npor causa de {002B}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3683": {
+          "source_sha256": "3c0b2b0255bfd57e7a9e98fa67caf45ce572882f9023c2902baf5427c0eb3ceb",
+          "target": "{F001}{F101}{0025} revistou o\nrival e achou {0035}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3697": {
+          "source_sha256": "42fe2add5e469dd20ebeaeaa303382a8d3dac2e30ec29dbb41abe714b722be19",
+          "target": "{F001}{F101}{0025} e\nferido por seu {0035}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3700": {
+          "source_sha256": "d637866cf927440744defb422b7df0cfbe68fe7173ac718920e9bf83dffb4d2b",
+          "target": "{F001}{F101}{0025} não\npode mais usar itens!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3701": {
+          "source_sha256": "d637866cf927440744defb422b7df0cfbe68fe7173ac718920e9bf83dffb4d2b",
+          "target": "{F001}{F101}{0025} não pode\nmais usar itens!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3713": {
+          "source_sha256": "bbe0e87040ec90169b29b21bc0127d5a5109ea0f5be7783c808326d197652563",
+          "target": "{F001}{F101}{0025}: {002B} tornou\no {0034} ineficaz!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3727": {
+          "source_sha256": "fb5caafdb92969977be64c772ca3f57e73a7de62d59d85cb1de1a5049105e219",
+          "target": "{F001}{F101}{0025} sofreu dano de\n{0031} rival: {0034}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3749": {
+          "source_sha256": "73c88b6880103af92f1c30389a8cd62ae9f1a8c3e5366d20555b92a63c3a388f",
+          "target": "{F001}{F101}Bem, então.\n..▼",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3773": {
+          "source_sha256": "ee229aeaca016f253d803400190709c9f08d465790893329aa9210d7a585265f",
+          "target": "{F001}{F101}{0025} foi curado\nda paralisia.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3778": {
+          "source_sha256": "4fa99d2b0d7367719d9e77f82fa16608a5e9db0544873032bf6317cbd951cbb1",
+          "target": "{F001}{F101}{0025} superou\nsua paixao.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3793": {
+          "source_sha256": "b63dc3bdccf4131e991746365b94043462375d95c70a8f48c36ad8c9b6403c2c",
+          "target": "{F001}{F101}{002C} usou\numa Poke Ball!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3812": {
+          "source_sha256": "56dce3807e5f123f6d235d4c9386360304f7c057a8fe70cb294b8d8cdd465329",
+          "target": "{F001}{F101}{0025} ficou preso\nem turbilhoes de magma!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3816": {
+          "source_sha256": "187a1e58036cdc0c0b2cd75d04a645c71c7143ea7daac851df5cac0cd55a9159",
+          "target": "{F001}{F101}{0025} ficou\ncarregado com {0035}!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3845": {
+          "source_sha256": "b4145e22dc30e4d9c352c892116488a5c334219b07a5417c837a9eed108f2ad5",
+          "target": "{F000}{F101}{0015} não\ntem mais golpes!{000D}",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3923": {
+          "source_sha256": "98c860baea10622c99ecdc2957eac5c100fae5e749579daa3da2d30d72e67766",
+          "target": "{F006}{F101}I want to meet Mr.\nPedro!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "3925": {
+          "source_sha256": "53745e00dd6e2d453e04c72db29f6b662709acdfe574fd521112f2644ddb4593",
+          "target": "{F006}{F101}I'm one step closer to Mr.\nPedro!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        },
+        "4377": {
+          "source_sha256": "96ec84956853a3cb997248c0c3510657160152f3806b81e406b634905eeb6c6d",
+          "target": "{F006}{F101}You're nothing compared to\nPedro!",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        }
+      },
+      "kind": "battle"
+    },
+    "mes_name_e.fsys": {
+      "base_sha256": "5e29d6151cde367def02744abbdf21057cc63b13798a85789ed0f3b87443ac59",
+      "resource": "0x27c51800",
+      "target_sha256": "5e29d6151cde367def02744abbdf21057cc63b13798a85789ed0f3b87443ac59",
+      "targets_by_id": {},
+      "kind": "names"
+    },
+    "menu_btutorial.fsys": {
+      "base_sha256": "b9940dc2e5c410c058401e45f775275c7d8ca388355467e29955c7b43d334bdf",
+      "resource": "0x2a431800",
+      "target_sha256": "05c0fcda3be55e8f9a3cb68ce629942a06d93bc589705779ca51b3876e530792",
+      "targets_by_id": {
+        "135": {
+          "source_sha256": "fca7891e67e10d9799134a3ce73cd6b053502b156b10f342ca116f4f84abd878",
+          "target": "{F001}{F101}Escolha Golpes para ver os\ngolpes do Pokémon selecionado.",
+          "editorial_rules": [],
+          "extra_pages": 0,
+          "status": "bounded"
+        }
+      },
+      "kind": "tutorial"
+    }
+  },
+  "aliases": {
+    "mes_fight_e.fsys": {
+      "base_sha256": "67ee2c7843b83bcac5ed15ed3c4e10e25a9b85305dd398c7823d942d14921af6",
+      "target_sha256": "0d15e60ebb803a42d2a4a716c23456197eb5dd1f892644bd6bca8f238d162d7b"
+    },
+    "mes_bpass_e.fsys": {
+      "base_sha256": "2ab6d8e9450a4fa45cfedce21c3c03a922d217a3d596f8c456e44646fe577916",
+      "target_sha256": "352654e76b7af55a169dd0a60959ca2f37043038a682d4ad633621134a71485a"
+    },
+    "menu_bpass2.fsys": {
+      "base_sha256": "dda758f217cc611bf1e5386768ecacc13632930c10e155ffdefa2d0b00427473",
+      "target_sha256": "784b3f5ef218081ed4d60d5502de33605f0aafd2a204e2a6debf1592826a7366"
+    },
+    "menu_name2.fsys": {
+      "base_sha256": "2c4e802866698503d7a8994d22e932f0a25d029891e11edeab748ea5d4ad34d0",
+      "target_sha256": "2c4e802866698503d7a8994d22e932f0a25d029891e11edeab748ea5d4ad34d0"
+    }
+  }
+}

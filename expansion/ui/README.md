@@ -45,3 +45,36 @@ campos e glifos. `help-caption-test13.json` documenta as outras mensagens simila
 encurtadas e medidas. Esses testes não substituem a conferência da posição
 real das caixas no Dolphin. O source builder aplica a sobreposição após o lote
 anterior; o aplicador público continua distribuindo apenas patches diferenciais.
+
+
+## Revisão global de diálogos — em andamento
+
+`review_existing_layout.py` examina todos os IDs já diferentes do original nas
+quatro tabelas canônicas e sincroniza as cópias de batalha/nomes nos menus.
+Não traduz IDs ainda intactos. As comparações usam fontes e rotinas nativas.
+A candidata é reproduzida por `apply_dialogue_review.py` usando SHA por arquivo
+e por linha. Não há mudanças em DOL, modelos, regras, equipes ou saves.
+
+`dialogue_layout.py` permite novas continuações somente para diálogos comuns
+que já usam o protocolo interativo (`000D` ou `0067`), sem grades, escolhas ou
+alinhamento fixo. O despacho de `000D` e `0067` chega às rotinas equivalentes
+`80160a18`/`80160a10`. O replay de avanço verifica até 16 páginas; simula apenas
+o botão, sem substituir o avanço ou reset do texto. Isso não é teste de GPU
+nem de todos os consumidores das mensagens.
+
+As novas páginas mantêm as palavras e a ordem dos parâmetros. O caso de NPC
+com fala ativa repete somente o par de fechamento/retomada `0028/0027` em cada
+novo limite, conforme o padrão original. Fontes, alinhamento e variáveis não
+são duplicados. Nomes compostos são mantidos juntos. A distribuição prefere
+limites de frases e evita páginas finais quase vazias.
+
+Caixas fixas não recebem páginas automaticamente. `dialogue_editorial.py` e
+`dialogue-menu-editorial.json` contêm reformulações explícitas de descrições
+existentes, mantendo mecânicas, números, negações e nomes. Apenas resultados
+que cabem na referência revisada entram na candidata; outros ficam pendentes.
+
+O levantamento verificou 10.006 IDs alterados e preparou 352 correções, com
+118 continuações adicionais. A revisão permanece incompleta: 2.661 alertas
+conservadores ainda dependem de contexto ou da moldura real. São alertas, não
+uma contagem comprovada de defeitos visuais. `dialogue-review-draft.json` não
+é uma aprovação de publicação e não modifica o canal dos jogadores.

@@ -1,0 +1,12 @@
+{
+  "status": "reviewed-local-candidate",
+  "scope": "Existing main-menu captions and NPC-adjacent messages; no new translations",
+  "common": {
+    "9126": "{F002}{F101}Gera uma onda de choque\nno próprio corpo. Pode\nreduzir a Def. Esp. do alvo.",
+    "9168": "{F001}{F101}{0050}: +{0017} pontos.",
+    "9177": "{F001}{F101}{0050}: novo Passe de Batalha!",
+    "9183": "{F001}{F101}{0050}: novo Passe de Batalha!",
+    "9213": "{F001}{F101}Carregue um Battle Pass do Wii Remote P1/P2.",
+    "9227": "{F001}{F100}{0003:0002}Precisa de ao menos dois passes\npara jogar uma Batalha Livre!{0067}"
+  }
+}
