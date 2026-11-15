@@ -1,19 +1,21 @@
 ﻿{
+    "bootstrap_sha256":  "d6eed5fe25b2769f76abda2802f87f12cfbd37bfd6a9b161d3fb92be0dddeebb",
     "installer_sources":  {
                               "Aplicar-Mod.ps1":  "e787ac30bfa6f19b92f471e4a41fd7bbbc85f1d2f782655079d8b0b8e1d7b183",
-                              "Iniciar-Launcher.ps1":  "8de91955c2997f9f6d5110d9869f8e22dd3c24494d4e9d9e76050a4a873df5b7",
+                              "Iniciar-Launcher.ps1":  "7c3cfa1abdea2b463d58445b28942668ce1233115b9d3fb3e553456c59151a62",
                               "Recuperar-Graficos.ps1":  "25cb254b0640aadd8630f720a1397d5554d63dc4a8407e0944bbd2a6be074be3"
                           },
     "launcher_version":  "1.0.0",
-    "executable_sha256":  "e85d0af4d55d11cad2be66683ca079cdd085f177156b2b2d7066addd67f36300",
+    "executable_sha256":  "46b55437020774239dedb50054292a58b1d07f7d7b39fd556b6e956cdddaaccc",
     "sources":  {
-                    "App.cs":  "542d675032aa3d72958bafce41d97d9996489be031dbd5061e1363e706fea06c",
+                    "App.cs":  "3b0805870f0a3b2cff0d1066cdc9173ab5b818aafda8c79f3f273ec592b93c67",
                     "app.ico":  "b4667165ae5d602af97efe788ba49473cc90f69c6c9b5f2de547c9d756f06440",
                     "app.manifest":  "0a57c1a2e3efeea0d4c11e973ce3eaeab05b8e4cc8062a51102782f67dd33831",
-                    "build.ps1":  "5066a85d63db0ca177ecc07edb14b56c8152c2faf56c9e68761bf106cc417384",
+                    "Bootstrap.cs":  "ece0c6f503356849d074f6a4f62bfb137cd9633ddbc41a492dfc9f706cf814fa",
+                    "build.ps1":  "b3395efae3c3d80ed17e7e3d12d9e15b18575929ffecf464011fb73ebc769d78",
                     "MainWindow.xaml":  "dedc57b96573b654792650e8fb0a2b19fb01e8548eb123c7b2a075720852535b",
                     "SelfTest.cs":  "c6e966103d2a2dd3b6f4d23ac15f7c1c8b228646b4a6fd3068a55c55a8a443bb",
                     "Services.cs":  "94bf535a4403789fc3e5512cf70c102a6842e62d357cfc3beae3beb0eac9ecf2",
-                    "test-integration.ps1":  "0a4a85583a46c343238950551e8565a7638ffd5ef2d21dad5ab9b62cf842e8d7"
+                    "test-integration.ps1":  "3e2a32f5629dea9fb051d28b0e2d3dfdf38a3655bd7cbd217c50d9bb41ba955e"
                 }
 }
