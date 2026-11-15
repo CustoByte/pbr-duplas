@@ -25,7 +25,7 @@
         "animation_clips": 0,
         "referenced_buffers_and_images_present": true
       },
-      "animation_status": "species_specific_pose_and_idle_in_development",
+      "animation_status": "own_battle_motion_and_tail_fire_visual_review_pending",
       "configuration": {
         "status": "previous_charizard_moves_carried_forward_not_reselected_for_y",
         "moves": [

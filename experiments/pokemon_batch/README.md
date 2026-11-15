@@ -125,3 +125,39 @@ A nova espera ainda não foi aprovada pelo usuário e não está pronta para Dol
 Os mapeamentos automáticos rejeitados foram desabilitados no baker; o X fica
 somente como histórico, apontando para a substituição pelo Y. Ataques e outros
 estados deverão ser trabalhados depois da revisão desta base.
+
+## Estados próprios de batalha e chama em revisão
+
+`author_charizard_y_battle.py` cria quatorze clips próprios sem importar ações
+nativas: espera aérea, aproximação, decolagem, pouso, ataque de braço, ataque
+especial com abertura da boca, investida, defesa, impacto no solo, recuperação,
+dano, desmaio, saída e recolhimento corporais. As poses de contato usam solução
+analítica de duas articulações para manter os tornozelos no solo. O retorno de
+ataques à espera e os ciclos têm contratos numéricos distintos; desmaio e
+recolhimento preservam seus estados terminais. `verify_charizard_y_battle.py`
+verifica esses contratos, quaternions e os pontos de contato.
+
+`tail_flame_review.gd` substitui a malha rígida de fogo SOMENTE no visualizador
+por chama procedural emissiva e brasas, ancoradas ao osso da ponta da cauda.
+O tempo do efeito é explícito para a gravação a 30 Hz. A câmera e o efeito são
+recursos de revisão, não código executável no Wii. O chão usa uma referência
+de pouso para não normalizar a pose voando como se estivesse no solo.
+
+**Não há exportação SDR, hooks de batalha, efeitos dos golpes ou efeitos de
+Poké Bola validados nesta etapa.** Saída/recolhimento incluem encenação de escala
+na prévia; não devem receber escala duplicada pelo motor durante integração.
+O fogo precisará de implementação compatível com os materiais/animações do jogo.
+Os vídeos anteriores rejeitados não são promovidos e esta revisão também exige
+avaliação visual. Nenhum feed de atualização ou save é alterado.
+
+A fixação da chama procura o vértice terminal da cauda rigidamente influenciado
+por Tail8 e transforma esse ponto para o espaço do osso. Isso evita usar EndTail8
+como se fosse a superfície: no modelo fornecido, esse marcador fica além da malha.
+A busca ocorre uma vez; durante os clips, o emissor acompanha o mesmo ponto da
+pele. A gravação aproximada serve para conferir a ligação e o movimento do fogo.
+
+`render_charizard_y_battle.py` produz o vídeo completo e o detalhe da chama com
+relógio fixo de 30 Hz, verifica a sintaxe GDScript e decodifica os MP4 ao terminar.
+A fonte da chama é calculada pelo shader; nenhuma imagem ou vídeo foi usado para
+simular uma captura do jogo. Os vídeos são privados e não demonstram integração
+com o motor de batalha original.

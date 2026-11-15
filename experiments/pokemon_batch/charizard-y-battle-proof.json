@@ -1,0 +1,243 @@
+{
+  "key": "mega-charizard-y",
+  "method": "species_specific_authored_pose_curves_and_leg_contact",
+  "donor_motion_used": false,
+  "body_actions": {
+    "wait": {
+      "frames": 181,
+      "duration_seconds": 6,
+      "loop": true
+    },
+    "run": {
+      "frames": 73,
+      "duration_seconds": 2.4,
+      "loop": true
+    },
+    "takeoff": {
+      "frames": 73,
+      "duration_seconds": 2.4,
+      "loop": false
+    },
+    "land": {
+      "frames": 73,
+      "duration_seconds": 2.4,
+      "loop": false
+    },
+    "hikkaku": {
+      "frames": 73,
+      "duration_seconds": 2.4,
+      "loop": false
+    },
+    "kime": {
+      "frames": 73,
+      "duration_seconds": 2.4,
+      "loop": false
+    },
+    "tackle": {
+      "frames": 73,
+      "duration_seconds": 2.4,
+      "loop": false
+    },
+    "guard": {
+      "frames": 73,
+      "duration_seconds": 2.4,
+      "loop": false
+    },
+    "ground_impact": {
+      "frames": 73,
+      "duration_seconds": 2.4,
+      "loop": false
+    },
+    "recover": {
+      "frames": 109,
+      "duration_seconds": 3.6,
+      "loop": false
+    },
+    "damage": {
+      "frames": 73,
+      "duration_seconds": 2.4,
+      "loop": false
+    },
+    "down": {
+      "frames": 109,
+      "duration_seconds": 3.6,
+      "loop": false
+    },
+    "ball_exit": {
+      "frames": 73,
+      "duration_seconds": 2.4,
+      "loop": false
+    },
+    "ball_return": {
+      "frames": 73,
+      "duration_seconds": 2.4,
+      "loop": false
+    }
+  },
+  "dolphin_ready": false,
+  "move_effects_verified": false,
+  "pokeball_engine_effects_verified": false,
+  "tail_fire_shader_scope": "preview_only",
+  "user_approved": false,
+  "glb_sha256": "5afd52be06a87a87ef4df19bf526ec399ffc33f635511f0b43dda1267b1e79f1",
+  "glb_bytes": 6470776,
+  "numerical_review": {
+    "passed": true,
+    "errors": [],
+    "actions": [
+      {
+        "action": "ball_exit",
+        "minimum_adjacent_quaternion_dot": 0.9996280149655153,
+        "endpoint_rotation_gap": 0.0,
+        "endpoint_location_scale_gap": 0.0
+      },
+      {
+        "action": "ball_return",
+        "minimum_adjacent_quaternion_dot": 0.9996280191654225,
+        "endpoint_rotation_gap": 0.0,
+        "endpoint_location_scale_gap": 0.0
+      },
+      {
+        "action": "damage",
+        "minimum_adjacent_quaternion_dot": 0.9996280149655153,
+        "endpoint_rotation_gap": 0.0,
+        "endpoint_location_scale_gap": 0.0
+      },
+      {
+        "action": "down",
+        "minimum_adjacent_quaternion_dot": 0.996233253012829,
+        "endpoint_rotation_gap": 0.0,
+        "endpoint_location_scale_gap": 0.0
+      },
+      {
+        "action": "ground_impact",
+        "minimum_adjacent_quaternion_dot": 0.995122212044249,
+        "endpoint_rotation_gap": 0.0,
+        "endpoint_location_scale_gap": 0.0
+      },
+      {
+        "action": "guard",
+        "minimum_adjacent_quaternion_dot": 0.9995609239817277,
+        "endpoint_rotation_gap": 0.0,
+        "endpoint_location_scale_gap": 0.0
+      },
+      {
+        "action": "hikkaku",
+        "minimum_adjacent_quaternion_dot": 0.9962222988760014,
+        "endpoint_rotation_gap": 0.0,
+        "endpoint_location_scale_gap": 0.0
+      },
+      {
+        "action": "kime",
+        "minimum_adjacent_quaternion_dot": 0.9996280144326988,
+        "endpoint_rotation_gap": 0.0,
+        "endpoint_location_scale_gap": 0.0
+      },
+      {
+        "action": "land",
+        "minimum_adjacent_quaternion_dot": 0.9961099654574391,
+        "endpoint_rotation_gap": 0.0,
+        "endpoint_location_scale_gap": 0.0
+      },
+      {
+        "action": "recover",
+        "minimum_adjacent_quaternion_dot": 0.9958928634555242,
+        "endpoint_rotation_gap": 0.0,
+        "endpoint_location_scale_gap": 0.0
+      },
+      {
+        "action": "run",
+        "minimum_adjacent_quaternion_dot": 0.9996280145957472,
+        "endpoint_rotation_gap": 0.0,
+        "endpoint_location_scale_gap": 0.0
+      },
+      {
+        "action": "tackle",
+        "minimum_adjacent_quaternion_dot": 0.9996280146126821,
+        "endpoint_rotation_gap": 0.0,
+        "endpoint_location_scale_gap": 0.0
+      },
+      {
+        "action": "takeoff",
+        "minimum_adjacent_quaternion_dot": 0.9960188606777787,
+        "endpoint_rotation_gap": 0.0,
+        "endpoint_location_scale_gap": 0.0
+      },
+      {
+        "action": "wait",
+        "minimum_adjacent_quaternion_dot": 0.9996280147035834,
+        "endpoint_rotation_gap": 0.0,
+        "endpoint_location_scale_gap": 0.0
+      }
+    ],
+    "ground_contacts": [
+      {
+        "action": "takeoff",
+        "frame": 0,
+        "maximum_ankle_gap": 1.1246181883879427e-06
+      },
+      {
+        "action": "land",
+        "frame": 72,
+        "maximum_ankle_gap": 1.1246181883879427e-06
+      },
+      {
+        "action": "down",
+        "frame": 108,
+        "maximum_ankle_gap": 6.251387883246848e-07
+      }
+    ],
+    "dolphin_verified": false
+  },
+  "eligible_for_game_package": false,
+  "visual_approval": false,
+  "review_effect": {
+    "kind": "procedural_emissive_billboard_and_embers",
+    "clock": "explicit_simulation_time",
+    "scope": "Godot_review_only",
+    "anchor_bone": "Tail8",
+    "anchor_method": "terminal_visible_surface_vertex_with_rigid_skin_weight",
+    "attachment_visual_inspected": true,
+    "dolphin_port_verified": false
+  },
+  "code_sha256": {
+    "experiments/pokemon_batch/author_charizard_y_battle.py": "5dc8dc5f6176422273b8a9f882853855e3b8576b637b0994fbe7c099371a02f8",
+    "experiments/pokemon_batch/verify_charizard_y_battle.py": "75394f85db80f5a3b2f8d3155935af9e5dc04a99bf2776a10fe68816ba02de2b",
+    "native/runtime/tail_flame_review.gd": "a8c763bb072de156686cb3a02acbd15129ae90386c4e42fdc5f825c86472d33f"
+  },
+  "limitations": [
+    "Motion drafts require user visual review.",
+    "No native SDR export or battle event hook verification.",
+    "Move effects and Pokeball engine effects remain pending.",
+    "Ball entry/return scale staging must not be applied twice by the engine.",
+    "The flame shader requires a separate compatible implementation for the original Wii engine."
+  ],
+  "videos": [
+    {
+      "name": "mega-charizard-y-voo-chama-estados.mp4",
+      "sha256": "17807976bb3c6acb85f1c093477e799ec944d62ed85c758fd32c62bd85ecdacb",
+      "bytes": 8848146,
+      "media": {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "30/1",
+        "duration": "45.333333"
+      },
+      "full_decode_verified": true
+    },
+    {
+      "name": "mega-charizard-y-chama-detalhe.mp4",
+      "sha256": "08947a57a824d1b2e0a944936bd900a51ab55ce7b4abd1429375dd0986afb12c",
+      "bytes": 571278,
+      "media": {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "30/1",
+        "duration": "6.033333"
+      },
+      "full_decode_verified": true
+    }
+  ]
+}

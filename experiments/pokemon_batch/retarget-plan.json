@@ -248,7 +248,10 @@
   "mega-charizard-y": {
     "donor": "charizard",
     "retarget_enabled": false,
-    "visual_status": "own_pose_and_idle_in_development",
-    "donor_motion_used": false
+    "visual_status": "own_battle_motion_visual_review_pending",
+    "donor_motion_used": false,
+    "authored_motion_script": "author_charizard_y_battle.py",
+    "native_export_verified": false,
+    "tail_fire_port_verified": false
   }
 }
