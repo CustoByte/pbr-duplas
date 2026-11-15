@@ -28,6 +28,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--motion-dir',type=Path,required=True)
     parser.add_argument('--output-dir',type=Path,required=True)
+    parser.add_argument('--tail-flame',action='store_true',help='Review Charizard Y with the approved preview flame')
     parser.add_argument('--godot',default='godot')
     parser.add_argument('--ffmpeg',default='ffmpeg')
     parser.add_argument('--keys',nargs='+',choices=list(TITLES),default=list(TITLES))
@@ -40,10 +41,24 @@ def main():
     for key in args.keys:
         report=json.loads((args.motion_dir/(key+'-motion.json')).read_text())
         plan=args.motion_dir/(key+'-preview-plan.json')
-        plan.write_text(json.dumps(plan_for(key,report),ensure_ascii=False,indent=2)+'\n')
+        review=plan_for(key,report)
+        if args.tail_flame:
+            if key!='mega-charizard-y' or report['source_donor']!='pkx_006.fsys':
+                raise ValueError('Approved flame review expects Mega Charizard Y with original Charizard motion')
+            review.update(title='Charizard original → Mega Charizard Y',tail_flame=True,ground_reference='wait',footer='Movimentos do Charizard original adaptados ao Y • Chama aprovada\nPrévia de revisão; integração no Dolphin ainda pendente.')
+            names=['wait','run','hikkaku','kick','tackle','kime','kime_a','damage','takeoff','kuchu_wait','kyukoka','down']
+            segments=[]
+            for name in names:
+                clip=report['body_actions'][name]
+                seconds=clip['duration_seconds']*(2 if name in ('wait','run','kuchu_wait') else 1)+(.25 if name not in ('wait','run','kuchu_wait') else 0)
+                segments.append(dict(action=name,label=LABELS.get(name,name)+' — original',seconds=seconds,distance=6.8,yaw=.65))
+                if name not in ('wait','run','takeoff','kuchu_wait','down'):
+                    segments.append(dict(action='wait',label='Retorno à espera original',seconds=.65))
+            review['segments']=segments
+        plan.write_text(json.dumps(review,ensure_ascii=False,indent=2)+'\n')
         avi=args.output_dir/(key+'-review.avi');mp4=args.output_dir/(key+'-animacoes.mp4')
         with (args.motion_dir/(key+'-movie.log')).open('w') as log:
-            subprocess.run([args.godot,'--path',str(root/'native/runtime'),'res://preview.tscn','--write-movie',str(avi),'--fixed-fps','30','--','--model',str(args.motion_dir/(key+'-motion.glb')),'--preview-plan',str(plan)],env=env,stdout=log,stderr=subprocess.STDOUT,timeout=600,check=True)
+            subprocess.run([args.godot,'--path',str(root/'native/runtime'),'res://preview.tscn','--audio-driver','Dummy','--write-movie',str(avi),'--fixed-fps','30','--','--model',str(args.motion_dir/(key+'-motion.glb')),'--preview-plan',str(plan)],env=env,stdout=log,stderr=subprocess.STDOUT,timeout=600,check=True)
         subprocess.run([args.ffmpeg,'-hide_banner','-loglevel','error','-y','-i',str(avi),'-an','-c:v','libx264','-preset','fast','-crf','21','-pix_fmt','yuv420p','-movflags','+faststart',str(mp4)],timeout=120,check=True)
         avi.unlink()
         print('VIDEO_READY',key,mp4.stat().st_size,flush=True)

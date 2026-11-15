@@ -198,7 +198,8 @@
     "anchor_bone": "Tail8",
     "anchor_method": "terminal_visible_surface_vertex_with_rigid_skin_weight",
     "attachment_visual_inspected": true,
-    "dolphin_port_verified": false
+    "dolphin_port_verified": false,
+    "user_visual_approved": true
   },
   "code_sha256": {
     "experiments/pokemon_batch/author_charizard_y_battle.py": "5dc8dc5f6176422273b8a9f882853855e3b8576b637b0994fbe7c099371a02f8",
@@ -239,5 +240,8 @@
       },
       "full_decode_verified": true
     }
-  ]
+  ],
+  "user_review": "body_motion_rejected_tail_flame_approved",
+  "body_motion_user_approved": false,
+  "replacement_motion_source": "pkx_006.fsys"
 }

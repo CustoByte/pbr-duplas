@@ -161,3 +161,23 @@ relógio fixo de 30 Hz, verifica a sintaxe GDScript e decodifica os MP4 ao termi
 A fonte da chama é calculada pelo shader; nenhuma imagem ou vídeo foi usado para
 simular uma captura do jogo. Os vídeos são privados e não demonstram integração
 com o motor de batalha original.
+
+## Direção atual: Charizard original como base do Y
+
+O usuário aprovou a chama e rejeitou os movimentos corporais autorais. O Y passa
+a usar as doze ações corporais importadas de `pkx_006.fsys`: espera, corrida,
+dano, desmaio, ações especiais/físicas, decolagem, espera aérea e mergulho. Os
+mapeamentos consideram as asas de seis segmentos e a cauda de oito segmentos do
+Y. A escala de deslocamento usa quadril/tornozelo, evitando ossos auxiliares na
+medição. Nenhum mapeamento dos outros três modelos rejeitados é reativado.
+
+`retarget-plan.json` registra a autorização de usar Charizard como doador,
+**não aprovação visual do resultado nem validação de gameplay**. Os scripts de
+animação autoral ficam como histórico rejeitado. A implementação da chama aprovada
+permanece igual à revisão anterior; sua versão compatível com Wii ainda falta.
+
+`render_motion_review.py --keys mega-charizard-y --tail-flame` produz a revisão
+com as ações do doador e o efeito aprovado. A sequência de decolagem/espera aérea
+não recebe uma volta artificial à espera no chão entre esses dois clips. As
+prévia e os modelos ficam privados. A integração SDR/FSYS e os testes no Dolphin
+continuam pendentes e nenhum canal de atualização jogável é alterado.

@@ -1,0 +1,274 @@
+{
+  "key": "mega-charizard-y",
+  "source_donor": "pkx_006.fsys",
+  "source_donor_sha256": "ada980b34af54f99c4db863db050605c9f8376de0591735c4c60b04b2de5639b",
+  "mapping": {
+    "Origin": "origin",
+    "Waist": "koshi",
+    "Hips": "koshi",
+    "Spine1": "mune",
+    "Spine2": "mune",
+    "Neck1": "liz_kubi",
+    "Neck2": "liz_kubi",
+    "Neck3": "liz_kubi",
+    "head neck upper": "liz_atama",
+    "head jaw": "liz_ago",
+    "LArm": "liz_ude1_l",
+    "LForeArm": "liz_ude2_l",
+    "LHand": "liz_hand_l",
+    "LThigh": "liz_leg1_l",
+    "LLeg": "liz_leg2_l",
+    "LFoot": "liz_foot_l",
+    "RArm": "liz_ude1_r",
+    "RForeArm": "liz_ude2_r",
+    "RHand": "liz_hand_r",
+    "RThigh": "liz_leg1_r",
+    "RLeg": "liz_leg2_r",
+    "RFoot": "liz_foot_r",
+    "LFeeler1": "liz_hane1_l",
+    "LFeeler2": "liz_hane2_l",
+    "LFeeler3": "liz_hane3_l",
+    "LFeeler4": "liz_hane4_l",
+    "RFeeler1": "liz_hane1_r",
+    "RFeeler2": "liz_hane2_r",
+    "RFeeler3": "liz_hane3_r",
+    "RFeeler4": "liz_hane4_r",
+    "Tail1": "liz_o1",
+    "Tail3": "liz_o2",
+    "Tail5": "liz_o3",
+    "Tail7": "liz_o4",
+    "Tongue": "sita_1"
+  },
+  "translation_scale": 0.35774036652770574,
+  "body_actions": {
+    "wait": {
+      "frames": 60,
+      "duration_seconds": 1.9666666666666666,
+      "source_action": "wait",
+      "loop": true
+    },
+    "run": {
+      "frames": 21,
+      "duration_seconds": 0.6666666666666666,
+      "source_action": "run",
+      "loop": true
+    },
+    "damage": {
+      "frames": 70,
+      "duration_seconds": 2.3,
+      "source_action": "damage",
+      "loop": false
+    },
+    "down": {
+      "frames": 85,
+      "duration_seconds": 2.8,
+      "source_action": "down",
+      "loop": false
+    },
+    "kime": {
+      "frames": 90,
+      "duration_seconds": 2.966666666666667,
+      "source_action": "kime",
+      "loop": false
+    },
+    "hikkaku": {
+      "frames": 70,
+      "duration_seconds": 2.3,
+      "source_action": "hikkaku",
+      "loop": false
+    },
+    "kime_a": {
+      "frames": 160,
+      "duration_seconds": 5.3,
+      "source_action": "kime_a",
+      "loop": false
+    },
+    "kick": {
+      "frames": 130,
+      "duration_seconds": 4.3,
+      "source_action": "kick",
+      "loop": false
+    },
+    "tackle": {
+      "frames": 115,
+      "duration_seconds": 3.8,
+      "source_action": "tackle",
+      "loop": false
+    },
+    "takeoff": {
+      "frames": 86,
+      "duration_seconds": 2.8333333333333335,
+      "source_action": "takeoff",
+      "loop": false
+    },
+    "kuchu_wait": {
+      "frames": 60,
+      "duration_seconds": 1.9666666666666666,
+      "source_action": "kuchu_wait",
+      "loop": true
+    },
+    "kyukoka": {
+      "frames": 57,
+      "duration_seconds": 1.8666666666666667,
+      "source_action": "kyukoka",
+      "loop": false
+    }
+  },
+  "aliases": {
+    "idle": "wait",
+    "physical_claw": "hikkaku",
+    "physical_strike": "hikkaku",
+    "rush": "tackle",
+    "flame_rush": "tackle",
+    "ranged_breath": "kime",
+    "ranged_pulse": "kime",
+    "ranged_wing": "kime_a",
+    "ground_impact": "kick",
+    "guard": "kime",
+    "focus": "kime",
+    "recover": "kime",
+    "ranged_flame": "kime",
+    "substitute": "kime",
+    "ranged_cast": "kime_a",
+    "low_strike": "kick",
+    "bite": "kime",
+    "aerial_strike": "kyukoka",
+    "hover_recover": "kime"
+  },
+  "preliminary_motion_only": true,
+  "move_effects_verified": false,
+  "dolphin_ready": false,
+  "manual_visual_review_required": true,
+  "uv_eye_animation_ported": false,
+  "glb_bytes": 5524184,
+  "numerical_review": {
+    "kind": "baked-motion-numerical-review",
+    "source_name": "mega-charizard-y-motion.blend",
+    "passed": true,
+    "actions": [
+      {
+        "action": "damage",
+        "frames": 70,
+        "minimum_adjacent_quaternion_dot": 0.6918520414392624,
+        "endpoint_translation_scale_gap": 7.152557373046875e-07,
+        "endpoint_rotation_radians": 2.3084779657169695e-07,
+        "endpoint_checked": true
+      },
+      {
+        "action": "down",
+        "frames": 85,
+        "minimum_adjacent_quaternion_dot": 0.9470017042530589,
+        "endpoint_translation_scale_gap": 0.0,
+        "endpoint_rotation_radians": 0.0,
+        "endpoint_checked": false
+      },
+      {
+        "action": "hikkaku",
+        "frames": 70,
+        "minimum_adjacent_quaternion_dot": 0.7611609781697437,
+        "endpoint_translation_scale_gap": 7.152557373046875e-07,
+        "endpoint_rotation_radians": 2.3084779657169695e-07,
+        "endpoint_checked": true
+      },
+      {
+        "action": "kick",
+        "frames": 130,
+        "minimum_adjacent_quaternion_dot": 0.7025156323699231,
+        "endpoint_translation_scale_gap": 7.152557373046875e-07,
+        "endpoint_rotation_radians": 2.3084779657169695e-07,
+        "endpoint_checked": true
+      },
+      {
+        "action": "kime",
+        "frames": 90,
+        "minimum_adjacent_quaternion_dot": 0.9556282850867321,
+        "endpoint_translation_scale_gap": 7.152557373046875e-07,
+        "endpoint_rotation_radians": 2.3084779657169695e-07,
+        "endpoint_checked": true
+      },
+      {
+        "action": "kime_a",
+        "frames": 160,
+        "minimum_adjacent_quaternion_dot": 0.9626997875961005,
+        "endpoint_translation_scale_gap": 7.152557373046875e-07,
+        "endpoint_rotation_radians": 2.3084779657169695e-07,
+        "endpoint_checked": true
+      },
+      {
+        "action": "kuchu_wait",
+        "frames": 60,
+        "minimum_adjacent_quaternion_dot": 0.9936366910846931,
+        "endpoint_translation_scale_gap": 5.960464477539062e-07,
+        "endpoint_rotation_radians": 4.655271575395269e-07,
+        "endpoint_checked": true
+      },
+      {
+        "action": "kyukoka",
+        "frames": 57,
+        "minimum_adjacent_quaternion_dot": 0.9456777163901201,
+        "endpoint_translation_scale_gap": 7.152557373046875e-07,
+        "endpoint_rotation_radians": 2.3084779657169695e-07,
+        "endpoint_checked": true
+      },
+      {
+        "action": "run",
+        "frames": 21,
+        "minimum_adjacent_quaternion_dot": 0.988810516859377,
+        "endpoint_translation_scale_gap": 6.556510925292969e-07,
+        "endpoint_rotation_radians": 4.400260168383548e-07,
+        "endpoint_checked": true
+      },
+      {
+        "action": "tackle",
+        "frames": 115,
+        "minimum_adjacent_quaternion_dot": 0.9328730576169282,
+        "endpoint_translation_scale_gap": 7.152557373046875e-07,
+        "endpoint_rotation_radians": 2.3084779657169695e-07,
+        "endpoint_checked": true
+      },
+      {
+        "action": "takeoff",
+        "frames": 86,
+        "minimum_adjacent_quaternion_dot": 0.9824454276021586,
+        "endpoint_translation_scale_gap": 7.152557373046875e-07,
+        "endpoint_rotation_radians": 2.3084779657169695e-07,
+        "endpoint_checked": true
+      },
+      {
+        "action": "wait",
+        "frames": 60,
+        "minimum_adjacent_quaternion_dot": 0.9998936189049455,
+        "endpoint_translation_scale_gap": 7.152557373046875e-07,
+        "endpoint_rotation_radians": 2.3084779657169695e-07,
+        "endpoint_checked": true
+      }
+    ],
+    "errors": [],
+    "dolphin_verified": false
+  },
+  "motion_base_user_requested": "original_charizard",
+  "body_visual_approved": false,
+  "eligible_for_game_package": false,
+  "tail_fire_visual_approved": true,
+  "tail_fire_native_port_verified": false,
+  "native_export_verified": false,
+  "gameplay_verified": false,
+  "review_pose_renders_inspected": [
+    "wait",
+    "kuchu_wait"
+  ],
+  "video": {
+    "name": "mega-charizard-y-animacoes.mp4",
+    "sha256": "02c5dad02f46e26298fcee48ddab69417a55d2dd14bc28978f373063f679d96a",
+    "bytes": 11080938,
+    "media": {
+      "codec_name": "h264",
+      "width": 1280,
+      "height": 720,
+      "r_frame_rate": "30/1",
+      "duration": "44.800000"
+    },
+    "clock": "fixed_30_hz_not_performance_measurement"
+  },
+  "approved_flame_code_sha256": "a8c763bb072de156686cb3a02acbd15129ae90386c4e42fdc5f825c86472d33f"
+}

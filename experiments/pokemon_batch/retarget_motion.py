@@ -47,6 +47,11 @@ if key == 'rillaboom':
 # Translation scaling is anatomical, not mesh/texture resolution dependent.
 height = max(matrix.translation.z for matrix in rest.values())-min(matrix.translation.z for matrix in rest.values())
 ref_height = max(matrix.translation.z for matrix in native_rest.values())-min(matrix.translation.z for matrix in native_rest.values())
+if config.get('translation_scale_landmarks'):
+    landmarks=config['translation_scale_landmarks']
+    a,b=landmarks['target'];c,d=landmarks['donor']
+    height=(rest[a].translation-rest[b].translation).length
+    ref_height=(native_rest[c].translation-native_rest[d].translation).length
 scale = height/max(ref_height,1e-3)
 reference.animation_data_create()
 rig.animation_data_create()

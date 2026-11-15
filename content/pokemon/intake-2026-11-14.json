@@ -25,7 +25,7 @@
         "animation_clips": 0,
         "referenced_buffers_and_images_present": true
       },
-      "animation_status": "own_battle_motion_and_tail_fire_visual_review_pending",
+      "animation_status": "normal_charizard_motion_adaptation_in_progress",
       "configuration": {
         "status": "previous_charizard_moves_carried_forward_not_reselected_for_y",
         "moves": [
@@ -55,7 +55,10 @@
       "battle_rules_key": "mega-charizard-y",
       "source_import_proof": "experiments/pokemon_batch/source-import-proof.json",
       "donor_reference_required": "pkx_006.fsys",
-      "replaces_requested_form": "mega_x"
+      "replaces_requested_form": "mega_x",
+      "requested_motion_source": "pkx_006.fsys",
+      "tail_fire_visual_approved": true,
+      "tail_fire_native_port_verified": false
     },
     {
       "key": "ash-greninja",
