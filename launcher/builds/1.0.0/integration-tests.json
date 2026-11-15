@@ -5,6 +5,7 @@
                    "verified graphics reused without source ZIPs, dialogs or extraction",
                    "corrupted cache repaired from hash-verified managed image; next update uses cache",
                    "incompatible graphics and unverified images rejected",
+                   "known local sources discovered and hash-validated without dialogs",
                    "legacy migration creates versioned WinExe and stable shortcuts, preserving estado.json",
                    "Windows GUI subsystem: no CMD required"
                ],
