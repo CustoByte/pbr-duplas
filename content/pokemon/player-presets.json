@@ -1,0 +1,57 @@
+{
+  "schema": 1,
+  "npc_randomization_enabled": false,
+  "entries": [
+    {
+      "key": "mega-charizard-y",
+      "internal_species_id": 503,
+      "rental_pass": 37,
+      "slot": 2,
+      "replaces": 8,
+      "level": 50,
+      "nature": "Timid",
+      "ability": "Drought",
+      "ability_id": 70,
+      "item": null,
+      "moves": [
+        53,
+        403,
+        76,
+        182
+      ],
+      "base_stats_hp_atk_def_spatk_spdef_speed": [
+        78,
+        104,
+        78,
+        159,
+        115,
+        100
+      ],
+      "ivs_hp_atk_def_spatk_spdef_speed": [
+        31,
+        31,
+        31,
+        31,
+        31,
+        31
+      ],
+      "evs_hp_atk_def_spatk_spdef_speed": [
+        4,
+        0,
+        0,
+        252,
+        0,
+        252
+      ],
+      "stats_hp_atk_def_spatk_spdef_speed": [
+        154,
+        111,
+        98,
+        211,
+        135,
+        167
+      ],
+      "gameplay_verified": false
+    }
+  ]
+}

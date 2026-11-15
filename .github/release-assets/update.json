@@ -1,8 +1,21 @@
 {
   "schema": 1,
-  "version": "v0.9.1-monferno",
-  "package_url": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.9.1-monferno/aplicador-core.zip",
-  "package_sha256": "5808b2f055209d09b3170b29b27fd36216bb4f3dd473bfaaf0a32c9cfc925c0e",
-  "save_policy": "Preserve Dolphin user data; same RPBE01 game identity",
-  "dolphin_gameplay_tested": false
+  "version": "v0.14.0-charizard-y-test.1",
+  "package_url": "https://raw.githubusercontent.com/CustoByte/pbr-duplas/v0.14.0-charizard-y-test.1/expansion/packages/charizard-y-test1/aplicador-core.zip",
+  "package_sha256": "9c50c7725ded4df69a592914a469ee0c9c7d16f9ed52e3ecd584fbb93c60ef31",
+  "channel": "full493-test",
+  "dolphin_tested": false,
+  "local_snivy_source_required": true,
+  "save_policy": "Original image and normal save files untouched by installer",
+  "translation_corrections": 433,
+  "new_translations": 0,
+  "review_complete": false,
+  "additional_corrections": 51,
+  "local_mega_source_required": true,
+  "mega_internal_id": 502,
+  "mega_rental_replacement": "Ivysaur",
+  "local_charizard_y_source_required": true,
+  "charizard_y_internal_id": 503,
+  "charizard_y_rental_replacement": "Wartortle",
+  "npc_randomization_enabled": false
 }

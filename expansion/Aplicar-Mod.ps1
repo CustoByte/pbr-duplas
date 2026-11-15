@@ -9,6 +9,7 @@ param(
     [string]$StatePath,
     [string]$SnivySourcePath,
     [string]$MegaSourcePath,
+    [string]$CharizardSourcePath,
     [switch]$DoNotLaunch,
     [switch]$NoGui
 )
@@ -133,6 +134,14 @@ try {
             $MegaSourcePath = Choose-Open 'Selecione o mega-lucario.zip usado na previa aprovada' 'Mega Lucario ZIP|*.zip'
         }
     }
+    if ($manifest.local_charizard_y_assets) {
+        . (Join-Path $PackageRoot 'Preparar-Charizard-Y.ps1')
+        if (-not $CharizardSourcePath -and $savedState -and $savedState.charizard_y_source) { $CharizardSourcePath = $savedState.charizard_y_source }
+        if (-not $CharizardSourcePath -or -not (Test-Path -LiteralPath $CharizardSourcePath -PathType Leaf)) {
+            $CharizardSourcePath = Choose-Open 'Selecione mega-charizard-y-pokemon.zip' 'Mega Charizard Y ZIP|*.zip'
+        }
+    }
+
     foreach ($entry in $manifest.replacements) {
         if ($entry.package_path -match '(^[\/]|(^|[\/])\.\.([\/]|$)|:)' -or
             $entry.installed_path -notmatch '^(sys/main\.dol|files/.+)$' -or
@@ -248,6 +257,15 @@ try {
             $expectedFiles[$name] = @{ size = (Get-Item -LiteralPath $destination).Length; sha256 = (Hash $destination) }
         }
     }
+    if ($manifest.local_charizard_y_assets) {
+        if (-not $manifest.local_mega_assets) { throw 'Charizard Y requer Snivy e Mega Lucario primeiro.' }
+        $charizardAssets = Prepare-CharizardY $partition $CharizardSourcePath (Join-Path $snivyDataRoot 'CharizardY') $snivyCache
+        foreach ($name in @('pkx_503.fsys', 'menu_face.fsys', 'menu_pokemon.fsys')) {
+            $destination = Join-Path $partition ('files/' + $name)
+            Copy-Item -LiteralPath (Join-Path $charizardAssets $name) -Destination $destination -Force
+            $expectedFiles[$name] = @{ size = (Get-Item -LiteralPath $destination).Length; sha256 = (Hash $destination) }
+        }
+    }
     $built = Join-Path $JobRoot 'resultado.rvz'
     Note '[4/5] Gerando uma nova RVZ com o mod instalado...'
     Run-Tool -Arguments @('convert', '-i', (Join-Path $partition 'sys/main.dol'), '-o', $built,
@@ -300,6 +318,7 @@ try {
             mod_version = $manifest.mod_version
             snivy_source = $SnivySourcePath
             mega_source = $MegaSourcePath
+            charizard_y_source = $CharizardSourcePath
         }
         $state | ConvertTo-Json | Set-Content -LiteralPath ($StatePath + '.tmp') -Encoding UTF8
         Move-Item -LiteralPath ($StatePath + '.tmp') -Destination $StatePath -Force
