@@ -2,7 +2,7 @@ name: Build and verify Windows launcher
 on:
   workflow_dispatch:
 permissions:
-  contents: read
+  contents: write
 jobs:
   windows:
     runs-on: windows-latest
@@ -26,6 +26,19 @@ jobs:
       - name: Test graphics recovery and migration
         shell: powershell
         run: ./launcher/windows/test-integration.ps1 -Output "$env:RUNNER_TEMP/launcher-build"
+      - name: Save verified owned build outputs
+        shell: powershell
+        run: |
+          $dest = 'launcher/builds/1.0.0'
+          New-Item -ItemType Directory -Path $dest -Force | Out-Null
+          foreach ($name in @('PBR Launcher.exe','preview.png','tests.json','integration-tests.json','build.json')) { Copy-Item -LiteralPath (Join-Path "$env:RUNNER_TEMP/launcher-build" $name) -Destination (Join-Path $dest $name) -Force }
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f launcher/builds/1.0.0
+          git commit -m 'Record verified Windows GUI build and preview'
+          if ($LASTEXITCODE -ne 0) { throw 'Build commit failed' }
+          git push origin "HEAD:${{ github.ref_name }}"
+          if ($LASTEXITCODE -ne 0) { throw 'Build push failed' }
       - name: Upload executable, preview and verification
         if: always()
         uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02

@@ -13,3 +13,5 @@ Dados-Dolphin/
 diagnostics/
 __pycache__/
 *.pyc
+
+launcher/windows/out/
