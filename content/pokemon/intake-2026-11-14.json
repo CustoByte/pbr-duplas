@@ -25,31 +25,38 @@
         "animation_clips": 0,
         "referenced_buffers_and_images_present": true
       },
-      "animation_status": "native_15_action_sdr_candidate_offline_verified",
+      "animation_status": "native_15_actions_registered_battle_gpu_unverified",
       "configuration": {
-        "status": "previous_charizard_moves_carried_forward_not_reselected_for_y",
+        "status": "fixed_player_preset",
         "moves": [
-          394,
-          337,
-          89,
+          53,
+          403,
+          76,
           182
         ],
-        "ability": null,
+        "ability": "Drought",
         "item": null,
-        "nature": null,
+        "nature": "Timid",
         "level": 50,
-        "evs": null,
+        "evs": {
+          "hp": 4,
+          "atk": 0,
+          "def": 0,
+          "spatk": 252,
+          "spdef": 0,
+          "speed": 252
+        },
         "rental_pass": 37,
         "replaced_slot": 2,
-        "npc_randomization": "content/pokemon/battle-rules.json",
+        "npc_randomization": "deferred",
         "types": [
           "Fire",
           "Flying"
         ]
       },
-      "internal_species_id": null,
+      "internal_species_id": 503,
       "targets": {
-        "dolphin": "not_installed",
+        "dolphin": "cumulative_windows_candidate_offline_verified",
         "native": "private_source_geometry_staged_no_motion"
       },
       "battle_rules_key": "mega-charizard-y",

@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "version": "v0.13.0-mega-lucario-test.3",
-  "package_url": "https://raw.githubusercontent.com/CustoByte/pbr-duplas/v0.13.0-mega-lucario-test.3/expansion/packages/mega-lucario-test3/aplicador-core.zip",
-  "package_sha256": "caae464c41998e4c5243b96b97ef271096eb955380934dfec1bce4ad20722063",
+  "version": "v0.14.0-charizard-y-test.1",
+  "package_url": "https://raw.githubusercontent.com/CustoByte/pbr-duplas/v0.14.0-charizard-y-test.1/expansion/packages/charizard-y-test1/aplicador-core.zip",
+  "package_sha256": "9c50c7725ded4df69a592914a469ee0c9c7d16f9ed52e3ecd584fbb93c60ef31",
   "channel": "full493-test",
   "dolphin_tested": false,
   "local_snivy_source_required": true,
@@ -13,5 +13,9 @@
   "additional_corrections": 51,
   "local_mega_source_required": true,
   "mega_internal_id": 502,
-  "mega_rental_replacement": "Ivysaur"
+  "mega_rental_replacement": "Ivysaur",
+  "local_charizard_y_source_required": true,
+  "charizard_y_internal_id": 503,
+  "charizard_y_rental_replacement": "Wartortle",
+  "npc_randomization_enabled": false
 }

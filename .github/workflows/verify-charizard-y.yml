@@ -1,0 +1,29 @@
+name: Verify Charizard Y Windows core
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  package:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Parse installer with Windows PowerShell 5.1
+        shell: powershell
+        run: |
+          $ErrorActionPreference = 'Stop'
+          $core = 'expansion/packages/charizard-y-test1/aplicador-core.zip'
+          $proof = Get-Content ([IO.Path]::ChangeExtension($core, '.json')) -Raw | ConvertFrom-Json
+          if ((Get-FileHash $core -Algorithm SHA256).Hash.ToLowerInvariant() -ne $proof.package_sha256) { throw 'Core hash mismatch' }
+          Expand-Archive -LiteralPath $core -DestinationPath $env:RUNNER_TEMP/core
+          Get-ChildItem "$env:RUNNER_TEMP/core" -Recurse -Filter '*.ps1' | ForEach-Object {
+            $tokens = $null; $errors = $null
+            [void][Management.Automation.Language.Parser]::ParseFile($_.FullName, [ref]$tokens, [ref]$errors)
+            if ($errors.Count -gt 0) { throw ($errors | Out-String) }
+          }
+          $manifest = Get-Content "$env:RUNNER_TEMP/core/manifesto.json" -Raw | ConvertFrom-Json
+          if (-not $manifest.local_charizard_y_assets -or $manifest.charizard_y.npc_randomization_enabled) { throw 'Wrong delivery configuration' }
+          if ($manifest.charizard_y.slot -ne 2 -or $manifest.charizard_y.replaces -ne 'Wartortle') { throw 'Wrong rental slot' }
+      - name: Compile local converter scripts
+        shell: powershell
+        run: python -m compileall -q "$env:RUNNER_TEMP/core/experiments/charizard_y" "$env:RUNNER_TEMP/core/experiments/pokemon_batch"

@@ -30,6 +30,20 @@ for mesh in meshes:
   if mod.type=='ARMATURE':mod.object=rig
 # The native exporter reserves origin for static model scaling. Preserve animated
 # motion on a differently named bone, as in the existing Snivy pipeline.
+# Only the 34 mapped bones carry motion. The retarget bake also keys rest-only
+# followers; omitting their numerical noise preserves inherited poses and saves
+# the native resource heap. Full source/decoded skin checks guard this pruning.
+config=json.loads(Path(__file__).with_name('retarget-plan.json').read_text())['mega-charizard-y']
+moving=set(config['mapping'])|set(config.get('local_hinges',{}))|set(config.get('secondary_motion',{}))
+pruned=0
+for action in bpy.data.actions:
+ if not action.name.startswith('Body_'):continue
+ for curve in list(action.fcurves):
+  if curve.data_path.startswith('pose.bones['):
+   bone=curve.data_path.split('"')[1]
+   if bone not in moving:action.fcurves.remove(curve);pruned+=1
+for bone in rig.pose.bones:
+ if bone.name not in moving:bone.matrix_basis=Matrix.Identity(4)
 rig.data.bones['Origin'].name='CharizardYMotion'
 for action in bpy.data.actions:
  for c in action.fcurves:c.data_path=c.data_path.replace('pose.bones["Origin"]','pose.bones["CharizardYMotion"]')
@@ -76,7 +90,16 @@ for function,old,new in [('writeSDR','comps[1] = comps[1].to_euler()','comps[1] 
 for name in names:
  for cls in (bpy.types.Armature,bpy.types.Material):
   if not hasattr(cls,'prop_'+name):setattr(cls,'prop_'+name,bpy.props.PointerProperty(type=bpy.types.Action))
-C=Matrix.Rotation(-math.pi/2,4,'X');rig.data.transform(C)
+# Match the original Charizard's native rest height (both forms are 1.7m).
+# Imported models use different units; copying only the model table makes Y tiny.
+GAME_SCALE=16.37011668086052/5.078922480344772
+C=Matrix.Scale(GAME_SCALE,4)@Matrix.Rotation(-math.pi/2,4,'X');rig.data.transform(C)
+for action in bpy.data.actions:
+ if not action.name.startswith('Body_'):continue
+ for curve in action.fcurves:
+  if not curve.data_path.endswith('.location'):continue
+  for point in curve.keyframe_points:
+   point.co.y*=GAME_SCALE;point.handle_left.y*=GAME_SCALE;point.handle_right.y*=GAME_SCALE
 materials=[]
 for mesh in meshes:
  mesh.data.transform(C)
@@ -107,5 +130,5 @@ pbr.exporter.writeAction=write_action
 rig.animation_data.action=bpy.data.actions['Body_wait'];bpy.context.scene.frame_set(0);bpy.context.preferences.filepaths.save_version=0
 bpy.ops.wm.save_as_mainfile(filepath=str(output.with_suffix('.blend')),compress=True)
 bpy.ops.pbr.pbrexport(filepath=str(output))
-report=dict(kind='private native SDR motion candidate',object_name=rig.name,actions=names,anchors=anchors,meshes=[m.name for m in meshes],jaw_fix_retained=True,eye_states=['tx_wink','tx_sleep','tx_wakeup'],tail_flame_native_port_verified=False,gameplay_verified=False,eligible_for_game_package=False,sha256=hashlib.sha256(output.read_bytes()).hexdigest(),bytes=output.stat().st_size)
+report=dict(kind='private native SDR motion candidate',object_name=rig.name,actions=names,anchors=anchors,meshes=[m.name for m in meshes],jaw_fix_retained=True,native_unit_scale=GAME_SCALE,rest_follower_curves_pruned=pruned,eye_states=['tx_wink','tx_sleep','tx_wakeup'],tail_flame_native_port_verified=False,gameplay_verified=False,eligible_for_game_package=False,sha256=hashlib.sha256(output.read_bytes()).hexdigest(),bytes=output.stat().st_size)
 output.with_suffix('.json').write_text(json.dumps(report,indent=2)+'\n');print('CHARIZARD_Y_SDR_READY',output.stat().st_size,flush=True)

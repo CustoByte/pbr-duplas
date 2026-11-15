@@ -15,13 +15,14 @@ def sample(path):
    bpy.context.scene.frame_set(f);poses[f]={b.name:b.matrix.copy() for b in r.pose.bones}
   result[a.name]=poses
  return result
-before=sample(source);after=sample(export);C=Matrix.Rotation(-math.pi/2,4,'X');worst=0.;where=None;count=0
+before=sample(source);after=sample(export);scale=json.loads(export.with_suffix('.json').read_text()).get('native_unit_scale',1.0);C=Matrix.Rotation(-math.pi/2,4,'X');worst=0.;where=None;count=0
 for name,frames in before.items():
  for f,bones in frames.items():
   for bone,m in bones.items():
    target='CharizardYMotion' if bone=='Origin' else bone
-   error=max(abs(v) for row in (C@m-after[name][f][target]) for v in row);count+=1
+   expected=C@m;expected.translation*=scale
+   error=max(abs(v) for row in (expected-after[name][f][target]) for v in row);count+=1
    if error>worst:worst=error;where=[name,f,bone]
-report=dict(passed=worst<.0001,sampled_source_bone_poses=count,actions=len(before),max_matrix_error=worst,worst_sample=where,gameplay_verified=False)
+report=dict(passed=worst<.0001*max(1.0,scale),native_unit_scale=scale,sampled_source_bone_poses=count,actions=len(before),max_matrix_error=worst,worst_sample=where,gameplay_verified=False)
 output.write_text(json.dumps(report,indent=2)+'\n');print('SOURCE_EXPORT_POSE_CHECK',report,flush=True)
 if not report['passed']:raise SystemExit(1)
