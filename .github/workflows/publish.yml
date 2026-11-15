@@ -12,7 +12,7 @@ jobs:
         shell: powershell
         run: |
           $ErrorActionPreference = 'Stop'
-          $core = 'expansion/packages/charizard-y-test1/aplicador-core.zip'
+          $core = 'expansion/packages/charizard-y-test2/aplicador-core.zip'
           $proof = Get-Content ([IO.Path]::ChangeExtension($core, '.json')) -Raw | ConvertFrom-Json
           if ((Get-FileHash $core -Algorithm SHA256).Hash.ToLowerInvariant() -ne $proof.package_sha256) { throw 'Core hash mismatch' }
           Expand-Archive -LiteralPath $core -DestinationPath $env:RUNNER_TEMP/core

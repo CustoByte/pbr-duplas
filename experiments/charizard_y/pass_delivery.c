@@ -34,7 +34,7 @@ static int ready(void) {
  u8 *row;
  if(!stats||!models||!faces||!icons||stats[0]<504||models[0]<673||faces[0]<504||icons[0]<565) return 0;
  row=(u8 *)stats[4]+503u*52u;
- if(HALF(row+24)!=21777||HALF(row+28)!=672||row[30]!=78||row[31]!=104||row[48]!=70) return 0;
+ if(HALF(row+24)!=21777||HALF(row+28)!=672||row[30]!=78||row[31]!=104||row[33]!=90||row[34]!=135||row[35]!=95||row[48]!=70) return 0;
  if(WORD((u8 *)models[4]+672u*72u+4)!=0x2002u) return 0;
  return ((void *(*)(u32))0x8024C32Cu)(0x2002u)!=0 && WORD(0x80453184u)!=0;
 }
@@ -48,8 +48,9 @@ static int construct(u8 *out) {
  BASE_STATS(503,stats);
  *(u16 *)(row+2)=0x1002;*(u16 *)(row+4)=1;*(u16 *)(row+6)=503;
  row[8]=stats[6];row[9]=stats[7];row[10]=4;row[12]=10;
- for(i=0;i<6;i++)row[16+i]=31;
- *(u16 *)(row+22)=508;row[24]=4;row[27]=252;row[28]=252;
+ for(i=0;i<6;i++)row[16+i]=20;
+ /* A rental-scale preset: no competitive EV training and moderate IVs. */
+ *(u16 *)(row+22)=0;
  for(i=0;i<4;i++)*(u16 *)(row+32+i*2)=moves[i];
  CTOR(ctx,out,row,party,255);
  /* Request a normal Mega. The existing mod grants a bonus to shinies; the
@@ -66,6 +67,17 @@ static int construct(u8 *out) {
  for(i=0;i<4;i++)if(GET(out,0x36+i,0)!=moves[i])return 0;
  return 1;
 }
+/* Migrate only the exact IV/EV/nature signature delivered by test.1.
+ * Keep PID, OT, nickname, moves, item and every user-edited training spread.
+ * These are boxed rental records: the native party conversion recalculates
+ * battle stats from the updated species table, instead of patching cached HP. */
+static void migrate_legacy_preset(u8 *mon) {
+ const u8 old_evs[6]={4,0,0,252,252,0};u32 i,value;
+ if(GET(mon,160,0)!=50 || GET(mon,0,0)%25u!=10u) return;
+ for(i=0;i<6;i++) if(GET(mon,0x46u+i,0)!=31u || GET(mon,0xDu+i,0)!=old_evs[i]) return;
+ value=20u;for(i=0;i<6;i++) SET(mon,0x46u+i,&value);
+ value=0u;for(i=0;i<6;i++) SET(mon,0xDu+i,&value);
+}
 u32 charizard_accessor(u32 address) {
  address=((u32 (*)(u32))PREVIOUS_ACCESSOR)(address);
  if(!busy && ready()) {
@@ -76,6 +88,7 @@ u32 charizard_accessor(u32 address) {
    for(i=0;i<0x8C;i++)slot[i]=generated[i];
   } else if(GET(slot,5,0)==503) {
    repair_name(slot);
+   migrate_legacy_preset(slot);
   }
   busy=0;
  }
@@ -85,7 +98,7 @@ u32 charizard_accessor(u32 address) {
 /* The pre-existing mod forces rental identities to look shiny and grants its
  * shiny stat bonus. Keep that policy for every old Pokemon, but use the native
  * PID/OT predicate for the newly delivered normal Mega so its agreed set stays
- * at 154/111/98/167/211/135. Naturally shiny Mega records still receive the bonus.
+ * at 148/107/93/115/150/110. Naturally shiny Mega records still receive the bonus.
  */
 u32 charizard_appearance(void *mon) {
  if(PARTY_GET(mon,5,0)==503) {

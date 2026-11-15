@@ -54,7 +54,8 @@ def verify(capture,baseline,integrated):
  assert charizard['species']==503 and charizard['level']==50 and charizard['ability']==70 and charizard['item']==0
  assert charizard['moves']==[53,403,76,182] and charizard['nature']==10
  assert charizard['pp']==[15,20,10,10]
- assert charizard['stats_hp_atk_def_speed_spatk_spdef']==[154,111,98,167,211,135]
+ assert charizard['stats_hp_atk_def_speed_spatk_spdef']==[148,107,93,115,150,110]
+ assert charizard['ivs']==[20]*6 and charizard['evs']==[0]*6
  assert charizard['presence']==1 and charizard['illegal']==0
  assert snivy['species']==501 and snivy['level']==50 and little['species']==501 and little['level']==5
  from runtime_layer import target

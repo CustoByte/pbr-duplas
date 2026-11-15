@@ -23,35 +23,36 @@
         78,
         104,
         78,
-        159,
-        115,
-        100
+        135,
+        95,
+        90
       ],
       "ivs_hp_atk_def_spatk_spdef_speed": [
-        31,
-        31,
-        31,
-        31,
-        31,
-        31
+        20,
+        20,
+        20,
+        20,
+        20,
+        20
       ],
       "evs_hp_atk_def_spatk_spdef_speed": [
-        4,
         0,
         0,
-        252,
         0,
-        252
+        0,
+        0,
+        0
       ],
       "stats_hp_atk_def_spatk_spdef_speed": [
-        154,
-        111,
-        98,
-        211,
-        135,
-        167
+        148,
+        107,
+        93,
+        150,
+        110,
+        115
       ],
-      "gameplay_verified": false
+      "gameplay_verified": false,
+      "balance": "custom 580 base-stat budget, calibrated against level-50 rental passes"
     }
   ]
 }
