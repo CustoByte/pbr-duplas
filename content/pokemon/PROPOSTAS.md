@@ -53,6 +53,8 @@ Atributos base propostos: 634 no total.
 
 ## Ash-Greninja
 
+Habilidade confirmada: **Torrent**, ID nativo 67. Já entra na forma Ash; não usa Battle Bond. Configuração registrada, ainda não instalada no jogo.
+
 Atributos base propostos: 640 no total.
 
 | Nº | Golpe | Categoria | Ação corporal planejada | Emissão |
@@ -106,6 +108,8 @@ Atributos base propostos: 600 no total.
 | 20 | Nasty Plot | Status | focus | head |
 
 ## Rillaboom
+
+Habilidade confirmada: **Overgrow**, ID nativo 65. Configuração registrada, ainda não instalada no jogo.
 
 Atributos base propostos: 530 no total.
 

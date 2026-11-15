@@ -76,7 +76,13 @@
       "configuration": {
         "status": "awaiting_user_choices",
         "moves": null,
-        "ability": null,
+        "ability": {
+          "native_id": 67,
+          "name": "Torrent",
+          "user_confirmed": true,
+          "implementation": "native_gen4",
+          "installed_in_game": false
+        },
         "item": null,
         "nature": null,
         "level": 50,
@@ -164,7 +170,13 @@
       "configuration": {
         "status": "awaiting_user_choices",
         "moves": null,
-        "ability": null,
+        "ability": {
+          "native_id": 65,
+          "name": "Overgrow",
+          "user_confirmed": true,
+          "implementation": "native_gen4",
+          "installed_in_game": false
+        },
         "item": null,
         "nature": null,
         "level": 50,
