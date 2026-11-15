@@ -5,7 +5,7 @@
                               "Recuperar-Graficos.ps1":  "25cb254b0640aadd8630f720a1397d5554d63dc4a8407e0944bbd2a6be074be3"
                           },
     "launcher_version":  "1.0.0",
-    "executable_sha256":  "40d175e264431cbe5ffdc07966c3c9cf098cf2dc9ec034c089790fbf5f387be8",
+    "executable_sha256":  "e85d0af4d55d11cad2be66683ca079cdd085f177156b2b2d7066addd67f36300",
     "sources":  {
                     "App.cs":  "542d675032aa3d72958bafce41d97d9996489be031dbd5061e1363e706fea06c",
                     "app.ico":  "b4667165ae5d602af97efe788ba49473cc90f69c6c9b5f2de547c9d756f06440",
