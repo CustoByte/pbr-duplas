@@ -1,0 +1,149 @@
+{
+  "schema": 1,
+  "kind": "private-motion-draft-proof",
+  "dolphin_ready": false,
+  "gameplay_tested": false,
+  "move_effects_verified": false,
+  "uv_eye_animation_ported": false,
+  "entries": [
+    {
+      "key": "mega-charizard-x",
+      "donor": "pkx_006.fsys",
+      "donor_sha256": "ada980b34af54f99c4db863db050605c9f8376de0591735c4c60b04b2de5639b",
+      "motion_glb_sha256": "dec560fa01a31975c6cc470e04b459b914f7d5aa7ca37c8104aeb77f785aa231",
+      "body_clips": 12,
+      "viewer": {
+        "body_actions": [
+          "damage",
+          "down",
+          "hikkaku",
+          "kick",
+          "kime",
+          "kime_a",
+          "kuchu_wait",
+          "kyukoka",
+          "run",
+          "tackle",
+          "takeoff",
+          "wait"
+        ],
+        "bone_animation_moves": true,
+        "dolphin_used": false,
+        "full_battle_engine": false,
+        "shared_content_profiles": 6,
+        "skeleton_bones": 119,
+        "vertices": 5451,
+        "waiting_pose_landmarks": {
+          "Hips": "(-0.000345, 0.812027, 0.279118)",
+          "LFoot": "(0.438229, 0.284209, 0.248662)",
+          "RFoot": "(-0.438911, 0.284203, 0.248665)"
+        }
+      },
+      "idle_render_inspected": true,
+      "visual_approval": false
+    },
+    {
+      "key": "ash-greninja",
+      "donor": "pkx_254.fsys",
+      "donor_sha256": "e914d4b4cb893be94f502858868ad8d648802080f6299ae2bbf7b24b12bcdbc5",
+      "motion_glb_sha256": "27fd07d6be752e75d86ac47253a99df29146064b69cf7f3ca2e62ac47b962b96",
+      "body_clips": 7,
+      "viewer": {
+        "body_actions": [
+          "damage",
+          "down",
+          "hikkaku",
+          "kime",
+          "run",
+          "tackle",
+          "wait"
+        ],
+        "bone_animation_moves": true,
+        "dolphin_used": false,
+        "full_battle_engine": false,
+        "shared_content_profiles": 6,
+        "skeleton_bones": 103,
+        "vertices": 7014,
+        "waiting_pose_landmarks": {
+          "Hips": "(-0.014942, 0.958149, 0.428985)",
+          "LFoot": "(-0.206816, 0.10767, 0.596427)",
+          "RFoot": "(0.382534, 0.254168, -0.123992)"
+        }
+      },
+      "idle_render_inspected": true,
+      "visual_approval": false
+    },
+    {
+      "key": "hydreigon",
+      "donor": "pkx_373.fsys",
+      "donor_sha256": "cd96418762638f2a0788b42e503acc52f410510c2ecfb7a2a077ec6aae00f7cc",
+      "motion_glb_sha256": "8c001bf1ba8c5af7a3993bd45459f5cd9725b1111ff450924938226b3ff69796",
+      "body_clips": 12,
+      "viewer": {
+        "body_actions": [
+          "damage",
+          "down",
+          "kime",
+          "kime_a",
+          "kime_phy",
+          "kuchu_down",
+          "kuchu_wait",
+          "kyukoka",
+          "run",
+          "tackle",
+          "takeoff",
+          "wait"
+        ],
+        "bone_animation_moves": true,
+        "dolphin_used": false,
+        "full_battle_engine": false,
+        "shared_content_profiles": 6,
+        "skeleton_bones": 111,
+        "vertices": 3879,
+        "waiting_pose_landmarks": {
+          "Head": "(0.000003, 1.252097, 0.424491)",
+          "Hips": "(0.000005, 0.877781, -0.280641)"
+        }
+      },
+      "idle_render_inspected": true,
+      "visual_approval": false
+    },
+    {
+      "key": "rillaboom",
+      "donor": "pkx_289.fsys",
+      "donor_sha256": "f506b8efa35c42645192f8fa556633027365b73c093badbf272ca393b7b0415b",
+      "motion_glb_sha256": "7543e46c5416e9f49316a40f0ab79eb34a0512769ee9ae6ca660ddec4593707d",
+      "body_clips": 7,
+      "viewer": {
+        "body_actions": [
+          "damage",
+          "down",
+          "hikkaku",
+          "kime",
+          "run",
+          "tackle",
+          "wait"
+        ],
+        "bone_animation_moves": true,
+        "dolphin_used": false,
+        "full_battle_engine": false,
+        "shared_content_profiles": 6,
+        "skeleton_bones": 162,
+        "vertices": 9660,
+        "waiting_pose_landmarks": {
+          "Head": "(0.0, 1.472268, 0.069532)",
+          "Hips": "(-0.0, 0.846144, -0.212746)",
+          "LFoot": "(0.278223, 0.181878, -0.149576)",
+          "RFoot": "(-0.278224, 0.181879, -0.149576)"
+        }
+      },
+      "idle_render_inspected": true,
+      "visual_approval": false
+    }
+  ],
+  "limitations": [
+    "Only idle renders visually inspected; complete action and transition review remains.",
+    "Ash-Greninja accessory visibility needs further adjustment.",
+    "No new game package or feed published."
+  ]
+}

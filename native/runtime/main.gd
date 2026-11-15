@@ -46,6 +46,8 @@ func _ready() -> void:
 	build_interface()
 	var args := OS.get_cmdline_user_args()
 	var model_path := ""
+	var initial_action := ""
+	var pose_frame := -1.0
 	for i in range(args.size()):
 		match args[i]:
 			"--model":
@@ -56,6 +58,10 @@ func _ready() -> void:
 				if i + 1 < args.size(): report_path = args[i + 1]
 			"--capture":
 				if i + 1 < args.size(): capture_path = args[i + 1]
+			"--initial-action":
+				if i + 1 < args.size(): initial_action = args[i + 1]
+			"--pose-frame":
+				if i + 1 < args.size(): pose_frame = float(args[i + 1])
 			"--self-test": self_test = true
 			"--capture-and-quit": capture_quit = true
 			"--data-dir":
@@ -70,6 +76,14 @@ func _ready() -> void:
 	elif self_test:
 		push_error("Self-test requires --model")
 		get_tree().quit(2)
+	if not initial_action.is_empty() and is_instance_valid(player):
+		var selected := resolve_role(initial_action)
+		if not selected.is_empty():
+			player.play(selected, 0.0)
+			player.advance(0.0)
+			if pose_frame >= 0.0:
+				player.seek(pose_frame / 30.0, true)
+				player.pause()
 	frame_clock = Time.get_ticks_usec()
 
 func build_stage() -> void:
@@ -150,7 +164,7 @@ func build_interface() -> void:
 	row.add_child(clip_menu)
 	clip_menu.disabled = true
 	clip_menu.item_selected.connect(func(index): play_clip(clip_menu.get_item_text(index)))
-	for choice in [["Espera", "wait"], ["Correr", "run"], ["Soco", "punch"], ["Especial", "kime_b"], ["Dano", "damage"]]:
+	for choice in [["Espera", "wait"], ["Correr", "run"], ["Físico", "punch"], ["Especial", "kime_b"], ["Dano", "damage"]]:
 		var role: String = choice[1]
 		var control := button(row, choice[0], func(): play_role(role))
 		control.disabled = true
@@ -212,10 +226,10 @@ func load_model(path: String) -> void:
 		for clip in player.get_animation_list():
 			if clip == "RESET": continue
 			clip_menu.add_item(clip)
-			var role := String(clip).to_lower().trim_prefix("mega_")
+			var role := String(clip).to_lower().trim_prefix("mega_").trim_prefix("body_")
 			clips[role] = clip
 			var animation := player.get_animation(clip)
-			animation.loop_mode = Animation.LOOP_LINEAR if role in ["wait", "run"] else Animation.LOOP_NONE
+			animation.loop_mode = Animation.LOOP_LINEAR if role in ["wait", "run", "kuchu_wait"] else Animation.LOOP_NONE
 	if is_instance_valid(player) and clips.has("wait"):
 		player.play(clips["wait"], 0.0)
 		player.advance(0.0)
@@ -274,8 +288,16 @@ func posed_bounds(meshes: Array[Node]) -> AABB:
 				else: bounds = bounds.expand(point)
 	return bounds
 
+func resolve_role(role: String) -> String:
+	if clips.has(role): return clips[role]
+	var alternatives := {"punch": ["hikkaku", "kime_phy", "tackle"], "kick": ["tackle", "kime_phy", "hikkaku"], "kime_b": ["kime", "kime_a"]}
+	for candidate in alternatives.get(role, []):
+		if clips.has(candidate): return clips[candidate]
+	return ""
+
 func play_role(role: String) -> void:
-	if clips.has(role): play_clip(clips[role])
+	var clip := resolve_role(role)
+	if not clip.is_empty(): play_clip(clip)
 
 func play_clip(clip: String) -> void:
 	if is_instance_valid(player) and player.has_animation(clip):
@@ -289,7 +311,7 @@ func on_animation_finished(_clip: StringName) -> void:
 func verify_scene(meshes: Array[Node]) -> void:
 	var required := ["wait", "run", "punch", "kick", "kime_b", "damage", "down"]
 	for role in required:
-		if not clips.has(role):
+		if resolve_role(role).is_empty():
 			push_error("Missing body action: " + role)
 			get_tree().quit(2)
 			return
@@ -311,7 +333,7 @@ func verify_scene(meshes: Array[Node]) -> void:
 			get_tree().quit(2)
 			return
 	var moved := false
-	player.play(clips["punch"])
+	player.play(resolve_role("punch"))
 	player.advance(0.0)
 	var before: Array[Transform3D] = []
 	for i in range(skeleton.get_bone_count()): before.append(skeleton.get_bone_pose(i))
