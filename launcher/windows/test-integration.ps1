@@ -41,6 +41,11 @@ try {
     $state.image_sha256='0'*64
     if ($null -ne (Restore-PbrGraphics $manifest $state (Join-Path $root 'other') $work)) { throw 'Unverified image imported' }
     $checks.Add('incompatible graphics and unverified images rejected')
+    $sources=Join-Path $data 'Sources';New-Item -ItemType Directory -Path $sources -Force | Out-Null
+    $model=Join-Path $sources 'owned-test.brres';[IO.File]::WriteAllText($model,'owned source fixture')
+    if ((Find-PbrSource '' $data 'owned-test.brres' (Hash $model) '') -ne $model) { throw 'Automatic source discovery failed' }
+    if (Test-PbrSource $model ('0'*64) '') { throw 'Invalid source hash accepted' }
+    $checks.Add('known local sources discovered and hash-validated without dialogs')
     $statePath=Join-Path $data 'estado.json';[IO.File]::WriteAllText($statePath,'{"mod_version":"v0.14.0-charizard-y-test.2","custom":"untouched"}')
     $originalState=[IO.File]::ReadAllBytes($statePath)
     $package=Join-Path $root 'package';New-Item -ItemType Directory -Path (Join-Path $package 'launcher') -Force | Out-Null

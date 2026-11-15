@@ -239,6 +239,9 @@ try {
             $expectedFiles[$name] = @{ size=(Get-Item -LiteralPath $destination).Length; sha256=(Hash $destination) }
         }
     } else {
+    $SnivySourcePath = Find-PbrSource $SnivySourcePath $snivyDataRoot 'Tsutarja*.brres' '42ee39d351dc05e4f509267a2ce540286b134f6e8d024b776175a4c75c5a9308' ''
+    $MegaSourcePath = Find-PbrSource $MegaSourcePath $snivyDataRoot 'mega-lucario*.zip' '' (Join-Path $PackageRoot 'experiments/mega_lucario/source-hashes.json')
+    $CharizardSourcePath = Find-PbrSource $CharizardSourcePath $snivyDataRoot 'mega-charizard-y-pokemon*.zip' 'e0fed6598797fafcb22620894418238f8074740b0ed284e5d87b527bd033004f' ''
     if ($manifest.local_snivy_assets) {
         $snivyCache = Join-Path $snivyDataRoot 'Snivy'
         . (Join-Path $PackageRoot 'Preparar-Snivy.ps1')

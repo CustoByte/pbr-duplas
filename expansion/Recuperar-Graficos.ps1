@@ -71,3 +71,38 @@ function Keep-PbrSource([string]$Source, [string]$DataRoot, [string]$Name) {
     }
     return $target
 }
+function Test-PbrSource([string]$Path, [string]$Expected, [string]$EntriesFile) {
+    if (-not $Path -or -not (Test-Path -LiteralPath $Path -PathType Leaf)) { return $false }
+    try {
+        if ($Expected) { return (Hash $Path) -eq $Expected }
+        Add-Type -AssemblyName System.IO.Compression.FileSystem
+        $zip = [IO.Compression.ZipFile]::OpenRead($Path)
+        try {
+            $entries = Get-Content -LiteralPath $EntriesFile -Raw | ConvertFrom-Json
+            foreach ($property in $entries.PSObject.Properties) {
+                $entry = $zip.GetEntry($property.Name)
+                if (-not $entry -or $entry.Length -gt 4194304) { return $false }
+                $stream=$entry.Open();$hasher=[Security.Cryptography.SHA256]::Create()
+                try { $actual=([BitConverter]::ToString($hasher.ComputeHash($stream))).Replace('-','').ToLowerInvariant() }
+                finally { $stream.Dispose();$hasher.Dispose() }
+                if ($actual -ne $property.Value) { return $false }
+            }
+            return $true
+        } finally { $zip.Dispose() }
+    } catch { return $false }
+}
+function Find-PbrSource([string]$SavedPath, [string]$DataRoot, [string]$Pattern, [string]$Expected, [string]$EntriesFile) {
+    if (Test-PbrSource $SavedPath $Expected $EntriesFile) { return $SavedPath }
+    $roots = @((Join-Path $DataRoot 'Sources'),[Environment]::GetFolderPath('DesktopDirectory'),(Join-Path ([Environment]::GetFolderPath('UserProfile')) 'Downloads'))
+    try { $custom=(Get-ItemProperty -LiteralPath 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders').'{374DE290-123F-4565-9164-39C4925E467B}'; if ($custom) { $roots += [Environment]::ExpandEnvironmentVariables($custom) } } catch { }
+    foreach ($folder in ($roots | Select-Object -Unique)) {
+        if (-not $folder -or -not (Test-Path -LiteralPath $folder -PathType Container)) { continue }
+        # Search only known model filenames in standard user folders, at most two
+        # levels deep. Never scan entire drives or execute any discovered file.
+        $candidates = @(Get-ChildItem -LiteralPath $folder -Filter $Pattern -File -Depth 2 -ErrorAction SilentlyContinue | Select-Object -First 40)
+        foreach ($file in $candidates) {
+            if (Test-PbrSource $file.FullName $Expected $EntriesFile) { Note ('Modelo compativel localizado automaticamente: ' + $file.Name); return $file.FullName }
+        }
+    }
+    return $null
+}
