@@ -41,5 +41,5 @@ if (-not $DoNotLaunch) {
         $console = [PbrConsole]::GetConsoleWindow()
         if ($console -ne [IntPtr]::Zero) { [void][PbrConsole]::ShowWindow($console,0) }
     } catch { }
-    Start-Process -FilePath $target -ArgumentList @('--data-root', ('"' + $dataRoot + '"')) | Out-Null
+    Start-Process -FilePath $target -WorkingDirectory $versionRoot -ArgumentList @('--data-root', ('"' + $dataRoot + '"')) | Out-Null
 }

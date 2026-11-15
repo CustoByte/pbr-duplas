@@ -13,6 +13,8 @@ def package(build,output):
  identity=json.loads((build/'build.json').read_text(encoding='utf-8-sig'))
  for name,digest in identity['sources'].items():
   if sha((ROOT/'launcher/windows'/name).read_bytes())!=digest:raise ValueError('Compiled launcher source changed: '+name)
+ for name,digest in identity['installer_sources'].items():
+  if sha((ROOT/'expansion'/name).read_bytes())!=digest:raise ValueError('Tested installer changed: '+name)
  binary=(build/'PBR Launcher.exe').read_bytes()
  if sha(binary)!=identity['executable_sha256']:raise ValueError('Compiled executable differs')
  pe=struct.unpack_from('<I',binary,60)[0]

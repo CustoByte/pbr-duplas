@@ -44,6 +44,7 @@ namespace PbrLauncher {
   private Dictionary<string,object> state,feed;
   private readonly Dictionary<string,TextBox> fields = new Dictionary<string,TextBox>();
   private bool busy;
+  private bool online;
   private readonly string[,] paths = { {"original_image","Imagem original do Battle Revolution","Imagem Wii|*.rvz;*.iso;*.wia;*.gcz"},{"dolphin_path","Dolphin.exe","Dolphin|Dolphin.exe"},{"tool_path","DolphinTool.exe","DolphinTool|DolphinTool.exe"} };
   private T Find<T>(string name) where T:class { return Window.FindName(name) as T; }
   private void Text(string name,string value) { Find<TextBlock>(name).Text=value; }
@@ -62,7 +63,7 @@ namespace PbrLauncher {
    Find<Button>("Check").Click+=async(s,e)=>await Check();Find<Button>("Update").Click+=async(s,e)=>await Update();Find<Button>("Play").Click+=async(s,e)=>await Play();
    Window.Closing+=(s,e)=>{if(busy){e.Cancel=true;Status("Operação em andamento","Aguarde a conclusão para fechar o launcher com segurança.");}};
    if(preview){Text("InstalledVersion","v0.14.0 · Charizard Y");Text("AvailableVersion","v0.14.0 · Charizard Y");Text("Connection","Conectado ao GitHub");Text("InstallStatus","Pronto para jogar");Status("Sua próxima batalha está pronta","O jogo está atualizado. Escolha seu time e entre na arena.");Find<Button>("Play").IsEnabled=true;Find<Button>("Update").Content="Atualizado";}
-   else Window.Loaded+=async(s,e)=>await Check();
+   else Window.Loaded+=async(s,e)=>{await Check();if(online&&Installed()&&(NewLauncher()||Store.Get(state,"mod_version")!=GameVersion())&&!DolphinRunning())await Update();};
   }
   private void Page(bool settings) { Find<FrameworkElement>("HomePage").Visibility=settings?Visibility.Collapsed:Visibility.Visible;Find<FrameworkElement>("SettingsPage").Visibility=settings?Visibility.Visible:Visibility.Collapsed;Text("PageTitle",settings?"Configurações":"Visão geral"); }
   private void BuildSettings() {
@@ -79,8 +80,8 @@ namespace PbrLauncher {
   private void Error(Exception ex) {backend.Log(ex.ToString());Status("Não foi possível concluir",ex.Message);Find<ProgressBar>("Progress").IsIndeterminate=false;}
   private async Task Check() {
    if(busy)return;busy=true;Refresh();Text("Connection","Verificando atualizações");Find<ProgressBar>("Progress").IsIndeterminate=true;
-   try {feed=await backend.Check();Text("AvailableVersion",GameVersion());Text("Connection","Conectado ao GitHub");if(Installed()&&Store.Get(state,"mod_version")==GameVersion()&&!NewLauncher())Status("Tudo pronto para jogar","Sua instalação está na versão mais recente.");else Status(Installed()?"Nova atualização disponível":"Vamos preparar seu jogo",Installed()?"Clique em Atualizar para instalar as mudanças do GitHub.":"Abra Configurações para escolher o jogo original e o Dolphin.");}
-   catch(Exception ex){backend.Log(ex.ToString());feed=backend.OfflineFeed();Text("Connection","Modo offline");Text("AvailableVersion",feed==null?"Indisponível":GameVersion());Status(Installed()?"Você pode jogar offline":"Não foi possível consultar o GitHub",Installed()?"Sua versão instalada continua disponível. Tente verificar novamente mais tarde.":ex.Message);}
+   try {feed=await backend.Check();online=true;Text("AvailableVersion",GameVersion());Text("Connection","Conectado ao GitHub");if(Installed()&&Store.Get(state,"mod_version")==GameVersion()&&!NewLauncher())Status("Tudo pronto para jogar","Sua instalação está na versão mais recente.");else Status(Installed()?"Nova atualização disponível":"Vamos preparar seu jogo",Installed()?"Clique em Atualizar para instalar as mudanças do GitHub.":"Abra Configurações para escolher o jogo original e o Dolphin.");}
+   catch(Exception ex){online=false;backend.Log(ex.ToString());feed=backend.OfflineFeed();Text("Connection","Modo offline");Text("AvailableVersion",feed==null?"Indisponível":GameVersion());Status(Installed()?"Você pode jogar offline":"Não foi possível consultar o GitHub",Installed()?"Sua versão instalada continua disponível. Tente verificar novamente mais tarde.":ex.Message);}
    finally{busy=false;Find<ProgressBar>("Progress").IsIndeterminate=false;Refresh();}
   }
   private string GameVersion() {string game=Store.Get(feed,"game_version");return game==""?Store.Get(feed,"version"):game;}
@@ -91,14 +92,11 @@ namespace PbrLauncher {
   private async Task Update() {
    if(busy||feed==null)return;string core=null;FileStream applicationLock=null;bool handoff=false;
    try{
-    if(DolphinRunning())throw new InvalidOperationException("Feche o Dolphin antes de atualizar o jogo.");
     state=Store.Read(backend.StatePath);
     if(Installed()&&Store.Get(state,"mod_version")==GameVersion()&&!NewLauncher()){
      busy=true;Refresh();Status("Conferindo sua instalação","Verificando os arquivos do jogo já instalado…");Find<ProgressBar>("Progress").IsIndeterminate=true;
      if(await ImageValid()){Status("Seu jogo já está atualizado","Arquivos conferidos. Nenhum modelo precisa ser selecionado ou convertido.");return;}busy=false;
     }
-    foreach(string key in new[]{"original_image","dolphin_path"})Require(key);
-    if(!File.Exists(Store.Get(state,"tool_path"))){string tool=Path.Combine(Path.GetDirectoryName(Store.Get(state,"dolphin_path")),"DolphinTool.exe");if(File.Exists(tool)){state["tool_path"]=tool;fields["tool_path"].Text=tool;Store.Write(backend.StatePath,state);}else Require("tool_path");}
     try{applicationLock=new FileStream(Path.Combine(backend.Root,"aplicador.lock"),FileMode.OpenOrCreate,FileAccess.ReadWrite,FileShare.None);}catch(IOException){throw new InvalidOperationException("Outro atualizador está em execução. Aguarde a conclusão.");}
     busy=true;Page(false);Refresh();Status("Preparando atualização","Verificando o pacote publicado no GitHub…");Find<ProgressBar>("Progress").IsIndeterminate=true;
     core=await backend.Prepare(feed,Progress);var manifest=Store.Read(Path.Combine(core,"manifesto.json"));
@@ -106,6 +104,9 @@ namespace PbrLauncher {
      var launcher=launcherObject as Dictionary<string,object>;
      Version targetLauncher;if(launcher!=null&&Version.TryParse(Store.Get(launcher,"version"),out targetLauncher)&&targetLauncher.CompareTo(new Version(Store.Version))>0){int code=await backend.Run(Path.Combine(core,"Iniciar-Launcher.ps1"),new[]{"-StatePath",backend.StatePath,"-DoNotLaunch"},Log);if(code!=0)throw new InvalidOperationException("Não foi possível atualizar o launcher.");handoff=true;return;}
     }
+    if(DolphinRunning())throw new InvalidOperationException("Feche o Dolphin antes de atualizar o jogo.");
+    foreach(string key in new[]{"original_image","dolphin_path"})Require(key);
+    if(!File.Exists(Store.Get(state,"tool_path"))){string tool=Path.Combine(Path.GetDirectoryName(Store.Get(state,"dolphin_path")),"DolphinTool.exe");if(File.Exists(tool)){state["tool_path"]=tool;fields["tool_path"].Text=tool;Store.Write(backend.StatePath,state);}else Require("tool_path");}
     // The worker recovers verified installed graphics or managed sources; no file dialogs.
     Status("Atualizando seu jogo","Esta etapa pode levar alguns minutos. O progresso aparece abaixo.");Find<ProgressBar>("Progress").IsIndeterminate=true;
     int result=await backend.Run(Path.Combine(core,"Aplicar-Mod.ps1"),new[]{"-StatePath",backend.StatePath,"-NoGui","-DoNotLaunch"},Log);
