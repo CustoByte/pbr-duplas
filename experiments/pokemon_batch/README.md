@@ -74,3 +74,29 @@ Uso privado (Blender, após `--`):
 
 O visualizador aceita `--initial-action damage --pose-frame 15` para inspeção
 estática da pose e reconhece ações com prefixo `Body_`.
+
+## Revisão numérica e vídeos
+
+`verify_motion.py` verifica valores finitos, normalização e continuidade de sinal
+dos quaternions, fechamento dos ciclos e retorno das ações à espera. Encontrou
+inversões de sinal em Rillaboom e Hydreigon; as chaves foram corrigidas antes dos
+vídeos. O baker mantém o mesmo hemisfério entre chaves consecutivas. Isso evita
+que a interpolação linear siga uma rotação longa apesar de poses equivalentes.
+
+Ash-Greninja tem controle secundário da língua com influência parcial do pescoço,
+para não herdar a inclinação inteira da referência de Sceptile. A geometria não
+é removida. Os acessórios alternativos continuam ocultos nos rascunhos.
+
+`render_motion_review.py` gera uma prévia privada por espécie, usando a cena
+`native/runtime/preview.tscn`. Os vídeos mostram todos os clips corporais gerados,
+as transições e uma indicação final do que falta. A captura usa relógio fixo de
+30 Hz e **não comprova FPS em tempo real**, desempenho no Windows ou gameplay.
+As legendas distinguem o voo estacionário provisório de Hydreigon do deslocamento.
+Não há efeitos de golpes nem simulação de entrada/saída da Poké Bola nesses vídeos.
+Ações de status ainda usam propostas de compartilhamento de poses, sem validação.
+Os MP4 e modelos permanecem fora do repositório público.
+
+A câmera da prévia acompanha o deslocamento do osso Waist, para não cortar o
+corpo nas sequências aéreas. Esse acompanhamento é exclusivo do vídeo de revisão
+e não altera as câmeras do Battle Revolution. O gerador verifica a sintaxe do
+script antes de iniciar a captura para evitar gravações vazias.

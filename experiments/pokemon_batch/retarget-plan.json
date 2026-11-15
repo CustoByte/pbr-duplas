@@ -108,6 +108,18 @@
       "taunt": "kime",
       "ranged_mist": "kime",
       "evasive_focus": "wait"
+    },
+    "secondary_motion": {
+      "FeelerD1": {
+        "driver": "head neck lower",
+        "rotation_strength": 0.25,
+        "sway_degrees": 4.0,
+        "axis": [
+          0,
+          0,
+          1
+        ]
+      }
     }
   },
   "hydreigon": {

@@ -77,6 +77,7 @@ for name in names:
     rig.animation_data.action=action
     looping = name in ('wait','run','kuchu_wait')
     first_basis = {}
+    previous_rotation = {}
     for frame,pose in enumerate(source_poses):
         desired = {}
         for bone in rig.data.bones:
@@ -107,6 +108,15 @@ for name in names:
                 rotate=Vector((1,0,0)).rotation_difference(Vector((0,-1,-.2)).normalized())
                 matrix=(difference@rotate@rest[bone.name].to_quaternion()).to_matrix().to_4x4()
                 matrix.translation=hand.translation+difference@Vector((0,-.4,0))
+            secondary = config.get('secondary_motion',{}).get(bone.name)
+            if secondary:
+                driver = secondary['driver']
+                delta = desired[driver].to_quaternion()@rest[driver].to_quaternion().inverted()
+                follow = Quaternion().slerp(delta,secondary['rotation_strength'])
+                sway = Quaternion(Vector(secondary['axis']),math.radians(secondary['sway_degrees'])*math.sin(2*math.pi*frame/count))
+                position = matrix.translation.copy()
+                matrix = (follow@sway@rest[bone.name].to_quaternion()).to_matrix().to_4x4()
+                matrix.translation = position
             desired[bone.name]=matrix
             basis=loc.inverted()@parent.inverted()@matrix
             if name=='wait' and frame==0:neutral[bone.name]=basis.copy()
@@ -121,6 +131,11 @@ for name in names:
                 basis=basis.lerp(first_basis[bone.name],t*t*(3-2*t))
             pb=rig.pose.bones[bone.name]
             pb.matrix_basis=basis
+            # q and -q describe the same pose; keep adjacent keys in the same
+            # hemisphere so linear interpolation cannot take a spurious long turn.
+            if bone.name in previous_rotation and previous_rotation[bone.name].dot(pb.rotation_quaternion)<0:
+                pb.rotation_quaternion.negate()
+            previous_rotation[bone.name]=pb.rotation_quaternion.copy()
             if bone.name in config.get('hide_bones',[]):pb.scale=(.0001,)*3
             for path in ('location','rotation_quaternion','scale'):
                 pb.keyframe_insert(path,frame=frame,group=bone.name)
