@@ -1,0 +1,1 @@
+{"passed":true,"checks":["legacy state preserved with atomic writes and backup","trusted immutable repository URLs only","ZIP traversal rejected before extraction","hash-verified offline package reuse with fresh extraction","offline feed fallback","PowerShell worker hidden; Unicode paths/literal arguments; exit/error propagation"],"gameplay_tested":false}

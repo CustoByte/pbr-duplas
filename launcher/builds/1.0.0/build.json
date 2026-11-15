@@ -1,0 +1,14 @@
+﻿{
+    "launcher_version":  "1.0.0",
+    "executable_sha256":  "870f5902fbc45b4c2ef49c8c7ca2f9a98232baa92fdfbd77b529c60b8a82ab3f",
+    "sources":  {
+                    "App.cs":  "bb33562c112a2fcc8a58f5162026b8b4b3b08ad208ae39715b231bbebe6fbc7d",
+                    "app.ico":  "b4667165ae5d602af97efe788ba49473cc90f69c6c9b5f2de547c9d756f06440",
+                    "app.manifest":  "0a57c1a2e3efeea0d4c11e973ce3eaeab05b8e4cc8062a51102782f67dd33831",
+                    "build.ps1":  "a28828c8ebd67430d04fa11d177fdf7f21b615f8c1390c977d6c13f842d6890a",
+                    "MainWindow.xaml":  "dedc57b96573b654792650e8fb0a2b19fb01e8548eb123c7b2a075720852535b",
+                    "SelfTest.cs":  "c6e966103d2a2dd3b6f4d23ac15f7c1c8b228646b4a6fd3068a55c55a8a443bb",
+                    "Services.cs":  "94bf535a4403789fc3e5512cf70c102a6842e62d357cfc3beae3beb0eac9ecf2",
+                    "test-integration.ps1":  "0a4a85583a46c343238950551e8565a7638ffd5ef2d21dad5ab9b62cf842e8d7"
+                }
+}

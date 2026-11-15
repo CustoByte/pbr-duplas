@@ -1,0 +1,12 @@
+﻿{
+    "gameplay_tested":  false,
+    "checks":  [
+                   "PowerShell 5.1 scripts parse",
+                   "verified graphics reused without source ZIPs, dialogs or extraction",
+                   "corrupted cache repaired from hash-verified managed image; next update uses cache",
+                   "incompatible graphics and unverified images rejected",
+                   "legacy migration creates versioned WinExe and stable shortcuts, preserving estado.json",
+                   "Windows GUI subsystem: no CMD required"
+               ],
+    "passed":  true
+}
