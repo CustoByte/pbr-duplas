@@ -1,0 +1,76 @@
+{
+  "version": "v0.14.0-charizard-y-test.2",
+  "package_sha256": "78e90492bd1f0c97bd26de9c9d174e274a5a45f6dda42a5aa03ed12b21d8610e",
+  "bytes": 2143798,
+  "archive_checks": [
+    {
+      "path": "sys/main.dol",
+      "sha256": "25cee773192ea530b588eabb6aea671ad22d9b8b8b652243ddc5410621c38353",
+      "patched": true
+    },
+    {
+      "path": "files/common.fsys",
+      "sha256": "8229e264e1dca56271addb233df7a04f05f0d5bc4f7b4be7cca871f40d5990b2",
+      "patched": true
+    },
+    {
+      "path": "files/deck.fsys",
+      "sha256": "0532a445c219722df65d5d16b095a85195e43c86749f35f1d373c9b2ceab04ef",
+      "patched": false
+    },
+    {
+      "path": "files/menu_fight_s.fsys",
+      "sha256": "9bada56367c88a895b63c06a7641b8eb1732bcd95fe2ce5c38c20fbc04bc2503",
+      "patched": false
+    },
+    {
+      "path": "files/mes_common.fsys",
+      "sha256": "22ab89b019c1f7d3791abb61fd0d4f38dd4cdb4143f55818f13bf5017bb406d1",
+      "patched": true
+    },
+    {
+      "path": "files/menu_bpass2.fsys",
+      "sha256": "784b3f5ef218081ed4d60d5502de33605f0aafd2a204e2a6debf1592826a7366",
+      "patched": false
+    },
+    {
+      "path": "files/menu_btutorial.fsys",
+      "sha256": "05c0fcda3be55e8f9a3cb68ce629942a06d93bc589705779ca51b3876e530792",
+      "patched": false
+    },
+    {
+      "path": "files/menu_name2.fsys",
+      "sha256": "2c4e802866698503d7a8994d22e932f0a25d029891e11edeab748ea5d4ad34d0",
+      "patched": false
+    },
+    {
+      "path": "files/mes_bpass_e.fsys",
+      "sha256": "352654e76b7af55a169dd0a60959ca2f37043038a682d4ad633621134a71485a",
+      "patched": false
+    },
+    {
+      "path": "files/mes_fight_e.fsys",
+      "sha256": "0d15e60ebb803a42d2a4a716c23456197eb5dd1f892644bd6bca8f238d162d7b",
+      "patched": false
+    },
+    {
+      "path": "files/mes_name_e.fsys",
+      "sha256": "5e29d6151cde367def02744abbdf21057cc63b13798a85789ed0f3b87443ac59",
+      "patched": false
+    },
+    {
+      "path": "files/title.fsys",
+      "sha256": "ffdab8acb35584dfcb12813f32422caa62f5e90bcd299a82d44cf9c3049e2c9f",
+      "patched": false
+    },
+    {
+      "path": "files/GSfsys.toc",
+      "sha256": "942d9bd17a02fa2e1d365244bef4bf179f8f38da68262c08586b6259d1ea9967",
+      "patched": true
+    }
+  ],
+  "translation_replacements_preserved": true,
+  "game_assets_distributed": false,
+  "dolphin_tested": false,
+  "published": false
+}

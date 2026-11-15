@@ -1,0 +1,59 @@
+{
+  "passed": true,
+  "source_eye_dimensions": [
+    192,
+    384
+  ],
+  "export_eye_dimensions": [
+    256,
+    512
+  ],
+  "repeat_texture_dimensions_power_of_two": true,
+  "texture_headers": [
+    {
+      "index": 0,
+      "width": 64,
+      "height": 256,
+      "encoding": 144,
+      "wrap_s": 1,
+      "wrap_t": 1,
+      "data_offset": 192,
+      "data_size": 32768
+    },
+    {
+      "index": 1,
+      "width": 256,
+      "height": 512,
+      "encoding": 144,
+      "wrap_s": 1,
+      "wrap_t": 1,
+      "data_offset": 33120,
+      "data_size": 262144
+    },
+    {
+      "index": 2,
+      "width": 256,
+      "height": 256,
+      "encoding": 144,
+      "wrap_s": 1,
+      "wrap_t": 1,
+      "data_offset": 295424,
+      "data_size": 131072
+    }
+  ],
+  "normalized_uv_positions_preserved": true,
+  "expressions": [
+    "open",
+    "blink",
+    "sleep",
+    "wake"
+  ],
+  "summary_only": true,
+  "look_at_x_before": 7,
+  "look_at_x_after": -3,
+  "scale_before": 0.54,
+  "scale_after": 0.72,
+  "limits": [
+    "Native texture dimensions and summary hook verified; actual Dolphin visuals require user retest"
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "batch": 8,
+  "status": "approved-by-user",
+  "category": "trainer-battle-dialogue",
+  "publication": "held-until-complete-battle-translation",
+  "entries": [
+    {
+      "ids": [
+        33
+      ],
+      "source": "Battles require skill!",
+      "proposed": "Batalhas exigem habilidade!"
+    },
+    {
+      "ids": [
+        34
+      ],
+      "source": "This is how a Pokémon veteran fights!",
+      "proposed": "É assim que se batalha com experiência!"
+    },
+    {
+      "ids": [
+        35
+      ],
+      "source": "I have to start all over again!",
+      "proposed": "Tenho que recomeçar do zero!"
+    },
+    {
+      "ids": [
+        36
+      ],
+      "source": "I rule Pokétopia!",
+      "proposed": "Eu domino Pokétopia!"
+    },
+    {
+      "ids": [
+        37
+      ],
+      "source": "Come back in 1,000 years!",
+      "proposed": "Volte daqui a mil anos!"
+    },
+    {
+      "ids": [
+        38
+      ],
+      "source": "I guess there's always someone stronger...",
+      "proposed": "Acho que sempre há alguém mais forte..."
+    },
+    {
+      "ids": [
+        39
+      ],
+      "source": "I've been busy lately!",
+      "proposed": "Tenho andado na correria!"
+    },
+    {
+      "ids": [
+        40
+      ],
+      "source": "Yes! I won! On to the next battle!",
+      "proposed": "Isso! Eu venci! Vamos à próxima batalha!"
+    },
+    {
+      "ids": [
+        41
+      ],
+      "source": "I lost my momentum!",
+      "proposed": "Perdi o embalo!"
+    },
+    {
+      "ids": [
+        42
+      ],
+      "source": "This is getting easier!",
+      "proposed": "Está ficando mais fácil!"
+    }
+  ]
+}

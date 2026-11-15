@@ -1,0 +1,493 @@
+{
+  "review_mode": "twenty-trainers-per-batch-individually-chosen-names",
+  "scope": "All trainer names; explicit exception to keeping other proper names unchanged",
+  "entries": [
+    {
+      "original": "Joe",
+      "replacement": "Pedro",
+      "identity": "Gateway Colosseum master",
+      "approval": "approved-by-user",
+      "status": "applied-in-test-candidate-awaiting-Dolphin",
+      "battle_dialogue_reference_ids": [
+        3923,
+        3925,
+        4359,
+        4361,
+        4362,
+        4375,
+        4377,
+        4378
+      ],
+      "applied": true,
+      "review_batch": 1,
+      "number": 1,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html",
+      "common_message_index": 6404,
+      "native_message_id": 6405,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddc2a00",
+          "record": 0
+        },
+        {
+          "resource": "0x1ddc2a00",
+          "record": 1
+        },
+        {
+          "resource": "0x1df42a00",
+          "record": 0
+        },
+        {
+          "resource": "0x1df42a00",
+          "record": 6
+        }
+      ],
+      "common_reference_ids": [
+        9294
+      ],
+      "battle_dialogue_layout_reference_id": 4378
+    },
+    {
+      "review_batch": 1,
+      "number": 2,
+      "original": "Marcel",
+      "replacement": "Arthur",
+      "identity": "Gateway, Leader-in-Training",
+      "approval": "approved-by-user",
+      "status": "applied-in-test-candidate-awaiting-Dolphin",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html",
+      "common_message_index": 6406,
+      "native_message_id": 6407,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddb2a00",
+          "record": 1
+        }
+      ]
+    },
+    {
+      "review_batch": 1,
+      "number": 3,
+      "original": "Alec",
+      "replacement": "Caio",
+      "identity": "Gateway, Ordinary Guy",
+      "approval": "approved-by-user",
+      "status": "applied-in-test-candidate-awaiting-Dolphin",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html",
+      "common_message_index": 6428,
+      "native_message_id": 6429,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddb2a00",
+          "record": 23
+        }
+      ]
+    },
+    {
+      "review_batch": 1,
+      "number": 4,
+      "original": "Brooke",
+      "replacement": "Bruno",
+      "identity": "Gateway, Tomboy",
+      "approval": "approved-by-user",
+      "status": "applied-in-test-candidate-awaiting-Dolphin",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html",
+      "common_message_index": 6424,
+      "native_message_id": 6425,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddb2a00",
+          "record": 19
+        }
+      ]
+    },
+    {
+      "review_batch": 1,
+      "number": 5,
+      "original": "Annie",
+      "replacement": "Laura",
+      "identity": "Gateway, Hiking Girl",
+      "approval": "approved-by-user",
+      "status": "applied-in-test-candidate-awaiting-Dolphin",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html",
+      "action": "rename",
+      "common_message_index": 6426,
+      "native_message_id": 6427,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddb2a00",
+          "record": 21
+        }
+      ]
+    },
+    {
+      "review_batch": 1,
+      "number": 6,
+      "original": "Cedric",
+      "replacement": "Alan",
+      "identity": "Gateway, Traveling Guy",
+      "approval": "approved-by-user",
+      "status": "applied-in-test-candidate-awaiting-Dolphin",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html",
+      "action": "rename",
+      "common_message_index": 6422,
+      "native_message_id": 6423,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddb2a00",
+          "record": 17
+        }
+      ]
+    },
+    {
+      "review_batch": 1,
+      "number": 7,
+      "original": "Crystal",
+      "replacement": "Alice",
+      "identity": "Gateway, Three Sisters",
+      "approval": "approved-by-user",
+      "status": "applied-in-test-candidate-awaiting-Dolphin",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/gateway-colosseum.html",
+      "action": "rename",
+      "common_message_index": 6419,
+      "native_message_id": 6420,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddb2a00",
+          "record": 14
+        }
+      ]
+    },
+    {
+      "review_batch": 1,
+      "number": 8,
+      "original": "Taylor",
+      "replacement": "Sara",
+      "identity": "Main Street Colosseum leader",
+      "approval": "approved-by-user",
+      "status": "applied-in-test-candidate-awaiting-Dolphin",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
+      "action": "rename",
+      "common_message_index": 6435,
+      "native_message_id": 6436,
+      "native_trainer_records": [
+        {
+          "resource": "0x1dde2a00",
+          "record": 0
+        },
+        {
+          "resource": "0x1dde2a00",
+          "record": 1
+        },
+        {
+          "resource": "0x1ded2a00",
+          "record": 0
+        }
+      ]
+    },
+    {
+      "review_batch": 1,
+      "number": 9,
+      "original": "Marina",
+      "replacement": "Marina",
+      "identity": "Waterfall Colosseum leader",
+      "approval": "approved-by-user",
+      "status": "kept-original",
+      "applied": false,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html",
+      "action": "keep",
+      "common_message_index": 6466,
+      "native_message_id": 6467,
+      "native_trainer_records": [
+        {
+          "resource": "0x1de02a00",
+          "record": 0
+        },
+        {
+          "resource": "0x1de02a00",
+          "record": 1
+        },
+        {
+          "resource": "0x1ded2a00",
+          "record": 1
+        }
+      ]
+    },
+    {
+      "review_batch": 1,
+      "number": 10,
+      "original": "Rosie",
+      "replacement": "Luiza",
+      "identity": "Neon Colosseum leader",
+      "approval": "approved-by-user",
+      "status": "applied-in-test-candidate-awaiting-Dolphin",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/neon-colosseum.html",
+      "action": "rename",
+      "common_message_index": 6497,
+      "native_message_id": 6498,
+      "native_trainer_records": [
+        {
+          "resource": "0x1de22a00",
+          "record": 0
+        },
+        {
+          "resource": "0x1de22a00",
+          "record": 1
+        },
+        {
+          "resource": "0x1ded2a00",
+          "record": 2
+        }
+      ]
+    },
+    {
+      "review_batch": 2,
+      "number": 11,
+      "original": "Zackary",
+      "replacement": "Lucas",
+      "identity": "Main Street, Passionate Rider",
+      "approval": "approved-by-user-delegation",
+      "status": "applied-in-test-candidate-awaiting-Dolphin",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename",
+      "common_message_index": 6444,
+      "native_message_id": 6445,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddd2a00",
+          "record": 8
+        }
+      ]
+    },
+    {
+      "review_batch": 2,
+      "number": 12,
+      "original": "Aric",
+      "replacement": "Rafael",
+      "identity": "Main Street, Three Brothers",
+      "approval": "approved-by-user-delegation",
+      "status": "applied-in-test-candidate-awaiting-Dolphin",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename",
+      "common_message_index": 6449,
+      "native_message_id": 6450,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddd2a00",
+          "record": 13
+        }
+      ]
+    },
+    {
+      "review_batch": 2,
+      "number": 13,
+      "original": "Melody",
+      "replacement": "Beatriz",
+      "identity": "Main Street, Tomboy",
+      "approval": "approved-by-user-delegation",
+      "status": "applied-in-test-candidate-awaiting-Dolphin",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename",
+      "common_message_index": 6455,
+      "native_message_id": 6456,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddd2a00",
+          "record": 19
+        }
+      ]
+    },
+    {
+      "review_batch": 2,
+      "number": 14,
+      "original": "Elena",
+      "replacement": "Camila",
+      "identity": "Main Street, Picnic Girl",
+      "approval": "approved-by-user-delegation",
+      "status": "applied-in-test-candidate-awaiting-Dolphin",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename",
+      "common_message_index": 6446,
+      "native_message_id": 6447,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddd2a00",
+          "record": 10
+        }
+      ]
+    },
+    {
+      "review_batch": 2,
+      "number": 15,
+      "original": "Ariel",
+      "replacement": "Gabriel",
+      "identity": "Main Street, Youthful Couple",
+      "approval": "approved-by-user-delegation",
+      "status": "applied-in-test-candidate-awaiting-Dolphin",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename",
+      "common_message_index": 6451,
+      "native_message_id": 6452,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddd2a00",
+          "record": 15
+        }
+      ]
+    },
+    {
+      "review_batch": 2,
+      "number": 16,
+      "original": "Todd",
+      "replacement": "Felipe",
+      "identity": "Main Street, Sci-Fi Maniac",
+      "approval": "approved-by-user-delegation",
+      "status": "applied-in-test-candidate-awaiting-Dolphin",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/main-street-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename",
+      "common_message_index": 6445,
+      "native_message_id": 6446,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddd2a00",
+          "record": 9
+        }
+      ]
+    },
+    {
+      "review_batch": 2,
+      "number": 17,
+      "original": "Damon",
+      "replacement": "Gustavo",
+      "identity": "Waterfall, Pikachu Fan",
+      "approval": "approved-by-user-delegation",
+      "status": "applied-in-test-candidate-awaiting-Dolphin",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename",
+      "common_message_index": 6469,
+      "native_message_id": 6470,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddf2a00",
+          "record": 2
+        }
+      ]
+    },
+    {
+      "review_batch": 2,
+      "number": 18,
+      "original": "Harry",
+      "replacement": "Henrique",
+      "identity": "Waterfall, Bug-Catching Man",
+      "approval": "approved-by-user-delegation",
+      "status": "applied-in-test-candidate-awaiting-Dolphin",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename",
+      "common_message_index": 6490,
+      "native_message_id": 6491,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddf2a00",
+          "record": 23
+        }
+      ]
+    },
+    {
+      "review_batch": 2,
+      "number": 19,
+      "original": "Desiree",
+      "replacement": "Juliana",
+      "identity": "Waterfall, Leader-in-Training",
+      "approval": "approved-by-user-delegation",
+      "status": "applied-in-test-candidate-awaiting-Dolphin",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename",
+      "common_message_index": 6467,
+      "native_message_id": 6468,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddf2a00",
+          "record": 0
+        }
+      ]
+    },
+    {
+      "review_batch": 2,
+      "number": 20,
+      "original": "Sierra",
+      "replacement": "Fernanda",
+      "identity": "Waterfall, Swimming Club Member",
+      "approval": "approved-by-user-delegation",
+      "status": "applied-in-test-candidate-awaiting-Dolphin",
+      "applied": true,
+      "source_url": "https://altissimo1.github.io/Supplementary-Series/Stadium/Battle-Revolution/waterfall-colosseum.html",
+      "selection_basis": "User authorized common Brazilian names for this batch",
+      "action": "rename",
+      "common_message_index": 6472,
+      "native_message_id": 6473,
+      "native_trainer_records": [
+        {
+          "resource": "0x1ddf2a00",
+          "record": 5
+        }
+      ]
+    }
+  ],
+  "required_source": "Original mes_common.fsys received and exact names verified; no additional upload needed for these twenty names.",
+  "review_batch_size": 20,
+  "catalogue_complete": false,
+  "catalogue_note": "Exact English names matched in supplied USA mes_common; global message IDs and resource bytes checked against captured native message lookup.",
+  "review_batches": [
+    {
+      "batch": 1,
+      "numbers": [
+        1,
+        10
+      ],
+      "status": "choices-complete",
+      "renames_applied": true,
+      "distribution": "test-candidate-publication-authorized"
+    },
+    {
+      "batch": 2,
+      "numbers": [
+        11,
+        20
+      ],
+      "status": "choices-complete",
+      "renames_applied": true,
+      "selection": "common-Brazilian-names-delegated-by-user",
+      "distribution": "test-candidate-publication-authorized"
+    }
+  ],
+  "common_archive_sha256": "43fdff322a8d4fa9b79fcc9b22a22f6d0f536c4cf72ee7c83a713763c10d9689",
+  "common_resource_sha256": "a64b7eb1fb524073089b3b7a47606e369881038f8e86c4e0a4b823582ea257e7",
+  "common_resource_id": "27c10000",
+  "publication_policy": "Immediate test candidate publication explicitly authorized; unverified new translations are excluded."
+}

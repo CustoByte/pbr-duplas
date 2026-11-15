@@ -1,0 +1,60 @@
+{
+  "passed": true,
+  "names": [
+    {
+      "slot": 0,
+      "length": 12,
+      "capacity": 16,
+      "canary_untouched": true
+    },
+    {
+      "slot": 1,
+      "length": 5,
+      "capacity": 16,
+      "canary_untouched": true
+    },
+    {
+      "slot": 2,
+      "length": 9,
+      "capacity": 16,
+      "canary_untouched": true
+    }
+  ],
+  "full_name": "MEGA LUCARIO",
+  "native_font_width": 120,
+  "native_font_height": 25,
+  "serialized_record_bytes": 140,
+  "custom_nickname_preserved": true,
+  "existing_empty_name_repaired": true,
+  "original_passes_preserved": true,
+  "deferred_checksum_regression": [
+    {
+      "build": "published",
+      "flags": "a000",
+      "unchanged": false
+    },
+    {
+      "build": "fixed",
+      "flags": "8000",
+      "unchanged": true
+    }
+  ],
+  "dol_sha256": "ca62af848c3ef88d3bf9164c8c52af6f75508124358517f177228191594c4b7c",
+  "gameplay_verified": false,
+  "reported_invalid_read_reproduced": false,
+  "user_capture": {
+    "native_name_verified": true,
+    "registered_tables_replaced": false,
+    "original_memory_untouched": true,
+    "captured_executable_sections_verified": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6
+    ],
+    "battle_invalid_read_reproduced": false
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "source_sha256": "42ee39d351dc05e4f509267a2ce540286b134f6e8d024b776175a4c75c5a9308",
+  "blender_version": "3.3.21",
+  "berrybush_revision": "5ff000f7362a3b18cc55e871fc3e1f645eb5e206",
+  "pbr_addon_revision": "ed18e4fd606bf66b670c71c2484bf9fc86ea5b7d",
+  "tool_adaptations": "prepare_graphics_tools.py",
+  "conversion": {
+    "candidate_mapping": {
+      "idle": "NorIdle0",
+      "run": "Run0",
+      "damage": "DamF0",
+      "faint": "Faint0",
+      "move_phys": "Atk0_0",
+      "move_spec": "Atk2_0",
+      "tx_wink": "NorIdle0",
+      "tx_sleep": "Sleep0_1",
+      "tx_wakeup": "Sleep0_2"
+    },
+    "mapping_gameplay_validated": false,
+    "source_bones": 48,
+    "export_bones": 97,
+    "vertices": 1097,
+    "triangles": 1936,
+    "actions": {
+      "idle": {
+        "source": "NorIdle0",
+        "frames": 84,
+        "bake_max_matrix_error": 7.62939453125e-06
+      },
+      "run": {
+        "source": "Run0",
+        "frames": 24,
+        "bake_max_matrix_error": 1.049041748046875e-05
+      },
+      "damage": {
+        "source": "DamF0",
+        "frames": 31,
+        "bake_max_matrix_error": 7.867813110351562e-06
+      },
+      "faint": {
+        "source": "Faint0",
+        "frames": 80,
+        "bake_max_matrix_error": 9.298324584960938e-06
+      },
+      "move_phys": {
+        "source": "Atk0_0",
+        "frames": 36,
+        "bake_max_matrix_error": 8.821487426757812e-06
+      },
+      "move_spec": {
+        "source": "Atk2_0",
+        "frames": 91,
+        "bake_max_matrix_error": 9.5367431640625e-06
+      },
+      "tx_wink": {
+        "source": "NorIdle0",
+        "frames": 84,
+        "bake_max_matrix_error": 7.62939453125e-06
+      },
+      "tx_sleep": {
+        "source": "Sleep0_1",
+        "frames": 140,
+        "bake_max_matrix_error": 4.380941390991211e-06
+      },
+      "tx_wakeup": {
+        "source": "Sleep0_2",
+        "frames": 22,
+        "bake_max_matrix_error": 8.106231689453125e-06
+      }
+    },
+    "omitted_material_features": [
+      "environment map",
+      "specular map",
+      "native TEV lighting"
+    ],
+    "pbr_game_tested": false
+  },
+  "verification": {
+    "kind": "SDR decoded matrix/skin/texture roundtrip, not Dolphin",
+    "actions": {
+      "idle": {
+        "max_vertex_distance": 0.0001241840387979778,
+        "max_matrix_error": 5.85019588470459e-05,
+        "worst_bone": "Nose",
+        "sampled_frames": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          30,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          38,
+          39,
+          40,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49,
+          50,
+          51,
+          52,
+          53,
+          54,
+          55,
+          56,
+          57,
+          58,
+          59,
+          60,
+          61,
+          62,
+          63,
+          64,
+          65,
+          66,
+          67,
+          68,
+          69,
+          70,
+          71,
+          72,
+          73,
+          74,
+          75,
+          76,
+          77,
+          78,
+          79,
+          80,
+          81,
+          82,
+          83
+        ]
+      },
+      "run": {
+        "max_vertex_distance": 5.975381617512826e-05,
+        "max_matrix_error": 4.9248337745666504e-05,
+        "worst_bone": "Nose",
+        "sampled_frames": [
+          0,
+          11,
+          23
+        ]
+      },
+      "damage": {
+        "max_vertex_distance": 9.63458888586843e-06,
+        "max_matrix_error": 6.4373016357421875e-06,
+        "worst_bone": "LeafA",
+        "sampled_frames": [
+          0,
+          15,
+          30
+        ]
+      },
+      "faint": {
+        "max_vertex_distance": 1.9702738851620936e-05,
+        "max_matrix_error": 1.3828277587890625e-05,
+        "worst_bone": "LeafC",
+        "sampled_frames": [
+          0,
+          39,
+          79
+        ]
+      },
+      "move_phys": {
+        "max_vertex_distance": 2.6074887298187454e-05,
+        "max_matrix_error": 1.8417835235595703e-05,
+        "worst_bone": "LFoot",
+        "sampled_frames": [
+          0,
+          17,
+          35
+        ]
+      },
+      "move_spec": {
+        "max_vertex_distance": 1.2261799666658109e-05,
+        "max_matrix_error": 7.9423189163208e-06,
+        "worst_bone": "LFoot",
+        "sampled_frames": [
+          0,
+          45,
+          90
+        ]
+      },
+      "tx_wink": {
+        "max_vertex_distance": 1.0449698925405086e-05,
+        "max_matrix_error": 6.4373016357421875e-06,
+        "worst_bone": "LeafA",
+        "sampled_frames": [
+          0,
+          41,
+          83
+        ]
+      },
+      "tx_sleep": {
+        "max_vertex_distance": 1.0675057094048953e-05,
+        "max_matrix_error": 2.3245811462402344e-06,
+        "worst_bone": "Item00",
+        "sampled_frames": [
+          0,
+          69,
+          139
+        ]
+      },
+      "tx_wakeup": {
+        "max_vertex_distance": 1.2660902068473581e-05,
+        "max_matrix_error": 7.3909759521484375e-06,
+        "worst_bone": "LeafA",
+        "sampled_frames": [
+          0,
+          10,
+          21
+        ]
+      }
+    },
+    "textures": [
+      {
+        "name": "Snivy_Mouth",
+        "dimensions": [
+          64,
+          256
+        ],
+        "max_rgb_error": 0.02745104934654985,
+        "max_alpha_error": 0.0
+      },
+      {
+        "name": "Snivy_Eye",
+        "dimensions": [
+          192,
+          384
+        ],
+        "max_rgb_error": 0.02745104934654985,
+        "max_alpha_error": 0.0
+      },
+      {
+        "name": "Snivy_Body",
+        "dimensions": [
+          256,
+          256
+        ],
+        "max_rgb_error": 0.02745104934654985,
+        "max_alpha_error": 0.0
+      }
+    ],
+    "sdr_sha256": "1993bda5c10268e99551c71443bba64f54456ef90799a00e8621630ebd711fc6",
+    "passed": true
+  },
+  "preview": {
+    "source": "decoded experimental SDR",
+    "frames": 28,
+    "frame_step": 3,
+    "assumed_source_fps": 30,
+    "max_vertex_motion": 0.9507250720824444,
+    "native_game_render": false,
+    "lighting": "simplified diffuse studio"
+  },
+  "sdr_size_bytes": 7773000,
+  "fully_playable": false,
+  "remaining": [
+    "native species/model association",
+    "battle events and scale calibration",
+    "save and menus",
+    "Little Battle eligibility",
+    "material lighting fidelity",
+    "UV animation roundtrip",
+    "measured animation timing",
+    "wink action",
+    "status/enter/recall events",
+    "native interpolation and memory performance",
+    "actual Dolphin testing"
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "status": "passed",
+  "native_waterfall_series_cases": 99,
+  "other_floor_comparisons": 63,
+  "menu_and_required_size_cases": 20,
+  "changed_common_bytes": 6,
+  "output_dol_sha256": "91d0ceacd6a138948d3519f37b7f1715f143481c7148f1f57e3f84750db50189",
+  "output_common_sha256": "a3667703d2bf2e6733c6d40e4709869982f98e45b9ad029a9f7d7d9fec883d57",
+  "source_model": "Original native pair rotation and scoring; six distinct synthetic snapshots",
+  "stubs": [
+    "Synthetic battle outcomes",
+    "Synthetic HP values",
+    "Terminal UI callback and progression flags"
+  ],
+  "limits": [
+    "No rendered Dolphin battle, save/reward execution or real move damage engine",
+    "Explosion, Self-Destruct and multi-target combat still require real game tests"
+  ],
+  "dolphin_tested": false
+}

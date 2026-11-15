@@ -1,0 +1,530 @@
+{
+  "kind": "native level-50 rental sample; not a universal balance meter",
+  "sample_count": 34,
+  "sample_pass_indices": [
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "excluded_species": [
+    501,
+    502
+  ],
+  "native_stats_order": [
+    "hp",
+    "atk",
+    "def",
+    "speed",
+    "spatk",
+    "spdef"
+  ],
+  "ranges": [
+    {
+      "min": 96,
+      "median": 149.5,
+      "max": 179
+    },
+    {
+      "min": 51,
+      "median": 99.0,
+      "max": 131
+    },
+    {
+      "min": 38,
+      "median": 83.0,
+      "max": 121
+    },
+    {
+      "min": 35,
+      "median": 78.0,
+      "max": 139
+    },
+    {
+      "min": 34,
+      "median": 72.0,
+      "max": 139
+    },
+    {
+      "min": 45,
+      "median": 72.0,
+      "max": 122
+    }
+  ],
+  "old_charizard_y": [
+    154,
+    111,
+    98,
+    167,
+    211,
+    135
+  ],
+  "new_charizard_y": [
+    148,
+    107,
+    93,
+    115,
+    150,
+    110
+  ],
+  "base_stat_budget": 580,
+  "canonical_mega_y_budget": 634,
+  "ivs": 20,
+  "evs": 0,
+  "notes": [
+    "Drought is native Generation IV sunlight; Fire damage is amplified beyond the visible Special Attack number.",
+    "34 sampled rental positions do not cover every Pokemon or NPC in the game."
+  ],
+  "sample": [
+    {
+      "pass_index": 37,
+      "slot": 2,
+      "species": 8,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        152,
+        61,
+        88,
+        64,
+        99,
+        88
+      ]
+    },
+    {
+      "pass_index": 37,
+      "slot": 3,
+      "species": 148,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        156,
+        91,
+        73,
+        95,
+        83,
+        70
+      ]
+    },
+    {
+      "pass_index": 37,
+      "slot": 4,
+      "species": 111,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        154,
+        111,
+        101,
+        35,
+        34,
+        54
+      ]
+    },
+    {
+      "pass_index": 37,
+      "slot": 5,
+      "species": 18,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        159,
+        105,
+        82,
+        115,
+        69,
+        83
+      ]
+    },
+    {
+      "pass_index": 38,
+      "slot": 0,
+      "species": 388,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        171,
+        113,
+        90,
+        42,
+        60,
+        72
+      ]
+    },
+    {
+      "pass_index": 38,
+      "slot": 1,
+      "species": 391,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        158,
+        112,
+        59,
+        89,
+        76,
+        57
+      ]
+    },
+    {
+      "pass_index": 38,
+      "slot": 2,
+      "species": 394,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        157,
+        81,
+        73,
+        56,
+        106,
+        72
+      ]
+    },
+    {
+      "pass_index": 38,
+      "slot": 3,
+      "species": 404,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        152,
+        110,
+        54,
+        67,
+        74,
+        50
+      ]
+    },
+    {
+      "pass_index": 38,
+      "slot": 4,
+      "species": 444,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        162,
+        97,
+        72,
+        97,
+        61,
+        61
+      ]
+    },
+    {
+      "pass_index": 38,
+      "slot": 5,
+      "species": 397,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        129,
+        99,
+        56,
+        105,
+        45,
+        45
+      ]
+    },
+    {
+      "pass_index": 39,
+      "slot": 0,
+      "species": 28,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        136,
+        126,
+        117,
+        78,
+        50,
+        72
+      ]
+    },
+    {
+      "pass_index": 39,
+      "slot": 1,
+      "species": 93,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        124,
+        58,
+        51,
+        112,
+        139,
+        54
+      ]
+    },
+    {
+      "pass_index": 39,
+      "slot": 2,
+      "species": 375,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        141,
+        99,
+        108,
+        55,
+        56,
+        95
+      ]
+    },
+    {
+      "pass_index": 39,
+      "slot": 3,
+      "species": 400,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        160,
+        110,
+        73,
+        78,
+        61,
+        59
+      ]
+    },
+    {
+      "pass_index": 39,
+      "slot": 4,
+      "species": 479,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        112,
+        56,
+        113,
+        88,
+        102,
+        103
+      ]
+    },
+    {
+      "pass_index": 39,
+      "slot": 5,
+      "species": 262,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        132,
+        103,
+        85,
+        94,
+        67,
+        66
+      ]
+    },
+    {
+      "pass_index": 40,
+      "slot": 0,
+      "species": 267,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        140,
+        77,
+        49,
+        73,
+        115,
+        61
+      ]
+    },
+    {
+      "pass_index": 40,
+      "slot": 1,
+      "species": 42,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        137,
+        94,
+        78,
+        115,
+        72,
+        89
+      ]
+    },
+    {
+      "pass_index": 40,
+      "slot": 2,
+      "species": 182,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        156,
+        87,
+        93,
+        58,
+        116,
+        106
+      ]
+    },
+    {
+      "pass_index": 40,
+      "slot": 3,
+      "species": 215,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        118,
+        120,
+        67,
+        139,
+        36,
+        82
+      ]
+    },
+    {
+      "pass_index": 40,
+      "slot": 4,
+      "species": 428,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        125,
+        100,
+        100,
+        131,
+        60,
+        92
+      ]
+    },
+    {
+      "pass_index": 40,
+      "slot": 5,
+      "species": 457,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        150,
+        75,
+        84,
+        99,
+        93,
+        93
+      ]
+    },
+    {
+      "pass_index": 41,
+      "slot": 0,
+      "species": 67,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        160,
+        124,
+        76,
+        57,
+        55,
+        59
+      ]
+    },
+    {
+      "pass_index": 41,
+      "slot": 1,
+      "species": 185,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        150,
+        111,
+        121,
+        39,
+        35,
+        71
+      ]
+    },
+    {
+      "pass_index": 41,
+      "slot": 2,
+      "species": 221,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        179,
+        113,
+        87,
+        56,
+        72,
+        68
+      ]
+    },
+    {
+      "pass_index": 41,
+      "slot": 3,
+      "species": 97,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        148,
+        98,
+        96,
+        72,
+        80,
+        122
+      ]
+    },
+    {
+      "pass_index": 41,
+      "slot": 4,
+      "species": 323,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        149,
+        125,
+        78,
+        46,
+        113,
+        82
+      ]
+    },
+    {
+      "pass_index": 41,
+      "slot": 5,
+      "species": 89,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        167,
+        131,
+        108,
+        55,
+        70,
+        96
+      ]
+    },
+    {
+      "pass_index": 42,
+      "slot": 0,
+      "species": 117,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        136,
+        70,
+        103,
+        91,
+        107,
+        56
+      ]
+    },
+    {
+      "pass_index": 42,
+      "slot": 1,
+      "species": 176,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        129,
+        51,
+        103,
+        47,
+        87,
+        111
+      ]
+    },
+    {
+      "pass_index": 42,
+      "slot": 2,
+      "species": 25,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        96,
+        61,
+        38,
+        127,
+        67,
+        48
+      ]
+    },
+    {
+      "pass_index": 42,
+      "slot": 3,
+      "species": 51,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        97,
+        104,
+        56,
+        129,
+        62,
+        77
+      ]
+    },
+    {
+      "pass_index": 42,
+      "slot": 4,
+      "species": 416,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        151,
+        93,
+        108,
+        47,
+        87,
+        121
+      ]
+    },
+    {
+      "pass_index": 42,
+      "slot": 5,
+      "species": 421,
+      "stats_hp_atk_def_speed_spatk_spdef": [
+        132,
+        66,
+        68,
+        121,
+        113,
+        85
+      ]
+    }
+  ]
+}

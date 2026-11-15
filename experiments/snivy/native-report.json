@@ -1,0 +1,20 @@
+{
+  "kind": "offline native PPC stats registration only",
+  "national_id": 495,
+  "provisional_internal_id": 501,
+  "original_records_unchanged": 501,
+  "restoration_verified": true,
+  "native_stats_output_hex": "2d2d373f2d370c0c000000000000000000000000000041000000000000000000000000000000000000000000",
+  "dol_sha256": "da02a1232240e139ec14a26ee8b4c2818c56f3c2907f5c2391bd81e2dc0842f6",
+  "common_sha256": "a3667703d2bf2e6733c6d40e4709869982f98e45b9ad029a9f7d7d9fec883d57",
+  "playable": false,
+  "pending": [
+    "global ID bounds audit",
+    "names and model registry",
+    "evolution eligibility",
+    "moves legality and learnset",
+    "PK4 and save roundtrip",
+    "models and animations",
+    "menus and actual Dolphin battles"
+  ]
+}

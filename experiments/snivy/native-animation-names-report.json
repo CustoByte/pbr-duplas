@@ -1,0 +1,30 @@
+{
+  "before_sha256": "1993bda5c10268e99551c71443bba64f54456ef90799a00e8621630ebd711fc6",
+  "after_sha256": "2e0cf55d83582798ee2dde9def5e6ff38dd27a7b55e403b592f5ad4e87eed762",
+  "actions": [
+    "wait",
+    "run",
+    "damage",
+    "down",
+    "tackle",
+    "kime",
+    "tx_wink",
+    "tx_sleep",
+    "tx_wakeup"
+  ],
+  "renamed": {
+    "idle": "wait",
+    "faint": "down",
+    "move_phys": "tackle",
+    "move_spec": "kime"
+  },
+  "curve_indices_preserved": true,
+  "missing_native_actions": [
+    "kime_a",
+    "kime_phy",
+    "mamoru",
+    "punch"
+  ],
+  "event_binding_verified": false,
+  "playable": false
+}

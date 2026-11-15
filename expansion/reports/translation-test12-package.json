@@ -1,0 +1,53 @@
+{
+  "tag": "v0.11.0-full493-test.12",
+  "core_sha256": "37732c5b089dcc2d34cba4c8cc18d3ff6634e85c107ea8c870cd27a0fafad499",
+  "assets": {
+    "aplicador-core.zip": {
+      "bytes": 1553070,
+      "sha256": "37732c5b089dcc2d34cba4c8cc18d3ff6634e85c107ea8c870cd27a0fafad499"
+    },
+    "update.json": {
+      "bytes": 404,
+      "sha256": "a19950128191606299a5aa255979f245121564749114db12a833547b7a846f9f"
+    },
+    "INICIAR-TESTE-WINDOWS.cmd": {
+      "bytes": 256,
+      "sha256": "a4d8cf891c0d77ed4756fd223718fcfce075ee3002ec5bbfa06b2df4e3622316"
+    },
+    "PBR-Full493-Windows.zip": {
+      "bytes": 1557021,
+      "sha256": "70218cd96470cd40bbf0b5a80a6eb5873fd3b98e1cb36944fafa08ad7378064b"
+    },
+    "LEIA-ME.txt": {
+      "bytes": 1247,
+      "sha256": "8e060be2a3f770f78efa2f2a61c765849155c4809d76302debed410429c7c8c7"
+    },
+    "TESTAR.md": {
+      "bytes": 4010,
+      "sha256": "5b391dab938e29d4593a15839d17217164fcd152ffc7b671e8e450a7829b53fd"
+    },
+    "SHA256SUMS.txt": {
+      "bytes": 499,
+      "sha256": "e07d3fa00e232d457bfea806ee26f62d4e4740a5551c94da622389b1ae767a72"
+    }
+  },
+  "feed": {
+    "schema": 1,
+    "version": "v0.11.0-full493-test.12",
+    "package_url": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.11.0-full493-test.12/aplicador-core.zip",
+    "package_sha256": "37732c5b089dcc2d34cba4c8cc18d3ff6634e85c107ea8c870cd27a0fafad499",
+    "save_policy": "Original image read only; same normal Dolphin save directory",
+    "channel": "full493-test",
+    "dolphin_tested": false
+  },
+  "new_messages": 316,
+  "visible_revisions": 2395,
+  "layout_only_revisions": 1595,
+  "new_translation_goal_2500_met": false,
+  "dolphin_render_tested": false,
+  "source_rebuild_byte_identical": true,
+  "source_rebuild_files": 12,
+  "native_glyph_top_offsets_verified": true,
+  "source_translation_tests": 13,
+  "applicator_tests": 19
+}

@@ -1,0 +1,172 @@
+{
+  "status": "passed-native-exchange-and-pass-copy-fixtures",
+  "exchanges": 668,
+  "species": 493,
+  "pass_copies": 493,
+  "native_exchange": "80131eb8",
+  "native_pass_copy": "800cd764",
+  "pokemon_payload_bytes_compared": 136,
+  "untouched_team_members_checked": true,
+  "new_species_all36_slot_pairings": true,
+  "native_routines_unchanged": true,
+  "construction": {
+    "status": "passed-native-construction",
+    "native_constructed_species": 493,
+    "native_constructor": "8017d750",
+    "native_box_getter": "803de52c",
+    "level_50_exp_checks": 493,
+    "invalid_constructions": [],
+    "new_species_checks": {
+      "251": {
+        "moves": [
+          94,
+          105,
+          246,
+          202
+        ],
+        "ability": 30,
+        "exp_matches_level_50": true,
+        "ivs": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ],
+        "evs": [
+          252,
+          0,
+          252,
+          0,
+          4,
+          0
+        ]
+      },
+      "489": {
+        "moves": [
+          57,
+          58,
+          240,
+          182
+        ],
+        "ability": 93,
+        "exp_matches_level_50": true,
+        "ivs": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ],
+        "evs": [
+          252,
+          0,
+          0,
+          4,
+          252,
+          0
+        ]
+      },
+      "491": {
+        "moves": [
+          399,
+          464,
+          138,
+          182
+        ],
+        "ability": 123,
+        "exp_matches_level_50": true,
+        "ivs": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ],
+        "evs": [
+          4,
+          0,
+          0,
+          252,
+          252,
+          0
+        ]
+      },
+      "492": {
+        "moves": [
+          465,
+          412,
+          235,
+          182
+        ],
+        "ability": 30,
+        "exp_matches_level_50": true,
+        "ivs": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ],
+        "evs": [
+          4,
+          0,
+          0,
+          252,
+          252,
+          0
+        ]
+      },
+      "493": {
+        "moves": [
+          449,
+          105,
+          414,
+          182
+        ],
+        "ability": 121,
+        "exp_matches_level_50": true,
+        "ivs": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ],
+        "evs": [
+          4,
+          0,
+          0,
+          252,
+          252,
+          0
+        ]
+      }
+    },
+    "stubs": [
+      "Scratch allocation/free at 801728e4,801df6b4,80172a14,801df6fc"
+    ],
+    "pokemon_or_move_ability_exp_getter_stubs": [],
+    "dol_sha256": "91d0ceacd6a138948d3519f37b7f1715f143481c7148f1f57e3f84750db50189",
+    "deck_sha256": "0532a445c219722df65d5d16b095a85195e43c86749f35f1d373c9b2ceab04ef",
+    "limits": [
+      "No model render, real battle damage, trade eligibility, Rental Pass save/load"
+    ],
+    "dolphin_tested": false
+  },
+  "dol_sha256": "91d0ceacd6a138948d3519f37b7f1715f143481c7148f1f57e3f84750db50189",
+  "deck_sha256": "0532a445c219722df65d5d16b095a85195e43c86749f35f1d373c9b2ceab04ef",
+  "fixture": "Trade already confirmed; one selected slot per side",
+  "limits": [
+    "Does not establish Trade UI eligibility or native unlock behavior",
+    "Pass copy in memory is not permanent save storage validation",
+    "No real battle, tournament completion, NAND write or save/load"
+  ],
+  "dolphin_tested": false,
+  "trade_save_tested": false
+}

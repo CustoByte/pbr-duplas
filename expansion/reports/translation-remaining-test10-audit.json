@@ -1,0 +1,56 @@
+{
+  "scope": "Only uploaded English MESG resources, not the whole disc",
+  "baseline": "v0.11.0-full493-test.10",
+  "requested_new_messages": 1500,
+  "counts": {
+    "mes_common.fsys": {
+      "message_ids": 9995,
+      "source_sha256": "43fdff322a8d4fa9b79fcc9b22a22f6d0f536c4cf72ee7c83a713763c10d9689",
+      "current_sha256": "0ec19a6d7f3b581ceb5f57110307fd51728fb7c9f08862215b48a97de94e670c",
+      "no_latin_text": 1744,
+      "preserved_names": 2758,
+      "changed_in_test10": 4488,
+      "code_abbreviation_or_placeholder": 228,
+      "other_text_pending_translation_review": 443,
+      "geographic_labels_pending_language_review": 334
+    },
+    "menu_fight_s.fsys": {
+      "message_ids": 9233,
+      "source_sha256": "43493306dfbe78a2efb98f6510e1b159f85ac05022ed759fe2bec0fcc5b8b5f1",
+      "current_sha256": "96332d208f03462e6467c6ab419506f33b12b7b705af397cf9b1187d487c7157",
+      "no_latin_text": 3884,
+      "changed_in_test10": 5170,
+      "preserved_names": 4,
+      "code_abbreviation_or_placeholder": 3,
+      "other_text_pending_translation_review": 172
+    }
+  },
+  "candidate_ids_requiring_review": 949,
+  "exact_whole_game_remaining": null,
+  "whole_game_count_blocked_by_missing_archives": [
+    "mes_bpass_e.fsys",
+    "mes_fight_e.fsys",
+    "mes_name_e.fsys"
+  ],
+  "limits": [
+    "Unchanged geographic labels may already be identical in Portuguese. Candidate count is not a verified count of missing translations.",
+    "Other FSYS archives may contain additional message resources; whole-disc inventory is not available.",
+    "Changed IDs include approved trainer renames; they are not all translated sentences."
+  ],
+  "draft_review": {
+    "candidate_drafts_with_visible_changes": 575,
+    "passed_source_font_envelopes": 45,
+    "requires_revision": 530,
+    "applied_new_translations": 0,
+    "published_new_translations": 0,
+    "requested_lot_complete": false
+  },
+  "missing_file_sizes_from_disc_fst": {
+    "mes_bpass_e.fsys": 125440,
+    "mes_fight_e.fsys": 123296,
+    "mes_name_e.fsys": 2272
+  },
+  "historical_audit": true,
+  "superseded_by": "ui-translation-test11.json",
+  "previously_missing_archives_received": true
+}

@@ -1,0 +1,24 @@
+{
+  "passed": true,
+  "kind": "native resource allocation/SDR relocation in captured RAM, not Dolphin gameplay",
+  "snivy": {
+    "bytes": 2358184,
+    "sha256": "f98f8c3cd980c887a48fe91b9fa4922f2c28f6c15da5a20a8b34e5e59e1b8a8b",
+    "allocation": "80fa6b40"
+  },
+  "mega": {
+    "bytes": 2364904,
+    "sha256": "722b0e2e764438c982b32a2d9d0fc84c4880697b412b5cd8fb99cea650246d0a",
+    "allocation": "811e7320"
+  },
+  "both_allocations_resident": true,
+  "mega_resource_ready": true,
+  "allocations_non_overlapping": true,
+  "fixture_changes": [
+    "one FSYS descriptor ID and metadata",
+    "skip coherent-memory OS cache-maintenance syscalls"
+  ],
+  "disc_io_verified": false,
+  "gpu_render_verified": false,
+  "gameplay_verified": false
+}

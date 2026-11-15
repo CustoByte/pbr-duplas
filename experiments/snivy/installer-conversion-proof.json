@@ -1,0 +1,60 @@
+{
+  "kind": "test4 public-core local conversion: approved fluidity profile",
+  "protected_resources_bundled_in_public_project": false,
+  "original_face_entries_preserved": 645,
+  "original_body_entries_preserved": 645,
+  "native_asset_validation": {
+    "kind": "offline native-profile asset validation",
+    "passed": true,
+    "actions": 12,
+    "nodes": 119,
+    "effect_control_attachments": 21,
+    "uv_scalar_samples": 5760,
+    "max_uv_error": 1.043081283569336e-07,
+    "blink_changes_and_restores_uv": true,
+    "reference_metadata_matched": true,
+    "authored_full_recovery_actions": [
+      "damage",
+      "kime_a"
+    ],
+    "sdr_sha256": "96de8996a874d1cdc0ec03cf566c024af30be8c8d54b8d7f52dbe051e3be8a4d",
+    "native_game_tested": false,
+    "effects_positions_calibrated": false,
+    "event_synchronization_verified": false
+  },
+  "shiny_variant": {
+    "changed_texture_pixels": 78387,
+    "alpha_bits_preserved": true,
+    "geometry_actions_and_metadata_preserved": true,
+    "color_policy": "green hue +0.07; other hues preserved",
+    "visually_matched_to_official_art": false
+  },
+  "outputs": {
+    "pkx_501.fsys": {
+      "bytes": 2385184,
+      "sha256": "a343e97c6f56b1cc93daf6f7b4833431a54223a82d4fa32b71c5a350b509e2f4"
+    },
+    "menu_face.fsys": {
+      "bytes": 2679296,
+      "sha256": "754fa47d5db9c51790bce6da8720663778939fed3ba6b1217784a2cc0957bb38"
+    },
+    "menu_pokemon.fsys": {
+      "bytes": 2255680,
+      "sha256": "bc04d7c6f8959c8e33fb650341f1e780bd584824f16446c341c5391e3fbd1c28"
+    }
+  },
+  "source_sha256": {
+    "pkx_388.fsys": "ce02a053b41bc806391bf3bb4606faffcae3edc7b974120959d25f488f75afb8",
+    "menu_face.fsys": "05f0037c6cecf8a4e958d616a71c6c30af6d1d4dc37f4615d3051afff1f53e9a",
+    "menu_pokemon.fsys": "8c39595a3b6176b709475674e143266f093bf657ff0bd025ddf6dea1cd1fbdad",
+    "normal_sdr": "96de8996a874d1cdc0ec03cf566c024af30be8c8d54b8d7f52dbe051e3be8a4d"
+  },
+  "playable": false,
+  "ready_to_publish": false,
+  "updater_changed": false,
+  "remaining": [
+    "Windows in-game event timing, visual transition and load-time confirmation"
+  ],
+  "all_four_blender_stages_passed": true,
+  "public_game_assets": false
+}

@@ -1,0 +1,71 @@
+# Estado da integração Snivy — 13/11/2026
+
+**Código experimental; não é uma atualização jogável.**
+
+O canal usado por `INICIAR-TESTE-WINDOWS.cmd` continua em
+`v0.11.0-full493-test.13`. Publicar este código em uma branch não altera
+o feed nem instala Snivy pelo CMD. O mesmo CMD poderá receber a integração
+quando um pacote completo for construído e o feed for atualizado.
+
+## Verificado fora do Dolphin
+
+- Índice interno 501, sem substituir Egg/Bad Egg, formas ou espécies 1–493.
+- Atributos oficiais, construção nativa de Pokémon nos níveis 5 e 50,
+  Timid, Overgrow, Lum Berry e leitura dos golpes/PP.
+- Construção com os oito perfis nativos de dificuldade do Sunny Park.
+- Conjunto nível 50: Energy Ball / Glare / Leech Seed / Protect;
+  HP121, Atk58, Def75, Speed126, SpAtk97, SpDef75, sem bônus shiny.
+- Cadastro de arquivo independente, mantendo 1.102 entradas anteriores;
+  busca nativa do novo ID e restauração do catálogo original.
+- Conversão experimental de geometria, 12 ações e UVs. Os relatórios
+  gráficos anteriores descrevem os limites de cada prova.
+- Nome independente `SNIVY`: ID global 21775, índice local 9996, busca
+  nativa por espécie e por registro de atributos. Os registros anteriores
+  e demais categorias de texto permanecem preservados. Ver [NAMES.md](NAMES.md).
+- Ligação de modelo independente: espécie 501 → modelo 670 → catálogo
+  `pkx_501.fsys`; 25 campos de pontos e 22 campos de animações conferidos
+  por getters nativos. Preservadas 670 linhas anteriores e 501 índices de
+  modelo das espécies anteriores. Ver [MODEL-REGISTRY.md](MODEL-REGISTRY.md).
+- SDR regenerado com `direct_set` e vínculo central corrigido, passando
+  pelas verificações de geometria, texturas, metadados e UVs.
+- Retratos normal/shiny para ambos os lados dentro da moldura circular e
+  miniatura corporal, codificados nos atlases nativos. IDs e metadados
+  evolutivos conferidos por getters reais; ver [LOCAL-ASSETS.md](LOCAL-ASSETS.md).
+- Pacotes gráficos privados gerados a partir dos arquivos locais, mantendo
+  os 645 recursos anteriores de cada arquivo de ícones. Variante shiny
+  preserva geometria, animações e alfa; aparência final no jogo não validada.
+- 31 guardas seletivos de espécie verificados em 1.116 casos PPC; o
+  predicado nativo de presença do menu passa a reconhecer 501 sem admitir
+  os índices intermediários. Ver [SPECIES-GUARDS.md](SPECIES-GUARDS.md).
+- Dezenove testes de estrutura, identidades, catálogo, nome, modelo,
+  atlas e empacotamento de recursos.
+
+## Implementação restante antes de empacotar
+
+- Incorporar nomes, modelos, ícones e guardas ao construtor integrado;
+  completar estruturas de IA, evolução/aprendizado e demais caminhos
+  dependentes de espécie antes de habilitar o registro no jogo.
+- Confirmar os retratos próprios e suas variantes nas interfaces reais.
+- Entrega de um Passe Little Battle pronto em uma vaga vazia, sem perda
+  de passes anteriores; seleção, elegibilidade e persistência.
+- Migração da vaga Charmeleon do Rental Pass 37 para Snivy nível 50,
+  preservando o Monferno do passe 38 e os demais dados do jogador.
+- Fechar flags e validação dos passes pessoais sem copiar cegamente flags
+  de Rental Pass. Ver [PASS-INVESTIGATION.md](PASS-INVESTIGATION.md).
+- Integração das variantes visuais, bônus shiny e restauração de item.
+- Calibração de pontos de efeito, deslocamento, eventos e interpolação;
+  o SDR experimental de cerca de 8 MB ainda precisa de avaliação de memória.
+- Conversão local a partir dos recursos próprios do jogador; os recursos
+  derivados de PokéPark 2 não serão incluídos na publicação pública.
+
+## Validação final necessária
+
+Não há imagem completa do jogo nem Dolphin instalado neste ambiente.
+As capturas de RAM permitem executar funções PPC isoladas, mas não
+substituem inicialização do jogo, renderização ou gravação real do save.
+Após completar a implementação, ainda é necessário testar esses caminhos
+no Dolphin com a cópia local do jogador, incluindo seleção, ataques,
+impactos, retorno à Poké Ball, derrota, troca e salvar/carregar.
+
+**Não gerar uma release jogável nem avançar o feed a partir desta etapa.**
+Os arquivos aqui preparados ainda não satisfazem o pedido completo.

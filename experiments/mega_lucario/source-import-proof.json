@@ -1,0 +1,10 @@
+{
+  "vertices": 4757,
+  "triangles": 9198,
+  "bones": 99,
+  "materials": 3,
+  "max_weights": 4,
+  "rest_pose_max_vertex_error": 1.9147847180615676e-06,
+  "source_vertices_preserved": true,
+  "pbr_game_tested": false
+}

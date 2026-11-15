@@ -1,0 +1,24 @@
+{
+  "status": "applied-approved-battle-text-awaiting-Dolphin-visual-check",
+  "language": "pt-BR",
+  "approved_batches": [
+    1
+  ],
+  "changed_message_ids": [
+    1164,
+    2577,
+    2578,
+    2595,
+    2596
+  ],
+  "changed_message_count": 5,
+  "untouched_message_count": 9228,
+  "untouched_archive_resources": 14,
+  "dynamic_variables_formatting_and_pause_markers_preserved": true,
+  "unapproved_text_changed": false,
+  "names_translated": false,
+  "source_sha256": "43493306dfbe78a2efb98f6510e1b159f85ac05022ed759fe2bec0fcc5b8b5f1",
+  "target_sha256": "2902fdeecd2dbad0345f3f3df8f91a1273fa7dbb389b60c4a9d6322123a014f1",
+  "approval_sha256": "cda062711e02f3bb1edddab43ad63800472a2166931358cdfd0738bf2d8ebd93",
+  "dolphin_visual_tested": false
+}

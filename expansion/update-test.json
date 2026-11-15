@@ -1,0 +1,30 @@
+{
+  "schema": 1,
+  "version": "v0.14.0-charizard-y-test.2",
+  "package_url": "https://raw.githubusercontent.com/CustoByte/pbr-duplas/v0.14.0-charizard-y-test.2/expansion/packages/charizard-y-test2/aplicador-core.zip",
+  "package_sha256": "78e90492bd1f0c97bd26de9c9d174e274a5a45f6dda42a5aa03ed12b21d8610e",
+  "channel": "full493-test",
+  "dolphin_tested": false,
+  "local_snivy_source_required": true,
+  "save_policy": "Original image and normal save files untouched by installer",
+  "translation_corrections": 433,
+  "new_translations": 0,
+  "review_complete": false,
+  "additional_corrections": 51,
+  "local_mega_source_required": true,
+  "mega_internal_id": 502,
+  "mega_rental_replacement": "Ivysaur",
+  "local_charizard_y_source_required": true,
+  "charizard_y_internal_id": 503,
+  "charizard_y_rental_replacement": "Wartortle",
+  "npc_randomization_enabled": false,
+  "charizard_y_balance_profile": "rental-580",
+  "charizard_y_stats_hp_atk_def_spatk_spdef_speed": [
+    148,
+    107,
+    93,
+    150,
+    110,
+    115
+  ]
+}

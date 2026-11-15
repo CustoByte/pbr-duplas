@@ -1,0 +1,303 @@
+{
+  "status": "passed-offline-review-not-complete",
+  "checked_changed_message_ids": 10006,
+  "prepared_corrections": 433,
+  "added_continuation_controls": 50,
+  "pending_conservative_flags": 2598,
+  "new_translations": 0,
+  "native_paging": {
+    "passed": true,
+    "native_handler": "0x80160a18",
+    "native_dispatch": "0x8015f0d0",
+    "button_input_fixture": "0x8005b5ec",
+    "button_calls": 35,
+    "cases": [
+      {
+        "pages": 1,
+        "boundaries": [
+          {
+            "boundary": 0,
+            "reached_end": true,
+            "native_result": 1
+          }
+        ]
+      },
+      {
+        "pages": 2,
+        "boundaries": [
+          {
+            "boundary": 0,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 1,
+            "reached_end": true,
+            "native_result": 1
+          }
+        ]
+      },
+      {
+        "pages": 3,
+        "boundaries": [
+          {
+            "boundary": 0,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 1,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 2,
+            "reached_end": true,
+            "native_result": 1
+          }
+        ]
+      },
+      {
+        "pages": 5,
+        "boundaries": [
+          {
+            "boundary": 0,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 1,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 2,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 3,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 4,
+            "reached_end": true,
+            "native_result": 1
+          }
+        ]
+      },
+      {
+        "pages": 8,
+        "boundaries": [
+          {
+            "boundary": 0,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 1,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 2,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 3,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 4,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 5,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 6,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 7,
+            "reached_end": true,
+            "native_result": 1
+          }
+        ]
+      },
+      {
+        "pages": 16,
+        "boundaries": [
+          {
+            "boundary": 0,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 1,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 2,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 3,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 4,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 5,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 6,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 7,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 8,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 9,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 10,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 11,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 12,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 13,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 14,
+            "reached_end": false,
+            "native_result": 0
+          },
+          {
+            "boundary": 15,
+            "reached_end": true,
+            "native_result": 1
+          }
+        ]
+      }
+    ],
+    "no_page_handler_or_text_reset_stubbed": true,
+    "gpu_or_actual_menu_tested": false,
+    "limits": [
+      "Validates continuation mechanics; caller-specific UI limits still require conservative gates and Dolphin."
+    ]
+  },
+  "tilde_registration_cases": 40,
+  "archives": [
+    {
+      "filename": "mes_name_e.fsys",
+      "reproduced": true,
+      "non_message_resources_unchanged": true,
+      "changed_resources": []
+    },
+    {
+      "filename": "mes_bpass_e.fsys",
+      "reproduced": true,
+      "non_message_resources_unchanged": true,
+      "changed_resources": [
+        "0x27c31800"
+      ]
+    },
+    {
+      "filename": "mes_fight_e.fsys",
+      "reproduced": true,
+      "non_message_resources_unchanged": true,
+      "changed_resources": [
+        "0x27c31800"
+      ]
+    },
+    {
+      "filename": "menu_fight_s.fsys",
+      "reproduced": true,
+      "non_message_resources_unchanged": true,
+      "changed_resources": [
+        "0x27c31800"
+      ]
+    },
+    {
+      "filename": "menu_name2.fsys",
+      "reproduced": true,
+      "non_message_resources_unchanged": true,
+      "changed_resources": []
+    },
+    {
+      "filename": "menu_btutorial.fsys",
+      "reproduced": true,
+      "non_message_resources_unchanged": true,
+      "changed_resources": [
+        "0x2a431800"
+      ]
+    },
+    {
+      "filename": "menu_bpass2.fsys",
+      "reproduced": true,
+      "non_message_resources_unchanged": true,
+      "changed_resources": [
+        "0x27c31800"
+      ]
+    },
+    {
+      "filename": "mes_common.fsys",
+      "reproduced": true,
+      "non_message_resources_unchanged": true,
+      "changed_resources": [
+        "0x27c10000"
+      ]
+    }
+  ],
+  "untranslated_ids_unchanged": true,
+  "added_snivy_name_unchanged": true,
+  "player_feed_changed": false,
+  "dolphin_visual_tested": false,
+  "review_complete": false,
+  "contextual_main_menu_targets": 140,
+  "new_corrections_since_test1": 51,
+  "text_and_update_workflow_tests_passed": 47,
+  "delivery": "existing-auto-updater",
+  "new_launcher_required": false,
+  "channel_version": "v0.12.1-dialogue-test.2",
+  "channel_package_sha256": "032a15a4e80fb08dd8a6988ec061dffa530d4ca580f283bf5e33263568e01526",
+  "no_screenshot_dependency": true
+}

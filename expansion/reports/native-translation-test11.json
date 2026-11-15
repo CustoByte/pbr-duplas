@@ -1,0 +1,163 @@
+{
+  "status": "passed-native-trainer-labels-and-reference-lookup",
+  "native_common_message_lookups": 9995,
+  "reviewed_names": 20,
+  "renamed_names": 19,
+  "native_battle_reference_lookups": 8,
+  "name_font_cases": [
+    {
+      "original": "Joe",
+      "replacement": "Pedro",
+      "native_message_id": 6405,
+      "width": 51,
+      "height": 25
+    },
+    {
+      "original": "Marcel",
+      "replacement": "Arthur",
+      "native_message_id": 6407,
+      "width": 56,
+      "height": 25
+    },
+    {
+      "original": "Alec",
+      "replacement": "Caio",
+      "native_message_id": 6429,
+      "width": 38,
+      "height": 25
+    },
+    {
+      "original": "Brooke",
+      "replacement": "Bruno",
+      "native_message_id": 6425,
+      "width": 50,
+      "height": 25
+    },
+    {
+      "original": "Annie",
+      "replacement": "Laura",
+      "native_message_id": 6427,
+      "width": 50,
+      "height": 25
+    },
+    {
+      "original": "Cedric",
+      "replacement": "Alan",
+      "native_message_id": 6423,
+      "width": 37,
+      "height": 25
+    },
+    {
+      "original": "Crystal",
+      "replacement": "Alice",
+      "native_message_id": 6420,
+      "width": 41,
+      "height": 25
+    },
+    {
+      "original": "Taylor",
+      "replacement": "Sara",
+      "native_message_id": 6436,
+      "width": 41,
+      "height": 25
+    },
+    {
+      "original": "Marina",
+      "replacement": "Marina",
+      "native_message_id": 6467,
+      "width": 56,
+      "height": 25
+    },
+    {
+      "original": "Rosie",
+      "replacement": "Luiza",
+      "native_message_id": 6498,
+      "width": 45,
+      "height": 25
+    },
+    {
+      "original": "Zackary",
+      "replacement": "Lucas",
+      "native_message_id": 6445,
+      "width": 51,
+      "height": 25
+    },
+    {
+      "original": "Aric",
+      "replacement": "Rafael",
+      "native_message_id": 6450,
+      "width": 56,
+      "height": 25
+    },
+    {
+      "original": "Melody",
+      "replacement": "Beatriz",
+      "native_message_id": 6456,
+      "width": 62,
+      "height": 25
+    },
+    {
+      "original": "Elena",
+      "replacement": "Camila",
+      "native_message_id": 6447,
+      "width": 53,
+      "height": 25
+    },
+    {
+      "original": "Ariel",
+      "replacement": "Gabriel",
+      "native_message_id": 6452,
+      "width": 60,
+      "height": 25
+    },
+    {
+      "original": "Todd",
+      "replacement": "Felipe",
+      "native_message_id": 6446,
+      "width": 51,
+      "height": 25
+    },
+    {
+      "original": "Damon",
+      "replacement": "Gustavo",
+      "native_message_id": 6470,
+      "width": 71,
+      "height": 25
+    },
+    {
+      "original": "Harry",
+      "replacement": "Henrique",
+      "native_message_id": 6491,
+      "width": 75,
+      "height": 25
+    },
+    {
+      "original": "Desiree",
+      "replacement": "Juliana",
+      "native_message_id": 6468,
+      "width": 62,
+      "height": 25
+    },
+    {
+      "original": "Sierra",
+      "replacement": "Fernanda",
+      "native_message_id": 6473,
+      "width": 81,
+      "height": 25
+    }
+  ],
+  "native_changed_battle_message_lookups": 5194,
+  "protected_native_trainer_names": 274,
+  "Marina_Joel_Joey_preserved": true,
+  "trainer_aliases_not_leaked_into_place_labels": true,
+  "original_global_message_mapping_preserved": true,
+  "common_sha256": "5858bd574340ca75ccd45949255d9ec1f7c61b68eed95411ca4d64b4499b14ea",
+  "battle_sha256": "12fc637013acf78d77d2526eaf02fdb22a4b33e28f8cd75ed6c11b5121cab115",
+  "dol_sha256": "da02a1232240e139ec14a26ee8b4c2818c56f3c2907f5c2391bd81e2dc0842f6",
+  "dolphin_visual_tested": false,
+  "limits": [
+    "New MESG resources injected into captured registrations; no archive loading in Dolphin",
+    "Native lookup and metrics do not validate the real UI frame or rendering",
+    "No full battle, save/load or changed trainer appearance test"
+  ]
+}

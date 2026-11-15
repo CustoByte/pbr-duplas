@@ -1,0 +1,50 @@
+{
+  "kind": "Decoded SDR candidate action previews, not in-game footage",
+  "actions": {
+    "damage": {
+      "source": "decoded experimental SDR",
+      "action": "damage",
+      "frames": 16,
+      "frame_step": 2,
+      "output_fps": 15.0,
+      "assumed_source_fps": 30,
+      "max_vertex_motion": 4.955447040758688,
+      "native_game_render": false,
+      "lighting": "simplified diffuse studio"
+    },
+    "move_phys": {
+      "source": "decoded experimental SDR",
+      "action": "move_phys",
+      "frames": 18,
+      "frame_step": 2,
+      "output_fps": 15.0,
+      "assumed_source_fps": 30,
+      "max_vertex_motion": 9.300639499511757,
+      "native_game_render": false,
+      "lighting": "simplified diffuse studio"
+    },
+    "move_spec": {
+      "source": "decoded experimental SDR",
+      "action": "move_spec",
+      "frames": 19,
+      "frame_step": 5,
+      "output_fps": 6.0,
+      "assumed_source_fps": 30,
+      "max_vertex_motion": 9.869843640909846,
+      "native_game_render": false,
+      "lighting": "simplified diffuse studio"
+    },
+    "faint": {
+      "source": "decoded experimental SDR",
+      "action": "faint",
+      "frames": 20,
+      "frame_step": 4,
+      "output_fps": 7.5,
+      "assumed_source_fps": 30,
+      "max_vertex_motion": 0.779818500099708,
+      "native_game_render": false,
+      "lighting": "simplified diffuse studio"
+    }
+  },
+  "native_event_binding_verified": false
+}

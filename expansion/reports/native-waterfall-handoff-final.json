@@ -1,0 +1,21 @@
+{
+  "status": "passed-native-packing-and-waterfall-party-limit",
+  "six_member_orderings": 720,
+  "side_specific_packing_checks": 1440,
+  "native_two_member_battle_party_appends": 1440,
+  "floor_and_format_gate_checks": 20,
+  "no_third_pokemon_appended": true,
+  "dol_sha256": "91d0ceacd6a138948d3519f37b7f1715f143481c7148f1f57e3f84750db50189",
+  "common_sha256": "a3667703d2bf2e6733c6d40e4709869982f98e45b9ad029a9f7d7d9fec883d57",
+  "stubs": [
+    "Marker Pokemon decoder and validity getter",
+    "Name registration",
+    "Temporary allocation/free",
+    "Opponent-selection fixture (disabled in tested AI=0 cases)"
+  ],
+  "limits": [
+    "Subsequent-pair rotation and scoring tested separately in verify_waterfall",
+    "No rendered battle, live switch UI, damage, Explosion or save/reward execution"
+  ],
+  "dolphin_tested": false
+}

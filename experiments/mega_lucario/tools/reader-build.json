@@ -1,0 +1,10 @@
+{
+  "source_sha256": "b89a79d3ffb4084ec0a7f76dbcb09ce18bf68127f7534eab0620ff5882eb86ac",
+  "exe_sha256": "e3ad5ac3fee2437129b48ca33e5e8e2986555f4344cb7766dfb77573e1f6fccb",
+  "ufbx_version": "0.17.1",
+  "compiler": "Zig 0.13.0 cc",
+  "target": "x86_64-windows-gnu",
+  "windows_execution_tested": false,
+  "ufbx_h_sha256": "d2e3a7038f81fe8742705bff96e9c072222bd14bef85a97fa778fa858835d07e",
+  "ufbx_c_sha256": "a6663d3be07e68b6b4b4fbca692e21a7449097f60b83fdc2b634f00b16d50315"
+}

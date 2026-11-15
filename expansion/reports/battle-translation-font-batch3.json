@@ -1,0 +1,664 @@
+{
+  "status": "passed-native-font-metric-fixtures",
+  "case_count": 54,
+  "cases": [
+    {
+      "id": 1164,
+      "name_characters": 7,
+      "source": {
+        "width": 113,
+        "height": 50
+      },
+      "target": {
+        "width": 113,
+        "height": 50
+      }
+    },
+    {
+      "id": 1164,
+      "name_characters": 10,
+      "source": {
+        "width": 133,
+        "height": 50
+      },
+      "target": {
+        "width": 133,
+        "height": 50
+      }
+    },
+    {
+      "id": 1164,
+      "name_characters": 12,
+      "source": {
+        "width": 178,
+        "height": 50
+      },
+      "target": {
+        "width": 178,
+        "height": 50
+      }
+    },
+    {
+      "id": 2577,
+      "name_characters": 7,
+      "source": {
+        "width": 125,
+        "height": 50
+      },
+      "target": {
+        "width": 136,
+        "height": 50
+      }
+    },
+    {
+      "id": 2577,
+      "name_characters": 10,
+      "source": {
+        "width": 125,
+        "height": 50
+      },
+      "target": {
+        "width": 136,
+        "height": 50
+      }
+    },
+    {
+      "id": 2577,
+      "name_characters": 12,
+      "source": {
+        "width": 147,
+        "height": 50
+      },
+      "target": {
+        "width": 136,
+        "height": 50
+      }
+    },
+    {
+      "id": 2578,
+      "name_characters": 7,
+      "source": {
+        "width": 125,
+        "height": 50
+      },
+      "target": {
+        "width": 136,
+        "height": 50
+      }
+    },
+    {
+      "id": 2578,
+      "name_characters": 10,
+      "source": {
+        "width": 125,
+        "height": 50
+      },
+      "target": {
+        "width": 136,
+        "height": 50
+      }
+    },
+    {
+      "id": 2578,
+      "name_characters": 12,
+      "source": {
+        "width": 147,
+        "height": 50
+      },
+      "target": {
+        "width": 136,
+        "height": 50
+      }
+    },
+    {
+      "id": 2592,
+      "name_characters": 7,
+      "source": {
+        "width": 145,
+        "height": 50
+      },
+      "target": {
+        "width": 82,
+        "height": 50
+      }
+    },
+    {
+      "id": 2592,
+      "name_characters": 10,
+      "source": {
+        "width": 145,
+        "height": 50
+      },
+      "target": {
+        "width": 102,
+        "height": 50
+      }
+    },
+    {
+      "id": 2592,
+      "name_characters": 12,
+      "source": {
+        "width": 147,
+        "height": 50
+      },
+      "target": {
+        "width": 147,
+        "height": 50
+      }
+    },
+    {
+      "id": 2593,
+      "name_characters": 7,
+      "source": {
+        "width": 145,
+        "height": 50
+      },
+      "target": {
+        "width": 82,
+        "height": 50
+      }
+    },
+    {
+      "id": 2593,
+      "name_characters": 10,
+      "source": {
+        "width": 145,
+        "height": 50
+      },
+      "target": {
+        "width": 102,
+        "height": 50
+      }
+    },
+    {
+      "id": 2593,
+      "name_characters": 12,
+      "source": {
+        "width": 147,
+        "height": 50
+      },
+      "target": {
+        "width": 147,
+        "height": 50
+      }
+    },
+    {
+      "id": 2595,
+      "name_characters": 7,
+      "source": {
+        "width": 142,
+        "height": 25
+      },
+      "target": {
+        "width": 157,
+        "height": 25
+      }
+    },
+    {
+      "id": 2595,
+      "name_characters": 10,
+      "source": {
+        "width": 162,
+        "height": 25
+      },
+      "target": {
+        "width": 177,
+        "height": 25
+      }
+    },
+    {
+      "id": 2595,
+      "name_characters": 12,
+      "source": {
+        "width": 207,
+        "height": 25
+      },
+      "target": {
+        "width": 222,
+        "height": 25
+      }
+    },
+    {
+      "id": 2596,
+      "name_characters": 7,
+      "source": {
+        "width": 70,
+        "height": 50
+      },
+      "target": {
+        "width": 85,
+        "height": 50
+      }
+    },
+    {
+      "id": 2596,
+      "name_characters": 10,
+      "source": {
+        "width": 87,
+        "height": 50
+      },
+      "target": {
+        "width": 87,
+        "height": 50
+      }
+    },
+    {
+      "id": 2596,
+      "name_characters": 12,
+      "source": {
+        "width": 132,
+        "height": 50
+      },
+      "target": {
+        "width": 132,
+        "height": 50
+      }
+    },
+    {
+      "id": 3339,
+      "name_characters": 7,
+      "source": {
+        "width": 114,
+        "height": 25
+      },
+      "target": {
+        "width": 129,
+        "height": 25
+      }
+    },
+    {
+      "id": 3339,
+      "name_characters": 10,
+      "source": {
+        "width": 114,
+        "height": 25
+      },
+      "target": {
+        "width": 129,
+        "height": 25
+      }
+    },
+    {
+      "id": 3339,
+      "name_characters": 12,
+      "source": {
+        "width": 114,
+        "height": 25
+      },
+      "target": {
+        "width": 129,
+        "height": 25
+      }
+    },
+    {
+      "id": 3344,
+      "name_characters": 7,
+      "source": {
+        "width": 206,
+        "height": 25
+      },
+      "target": {
+        "width": 160,
+        "height": 25
+      }
+    },
+    {
+      "id": 3344,
+      "name_characters": 10,
+      "source": {
+        "width": 206,
+        "height": 25
+      },
+      "target": {
+        "width": 160,
+        "height": 25
+      }
+    },
+    {
+      "id": 3344,
+      "name_characters": 12,
+      "source": {
+        "width": 206,
+        "height": 25
+      },
+      "target": {
+        "width": 160,
+        "height": 25
+      }
+    },
+    {
+      "id": 3345,
+      "name_characters": 7,
+      "source": {
+        "width": 175,
+        "height": 25
+      },
+      "target": {
+        "width": 130,
+        "height": 25
+      }
+    },
+    {
+      "id": 3345,
+      "name_characters": 10,
+      "source": {
+        "width": 175,
+        "height": 25
+      },
+      "target": {
+        "width": 130,
+        "height": 25
+      }
+    },
+    {
+      "id": 3345,
+      "name_characters": 12,
+      "source": {
+        "width": 175,
+        "height": 25
+      },
+      "target": {
+        "width": 130,
+        "height": 25
+      }
+    },
+    {
+      "id": 3361,
+      "name_characters": 7,
+      "source": {
+        "width": 109,
+        "height": 25
+      },
+      "target": {
+        "width": 100,
+        "height": 25
+      }
+    },
+    {
+      "id": 3361,
+      "name_characters": 10,
+      "source": {
+        "width": 109,
+        "height": 25
+      },
+      "target": {
+        "width": 100,
+        "height": 25
+      }
+    },
+    {
+      "id": 3361,
+      "name_characters": 12,
+      "source": {
+        "width": 109,
+        "height": 25
+      },
+      "target": {
+        "width": 100,
+        "height": 25
+      }
+    },
+    {
+      "id": 3489,
+      "name_characters": 7,
+      "source": {
+        "width": 50,
+        "height": 25
+      },
+      "target": {
+        "width": 54,
+        "height": 25
+      }
+    },
+    {
+      "id": 3489,
+      "name_characters": 10,
+      "source": {
+        "width": 50,
+        "height": 25
+      },
+      "target": {
+        "width": 54,
+        "height": 25
+      }
+    },
+    {
+      "id": 3489,
+      "name_characters": 12,
+      "source": {
+        "width": 50,
+        "height": 25
+      },
+      "target": {
+        "width": 54,
+        "height": 25
+      }
+    },
+    {
+      "id": 3828,
+      "name_characters": 7,
+      "source": {
+        "width": 54,
+        "height": 33
+      },
+      "target": {
+        "width": 59,
+        "height": 33
+      }
+    },
+    {
+      "id": 3828,
+      "name_characters": 10,
+      "source": {
+        "width": 54,
+        "height": 33
+      },
+      "target": {
+        "width": 59,
+        "height": 33
+      }
+    },
+    {
+      "id": 3828,
+      "name_characters": 12,
+      "source": {
+        "width": 54,
+        "height": 33
+      },
+      "target": {
+        "width": 59,
+        "height": 33
+      }
+    },
+    {
+      "id": 3830,
+      "name_characters": 7,
+      "source": {
+        "width": 67,
+        "height": 33
+      },
+      "target": {
+        "width": 82,
+        "height": 33
+      }
+    },
+    {
+      "id": 3830,
+      "name_characters": 10,
+      "source": {
+        "width": 67,
+        "height": 33
+      },
+      "target": {
+        "width": 82,
+        "height": 33
+      }
+    },
+    {
+      "id": 3830,
+      "name_characters": 12,
+      "source": {
+        "width": 67,
+        "height": 33
+      },
+      "target": {
+        "width": 82,
+        "height": 33
+      }
+    },
+    {
+      "id": 3891,
+      "name_characters": 7,
+      "source": {
+        "width": 58,
+        "height": 25
+      },
+      "target": {
+        "width": 67,
+        "height": 25
+      }
+    },
+    {
+      "id": 3891,
+      "name_characters": 10,
+      "source": {
+        "width": 58,
+        "height": 25
+      },
+      "target": {
+        "width": 67,
+        "height": 25
+      }
+    },
+    {
+      "id": 3891,
+      "name_characters": 12,
+      "source": {
+        "width": 58,
+        "height": 25
+      },
+      "target": {
+        "width": 67,
+        "height": 25
+      }
+    },
+    {
+      "id": 3892,
+      "name_characters": 7,
+      "source": {
+        "width": 57,
+        "height": 25
+      },
+      "target": {
+        "width": 54,
+        "height": 25
+      }
+    },
+    {
+      "id": 3892,
+      "name_characters": 10,
+      "source": {
+        "width": 57,
+        "height": 25
+      },
+      "target": {
+        "width": 54,
+        "height": 25
+      }
+    },
+    {
+      "id": 3892,
+      "name_characters": 12,
+      "source": {
+        "width": 57,
+        "height": 25
+      },
+      "target": {
+        "width": 54,
+        "height": 25
+      }
+    },
+    {
+      "id": 3893,
+      "name_characters": 7,
+      "source": {
+        "width": 43,
+        "height": 25
+      },
+      "target": {
+        "width": 59,
+        "height": 25
+      }
+    },
+    {
+      "id": 3893,
+      "name_characters": 10,
+      "source": {
+        "width": 43,
+        "height": 25
+      },
+      "target": {
+        "width": 59,
+        "height": 25
+      }
+    },
+    {
+      "id": 3893,
+      "name_characters": 12,
+      "source": {
+        "width": 43,
+        "height": 25
+      },
+      "target": {
+        "width": 59,
+        "height": 25
+      }
+    },
+    {
+      "id": 3894,
+      "name_characters": 7,
+      "source": {
+        "width": 93,
+        "height": 25
+      },
+      "target": {
+        "width": 92,
+        "height": 25
+      }
+    },
+    {
+      "id": 3894,
+      "name_characters": 10,
+      "source": {
+        "width": 93,
+        "height": 25
+      },
+      "target": {
+        "width": 92,
+        "height": 25
+      }
+    },
+    {
+      "id": 3894,
+      "name_characters": 12,
+      "source": {
+        "width": 93,
+        "height": 25
+      },
+      "target": {
+        "width": 92,
+        "height": 25
+      }
+    }
+  ],
+  "native_font_unchanged": true,
+  "height_not_increased": true,
+  "translated_archive_sha256": "166ca560c0710e9e68897ba69169077ed98dd2030e56dfaac241f069cedf1bea",
+  "dol_sha256": "da02a1232240e139ec14a26ee8b4c2818c56f3c2907f5c2391bd81e2dc0842f6",
+  "limits": [
+    "240-pixel width is a conservative test budget, not a verified live balloon boundary",
+    "Message lookup returns test text; native font measurement executes without GPU",
+    "Actual battle balloon layout and rendering still need Dolphin"
+  ],
+  "dolphin_visual_tested": false
+}

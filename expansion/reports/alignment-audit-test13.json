@@ -1,0 +1,12 @@
+{
+  "mes_common.fsys": {
+    "rows_checked": 9995,
+    "missing_alignment_breaks": [],
+    "alignment_sequences_changed": []
+  },
+  "menu_fight_s.fsys": {
+    "rows_checked": 9233,
+    "missing_alignment_breaks": [],
+    "alignment_sequences_changed": []
+  }
+}

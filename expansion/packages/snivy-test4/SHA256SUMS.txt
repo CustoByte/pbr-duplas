@@ -1,0 +1,3 @@
+fc66577c0fce0ef2cfe43ff881d152dcece916a36a3312700c8eccaabb874355  PBR-Snivy-Windows.zip
+0120afc47a08b539a4d27351c4a5ef8eba332ca757433645c094efd225dbd4c2  aplicador-core.zip
+f8f1ae681ddd7de1193d100ebb9fc046ccde4aca991a48de3535884a6253d7ec  update.json

@@ -1,0 +1,737 @@
+{
+  "pass": {
+    "passed": true,
+    "kind": "native PPC replay on private cloned pass memory, not Dolphin gameplay",
+    "records": [
+      {
+        "pass_index": 37,
+        "slot": 0,
+        "species": 502,
+        "level": 50,
+        "moves": [
+          418,
+          370,
+          396,
+          182
+        ],
+        "pp": [
+          30,
+          5,
+          20,
+          10
+        ],
+        "ability": 91,
+        "item": 0,
+        "nature": 0,
+        "ivs": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ],
+        "evs": [
+          4,
+          128,
+          0,
+          248,
+          128,
+          0
+        ],
+        "presence": 1,
+        "illegal": 0,
+        "stats_hp_atk_def_speed_spatk_spdef": [
+          146,
+          181,
+          108,
+          163,
+          176,
+          90
+        ]
+      },
+      {
+        "pass_index": 37,
+        "slot": 1,
+        "species": 501,
+        "level": 50,
+        "moves": [
+          412,
+          137,
+          73,
+          182
+        ],
+        "pp": [
+          10,
+          30,
+          10,
+          10
+        ],
+        "ability": 65,
+        "item": 157,
+        "nature": 10,
+        "ivs": [
+          31,
+          31,
+          31,
+          31,
+          31,
+          31
+        ],
+        "evs": [
+          4,
+          0,
+          0,
+          252,
+          252,
+          0
+        ],
+        "presence": 1,
+        "illegal": 0,
+        "stats_hp_atk_def_speed_spatk_spdef": [
+          121,
+          58,
+          75,
+          138,
+          97,
+          75
+        ]
+      },
+      {
+        "pass_index": 0,
+        "slot": 0,
+        "species": 501,
+        "level": 5,
+        "moves": [
+          33,
+          43,
+          345,
+          182
+        ],
+        "pp": [
+          35,
+          30,
+          20,
+          10
+        ],
+        "ability": 65,
+        "item": 157,
+        "nature": 10,
+        "ivs": [
+          15,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "presence": 1,
+        "illegal": 0,
+        "stats_hp_atk_def_speed_spatk_spdef": [
+          20,
+          9,
+          11,
+          13,
+          10,
+          11
+        ]
+      },
+      {
+        "pass_index": 37,
+        "slot": 2,
+        "species": 503,
+        "level": 50,
+        "moves": [
+          53,
+          403,
+          76,
+          182
+        ],
+        "pp": [
+          15,
+          20,
+          10,
+          10
+        ],
+        "ability": 70,
+        "item": 0,
+        "nature": 10,
+        "ivs": [
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
+        ],
+        "evs": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "presence": 1,
+        "illegal": 0,
+        "stats_hp_atk_def_speed_spatk_spdef": [
+          148,
+          107,
+          93,
+          115,
+          150,
+          110
+        ]
+      }
+    ],
+    "changed_passes": [
+      0,
+      37
+    ],
+    "readiness_guard": true,
+    "idempotent_delivery": true,
+    "original_capture_memory_untouched": true,
+    "snivy_and_little_pass_preserved": true,
+    "model_catalog_chain_verified": true,
+    "effect_roles_verified": 25,
+    "action_roles_verified": 22,
+    "dol_sha256": "25cee773192ea530b588eabb6aea671ad22d9b8b8b652243ddc5410621c38353",
+    "gameplay_verified": false,
+    "save_file_modified": false
+  },
+  "runtime": {
+    "passed": true,
+    "kind": "native PPC isolated runtime/FSYS dispatch, no GPU or disc I/O",
+    "boundary_cases": 96,
+    "cry_bank_boundary_cases": 21,
+    "mega_cry_bank": 6,
+    "mega_prediction_row_safe": true,
+    "all_other_species_comparisons_preserved": true,
+    "legacy_name_cases": 504,
+    "mega_name_id": 21777,
+    "path": "pkx_503.fsys",
+    "resource_handlers": [
+      {
+        "archive": "menu_face.fsys",
+        "resource": "7bec0c00",
+        "index": 647,
+        "handler_type": 6
+      },
+      {
+        "archive": "menu_pokemon.fsys",
+        "resource": "6bec0c00",
+        "index": 647,
+        "handler_type": 6
+      },
+      {
+        "archive": "pkx_503.fsys",
+        "resource": "73ec0400",
+        "index": 0,
+        "handler_type": 2
+      },
+      {
+        "archive": "pkx_503.fsys",
+        "resource": "63ec0400",
+        "index": 1,
+        "handler_type": 2
+      }
+    ],
+    "gameplay_verified": false
+  },
+  "names": {
+    "passed": true,
+    "records": [
+      {
+        "slot": 0,
+        "name": "MEGA LUCARIO",
+        "length": 12,
+        "capacity": 24,
+        "canary_untouched": true,
+        "deferred_checksum_preserved": true
+      },
+      {
+        "slot": 1,
+        "name": "SNIVY",
+        "length": 5,
+        "capacity": 24,
+        "canary_untouched": true,
+        "deferred_checksum_preserved": null
+      },
+      {
+        "slot": 2,
+        "name": "MEGA CHARIZARD Y",
+        "length": 16,
+        "capacity": 24,
+        "canary_untouched": true,
+        "deferred_checksum_preserved": true
+      }
+    ],
+    "custom_nickname_preserved": true,
+    "native_font_width": 158,
+    "native_font_height": 25,
+    "serialized_record_bytes": 140,
+    "gameplay_verified": false,
+    "dol_sha256": "25cee773192ea530b588eabb6aea671ad22d9b8b8b652243ddc5410621c38353"
+  },
+  "selection": {
+    "passed": true,
+    "kind": "native four-pick selection and packing in reconstructed UI fixture",
+    "modes": [
+      {
+        "coop": false,
+        "selected_species": [
+          502,
+          501,
+          503,
+          148
+        ],
+        "four_picks_packed": true
+      }
+    ],
+    "original_pass_memory_untouched": true,
+    "gameplay_verified": false
+  },
+  "loading": {
+    "charizard": {
+      "bytes": 2870536,
+      "sha256": "46c8e95c93cde02814e309c2df1ce37bd4c6c06f0751b285af5bdcc766418a21",
+      "allocation": "81429540"
+    },
+    "three_allocations_resident": true,
+    "passed": true,
+    "kind": "native resource allocation/SDR relocation in captured RAM, not Dolphin gameplay",
+    "snivy": {
+      "bytes": 2358184,
+      "sha256": "f98f8c3cd980c887a48fe91b9fa4922f2c28f6c15da5a20a8b34e5e59e1b8a8b",
+      "allocation": "80fa6b40"
+    },
+    "mega": {
+      "bytes": 2364904,
+      "sha256": "722b0e2e764438c982b32a2d9d0fc84c4880697b412b5cd8fb99cea650246d0a",
+      "allocation": "811e7320"
+    },
+    "both_allocations_resident": true,
+    "mega_resource_ready": true,
+    "allocations_non_overlapping": true,
+    "fixture_changes": [
+      "one FSYS descriptor ID and metadata",
+      "skip coherent-memory OS cache-maintenance syscalls"
+    ],
+    "disc_io_verified": false,
+    "gpu_render_verified": false,
+    "gameplay_verified": false
+  },
+  "schema": 1,
+  "kind": "cumulative Charizard Y offline integration",
+  "sdr_roundtrip": {
+    "kind": "offline native SDR roundtrip; not GPU gameplay",
+    "actions": {
+      "wait": {
+        "frames": 60,
+        "max_matrix_error": 0.000347137451171875,
+        "max_skin_error": 0.0003044492298262297,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          59
+        ]
+      },
+      "kime": {
+        "frames": 90,
+        "max_matrix_error": 0.00033664703369140625,
+        "max_skin_error": 0.00036522154533804815,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          89
+        ]
+      },
+      "damage": {
+        "frames": 70,
+        "max_matrix_error": 0.00032711029052734375,
+        "max_skin_error": 0.00029185611362555564,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          69
+        ]
+      },
+      "down": {
+        "frames": 85,
+        "max_matrix_error": 0.00035858154296875,
+        "max_skin_error": 0.00035843598932141433,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          84
+        ]
+      },
+      "hikkaku": {
+        "frames": 70,
+        "max_matrix_error": 0.00036907196044921875,
+        "max_skin_error": 0.000281406203628665,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          69
+        ]
+      },
+      "kime_a": {
+        "frames": 160,
+        "max_matrix_error": 0.00034546852111816406,
+        "max_skin_error": 0.0003478938026808334,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110,
+          120,
+          130,
+          140,
+          150,
+          159
+        ]
+      },
+      "kick": {
+        "frames": 130,
+        "max_matrix_error": 0.0003657341003417969,
+        "max_skin_error": 0.0003557752066729439,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110,
+          120,
+          129
+        ]
+      },
+      "tackle": {
+        "frames": 115,
+        "max_matrix_error": 0.0003337860107421875,
+        "max_skin_error": 0.0003024474999148546,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110,
+          114
+        ]
+      },
+      "takeoff": {
+        "frames": 86,
+        "max_matrix_error": 0.0003108978271484375,
+        "max_skin_error": 0.000281406203628665,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          85
+        ]
+      },
+      "kuchu_wait": {
+        "frames": 60,
+        "max_matrix_error": 0.000324249267578125,
+        "max_skin_error": 0.00035239653243863994,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          59
+        ]
+      },
+      "kyukoka": {
+        "frames": 57,
+        "max_matrix_error": 0.00036716461181640625,
+        "max_skin_error": 0.0003212693670904538,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          56
+        ]
+      },
+      "run": {
+        "frames": 21,
+        "max_matrix_error": 0.00039696693420410156,
+        "max_skin_error": 0.00044077929408086467,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20
+        ]
+      }
+    },
+    "textures": [
+      {
+        "name": "Y_6_CharizardMegaY.part.001_1_0_0",
+        "max_channel_error": 0.02745105308644913
+      },
+      {
+        "name": "Y_6_CharizardMegaY.part.002_1_0_0",
+        "max_channel_error": 0.02745105308644913
+      },
+      {
+        "name": "Y_6_CharizardMegaY.part.003_1_0_0",
+        "max_channel_error": 0.015686305130229283
+      },
+      {
+        "name": "Y_7_CharizardMegaY_0_0_0",
+        "max_channel_error": 0.02745105308644913
+      }
+    ],
+    "bytes": 2870536,
+    "sha256": "db14e7229b84d05a77e0578de62b332581b7c35b7b7e785c28e0310ec870f71e",
+    "native_action_contract_preserved": true,
+    "node_indices_fit_model_table": true,
+    "gameplay_verified": false,
+    "uv_samples": 16496,
+    "max_uv_error": 0.0,
+    "eye_review_tracks": {
+      "tx_wink": {
+        "length": 0.1666666716337204,
+        "points": [
+          {
+            "time": 0.0,
+            "offset_v": 0.0
+          },
+          {
+            "time": 0.03333333507180214,
+            "offset_v": 0.25
+          },
+          {
+            "time": 0.06666667014360428,
+            "offset_v": 0.5
+          },
+          {
+            "time": 0.13333334028720856,
+            "offset_v": 0.25
+          },
+          {
+            "time": 0.1666666716337204,
+            "offset_v": 0.0
+          }
+        ]
+      },
+      "tx_sleep": {
+        "length": 0.5333333611488342,
+        "points": [
+          {
+            "time": 0.0,
+            "offset_v": 0.5
+          }
+        ]
+      },
+      "tx_wakeup": {
+        "length": 0.10000000149011612,
+        "points": [
+          {
+            "time": 0.0,
+            "offset_v": 0.5
+          },
+          {
+            "time": 0.03333333507180214,
+            "offset_v": 0.25
+          },
+          {
+            "time": 0.06666667014360428,
+            "offset_v": 0.0
+          }
+        ]
+      }
+    },
+    "passed": true
+  },
+  "source_pose": {
+    "passed": true,
+    "native_unit_scale": 3.2231475759301738,
+    "sampled_source_bone_poses": 3708,
+    "actions": 12,
+    "max_matrix_error": 0.00011777877807617188,
+    "worst_sample": [
+      "Body_run",
+      10,
+      "EndFeeler5"
+    ],
+    "gameplay_verified": false
+  },
+  "npc_randomization_enabled": false,
+  "gameplay_verified": false,
+  "tail_flame_matches_preview_verified": false,
+  "local_converter": {
+    "outputs": {
+      "pkx_503.fsys": "6144582309c5d0b0f1d628e9c5ae1bcedb74f508783554255497f8909cafed4e",
+      "menu_face.fsys": "5a2f0e7008437b5d743f30d5d65be1d68c1bb069b4cceaa373d9b93b24cd4269",
+      "menu_pokemon.fsys": "2be4ba2ebd9def1f20405efcbf1f65f327d0db6dccd23358d99e72b20a9c3546"
+    },
+    "normal_art_for_shiny_flag": true,
+    "gameplay_verified": false,
+    "key": "cde5a16555aac13286c660d8a0d5cd7f8e50320ec425b0831e3d58183f66fa4a",
+    "source_sha256": "e0fed6598797fafcb22620894418238f8074740b0ed284e5d87b527bd033004f",
+    "npc_randomization_enabled": false
+  },
+  "reference_and_converter_variants": {
+    "same_bytes": 2870536,
+    "different_bytes": 128,
+    "reason": "float32 differences between Blender thread configurations; each converter runs full decoded motion/skin validation"
+  },
+  "migration": {
+    "passed": true,
+    "already_delivered_preset_migrated": true,
+    "ivs": [
+      20,
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "evs": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "stats_hp_atk_def_speed_spatk_spdef": [
+      148,
+      107,
+      93,
+      115,
+      150,
+      110
+    ],
+    "pid_and_trainer_preserved": true,
+    "nickname_moves_item_preserved": true,
+    "user_edited_training_preserved": true,
+    "other_five_slots_and_all_other_passes_preserved": true,
+    "idempotent": true,
+    "gameplay_verified": false,
+    "save_file_written": false
+  },
+  "balance_profile": {
+    "key": "mega-charizard-y",
+    "internal_species_id": 503,
+    "rental_pass": 37,
+    "slot": 2,
+    "replaces": 8,
+    "level": 50,
+    "nature": "Timid",
+    "ability": "Drought",
+    "ability_id": 70,
+    "item": null,
+    "moves": [
+      53,
+      403,
+      76,
+      182
+    ],
+    "base_stats_hp_atk_def_spatk_spdef_speed": [
+      78,
+      104,
+      78,
+      135,
+      95,
+      90
+    ],
+    "ivs_hp_atk_def_spatk_spdef_speed": [
+      20,
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "evs_hp_atk_def_spatk_spdef_speed": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "stats_hp_atk_def_spatk_spdef_speed": [
+      148,
+      107,
+      93,
+      150,
+      110,
+      115
+    ],
+    "gameplay_verified": false,
+    "balance": "custom 580 base-stat budget, calibrated against level-50 rental passes"
+  },
+  "loading_proof_reused_for_byte_identical_graphics": true
+}
