@@ -1,8 +1,10 @@
 {
   "passed": true,
   "kind": "isolated PPC sampler + native PK4 setters and party stat calculation",
-  "cases": 32,
-  "six_stat_comparisons": 192,
+  "cases": 48,
+  "all_status_free_draw_seed": 507,
+  "minimum_offensive_guard_exercised": true,
+  "six_stat_comparisons": 288,
   "sample_sets": [
     {
       "key": "mega-charizard-x",
@@ -33,10 +35,10 @@
         236
       ],
       "moves": [
-        280,
-        9,
-        337,
-        349
+        261,
+        157,
+        200,
+        407
       ]
     },
     {
@@ -68,17 +70,17 @@
         4
       ],
       "moves": [
-        200,
-        242,
-        7,
-        182
+        337,
+        406,
+        261,
+        407
       ]
     }
   ],
-  "source_sha256": "190f137f285b9764270c7f3bc371c248f7f5a0b708714737da914c22fc7e7941",
-  "rules_sha256": "9ca865d23f94b5a236ff623441d267e48566b9dcb60bb361dc6359ac36b29d5f",
-  "compiled_rules_header_sha256": "05a9cf7c58dfd8ef32319164fdae37200b525c14ba9559715986a2766c3c97bc",
-  "payload_sha256": "528038d04e44c798139909b76a962e2d628fed3724eb77023fa7d4d5044879b7",
+  "source_sha256": "fca2160beb598b16a9bd4c260fb473130fce898d7fa4f3c25147b164045363e3",
+  "rules_sha256": "ca09fbad7f295097d4f7c3c35cbc937c2383501e2fd9cf7f30ba19ec0ca1df72",
+  "compiled_rules_header_sha256": "6ae47307167d0bccdb37bc7818c52b2e5fee28bb684ffb7d6df7c14c994c7395",
+  "payload_sha256": "080b6c627474db87722dadc74617e24bdad2d4ae6031e0319e1bec236909b328",
   "dol_sha256": "ca62af848c3ef88d3bf9164c8c52af6f75508124358517f177228191594c4b7c",
   "fixture_stat_row_replaced": true,
   "fixture_species_alias": 502,

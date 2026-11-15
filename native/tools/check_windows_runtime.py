@@ -50,9 +50,10 @@ def check():
                         '--model', str(model), '--report', str(source_proof), '--self-test'],
                        check=True, timeout=90)
         current = json.loads(source_proof.read_text(encoding='utf-8'))
-        if current.get('shared_content_profiles') != 4 or not current.get('bone_animation_moves'):
+        expected_profiles = len(json.loads((ROOT / 'content/pokemon/battle-rules.json').read_text(encoding='utf-8'))['entries'])
+        if current.get('shared_content_profiles') != expected_profiles or not current.get('bone_animation_moves'):
             raise RuntimeError('Current native sources did not consume shared rules')
-        print('Current native source consumes four shared profiles; no battle engine implied.')
+        print(f'Current native source consumes {expected_profiles} shared profiles; no battle engine implied.')
 
 
 

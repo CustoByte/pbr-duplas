@@ -1,5 +1,6 @@
 """Verify actual freestanding sampler: bounds, repeatability and stat formula."""
 import ctypes
+import copy
 import hashlib
 import json
 from pathlib import Path
@@ -63,12 +64,16 @@ class RandomSetTests(unittest.TestCase):
             distinct = set()
             stat_values = [set() for _ in range(6)]
             allowed = {m['native_id']: m['native_pp'] for m in entry['npc_move_pool']}
+            self.assertEqual(len(allowed), 20)
+            self.assertEqual(sum(m['category'] == 'status' for m in entry['npc_move_pool']), 6)
             base = [entry['base_stats'][k] for k in self.data['stat_order']]
             for seed in range(2048):
                 result = self.sample(profile, seed)
                 moves = tuple(result.moves)
                 self.assertEqual(len(set(moves)), 4)
                 self.assertTrue(set(moves) <= allowed.keys())
+                categories = {m['native_id']: m['category'] for m in entry['npc_move_pool']}
+                self.assertGreaterEqual(sum(categories[m] != 'status' for m in moves), self.data['policy']['minimum_offensive_moves'])
                 self.assertEqual(list(result.pp), [allowed[m] for m in moves])
                 self.assertTrue(all(24 <= iv <= 31 for iv in result.ivs))
                 self.assertEqual(sum(result.evs), 508)
@@ -81,6 +86,27 @@ class RandomSetTests(unittest.TestCase):
             self.assertEqual(observed, set(allowed))
             self.assertGreater(len(distinct), 500)
             self.assertTrue(all(len(values) > 1 for values in stat_values))
+
+    def test_optional_free_draw_can_pick_four_status_but_default_rejects_it(self):
+        free = copy.deepcopy(self.data)
+        free['policy']['minimum_offensive_moves'] = 0
+        folder = self.folder / 'free'
+        folder.mkdir()
+        (folder / 'battle_rules.h').write_text(header(free))
+        path = folder / ('free.dll' if sys.platform == 'win32' else 'free.so')
+        subprocess.run([shutil.which('gcc'), '-O2', '-shared', '-fPIC', '-I', str(folder),
+                        str(ROOT / 'content/tools/random_sets.c'), '-o', str(path)], check=True)
+        library = ctypes.CDLL(str(path))
+        library.shared_generate.argtypes = self.lib.shared_generate.argtypes
+        categories = {m['native_id']: m['category'] for m in self.data['entries'][0]['npc_move_pool']}
+        for seed in range(8192):
+            result = SharedSet()
+            self.assertEqual(library.shared_generate(0, seed, 50, ctypes.byref(result)), 1)
+            if all(categories[m] == 'status' for m in result.moves):
+                guarded = self.sample(0, seed)
+                self.assertTrue(any(categories[m] != 'status' for m in guarded.moves))
+                return
+        self.fail('No all-status case exercised')
 
     def test_seed_is_repeatable_and_level_uses_native_formula(self):
         for profile, entry in enumerate(self.data['entries']):
@@ -110,7 +136,13 @@ class RandomSetTests(unittest.TestCase):
 
     def test_pass_keeps_snivy_and_mega_lucario_and_fixed_player_set(self):
         entries = self.data['entries']
-        self.assertEqual([e['rental_pass']['slot'] for e in entries], [2, 3, 4, 5])
+        replacements = [e for e in entries if e['rental_pass'].get('action') != 'preserve_existing']
+        self.assertEqual([e['rental_pass']['slot'] for e in replacements], [2, 3, 4, 5])
+        presets = {e['key']: e for e in entries}
+        self.assertEqual(presets['snivy']['player_moves'], [412, 137, 73, 182])
+        self.assertEqual(presets['mega-lucario']['player_moves'], [418, 370, 396, 182])
+        self.assertEqual(presets['snivy']['rental_pass']['action'], 'preserve_existing')
+        self.assertEqual(presets['mega-lucario']['rental_pass']['action'], 'preserve_existing')
         self.assertTrue(all(e['rental_pass']['preserve_slots'] == [0, 1] for e in entries))
         self.assertEqual(entries[0]['player_moves'], [394, 337, 89, 182])
         self.assertFalse(self.data['policy']['player_presets_randomized'])

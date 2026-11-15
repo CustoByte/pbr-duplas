@@ -40,17 +40,24 @@ u32 shared_generate(u32 profile_index,u32 seed,u32 level,struct SharedSet *out) 
   {{1,0,0,63,0,63},{63,0,0,63,1,0},{41,0,0,45,0,41},{21,0,21,45,19,21}},
   {{1,32,0,32,0,62},{41,25,0,25,0,36},{21,35,0,35,0,36},{63,25,0,25,0,14}}
  };
- u8 indices[15],points[6],sources[6],targets[6];
+ u8 indices[SHARED_POOL_CAPACITY],points[6],sources[6],targets[6];
  u32 state=seed,i,j,tmp,physical=0,special=0,kind,row,ns,nt,src,dst,amount;
  const struct SharedProfile *profile;
  if(!out || profile_index>=SHARED_PROFILE_COUNT || level<1u || level>100u) return 0;
  profile=&shared_profiles[profile_index];
- for(i=0;i<profile->count;i++)indices[i]=(u8)i;
- /* Partial Fisher-Yates: 4 distinct moves; no modulo bias. */
- for(i=0;i<4;i++) {
-  j=i+bounded(&state,profile->count-i);tmp=indices[i];indices[i]=indices[j];indices[j]=(u8)tmp;
-  out->moves[i]=profile->moves[indices[i]];out->pp[i]=profile->pp[indices[i]];
-  physical+=profile->categories[indices[i]]==0;special+=profile->categories[indices[i]]==1;
+ /* Partial Fisher-Yates: 4 distinct moves; no modulo bias. Optional whole
+  * draw rejection keeps all accepted four-move combinations equally likely. */
+ {
+  u32 required=SHARED_MIN_OFFENSIVE;
+  do {
+   physical=0;special=0;
+   for(i=0;i<profile->count;i++)indices[i]=(u8)i;
+   for(i=0;i<4;i++) {
+    j=i+bounded(&state,profile->count-i);tmp=indices[i];indices[i]=indices[j];indices[j]=(u8)tmp;
+    out->moves[i]=profile->moves[indices[i]];out->pp[i]=profile->pp[indices[i]];
+    physical+=profile->categories[indices[i]]==0;special+=profile->categories[indices[i]]==1;
+   }
+  } while(physical+special<required);
  }
  kind=physical>special ? 0u : special>physical ? 1u : 2u;
  out->archetype=(u8)kind;out->nature=natures[kind][bounded(&state,5)];

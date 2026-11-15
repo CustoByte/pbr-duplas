@@ -1,12 +1,12 @@
 {
   "schema": 1,
   "kind": "shared-battle-rules",
-  "scope": "newly_added_pokemon",
+  "scope": "all_six_added_pokemon_npc_profiles",
   "policy": {
-    "npc_pool_min": 4,
-    "npc_pool_max": 15,
+    "npc_pool_min": 20,
+    "npc_pool_max": 20,
     "active_moves": 4,
-    "selection": "uniform_without_replacement",
+    "selection": "uniform_without_replacement_reject_all_status",
     "roll_timing": "once_at_encounter_team_creation",
     "stable_during_battle": true,
     "player_presets_randomized": false,
@@ -31,7 +31,10 @@
       600,
       680
     ],
-    "legendary_flag_changed": false
+    "legendary_flag_changed": false,
+    "status_moves_in_pool": 6,
+    "offensive_moves_in_pool": 14,
+    "minimum_offensive_moves": 1
   },
   "stat_order": [
     "hp",
@@ -88,26 +91,6 @@
           "animation_verified": false
         },
         {
-          "native_id": 182,
-          "name": "Protect",
-          "category": "status",
-          "native_power": 0,
-          "native_pp": 10,
-          "body_action": "guard",
-          "effect_emitter": "body",
-          "animation_verified": false
-        },
-        {
-          "native_id": 349,
-          "name": "Dragon Dance",
-          "category": "status",
-          "native_power": 0,
-          "native_pp": 20,
-          "body_action": "focus",
-          "effect_emitter": "body",
-          "animation_verified": false
-        },
-        {
           "native_id": 7,
           "name": "Fire Punch",
           "category": "physical",
@@ -125,16 +108,6 @@
           "native_pp": 15,
           "body_action": "physical_strike",
           "effect_emitter": "hand",
-          "animation_verified": false
-        },
-        {
-          "native_id": 355,
-          "name": "Roost",
-          "category": "status",
-          "native_power": 0,
-          "native_pp": 10,
-          "body_action": "recover",
-          "effect_emitter": "body",
           "animation_verified": false
         },
         {
@@ -206,6 +179,86 @@
           "body_action": "ranged_wing",
           "effect_emitter": "wing",
           "animation_verified": false
+        },
+        {
+          "native_id": 406,
+          "name": "Dragon Pulse",
+          "category": "special",
+          "native_power": 90,
+          "native_pp": 10,
+          "body_action": "ranged_pulse",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 332,
+          "name": "Aerial Ace",
+          "category": "physical",
+          "native_power": 60,
+          "native_pp": 20,
+          "body_action": "aerial_strike",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 182,
+          "name": "Protect",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 10,
+          "body_action": "guard",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 349,
+          "name": "Dragon Dance",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 20,
+          "body_action": "focus",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 355,
+          "name": "Roost",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 10,
+          "body_action": "hover_recover",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 14,
+          "name": "Swords Dance",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 30,
+          "body_action": "focus",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 261,
+          "name": "Will-O-Wisp",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 15,
+          "body_action": "ranged_flame",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 164,
+          "name": "Substitute",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 10,
+          "body_action": "substitute",
+          "effect_emitter": "body",
+          "animation_verified": false
         }
       ],
       "player_moves": [
@@ -222,7 +275,8 @@
         "preserve_slots": [
           0,
           1
-        ]
+        ],
+        "action": "replace_remaining_slot"
       },
       "native_internal_id": null,
       "animation_requirements": [
@@ -234,18 +288,22 @@
         "faint",
         "ball_release",
         "ball_recall",
+        "aerial_strike",
         "bite",
         "flame_rush",
         "focus",
         "ground_impact",
         "guard",
+        "hover_recover",
         "physical_claw",
         "physical_strike",
         "ranged_breath",
         "ranged_cast",
+        "ranged_flame",
+        "ranged_pulse",
         "ranged_wing",
-        "recover",
-        "rush"
+        "rush",
+        "substitute"
       ]
     },
     {
@@ -384,6 +442,26 @@
           "animation_verified": false
         },
         {
+          "native_id": 332,
+          "name": "Aerial Ace",
+          "category": "physical",
+          "native_power": 60,
+          "native_pp": 20,
+          "body_action": "aerial_strike",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 157,
+          "name": "Rock Slide",
+          "category": "physical",
+          "native_power": 75,
+          "native_pp": 10,
+          "body_action": "ranged_cast",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
           "native_id": 182,
           "name": "Protect",
           "category": "status",
@@ -412,6 +490,36 @@
           "body_action": "taunt",
           "effect_emitter": "head",
           "animation_verified": false
+        },
+        {
+          "native_id": 92,
+          "name": "Toxic",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 10,
+          "body_action": "ranged_cast",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 104,
+          "name": "Double Team",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 15,
+          "body_action": "evasive_focus",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 114,
+          "name": "Haze",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 30,
+          "body_action": "ranged_mist",
+          "effect_emitter": "body",
+          "animation_verified": false
         }
       ],
       "player_moves": null,
@@ -423,7 +531,8 @@
         "preserve_slots": [
           0,
           1
-        ]
+        ],
+        "action": "replace_remaining_slot"
       },
       "native_internal_id": null,
       "animation_requirements": [
@@ -435,12 +544,15 @@
         "faint",
         "ball_release",
         "ball_recall",
+        "aerial_strike",
         "ambush",
+        "evasive_focus",
         "guard",
         "low_strike",
         "physical_claw",
         "ranged_beam",
         "ranged_cast",
+        "ranged_mist",
         "ranged_pulse",
         "ranged_water",
         "ranged_wave",
@@ -586,6 +698,26 @@
           "animation_verified": false
         },
         {
+          "native_id": 89,
+          "name": "Earthquake",
+          "category": "physical",
+          "native_power": 100,
+          "native_pp": 10,
+          "body_action": "ground_impact",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 157,
+          "name": "Rock Slide",
+          "category": "physical",
+          "native_power": 75,
+          "native_pp": 10,
+          "body_action": "ranged_cast",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
           "native_id": 182,
           "name": "Protect",
           "category": "status",
@@ -614,6 +746,36 @@
           "body_action": "ranged_cast",
           "effect_emitter": "body",
           "animation_verified": false
+        },
+        {
+          "native_id": 269,
+          "name": "Taunt",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 20,
+          "body_action": "taunt",
+          "effect_emitter": "head",
+          "animation_verified": false
+        },
+        {
+          "native_id": 164,
+          "name": "Substitute",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 10,
+          "body_action": "substitute",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 417,
+          "name": "Nasty Plot",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 20,
+          "body_action": "focus",
+          "effect_emitter": "head",
+          "animation_verified": false
         }
       ],
       "player_moves": null,
@@ -625,7 +787,8 @@
         "preserve_slots": [
           0,
           1
-        ]
+        ],
+        "action": "replace_remaining_slot"
       },
       "native_internal_id": null,
       "animation_requirements": [
@@ -638,7 +801,9 @@
         "ball_release",
         "ball_recall",
         "bite",
+        "focus",
         "ground_cast",
+        "ground_impact",
         "guard",
         "hover_recover",
         "ranged_beam",
@@ -649,7 +814,9 @@
         "ranged_sky",
         "ranged_wave",
         "retreat_strike",
-        "rush"
+        "rush",
+        "substitute",
+        "taunt"
       ]
     },
     {
@@ -788,6 +955,26 @@
           "animation_verified": false
         },
         {
+          "native_id": 416,
+          "name": "Giga Impact",
+          "category": "physical",
+          "native_power": 150,
+          "native_pp": 5,
+          "body_action": "rush",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 38,
+          "name": "Double-Edge",
+          "category": "physical",
+          "native_power": 120,
+          "native_pp": 15,
+          "body_action": "body_strike",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
           "native_id": 182,
           "name": "Protect",
           "category": "status",
@@ -816,6 +1003,36 @@
           "body_action": "focus",
           "effect_emitter": "body",
           "animation_verified": false
+        },
+        {
+          "native_id": 269,
+          "name": "Taunt",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 20,
+          "body_action": "taunt",
+          "effect_emitter": "head",
+          "animation_verified": false
+        },
+        {
+          "native_id": 164,
+          "name": "Substitute",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 10,
+          "body_action": "substitute",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 156,
+          "name": "Rest",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 10,
+          "body_action": "sleep_recover",
+          "effect_emitter": "body",
+          "animation_verified": false
         }
       ],
       "player_moves": null,
@@ -827,7 +1044,8 @@
         "preserve_slots": [
           0,
           1
-        ]
+        ],
+        "action": "replace_remaining_slot"
       },
       "native_internal_id": null,
       "animation_requirements": [
@@ -848,7 +1066,531 @@
         "physical_strike",
         "quick_strike",
         "retreat_strike",
-        "seed_cast"
+        "rush",
+        "seed_cast",
+        "sleep_recover",
+        "substitute",
+        "taunt"
+      ]
+    },
+    {
+      "key": "snivy",
+      "configuration_status": "existing_player_preset_preserved_npc_pool_proposed",
+      "base_stats": {
+        "hp": 45,
+        "attack": 45,
+        "defense": 55,
+        "special_attack": 45,
+        "special_defense": 55,
+        "speed": 63
+      },
+      "base_stats_total": 308,
+      "mega_legendary_strength_tier": false,
+      "legendary_classification_changed": false,
+      "player_moves": [
+        412,
+        137,
+        73,
+        182
+      ],
+      "player_moves_confirmed": true,
+      "rental_pass": {
+        "index": 37,
+        "slot": 1,
+        "level": 50,
+        "preserve_slots": [
+          0,
+          1
+        ],
+        "action": "preserve_existing"
+      },
+      "native_internal_id": 501,
+      "npc_move_pool": [
+        {
+          "native_id": 412,
+          "name": "Energy Ball",
+          "category": "special",
+          "native_power": 80,
+          "native_pp": 10,
+          "body_action": "ranged_orb",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 437,
+          "name": "Leaf Storm",
+          "category": "special",
+          "native_power": 140,
+          "native_pp": 5,
+          "body_action": "leaf_cast",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 202,
+          "name": "Giga Drain",
+          "category": "special",
+          "native_power": 60,
+          "native_pp": 10,
+          "body_action": "drain_cast",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 348,
+          "name": "Leaf Blade",
+          "category": "physical",
+          "native_power": 90,
+          "native_pp": 15,
+          "body_action": "tail_slash",
+          "effect_emitter": "tail",
+          "animation_verified": false
+        },
+        {
+          "native_id": 402,
+          "name": "Seed Bomb",
+          "category": "physical",
+          "native_power": 80,
+          "native_pp": 15,
+          "body_action": "seed_cast",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 345,
+          "name": "Magical Leaf",
+          "category": "special",
+          "native_power": 60,
+          "native_pp": 20,
+          "body_action": "leaf_cast",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 447,
+          "name": "Grass Knot",
+          "category": "special",
+          "native_power": 1,
+          "native_pp": 20,
+          "body_action": "ranged_cast",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 401,
+          "name": "Aqua Tail",
+          "category": "physical",
+          "native_power": 90,
+          "native_pp": 10,
+          "body_action": "tail_strike",
+          "effect_emitter": "tail",
+          "animation_verified": false
+        },
+        {
+          "native_id": 231,
+          "name": "Iron Tail",
+          "category": "physical",
+          "native_power": 100,
+          "native_pp": 15,
+          "body_action": "tail_strike",
+          "effect_emitter": "tail",
+          "animation_verified": false
+        },
+        {
+          "native_id": 332,
+          "name": "Aerial Ace",
+          "category": "physical",
+          "native_power": 60,
+          "native_pp": 20,
+          "body_action": "aerial_strike",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 282,
+          "name": "Knock Off",
+          "category": "physical",
+          "native_power": 20,
+          "native_pp": 20,
+          "body_action": "tail_strike",
+          "effect_emitter": "tail",
+          "animation_verified": false
+        },
+        {
+          "native_id": 378,
+          "name": "Wring Out",
+          "category": "special",
+          "native_power": 1,
+          "native_pp": 5,
+          "body_action": "constrict",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 216,
+          "name": "Return",
+          "category": "physical",
+          "native_power": 1,
+          "native_pp": 20,
+          "body_action": "body_strike",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 263,
+          "name": "Facade",
+          "category": "physical",
+          "native_power": 70,
+          "native_pp": 20,
+          "body_action": "body_strike",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 137,
+          "name": "Glare",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 30,
+          "body_action": "glare",
+          "effect_emitter": "head",
+          "animation_verified": false
+        },
+        {
+          "native_id": 73,
+          "name": "Leech Seed",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 10,
+          "body_action": "seed_cast",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 182,
+          "name": "Protect",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 10,
+          "body_action": "guard",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 164,
+          "name": "Substitute",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 10,
+          "body_action": "substitute",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 269,
+          "name": "Taunt",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 20,
+          "body_action": "taunt",
+          "effect_emitter": "head",
+          "animation_verified": false
+        },
+        {
+          "native_id": 235,
+          "name": "Synthesis",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 5,
+          "body_action": "recover",
+          "effect_emitter": "body",
+          "animation_verified": false
+        }
+      ],
+      "animation_requirements": [
+        "idle",
+        "ready",
+        "approach",
+        "return",
+        "damage",
+        "faint",
+        "ball_release",
+        "ball_recall",
+        "aerial_strike",
+        "body_strike",
+        "constrict",
+        "drain_cast",
+        "glare",
+        "guard",
+        "leaf_cast",
+        "ranged_cast",
+        "ranged_orb",
+        "recover",
+        "seed_cast",
+        "substitute",
+        "tail_slash",
+        "tail_strike",
+        "taunt"
+      ]
+    },
+    {
+      "key": "mega-lucario",
+      "configuration_status": "existing_player_preset_preserved_npc_pool_proposed",
+      "base_stats": {
+        "hp": 70,
+        "attack": 145,
+        "defense": 88,
+        "special_attack": 140,
+        "special_defense": 70,
+        "speed": 112
+      },
+      "base_stats_total": 625,
+      "mega_legendary_strength_tier": true,
+      "legendary_classification_changed": false,
+      "player_moves": [
+        418,
+        370,
+        396,
+        182
+      ],
+      "player_moves_confirmed": true,
+      "rental_pass": {
+        "index": 37,
+        "slot": 0,
+        "level": 50,
+        "preserve_slots": [
+          0,
+          1
+        ],
+        "action": "preserve_existing"
+      },
+      "native_internal_id": 502,
+      "npc_move_pool": [
+        {
+          "native_id": 418,
+          "name": "Bullet Punch",
+          "category": "physical",
+          "native_power": 40,
+          "native_pp": 30,
+          "body_action": "physical_strike",
+          "effect_emitter": "hand",
+          "animation_verified": false
+        },
+        {
+          "native_id": 370,
+          "name": "Close Combat",
+          "category": "physical",
+          "native_power": 120,
+          "native_pp": 5,
+          "body_action": "combo_strike",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 396,
+          "name": "Aura Sphere",
+          "category": "special",
+          "native_power": 90,
+          "native_pp": 20,
+          "body_action": "ranged_orb",
+          "effect_emitter": "hand",
+          "animation_verified": false
+        },
+        {
+          "native_id": 245,
+          "name": "Extreme Speed",
+          "category": "physical",
+          "native_power": 80,
+          "native_pp": 5,
+          "body_action": "rush",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 406,
+          "name": "Dragon Pulse",
+          "category": "special",
+          "native_power": 90,
+          "native_pp": 10,
+          "body_action": "ranged_pulse",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 399,
+          "name": "Dark Pulse",
+          "category": "special",
+          "native_power": 80,
+          "native_pp": 15,
+          "body_action": "ranged_pulse",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 242,
+          "name": "Crunch",
+          "category": "physical",
+          "native_power": 80,
+          "native_pp": 15,
+          "body_action": "bite",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 8,
+          "name": "Ice Punch",
+          "category": "physical",
+          "native_power": 75,
+          "native_pp": 15,
+          "body_action": "physical_strike",
+          "effect_emitter": "hand",
+          "animation_verified": false
+        },
+        {
+          "native_id": 9,
+          "name": "Thunder Punch",
+          "category": "physical",
+          "native_power": 75,
+          "native_pp": 15,
+          "body_action": "physical_strike",
+          "effect_emitter": "hand",
+          "animation_verified": false
+        },
+        {
+          "native_id": 299,
+          "name": "Blaze Kick",
+          "category": "physical",
+          "native_power": 85,
+          "native_pp": 10,
+          "body_action": "low_strike",
+          "effect_emitter": "foot",
+          "animation_verified": false
+        },
+        {
+          "native_id": 430,
+          "name": "Flash Cannon",
+          "category": "special",
+          "native_power": 80,
+          "native_pp": 10,
+          "body_action": "ranged_beam",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 89,
+          "name": "Earthquake",
+          "category": "physical",
+          "native_power": 100,
+          "native_pp": 10,
+          "body_action": "ground_impact",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 444,
+          "name": "Stone Edge",
+          "category": "physical",
+          "native_power": 100,
+          "native_pp": 5,
+          "body_action": "ground_cast",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 410,
+          "name": "Vacuum Wave",
+          "category": "special",
+          "native_power": 40,
+          "native_pp": 30,
+          "body_action": "ranged_palm",
+          "effect_emitter": "hand",
+          "animation_verified": false
+        },
+        {
+          "native_id": 182,
+          "name": "Protect",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 10,
+          "body_action": "guard",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 14,
+          "name": "Swords Dance",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 30,
+          "body_action": "focus",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 417,
+          "name": "Nasty Plot",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 20,
+          "body_action": "focus",
+          "effect_emitter": "head",
+          "animation_verified": false
+        },
+        {
+          "native_id": 347,
+          "name": "Calm Mind",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 20,
+          "body_action": "focus",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 97,
+          "name": "Agility",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 30,
+          "body_action": "evasive_focus",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 164,
+          "name": "Substitute",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 10,
+          "body_action": "substitute",
+          "effect_emitter": "body",
+          "animation_verified": false
+        }
+      ],
+      "animation_requirements": [
+        "idle",
+        "ready",
+        "approach",
+        "return",
+        "damage",
+        "faint",
+        "ball_release",
+        "ball_recall",
+        "bite",
+        "combo_strike",
+        "evasive_focus",
+        "focus",
+        "ground_cast",
+        "ground_impact",
+        "guard",
+        "low_strike",
+        "physical_strike",
+        "ranged_beam",
+        "ranged_orb",
+        "ranged_palm",
+        "ranged_pulse",
+        "rush",
+        "substitute"
       ]
     }
   ],

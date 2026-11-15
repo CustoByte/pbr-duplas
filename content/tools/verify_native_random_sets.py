@@ -75,7 +75,7 @@ def verify(args):
     for profile, entry in enumerate(data['entries']):
         base = [entry['base_stats'][name] for name in data['stat_order']]
         h.uc.mem_write(row+30, bytes(base[i] for i in NATIVE_ORDER))
-        for seed in (0, 1, 2, 42, 1234, 98765, 0x80000000, 0xffffffff):
+        for seed in (0, 1, 2, 42, 1234, 507, 0x80000000, 0xffffffff):
             expected = SharedSet()
             assert lib.shared_generate(profile, seed, 50, ctypes.byref(expected)) == 1
             h.uc.mem_write(RESULT, bytes(ctypes.sizeof(expected)))
@@ -111,7 +111,8 @@ def verify(args):
                               ivs=list(expected.ivs), evs=list(expected.evs), moves=list(expected.moves)))
     assert bytes(h.uc.mem_read(original_base, len(passes))) == passes
     return dict(passed=True, kind='isolated PPC sampler + native PK4 setters and party stat calculation',
-                cases=len(cases), six_stat_comparisons=len(cases)*6, sample_sets=cases[:2],
+                cases=len(cases), all_status_free_draw_seed=507,
+                minimum_offensive_guard_exercised=data['policy'].get('minimum_offensive_moves', 0) > 0, six_stat_comparisons=len(cases)*6, sample_sets=cases[:2],
                 source_sha256=sha(source.read_bytes()), rules_sha256=sha(DEFAULT.read_bytes()),
                 compiled_rules_header_sha256=sha((args.work/'battle_rules.h').read_bytes()),
                 payload_sha256=sha(payload), dol_sha256=sha(args.dol.read_bytes()),

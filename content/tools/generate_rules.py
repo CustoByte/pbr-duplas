@@ -13,8 +13,12 @@ DEFAULT = ROOT / 'content/pokemon/battle-rules.json'
 
 def validate(data):
     policy = data['policy']
-    if policy['npc_pool_max'] != 15 or policy['active_moves'] != 4:
-        raise ValueError('Expected 4 active moves and at most 15 pool moves')
+    if policy['npc_pool_max'] != 20 or policy['active_moves'] != 4:
+        raise ValueError('Expected 4 active moves and 20 pool moves')
+    if policy.get('status_moves_in_pool') != 6 or policy.get('offensive_moves_in_pool') != 14:
+        raise ValueError('Expected 14 offensive and 6 status moves')
+    if policy.get('minimum_offensive_moves', 0) not in (0, 1):
+        raise ValueError('Unsupported offensive-move minimum')
     if policy['ev_total'] != 508 or policy['ev_per_stat_max'] != 252:
         raise ValueError('This sampler requires the validated 508/252 EV budget')
     if not 0 <= policy['iv_min'] <= policy['iv_max'] <= 31:
@@ -34,8 +38,10 @@ def validate(data):
                 raise ValueError('Mega needs a reviewed legendary-tier stat budget')
         moves = entry['npc_move_pool']
         ids = [m['native_id'] for m in moves]
-        if not 4 <= len(ids) <= 15 or len(ids) != len(set(ids)) or any(not 1 <= m <= 467 for m in ids):
+        if len(ids) != 20 or len(ids) != len(set(ids)) or any(not 1 <= m <= 467 for m in ids):
             raise ValueError('Invalid move pool')
+        if sum(m['category'] == 'status' for m in moves) != 6:
+            raise ValueError('Every pool must contain 14 offensive and 6 status moves')
         for move in moves:
             if move['category'] not in ('physical', 'special', 'status') or not move['body_action'] or not move['effect_emitter']:
                 raise ValueError('Every move requires an animation/effect contract')
@@ -45,7 +51,7 @@ def validate(data):
             raise ValueError('Player set outside pool')
         placement = entry['rental_pass']
         slot = (placement['index'], placement['slot'])
-        if slot in slots or placement['slot'] in placement['preserve_slots']:
+        if slot in slots or (placement['slot'] in placement['preserve_slots'] and placement.get('action') != 'preserve_existing'):
             raise ValueError('Pass placement collision or protected slot')
         slots.add(slot)
     return data
@@ -56,7 +62,9 @@ def header(data):
     lines = ['/* Generated from shared battle-rules.json. No game assets. */',
              f"#define SHARED_IV_MIN {data['policy']['iv_min']}u",
              f"#define SHARED_IV_SPAN {data['policy']['iv_max'] - data['policy']['iv_min'] + 1}u",
-             'struct SharedProfile { unsigned short base[6], moves[15]; unsigned char categories[15], pp[15], count; };',
+             '#define SHARED_POOL_CAPACITY 20',
+             f"#define SHARED_MIN_OFFENSIVE {data['policy'].get('minimum_offensive_moves', 0)}u",
+             'struct SharedProfile { unsigned short base[6], moves[SHARED_POOL_CAPACITY]; unsigned char categories[SHARED_POOL_CAPACITY], pp[SHARED_POOL_CAPACITY], count; };',
              'static const struct SharedProfile shared_profiles[] = {']
     for entry in data['entries']:
         pool = entry['npc_move_pool']

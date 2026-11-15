@@ -33,10 +33,11 @@ não tem um sistema de batalha capaz de aplicar movesets ou habilidades.
 
 ## Regras solicitadas após a inspeção
 
-`battle-rules.json` é a fonte das propostas de bancos de até 15 golpes e dos
+`battle-rules.json` é a fonte das propostas de bancos de 20 golpes (14 ofensivos e 6 de status) e dos
 atributos base. `PROPOSTAS.md` permite revisar as listas e seus contratos de
-animação. O moveset fixo de quatro golpes do jogador foi confirmado apenas para
-Mega Charizard X; os outros três continuam em configuração.
+animação. O moveset fixo de quatro golpes do jogador foi confirmado para Mega Charizard X;
+os conjuntos já entregues de Snivy e Mega Lucario também são preservados.
+Os outros três continuam em configuração.
 
 `content/tools/random_sets.c` sorteia quatro golpes distintos e IVs/EVs/natureza
 coerentes com o papel ofensivo do conjunto. Não altera atributos base a cada
@@ -50,7 +51,7 @@ PCK. O motor nativo lê os metadados; isso não implementa combate. A release
 nativa anteriormente publicada permanece intacta e não é substituída por estes
 arquivos de desenvolvimento. Novos binários exigem uma nova versão publicada.
 
-O relatório `native-randomizer-proof.json` cobre execução PPC e 192 comparações
+O relatório `native-randomizer-proof.json` cobre execução PPC e 288 comparações
 de atributos com cálculo original. A linha de atributos de uma espécie existente
 foi substituída apenas no fixture privado. Nenhum dos quatro novos Pokémon foi
 instalado por esse teste. As animações continuam sem clips criados/aprovados.
