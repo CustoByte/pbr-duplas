@@ -45,16 +45,20 @@ try {
     $originalState=[IO.File]::ReadAllBytes($statePath)
     $package=Join-Path $root 'package';New-Item -ItemType Directory -Path (Join-Path $package 'launcher') -Force | Out-Null
     Copy-Item -LiteralPath (Join-Path $Output 'PBR Launcher.exe') -Destination (Join-Path $package 'launcher/PBR Launcher.exe')
+    Copy-Item -LiteralPath (Join-Path $Output 'PBR Duplas.exe') -Destination (Join-Path $package 'launcher/PBR Duplas.exe')
     Copy-Item ./expansion/Iniciar-Launcher.ps1 $package
-    @{launcher=@{version='1.0.0';sha256=(Hash (Join-Path $Output 'PBR Launcher.exe'))}} | ConvertTo-Json | Set-Content (Join-Path $package 'manifesto.json') -Encoding UTF8
+    @{launcher=@{version='1.0.0';sha256=(Hash (Join-Path $Output 'PBR Launcher.exe'));bootstrap_sha256=(Hash (Join-Path $Output 'PBR Duplas.exe'))}} | ConvertTo-Json | Set-Content (Join-Path $package 'manifesto.json') -Encoding UTF8
     & (Join-Path $package 'Iniciar-Launcher.ps1') -StatePath $statePath -DoNotLaunch
-    if (-not (Test-Path (Join-Path $data 'Launcher/Abrir.vbs'))) { throw 'Stable GUI entry missing' }
+    if (-not (Test-Path (Join-Path $data 'Launcher/PBR Duplas.exe'))) { throw 'Stable GUI entry missing' }
     if ([Convert]::ToBase64String([IO.File]::ReadAllBytes($statePath)) -ne [Convert]::ToBase64String($originalState)) { throw 'Migration modified game state' }
     $installed=Get-Content (Join-Path $data 'Launcher/installed.json') -Raw | ConvertFrom-Json
     if ((Hash $installed.executable) -ne $installed.sha256) {throw 'Installed executable hash mismatch'}
     $checks.Add('legacy migration creates versioned WinExe and stable shortcuts, preserving estado.json')
     $binary=[IO.File]::ReadAllBytes($installed.executable);$pe=[BitConverter]::ToInt32($binary,60)
     if ([BitConverter]::ToUInt16($binary,$pe+92) -ne 2) {throw 'Executable requires console subsystem'}
+    $entry=Join-Path $data 'Launcher/PBR Duplas.exe'
+    $verified=Start-Process -FilePath $entry -ArgumentList '--verify' -Wait -PassThru
+    if ($verified.ExitCode -ne 0) { throw 'Stable executable cannot verify installed GUI' }
     $checks.Add('Windows GUI subsystem: no CMD required')
     @{passed=$true;checks=$checks;gameplay_tested=$false} | ConvertTo-Json -Depth 5 | Set-Content (Join-Path $Output 'integration-tests.json') -Encoding UTF8
 } catch {

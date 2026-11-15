@@ -23,10 +23,13 @@ def package(build,output):
  manifest=json.loads(files['manifesto.json']);assert manifest['mod_version']==GAME
  # The game payload/version remain unchanged; updating the launcher alone never
  # requires reconstructing an already verified RVZ or reading model source ZIPs.
- manifest['launcher']=dict(version=APP,sha256=sha(binary))
+ bootstrap=(build/'PBR Duplas.exe').read_bytes()
+ if sha(bootstrap)!=identity['bootstrap_sha256']:raise ValueError('Bootstrap differs')
+ manifest['launcher']=dict(version=APP,sha256=sha(binary),bootstrap_sha256=sha(bootstrap))
  manifest['local_graphics']=dict(revision='snivy4-mega3-charizard-y1',import_versions=['v0.14.0-charizard-y-test.1',GAME])
  files['manifesto.json']=(json.dumps(manifest,indent=2)+'\n').encode()
  for name in ('Aplicar-Mod.ps1','Iniciar-Launcher.ps1','Recuperar-Graficos.ps1'):files[name]=(ROOT/'expansion'/name).read_bytes()
+ files['launcher/PBR Duplas.exe']=bootstrap
  files['launcher/PBR Launcher.exe']=binary;files['launcher/build-proof.json']=(build/'build.json').read_bytes()
  files['LEIA-ME-LAUNCHER.txt']=('''PBR DUPLAS — LAUNCHER WINDOWS 1.0.0
 Execute uma ultima vez o mesmo INICIAR-TESTE-WINDOWS.cmd.

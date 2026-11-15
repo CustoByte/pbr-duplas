@@ -14,19 +14,19 @@ $versionRoot = Join-Path $launcherRoot ('versions/' + $version + '-' + $expected
 New-Item -ItemType Directory -Path $versionRoot -Force | Out-Null
 $target = Join-Path $versionRoot 'PBR Launcher.exe'
 if (-not (Test-Path -LiteralPath $target) -or (Get-FileHash -LiteralPath $target -Algorithm SHA256).Hash.ToLowerInvariant() -ne $expected) { Copy-Item -LiteralPath $source -Destination $target -Force }
-# Keep the entry point stable while executable versions remain side by side.
-$command = '"' + $target + '" --data-root "' + $dataRoot + '"'
-$vbs = 'CreateObject("WScript.Shell").Run "' + $command.Replace('"','""') + '", 1, False'
-$entry = Join-Path $launcherRoot 'Abrir.vbs'
-[IO.File]::WriteAllText($entry + '.tmp', $vbs, [Text.Encoding]::Unicode)
-Move-Item -LiteralPath ($entry + '.tmp') -Destination $entry -Force
+# A small GUI executable provides the stable entry point, without script hosts.
+$bootstrapSource = Join-Path $PSScriptRoot 'launcher/PBR Duplas.exe'
+$bootstrapHash = [string]$manifest.launcher.bootstrap_sha256
+if ($bootstrapHash -notmatch '^[a-f0-9]{64}$' -or (Get-FileHash -LiteralPath $bootstrapSource -Algorithm SHA256).Hash.ToLowerInvariant() -ne $bootstrapHash) { throw 'Entrada do launcher danificada.' }
+$entry = Join-Path $launcherRoot 'PBR Duplas.exe'
+if (-not (Test-Path -LiteralPath $entry) -or (Get-FileHash -LiteralPath $entry -Algorithm SHA256).Hash.ToLowerInvariant() -ne $bootstrapHash) { Copy-Item -LiteralPath $bootstrapSource -Destination $entry -Force }
 $shell = New-Object -ComObject WScript.Shell
 foreach ($folder in @([Environment]::GetFolderPath('DesktopDirectory'), (Join-Path ([Environment]::GetFolderPath('Programs')) 'PBR Duplas'))) {
     if (-not $folder) { continue }
     New-Item -ItemType Directory -Path $folder -Force | Out-Null
     $shortcut = $shell.CreateShortcut((Join-Path $folder 'PBR Duplas.lnk'))
-    $shortcut.TargetPath = Join-Path ([Environment]::GetFolderPath('System')) 'wscript.exe'
-    $shortcut.Arguments = '"' + $entry + '"'
+    $shortcut.TargetPath = $entry
+    $shortcut.Arguments = ''
     $shortcut.IconLocation = $target + ',0'
     $shortcut.WorkingDirectory = $launcherRoot
     $shortcut.Description = 'Atualizar e jogar PBR Duplas'
@@ -41,5 +41,5 @@ if (-not $DoNotLaunch) {
         $console = [PbrConsole]::GetConsoleWindow()
         if ($console -ne [IntPtr]::Zero) { [void][PbrConsole]::ShowWindow($console,0) }
     } catch { }
-    Start-Process -FilePath $target -WorkingDirectory $versionRoot -ArgumentList @('--data-root', ('"' + $dataRoot + '"')) | Out-Null
+    Start-Process -FilePath $entry -WorkingDirectory $launcherRoot | Out-Null
 }

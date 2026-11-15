@@ -87,7 +87,7 @@ namespace PbrLauncher {
   private string GameVersion() {string game=Store.Get(feed,"game_version");return game==""?Store.Get(feed,"version"):game;}
   private bool NewLauncher() {Version target;return Version.TryParse(Store.Get(feed,"launcher_version"),out target)&&target.CompareTo(new Version(Store.Version))>0;}
   private async Task<bool> ImageValid() {string expected=Store.Get(state,"image_sha256");return Installed()&&expected.Length==64&&await Task.Run(()=>Store.Hash(Store.Get(state,"modified_image")))==expected;}
-  private void Require(string key) {if(!File.Exists(Store.Get(state,key)))throw new FileNotFoundException("Um caminho salvo não está disponível. Confira Configurações: "+key);}
+  private void Require(string key) {if(File.Exists(Store.Get(state,key)))return;string label=key;for(int i=0;i<paths.GetLength(0);i++)if(paths[i,0]==key)label=paths[i,1];throw new FileNotFoundException("Arquivo salvo não encontrado: "+label+". Confira o caminho em Configurações.");}
   private bool DolphinRunning() {return Process.GetProcessesByName("Dolphin").Length>0;}
   private async Task Update() {
    if(busy||feed==null)return;string core=null;FileStream applicationLock=null;bool handoff=false;
@@ -114,7 +114,7 @@ namespace PbrLauncher {
     state=Store.Read(backend.StatePath);if(!Installed()||Store.Get(state,"mod_version")!=Store.Get(manifest,"mod_version"))throw new InvalidDataException("Não foi possível confirmar a instalação atualizada.");
     Find<ProgressBar>("Progress").Value=100;Status("Atualização concluída","Tudo pronto. Clique em Iniciar jogo para entrar na arena.");
    }catch(Exception ex){Error(ex);}
-   finally{if(applicationLock!=null)applicationLock.Dispose();if(core!=null&&Directory.Exists(core)){try{Directory.Delete(core,true);}catch(Exception ex){backend.Log(ex.Message);}}busy=false;Find<ProgressBar>("Progress").IsIndeterminate=false;Refresh();if(handoff){Program.ReleaseInstance();Process.Start(new ProcessStartInfo("wscript.exe",Store.Quote(Path.Combine(backend.Root,"Launcher","Abrir.vbs"))){UseShellExecute=false,CreateNoWindow=true});Window.Close();}}
+   finally{if(applicationLock!=null)applicationLock.Dispose();if(core!=null&&Directory.Exists(core)){try{Directory.Delete(core,true);}catch(Exception ex){backend.Log(ex.Message);}}busy=false;Find<ProgressBar>("Progress").IsIndeterminate=false;Refresh();if(handoff){Program.ReleaseInstance();Process.Start(new ProcessStartInfo(Path.Combine(backend.Root,"Launcher","PBR Duplas.exe")){UseShellExecute=false,CreateNoWindow=true,WorkingDirectory=Path.Combine(backend.Root,"Launcher")});Window.Close();}}
   }
   private async Task Play() {
    if(busy)return;
