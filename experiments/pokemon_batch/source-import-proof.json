@@ -1,0 +1,105 @@
+{
+  "stage": "private_source_skin_import_and_static_render_only",
+  "importer_sha256": "4c5d022247641bef44dbf4941ba7c6d80df517bd34df1c083a5cda0021c2fc79",
+  "dolphin_installed": false,
+  "animations_created": false,
+  "original_references_present": false,
+  "models": [
+    {
+      "key": "mega-charizard-x",
+      "meshes": 4,
+      "vertices": 5448,
+      "rigs": [
+        {
+          "name": "Armature",
+          "bones": 119
+        }
+      ],
+      "textures": 4,
+      "glb_sha256": "49506ebd0737a327080a00b251ce2ad15b4664b875d5a892da2ddc4c83d0106b",
+      "glb_bytes": 465248,
+      "motion_clips": 0,
+      "max_rest_skin_error": null,
+      "native_static_render_verified": true,
+      "render_backend": "Linux X11 Mesa llvmpipe (software)",
+      "windows_gpu_tested": false,
+      "donor_reference": {
+        "file": "pkx_006.fsys",
+        "species": "Charizard",
+        "available": false
+      }
+    },
+    {
+      "key": "ash-greninja",
+      "meshes": 4,
+      "vertices": 7014,
+      "rigs": [
+        {
+          "name": "Armature",
+          "bones": 103
+        }
+      ],
+      "textures": 4,
+      "glb_sha256": "1f2a3f9437734d1b5f1f76d97580313471ae9586b4e7cdcdb89c9b39203d83fc",
+      "glb_bytes": 624844,
+      "motion_clips": 0,
+      "max_rest_skin_error": null,
+      "native_static_render_verified": true,
+      "render_backend": "Linux X11 Mesa llvmpipe (software)",
+      "windows_gpu_tested": false,
+      "donor_reference": {
+        "file": "pkx_254.fsys",
+        "species": "Sceptile",
+        "available": false
+      }
+    },
+    {
+      "key": "hydreigon",
+      "meshes": 1,
+      "vertices": 3131,
+      "rigs": [
+        {
+          "name": "SourceRig",
+          "bones": 111
+        }
+      ],
+      "textures": 3,
+      "glb_sha256": "b9d4869160ee6f46592bb833d8a47918c8b8e5f951dd9af217b228115b0b238a",
+      "glb_bytes": 377628,
+      "motion_clips": 0,
+      "max_rest_skin_error": 2.6973983046972182e-06,
+      "native_static_render_verified": true,
+      "render_backend": "Linux X11 Mesa llvmpipe (software)",
+      "windows_gpu_tested": false,
+      "donor_reference": {
+        "file": "pkx_373.fsys",
+        "species": "Salamence",
+        "available": false
+      }
+    },
+    {
+      "key": "rillaboom",
+      "meshes": 5,
+      "vertices": 9656,
+      "rigs": [
+        {
+          "name": "SourceRig",
+          "bones": 162
+        }
+      ],
+      "textures": 4,
+      "glb_sha256": "24d67fc1e12c71da2949e0525fe062bebc97a50f7fd176ddfc7b9e31a4f20760",
+      "glb_bytes": 988628,
+      "motion_clips": 0,
+      "max_rest_skin_error": 4.291534423828125e-06,
+      "native_static_render_verified": true,
+      "render_backend": "Linux X11 Mesa llvmpipe (software)",
+      "windows_gpu_tested": false,
+      "donor_reference": {
+        "file": "pkx_289.fsys",
+        "species": "Slaking",
+        "available": false
+      }
+    }
+  ]
+}

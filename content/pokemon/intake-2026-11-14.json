@@ -25,7 +25,7 @@
         "animation_clips": 0,
         "referenced_buffers_and_images_present": true
       },
-      "animation_status": "no_motion_clips_supplied",
+      "animation_status": "awaiting_original_donor_archive",
       "configuration": {
         "status": "player_moves_confirmed_remaining_configuration_pending",
         "moves": [
@@ -46,9 +46,11 @@
       "internal_species_id": null,
       "targets": {
         "dolphin": "not_installed",
-        "native": "not_imported"
+        "native": "private_source_geometry_staged_no_motion"
       },
-      "battle_rules_key": "mega-charizard-x"
+      "battle_rules_key": "mega-charizard-x",
+      "source_import_proof": "experiments/pokemon_batch/source-import-proof.json",
+      "donor_reference_required": "pkx_006.fsys"
     },
     {
       "key": "ash-greninja",
@@ -70,7 +72,7 @@
         "animation_clips": 0,
         "referenced_buffers_and_images_present": true
       },
-      "animation_status": "no_motion_clips_supplied",
+      "animation_status": "awaiting_original_donor_archive",
       "configuration": {
         "status": "awaiting_user_choices",
         "moves": null,
@@ -86,9 +88,11 @@
       "internal_species_id": null,
       "targets": {
         "dolphin": "not_installed",
-        "native": "not_imported"
+        "native": "private_source_geometry_staged_no_motion"
       },
-      "battle_rules_key": "ash-greninja"
+      "battle_rules_key": "ash-greninja",
+      "source_import_proof": "experiments/pokemon_batch/source-import-proof.json",
+      "donor_reference_required": "pkx_254.fsys"
     },
     {
       "key": "hydreigon",
@@ -112,7 +116,7 @@
         "animation_keys": 0,
         "usable_motion_clips": 0
       },
-      "animation_status": "no_motion_clips_supplied",
+      "animation_status": "awaiting_original_donor_archive",
       "configuration": {
         "status": "awaiting_user_choices",
         "moves": null,
@@ -128,9 +132,11 @@
       "internal_species_id": null,
       "targets": {
         "dolphin": "not_installed",
-        "native": "not_imported"
+        "native": "private_source_geometry_staged_no_motion"
       },
-      "battle_rules_key": "hydreigon"
+      "battle_rules_key": "hydreigon",
+      "source_import_proof": "experiments/pokemon_batch/source-import-proof.json",
+      "donor_reference_required": "pkx_373.fsys"
     },
     {
       "key": "rillaboom",
@@ -154,7 +160,7 @@
         "animation_keys": 0,
         "usable_motion_clips": 0
       },
-      "animation_status": "no_motion_clips_supplied",
+      "animation_status": "awaiting_original_donor_archive",
       "configuration": {
         "status": "awaiting_user_choices",
         "moves": null,
@@ -170,9 +176,11 @@
       "internal_species_id": null,
       "targets": {
         "dolphin": "not_installed",
-        "native": "not_imported"
+        "native": "private_source_geometry_staged_no_motion"
       },
-      "battle_rules_key": "rillaboom"
+      "battle_rules_key": "rillaboom",
+      "source_import_proof": "experiments/pokemon_batch/source-import-proof.json",
+      "donor_reference_required": "pkx_289.fsys"
     }
   ]
 }
