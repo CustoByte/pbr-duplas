@@ -1,45 +1,36 @@
-name: Publish verified applicator assets
+name: Build and verify Windows launcher
 on:
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
 jobs:
-  verify_windows:
+  windows:
     runs-on: windows-latest
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
-      - name: Parse installer with Windows PowerShell 5.1
+      - name: Compile WinExe with embedded interface
+        shell: powershell
+        run: ./launcher/windows/build.ps1 -Output "$env:RUNNER_TEMP/launcher-build"
+      - name: Verify state, packages and hidden worker
         shell: powershell
         run: |
-          $ErrorActionPreference = 'Stop'
-          $core = 'expansion/packages/charizard-y-test2/aplicador-core.zip'
-          $proof = Get-Content ([IO.Path]::ChangeExtension($core, '.json')) -Raw | ConvertFrom-Json
-          if ((Get-FileHash $core -Algorithm SHA256).Hash.ToLowerInvariant() -ne $proof.package_sha256) { throw 'Core hash mismatch' }
-          Expand-Archive -LiteralPath $core -DestinationPath $env:RUNNER_TEMP/core
-          Get-ChildItem "$env:RUNNER_TEMP/core" -Recurse -Filter '*.ps1' | ForEach-Object {
-            $tokens = $null; $errors = $null
-            [void][Management.Automation.Language.Parser]::ParseFile($_.FullName, [ref]$tokens, [ref]$errors)
-            if ($errors.Count -gt 0) { throw ($errors | Out-String) }
-          }
-          $manifest = Get-Content "$env:RUNNER_TEMP/core/manifesto.json" -Raw | ConvertFrom-Json
-          if (-not $manifest.local_charizard_y_assets -or $manifest.charizard_y.npc_randomization_enabled) { throw 'Wrong delivery configuration' }
-          if ($manifest.charizard_y.slot -ne 2 -or $manifest.charizard_y.replaces -ne 'Wartortle') { throw 'Wrong rental slot' }
-      - name: Compile local converter scripts
+          $p = Start-Process -FilePath "$env:RUNNER_TEMP/launcher-build/PBR Launcher.exe" -ArgumentList @('--self-test', ('"' + "$env:RUNNER_TEMP/launcher-build/tests.json" + '"')) -Wait -PassThru
+          Get-Content "$env:RUNNER_TEMP/launcher-build/tests.json"
+          if ($p.ExitCode -ne 0) { throw 'Launcher verification failed' }
+      - name: Render actual WPF window
         shell: powershell
-        run: python -m compileall -q "$env:RUNNER_TEMP/core/experiments/charizard_y" "$env:RUNNER_TEMP/core/experiments/pokemon_batch"
-  publish:
-    needs: verify_windows
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
-      - name: Verify release files
-        working-directory: .github/release-assets
-        run: sha256sum --check SHA256SUMS.txt
-      - name: Upload and publish prepared release
-        env:
-          GH_TOKEN: ${{ github.token }}
         run: |
-          tag=$(jq -r .version .github/release-assets/update.json)
-          [[ "$tag" =~ ^v[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9.-]+)?$ ]]
-          gh release upload "$tag" .github/release-assets/*.zip .github/release-assets/update.json .github/release-assets/SHA256SUMS.txt --repo "$GITHUB_REPOSITORY" --clobber
-          gh release edit "$tag" --repo "$GITHUB_REPOSITORY" --draft=false --latest
+          $p = Start-Process -FilePath "$env:RUNNER_TEMP/launcher-build/PBR Launcher.exe" -ArgumentList @('--preview', ('"' + "$env:RUNNER_TEMP/launcher-build/preview.png" + '"'), '--data-root', ('"' + "$env:RUNNER_TEMP/preview-state" + '"')) -Wait -PassThru
+          if ($p.ExitCode -ne 0) { Get-Content launcher-error.txt; throw 'WPF rendering failed' }
+      - name: Test graphics recovery and migration
+        shell: powershell
+        run: ./launcher/windows/test-integration.ps1 -Output "$env:RUNNER_TEMP/launcher-build"
+      - name: Upload executable, preview and verification
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: pbr-windows-launcher
+          path: |
+            ${{ runner.temp }}/launcher-build/
+            launcher-error.txt

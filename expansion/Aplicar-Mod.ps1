@@ -14,8 +14,16 @@ param(
     [switch]$NoGui
 )
 $ErrorActionPreference = 'Stop'
+[Console]::OutputEncoding = New-Object Text.UTF8Encoding($false)
 $PackageRoot = $PSScriptRoot
 if (Test-Path -LiteralPath (Join-Path $PackageRoot 'Aplicar-Delta.ps1')) { . (Join-Path $PackageRoot 'Aplicar-Delta.ps1') }
+# The legacy CMD reaches this entry once and installs the graphical launcher.
+# Worker runs bypass this branch and never create a second launcher window.
+if (-not $NoGui -and $env:PBR_LAUNCHER_WORKER -ne '1' -and (Test-Path -LiteralPath (Join-Path $PackageRoot 'launcher/PBR Launcher.exe'))) {
+    try { & (Join-Path $PackageRoot 'Iniciar-Launcher.ps1') -StatePath $StatePath; exit 0 }
+    catch { Add-Type -AssemblyName System.Windows.Forms; [void][System.Windows.Forms.MessageBox]::Show($_.Exception.Message, 'PBR Duplas'); exit 1 }
+}
+. (Join-Path $PackageRoot 'Recuperar-Graficos.ps1')
 $JobRoot = $null
 $FailureLog = $null
 $Events = New-Object 'System.Collections.Generic.List[string]'
@@ -120,28 +128,13 @@ try {
     }
     Note 'A imagem original sera somente lida. Nenhum save sera modificado.'
     $manifest = Get-Content -LiteralPath (Join-Path $PackageRoot 'manifesto.json') -Raw | ConvertFrom-Json
-    if ($manifest.local_snivy_assets) {
-        . (Join-Path $PackageRoot 'Preparar-Snivy.ps1')
-        if (-not $SnivySourcePath -and $savedState -and $savedState.snivy_source) { $SnivySourcePath = $savedState.snivy_source }
-        if (-not $SnivySourcePath -or -not (Test-Path -LiteralPath $SnivySourcePath -PathType Leaf)) {
-            $SnivySourcePath = Choose-Open 'Selecione Tsutarja.brres extraido do seu PokePark 2' 'Snivy BRRES|*.brres'
-        }
+    # Original source paths are optional during updates: recover installed assets
+    # first. No model-selection dialog is ever opened by the updater.
+    if ($savedState) {
+        if (-not $SnivySourcePath) { $SnivySourcePath = $savedState.snivy_source }
+        if (-not $MegaSourcePath) { $MegaSourcePath = $savedState.mega_source }
+        if (-not $CharizardSourcePath) { $CharizardSourcePath = $savedState.charizard_y_source }
     }
-    if ($manifest.local_mega_assets) {
-        . (Join-Path $PackageRoot 'Preparar-Mega-Lucario.ps1')
-        if (-not $MegaSourcePath -and $savedState -and $savedState.mega_source) { $MegaSourcePath = $savedState.mega_source }
-        if (-not $MegaSourcePath -or -not (Test-Path -LiteralPath $MegaSourcePath -PathType Leaf)) {
-            $MegaSourcePath = Choose-Open 'Selecione o mega-lucario.zip usado na previa aprovada' 'Mega Lucario ZIP|*.zip'
-        }
-    }
-    if ($manifest.local_charizard_y_assets) {
-        . (Join-Path $PackageRoot 'Preparar-Charizard-Y.ps1')
-        if (-not $CharizardSourcePath -and $savedState -and $savedState.charizard_y_source) { $CharizardSourcePath = $savedState.charizard_y_source }
-        if (-not $CharizardSourcePath -or -not (Test-Path -LiteralPath $CharizardSourcePath -PathType Leaf)) {
-            $CharizardSourcePath = Choose-Open 'Selecione mega-charizard-y-pokemon.zip' 'Mega Charizard Y ZIP|*.zip'
-        }
-    }
-
     foreach ($entry in $manifest.replacements) {
         if ($entry.package_path -match '(^[\/]|(^|[\/])\.\.([\/]|$)|:)' -or
             $entry.installed_path -notmatch '^(sys/main\.dol|files/.+)$' -or
@@ -237,9 +230,19 @@ try {
             $expectedFiles[$relative] = @{ size = (Get-Item -LiteralPath $destination).Length; sha256 = $entry.sha256 }
         }
     }
+    $snivyDataRoot = if ($StatePath) { Split-Path ([IO.Path]::GetFullPath($StatePath)) -Parent } else { Join-Path ([Environment]::GetFolderPath('LocalApplicationData')) 'PBR-Duplas' }
+    $restoredGraphics = Restore-PbrGraphics $manifest $savedState $snivyDataRoot $JobRoot
+    if ($restoredGraphics) {
+        foreach ($name in $PbrGraphicsFiles) {
+            $destination = Join-Path $partition ('files/' + $name)
+            Copy-Item -LiteralPath (Join-Path $restoredGraphics $name) -Destination $destination -Force
+            $expectedFiles[$name] = @{ size=(Get-Item -LiteralPath $destination).Length; sha256=(Hash $destination) }
+        }
+    } else {
     if ($manifest.local_snivy_assets) {
-        $snivyDataRoot = if ($StatePath) { Split-Path ([IO.Path]::GetFullPath($StatePath)) -Parent } else { Join-Path ([Environment]::GetFolderPath('LocalApplicationData')) 'PBR-Duplas' }
         $snivyCache = Join-Path $snivyDataRoot 'Snivy'
+        . (Join-Path $PackageRoot 'Preparar-Snivy.ps1')
+        if (-not $SnivySourcePath -or -not (Test-Path -LiteralPath $SnivySourcePath -PathType Leaf)) { throw 'Nao foi possivel recuperar os modelos instalados e o modelo local da Snivy esta ausente. Sua instalacao anterior foi preservada; consulte Diagnostico.' }
         $assets = Prepare-Snivy $partition $SnivySourcePath $snivyCache
         foreach ($name in @('pkx_501.fsys', 'menu_face.fsys', 'menu_pokemon.fsys')) {
             $destination = Join-Path $partition ('files/' + $name)
@@ -250,6 +253,8 @@ try {
     if ($manifest.local_mega_assets) {
         if (-not $manifest.local_snivy_assets) { throw 'O Mega Lucario requer a etapa cumulativa da Snivy.' }
         $megaCache = Join-Path $snivyDataRoot 'MegaLucario'
+        . (Join-Path $PackageRoot 'Preparar-Mega-Lucario.ps1')
+        if (-not $MegaSourcePath -or -not (Test-Path -LiteralPath $MegaSourcePath -PathType Leaf)) { throw 'O modelo do Mega Lucario nao esta na biblioteca local. Sua instalacao anterior foi preservada.' }
         $megaAssets = Prepare-MegaLucario $partition $MegaSourcePath $megaCache $snivyCache
         foreach ($name in @('pkx_502.fsys', 'menu_face.fsys', 'menu_pokemon.fsys')) {
             $destination = Join-Path $partition ('files/' + $name)
@@ -259,6 +264,8 @@ try {
     }
     if ($manifest.local_charizard_y_assets) {
         if (-not $manifest.local_mega_assets) { throw 'Charizard Y requer Snivy e Mega Lucario primeiro.' }
+        . (Join-Path $PackageRoot 'Preparar-Charizard-Y.ps1')
+        if (-not $CharizardSourcePath -or -not (Test-Path -LiteralPath $CharizardSourcePath -PathType Leaf)) { throw 'Nao foi possivel recuperar o Charizard Y instalado. Consulte Diagnostico; nenhum seletor de ZIP sera aberto.' }
         $charizardAssets = Prepare-CharizardY $partition $CharizardSourcePath (Join-Path $snivyDataRoot 'CharizardY') $snivyCache
         foreach ($name in @('pkx_503.fsys', 'menu_face.fsys', 'menu_pokemon.fsys')) {
             $destination = Join-Path $partition ('files/' + $name)
@@ -266,6 +273,11 @@ try {
             $expectedFiles[$name] = @{ size = (Get-Item -LiteralPath $destination).Length; sha256 = (Hash $destination) }
         }
     }
+    }
+    if ($manifest.local_graphics) { [void](Save-PbrGraphics (Join-Path $partition 'files') $snivyDataRoot $manifest.local_graphics.revision) }
+    $SnivySourcePath = Keep-PbrSource $SnivySourcePath $snivyDataRoot 'Tsutarja.brres'
+    $MegaSourcePath = Keep-PbrSource $MegaSourcePath $snivyDataRoot 'mega-lucario.zip'
+    $CharizardSourcePath = Keep-PbrSource $CharizardSourcePath $snivyDataRoot 'mega-charizard-y-pokemon.zip'
     $built = Join-Path $JobRoot 'resultado.rvz'
     Note '[4/5] Gerando uma nova RVZ com o mod instalado...'
     Run-Tool -Arguments @('convert', '-i', (Join-Path $partition 'sys/main.dol'), '-o', $built,
@@ -319,6 +331,7 @@ try {
             snivy_source = $SnivySourcePath
             mega_source = $MegaSourcePath
             charizard_y_source = $CharizardSourcePath
+            graphics_revision = $manifest.local_graphics.revision
         }
         $state | ConvertTo-Json | Set-Content -LiteralPath ($StatePath + '.tmp') -Encoding UTF8
         Move-Item -LiteralPath ($StatePath + '.tmp') -Destination $StatePath -Force
