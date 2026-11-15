@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "kind": "isolated PPC sampler + native PK4 setters and party stat calculation",
+  "cases": 32,
+  "six_stat_comparisons": 192,
+  "sample_sets": [
+    {
+      "key": "mega-charizard-x",
+      "seed": 0,
+      "stats": [
+        156,
+        164,
+        156,
+        133,
+        107,
+        149
+      ],
+      "nature": 8,
+      "ivs": [
+        29,
+        29,
+        29,
+        26,
+        28,
+        29
+      ],
+      "evs": [
+        32,
+        116,
+        96,
+        0,
+        28,
+        236
+      ],
+      "moves": [
+        280,
+        9,
+        337,
+        349
+      ]
+    },
+    {
+      "key": "mega-charizard-x",
+      "seed": 1,
+      "stats": [
+        170,
+        179,
+        139,
+        136,
+        104,
+        129
+      ],
+      "nature": 13,
+      "ivs": [
+        28,
+        30,
+        30,
+        26,
+        24,
+        25
+      ],
+      "evs": [
+        148,
+        236,
+        64,
+        36,
+        20,
+        4
+      ],
+      "moves": [
+        200,
+        242,
+        7,
+        182
+      ]
+    }
+  ],
+  "source_sha256": "190f137f285b9764270c7f3bc371c248f7f5a0b708714737da914c22fc7e7941",
+  "rules_sha256": "9ca865d23f94b5a236ff623441d267e48566b9dcb60bb361dc6359ac36b29d5f",
+  "compiled_rules_header_sha256": "05a9cf7c58dfd8ef32319164fdae37200b525c14ba9559715986a2766c3c97bc",
+  "payload_sha256": "528038d04e44c798139909b76a962e2d628fed3724eb77023fa7d4d5044879b7",
+  "dol_sha256": "ca62af848c3ef88d3bf9164c8c52af6f75508124358517f177228191594c4b7c",
+  "fixture_stat_row_replaced": true,
+  "fixture_species_alias": 502,
+  "no_new_species_installed": true,
+  "original_capture_passes_preserved": true,
+  "optional_shiny_bonus_excluded": true,
+  "npc_generation_hook_installed": false,
+  "animated_battle_verified": false
+}

@@ -2,6 +2,8 @@
 import hashlib
 import json
 import os
+import re
+import urllib.error
 from pathlib import Path
 import subprocess
 import sys
@@ -9,6 +11,7 @@ import urllib.request
 import zipfile
 from make_test_model import generate
 from package_runtime import build
+from stage_shared_rules import stage
 
 ROOT = Path(__file__).resolve().parents[2]
 
@@ -16,6 +19,19 @@ ROOT = Path(__file__).resolve().parents[2]
 def release(destination):
     if os.name != 'nt':
         raise RuntimeError('Release verification must execute on Windows')
+    feed_before = json.loads((ROOT / 'native/update.json').read_text(encoding='utf-8'))
+    version = feed_before['version']
+    if not re.fullmatch(r'v[0-9]+\.[0-9]+\.[0-9]+(?:-[A-Za-z0-9.-]+)?', version):
+        raise ValueError('Invalid release version')
+    # Already published releases must not be replaced by newer source/data.
+    try:
+        with urllib.request.urlopen('https://api.github.com/repos/CustoByte/pbr-duplas/releases/tags/' + version, timeout=30) as response:
+            existing = json.load(response)
+        if any(a['name'] == 'PBR-Native-Runtime-Windows.zip' for a in existing['assets']):
+            raise ValueError('This runtime version already exists. Prepare a new version/tag first.')
+    except urllib.error.HTTPError as error:
+        if error.code != 404:
+            raise
     destination.mkdir(parents=True, exist_ok=True)
     engine = destination / 'engine'
     engine.mkdir(exist_ok=True)
@@ -30,6 +46,7 @@ def release(destination):
     for name in ('LICENSE.txt', 'COPYRIGHT.txt'):
         urllib.request.urlretrieve('https://raw.githubusercontent.com/godotengine/godot/4.6.3-stable/' + name, engine / name)
     exe = engine / 'Godot_v4.6.3-stable_win64.exe'
+    stage(ROOT / 'native/runtime/data')
     pack = destination / 'PBRNative.pck'
     subprocess.run([str(exe), '--headless', '--path', str(ROOT / 'native/runtime'),
                     '--export-pack', 'Windows', str(pack)], check=True, timeout=180)

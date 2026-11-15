@@ -3,9 +3,9 @@ on:
   workflow_dispatch:
   push:
     branches: [project/native-launcher]
-    paths: [native/**, .github/workflows/native-launcher.yml]
+    paths: [native/**, content/**, .github/workflows/native-launcher.yml]
   pull_request:
-    paths: [native/**, .github/workflows/native-launcher.yml]
+    paths: [native/**, content/**, .github/workflows/native-launcher.yml]
 permissions:
   contents: read
 jobs:

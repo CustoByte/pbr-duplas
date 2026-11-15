@@ -3,3 +3,4 @@ __pycache__/
 runtime/.godot/
 runtime/*.uid
 packages/
+runtime/data/

@@ -1,6 +1,7 @@
 extends Node3D
 
 # This is a native 3D laboratory, not the Battle Revolution battle engine.
+var shared_rules: Dictionary = {}
 var model: Node3D
 var pivot := Node3D.new()
 var camera := Camera3D.new()
@@ -35,6 +36,11 @@ var data_dir := ""
 var action_buttons: Array[Button] = []
 
 func _ready() -> void:
+	# Metadata for future battles only; this scene still has no battle engine.
+	if FileAccess.file_exists("res://data/battle-rules.json"):
+		var rules = JSON.parse_string(FileAccess.get_file_as_string("res://data/battle-rules.json"))
+		if rules is Dictionary and rules.get("kind") == "shared-battle-rules":
+			shared_rules = rules
 	Engine.max_fps = 60
 	build_stage()
 	build_interface()
@@ -320,7 +326,7 @@ func verify_scene(meshes: Array[Node]) -> void:
 	for node in meshes:
 		for surface in range(node.mesh.get_surface_count()):
 			vertices += node.mesh.surface_get_array_len(surface)
-	var proof := {"skeleton_bones": skeleton.get_bone_count(), "vertices": vertices, "body_actions": clips.keys(), "bone_animation_moves": moved, "waiting_pose_landmarks": pose_landmarks, "dolphin_used": false, "full_battle_engine": false}
+	var proof := {"skeleton_bones": skeleton.get_bone_count(), "vertices": vertices, "body_actions": clips.keys(), "bone_animation_moves": moved, "waiting_pose_landmarks": pose_landmarks, "dolphin_used": false, "full_battle_engine": false, "shared_content_profiles": shared_rules.get("entries", []).size()}
 	print("NATIVE_SCENE_PROOF " + JSON.stringify(proof))
 	var proof_file := FileAccess.open(report_path, FileAccess.WRITE)
 	if proof_file: proof_file.store_string(JSON.stringify(proof, "\t"))

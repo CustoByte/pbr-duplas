@@ -27,21 +27,28 @@
       },
       "animation_status": "no_motion_clips_supplied",
       "configuration": {
-        "status": "awaiting_user_choices",
-        "moves": null,
+        "status": "player_moves_confirmed_remaining_configuration_pending",
+        "moves": [
+          394,
+          337,
+          89,
+          182
+        ],
         "ability": null,
         "item": null,
         "nature": null,
-        "level": null,
+        "level": 50,
         "evs": null,
-        "rental_pass": null,
-        "replaced_slot": null
+        "rental_pass": 37,
+        "replaced_slot": 2,
+        "npc_randomization": "content/pokemon/battle-rules.json"
       },
       "internal_species_id": null,
       "targets": {
         "dolphin": "not_installed",
         "native": "not_imported"
-      }
+      },
+      "battle_rules_key": "mega-charizard-x"
     },
     {
       "key": "ash-greninja",
@@ -70,16 +77,18 @@
         "ability": null,
         "item": null,
         "nature": null,
-        "level": null,
+        "level": 50,
         "evs": null,
-        "rental_pass": null,
-        "replaced_slot": null
+        "rental_pass": 37,
+        "replaced_slot": 3,
+        "npc_randomization": "content/pokemon/battle-rules.json"
       },
       "internal_species_id": null,
       "targets": {
         "dolphin": "not_installed",
         "native": "not_imported"
-      }
+      },
+      "battle_rules_key": "ash-greninja"
     },
     {
       "key": "hydreigon",
@@ -110,16 +119,18 @@
         "ability": null,
         "item": null,
         "nature": null,
-        "level": null,
+        "level": 50,
         "evs": null,
-        "rental_pass": null,
-        "replaced_slot": null
+        "rental_pass": 37,
+        "replaced_slot": 4,
+        "npc_randomization": "content/pokemon/battle-rules.json"
       },
       "internal_species_id": null,
       "targets": {
         "dolphin": "not_installed",
         "native": "not_imported"
-      }
+      },
+      "battle_rules_key": "hydreigon"
     },
     {
       "key": "rillaboom",
@@ -150,16 +161,18 @@
         "ability": null,
         "item": null,
         "nature": null,
-        "level": null,
+        "level": 50,
         "evs": null,
-        "rental_pass": null,
-        "replaced_slot": null
+        "rental_pass": 37,
+        "replaced_slot": 5,
+        "npc_randomization": "content/pokemon/battle-rules.json"
       },
       "internal_species_id": null,
       "targets": {
         "dolphin": "not_installed",
         "native": "not_imported"
-      }
+      },
+      "battle_rules_key": "rillaboom"
     }
   ]
 }

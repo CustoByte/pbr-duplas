@@ -1,0 +1,866 @@
+{
+  "schema": 1,
+  "kind": "shared-battle-rules",
+  "scope": "newly_added_pokemon",
+  "policy": {
+    "npc_pool_min": 4,
+    "npc_pool_max": 15,
+    "active_moves": 4,
+    "selection": "uniform_without_replacement",
+    "roll_timing": "once_at_encounter_team_creation",
+    "stable_during_battle": true,
+    "player_presets_randomized": false,
+    "randomized_fields": [
+      "ivs",
+      "evs",
+      "nature"
+    ],
+    "unchanged_fields": [
+      "base_stats",
+      "types",
+      "ability",
+      "item"
+    ],
+    "iv_min": 24,
+    "iv_max": 31,
+    "ev_total": 508,
+    "ev_per_stat_max": 252,
+    "level": "encounter_level",
+    "default_test_level": 50,
+    "mega_base_stat_budget": [
+      600,
+      680
+    ],
+    "legendary_flag_changed": false
+  },
+  "stat_order": [
+    "hp",
+    "attack",
+    "defense",
+    "special_attack",
+    "special_defense",
+    "speed"
+  ],
+  "entries": [
+    {
+      "key": "mega-charizard-x",
+      "configuration_status": "proposed_pool_and_stats_pending_game_integration",
+      "base_stats": {
+        "hp": 78,
+        "attack": 130,
+        "defense": 111,
+        "special_attack": 130,
+        "special_defense": 85,
+        "speed": 100
+      },
+      "base_stats_total": 634,
+      "mega_legendary_strength_tier": true,
+      "legendary_classification_changed": false,
+      "npc_move_pool": [
+        {
+          "native_id": 394,
+          "name": "Flare Blitz",
+          "category": "physical",
+          "native_power": 120,
+          "native_pp": 15,
+          "body_action": "flame_rush",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 337,
+          "name": "Dragon Claw",
+          "category": "physical",
+          "native_power": 80,
+          "native_pp": 15,
+          "body_action": "physical_claw",
+          "effect_emitter": "hand",
+          "animation_verified": false
+        },
+        {
+          "native_id": 89,
+          "name": "Earthquake",
+          "category": "physical",
+          "native_power": 100,
+          "native_pp": 10,
+          "body_action": "ground_impact",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 182,
+          "name": "Protect",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 10,
+          "body_action": "guard",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 349,
+          "name": "Dragon Dance",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 20,
+          "body_action": "focus",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 7,
+          "name": "Fire Punch",
+          "category": "physical",
+          "native_power": 75,
+          "native_pp": 15,
+          "body_action": "physical_strike",
+          "effect_emitter": "hand",
+          "animation_verified": false
+        },
+        {
+          "native_id": 9,
+          "name": "Thunder Punch",
+          "category": "physical",
+          "native_power": 75,
+          "native_pp": 15,
+          "body_action": "physical_strike",
+          "effect_emitter": "hand",
+          "animation_verified": false
+        },
+        {
+          "native_id": 355,
+          "name": "Roost",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 10,
+          "body_action": "recover",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 280,
+          "name": "Brick Break",
+          "category": "physical",
+          "native_power": 75,
+          "native_pp": 15,
+          "body_action": "physical_strike",
+          "effect_emitter": "hand",
+          "animation_verified": false
+        },
+        {
+          "native_id": 157,
+          "name": "Rock Slide",
+          "category": "physical",
+          "native_power": 75,
+          "native_pp": 10,
+          "body_action": "ranged_cast",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 242,
+          "name": "Crunch",
+          "category": "physical",
+          "native_power": 80,
+          "native_pp": 15,
+          "body_action": "bite",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 200,
+          "name": "Outrage",
+          "category": "physical",
+          "native_power": 120,
+          "native_pp": 15,
+          "body_action": "rush",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 407,
+          "name": "Dragon Rush",
+          "category": "physical",
+          "native_power": 100,
+          "native_pp": 10,
+          "body_action": "rush",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 126,
+          "name": "Fire Blast",
+          "category": "special",
+          "native_power": 120,
+          "native_pp": 5,
+          "body_action": "ranged_breath",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 403,
+          "name": "Air Slash",
+          "category": "special",
+          "native_power": 75,
+          "native_pp": 20,
+          "body_action": "ranged_wing",
+          "effect_emitter": "wing",
+          "animation_verified": false
+        }
+      ],
+      "player_moves": [
+        394,
+        337,
+        89,
+        182
+      ],
+      "player_moves_confirmed": true,
+      "rental_pass": {
+        "index": 37,
+        "slot": 2,
+        "level": 50,
+        "preserve_slots": [
+          0,
+          1
+        ]
+      },
+      "native_internal_id": null,
+      "animation_requirements": [
+        "idle",
+        "ready",
+        "approach",
+        "return",
+        "damage",
+        "faint",
+        "ball_release",
+        "ball_recall",
+        "bite",
+        "flame_rush",
+        "focus",
+        "ground_impact",
+        "guard",
+        "physical_claw",
+        "physical_strike",
+        "ranged_breath",
+        "ranged_cast",
+        "ranged_wing",
+        "recover",
+        "rush"
+      ]
+    },
+    {
+      "key": "ash-greninja",
+      "configuration_status": "proposed_pool_and_stats_pending_game_integration",
+      "base_stats": {
+        "hp": 72,
+        "attack": 145,
+        "defense": 67,
+        "special_attack": 153,
+        "special_defense": 71,
+        "speed": 132
+      },
+      "base_stats_total": 640,
+      "mega_legendary_strength_tier": false,
+      "legendary_classification_changed": false,
+      "npc_move_pool": [
+        {
+          "native_id": 56,
+          "name": "Hydro Pump",
+          "category": "special",
+          "native_power": 120,
+          "native_pp": 5,
+          "body_action": "ranged_water",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 57,
+          "name": "Surf",
+          "category": "special",
+          "native_power": 95,
+          "native_pp": 15,
+          "body_action": "ranged_wave",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 399,
+          "name": "Dark Pulse",
+          "category": "special",
+          "native_power": 80,
+          "native_pp": 15,
+          "body_action": "ranged_pulse",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 58,
+          "name": "Ice Beam",
+          "category": "special",
+          "native_power": 95,
+          "native_pp": 10,
+          "body_action": "ranged_beam",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 352,
+          "name": "Water Pulse",
+          "category": "special",
+          "native_power": 60,
+          "native_pp": 20,
+          "body_action": "ranged_water",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 447,
+          "name": "Grass Knot",
+          "category": "special",
+          "native_power": 1,
+          "native_pp": 20,
+          "body_action": "ranged_cast",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 326,
+          "name": "Extrasensory",
+          "category": "special",
+          "native_power": 80,
+          "native_pp": 30,
+          "body_action": "ranged_cast",
+          "effect_emitter": "head",
+          "animation_verified": false
+        },
+        {
+          "native_id": 369,
+          "name": "U-turn",
+          "category": "physical",
+          "native_power": 70,
+          "native_pp": 20,
+          "body_action": "retreat_strike",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 400,
+          "name": "Night Slash",
+          "category": "physical",
+          "native_power": 70,
+          "native_pp": 15,
+          "body_action": "physical_claw",
+          "effect_emitter": "hand",
+          "animation_verified": false
+        },
+        {
+          "native_id": 425,
+          "name": "Shadow Sneak",
+          "category": "physical",
+          "native_power": 40,
+          "native_pp": 30,
+          "body_action": "ambush",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 127,
+          "name": "Waterfall",
+          "category": "physical",
+          "native_power": 80,
+          "native_pp": 15,
+          "body_action": "rush",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 67,
+          "name": "Low Kick",
+          "category": "physical",
+          "native_power": 1,
+          "native_pp": 20,
+          "body_action": "low_strike",
+          "effect_emitter": "foot",
+          "animation_verified": false
+        },
+        {
+          "native_id": 182,
+          "name": "Protect",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 10,
+          "body_action": "guard",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 164,
+          "name": "Substitute",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 10,
+          "body_action": "substitute",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 269,
+          "name": "Taunt",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 20,
+          "body_action": "taunt",
+          "effect_emitter": "head",
+          "animation_verified": false
+        }
+      ],
+      "player_moves": null,
+      "player_moves_confirmed": false,
+      "rental_pass": {
+        "index": 37,
+        "slot": 3,
+        "level": 50,
+        "preserve_slots": [
+          0,
+          1
+        ]
+      },
+      "native_internal_id": null,
+      "animation_requirements": [
+        "idle",
+        "ready",
+        "approach",
+        "return",
+        "damage",
+        "faint",
+        "ball_release",
+        "ball_recall",
+        "ambush",
+        "guard",
+        "low_strike",
+        "physical_claw",
+        "ranged_beam",
+        "ranged_cast",
+        "ranged_pulse",
+        "ranged_water",
+        "ranged_wave",
+        "retreat_strike",
+        "rush",
+        "substitute",
+        "taunt"
+      ]
+    },
+    {
+      "key": "hydreigon",
+      "configuration_status": "proposed_pool_and_stats_pending_game_integration",
+      "base_stats": {
+        "hp": 92,
+        "attack": 105,
+        "defense": 90,
+        "special_attack": 125,
+        "special_defense": 90,
+        "speed": 98
+      },
+      "base_stats_total": 600,
+      "mega_legendary_strength_tier": false,
+      "legendary_classification_changed": false,
+      "npc_move_pool": [
+        {
+          "native_id": 434,
+          "name": "Draco Meteor",
+          "category": "special",
+          "native_power": 140,
+          "native_pp": 5,
+          "body_action": "ranged_sky",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 406,
+          "name": "Dragon Pulse",
+          "category": "special",
+          "native_power": 90,
+          "native_pp": 10,
+          "body_action": "ranged_pulse",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 399,
+          "name": "Dark Pulse",
+          "category": "special",
+          "native_power": 80,
+          "native_pp": 15,
+          "body_action": "ranged_pulse",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 53,
+          "name": "Flamethrower",
+          "category": "special",
+          "native_power": 95,
+          "native_pp": 15,
+          "body_action": "ranged_breath",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 126,
+          "name": "Fire Blast",
+          "category": "special",
+          "native_power": 120,
+          "native_pp": 5,
+          "body_action": "ranged_breath",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 57,
+          "name": "Surf",
+          "category": "special",
+          "native_power": 95,
+          "native_pp": 15,
+          "body_action": "ranged_wave",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 414,
+          "name": "Earth Power",
+          "category": "special",
+          "native_power": 90,
+          "native_pp": 10,
+          "body_action": "ground_cast",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 411,
+          "name": "Focus Blast",
+          "category": "special",
+          "native_power": 120,
+          "native_pp": 5,
+          "body_action": "ranged_orb",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 430,
+          "name": "Flash Cannon",
+          "category": "special",
+          "native_power": 80,
+          "native_pp": 10,
+          "body_action": "ranged_beam",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 369,
+          "name": "U-turn",
+          "category": "physical",
+          "native_power": 70,
+          "native_pp": 20,
+          "body_action": "retreat_strike",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 242,
+          "name": "Crunch",
+          "category": "physical",
+          "native_power": 80,
+          "native_pp": 15,
+          "body_action": "bite",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 407,
+          "name": "Dragon Rush",
+          "category": "physical",
+          "native_power": 100,
+          "native_pp": 10,
+          "body_action": "rush",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 182,
+          "name": "Protect",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 10,
+          "body_action": "guard",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 355,
+          "name": "Roost",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 10,
+          "body_action": "hover_recover",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 86,
+          "name": "Thunder Wave",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 20,
+          "body_action": "ranged_cast",
+          "effect_emitter": "body",
+          "animation_verified": false
+        }
+      ],
+      "player_moves": null,
+      "player_moves_confirmed": false,
+      "rental_pass": {
+        "index": 37,
+        "slot": 4,
+        "level": 50,
+        "preserve_slots": [
+          0,
+          1
+        ]
+      },
+      "native_internal_id": null,
+      "animation_requirements": [
+        "idle",
+        "ready",
+        "approach",
+        "return",
+        "damage",
+        "faint",
+        "ball_release",
+        "ball_recall",
+        "bite",
+        "ground_cast",
+        "guard",
+        "hover_recover",
+        "ranged_beam",
+        "ranged_breath",
+        "ranged_cast",
+        "ranged_orb",
+        "ranged_pulse",
+        "ranged_sky",
+        "ranged_wave",
+        "retreat_strike",
+        "rush"
+      ]
+    },
+    {
+      "key": "rillaboom",
+      "configuration_status": "proposed_pool_and_stats_pending_game_integration",
+      "base_stats": {
+        "hp": 100,
+        "attack": 125,
+        "defense": 90,
+        "special_attack": 60,
+        "special_defense": 70,
+        "speed": 85
+      },
+      "base_stats_total": 530,
+      "mega_legendary_strength_tier": false,
+      "legendary_classification_changed": false,
+      "npc_move_pool": [
+        {
+          "native_id": 452,
+          "name": "Wood Hammer",
+          "category": "physical",
+          "native_power": 120,
+          "native_pp": 15,
+          "body_action": "heavy_strike",
+          "effect_emitter": "hand",
+          "animation_verified": false
+        },
+        {
+          "native_id": 402,
+          "name": "Seed Bomb",
+          "category": "physical",
+          "native_power": 80,
+          "native_pp": 15,
+          "body_action": "seed_cast",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 409,
+          "name": "Drain Punch",
+          "category": "physical",
+          "native_power": 60,
+          "native_pp": 5,
+          "body_action": "physical_strike",
+          "effect_emitter": "hand",
+          "animation_verified": false
+        },
+        {
+          "native_id": 276,
+          "name": "Superpower",
+          "category": "physical",
+          "native_power": 120,
+          "native_pp": 5,
+          "body_action": "heavy_strike",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 280,
+          "name": "Brick Break",
+          "category": "physical",
+          "native_power": 75,
+          "native_pp": 15,
+          "body_action": "physical_strike",
+          "effect_emitter": "hand",
+          "animation_verified": false
+        },
+        {
+          "native_id": 67,
+          "name": "Low Kick",
+          "category": "physical",
+          "native_power": 1,
+          "native_pp": 20,
+          "body_action": "low_strike",
+          "effect_emitter": "foot",
+          "animation_verified": false
+        },
+        {
+          "native_id": 282,
+          "name": "Knock Off",
+          "category": "physical",
+          "native_power": 20,
+          "native_pp": 20,
+          "body_action": "physical_strike",
+          "effect_emitter": "hand",
+          "animation_verified": false
+        },
+        {
+          "native_id": 369,
+          "name": "U-turn",
+          "category": "physical",
+          "native_power": 70,
+          "native_pp": 20,
+          "body_action": "retreat_strike",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 89,
+          "name": "Earthquake",
+          "category": "physical",
+          "native_power": 100,
+          "native_pp": 10,
+          "body_action": "ground_impact",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 34,
+          "name": "Body Slam",
+          "category": "physical",
+          "native_power": 85,
+          "native_pp": 15,
+          "body_action": "body_strike",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 252,
+          "name": "Fake Out",
+          "category": "physical",
+          "native_power": 40,
+          "native_pp": 10,
+          "body_action": "quick_strike",
+          "effect_emitter": "hand",
+          "animation_verified": false
+        },
+        {
+          "native_id": 331,
+          "name": "Bullet Seed",
+          "category": "physical",
+          "native_power": 10,
+          "native_pp": 30,
+          "body_action": "seed_cast",
+          "effect_emitter": "mouth",
+          "animation_verified": false
+        },
+        {
+          "native_id": 182,
+          "name": "Protect",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 10,
+          "body_action": "guard",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 14,
+          "name": "Swords Dance",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 30,
+          "body_action": "focus",
+          "effect_emitter": "body",
+          "animation_verified": false
+        },
+        {
+          "native_id": 339,
+          "name": "Bulk Up",
+          "category": "status",
+          "native_power": 0,
+          "native_pp": 20,
+          "body_action": "focus",
+          "effect_emitter": "body",
+          "animation_verified": false
+        }
+      ],
+      "player_moves": null,
+      "player_moves_confirmed": false,
+      "rental_pass": {
+        "index": 37,
+        "slot": 5,
+        "level": 50,
+        "preserve_slots": [
+          0,
+          1
+        ]
+      },
+      "native_internal_id": null,
+      "animation_requirements": [
+        "idle",
+        "ready",
+        "approach",
+        "return",
+        "damage",
+        "faint",
+        "ball_release",
+        "ball_recall",
+        "body_strike",
+        "focus",
+        "ground_impact",
+        "guard",
+        "heavy_strike",
+        "low_strike",
+        "physical_strike",
+        "quick_strike",
+        "retreat_strike",
+        "seed_cast"
+      ]
+    }
+  ],
+  "source_checks": {
+    "native_move_resource": "00840200",
+    "native_move_source_sha256": "b771a8c60dcd80c5bcbfcd1b30d5520acfad3fb1de5e2f73eceb0ad37accc02f",
+    "learnset_source_sha256": "cdab542e58b6d276122cce4ee2ff5597123f773cd1d053ecbfd4b81a54d1bafb",
+    "learnset_note": "Base species/evolution learn sources including later generations; every selected move itself exists in Gen IV. Not an event/egg simultaneous legality claim."
+  },
+  "integration": {
+    "dolphin_npc_hook": false,
+    "native_battle_engine": false,
+    "models_installed": false
+  }
+}

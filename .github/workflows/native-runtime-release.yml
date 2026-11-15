@@ -1,8 +1,5 @@
 name: Publish native scene runtime
 on:
-  push:
-    branches: [project/native-launcher]
-    paths: [.github/workflows/native-runtime-release.yml]
   workflow_dispatch:
 permissions:
   contents: write
@@ -18,7 +15,9 @@ jobs:
       - name: Publish verified runtime asset
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release upload v0.1.0-native-scene.1 "${{ runner.temp }}/native-release/PBR-Native-Runtime-Windows.zip" --repo "$env:GITHUB_REPOSITORY" --clobber
+        run: |
+          $version = (Get-Content native/update.json -Raw | ConvertFrom-Json).version
+          gh release upload $version "${{ runner.temp }}/native-release/PBR-Native-Runtime-Windows.zip" --repo "$env:GITHUB_REPOSITORY"
       - name: Update native feed after upload succeeds
         run: |
           git config user.name "github-actions[bot]"

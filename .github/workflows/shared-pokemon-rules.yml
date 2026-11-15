@@ -1,0 +1,20 @@
+name: Shared Pokemon battle rules
+on:
+  push:
+    branches: [project/native-launcher]
+    paths: [content/**, native/tools/stage_shared_rules.py, .github/workflows/shared-pokemon-rules.yml]
+  pull_request:
+    paths: [content/**, native/tools/stage_shared_rules.py]
+permissions:
+  contents: read
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Execute actual C sampler and validate the shared contract
+        run: python -m unittest discover -s content/tests -v
+      - name: Stage identical data for native builds
+        run: |
+          python native/tools/stage_shared_rules.py
+          cmp content/pokemon/battle-rules.json native/runtime/data/battle-rules.json

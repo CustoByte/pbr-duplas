@@ -1,6 +1,7 @@
 """Download the published owned runtime and execute its actual Windows self-test."""
 import json
 import os
+import shutil
 from pathlib import Path
 import subprocess
 import sys
@@ -10,6 +11,7 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path[:0] = [str(ROOT / 'native/launcher'), str(ROOT / 'native/tools')]
 import core
 from make_test_model import generate
+from stage_shared_rules import stage
 
 
 def check():
@@ -37,6 +39,21 @@ def check():
             raise RuntimeError('Native scene did not verify skin/animation behavior')
         print(json.dumps(proof))
         print('Verified published Windows binary, code pack, GLB skin and animations; no Dolphin.')
+        # Verify current native sources with the same public engine, while the
+        # published PCK remains a separately tested immutable release.
+        stage(ROOT / 'native/runtime/data')
+        source_exe = home / 'SourceCheck.exe'
+        shutil.copyfile(exe, source_exe)
+        source_proof = home / 'source-native-proof.json'
+        subprocess.run([str(source_exe), '--headless', '--audio-driver', 'Dummy',
+                        '--path', str(ROOT / 'native/runtime'), '--',
+                        '--model', str(model), '--report', str(source_proof), '--self-test'],
+                       check=True, timeout=90)
+        current = json.loads(source_proof.read_text(encoding='utf-8'))
+        if current.get('shared_content_profiles') != 4 or not current.get('bone_animation_moves'):
+            raise RuntimeError('Current native sources did not consume shared rules')
+        print('Current native source consumes four shared profiles; no battle engine implied.')
+
 
 
 if __name__ == '__main__':
