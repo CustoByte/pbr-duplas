@@ -14,6 +14,7 @@ var tracking_bone := -1
 var tracking_origin := Vector3.ZERO
 var camera_target_base := Vector3(0.0,1.0,0.0)
 var tail_flame: Node3D
+var eye_states: Node
 
 func _ready() -> void:
 	var args := OS.get_cmdline_user_args()
@@ -82,6 +83,11 @@ func _ready() -> void:
 		tail_flame.set_script(load("res://tail_flame_review.gd"))
 		add_child(tail_flame)
 		tail_flame.configure(tracking_skeleton,laboratory.camera,laboratory.model.find_children("*","MeshInstance3D",true,false))
+	if plan.has("eye_material_tracks"):
+		eye_states = Node.new()
+		eye_states.set_script(load("res://eye_state_review.gd"))
+		add_child(eye_states)
+		eye_states.configure(laboratory.model.find_children("*","MeshInstance3D",true,false),plan.eye_material_tracks)
 	next_segment()
 
 func next_segment() -> void:
@@ -91,6 +97,7 @@ func next_segment() -> void:
 		get_tree().quit(0)
 		return
 	var segment: Dictionary = timeline[index]
+	if is_instance_valid(eye_states): eye_states.set_state(segment.get("eye_state",""))
 	laboratory.yaw = float(segment.get("yaw", laboratory.yaw))
 	laboratory.distance = float(segment.get("distance", laboratory.distance))
 	caption.text = "%02d/%02d • %s" % [index+1,timeline.size(),segment.label]
@@ -104,6 +111,13 @@ func next_segment() -> void:
 	if segment.has("pose_frame"):
 		laboratory.player.seek(float(segment.pose_frame)/30.0,true)
 		laboratory.player.pause()
+	if segment.has("camera_focus_bone"):
+		tracking_bone = tracking_skeleton.find_bone(segment.camera_focus_bone)
+		if tracking_bone >= 0:
+			tracking_skeleton.force_update_all_bone_transforms()
+			tracking_origin = tracking_skeleton.global_transform * tracking_skeleton.get_bone_global_pose(tracking_bone).origin
+			var offset: Array = segment.get("camera_focus_offset",[0,0,0])
+			camera_target_base = tracking_origin + Vector3(offset[0],offset[1],offset[2])
 	print("PREVIEW_SEGMENT " + JSON.stringify(segment))
 
 func _process(delta: float) -> void:
@@ -116,6 +130,7 @@ func _process(delta: float) -> void:
 		laboratory.camera.position = target + Vector3(sin(laboratory.yaw)*cos(laboratory.pitch),sin(laboratory.pitch),cos(laboratory.yaw)*cos(laboratory.pitch))*laboratory.distance
 		laboratory.camera.look_at(target)
 	if is_instance_valid(tail_flame): tail_flame.advance(delta)
+	if is_instance_valid(eye_states): eye_states.advance(delta)
 	clock += delta
 	ticks += 1
 	if clock >= float(timeline[index].seconds): next_segment()

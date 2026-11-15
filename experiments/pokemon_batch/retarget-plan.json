@@ -308,7 +308,7 @@
     "retarget_enabled": true,
     "visual_status": "normal_charizard_motion_base_requested_pending_visual_review",
     "donor_motion_used": true,
-    "native_export_verified": false,
+    "native_export_verified": true,
     "tail_fire_port_verified": false,
     "tail_fire_visual_approved": true,
     "translation_scale_landmarks": {
@@ -335,6 +335,8 @@
         "minimum_degrees": 0,
         "maximum_degrees": 65
       }
-    }
+    },
+    "native_animation_candidate_exported": true,
+    "native_gameplay_verified": false
   }
 }

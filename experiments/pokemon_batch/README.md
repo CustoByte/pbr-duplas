@@ -196,3 +196,37 @@ preservados; não se pinta nem remove a geometria branca.
 verifica os limites e o eixo da articulação. A revisão compara a pose-fonte,
 a adaptação anterior e a correção no mesmo quadro, e confere abertura em ataque.
 Isso é uma correção do modelo adaptado; não valida instalação no Dolphin.
+
+## Conjunto nativo de animações do Mega Charizard Y
+
+`export_charizard_y.py` prepara um candidato SDR privado com o contrato original
+completo de Charizard: 12 clips corporais e `tx_wink`, `tx_sleep`, `tx_wakeup`.
+A mandíbula corrigida é mantida. O atlas dos olhos do Y usa deslocamentos próprios
+para aberto, intermediário e fechado; não copia coordenadas do atlas do doador.
+Uma raiz estática evita perder transformações no exportador. O antigo Origin
+animado é preservado como CharizardYMotion, separado do controle de escala.
+São criados pontos de efeito do alvo para boca, olhos, mãos, pés, dano e cauda.
+
+`verify_charizard_y_sdr.py` decodifica o arquivo e compara todas as matrizes de
+animação com o Blender, amostra a pele em quatro malhas, verifica texturas e todos
+os canais UV. Ordem, flags e proporções dos marcadores das 15 ações seguem o
+Charizard original. `verify_charizard_y_native.py` verifica as 25 ligações de
+nós e 22 ligações de animação do modelo original, e executa alocação/realocação
+SDR nas rotinas PPC capturadas. A identidade de recurso da fixture não registra
+nem substitui espécies. Não é teste de disco, GPU ou batalha.
+
+Entrada, recolhimento, trocas e efeitos de golpes dependem do controlador do jogo,
+que usa essas ligações. Não se acrescentam clips artificiais de Poké Bola ou
+escala duplicada. Os 20 golpes podem compartilhar ações nativas; o efeito de
+cada golpe e seu posicionamento ainda precisam de verificação em batalha.
+
+O importador de revisão usa Euler estável e inclui o último frame, evitando
+perda de rotação perto de 90 graus. Seus nós procedurais de repetição UV são
+representados por sampler REPEAT no glTF; esse ajuste é da revisão, não do SDR.
+`eye_state_review.gd` mostra valores UV realmente decodificados do SDR.
+
+**Estado:** candidato de animação nativo, não pacote jogável publicado. O SDR
+privado ainda contém a superfície de fogo da fonte. A chama procedural aprovada
+permanece no visualizador e exige adaptação nativa antes da entrega final. O
+candidato não deve substituir o arquivo do Charizard normal. Registro da forma,
+retratos, integração no passe e validação de gameplay são etapas separadas.

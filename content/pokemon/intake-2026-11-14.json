@@ -25,7 +25,7 @@
         "animation_clips": 0,
         "referenced_buffers_and_images_present": true
       },
-      "animation_status": "normal_charizard_motion_adaptation_in_progress",
+      "animation_status": "native_15_action_sdr_candidate_offline_verified",
       "configuration": {
         "status": "previous_charizard_moves_carried_forward_not_reselected_for_y",
         "moves": [
@@ -58,7 +58,9 @@
       "replaces_requested_form": "mega_x",
       "requested_motion_source": "pkx_006.fsys",
       "tail_fire_visual_approved": true,
-      "tail_fire_native_port_verified": false
+      "tail_fire_native_port_verified": false,
+      "native_animation_slots": 15,
+      "native_animation_gameplay_verified": false
     },
     {
       "key": "ash-greninja",

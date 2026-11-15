@@ -1,0 +1,428 @@
+{
+  "kind": "private native SDR motion candidate",
+  "object_name": "MegaCharizardY",
+  "actions": [
+    "wait",
+    "kime",
+    "damage",
+    "down",
+    "hikkaku",
+    "kime_a",
+    "kick",
+    "tackle",
+    "takeoff",
+    "kuchu_wait",
+    "kyukoka",
+    "tx_wink",
+    "tx_sleep",
+    "tx_wakeup",
+    "run"
+  ],
+  "anchors": {
+    "origin": "PBR_StaticRoot",
+    "lizardon": "PBR_StaticRoot",
+    "direct_set": "PBR_StaticRoot",
+    "ct_all": "CharizardYMotion",
+    "ct_all_move": "Waist",
+    "ct_bust": "Spine2",
+    "ct_bust_move": "head neck upper",
+    "ef_damage": "Spine2",
+    "ef_head": "head neck upper",
+    "ef_mouth": "head neck upper",
+    "ef_leye": "head neck upper",
+    "ef_reye": "head neck upper",
+    "ef_lhand": "LHand",
+    "ef_rhand": "RHand",
+    "ef_lffoot": "LFoot",
+    "ef_rffoot": "RFoot",
+    "ef_lrfoot": "LFoot",
+    "ef_rrfoot": "RFoot",
+    "ef_lknee": "LLeg",
+    "ef_rknee": "RLeg",
+    "ef_lelbow": "LForeArm",
+    "ef_relbow": "RForeArm",
+    "ef_o": "Tail8"
+  },
+  "meshes": [
+    "6_CharizardMegaY.part.001_1_0_0",
+    "6_CharizardMegaY.part.002_1_0_0",
+    "6_CharizardMegaY.part.003_1_0_0",
+    "7_CharizardMegaY_0_0_0"
+  ],
+  "jaw_fix_retained": true,
+  "eye_states": [
+    "tx_wink",
+    "tx_sleep",
+    "tx_wakeup"
+  ],
+  "tail_flame_native_port_verified": false,
+  "gameplay_verified": false,
+  "eligible_for_game_package": false,
+  "sha256": "82a52e2e41077ae0679fe66169e4224b8aa6d21adc97b7218c3d467f5267df49",
+  "bytes": 2721192,
+  "native_animation_set_complete": true,
+  "source_pose_check": {
+    "passed": true,
+    "sampled_source_bone_poses": 3708,
+    "actions": 12,
+    "max_matrix_error": 9.179115295410156e-06,
+    "worst_sample": [
+      "Body_run",
+      0,
+      "EndRFeeler6"
+    ],
+    "gameplay_verified": false
+  },
+  "decoded_sdr_check": {
+    "kind": "offline native SDR roundtrip; not GPU gameplay",
+    "actions": {
+      "wait": {
+        "frames": 60,
+        "max_matrix_error": 7.987022399902344e-05,
+        "max_skin_error": 7.80966432117538e-05,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          59
+        ]
+      },
+      "kime": {
+        "frames": 90,
+        "max_matrix_error": 0.00011086463928222656,
+        "max_skin_error": 9.023318401043142e-05,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          89
+        ]
+      },
+      "damage": {
+        "frames": 70,
+        "max_matrix_error": 0.00011324882507324219,
+        "max_skin_error": 7.067594245959558e-05,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          69
+        ]
+      },
+      "down": {
+        "frames": 85,
+        "max_matrix_error": 0.0001081228256225586,
+        "max_skin_error": 8.622985646050496e-05,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          84
+        ]
+      },
+      "hikkaku": {
+        "frames": 70,
+        "max_matrix_error": 9.775161743164062e-05,
+        "max_skin_error": 8.717523291924597e-05,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          69
+        ]
+      },
+      "kime_a": {
+        "frames": 160,
+        "max_matrix_error": 0.00010156631469726562,
+        "max_skin_error": 8.96999010752501e-05,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110,
+          120,
+          130,
+          140,
+          150,
+          159
+        ]
+      },
+      "kick": {
+        "frames": 130,
+        "max_matrix_error": 0.00011181831359863281,
+        "max_skin_error": 0.00013340655349648335,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110,
+          120,
+          129
+        ]
+      },
+      "tackle": {
+        "frames": 115,
+        "max_matrix_error": 9.918212890625e-05,
+        "max_skin_error": 0.00010185044288312713,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          90,
+          100,
+          110,
+          114
+        ]
+      },
+      "takeoff": {
+        "frames": 86,
+        "max_matrix_error": 8.487701416015625e-05,
+        "max_skin_error": 7.769702649675e-05,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          60,
+          70,
+          80,
+          85
+        ]
+      },
+      "kuchu_wait": {
+        "frames": 60,
+        "max_matrix_error": 7.975101470947266e-05,
+        "max_skin_error": 6.748891034231108e-05,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          59
+        ]
+      },
+      "kyukoka": {
+        "frames": 57,
+        "max_matrix_error": 8.869171142578125e-05,
+        "max_skin_error": 8.240768415555598e-05,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20,
+          30,
+          40,
+          50,
+          56
+        ]
+      },
+      "run": {
+        "frames": 21,
+        "max_matrix_error": 0.00010395050048828125,
+        "max_skin_error": 8.333966214723058e-05,
+        "skin_sampled_frames": [
+          0,
+          10,
+          20
+        ]
+      }
+    },
+    "textures": [
+      {
+        "name": "Y_6_CharizardMegaY.part.001_1_0_0",
+        "max_channel_error": 0.02745105308644913
+      },
+      {
+        "name": "Y_6_CharizardMegaY.part.002_1_0_0",
+        "max_channel_error": 0.02745105308644913
+      },
+      {
+        "name": "Y_6_CharizardMegaY.part.003_1_0_0",
+        "max_channel_error": 0.015686305130229283
+      },
+      {
+        "name": "Y_7_CharizardMegaY_0_0_0",
+        "max_channel_error": 0.02745105308644913
+      }
+    ],
+    "bytes": 2721192,
+    "sha256": "82a52e2e41077ae0679fe66169e4224b8aa6d21adc97b7218c3d467f5267df49",
+    "native_action_contract_preserved": true,
+    "node_indices_fit_model_table": true,
+    "gameplay_verified": false,
+    "uv_samples": 16496,
+    "max_uv_error": 0.0,
+    "eye_review_tracks": {
+      "tx_wink": {
+        "length": 0.1666666716337204,
+        "points": [
+          {
+            "time": 0.0,
+            "offset_v": 0.0
+          },
+          {
+            "time": 0.03333333507180214,
+            "offset_v": 0.25
+          },
+          {
+            "time": 0.06666667014360428,
+            "offset_v": 0.5
+          },
+          {
+            "time": 0.13333334028720856,
+            "offset_v": 0.25
+          },
+          {
+            "time": 0.1666666716337204,
+            "offset_v": 0.0
+          }
+        ]
+      },
+      "tx_sleep": {
+        "length": 0.5333333611488342,
+        "points": [
+          {
+            "time": 0.0,
+            "offset_v": 0.5
+          }
+        ]
+      },
+      "tx_wakeup": {
+        "length": 0.10000000149011612,
+        "points": [
+          {
+            "time": 0.0,
+            "offset_v": 0.5
+          },
+          {
+            "time": 0.03333333507180214,
+            "offset_v": 0.25
+          },
+          {
+            "time": 0.06666667014360428,
+            "offset_v": 0.0
+          }
+        ]
+      }
+    },
+    "passed": true
+  },
+  "native_loading_check": {
+    "passed": true,
+    "kind": "native resource allocation/SDR relocation and original Charizard model-table binding analysis",
+    "bytes": 2721192,
+    "sdr_sha256": "82a52e2e41077ae0679fe66169e4224b8aa6d21adc97b7218c3d467f5267df49",
+    "native_allocation": "80fa6b40",
+    "relocated_action_count": 15,
+    "native_resource_ready": true,
+    "node_bindings_checked": 25,
+    "animation_bindings_checked": 22,
+    "all_fifteen_actions_referenced": true,
+    "maximum_bound_node_index": 126,
+    "fixture_only_resource_identity": "2000/63ea0400",
+    "fixture_changes": [
+      "reuse captured resource descriptor for isolated candidate",
+      "skip OS cache-maintenance calls in coherent Unicorn memory"
+    ],
+    "no_new_species_installed": true,
+    "disc_io_verified": false,
+    "gpu_render_verified": false,
+    "gameplay_verified": false
+  },
+  "candidate_only": true,
+  "native_gpu_render_verified": false,
+  "source_references_unchanged": true,
+  "engine_managed_events": [
+    "send_out",
+    "recall",
+    "switching",
+    "move_impact_effects"
+  ],
+  "native_tail_flame_status": "approved_visualizer_effect_not_ported_candidate_contains_source_surface",
+  "reimport_review": {
+    "body_clips": 12,
+    "material_states": 3,
+    "stable_euler": true,
+    "last_frame_included": true,
+    "gx_repeat_represented_in_gltf_sampler": true,
+    "body_and_sleep_eye_renders_inspected": true
+  },
+  "review_videos": [
+    {
+      "name": "mega-charizard-y-conjunto-nativo.mp4",
+      "sha256": "769d1ab2c2573c704341257afe3415caab7091162d3fd4d6f2bc58e15ab5fa94",
+      "bytes": 14606849,
+      "media": {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "30/1",
+        "duration": "49.900000"
+      },
+      "full_decode_verified": true,
+      "clock": "fixed_30_hz_not_performance_measurement"
+    },
+    {
+      "name": "mega-charizard-y-olhos-nativos.mp4",
+      "sha256": "ff500df0ef2e87abd0dd9f578666dd3fbc159585fde2568f3746340b276e1856",
+      "bytes": 2787178,
+      "media": {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "30/1",
+        "duration": "8.100000"
+      },
+      "full_decode_verified": true,
+      "clock": "fixed_30_hz_not_performance_measurement"
+    }
+  ]
+}
