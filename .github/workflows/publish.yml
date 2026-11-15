@@ -1,49 +1,54 @@
-name: Build and verify Windows launcher
+name: Publish verified Windows launcher
 on:
   workflow_dispatch:
 permissions:
   contents: write
 jobs:
-  windows:
+  verify_windows:
     runs-on: windows-latest
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
-      - name: Compile WinExe with embedded interface
-        shell: powershell
-        run: ./launcher/windows/build.ps1 -Output "$env:RUNNER_TEMP/launcher-build"
-      - name: Verify state, packages and hidden worker
+      - name: Verify and extract exact release core
         shell: powershell
         run: |
-          $p = Start-Process -FilePath "$env:RUNNER_TEMP/launcher-build/PBR Launcher.exe" -ArgumentList @('--self-test', ('"' + "$env:RUNNER_TEMP/launcher-build/tests.json" + '"')) -Wait -PassThru
-          Get-Content "$env:RUNNER_TEMP/launcher-build/tests.json"
-          if ($p.ExitCode -ne 0) { throw 'Launcher verification failed' }
-      - name: Render actual WPF window
+          $ErrorActionPreference = 'Stop'
+          $core = 'expansion/packages/launcher-test1/aplicador-core.zip'
+          $proof = Get-Content ([IO.Path]::ChangeExtension($core, '.json')) -Raw | ConvertFrom-Json
+          if ((Get-FileHash $core -Algorithm SHA256).Hash.ToLowerInvariant() -ne $proof.package_sha256) { throw 'Core hash mismatch' }
+          Expand-Archive -LiteralPath $core -DestinationPath "$env:RUNNER_TEMP/core"
+          Get-ChildItem "$env:RUNNER_TEMP/core" -Recurse -Filter '*.ps1' | ForEach-Object {
+            $tokens = $null; $errors = $null
+            [void][Management.Automation.Language.Parser]::ParseFile($_.FullName, [ref]$tokens, [ref]$errors)
+            if ($errors.Count -gt 0) { throw ($errors | Out-String) }
+          }
+          $manifest = Get-Content "$env:RUNNER_TEMP/core/manifesto.json" -Raw | ConvertFrom-Json
+          if ($manifest.mod_version -ne 'v0.14.0-charizard-y-test.2' -or $manifest.launcher.version -ne '1.0.0') { throw 'Wrong game/launcher versions' }
+          if (($manifest.charizard_y.stats_hp_atk_def_spatk_spdef_speed -join ',') -ne '148,107,93,150,110,115') { throw 'Balance changed' }
+          if ((Get-FileHash "$env:RUNNER_TEMP/core/launcher/PBR Launcher.exe" -Algorithm SHA256).Hash.ToLowerInvariant() -ne $manifest.launcher.sha256) { throw 'Launcher hash mismatch' }
+          if ((Get-FileHash "$env:RUNNER_TEMP/core/launcher/PBR Duplas.exe" -Algorithm SHA256).Hash.ToLowerInvariant() -ne $manifest.launcher.bootstrap_sha256) { throw 'Bootstrap hash mismatch' }
+          New-Item -ItemType Directory -Path "$env:RUNNER_TEMP/launcher-final" -Force | Out-Null
+          Copy-Item "$env:RUNNER_TEMP/core/launcher/*.exe" "$env:RUNNER_TEMP/launcher-final/"
+      - name: Verify the exact packaged GUI and hidden workers
         shell: powershell
         run: |
-          $p = Start-Process -FilePath "$env:RUNNER_TEMP/launcher-build/PBR Launcher.exe" -ArgumentList @('--preview', ('"' + "$env:RUNNER_TEMP/launcher-build/preview.png" + '"'), '--data-root', ('"' + "$env:RUNNER_TEMP/preview-state" + '"')) -Wait -PassThru
-          if ($p.ExitCode -ne 0) { Get-Content launcher-error.txt; throw 'WPF rendering failed' }
-      - name: Test graphics recovery and migration
-        shell: powershell
-        run: ./launcher/windows/test-integration.ps1 -Output "$env:RUNNER_TEMP/launcher-build"
-      - name: Save verified owned build outputs
-        shell: powershell
+          $p = Start-Process -FilePath "$env:RUNNER_TEMP/launcher-final/PBR Launcher.exe" -ArgumentList @('--self-test', ('"' + "$env:RUNNER_TEMP/launcher-final/tests.json" + '"')) -Wait -PassThru
+          Get-Content "$env:RUNNER_TEMP/launcher-final/tests.json"
+          if ($p.ExitCode -ne 0) { throw 'Packaged GUI self-test failed' }
+          ./launcher/windows/test-integration.ps1 -Output "$env:RUNNER_TEMP/launcher-final"
+  publish:
+    needs: verify_windows
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Verify release files
+        working-directory: .github/release-assets
+        run: sha256sum --check SHA256SUMS.txt
+      - name: Upload and publish prepared release
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          $dest = 'launcher/builds/1.0.0'
-          New-Item -ItemType Directory -Path $dest -Force | Out-Null
-          foreach ($name in @('PBR Launcher.exe','PBR Duplas.exe','preview.png','tests.json','integration-tests.json','build.json')) { Copy-Item -LiteralPath (Join-Path "$env:RUNNER_TEMP/launcher-build" $name) -Destination (Join-Path $dest $name) -Force }
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add -f launcher/builds/1.0.0
-          git commit -m 'Record verified Windows GUI build and preview'
-          if ($LASTEXITCODE -ne 0) { throw 'Build commit failed' }
-          git push origin "HEAD:${{ github.ref_name }}"
-          if ($LASTEXITCODE -ne 0) { throw 'Build push failed' }
-      - name: Upload executable, preview and verification
-        if: always()
-        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
-        with:
-          name: pbr-windows-launcher
-          path: |
-            ${{ runner.temp }}/launcher-build/
-            launcher-error.txt
+          tag=$(jq -r .version .github/release-assets/update.json)
+          [[ "$tag" =~ ^v[0-9]+\.[0-9]+\.[0-9]+(-[a-zA-Z0-9.-]+)?$ ]]
+          gh release upload "$tag" .github/release-assets/aplicador-core.zip .github/release-assets/PBR-Duplas-Aplicador-Windows.zip .github/release-assets/update.json .github/release-assets/SHA256SUMS.txt --repo "$GITHUB_REPOSITORY" --clobber
+          gh release edit "$tag" --repo "$GITHUB_REPOSITORY" --draft=false --latest

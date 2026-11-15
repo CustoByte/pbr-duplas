@@ -1,20 +1,20 @@
 {
   "schema": 1,
-  "version": "v0.14.0-charizard-y-test.2",
-  "package_url": "https://raw.githubusercontent.com/CustoByte/pbr-duplas/v0.14.0-charizard-y-test.2/expansion/packages/charizard-y-test2/aplicador-core.zip",
-  "package_sha256": "78e90492bd1f0c97bd26de9c9d174e274a5a45f6dda42a5aa03ed12b21d8610e",
+  "version": "v0.15.0-launcher-test.1",
+  "package_url": "https://raw.githubusercontent.com/CustoByte/pbr-duplas/v0.15.0-launcher-test.1/expansion/packages/launcher-test1/aplicador-core.zip",
+  "package_sha256": "7767e3133bcc50d0513f256205f17bf92860c576ce3dc73e243eb87a7f06e41a",
   "channel": "full493-test",
   "dolphin_tested": false,
-  "local_snivy_source_required": true,
+  "local_snivy_source_required": false,
   "save_policy": "Original image and normal save files untouched by installer",
   "translation_corrections": 433,
   "new_translations": 0,
   "review_complete": false,
   "additional_corrections": 51,
-  "local_mega_source_required": true,
+  "local_mega_source_required": false,
   "mega_internal_id": 502,
   "mega_rental_replacement": "Ivysaur",
-  "local_charizard_y_source_required": true,
+  "local_charizard_y_source_required": false,
   "charizard_y_internal_id": 503,
   "charizard_y_rental_replacement": "Wartortle",
   "npc_randomization_enabled": false,
@@ -26,5 +26,10 @@
     150,
     110,
     115
-  ]
+  ],
+  "game_version": "v0.14.0-charizard-y-test.2",
+  "launcher_version": "1.0.0",
+  "graphical_launcher": true,
+  "local_models_reused": true,
+  "existing_installation_used_for_models": true
 }

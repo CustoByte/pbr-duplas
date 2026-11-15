@@ -5,6 +5,14 @@ ROOT=Path(__file__).resolve().parents[1];sys.path.insert(0,str(ROOT/'expansion')
 from package_release import zipped
 VERSION='v0.15.0-launcher-test.1';GAME='v0.14.0-charizard-y-test.2';APP='1.0.0'
 def sha(data):return hashlib.sha256(data).hexdigest()
+def matches_source(path,digest):
+ data=path.read_bytes()
+ # Windows checkout converts source text to CRLF; accept only that exact,
+ # reversible line-ending change, never any other source-content difference.
+ candidates=[data]
+ if path.suffix in ('.cs','.xaml','.manifest','.ps1'):
+  lf=data.replace(b'\r\n',b'\n');candidates.extend((lf,lf.replace(b'\n',b'\r\n')))
+ return any(sha(b)==digest for b in candidates)
 def package(build,output):
  base=ROOT/'expansion/packages/charizard-y-test2/aplicador-core.zip'
  if sha(base.read_bytes())!='78e90492bd1f0c97bd26de9c9d174e274a5a45f6dda42a5aa03ed12b21d8610e':raise ValueError('Latest game baseline differs')
@@ -12,9 +20,9 @@ def package(build,output):
   if not json.loads((build/name).read_text(encoding='utf-8-sig'))['passed']:raise ValueError('Windows verification failed: '+name)
  identity=json.loads((build/'build.json').read_text(encoding='utf-8-sig'))
  for name,digest in identity['sources'].items():
-  if sha((ROOT/'launcher/windows'/name).read_bytes())!=digest:raise ValueError('Compiled launcher source changed: '+name)
+  if not matches_source(ROOT/'launcher/windows'/name,digest):raise ValueError('Compiled launcher source changed: '+name)
  for name,digest in identity['installer_sources'].items():
-  if sha((ROOT/'expansion'/name).read_bytes())!=digest:raise ValueError('Tested installer changed: '+name)
+  if not matches_source(ROOT/'expansion'/name,digest):raise ValueError('Tested installer changed: '+name)
  binary=(build/'PBR Launcher.exe').read_bytes()
  if sha(binary)!=identity['executable_sha256']:raise ValueError('Compiled executable differs')
  pe=struct.unpack_from('<I',binary,60)[0]

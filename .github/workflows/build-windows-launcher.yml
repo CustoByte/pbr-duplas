@@ -1,0 +1,49 @@
+name: Build and verify Windows launcher
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+      - name: Compile WinExe with embedded interface
+        shell: powershell
+        run: ./launcher/windows/build.ps1 -Output "$env:RUNNER_TEMP/launcher-build"
+      - name: Verify state, packages and hidden worker
+        shell: powershell
+        run: |
+          $p = Start-Process -FilePath "$env:RUNNER_TEMP/launcher-build/PBR Launcher.exe" -ArgumentList @('--self-test', ('"' + "$env:RUNNER_TEMP/launcher-build/tests.json" + '"')) -Wait -PassThru
+          Get-Content "$env:RUNNER_TEMP/launcher-build/tests.json"
+          if ($p.ExitCode -ne 0) { throw 'Launcher verification failed' }
+      - name: Render actual WPF window
+        shell: powershell
+        run: |
+          $p = Start-Process -FilePath "$env:RUNNER_TEMP/launcher-build/PBR Launcher.exe" -ArgumentList @('--preview', ('"' + "$env:RUNNER_TEMP/launcher-build/preview.png" + '"'), '--data-root', ('"' + "$env:RUNNER_TEMP/preview-state" + '"')) -Wait -PassThru
+          if ($p.ExitCode -ne 0) { Get-Content launcher-error.txt; throw 'WPF rendering failed' }
+      - name: Test graphics recovery and migration
+        shell: powershell
+        run: ./launcher/windows/test-integration.ps1 -Output "$env:RUNNER_TEMP/launcher-build"
+      - name: Save verified owned build outputs
+        shell: powershell
+        run: |
+          $dest = 'launcher/builds/1.0.0'
+          New-Item -ItemType Directory -Path $dest -Force | Out-Null
+          foreach ($name in @('PBR Launcher.exe','PBR Duplas.exe','preview.png','tests.json','integration-tests.json','build.json')) { Copy-Item -LiteralPath (Join-Path "$env:RUNNER_TEMP/launcher-build" $name) -Destination (Join-Path $dest $name) -Force }
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -f launcher/builds/1.0.0
+          git commit -m 'Record verified Windows GUI build and preview'
+          if ($LASTEXITCODE -ne 0) { throw 'Build commit failed' }
+          git push origin "HEAD:${{ github.ref_name }}"
+          if ($LASTEXITCODE -ne 0) { throw 'Build push failed' }
+      - name: Upload executable, preview and verification
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: pbr-windows-launcher
+          path: |
+            ${{ runner.temp }}/launcher-build/
+            launcher-error.txt

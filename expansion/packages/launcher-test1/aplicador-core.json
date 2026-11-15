@@ -1,0 +1,58 @@
+{
+  "version": "v0.15.0-launcher-test.1",
+  "game_version": "v0.14.0-charizard-y-test.2",
+  "launcher_version": "1.0.0",
+  "package_sha256": "7767e3133bcc50d0513f256205f17bf92860c576ce3dc73e243eb87a7f06e41a",
+  "bytes": 2249999,
+  "executable_sha256": "dd22d752e711315be19d3fa2f26e640f997ddfb4a7c266efffa5de8ec58283ab",
+  "game_replacements_unchanged": true,
+  "gameplay_tested": false,
+  "windows_verification": {
+    "tests.json": {
+      "passed": true,
+      "checks": [
+        "legacy state preserved with atomic writes and backup",
+        "trusted immutable repository URLs only",
+        "ZIP traversal rejected before extraction",
+        "hash-verified offline package reuse with fresh extraction",
+        "offline feed fallback",
+        "PowerShell worker hidden; Unicode paths/literal arguments; exit/error propagation"
+      ],
+      "gameplay_tested": false
+    },
+    "integration-tests.json": {
+      "gameplay_tested": false,
+      "checks": [
+        "PowerShell 5.1 scripts parse",
+        "verified graphics reused without source ZIPs, dialogs or extraction",
+        "corrupted cache repaired from hash-verified managed image; next update uses cache",
+        "incompatible graphics and unverified images rejected",
+        "known local sources discovered and hash-validated without dialogs",
+        "legacy migration creates versioned WinExe and stable shortcuts, preserving estado.json",
+        "Windows GUI subsystem: no CMD required"
+      ],
+      "passed": true
+    }
+  },
+  "source_identity": {
+    "bootstrap_sha256": "f3c3c4bc7c52c57185ae211299122f7618016b4d3cc815ea7dc7bbafb2301734",
+    "installer_sources": {
+      "Aplicar-Mod.ps1": "a71c67f3bf8e332d0795eb22940212f04f496905f72f3a9ef2bccec6b09dd5d9",
+      "Iniciar-Launcher.ps1": "7c3cfa1abdea2b463d58445b28942668ce1233115b9d3fb3e553456c59151a62",
+      "Recuperar-Graficos.ps1": "8e0900021461e443030f0a1d631a14b118d1dd93291d590d403eeceb0c5e525a"
+    },
+    "launcher_version": "1.0.0",
+    "executable_sha256": "dd22d752e711315be19d3fa2f26e640f997ddfb4a7c266efffa5de8ec58283ab",
+    "sources": {
+      "App.cs": "3b0805870f0a3b2cff0d1066cdc9173ab5b818aafda8c79f3f273ec592b93c67",
+      "app.ico": "b4667165ae5d602af97efe788ba49473cc90f69c6c9b5f2de547c9d756f06440",
+      "app.manifest": "0a57c1a2e3efeea0d4c11e973ce3eaeab05b8e4cc8062a51102782f67dd33831",
+      "Bootstrap.cs": "ece0c6f503356849d074f6a4f62bfb137cd9633ddbc41a492dfc9f706cf814fa",
+      "build.ps1": "b3395efae3c3d80ed17e7e3d12d9e15b18575929ffecf464011fb73ebc769d78",
+      "MainWindow.xaml": "dedc57b96573b654792650e8fb0a2b19fb01e8548eb123c7b2a075720852535b",
+      "SelfTest.cs": "c6e966103d2a2dd3b6f4d23ac15f7c1c8b228646b4a6fd3068a55c55a8a443bb",
+      "Services.cs": "94bf535a4403789fc3e5512cf70c102a6842e62d357cfc3beae3beb0eac9ecf2",
+      "test-integration.ps1": "df7b49b26c3c82aab5b343f19abcf6babbe7d3e5d74cb19bd4061ac2e5f17ff6"
+    }
+  }
+}
