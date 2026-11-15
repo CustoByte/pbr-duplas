@@ -30,7 +30,7 @@ Nenhuma medição dessa fase prova desempenho em batalha ou no PC do usuário.
 
 | Modelo novo | Referência candidata do Battle Revolution | Arquivo |
 |---|---|---|
-| Mega Charizard X | Charizard | `pkx_006.fsys` |
+| Mega Charizard Y (substitui X) | Charizard, referência de formato | `pkx_006.fsys` |
 | Ash-Greninja | Sceptile | `pkx_254.fsys` |
 | Hydreigon | Salamence | `pkx_373.fsys` |
 | Rillaboom | Slaking | `pkx_289.fsys` |
@@ -106,3 +106,22 @@ A câmera da prévia acompanha o deslocamento do osso Waist, para não cortar o
 corpo nas sequências aéreas. Esse acompanhamento é exclusivo do vídeo de revisão
 e não altera as câmeras do Battle Revolution. O gerador verifica a sintaxe do
 script antes de iniciar a captura para evitar gravações vazias.
+
+## Substituição por Mega Charizard Y e espera própria
+
+O usuário substituiu o X pelo Y. O banco anterior de 20 golpes fica provisoriamente
+associado ao Y; os presets de Snivy/Mega Lucario e os outros três slots não mudam.
+Atributos base passam ao perfil canônico do Y (78/104/78/159/115/100), ainda em
+configuração e sem instalação. O cálculo isolado de atributos foi verificado
+novamente no sampler PPC e nas rotinas originais; isso não instala a espécie.
+
+`author_charizard_y_idle.py` cria pose e espera próprias sem ler qualquer doador.
+Conserva pernas/quadril na postura de origem e anima apenas peito, pescoço,
+braços, asas, cauda e chama. A espera tem seis segundos, movimento periódico e
+controle de sinal de quaternion. Asas ficam parcialmente abertas e a cauda recebe
+curvatura própria. Verifica a posição efetiva dos pés durante o ciclo.
+
+A nova espera ainda não foi aprovada pelo usuário e não está pronta para Dolphin.
+Os mapeamentos automáticos rejeitados foram desabilitados no baker; o X fica
+somente como histórico, apontando para a substituição pelo Y. Ataques e outros
+estados deverão ser trabalhados depois da revisão desta base.

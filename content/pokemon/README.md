@@ -5,13 +5,13 @@ que deverão alimentar as versões Dolphin e nativa. **Ainda não é uma ferrame
 de sincronização ou instalação automática.** O catálogo de entrada não altera
 nenhum dos dois executáveis ou canais de atualização.
 
-O lote de 14/11/2026 contém Mega Charizard X, Ash-Greninja, Hydreigon e Rillaboom.
+O lote de 14/11/2026 contém Mega Charizard Y, Ash-Greninja, Hydreigon e Rillaboom.
 Os ZIPs/modelos/texturas ficam privados. O arquivo JSON contém somente metadados,
 hashes e resultados de inspeção, sem atribuir IDs internos ou configurações
 que o usuário ainda não escolheu. Os números nacionais são identidades oficiais;
 o número `0950` nos recursos de Rillaboom não substitui seu número nacional 812.
 
-Charizard X e Ash-Greninja trazem glTF com malhas, skin, buffers e imagens
+Charizard Y e Ash-Greninja trazem glTF com malhas, skin, buffers e imagens
 referenciadas presentes. Não há clips de animação. Hydreigon e Rillaboom têm
 uma stack FBX chamada `Take 001`, porém zero curvas e zero keyframes: o intervalo
 de tempo declarado não representa animação existente. A geometria foi lida com
@@ -21,10 +21,9 @@ essas partes não devem ser descartadas como se fossem níveis de detalhe.
 
 A conversão precisa criar/adaptar movimentos, preservar texturas/olhos e gerar
 ícones, além de verificar a integração de batalha. Movimentos e habilidades
-novos não passam a existir no motor só por receberem nome ou ícone. Tough Claws
-e Grassy Surge não são mecânicas nativas da quarta geração; Levitate já existe.
-Battle Bond também requer definição de comportamento para uma forma Ash já
-independente, sem transformação durante a batalha.
+novos não passam a existir no motor só por receberem nome ou ícone. Ash-Greninja
+usará Torrent e Rillaboom usará Overgrow, conforme confirmado pelo usuário.
+A habilidade de Mega Charizard Y ainda não foi definida. Levitate já existe.
 
 Antes de instalar um registro, será necessário confirmar o conjunto de batalha,
 validar as animações e alocar os índices sem colidir com Snivy/Mega Lucario.
@@ -35,7 +34,7 @@ não tem um sistema de batalha capaz de aplicar movesets ou habilidades.
 
 `battle-rules.json` é a fonte das propostas de bancos de 20 golpes (14 ofensivos e 6 de status) e dos
 atributos base. `PROPOSTAS.md` permite revisar as listas e seus contratos de
-animação. O moveset fixo de quatro golpes do jogador foi confirmado para Mega Charizard X;
+animação. O conjunto anterior de Charizard foi mantido provisoriamente ao substituir X por Y;
 os conjuntos já entregues de Snivy e Mega Lucario também são preservados.
 Os outros três continuam em configuração.
 

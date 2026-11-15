@@ -1,0 +1,204 @@
+{
+  "key": "mega-charizard-y",
+  "method": "authored_local_pose_and_periodic_motion_no_donor",
+  "donor_motion_used": false,
+  "body_actions": {
+    "wait": {
+      "frames": 181,
+      "duration_seconds": 6,
+      "loop": true
+    }
+  },
+  "base_pose_world_axis_degrees": {
+    "Spine1": [
+      [
+        "X",
+        5
+      ]
+    ],
+    "Neck1": [
+      [
+        "X",
+        6
+      ]
+    ],
+    "Neck2": [
+      [
+        "X",
+        4
+      ]
+    ],
+    "Neck3": [
+      [
+        "X",
+        3
+      ]
+    ],
+    "head neck upper": [
+      [
+        "X",
+        -5
+      ]
+    ],
+    "LFeeler1": [
+      [
+        "Z",
+        28
+      ],
+      [
+        "Y",
+        8
+      ]
+    ],
+    "LFeeler2": [
+      [
+        "Z",
+        10
+      ]
+    ],
+    "LFeeler3": [
+      [
+        "Y",
+        8
+      ]
+    ],
+    "LArm": [
+      [
+        "Y",
+        8
+      ]
+    ],
+    "LForeArm": [
+      [
+        "Z",
+        -12
+      ]
+    ],
+    "RFeeler1": [
+      [
+        "Z",
+        -28
+      ],
+      [
+        "Y",
+        -8
+      ]
+    ],
+    "RFeeler2": [
+      [
+        "Z",
+        -10
+      ]
+    ],
+    "RFeeler3": [
+      [
+        "Y",
+        -8
+      ]
+    ],
+    "RArm": [
+      [
+        "Y",
+        -8
+      ]
+    ],
+    "RForeArm": [
+      [
+        "Z",
+        12
+      ]
+    ],
+    "Tail1": [
+      [
+        "Z",
+        12
+      ]
+    ],
+    "Tail2": [
+      [
+        "Z",
+        14
+      ]
+    ],
+    "Tail3": [
+      [
+        "Z",
+        16
+      ]
+    ],
+    "Tail4": [
+      [
+        "Z",
+        14
+      ]
+    ],
+    "Tail5": [
+      [
+        "Z",
+        10
+      ]
+    ],
+    "Tail6": [
+      [
+        "Z",
+        0
+      ]
+    ],
+    "Tail7": [
+      [
+        "Z",
+        -5
+      ]
+    ],
+    "Tail8": [
+      [
+        "Z",
+        -5
+      ]
+    ]
+  },
+  "maximum_foot_translation_drift": 0.0,
+  "source_blend_sha256": "65ef1cbb19caf5a5c04c924f732a642af2eb736edf1a1e7f4afed16e160baf01",
+  "glb_sha256": "cbe8a47abd3530fc347eaae8c9bc502e623752307759621cd2b4cf54123eef3c",
+  "glb_bytes": 1378780,
+  "user_approved": false,
+  "dolphin_ready": false,
+  "attacks_authored": false,
+  "numerical_review": {
+    "kind": "baked-motion-numerical-review",
+    "source_name": "mega-charizard-y-idle.blend",
+    "passed": true,
+    "actions": [
+      {
+        "action": "wait",
+        "frames": 181,
+        "minimum_adjacent_quaternion_dot": 0.9999980660790087,
+        "endpoint_translation_scale_gap": 0.0,
+        "endpoint_rotation_radians": 0.0,
+        "endpoint_checked": true
+      }
+    ],
+    "errors": [],
+    "dolphin_verified": false
+  },
+  "preview_views": [
+    "three_quarter",
+    "front",
+    "side"
+  ],
+  "pose_renders_inspected": true,
+  "visual_approval": false,
+  "video": {
+    "file": "mega-charizard-y-espera-propria.mp4",
+    "sha256": "bb4ab40e89973f261824d9780a8fdeec70a92fad2c293386c5bf6d469dda1774",
+    "bytes": 2663489,
+    "media": {
+      "codec_name": "h264",
+      "width": 1280,
+      "height": 720,
+      "r_frame_rate": "30/1",
+      "duration": "18.100000"
+    },
+    "capture_clock": "fixed_30_hz_not_performance_measurement"
+  }
+}

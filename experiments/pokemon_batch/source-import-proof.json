@@ -3,7 +3,7 @@
   "importer_sha256": "4c5d022247641bef44dbf4941ba7c6d80df517bd34df1c083a5cda0021c2fc79",
   "dolphin_installed": false,
   "animations_created": false,
-  "original_references_present": false,
+  "original_references_present": true,
   "models": [
     {
       "key": "mega-charizard-x",
@@ -27,7 +27,9 @@
         "file": "pkx_006.fsys",
         "species": "Charizard",
         "available": false
-      }
+      },
+      "active": false,
+      "superseded_by": "mega-charizard-y"
     },
     {
       "key": "ash-greninja",
@@ -99,6 +101,29 @@
         "file": "pkx_289.fsys",
         "species": "Slaking",
         "available": false
+      }
+    },
+    {
+      "key": "mega-charizard-y",
+      "active": true,
+      "meshes": 4,
+      "vertices": 5928,
+      "rigs": [
+        {
+          "name": "Armature",
+          "bones": 103
+        }
+      ],
+      "textures": 4,
+      "glb_sha256": "eac081523cf7520b8b4ef4ca96a956cca307656ae58624d7a77c9c89b5a17667",
+      "glb_bytes": 547484,
+      "motion_clips": 0,
+      "native_static_render_verified": false,
+      "donor_reference": {
+        "file": "pkx_006.fsys",
+        "species": "Charizard",
+        "available": true,
+        "motion_used_for_new_idle": false
       }
     }
   ]

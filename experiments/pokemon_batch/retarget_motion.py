@@ -12,6 +12,8 @@ from mathutils import Matrix, Quaternion, Vector
 key, source, donor, plan, output = sys.argv[sys.argv.index('--')+1:]
 source, donor, plan, output = map(Path, (source, donor, plan, output))
 config = json.loads(plan.read_text())[key]
+if not config.get('retarget_enabled',False):
+    raise ValueError('Retarget disabled: rejected drafts or species-specific authoring required')
 inventory = json.loads((donor/'inventory.json').read_text())
 contract = inventory['resources'][0]['actions']
 bpy.ops.wm.open_mainfile(filepath=str(source))

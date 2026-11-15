@@ -46,14 +46,14 @@
   ],
   "entries": [
     {
-      "key": "mega-charizard-x",
-      "configuration_status": "proposed_pool_and_stats_pending_game_integration",
+      "key": "mega-charizard-y",
+      "configuration_status": "mega_y_replacement_proposed_stats_existing_moves_carried_forward",
       "base_stats": {
         "hp": 78,
-        "attack": 130,
-        "defense": 111,
-        "special_attack": 130,
-        "special_defense": 85,
+        "attack": 104,
+        "defense": 78,
+        "special_attack": 159,
+        "special_defense": 115,
         "speed": 100
       },
       "base_stats_total": 634,

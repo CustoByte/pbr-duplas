@@ -5,8 +5,7 @@ o padrão atual rejeita conjuntos compostos apenas por status, garantindo pelo m
 A opção de sorteio totalmente livre existe no gerador, caso o usuário prefira esse comportamento.
 
 Os golpes 15–20 das tabelas são os seis de status: suporte, cura e aumento/redução de atributos também pertencem a essa categoria.
-Os presets do jogador de Snivy e Mega Lucario permanecem intactos. O conjunto aprovado do Mega Charizard X continua
-Flare Blitz / Dragon Claw / Earthquake / Protect, independentemente da ordem dos golpes no banco.
+Os presets do jogador de Snivy e Mega Lucario permanecem intactos. O conjunto anterior de Charizard (Flare Blitz / Dragon Claw / Earthquake / Protect) foi mantido provisoriamente após a troca para Y; não houve seleção de novos golpes.
 
 ## Atributos e entrega
 
@@ -24,9 +23,9 @@ golpes compatíveis podem compartilhar um clip, preservando o comportamento coer
 Os valores e efeitos usados são os nativos da quarta geração. O JSON compartilhado alimenta os builds C e nativo;
 isso não acrescenta um sistema de batalha ao protótipo 3D nem altera as releases já publicadas.
 
-## Mega Charizard X
+## Mega Charizard Y
 
-Atributos base propostos: 634 no total.
+Substitui o X. Tipo Fogo/Voador; habilidade ainda não escolhida. Atributos base canônicos propostos: HP 78, ATK 104, DEF 78, SP ATK 159, SP DEF 115, SPEED 100 (634 no total). Os 20 golpes anteriores permanecem como banco provisório, com as mesmas regras de NPC.
 
 | Nº | Golpe | Categoria | Ação corporal planejada | Emissão |
 |---|---|---|---|---|

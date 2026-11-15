@@ -48,7 +48,7 @@ func _ready() -> void:
 	caption.position = Vector2(22,48)
 	caption.add_theme_font_size_override("font_size",21)
 	layer.add_child(caption)
-	detail.text = "Render de revisão • 30 quadros/s • Não é captura do Dolphin\nEfeitos dos golpes e integração em batalha ainda não validados."
+	detail.text = plan.get("footer", "Render de revisão • 30 quadros/s • Não é captura do Dolphin\nEfeitos dos golpes e integração em batalha ainda não validados.")
 	detail.position = Vector2(22,650)
 	detail.add_theme_font_size_override("font_size",18)
 	layer.add_child(detail)
@@ -68,6 +68,8 @@ func next_segment() -> void:
 		get_tree().quit(0)
 		return
 	var segment: Dictionary = timeline[index]
+	laboratory.yaw = float(segment.get("yaw", laboratory.yaw))
+	laboratory.distance = float(segment.get("distance", laboratory.distance))
 	caption.text = "%02d/%02d • %s" % [index+1,timeline.size(),segment.label]
 	var clip: String = laboratory.resolve_role(segment.action)
 	if clip.is_empty():

@@ -57,7 +57,10 @@
       "low_strike": "kick",
       "bite": "kime",
       "aerial_strike": "kyukoka"
-    }
+    },
+    "retarget_enabled": false,
+    "visual_status": "user_rejected",
+    "superseded_by": "mega-charizard-y"
   },
   "ash-greninja": {
     "donor": "sceptile",
@@ -120,7 +123,9 @@
           1
         ]
       }
-    }
+    },
+    "retarget_enabled": false,
+    "visual_status": "user_rejected"
   },
   "hydreigon": {
     "donor": "salamence",
@@ -191,7 +196,9 @@
       "focus": "kime",
       "substitute": "wait",
       "taunt": "kime"
-    }
+    },
+    "retarget_enabled": false,
+    "visual_status": "user_rejected"
   },
   "rillaboom": {
     "donor": "slaking",
@@ -234,6 +241,14 @@
       "taunt": "kime",
       "substitute": "wait",
       "sleep_recover": "wait"
-    }
+    },
+    "retarget_enabled": false,
+    "visual_status": "user_rejected"
+  },
+  "mega-charizard-y": {
+    "donor": "charizard",
+    "retarget_enabled": false,
+    "visual_status": "own_pose_and_idle_in_development",
+    "donor_motion_used": false
   }
 }

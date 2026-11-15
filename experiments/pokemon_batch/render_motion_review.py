@@ -6,7 +6,7 @@ Movie recording uses a fixed 30 Hz clock; it is not a performance benchmark.
 import argparse,json,os,subprocess
 from pathlib import Path
 
-TITLES={'mega-charizard-x':'Mega Charizard X','ash-greninja':'Ash-Greninja','hydreigon':'Hydreigon','rillaboom':'Rillaboom'}
+TITLES={'mega-charizard-y':'Mega Charizard Y','ash-greninja':'Ash-Greninja','hydreigon':'Hydreigon','rillaboom':'Rillaboom'}
 LABELS={'wait':'Espera — ciclo contínuo','run':'Deslocamento','damage':'Receber dano e recuperar a postura','down':'Desmaio','hikkaku':'Ataque físico — garras / braços','kick':'Ataque físico — pernas','kime':'Ataque especial / postura de ação','kime_a':'Ataque alternativo','tackle':'Investida física','takeoff':'Decolagem — rascunho','kuchu_wait':'Espera aérea','kyukoka':'Mergulho aéreo','kuchu_down':'Desmaio no ar','kime_phy':'Ataque físico alternativo'}
 
 def plan_for(key,report):

@@ -6,28 +6,28 @@
   "automatic_delivery_implemented": false,
   "entries": [
     {
-      "key": "mega-charizard-x",
-      "name": "Mega Charizard X",
+      "key": "mega-charizard-y",
+      "name": "Mega Charizard Y",
       "national_id": 6,
-      "form": "mega_x",
+      "form": "mega_y",
       "delivery": "independent_form_requested_like_mega_lucario",
       "source_zip": {
-        "name": "mega-charizard-x-pokemon.zip",
-        "sha256": "bc42740e2aeadf1fa1ffa4078feb29fa6b284aa24874d492418134d95b5f5234",
-        "bytes": 621135
+        "name": "mega-charizard-y-pokemon.zip",
+        "sha256": "e0fed6598797fafcb22620894418238f8074740b0ed284e5d87b527bd033004f",
+        "bytes": 721729
       },
       "geometry": {
         "format": "glTF 2.0",
         "meshes": 4,
-        "vertices": 5448,
-        "triangles": 7726,
-        "skin_joint_count": 119,
+        "vertices": 5928,
+        "triangles": 9182,
+        "skin_joint_count": 103,
         "animation_clips": 0,
         "referenced_buffers_and_images_present": true
       },
-      "animation_status": "motion_draft_rejected_requires_species_specific_rework",
+      "animation_status": "species_specific_pose_and_idle_in_development",
       "configuration": {
-        "status": "player_moves_confirmed_remaining_configuration_pending",
+        "status": "previous_charizard_moves_carried_forward_not_reselected_for_y",
         "moves": [
           394,
           337,
@@ -41,16 +41,21 @@
         "evs": null,
         "rental_pass": 37,
         "replaced_slot": 2,
-        "npc_randomization": "content/pokemon/battle-rules.json"
+        "npc_randomization": "content/pokemon/battle-rules.json",
+        "types": [
+          "Fire",
+          "Flying"
+        ]
       },
       "internal_species_id": null,
       "targets": {
         "dolphin": "not_installed",
         "native": "private_source_geometry_staged_no_motion"
       },
-      "battle_rules_key": "mega-charizard-x",
+      "battle_rules_key": "mega-charizard-y",
       "source_import_proof": "experiments/pokemon_batch/source-import-proof.json",
-      "donor_reference_required": "pkx_006.fsys"
+      "donor_reference_required": "pkx_006.fsys",
+      "replaces_requested_form": "mega_x"
     },
     {
       "key": "ash-greninja",

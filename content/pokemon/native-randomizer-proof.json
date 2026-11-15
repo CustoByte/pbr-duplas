@@ -7,14 +7,14 @@
   "six_stat_comparisons": 288,
   "sample_sets": [
     {
-      "key": "mega-charizard-x",
+      "key": "mega-charizard-y",
       "seed": 0,
       "stats": [
         156,
-        164,
-        156,
-        133,
-        107,
+        138,
+        119,
+        159,
+        137,
         149
       ],
       "nature": 8,
@@ -42,14 +42,14 @@
       ]
     },
     {
-      "key": "mega-charizard-x",
+      "key": "mega-charizard-y",
       "seed": 1,
       "stats": [
         170,
-        179,
-        139,
-        136,
-        104,
+        153,
+        106,
+        162,
+        134,
         129
       ],
       "nature": 13,
@@ -78,9 +78,9 @@
     }
   ],
   "source_sha256": "fca2160beb598b16a9bd4c260fb473130fce898d7fa4f3c25147b164045363e3",
-  "rules_sha256": "ca09fbad7f295097d4f7c3c35cbc937c2383501e2fd9cf7f30ba19ec0ca1df72",
-  "compiled_rules_header_sha256": "6ae47307167d0bccdb37bc7818c52b2e5fee28bb684ffb7d6df7c14c994c7395",
-  "payload_sha256": "080b6c627474db87722dadc74617e24bdad2d4ae6031e0319e1bec236909b328",
+  "rules_sha256": "d11e1a400c35f8b165e0ed76a00336bd9c43572133731da39f41e0382887d132",
+  "compiled_rules_header_sha256": "4404b7d51552928992d9c75ba1aae9a1b0da09af8d6481bbd985c9e4eb87ded5",
+  "payload_sha256": "e4c9a693db793b7dfb8be8baa271e6f9ab464a3314b681c5756b8af310445612",
   "dol_sha256": "ca62af848c3ef88d3bf9164c8c52af6f75508124358517f177228191594c4b7c",
   "fixture_stat_row_replaced": true,
   "fixture_species_alias": 502,
