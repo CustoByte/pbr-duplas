@@ -5,9 +5,11 @@ Preserva Snivy, Mega Lucario, Little Battle e os demais slots. O Lucario e o
 Charizard originais continuam disponíveis como espécies independentes.
 
 Conjunto fixo do jogador: Flamethrower / Air Slash / Solar Beam / Protect.
-Drought, Timid, sem item, IVs 31, EVs 4 HP / 252 SpA / 252 Speed.
-Nível 50: HP154 / ATK111 / DEF98 / SpA211 / SpD135 / Speed167.
-Base canônica 78/104/78/159/115/100; sem bônus artificial de shiny.
+Drought, Timid, sem item, IVs 20, sem EVs de treinamento competitivo.
+Nível 50: HP148 / ATK107 / DEF93 / SpA150 / SpD110 / Speed115.
+Base ajustada para este mod: 78/104/78/135/95/90 (total 580), sem bônus artificial de shiny.
+O perfil antigo do passe é migrado pelos getters/setters nativos, sem resetar
+apelido, golpes ou item; spreads de treinamento editados são preservados.
 Drought usa as regras nativas de clima da geração IV.
 A aleatoriedade dos NPCs está adiada e nenhum hook de geração foi instalado.
 

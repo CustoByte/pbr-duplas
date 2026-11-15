@@ -39,12 +39,12 @@
         "nature": "Timid",
         "level": 50,
         "evs": {
-          "hp": 4,
+          "hp": 0,
           "atk": 0,
           "def": 0,
-          "spatk": 252,
+          "spatk": 0,
           "spdef": 0,
-          "speed": 252
+          "speed": 0
         },
         "rental_pass": 37,
         "replaced_slot": 2,
@@ -52,7 +52,9 @@
         "types": [
           "Fire",
           "Flying"
-        ]
+        ],
+        "ivs": 20,
+        "balance_profile": "rental-580"
       },
       "internal_species_id": 503,
       "targets": {

@@ -165,30 +165,30 @@
         "item": 0,
         "nature": 10,
         "ivs": [
-          31,
-          31,
-          31,
-          31,
-          31,
-          31
+          20,
+          20,
+          20,
+          20,
+          20,
+          20
         ],
         "evs": [
-          4,
           0,
           0,
-          252,
-          252,
+          0,
+          0,
+          0,
           0
         ],
         "presence": 1,
         "illegal": 0,
         "stats_hp_atk_def_speed_spatk_spdef": [
-          154,
-          111,
-          98,
-          167,
-          211,
-          135
+          148,
+          107,
+          93,
+          115,
+          150,
+          110
         ]
       }
     ],
@@ -203,7 +203,7 @@
     "model_catalog_chain_verified": true,
     "effect_roles_verified": 25,
     "action_roles_verified": 22,
-    "dol_sha256": "b693538bfea0ce0f8dcd2e82fe3b84cdb25e3ae62c7b8875d0ab0bb360ca6cb5",
+    "dol_sha256": "25cee773192ea530b588eabb6aea671ad22d9b8b8b652243ddc5410621c38353",
     "gameplay_verified": false,
     "save_file_modified": false
   },
@@ -279,7 +279,7 @@
     "native_font_height": 25,
     "serialized_record_bytes": 140,
     "gameplay_verified": false,
-    "dol_sha256": "b693538bfea0ce0f8dcd2e82fe3b84cdb25e3ae62c7b8875d0ab0bb360ca6cb5"
+    "dol_sha256": "25cee773192ea530b588eabb6aea671ad22d9b8b8b652243ddc5410621c38353"
   },
   "selection": {
     "passed": true,
@@ -645,5 +645,93 @@
     "same_bytes": 2870536,
     "different_bytes": 128,
     "reason": "float32 differences between Blender thread configurations; each converter runs full decoded motion/skin validation"
-  }
+  },
+  "migration": {
+    "passed": true,
+    "already_delivered_preset_migrated": true,
+    "ivs": [
+      20,
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "evs": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "stats_hp_atk_def_speed_spatk_spdef": [
+      148,
+      107,
+      93,
+      115,
+      150,
+      110
+    ],
+    "pid_and_trainer_preserved": true,
+    "nickname_moves_item_preserved": true,
+    "user_edited_training_preserved": true,
+    "other_five_slots_and_all_other_passes_preserved": true,
+    "idempotent": true,
+    "gameplay_verified": false,
+    "save_file_written": false
+  },
+  "balance_profile": {
+    "key": "mega-charizard-y",
+    "internal_species_id": 503,
+    "rental_pass": 37,
+    "slot": 2,
+    "replaces": 8,
+    "level": 50,
+    "nature": "Timid",
+    "ability": "Drought",
+    "ability_id": 70,
+    "item": null,
+    "moves": [
+      53,
+      403,
+      76,
+      182
+    ],
+    "base_stats_hp_atk_def_spatk_spdef_speed": [
+      78,
+      104,
+      78,
+      135,
+      95,
+      90
+    ],
+    "ivs_hp_atk_def_spatk_spdef_speed": [
+      20,
+      20,
+      20,
+      20,
+      20,
+      20
+    ],
+    "evs_hp_atk_def_spatk_spdef_speed": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "stats_hp_atk_def_spatk_spdef_speed": [
+      148,
+      107,
+      93,
+      150,
+      110,
+      115
+    ],
+    "gameplay_verified": false,
+    "balance": "custom 580 base-stat budget, calibrated against level-50 rental passes"
+  },
+  "loading_proof_reused_for_byte_identical_graphics": true
 }

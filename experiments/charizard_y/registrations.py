@@ -40,7 +40,7 @@ def prepare(resources,messages,sdr,reference):
  for i,a in enumerate(base[50:72]):model[50+i]=actions[native['actions'][a]['name']]
  stats=bytearray(resources[STATS][48+6*52:48+7*52])
  struct.pack_into('>HH',stats,20,17,1005);struct.pack_into('>HHH',stats,24,count+1,count+1,MODEL)
- stats[30:36]=bytes((78,104,78,100,159,115));stats[36:38]=bytes((10,2));stats[48:50]=bytes((70,0))
+ stats[30:36]=bytes((78,104,78,90,135,95));stats[36:38]=bytes((10,2));stats[48:50]=bytes((70,0))
  replacements={MAP:bytes(mapping),STATS:append(resources[STATS],503,52,bytes(stats)),MODELS:append(resources[MODELS],672,72,bytes(model))}
  replacements[0x00820200]=append(resources[0x00820200],503,42,bytes(42))
  levels=resources[0x12A90200][48+6*80:48+7*80]
