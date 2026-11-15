@@ -25,7 +25,7 @@
         "animation_clips": 0,
         "referenced_buffers_and_images_present": true
       },
-      "animation_status": "donor_received_private_motion_draft_visual_review_pending",
+      "animation_status": "motion_draft_rejected_requires_species_specific_rework",
       "configuration": {
         "status": "player_moves_confirmed_remaining_configuration_pending",
         "moves": [
@@ -72,7 +72,7 @@
         "animation_clips": 0,
         "referenced_buffers_and_images_present": true
       },
-      "animation_status": "donor_received_private_motion_draft_visual_review_pending",
+      "animation_status": "motion_draft_rejected_requires_species_specific_rework",
       "configuration": {
         "status": "awaiting_user_choices",
         "moves": null,
@@ -122,7 +122,7 @@
         "animation_keys": 0,
         "usable_motion_clips": 0
       },
-      "animation_status": "donor_received_private_motion_draft_visual_review_pending",
+      "animation_status": "motion_draft_rejected_requires_species_specific_rework",
       "configuration": {
         "status": "awaiting_user_choices",
         "moves": null,
@@ -166,7 +166,7 @@
         "animation_keys": 0,
         "usable_motion_clips": 0
       },
-      "animation_status": "donor_received_private_motion_draft_visual_review_pending",
+      "animation_status": "motion_draft_rejected_requires_species_specific_rework",
       "configuration": {
         "status": "awaiting_user_choices",
         "moves": null,

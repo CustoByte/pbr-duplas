@@ -160,7 +160,9 @@
         "clock": "fixed_30_hz_not_performance_measurement",
         "dolphin_capture": false,
         "camera_tracks_body": true
-      }
+      },
+      "user_review": "rejected",
+      "eligible_for_game_package": false
     },
     {
       "key": "ash-greninja",
@@ -271,7 +273,9 @@
         "clock": "fixed_30_hz_not_performance_measurement",
         "dolphin_capture": false,
         "camera_tracks_body": false
-      }
+      },
+      "user_review": "rejected",
+      "eligible_for_game_package": false
     },
     {
       "key": "hydreigon",
@@ -426,7 +430,9 @@
         "clock": "fixed_30_hz_not_performance_measurement",
         "dolphin_capture": false,
         "camera_tracks_body": true
-      }
+      },
+      "user_review": "rejected",
+      "eligible_for_game_package": false
     },
     {
       "key": "rillaboom",
@@ -538,12 +544,17 @@
         "clock": "fixed_30_hz_not_performance_measurement",
         "dolphin_capture": false,
         "camera_tracks_body": false
-      }
+      },
+      "user_review": "rejected",
+      "eligible_for_game_package": false
     }
   ],
   "limitations": [
     "Numerical checks and labeled animation reviews do not prove native SDR or Dolphin battle compatibility.",
     "Entry/exit, move effects, individual status actions and complete visual approval remain pending.",
     "No new game package or feed published."
-  ]
+  ],
+  "user_review": "rejected",
+  "eligible_for_game_package": false,
+  "review_reason": "User rejected all four motion previews for unacceptable visual quality."
 }

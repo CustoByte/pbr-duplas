@@ -1,5 +1,11 @@
 # Preparação privada dos quatro modelos
 
+**Revisão do usuário: os quatro rascunhos foram rejeitados por qualidade visual.**
+Não usar os clips atuais como candidatos de entrega. Os testes numéricos de
+interpolação não demonstram anatomia, atuação, contato com o chão ou movimento
+convincente. A próxima revisão deve começar por pose e espera de uma espécie,
+com referências adequadas e correções anatômicas, antes de gerar outros movimentos.
+
 O importador prepara cenas Blender/GLB com o esqueleto e texturas fornecidos.
 **Não cria animações, não instala os Pokémon e não gera FSYS/SDR para o Dolphin.**
 O gerador de bancos de 20 golpes continua separado, em `content/pokemon`.
