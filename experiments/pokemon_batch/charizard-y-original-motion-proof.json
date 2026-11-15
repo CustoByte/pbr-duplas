@@ -36,8 +36,7 @@
     "Tail1": "liz_o1",
     "Tail3": "liz_o2",
     "Tail5": "liz_o3",
-    "Tail7": "liz_o4",
-    "Tongue": "sita_1"
+    "Tail7": "liz_o4"
   },
   "translation_scale": 0.35774036652770574,
   "body_actions": {
@@ -140,7 +139,36 @@
   "dolphin_ready": false,
   "manual_visual_review_required": true,
   "uv_eye_animation_ported": false,
+  "local_hinge_contracts": {
+    "head jaw": {
+      "reference_parent": "liz_atama",
+      "axis": [
+        1,
+        0,
+        0
+      ],
+      "neutral_action": "wait",
+      "neutral_frame": 0,
+      "gain": 0.75,
+      "minimum_degrees": 0,
+      "maximum_degrees": 65
+    }
+  },
   "glb_bytes": 5524184,
+  "hinge_angle_ranges_degrees": {
+    "head jaw": [
+      0.0,
+      62.57196843000221
+    ]
+  },
+  "motion_base_user_requested": "original_charizard",
+  "body_visual_approved": false,
+  "eligible_for_game_package": false,
+  "tail_fire_visual_approved": true,
+  "tail_fire_native_port_verified": false,
+  "native_export_verified": false,
+  "gameplay_verified": false,
+  "approved_flame_code_sha256": "a8c763bb072de156686cb3a02acbd15129ae90386c4e42fdc5f825c86472d33f",
   "numerical_review": {
     "kind": "baked-motion-numerical-review",
     "source_name": "mega-charizard-y-motion.blend",
@@ -246,29 +274,139 @@
     "errors": [],
     "dolphin_verified": false
   },
-  "motion_base_user_requested": "original_charizard",
-  "body_visual_approved": false,
-  "eligible_for_game_package": false,
-  "tail_fire_visual_approved": true,
-  "tail_fire_native_port_verified": false,
-  "native_export_verified": false,
-  "gameplay_verified": false,
-  "review_pose_renders_inspected": [
-    "wait",
-    "kuchu_wait"
-  ],
-  "video": {
-    "name": "mega-charizard-y-animacoes.mp4",
-    "sha256": "02c5dad02f46e26298fcee48ddab69417a55d2dd14bc28978f373063f679d96a",
-    "bytes": 11080938,
-    "media": {
-      "codec_name": "h264",
-      "width": 1280,
-      "height": 720,
-      "r_frame_rate": "30/1",
-      "duration": "44.800000"
-    },
-    "clock": "fixed_30_hz_not_performance_measurement"
+  "jaw_review": {
+    "passed": true,
+    "errors": [],
+    "closed_limit_degrees": 0,
+    "maximum_limit_degrees": 65,
+    "half_frame_sampling": true,
+    "actions": [
+      {
+        "action": "Body_damage",
+        "min_degrees": 0.0,
+        "max_degrees": 46.2188651969204,
+        "max_off_axis": 1.3429006737994904e-07,
+        "peak_frame": 39.0
+      },
+      {
+        "action": "Body_down",
+        "min_degrees": 3.4225949690562027e-06,
+        "max_degrees": 21.12396889757281,
+        "max_off_axis": 6.876970558678038e-08,
+        "peak_frame": 66.0
+      },
+      {
+        "action": "Body_hikkaku",
+        "min_degrees": -4.402270363484781e-07,
+        "max_degrees": 40.7818188238879,
+        "max_off_axis": 1.2383845384137241e-07,
+        "peak_frame": 43.0
+      },
+      {
+        "action": "Body_kick",
+        "min_degrees": 0.0,
+        "max_degrees": 14.354545162652961,
+        "max_off_axis": 1.2658119448341526e-07,
+        "peak_frame": 50.0
+      },
+      {
+        "action": "Body_kime",
+        "min_degrees": -2.0490565881594257e-05,
+        "max_degrees": 62.571981932783046,
+        "max_off_axis": 1.0968229324043412e-07,
+        "peak_frame": 58.0
+      },
+      {
+        "action": "Body_kime_a",
+        "min_degrees": 0.0,
+        "max_degrees": 44.6971055946167,
+        "max_off_axis": 1.0513839205077983e-07,
+        "peak_frame": 91.0
+      },
+      {
+        "action": "Body_kuchu_wait",
+        "min_degrees": 8.508313824172506,
+        "max_degrees": 19.70282212746033,
+        "max_off_axis": 7.246581855473756e-08,
+        "peak_frame": 13.0
+      },
+      {
+        "action": "Body_kyukoka",
+        "min_degrees": 0.0,
+        "max_degrees": 21.62444522353088,
+        "max_off_axis": 9.024163733851892e-08,
+        "peak_frame": 27.0
+      },
+      {
+        "action": "Body_run",
+        "min_degrees": 21.61705184861481,
+        "max_degrees": 35.3238029976016,
+        "max_off_axis": 1.875189850490769e-08,
+        "peak_frame": 0.0
+      },
+      {
+        "action": "Body_tackle",
+        "min_degrees": -1.536792563252869e-05,
+        "max_degrees": 27.843352478577422,
+        "max_off_axis": 1.372303983593796e-07,
+        "peak_frame": 92.0
+      },
+      {
+        "action": "Body_takeoff",
+        "min_degrees": 0.0,
+        "max_degrees": 6.212135134569233,
+        "max_off_axis": 1.3727115472438222e-07,
+        "peak_frame": 77.0
+      },
+      {
+        "action": "Body_wait",
+        "min_degrees": 0.0,
+        "max_degrees": 10.614438996650694,
+        "max_off_axis": 3.2632835169691803e-08,
+        "peak_frame": 29.0
+      }
+    ],
+    "gameplay_verified": false
   },
-  "approved_flame_code_sha256": "a8c763bb072de156686cb3a02acbd15129ae90386c4e42fdc5f825c86472d33f"
+  "static_asset_regression": {
+    "passed": true,
+    "mesh_count": 4,
+    "attributes_compared": 20,
+    "materials_unchanged": true,
+    "embedded_images_unchanged": true,
+    "geometry_and_uv_unchanged": true
+  },
+  "glb_sha256": "ab5867a594c79ea4b6d4543730065449d880f13a7ca39dd35a5f2bebf4fc278e",
+  "jaw_fix_visual_checked": [
+    "same_wait_frame_comparison",
+    "attack_maximum_opening"
+  ],
+  "videos": [
+    {
+      "name": "mega-charizard-y-rosto-corrigido.mp4",
+      "sha256": "3fe03bcb4a0f99b11ce09c0a56ce287d67e55a48e0b3304de6ad9b7a1779c199",
+      "bytes": 3095280,
+      "media": {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "30/1",
+        "duration": "8.066667"
+      },
+      "full_decode_verified": true
+    },
+    {
+      "name": "mega-charizard-y-animacoes.mp4",
+      "sha256": "b35f04e78c1cb74bcc215434685ff235bc8ea8939846bfdf836ca775750e402d",
+      "bytes": 11087935,
+      "media": {
+        "codec_name": "h264",
+        "width": 1280,
+        "height": 720,
+        "r_frame_rate": "30/1",
+        "duration": "44.800000"
+      },
+      "full_decode_verified": true
+    }
+  ]
 }

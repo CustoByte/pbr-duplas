@@ -282,8 +282,7 @@
       "Tail1": "liz_o1",
       "Tail3": "liz_o2",
       "Tail5": "liz_o3",
-      "Tail7": "liz_o4",
-      "Tongue": "sita_1"
+      "Tail7": "liz_o4"
     },
     "aliases": {
       "idle": "wait",
@@ -321,6 +320,21 @@
         "koshi",
         "liz_foot_l"
       ]
+    },
+    "local_hinges": {
+      "head jaw": {
+        "reference_parent": "liz_atama",
+        "axis": [
+          1,
+          0,
+          0
+        ],
+        "neutral_action": "wait",
+        "neutral_frame": 0,
+        "gain": 0.75,
+        "minimum_degrees": 0,
+        "maximum_degrees": 65
+      }
     }
   }
 }

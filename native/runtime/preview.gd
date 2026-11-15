@@ -72,7 +72,9 @@ func _ready() -> void:
 		if tracking_bone >= 0:
 			tracking_skeleton.force_update_all_bone_transforms()
 			tracking_origin = tracking_skeleton.global_transform * tracking_skeleton.get_bone_global_pose(tracking_bone).origin
-			if plan.has("camera_focus_bone"): camera_target_base = tracking_origin + Vector3(0,.45,0)
+			if plan.has("camera_focus_bone"):
+				var offset: Array = plan.get("camera_focus_offset",[0,.45,0])
+				camera_target_base = tracking_origin + Vector3(offset[0],offset[1],offset[2])
 	if plan.get("tail_flame",false) and is_instance_valid(tracking_skeleton):
 		for mesh in laboratory.model.find_children("*", "MeshInstance3D", true, false):
 			if "003" in String(mesh.name): mesh.hide()

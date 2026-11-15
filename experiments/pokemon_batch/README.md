@@ -181,3 +181,18 @@ com as ações do doador e o efeito aprovado. A sequência de decolagem/espera a
 não recebe uma volta artificial à espera no chão entre esses dois clips. As
 prévia e os modelos ficam privados. A integração SDR/FSYS e os testes no Dolphin
 continuam pendentes e nenhum canal de atualização jogável é alterado.
+
+## Correção dos dentes atravessando o focinho
+
+A mandíbula de bind do Charizard original fica aberta; a espera fecha cerca de
+30 graus em relação a esse bind. Copiar esse delta para o bind já fechado do Y
+fecha além da superfície do focinho. A correção usa a posição fechada da espera
+como referência e transfere a rotação relativa entre cabeça e mandíbula como
+uma dobradiça local. O ganho é 0,75, com limites 0–65 graus. A língua acompanha a
+mandíbula do Y, evitando compensação global indevida. Texturas e dentes são
+preservados; não se pinta nem remove a geometria branca.
+
+`verify_jaw_hinge.py` amostra frames inteiros e intermediários dos doze clips e
+verifica os limites e o eixo da articulação. A revisão compara a pose-fonte,
+a adaptação anterior e a correção no mesmo quadro, e confere abertura em ataque.
+Isso é uma correção do modelo adaptado; não valida instalação no Dolphin.

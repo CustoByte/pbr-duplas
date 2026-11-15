@@ -61,10 +61,11 @@ reference.animation_data.action = actions[config.get('idle_reference','wait')]
 scene.frame_set(0)
 baseline = {name:C@reference.pose.bones[name].matrix.copy() for name in set(mapping.values())}
 neutral = {}
+hinge_ranges={name:[float("inf"),float("-inf")] for name in config.get("local_hinges",{})}
 report = dict(key=key,source_donor=inventory['source_name'],source_donor_sha256=inventory['source_sha256'],
               mapping=mapping,translation_scale=scale,body_actions={},aliases=config['aliases'],
               preliminary_motion_only=True,move_effects_verified=False,dolphin_ready=False,
-              manual_visual_review_required=True,uv_eye_animation_ported=False)
+              manual_visual_review_required=True,uv_eye_animation_ported=False,local_hinge_contracts=config.get("local_hinges",{}))
 metadata = {a['name']:a for a in contract}
 names = ['wait','run','damage','down']+[n for n in body_names if n not in ('wait','run','damage','down')]
 for name in names:
@@ -103,6 +104,22 @@ for name in names:
                 rotation=delta@base_rotations[bone.name]
                 if bone.name in ('Origin','Waist'):
                     position=rest[bone.name].translation+(pose[n].translation-reference_basis.translation)*scale
+            hinge=config.get('local_hinges',{}).get(bone.name)
+            if hinge:
+                n=mapping[bone.name];reference_parent=hinge['reference_parent']
+                # A donor's bind jaw can be open even when the target bind jaw
+                # is closed. Measure motion relative to the donor's CLOSED wait.
+                reference_neutral=baseline[reference_parent].to_quaternion().inverted()@baseline[n].to_quaternion()
+                reference_current=pose[reference_parent].to_quaternion().inverted()@pose[n].to_quaternion()
+                delta=reference_neutral.inverted()@reference_current
+                native_axis=native_rest[n].to_quaternion().inverted()@Vector(hinge['axis'])
+                angle=2*math.atan2(Vector((delta.x,delta.y,delta.z)).dot(native_axis),delta.w)
+                angle=(angle+math.pi)%(2*math.pi)-math.pi
+                angle=max(math.radians(hinge['minimum_degrees']),min(math.radians(hinge['maximum_degrees']),angle*hinge['gain']))
+                hinge_ranges[bone.name][0]=min(hinge_ranges[bone.name][0],math.degrees(angle))
+                hinge_ranges[bone.name][1]=max(hinge_ranges[bone.name][1],math.degrees(angle))
+                target_axis=rest[bone.name].to_quaternion().inverted()@Vector(hinge['axis'])
+                rotation=(parent@loc).to_quaternion()@Quaternion(target_axis,angle)
             matrix=rotation.to_matrix().to_4x4()
             matrix.translation=position
             # Props stay in the source geometry, but receive explicit control.
@@ -172,5 +189,6 @@ bpy.ops.export_scene.gltf(filepath=str(glb),export_format='GLB',use_selection=Tr
     export_animations=True,export_nla_strips=True,export_anim_single_armature=True,
     export_frame_range=False,export_force_sampling=True,export_skins=True,export_yup=True)
 report['glb_bytes']=glb.stat().st_size
+report['hinge_angle_ranges_degrees']=hinge_ranges
 (output/(key+'-motion.json')).write_text(json.dumps(report,indent=2)+'\n')
 print('MOTION_DRAFT_READY',key,flush=True)
