@@ -115,19 +115,22 @@ public class UpdateService
         response.EnsureSuccessStatusCode();
 
         var total = response.Content.Headers.ContentLength ?? -1;
-        await using var source = await response.Content.ReadAsStreamAsync(ct);
-        await using var target = File.Create(targetPath);
-
-        var buffer = new byte[81920];
-        long downloaded = 0;
-        int read;
-        while ((read = await source.ReadAsync(buffer, ct)) > 0)
+        await using (var source = await response.Content.ReadAsStreamAsync(ct))
+        await using (var target = File.Create(targetPath))
         {
-            await target.WriteAsync(buffer.AsMemory(0, read), ct);
-            downloaded += read;
-            if (total > 0) progress?.Report((double)downloaded / total * 100);
+            var buffer = new byte[81920];
+            long downloaded = 0;
+            int read;
+            while ((read = await source.ReadAsync(buffer, ct)) > 0)
+            {
+                await target.WriteAsync(buffer.AsMemory(0, read), ct);
+                downloaded += read;
+                if (total > 0) progress?.Report((double)downloaded / total * 100);
+            }
+            await target.FlushAsync(ct);
         }
 
+        // O arquivo precisa estar fechado antes de ser lido para o checksum.
         return (targetPath, await ComputeSha256Async(targetPath, ct));
     }
 
