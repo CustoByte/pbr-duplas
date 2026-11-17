@@ -27,6 +27,8 @@
         <StackPanel DockPanel.Dock="Top" Margin="12,0">
           <Button Content="INÍCIO" Style="{StaticResource Bloodborne.Button}"
                   HorizontalContentAlignment="Left" Margin="0,0,0,4" Click="NavHome_Click"/>
+          <Button Content="INSTALAR JOGO" Style="{StaticResource Bloodborne.Button}"
+                  HorizontalContentAlignment="Left" Margin="0,0,0,4" Click="NavInstall_Click"/>
           <Button Content="ATUALIZAÇÕES" Style="{StaticResource Bloodborne.Button}"
                   HorizontalContentAlignment="Left" Margin="0,0,0,4" Click="NavUpdates_Click"/>
           <Button Content="NOTAS DE VERSÃO" Style="{StaticResource Bloodborne.Button}"
@@ -67,6 +69,8 @@
                      Foreground="{StaticResource Bloodborne.TextDimBrush}"/>
           <Button Content="INICIAR CAÇADA" Style="{StaticResource Bloodborne.Button.Primary}"
                   Width="300" Margin="0,40,0,0" Click="LaunchButton_Click"/>
+          <Button Content="INSTALAR ATUALIZAÇÕES NO JOGO" Style="{StaticResource Bloodborne.Button}"
+                  Width="300" Margin="0,12,0,0" Click="NavInstall_Click"/>
         </StackPanel>
 
         <TextBlock Grid.Row="1" x:Name="LaunchHintText" TextAlignment="Center" FontSize="12"
@@ -115,6 +119,56 @@
         <Button Grid.Row="3" x:Name="DownloadUpdateButton" Content="BAIXAR E APLICAR"
                 Style="{StaticResource Bloodborne.Button.Primary}" HorizontalAlignment="Left"
                 Margin="0,16,0,0" Visibility="Collapsed" Click="DownloadUpdateButton_Click"/>
+      </Grid>
+
+      <!-- INSTALAR JOGO -->
+      <Grid x:Name="PageInstall" Visibility="Collapsed" Margin="32">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="INSTALAR JOGO" Style="{StaticResource Bloodborne.TitleText}"/>
+        <Rectangle Grid.Row="0" Height="1" VerticalAlignment="Bottom" Margin="0,8,0,0"
+                   Fill="{StaticResource Bloodborne.BorderBrush}"/>
+
+        <StackPanel Grid.Row="1" Margin="0,20,0,16">
+          <TextBlock Text="Selecione a ISO original do Pokémon Battle Revolution (RPBE01)."
+                     TextWrapping="Wrap"/>
+          <TextBlock Text="A imagem original não é modificada. O launcher cria uma cópia com todas as atualizações."
+                     TextWrapping="Wrap" FontSize="12" Margin="0,4,0,12"
+                     Foreground="{StaticResource Bloodborne.TextDimBrush}"/>
+          <Grid>
+            <Grid.ColumnDefinitions>
+              <ColumnDefinition Width="*"/>
+              <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="InstallImagePathBox" Grid.Column="0" Height="30" VerticalContentAlignment="Center"
+                     Background="#0D0707" BorderBrush="{StaticResource Bloodborne.BorderBrush}" Padding="8,0"/>
+            <Button Grid.Column="1" Content="PROCURAR ISO" Style="{StaticResource Bloodborne.Button}"
+                    Margin="8,0,0,0" Click="BrowseInstallImage_Click"/>
+          </Grid>
+          <Button x:Name="InstallButton" Content="INSTALAR ATUALIZAÇÕES"
+                  Style="{StaticResource Bloodborne.Button.Primary}" HorizontalAlignment="Left"
+                  Margin="0,16,0,0" Click="InstallButton_Click"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2" Margin="0,0,0,12">
+          <TextBlock x:Name="InstallStatusText" Text="Aguardando início." Margin="0,0,0,8"
+                     Foreground="{StaticResource Bloodborne.GoldBrush}"/>
+          <ProgressBar x:Name="InstallProgress" Style="{StaticResource Bloodborne.ProgressBar}"
+                       Minimum="0" Maximum="100"/>
+        </StackPanel>
+
+        <Border Grid.Row="3" Background="#0D0707"
+                BorderBrush="{StaticResource Bloodborne.BorderBrush}" BorderThickness="1" Padding="12">
+          <ScrollViewer x:Name="InstallLogScroll" VerticalScrollBarVisibility="Auto">
+            <TextBlock x:Name="InstallLogText" FontFamily="Consolas" FontSize="12" TextWrapping="Wrap"
+                       Foreground="{StaticResource Bloodborne.TextDimBrush}"/>
+          </ScrollViewer>
+        </Border>
       </Grid>
 
       <!-- NOTAS DE VERSÃO -->

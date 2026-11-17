@@ -60,10 +60,131 @@ public partial class MainWindow : Window
     private void ShowPage(FrameworkElement page)
     {
         PageHome.Visibility = Visibility.Collapsed;
+        PageInstall.Visibility = Visibility.Collapsed;
         PageUpdates.Visibility = Visibility.Collapsed;
         PageNotes.Visibility = Visibility.Collapsed;
         PageSettings.Visibility = Visibility.Collapsed;
         page.Visibility = Visibility.Visible;
+    }
+
+    private void NavInstall_Click(object sender, RoutedEventArgs e)
+    {
+        ShowPage(PageInstall);
+        InstallImagePathBox.Text = _config.OriginalImagePath;
+    }
+
+    private void BrowseInstallImage_Click(object sender, RoutedEventArgs e)
+    {
+        var dialog = new OpenFileDialog
+        {
+            Title = "Selecione a ISO original do Pokémon Battle Revolution",
+            Filter = "Imagens de jogo|*.iso;*.rvz;*.wbfs;*.gcm|Todos os arquivos|*.*"
+        };
+        if (dialog.ShowDialog() == true)
+            InstallImagePathBox.Text = dialog.FileName;
+    }
+
+    private void InstallLog(string message)
+    {
+        var line = $"[{DateTime.Now:HH:mm:ss}] {message}";
+        InstallLogText.Text = string.IsNullOrEmpty(InstallLogText.Text) ? line : $"{InstallLogText.Text}\n{line}";
+        InstallLogScroll.ScrollToEnd();
+    }
+
+    private async void InstallButton_Click(object sender, RoutedEventArgs e)
+    {
+        var imagePath = InstallImagePathBox.Text.Trim();
+        if (string.IsNullOrWhiteSpace(imagePath) || !File.Exists(imagePath))
+        {
+            MessageBox.Show("Selecione a ISO do jogo primeiro.", "PBR Duplas",
+                MessageBoxButton.OK, MessageBoxImage.Warning);
+            return;
+        }
+
+        var applier = new ModApplyService(_config.DolphinPath);
+        if (string.IsNullOrEmpty(applier.DolphinToolPath))
+        {
+            MessageBox.Show(
+                "DolphinTool.exe não encontrado.\n\nEle vem junto com o Dolphin, na pasta Tools.\n" +
+                "Configure o caminho do Dolphin em CONFIGURAÇÕES para o launcher localizá-lo.",
+                "PBR Duplas", MessageBoxButton.OK, MessageBoxImage.Warning);
+            return;
+        }
+
+        InstallButton.IsEnabled = false;
+        InstallProgress.Value = 0;
+        InstallLogText.Text = "";
+        InstallStatusText.Text = "Iniciando...";
+
+        try
+        {
+            // baixar pacote de mods mais recente
+            InstallStatusText.Text = "Baixando pacote de modificações...";
+            InstallLog("Consultando a versão mais recente do mod...");
+
+            var manifest = await _updateService.GetManifestAsync(_config.GitHubOwner, _config.GitHubRepo);
+            if (manifest is null || string.IsNullOrWhiteSpace(manifest.ModPackageUrl))
+                throw new InvalidOperationException("Nenhum pacote de modificações publicado no repositório.");
+
+            InstallLog($"Versão do mod: {manifest.Version}");
+
+            var pkgDir = Path.Combine(
+                Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                "PBRDuplas", "packages");
+            var pkgProgress = new Progress<double>(p => InstallProgress.Value = p * 0.15);
+            var (zipPath, sha) = await _updateService.DownloadAsync(
+                manifest.ModPackageUrl, pkgDir, "aplicador-core.zip", pkgProgress);
+
+            if (!string.IsNullOrWhiteSpace(manifest.ModPackageSha256)
+                && !string.Equals(sha, manifest.ModPackageSha256, StringComparison.OrdinalIgnoreCase))
+                throw new InvalidDataException("O pacote baixado não confere com o checksum publicado.");
+
+            InstallLog("Pacote baixado e verificado.");
+            InstallProgress.Value = 15;
+
+            // saída: cópia modificada ao lado da original
+            var outputPath = Path.Combine(
+                Path.GetDirectoryName(imagePath)!,
+                Path.GetFileNameWithoutExtension(imagePath) + " - PBR Duplas.rvz");
+
+            var progress = new Progress<ApplyProgress>(p =>
+            {
+                InstallProgress.Value = 15 + p.Percent * 0.85;
+                InstallStatusText.Text = p.Message;
+            });
+
+            InstallLog("Aplicando modificações (isso pode levar vários minutos)...");
+            await applier.ApplyModAsync(imagePath, zipPath, outputPath, progress);
+
+            _config.OriginalImagePath = imagePath;
+            _config.ModdedImagePath = outputPath;
+            _config.GamePath = outputPath;
+            _config.InstalledVersion = manifest.Version;
+            ConfigService.Save(_config);
+
+            GameVersionText.Text = $"Jogo {manifest.Version}";
+            GamePathBox.Text = outputPath;
+            ValidateLaunchReady();
+
+            InstallStatusText.Text = "Instalação concluída.";
+            InstallLog($"Jogo modificado criado: {outputPath}");
+            Log($"Mods aplicados: {manifest.Version}");
+
+            MessageBox.Show($"Instalação concluída.\n\nJogo modificado:\n{outputPath}",
+                "PBR Duplas", MessageBoxButton.OK, MessageBoxImage.Information);
+        }
+        catch (Exception ex)
+        {
+            InstallStatusText.Text = "Falha na instalação.";
+            InstallLog($"Erro: {ex.Message}");
+            Log($"Erro na instalação: {ex.Message}");
+            MessageBox.Show($"Não foi possível aplicar as modificações:\n\n{ex.Message}",
+                "PBR Duplas", MessageBoxButton.OK, MessageBoxImage.Error);
+        }
+        finally
+        {
+            InstallButton.IsEnabled = true;
+        }
     }
 
     private void NavNotes_Click(object sender, RoutedEventArgs e)
@@ -270,14 +391,10 @@ public partial class MainWindow : Window
                     throw new InvalidDataException("O arquivo baixado não confere com o checksum publicado.");
 
                 UpdateStatusText.Text = "Aplicando atualização...";
-                var installDir = AppContext.BaseDirectory;
-                UpdateService.ExtractLauncher(zipPath, installDir);
-                Log($"Launcher atualizado para {manifest.Version}.");
+                Log($"Launcher atualizado para {manifest.Version}. Reiniciando...");
 
-                MessageBox.Show(
-                    "Launcher atualizado. Feche e abra novamente para usar a nova versão.",
-                    "PBR Duplas", MessageBoxButton.OK, MessageBoxImage.Information);
-                UpdateStatusText.Text = $"Launcher atualizado para {manifest.Version}.";
+                SelfUpdater.ScheduleUpdate(zipPath, AppContext.BaseDirectory, "PBR Duplas.exe");
+                return;
             }
             else if (!string.IsNullOrWhiteSpace(manifest.GameUrl))
             {

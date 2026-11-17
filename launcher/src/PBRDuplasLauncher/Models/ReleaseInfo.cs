@@ -28,4 +28,7 @@ public class UpdateManifest
     public string GameVersion { get; set; } = "";
     public string GameUrl { get; set; } = "";
     public string GameSha256 { get; set; } = "";
+    /// <summary>Pacote de mods (aplicador-core.zip) do release mais recente.</summary>
+    public string ModPackageUrl { get; set; } = "";
+    public string ModPackageSha256 { get; set; } = "";
 }

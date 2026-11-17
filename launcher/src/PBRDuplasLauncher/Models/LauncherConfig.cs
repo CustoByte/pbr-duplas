@@ -4,6 +4,8 @@ public class LauncherConfig
 {
     public string GamePath { get; set; } = "";
     public string DolphinPath { get; set; } = "";
+    public string OriginalImagePath { get; set; } = "";
+    public string ModdedImagePath { get; set; } = "";
     public string InstalledVersion { get; set; } = "";
     public string LastUpdateCheck { get; set; } = "";
     public bool AutoCheckUpdates { get; set; } = true;
