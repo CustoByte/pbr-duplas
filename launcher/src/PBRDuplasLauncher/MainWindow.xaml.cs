@@ -61,8 +61,47 @@ public partial class MainWindow : Window
     {
         PageHome.Visibility = Visibility.Collapsed;
         PageUpdates.Visibility = Visibility.Collapsed;
+        PageNotes.Visibility = Visibility.Collapsed;
         PageSettings.Visibility = Visibility.Collapsed;
         page.Visibility = Visibility.Visible;
+    }
+
+    private void NavNotes_Click(object sender, RoutedEventArgs e)
+    {
+        ShowPage(PageNotes);
+        _ = LoadNotesAsync();
+    }
+
+    private async Task LoadNotesAsync()
+    {
+        NotesList.ItemsSource = null;
+        var releases = await _updateService.GetReleasesAsync(_config.GitHubOwner, _config.GitHubRepo);
+
+        if (releases.Count == 0)
+        {
+            Log("Não foi possível carregar as notas de versão.");
+            return;
+        }
+
+        var current = UpdateService.NormalizeTag(_config.InstalledVersion);
+
+        NotesList.ItemsSource = releases.Select(r => new
+        {
+            Tag = r.TagName,
+            Title = string.IsNullOrWhiteSpace(r.Name) ? r.TagName : r.Name,
+            Notes = string.IsNullOrWhiteSpace(r.Body) ? "Sem notas publicadas." : r.Body,
+            Date = FormatDate(r.PublishedAt),
+            BadgeVisibility = r.Prerelease ? Visibility.Visible : Visibility.Collapsed,
+            IsCurrent = string.Equals(UpdateService.NormalizeTag(r.TagName), current,
+                StringComparison.OrdinalIgnoreCase)
+        }).ToList();
+
+        Log($"{releases.Count} versões carregadas.");
+    }
+
+    private static string FormatDate(string iso)
+    {
+        return DateTime.TryParse(iso, out var dt) ? dt.ToLocalTime().ToString("dd/MM/yyyy") : "";
     }
 
     private void NavHome_Click(object sender, RoutedEventArgs e) => ShowPage(PageHome);

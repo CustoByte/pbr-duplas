@@ -33,6 +33,49 @@ public class UpdateService
         }
     }
 
+    /// <summary>Lista todas as releases publicadas, da mais recente para a mais antiga.</summary>
+    public async Task<List<ReleaseInfo>> GetReleasesAsync(string owner, string repo,
+        CancellationToken ct = default)
+    {
+        var url = $"https://api.github.com/repos/{owner}/{repo}/releases?per_page=100";
+        var result = new List<ReleaseInfo>();
+        try
+        {
+            using var request = new HttpRequestMessage(HttpMethod.Get, url);
+            request.Headers.Accept.ParseAdd("application/vnd.github+json");
+            using var response = await Http.SendAsync(request, ct);
+            if (!response.IsSuccessStatusCode) return result;
+
+            using var doc = JsonDocument.Parse(await response.Content.ReadAsStringAsync(ct));
+            foreach (var r in doc.RootElement.EnumerateArray())
+            {
+                var release = new ReleaseInfo
+                {
+                    TagName = r.TryGetProperty("tag_name", out var t) ? t.GetString() ?? "" : "",
+                    Name = r.TryGetProperty("name", out var n) ? n.GetString() ?? "" : "",
+                    Body = r.TryGetProperty("body", out var b) ? b.GetString() ?? "" : "",
+                    PublishedAt = r.TryGetProperty("published_at", out var p) ? p.GetString() ?? "" : "",
+                    Prerelease = r.TryGetProperty("prerelease", out var pre) && pre.GetBoolean()
+                };
+                if (r.TryGetProperty("assets", out var assets))
+                {
+                    foreach (var a in assets.EnumerateArray())
+                    {
+                        release.Assets.Add(new ReleaseAsset
+                        {
+                            Name = a.GetProperty("name").GetString() ?? "",
+                            BrowserDownloadUrl = a.GetProperty("browser_download_url").GetString() ?? "",
+                            Size = a.TryGetProperty("size", out var sz) ? sz.GetInt64() : 0
+                        });
+                    }
+                }
+                result.Add(release);
+            }
+        }
+        catch { }
+        return result;
+    }
+
     public async Task<(string Path, string Sha256)> DownloadAsync(string url, string targetDir,
         string fileName, IProgress<double>? progress = null, CancellationToken ct = default)
     {
@@ -90,6 +133,8 @@ public class UpdateService
         if (string.IsNullOrWhiteSpace(latestTag)) return false;
         return Normalize(latestTag) > Normalize(currentVersion);
     }
+
+    public static string NormalizeTag(string v) => string.IsNullOrWhiteSpace(v) ? "" : v.Trim();
 
     private static Version Normalize(string v)
     {

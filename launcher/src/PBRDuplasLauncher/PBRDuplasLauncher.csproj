@@ -8,6 +8,7 @@
     <UseWPF>true</UseWPF>
     <UseWindowsForms>false</UseWindowsForms>
     <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>app.ico</ApplicationIcon>
     <AssemblyName>PBR Duplas</AssemblyName>
     <RootNamespace>PBRDuplasLauncher</RootNamespace>
     <PublishSingleFile>true</PublishSingleFile>
@@ -32,6 +33,7 @@
     <None Include="app.manifest">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <Resource Include="icon.png" />
   </ItemGroup>
 
 </Project>

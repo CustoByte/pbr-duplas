@@ -4,6 +4,7 @@
         Title="PBR Duplas" Height="700" Width="1000"
         MinWidth="900" MinHeight="650"
         WindowStartupLocation="CenterScreen"
+        Icon="icon.png"
         Style="{StaticResource Bloodborne.Window}">
 
   <Grid>
@@ -28,6 +29,8 @@
                   HorizontalContentAlignment="Left" Margin="0,0,0,4" Click="NavHome_Click"/>
           <Button Content="ATUALIZAÇÕES" Style="{StaticResource Bloodborne.Button}"
                   HorizontalContentAlignment="Left" Margin="0,0,0,4" Click="NavUpdates_Click"/>
+          <Button Content="NOTAS DE VERSÃO" Style="{StaticResource Bloodborne.Button}"
+                  HorizontalContentAlignment="Left" Margin="0,0,0,4" Click="NavNotes_Click"/>
           <Button Content="CONFIGURAÇÕES" Style="{StaticResource Bloodborne.Button}"
                   HorizontalContentAlignment="Left" Click="NavSettings_Click"/>
         </StackPanel>
@@ -112,6 +115,50 @@
         <Button Grid.Row="3" x:Name="DownloadUpdateButton" Content="BAIXAR E APLICAR"
                 Style="{StaticResource Bloodborne.Button.Primary}" HorizontalAlignment="Left"
                 Margin="0,16,0,0" Visibility="Collapsed" Click="DownloadUpdateButton_Click"/>
+      </Grid>
+
+      <!-- NOTAS DE VERSÃO -->
+      <Grid x:Name="PageNotes" Visibility="Collapsed" Margin="32">
+        <Grid.RowDefinitions>
+          <RowDefinition Height="Auto"/>
+          <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Grid.Row="0" Text="NOTAS DE VERSÃO" Style="{StaticResource Bloodborne.TitleText}"/>
+        <Rectangle Grid.Row="0" Height="1" VerticalAlignment="Bottom" Margin="0,8,0,0"
+                   Fill="{StaticResource Bloodborne.BorderBrush}"/>
+
+        <ScrollViewer Grid.Row="1" VerticalScrollBarVisibility="Auto" Margin="0,20,0,0">
+          <ItemsControl x:Name="NotesList">
+            <ItemsControl.ItemTemplate>
+              <DataTemplate>
+                <Border Background="{StaticResource Bloodborne.SurfaceBrush}"
+                        BorderBrush="{StaticResource Bloodborne.BorderBrush}"
+                        BorderThickness="0,0,0,1" Padding="0,0,0,20" Margin="0,0,0,20">
+                  <StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                      <TextBlock Text="{Binding Tag}" FontFamily="{StaticResource Bloodborne.Font.Title}"
+                                 FontSize="18" Foreground="{StaticResource Bloodborne.GoldBrush}"/>
+                      <Border Background="{StaticResource Bloodborne.AccentBrush}" CornerRadius="2"
+                              Padding="6,1" Margin="10,0,0,0" VerticalAlignment="Center"
+                              Visibility="{Binding BadgeVisibility}">
+                        <TextBlock Text="PRÉVIA" FontSize="10"
+                                   Foreground="{StaticResource Bloodborne.TextBrush}"/>
+                      </Border>
+                      <TextBlock Text="{Binding Date}" FontSize="11" Margin="10,0,0,0"
+                                 VerticalAlignment="Center"
+                                 Foreground="{StaticResource Bloodborne.TextDimBrush}"/>
+                    </StackPanel>
+                    <TextBlock Text="{Binding Title}" FontSize="14" Margin="0,4,0,6"
+                               Foreground="{StaticResource Bloodborne.TextBrush}"/>
+                    <TextBlock Text="{Binding Notes}" TextWrapping="Wrap" FontSize="13"
+                               Foreground="{StaticResource Bloodborne.TextDimBrush}"/>
+                  </StackPanel>
+                </Border>
+              </DataTemplate>
+            </ItemsControl.ItemTemplate>
+          </ItemsControl>
+        </ScrollViewer>
       </Grid>
 
       <!-- CONFIGURAÇÕES -->
