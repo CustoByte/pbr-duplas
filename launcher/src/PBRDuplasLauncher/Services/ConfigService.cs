@@ -6,7 +6,7 @@ namespace PBRDuplasLauncher.Services;
 
 public static class ConfigService
 {
-    private static readonly string ConfigDir =
+    public static readonly string ConfigDir =
         Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "PBRDuplas");
 
     private static readonly string ConfigPath = Path.Combine(ConfigDir, "config.json");

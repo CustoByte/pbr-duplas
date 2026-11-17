@@ -63,16 +63,22 @@ public partial class MainWindow : Window
             }
             else
             {
+                Log($"Verificando atualização (versão atual {LauncherVersion})...");
                 var manifest = await _updateService.GetManifestAsync(_config.GitHubOwner, _config.GitHubRepo);
-                if (manifest is null) return;
+                if (manifest is null)
+                {
+                    Log("Manifesto de atualização indisponível.");
+                    return;
+                }
 
                 _config.LastUpdateCheck = DateTime.Now.ToString("o");
                 ConfigService.Save(_config);
+                Log($"Manifesto: {manifest.Version}");
 
                 if (!UpdateService.IsUpdateAvailable(LauncherVersion, manifest.Version)
                     || string.IsNullOrWhiteSpace(manifest.LauncherUrl))
                 {
-                    Log($"Launcher atualizado ({LauncherVersion}).");
+                    Log($"Launcher já está atualizado ({LauncherVersion}).");
                     return;
                 }
 
@@ -115,6 +121,13 @@ public partial class MainWindow : Window
     {
         var line = $"[{DateTime.Now:HH:mm:ss}] {message}";
         LogText.Text = string.IsNullOrEmpty(LogText.Text) ? line : $"{LogText.Text}\n{line}";
+        try
+        {
+            Directory.CreateDirectory(ConfigService.ConfigDir);
+            File.AppendAllText(Path.Combine(ConfigService.ConfigDir, "launcher.log"),
+                $"[{DateTime.Now:O}] {message}\n");
+        }
+        catch { }
         LogScroll.ScrollToEnd();
     }
 
