@@ -3,7 +3,7 @@
   "version": "v0.16.0-launcher-wpf.1",
   "notes": "Novo launcher nativo para Windows. Interface renovada, atualizacoes automaticas e notas de versao.",
   "launcherUrl": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.16.0-launcher-wpf.1/PBR-Duplas-Launcher-Windows.zip",
-  "launcherSha256": "",
+  "launcherSha256": "36ed25ac39ca8ca0bb9659dcfc981c3a3b7751a9ddd5fa0a84598c4b1d93401d",
   "gameVersion": "",
   "gameUrl": "",
   "gameSha256": ""
