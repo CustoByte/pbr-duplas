@@ -13,3 +13,8 @@ Dados-Dolphin/
 diagnostics/
 __pycache__/
 *.pyc
+
+# Launcher WPF
+launcher/**/bin/
+launcher/**/obj/
+launcher/publish/
