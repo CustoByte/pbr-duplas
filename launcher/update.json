@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "version": "v0.16.0-launcher-wpf.1",
-  "notes": "Novo launcher nativo para Windows com instalacao de mods na ISO original, atualizacao automatica e notas de versao.",
-  "launcherUrl": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.16.0-launcher-wpf.1/PBR-Duplas-Launcher-Windows.zip",
-  "launcherSha256": "36ed25ac39ca8ca0bb9659dcfc981c3a3b7751a9ddd5fa0a84598c4b1d93401d",
+  "version": "v0.17.0-launcher-wpf.2",
+  "notes": "O launcher aplica todas as modificacoes do jogo sobre a ISO original e se atualiza sozinho sem reinstalacao.",
+  "launcherUrl": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.17.0-launcher-wpf.2/PBR-Duplas-Launcher-Windows.zip",
+  "launcherSha256": "1b131b62b1cb26b150091c89423ed7db4ee1664a79621eb27b384afc77802fb1",
   "gameVersion": "v0.14.0-charizard-y-test.2",
   "gameUrl": "",
   "gameSha256": "",
