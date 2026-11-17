@@ -1,8 +1,8 @@
 {
   "schema": 1,
-  "version": "v0.26.0-launcher-wpf.12",
+  "version": "v0.27.0-launcher-wpf.13",
   "notes": "Corrige a atualizacao automatica do launcher.",
-  "launcherUrl": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.26.0-launcher-wpf.12/PBR-Duplas-Launcher-Windows.zip",
+  "launcherUrl": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.27.0-launcher-wpf.13/PBR-Duplas-Launcher-Windows.zip",
   "launcherSha256": "66c726e4e121e7ae51ba557850ebc5a7eea9548aa8d5d765175b5e81fec84b32",
   "gameVersion": "v0.14.0-charizard-y-test.2",
   "gameUrl": "",
