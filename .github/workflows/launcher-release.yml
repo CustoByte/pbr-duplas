@@ -1,0 +1,71 @@
+name: Build and publish launcher
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Versao (ex: v0.16.0-launcher-wpf.1)"
+        required: true
+      notes:
+        description: "Notas da versao"
+        required: false
+  push:
+    tags:
+      - "v*-launcher*"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Publish launcher
+        run: >
+          dotnet publish launcher/src/PBRDuplasLauncher/PBRDuplasLauncher.csproj
+          -c Release -r win-x64 --self-contained false
+          -o launcher/publish
+
+      - name: Package
+        shell: pwsh
+        run: |
+          $version = "${{ github.event.inputs.version }}"
+          if (-not $version) { $version = "${{ github.ref_name }}" }
+          $zip = "PBR-Duplas-Launcher-Windows.zip"
+          Compress-Archive -Path "launcher/publish/*" -DestinationPath $zip -Force
+          $hash = (Get-FileHash $zip -Algorithm SHA256).Hash.ToLower()
+          "VERSION=$version" | Out-File -FilePath $env:GITHUB_ENV -Append
+          "ZIP_HASH=$hash" | Out-File -FilePath $env:GITHUB_ENV -Append
+
+      - name: Create release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          $notes = "${{ github.event.inputs.notes }}"
+          if (-not $notes) { $notes = "Launcher PBR Duplas $env:VERSION" }
+          gh release create $env:VERSION "PBR-Duplas-Launcher-Windows.zip" `
+            --repo "${{ github.repository }}" `
+            --title "PBR Duplas $env:VERSION" `
+            --notes $notes
+
+      - name: Update manifest
+        shell: pwsh
+        run: |
+          $manifest = Get-Content launcher/update.json -Raw | ConvertFrom-Json
+          $manifest.version = $env:VERSION
+          $manifest.launcherUrl = "https://github.com/${{ github.repository }}/releases/download/$env:VERSION/PBR-Duplas-Launcher-Windows.zip"
+          $manifest.launcherSha256 = $env:ZIP_HASH
+          $manifest | ConvertTo-Json -Depth 5 | Set-Content launcher/update.json -Encoding utf8
+
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add launcher/update.json
+          git commit -m "Atualiza manifesto do launcher para $env:VERSION"
+          git push
