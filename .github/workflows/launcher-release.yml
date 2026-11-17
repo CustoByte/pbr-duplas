@@ -26,10 +26,22 @@ jobs:
         with:
           dotnet-version: "8.0.x"
 
+      - name: Resolve version
+        id: ver
+        shell: pwsh
+        run: |
+          $v = "${{ github.event.inputs.version }}"
+          if (-not $v) { $v = "${{ github.ref_name }}" }
+          # extrai apenas a parte numerica (ex: v0.18.0-launcher-wpf.3 -> 0.18.0)
+          $num = ($v -replace '^[vV]', '') -replace '-.*$', ''
+          "NUM=$num" | Out-File -FilePath $env:GITHUB_ENV -Append
+
       - name: Publish launcher
+        shell: pwsh
         run: >
           dotnet publish launcher/src/PBRDuplasLauncher/PBRDuplasLauncher.csproj
           -c Release -r win-x64 --self-contained false
+          -p:LaunchVersion=$env:NUM
           -o launcher/publish
 
       - name: Package

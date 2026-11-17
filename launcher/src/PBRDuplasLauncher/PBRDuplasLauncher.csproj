@@ -10,8 +10,10 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>app.ico</ApplicationIcon>
     <AssemblyName>PBR Duplas</AssemblyName>
-    <Version>0.17.0</Version>
-    <InformationalVersion>0.17.0</InformationalVersion>
+    <Version Condition="'$(LaunchVersion)' == ''">0.18.0</Version>
+    <Version Condition="'$(LaunchVersion)' != ''">$(LaunchVersion)</Version>
+    <InformationalVersion Condition="'$(LaunchVersion)' == ''">0.18.0</InformationalVersion>
+    <InformationalVersion Condition="'$(LaunchVersion)' != ''">$(LaunchVersion)</InformationalVersion>
     <RootNamespace>PBRDuplasLauncher</RootNamespace>
     <PublishSingleFile>true</PublishSingleFile>
     <SelfContained>false</SelfContained>
