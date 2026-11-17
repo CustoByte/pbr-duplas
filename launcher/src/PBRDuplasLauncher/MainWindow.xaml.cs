@@ -9,11 +9,25 @@ namespace PBRDuplasLauncher;
 
 public partial class MainWindow : Window
 {
-    private const string LauncherVersion = "1.0.0";
+    private static readonly string LauncherVersion = ReadLauncherVersion();
     private readonly LauncherConfig _config;
     private readonly GameLaunchService _launchService = new();
     private readonly UpdateService _updateService = new();
     private UpdateManifest? _pendingManifest;
+
+    private static string ReadLauncherVersion()
+    {
+        var info = System.Reflection.Assembly.GetExecutingAssembly()
+            .GetCustomAttributes(typeof(System.Reflection.AssemblyInformationalVersionAttribute), false)
+            .OfType<System.Reflection.AssemblyInformationalVersionAttribute>()
+            .FirstOrDefault()?.InformationalVersion;
+
+        if (!string.IsNullOrWhiteSpace(info))
+            return info.Split('+')[0];
+
+        var v = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
+        return v is null ? "0.0.0" : $"{v.Major}.{v.Minor}.{v.Build}";
+    }
 
     public MainWindow()
     {
@@ -30,7 +44,63 @@ public partial class MainWindow : Window
         ValidateLaunchReady();
 
         if (_config.AutoCheckUpdates)
-            Loaded += async (_, _) => await CheckForUpdatesAsync(silent: true);
+            Loaded += async (_, _) => await AutoUpdateOnStartupAsync();
+    }
+
+    /// <summary>
+    /// Ao abrir, aplica silenciosamente uma versão nova do launcher e só então segue.
+    /// Sem diálogo: baixa, verifica, substitui os arquivos e reinicia.
+    /// </summary>
+    private async Task AutoUpdateOnStartupAsync()
+    {
+        try
+        {
+            if (SelfUpdater.IsLoopGuardActive())
+            {
+                // Já tentamos atualizar nesta execução; evita reiniciar em ciclo.
+                SelfUpdater.ClearLoopGuard();
+                Log("Atualização já aplicada nesta execução.");
+            }
+            else
+            {
+                var manifest = await _updateService.GetManifestAsync(_config.GitHubOwner, _config.GitHubRepo);
+                if (manifest is null) return;
+
+                _config.LastUpdateCheck = DateTime.Now.ToString("o");
+                ConfigService.Save(_config);
+
+                if (!UpdateService.IsUpdateAvailable(LauncherVersion, manifest.Version)
+                    || string.IsNullOrWhiteSpace(manifest.LauncherUrl))
+                {
+                    Log($"Launcher atualizado ({LauncherVersion}).");
+                    return;
+                }
+
+                UpdateStatusText.Text = $"Atualizando para {manifest.Version}...";
+                Log($"Atualizando launcher {LauncherVersion} → {manifest.Version}...");
+
+                var dir = Path.Combine(
+                    Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
+                    "PBRDuplas", "updates", manifest.Version);
+
+                var (zipPath, sha) = await _updateService.DownloadAsync(
+                    manifest.LauncherUrl, dir, "launcher.zip");
+
+                if (!string.IsNullOrWhiteSpace(manifest.LauncherSha256)
+                    && !string.Equals(sha, manifest.LauncherSha256, StringComparison.OrdinalIgnoreCase))
+                {
+                    Log("Pacote de atualização inválido (checksum). Seguindo com a versão atual.");
+                    return;
+                }
+
+                Log("Aplicando atualização e reiniciando...");
+                SelfUpdater.ScheduleUpdate(zipPath, AppContext.BaseDirectory, "PBR Duplas.exe");
+            }
+        }
+        catch (Exception ex)
+        {
+            Log($"Não foi possível atualizar automaticamente: {ex.Message}");
+        }
     }
 
     private void LoadConfigIntoUi()
@@ -416,12 +486,6 @@ public partial class MainWindow : Window
 
                 Log($"Jogo baixado em {zipPath}.");
                 UpdateStatusText.Text = $"Jogo {manifest.GameVersion} baixado.";
-
-                var open = MessageBox.Show(
-                    $"Pacote do jogo baixado em:\n{zipPath}\n\nAbrir a pasta?",
-                    "PBR Duplas", MessageBoxButton.YesNo, MessageBoxImage.Question);
-                if (open == MessageBoxResult.Yes)
-                    System.Diagnostics.Process.Start("explorer.exe", $"\"{Path.GetDirectoryName(zipPath)}\"");
             }
         }
         catch (Exception ex)

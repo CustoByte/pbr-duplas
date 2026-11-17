@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "version": "v0.17.0-launcher-wpf.2",
-  "notes": "O launcher aplica todas as modificacoes do jogo sobre a ISO original e se atualiza sozinho sem reinstalacao.",
-  "launcherUrl": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.17.0-launcher-wpf.2/PBR-Duplas-Launcher-Windows.zip",
-  "launcherSha256": "1b131b62b1cb26b150091c89423ed7db4ee1664a79621eb27b384afc77802fb1",
+  "version": "v0.18.0-launcher-wpf.3",
+  "notes": "O launcher se atualiza sozinho ao abrir, sem dialogo ou acao do jogador.",
+  "launcherUrl": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.18.0-launcher-wpf.3/PBR-Duplas-Launcher-Windows.zip",
+  "launcherSha256": "ef2e11de78d84353af69783ff639cbc40903116cd92e6174fdc67718d1bd5900",
   "gameVersion": "v0.14.0-charizard-y-test.2",
   "gameUrl": "",
   "gameSha256": "",

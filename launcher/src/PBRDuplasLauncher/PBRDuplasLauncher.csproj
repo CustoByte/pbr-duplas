@@ -10,6 +10,8 @@
     <ApplicationManifest>app.manifest</ApplicationManifest>
     <ApplicationIcon>app.ico</ApplicationIcon>
     <AssemblyName>PBR Duplas</AssemblyName>
+    <Version>0.17.0</Version>
+    <InformationalVersion>0.17.0</InformationalVersion>
     <RootNamespace>PBRDuplasLauncher</RootNamespace>
     <PublishSingleFile>true</PublishSingleFile>
     <SelfContained>false</SelfContained>
