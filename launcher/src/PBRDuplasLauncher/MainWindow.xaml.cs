@@ -153,7 +153,17 @@ public partial class MainWindow : Window
     private void NavInstall_Click(object sender, RoutedEventArgs e)
     {
         ShowPage(PageInstall);
-        InstallImagePathBox.Text = _config.OriginalImagePath;
+
+        // Reaproveita a ISO já configurada: o campo "Arquivo do jogo" em
+        // CONFIGURAÇÕES é a fonte da verdade; OriginalImagePath só é salvo
+        // depois de uma instalação bem-sucedida.
+        var candidates = new[] { _config.OriginalImagePath, _config.GamePath }
+            .Where(p => !string.IsNullOrWhiteSpace(p) && File.Exists(p))
+            .Where(p => !p.EndsWith("- PBR Duplas.rvz", StringComparison.OrdinalIgnoreCase));
+
+        var existing = candidates.FirstOrDefault();
+        if (existing is not null && string.IsNullOrWhiteSpace(InstallImagePathBox.Text))
+            InstallImagePathBox.Text = existing;
     }
 
     private void BrowseInstallImage_Click(object sender, RoutedEventArgs e)
@@ -164,7 +174,12 @@ public partial class MainWindow : Window
             Filter = "Imagens de jogo|*.iso;*.rvz;*.wbfs;*.gcm|Todos os arquivos|*.*"
         };
         if (dialog.ShowDialog() == true)
+        {
             InstallImagePathBox.Text = dialog.FileName;
+            // Salva imediatamente para não precisar escolher de novo depois.
+            _config.OriginalImagePath = dialog.FileName;
+            ConfigService.Save(_config);
+        }
     }
 
     private void InstallLog(string message)
