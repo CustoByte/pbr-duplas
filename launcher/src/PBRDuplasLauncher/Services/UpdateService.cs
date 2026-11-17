@@ -16,14 +16,43 @@ public class UpdateService
         Http.DefaultRequestHeaders.UserAgent.ParseAdd("PBR-Duplas-Launcher/1.0");
     }
 
-    /// <summary>Lê o manifesto de atualização publicado no repositório.</summary>
+    /// <summary>
+    /// Lê o manifesto de atualização publicado no repositório.
+    /// Usa a API do GitHub (sem cache) e recorre ao raw.githubusercontent como reserva.
+    /// </summary>
     public async Task<UpdateManifest?> GetManifestAsync(string owner, string repo,
         CancellationToken ct = default)
     {
-        var url = $"https://raw.githubusercontent.com/{owner}/{repo}/main/launcher/update.json";
+        var manifest = await TryGetManifestFromApiAsync(owner, repo, ct);
+        if (manifest is not null) return manifest;
+
         try
         {
+            var url = $"https://raw.githubusercontent.com/{owner}/{repo}/main/launcher/update.json"
+                      + $"?t={DateTime.UtcNow.Ticks}";
             var json = await Http.GetStringAsync(url, ct);
+            return JsonSerializer.Deserialize<UpdateManifest>(json,
+                new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
+        }
+        catch
+        {
+            return null;
+        }
+    }
+
+    private async Task<UpdateManifest?> TryGetManifestFromApiAsync(string owner, string repo,
+        CancellationToken ct)
+    {
+        var url = $"https://api.github.com/repos/{owner}/{repo}/contents/launcher/update.json?ref=main";
+        try
+        {
+            using var request = new HttpRequestMessage(HttpMethod.Get, url);
+            request.Headers.Accept.ParseAdd("application/vnd.github.raw");
+            request.Headers.TryAddWithoutValidation("Cache-Control", "no-cache");
+            using var response = await Http.SendAsync(request, ct);
+            if (!response.IsSuccessStatusCode) return null;
+
+            var json = await response.Content.ReadAsStringAsync(ct);
             return JsonSerializer.Deserialize<UpdateManifest>(json,
                 new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
         }
