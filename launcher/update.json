@@ -1,9 +1,9 @@
 {
   "schema": 1,
-  "version": "v0.18.1-launcher-wpf.4",
+  "version": "v0.19.0-launcher-wpf.5",
   "notes": "O launcher se atualiza sozinho ao abrir, sem dialogo ou acao do jogador.",
-  "launcherUrl": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.18.1-launcher-wpf.4/PBR-Duplas-Launcher-Windows.zip",
-  "launcherSha256": "d2813ae18f13bd134d3bae03c93714877f0a74b12b06cf77cbfb319114537801",
+  "launcherUrl": "https://github.com/CustoByte/pbr-duplas/releases/download/v0.19.0-launcher-wpf.5/PBR-Duplas-Launcher-Windows.zip",
+  "launcherSha256": "250a433f0e6a22eaef52a0ee310bcf10da0cfe6cdbd8a7742314261318bc6347",
   "gameVersion": "v0.14.0-charizard-y-test.2",
   "gameUrl": "",
   "gameSha256": "",
