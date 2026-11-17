@@ -35,16 +35,24 @@ public static class SelfUpdater
         var script = Path.Combine(Path.GetTempPath(), $"pbr-update-{Guid.NewGuid():N}.cmd");
         var exePath = Path.Combine(installDir, exeName);
 
-        // Aspas duplicadas escapam aspas dentro do .cmd
+        // Usa caminhos absolutos do sistema para não depender do PATH herdado
+        // (um PATH com ferramentas Unix, por exemplo, trocaria find/robocopy).
+        var sys32 = Environment.GetFolderPath(Environment.SpecialFolder.System);
+        var tasklist = Path.Combine(sys32, "tasklist.exe");
+        var findstr = Path.Combine(sys32, "findstr.exe");
+        var robocopy = Path.Combine(sys32, "robocopy.exe");
+        var timeout = Path.Combine(sys32, "timeout.exe");
+
         File.WriteAllText(script, $@"@echo off
 setlocal
+set ""PATH={sys32};%PATH%""
 :wait
-tasklist /fi ""IMAGENAME eq {exeName}"" 2>nul | find /i ""{exeName}"" >nul
+""{tasklist}"" /fi ""IMAGENAME eq {exeName}"" 2>nul | ""{findstr}"" /i /c:""{exeName}"" >nul
 if not errorlevel 1 (
-    timeout /t 1 /nobreak >nul
+    ""{timeout}"" /t 1 /nobreak >nul
     goto wait
 )
-robocopy ""{staging}"" ""{installDir}"" /E /IS /IT /NFL /NDL /NJH /NJS /NP >nul
+""{robocopy}"" ""{staging}"" ""{installDir}"" /E /IS /IT /NFL /NDL /NJH /NJS /NP >nul
 start """" ""{exePath}""
 rmdir /s /q ""{staging}""
 (goto) 2>nul & del ""%~f0""
