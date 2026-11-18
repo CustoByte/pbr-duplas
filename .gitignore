@@ -18,3 +18,13 @@ __pycache__/
 launcher/**/bin/
 launcher/**/obj/
 launcher/publish/
+
+# WAVs extraídos e grandes (fontes e conversões não redistribuíveis)
+native/runtime/audio_wav/
+
+# ISO extraída localmente
+native/runtime/extracted_iso/
+
+# Scratch temporário
+scratch/
+experiments/*/scratch/

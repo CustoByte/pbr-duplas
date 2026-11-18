@@ -1,0 +1,161 @@
+{
+  "schema": 1,
+  "kind": "native-roster",
+  "entries": [
+    {
+      "key": "mega-charizard-y",
+      "name": "Mega Charizard Y",
+      "national_id": 6,
+      "types": [
+        "Fire",
+        "Flying"
+      ],
+      "level": 50,
+      "hp": 156,
+      "atk": 138,
+      "def": 119,
+      "spatk": 159,
+      "spdef": 137,
+      "spe": 149,
+      "moves": [
+        {
+          "name": "Flamethrower",
+          "power": 90,
+          "type": "Fire"
+        },
+        {
+          "name": "Air Slash",
+          "power": 75,
+          "type": "Flying"
+        },
+        {
+          "name": "Solar Beam",
+          "power": 120,
+          "type": "Grass"
+        },
+        {
+          "name": "Dragon Pulse",
+          "power": 85,
+          "type": "Dragon"
+        }
+      ],
+      "model_path": "res://models/charizard.glb"
+    },
+    {
+      "key": "ash-greninja",
+      "name": "Ash-Greninja",
+      "national_id": 658,
+      "types": [
+        "Water",
+        "Dark"
+      ],
+      "level": 50,
+      "hp": 148,
+      "atk": 145,
+      "def": 107,
+      "spatk": 153,
+      "spdef": 118,
+      "spe": 132,
+      "moves": [
+        {
+          "name": "Water Shuriken",
+          "power": 60,
+          "type": "Water"
+        },
+        {
+          "name": "Dark Pulse",
+          "power": 80,
+          "type": "Dark"
+        },
+        {
+          "name": "Ice Beam",
+          "power": 90,
+          "type": "Ice"
+        },
+        {
+          "name": "U-turn",
+          "power": 70,
+          "type": "Bug"
+        }
+      ],
+      "model_path": "res://models/lucario.glb"
+    },
+    {
+      "key": "hydreigon",
+      "name": "Hydreigon",
+      "national_id": 635,
+      "types": [
+        "Dark",
+        "Dragon"
+      ],
+      "level": 50,
+      "hp": 168,
+      "atk": 140,
+      "def": 130,
+      "spatk": 165,
+      "spdef": 130,
+      "spe": 138,
+      "moves": [
+        {
+          "name": "Dark Pulse",
+          "power": 80,
+          "type": "Dark"
+        },
+        {
+          "name": "Dragon Pulse",
+          "power": 85,
+          "type": "Dragon"
+        },
+        {
+          "name": "Flash Cannon",
+          "power": 80,
+          "type": "Steel"
+        },
+        {
+          "name": "Earth Power",
+          "power": 90,
+          "type": "Ground"
+        }
+      ],
+      "model_path": "res://models/garchomp.glb"
+    },
+    {
+      "key": "rillaboom",
+      "name": "Rillaboom",
+      "national_id": 812,
+      "types": [
+        "Grass"
+      ],
+      "level": 50,
+      "hp": 175,
+      "atk": 160,
+      "def": 130,
+      "spatk": 110,
+      "spdef": 110,
+      "spe": 117,
+      "moves": [
+        {
+          "name": "Drum Beating",
+          "power": 80,
+          "type": "Grass"
+        },
+        {
+          "name": "High Horsepower",
+          "power": 95,
+          "type": "Ground"
+        },
+        {
+          "name": "Knock Off",
+          "power": 65,
+          "type": "Dark"
+        },
+        {
+          "name": "U-turn",
+          "power": 70,
+          "type": "Bug"
+        }
+      ],
+      "model_path": "res://models/torterra.glb"
+    }
+  ]
+}

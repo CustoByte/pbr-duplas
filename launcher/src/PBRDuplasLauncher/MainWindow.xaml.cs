@@ -390,6 +390,54 @@ public partial class MainWindow : Window
         }
     }
 
+    private async void LaunchNative_Click(object sender, RoutedEventArgs e)
+    {
+        try
+        {
+            var baseDir = AppDomain.CurrentDomain.BaseDirectory;
+
+            // 1) Build exportado do jogo (instalação normal)
+            var gameExe = Path.Combine(baseDir, "native", "PBRNative.exe");
+            if (File.Exists(gameExe))
+            {
+                Log("Iniciando jogo nativo...");
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = gameExe,
+                    WorkingDirectory = Path.GetDirectoryName(gameExe)!,
+                    Arguments = string.IsNullOrWhiteSpace(_config.GamePath) ? "" : $"--iso \"{_config.GamePath}\"",
+                    UseShellExecute = false
+                });
+                Log("Jogo nativo iniciado.");
+                return;
+            }
+
+            // 2) Desenvolvimento: projeto Godot + motor local
+            var devRoot = Path.GetFullPath(Path.Combine(baseDir, "..", "..", "..", "..", ".."));
+            var runtimeDir = Path.Combine(devRoot, "native", "runtime");
+            var godotExe = Path.Combine(devRoot, "godot", "Godot_v4.6.3-stable_win64_console.exe");
+
+            if (Directory.Exists(runtimeDir) && File.Exists(godotExe))
+            {
+                Log("Iniciando runtime nativo (modo desenvolvimento)...");
+                System.Diagnostics.Process.Start(new System.Diagnostics.ProcessStartInfo
+                {
+                    FileName = godotExe,
+                    Arguments = $"--path \"{runtimeDir}\"" + (string.IsNullOrWhiteSpace(_config.GamePath) ? "" : $" -- --iso \"{_config.GamePath}\""),
+                    UseShellExecute = false
+                });
+                Log("Jogo nativo iniciado.");
+                return;
+            }
+
+            Log("Jogo nativo não encontrado. Baixe a versão mais recente do launcher.");
+        }
+        catch (Exception ex)
+        {
+            Log($"Erro ao iniciar nativo: {ex.Message}");
+        }
+    }
+
     private void SaveSettings_Click(object sender, RoutedEventArgs e)
     {
         _config.GamePath = GamePathBox.Text.Trim();
